@@ -1,0 +1,101 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/Users/home/Documents/Fpga_proj/four_bit_serial_adder/simulation/modelsim
+vfour_bit_serial_adder
+Z1 !s110 1572116387
+!i10b 1
+!s100 72FY0baPceX21N5U5EnWb0
+I8>dZQ;YeV`i`QD[bo^^m02
+Z2 VDg1SIo80bB@j0V0VzS_@n1
+R0
+w1571713366
+8C:/Users/home/Documents/Fpga_proj/four_bit_serial_adder/four_bit_serial_adder.v
+FC:/Users/home/Documents/Fpga_proj/four_bit_serial_adder/four_bit_serial_adder.v
+L0 1
+Z3 OV;L;10.5b;63
+r1
+!s85 0
+31
+!s108 1572116386.000000
+!s107 C:/Users/home/Documents/Fpga_proj/four_bit_serial_adder/four_bit_serial_adder.v|
+!s90 -##implicit##push_minusfile_path##|C:/Users/home/Documents/Fpga_proj/moore_binary_counter/simulation/modelsim/vlog.opt|-##implicit##pop_minusfile_path##|-reportprogress|300|-O0|-vlog01compat|-work|work|+incdir+C:/Users/home/Documents/Fpga_proj/four_bit_serial_adder|C:/Users/home/Documents/Fpga_proj/four_bit_serial_adder/four_bit_serial_adder.v|
+Z4 !s101 -O0 -O0
+!i113 1
+Z5 o-O0 -O0 -vlog01compat -work work
+!s92 -O0 -O0 -vlog01compat -work work +incdir+C:/Users/home/Documents/Fpga_proj/four_bit_serial_adder
+Z6 tDisableOpt 1 CvgOpt 0
+vfour_bit_serial_adder_tb
+R1
+!i10b 1
+!s100 U>;JBFICHXRolS14G8]JI2
+I?k:boI6d7iaE9P^=?AJN72
+R2
+R0
+w1571713072
+8C:/Users/home/Documents/Fpga_proj/four_bit_serial_adder/four_bit_serial_adder_tb.v
+FC:/Users/home/Documents/Fpga_proj/four_bit_serial_adder/four_bit_serial_adder_tb.v
+L0 1
+R3
+r1
+!s85 0
+31
+Z7 !s108 1572116387.000000
+!s107 C:/Users/home/Documents/Fpga_proj/four_bit_serial_adder/four_bit_serial_adder_tb.v|
+!s90 -##implicit##push_minusfile_path##|C:/Users/home/Documents/Fpga_proj/moore_binary_counter/simulation/modelsim/vlog.opt|-##implicit##pop_minusfile_path##|-reportprogress|300|-O0|-work|work|C:/Users/home/Documents/Fpga_proj/four_bit_serial_adder/four_bit_serial_adder_tb.v|
+R4
+!i113 1
+o-O0 -O0 -work work
+R6
+vfour_bit_shift_reg
+R1
+!i10b 1
+!s100 >oKmb8_EkZF:H>z2BccRR2
+I:QX4dGYQ^B8<`8WBJ2F=_2
+R2
+R0
+w1572116349
+8C:/Users/home/Documents/Fpga_proj/common/four_bit_shift_reg.v
+FC:/Users/home/Documents/Fpga_proj/common/four_bit_shift_reg.v
+L0 1
+R3
+r1
+!s85 0
+31
+R7
+!s107 C:/Users/home/Documents/Fpga_proj/common/four_bit_shift_reg.v|
+!s90 -##implicit##push_minusfile_path##|C:/Users/home/Documents/Fpga_proj/moore_binary_counter/simulation/modelsim/vlog.opt|-##implicit##pop_minusfile_path##|-reportprogress|300|-O0|-vlog01compat|-work|work|+incdir+C:/Users/home/Documents/Fpga_proj/common|C:/Users/home/Documents/Fpga_proj/common/four_bit_shift_reg.v|
+R4
+!i113 1
+R5
+Z8 !s92 -O0 -O0 -vlog01compat -work work +incdir+C:/Users/home/Documents/Fpga_proj/common
+R6
+vfull_adder
+R1
+!i10b 1
+!s100 JcHmID]hZVZn1RInzlmon3
+IJB09ATc_a1KO4P0ZBnZDJ3
+R2
+R0
+w1568339624
+8C:/Users/home/Documents/Fpga_proj/common/full_adder.v
+FC:/Users/home/Documents/Fpga_proj/common/full_adder.v
+L0 1
+R3
+r1
+!s85 0
+31
+R7
+!s107 C:/Users/home/Documents/Fpga_proj/common/full_adder.v|
+!s90 -##implicit##push_minusfile_path##|C:/Users/home/Documents/Fpga_proj/moore_binary_counter/simulation/modelsim/vlog.opt|-##implicit##pop_minusfile_path##|-reportprogress|300|-O0|-vlog01compat|-work|work|+incdir+C:/Users/home/Documents/Fpga_proj/common|C:/Users/home/Documents/Fpga_proj/common/full_adder.v|
+R4
+!i113 1
+R5
+R8
+R6

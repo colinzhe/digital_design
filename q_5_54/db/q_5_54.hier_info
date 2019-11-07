@@ -1,0 +1,8 @@
+|q_5_54
+rstn => state.ACLR
+clk => state.CLK
+x_in[0] => WideXor0.IN0
+x_in[1] => WideXor0.IN1
+y_out <= state.DB_MAX_OUTPUT_PORT_TYPE
+
+

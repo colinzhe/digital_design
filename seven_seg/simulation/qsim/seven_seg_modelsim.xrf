@@ -1,0 +1,14 @@
+vendor_name = ModelSim
+source_file = 1, C:/Users/home/Documents/Fpga_proj/seven_seg/seven_seg.v
+source_file = 1, C:/Users/home/Documents/Fpga_proj/seven_seg/Waveform.vwf
+source_file = 1, C:/Users/home/Documents/Fpga_proj/seven_seg/db/seven_seg.cbx.xml
+design_name = seven_seg
+instance = comp, \h0d0~output , h0d0~output, seven_seg, 1
+instance = comp, \h0d1~output , h0d1~output, seven_seg, 1
+instance = comp, \x3~input , x3~input, seven_seg, 1
+instance = comp, \x1~input , x1~input, seven_seg, 1
+instance = comp, \x4~input , x4~input, seven_seg, 1
+instance = comp, \x2~input , x2~input, seven_seg, 1
+instance = comp, \h0d0~0 , h0d0~0, seven_seg, 1
+instance = comp, \h0d1~0 , h0d1~0, seven_seg, 1
+instance = comp, \~QUARTUS_CREATED_GND~I , ~QUARTUS_CREATED_GND~I, seven_seg, 1

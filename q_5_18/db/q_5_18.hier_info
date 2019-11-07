@@ -1,0 +1,13 @@
+|q_5_18
+rstn => state~3.DATAIN
+clk => state~1.DATAIN
+E => Decoder0.IN0
+E => Selector3.IN3
+E => Selector0.IN3
+E => Selector1.IN3
+E => Selector2.IN3
+F => Decoder0.IN1
+y_out[0] <= y_out.DB_MAX_OUTPUT_PORT_TYPE
+y_out[1] <= y_out.DB_MAX_OUTPUT_PORT_TYPE
+
+

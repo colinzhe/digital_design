@@ -1,0 +1,1 @@
+Warning (10268): Verilog HDL information at q_5_27.v(16): always construct contains both blocking and non-blocking assignments File: C:/Users/home/Documents/Fpga_proj/q_5_27/q_5_27.v Line: 16

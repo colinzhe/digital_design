@@ -1,0 +1,30 @@
+|four_to_two_pri_encoder_beh
+D1[0] => Decoder0.IN3
+D1[1] => Decoder0.IN2
+D1[2] => Decoder0.IN1
+D1[3] => Decoder0.IN0
+D2[0] => y.IN1
+D2[0] => V2.DATAA
+D2[0] => Equal0.IN3
+D2[1] => V2.OUTPUTSELECT
+D2[1] => y.IN1
+D2[1] => z.DATAA
+D2[1] => Equal0.IN2
+D2[2] => V2.OUTPUTSELECT
+D2[2] => z.OUTPUTSELECT
+D2[2] => y.IN1
+D2[2] => y.DATAA
+D2[2] => Equal0.IN1
+D2[3] => V2.OUTPUTSELECT
+D2[3] => z.OUTPUTSELECT
+D2[3] => y.OUTPUTSELECT
+D2[3] => y.IN1
+D2[3] => Equal0.IN0
+w << w.DB_MAX_OUTPUT_PORT_TYPE
+x << x.DB_MAX_OUTPUT_PORT_TYPE
+y << y.DB_MAX_OUTPUT_PORT_TYPE
+z << z.DB_MAX_OUTPUT_PORT_TYPE
+V1 << Decoder0.DB_MAX_OUTPUT_PORT_TYPE
+V2 << V2.DB_MAX_OUTPUT_PORT_TYPE
+
+

@@ -1,0 +1,39 @@
+|d_ff_master_slave
+D => D.IN1
+clk => clk.IN1
+Q <= d_latch:d_latch_slave.Q
+Qn <= d_latch:d_latch_slave.Qn
+
+
+|d_ff_master_slave|d_latch:d_latch_master
+D => G1.IN0
+D => G2.IN0
+En => G1.IN1
+En => G2.IN1
+Q <= sr_latch:sr_latch_0.Q
+Qn <= sr_latch:sr_latch_0.Qn
+
+
+|d_ff_master_slave|d_latch:d_latch_master|sr_latch:sr_latch_0
+S => G1.IN1
+R => G2.IN0
+Q <= Q.DB_MAX_OUTPUT_PORT_TYPE
+Qn <= G2.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|d_ff_master_slave|d_latch:d_latch_slave
+D => G1.IN0
+D => G2.IN0
+En => G1.IN1
+En => G2.IN1
+Q <= sr_latch:sr_latch_0.Q
+Qn <= sr_latch:sr_latch_0.Qn
+
+
+|d_ff_master_slave|d_latch:d_latch_slave|sr_latch:sr_latch_0
+S => G1.IN1
+R => G2.IN0
+Q <= Q.DB_MAX_OUTPUT_PORT_TYPE
+Qn <= G2.DB_MAX_OUTPUT_PORT_TYPE
+
+

@@ -1,0 +1,6 @@
+|tri_buf
+A => B.DATAIN
+B <= B.DB_MAX_OUTPUT_PORT_TYPE
+E => B.OE
+
+

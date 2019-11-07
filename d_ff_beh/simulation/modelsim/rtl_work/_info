@@ -1,0 +1,53 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/Users/home/Documents/Fpga_proj/d_ff_beh/simulation/modelsim
+vd_ff_beh
+!s110 1571169809
+!i10b 1
+!s100 oBCbS7O;aDokiZ`XB9=zP1
+I[R7Rhh=D=aYcSLYIaN<a=2
+Z1 VDg1SIo80bB@j0V0VzS_@n1
+R0
+w1571169784
+8C:/Users/home/Documents/Fpga_proj/d_ff_beh/d_ff_beh.v
+FC:/Users/home/Documents/Fpga_proj/d_ff_beh/d_ff_beh.v
+L0 1
+Z2 OV;L;10.5b;63
+r1
+!s85 0
+31
+!s108 1571169809.000000
+!s107 C:/Users/home/Documents/Fpga_proj/d_ff_beh/d_ff_beh.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/home/Documents/Fpga_proj/d_ff_beh|C:/Users/home/Documents/Fpga_proj/d_ff_beh/d_ff_beh.v|
+!i113 1
+o-vlog01compat -work work
+!s92 -vlog01compat -work work +incdir+C:/Users/home/Documents/Fpga_proj/d_ff_beh
+Z3 tCvgOpt 0
+vd_ff_beh_tb
+!s110 1571169857
+!i10b 1
+!s100 5NAoI:Y45F^28iomI42XB2
+IoBEQfnF7L8mP:IR<B:ie_2
+R1
+R0
+w1571169850
+8C:/Users/home/Documents/Fpga_proj/d_ff_beh/d_ff_beh_tb.v
+FC:/Users/home/Documents/Fpga_proj/d_ff_beh/d_ff_beh_tb.v
+L0 1
+R2
+r1
+!s85 0
+31
+!s108 1571169857.000000
+!s107 C:/Users/home/Documents/Fpga_proj/d_ff_beh/d_ff_beh_tb.v|
+!s90 -reportprogress|300|-work|work|C:/Users/home/Documents/Fpga_proj/d_ff_beh/d_ff_beh_tb.v|
+!i113 1
+o-work work
+R3

@@ -1,0 +1,69 @@
+|four_bit_serial_adder
+rstn => rstn.IN2
+clk => clk.IN2
+SI => SI.IN1
+SE => SE.IN2
+shift_reg_A_out[0] <= four_bit_shift_reg:shift_reg_A.shift_reg
+shift_reg_A_out[1] <= four_bit_shift_reg:shift_reg_A.shift_reg
+shift_reg_A_out[2] <= four_bit_shift_reg:shift_reg_A.shift_reg
+shift_reg_A_out[3] <= four_bit_shift_reg:shift_reg_A.shift_reg
+shift_reg_B_out[0] <= four_bit_shift_reg:shift_reg_B.shift_reg
+shift_reg_B_out[1] <= four_bit_shift_reg:shift_reg_B.shift_reg
+shift_reg_B_out[2] <= four_bit_shift_reg:shift_reg_B.shift_reg
+shift_reg_B_out[3] <= four_bit_shift_reg:shift_reg_B.shift_reg
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|four_bit_serial_adder|four_bit_shift_reg:shift_reg_A
+rstn => shift_reg[0]~reg0.ACLR
+rstn => shift_reg[1]~reg0.ACLR
+rstn => shift_reg[2]~reg0.ACLR
+rstn => shift_reg[3]~reg0.ACLR
+clk => shift_reg[0]~reg0.CLK
+clk => shift_reg[1]~reg0.CLK
+clk => shift_reg[2]~reg0.CLK
+clk => shift_reg[3]~reg0.CLK
+SI => shift_reg[0]~reg0.DATAIN
+SE => shift_reg[0]~reg0.ENA
+SE => shift_reg[3]~reg0.ENA
+SE => shift_reg[2]~reg0.ENA
+SE => shift_reg[1]~reg0.ENA
+SO <= shift_reg[3]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+shift_reg[0] <= shift_reg[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+shift_reg[1] <= shift_reg[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+shift_reg[2] <= shift_reg[2]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+shift_reg[3] <= shift_reg[3]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|four_bit_serial_adder|four_bit_shift_reg:shift_reg_B
+rstn => shift_reg[0]~reg0.ACLR
+rstn => shift_reg[1]~reg0.ACLR
+rstn => shift_reg[2]~reg0.ACLR
+rstn => shift_reg[3]~reg0.ACLR
+clk => shift_reg[0]~reg0.CLK
+clk => shift_reg[1]~reg0.CLK
+clk => shift_reg[2]~reg0.CLK
+clk => shift_reg[3]~reg0.CLK
+SI => shift_reg[0]~reg0.DATAIN
+SE => shift_reg[0]~reg0.ENA
+SE => shift_reg[3]~reg0.ENA
+SE => shift_reg[2]~reg0.ENA
+SE => shift_reg[1]~reg0.ENA
+SO <= shift_reg[3]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+shift_reg[0] <= shift_reg[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+shift_reg[1] <= shift_reg[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+shift_reg[2] <= shift_reg[2]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+shift_reg[3] <= shift_reg[3]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|four_bit_serial_adder|full_adder:adder_0
+x => Sp1.IN0
+x => Cp1.IN0
+y => Sp1.IN1
+y => Cp1.IN1
+Cin => comb.IN1
+Cin => Cp2.IN1
+S <= comb.DB_MAX_OUTPUT_PORT_TYPE
+Cout <= comb.DB_MAX_OUTPUT_PORT_TYPE
+
+

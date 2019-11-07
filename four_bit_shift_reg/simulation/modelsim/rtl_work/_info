@@ -1,0 +1,55 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/Users/home/Documents/Fpga_proj/four_bit_shift_reg/simulation/modelsim
+vfour_bit_shift_reg
+!s110 1571616962
+!i10b 1
+!s100 jI61]JOlj8TGDnZ;aJFiC0
+I0]Q<WO1SmCAmfMWOHKc6Q3
+Z1 VDg1SIo80bB@j0V0VzS_@n1
+R0
+w1571616498
+8C:/Users/home/Documents/Fpga_proj/four_bit_shift_reg/four_bit_shift_reg.v
+FC:/Users/home/Documents/Fpga_proj/four_bit_shift_reg/four_bit_shift_reg.v
+L0 1
+Z2 OV;L;10.5b;63
+r1
+!s85 0
+31
+!s108 1571616962.000000
+!s107 C:/Users/home/Documents/Fpga_proj/four_bit_shift_reg/four_bit_shift_reg.v|
+!s90 -##implicit##push_minusfile_path##|C:/Users/home/Documents/Fpga_proj/moore_binary_counter/simulation/modelsim/vlog.opt|-##implicit##pop_minusfile_path##|-reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/home/Documents/Fpga_proj/four_bit_shift_reg|C:/Users/home/Documents/Fpga_proj/four_bit_shift_reg/four_bit_shift_reg.v|
+!s101 -O0
+!i113 1
+o-O0 -vlog01compat -work work
+!s92 -O0 -vlog01compat -work work +incdir+C:/Users/home/Documents/Fpga_proj/four_bit_shift_reg
+Z3 tDisableOpt 1 CvgOpt 0
+vfour_bit_shift_reg_tb
+!s110 1571617027
+!i10b 1
+!s100 EmM75hNCIQN00:]nTG2Hb3
+IM]TO;XIbYH1z6AY;`@Yd:2
+R1
+R0
+w1571617020
+8C:/Users/home/Documents/Fpga_proj/four_bit_shift_reg/four_bit_shift_reg_tb.v
+FC:/Users/home/Documents/Fpga_proj/four_bit_shift_reg/four_bit_shift_reg_tb.v
+L0 1
+R2
+r1
+!s85 0
+31
+!s108 1571617027.000000
+!s107 C:/Users/home/Documents/Fpga_proj/four_bit_shift_reg/four_bit_shift_reg_tb.v|
+!s90 -##implicit##push_minusfile_path##|C:/Users/home/Documents/Fpga_proj/moore_binary_counter/simulation/modelsim/vlog.opt|-##implicit##pop_minusfile_path##|-reportprogress|300|-O0|-work|work|C:/Users/home/Documents/Fpga_proj/four_bit_shift_reg/four_bit_shift_reg_tb.v|
+!s101 -O0 -O0
+!i113 1
+o-O0 -O0 -work work
+R3

@@ -1,0 +1,101 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/Users/home/Documents/Fpga_proj/four_bit_johnson_cntr/simulation/modelsim
+vd_ff
+Z1 !s110 1572742414
+!i10b 1
+!s100 76_1jH@a@<H2jCm0VY7Y12
+IZzDO;@eXz^4Fcehhj5F<I3
+Z2 VDg1SIo80bB@j0V0VzS_@n1
+R0
+Z3 w1572742406
+Z4 8C:/Users/home/Documents/Fpga_proj/four_bit_johnson_cntr/four_bit_johnson_cntr.v
+Z5 FC:/Users/home/Documents/Fpga_proj/four_bit_johnson_cntr/four_bit_johnson_cntr.v
+L0 70
+Z6 OV;L;10.5b;63
+r1
+!s85 0
+31
+Z7 !s108 1572742414.000000
+Z8 !s107 C:/Users/home/Documents/Fpga_proj/four_bit_johnson_cntr/four_bit_johnson_cntr.v|
+Z9 !s90 -##implicit##push_minusfile_path##|C:/Users/home/Documents/Fpga_proj/moore_binary_counter/simulation/modelsim/vlog.opt|-##implicit##pop_minusfile_path##|-reportprogress|300|-O0|-vlog01compat|-work|work|+incdir+C:/Users/home/Documents/Fpga_proj/four_bit_johnson_cntr|C:/Users/home/Documents/Fpga_proj/four_bit_johnson_cntr/four_bit_johnson_cntr.v|
+Z10 !s101 -O0 -O0
+!i113 1
+Z11 o-O0 -O0 -vlog01compat -work work
+Z12 !s92 -O0 -O0 -vlog01compat -work work +incdir+C:/Users/home/Documents/Fpga_proj/four_bit_johnson_cntr
+Z13 tDisableOpt 1 CvgOpt 0
+vfour_bit_johnson_cntr
+R1
+!i10b 1
+!s100 iIe89kj^HIZ]SEBTMK5KJ3
+IAHZf[;hm=R8TI]3<WCKPM1
+R2
+R0
+R3
+R4
+R5
+L0 1
+R6
+r1
+!s85 0
+31
+R7
+R8
+R9
+R10
+!i113 1
+R11
+R12
+R13
+vfour_bit_johnson_cntr_tb
+R1
+!i10b 1
+!s100 Ya=W96O;5O6Cl:S3=mkIE3
+I^=V;[o3Qi3Y_SI^1@KLFE3
+R2
+R0
+w1572741322
+8C:/Users/home/Documents/Fpga_proj/four_bit_johnson_cntr/four_bit_johnson_cntr_tb.v
+FC:/Users/home/Documents/Fpga_proj/four_bit_johnson_cntr/four_bit_johnson_cntr_tb.v
+L0 1
+R6
+r1
+!s85 0
+31
+R7
+!s107 C:/Users/home/Documents/Fpga_proj/four_bit_johnson_cntr/four_bit_johnson_cntr_tb.v|
+!s90 -##implicit##push_minusfile_path##|C:/Users/home/Documents/Fpga_proj/moore_binary_counter/simulation/modelsim/vlog.opt|-##implicit##pop_minusfile_path##|-reportprogress|300|-O0|-work|work|C:/Users/home/Documents/Fpga_proj/four_bit_johnson_cntr/four_bit_johnson_cntr_tb.v|
+R10
+!i113 1
+o-O0 -O0 -work work
+R13
+vfour_by_eight_dec
+R1
+!i10b 1
+!s100 M2Mn?IAT?0a>kDQg_<Jjo0
+Ia;c=3;SQMkVZDMWb==<XU3
+R2
+R0
+R3
+R4
+R5
+L0 90
+R6
+r1
+!s85 0
+31
+R7
+R8
+R9
+R10
+!i113 1
+R11
+R12
+R13

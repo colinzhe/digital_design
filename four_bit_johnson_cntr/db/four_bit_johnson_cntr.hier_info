@@ -1,0 +1,34 @@
+|four_bit_johnson_cntr
+rstn => state[0].ACLR
+rstn => state[1].PRESET
+rstn => state[2].PRESET
+rstn => state[3].ACLR
+clk => state[0].CLK
+clk => state[1].CLK
+clk => state[2].CLK
+clk => state[3].CLK
+count[0] <= four_by_eight_dec:dec.y_out
+count[1] <= four_by_eight_dec:dec.y_out
+count[2] <= four_by_eight_dec:dec.y_out
+count[3] <= four_by_eight_dec:dec.y_out
+count[4] <= four_by_eight_dec:dec.y_out
+count[5] <= four_by_eight_dec:dec.y_out
+count[6] <= four_by_eight_dec:dec.y_out
+count[7] <= four_by_eight_dec:dec.y_out
+
+
+|four_bit_johnson_cntr|four_by_eight_dec:dec
+x_in[0] => Decoder0.IN3
+x_in[1] => Decoder0.IN2
+x_in[2] => Decoder0.IN1
+x_in[3] => Decoder0.IN0
+y_out[0] <= Decoder0.DB_MAX_OUTPUT_PORT_TYPE
+y_out[1] <= Decoder0.DB_MAX_OUTPUT_PORT_TYPE
+y_out[2] <= Decoder0.DB_MAX_OUTPUT_PORT_TYPE
+y_out[3] <= Decoder0.DB_MAX_OUTPUT_PORT_TYPE
+y_out[4] <= Decoder0.DB_MAX_OUTPUT_PORT_TYPE
+y_out[5] <= Decoder0.DB_MAX_OUTPUT_PORT_TYPE
+y_out[6] <= Decoder0.DB_MAX_OUTPUT_PORT_TYPE
+y_out[7] <= Decoder0.DB_MAX_OUTPUT_PORT_TYPE
+
+

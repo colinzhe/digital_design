@@ -1,0 +1,9 @@
+vendor_name = ModelSim
+source_file = 1, C:/Users/home/Documents/Fpga_proj/sr_latch/sr_latch.v
+source_file = 1, C:/Users/home/Documents/Fpga_proj/sr_latch/db/sr_latch.cbx.xml
+design_name = sr_latch
+instance = comp, \Q~output , Q~output, sr_latch, 1
+instance = comp, \Qn~output , Qn~output, sr_latch, 1
+instance = comp, \R~input , R~input, sr_latch, 1
+instance = comp, \S~input , S~input, sr_latch, 1
+instance = comp, \~QUARTUS_CREATED_GND~I , ~QUARTUS_CREATED_GND~I, sr_latch, 1

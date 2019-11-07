@@ -1,0 +1,78 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/Users/home/Documents/Fpga_proj/q_5_42/simulation/modelsim
+vd_ff_beh
+Z1 !s110 1571511641
+!i10b 1
+!s100 <L?O:znRBf?]>TEUCUbIi0
+IdVKI5kQVK;O7?l2?DC5=e1
+Z2 VDg1SIo80bB@j0V0VzS_@n1
+R0
+w1571511088
+8C:/Users/home/Documents/Fpga_proj/common/d_ff_beh.v
+FC:/Users/home/Documents/Fpga_proj/common/d_ff_beh.v
+L0 1
+Z3 OV;L;10.5b;63
+r1
+!s85 0
+31
+Z4 !s108 1571511641.000000
+!s107 C:/Users/home/Documents/Fpga_proj/common/d_ff_beh.v|
+!s90 -##implicit##push_minusfile_path##|C:/Users/home/Documents/Fpga_proj/moore_binary_counter/simulation/modelsim/vlog.opt|-##implicit##pop_minusfile_path##|-reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/home/Documents/Fpga_proj/common|C:/Users/home/Documents/Fpga_proj/common/d_ff_beh.v|
+!s101 -O0
+!i113 1
+Z5 o-O0 -vlog01compat -work work
+!s92 -O0 -vlog01compat -work work +incdir+C:/Users/home/Documents/Fpga_proj/common
+Z6 tDisableOpt 1 CvgOpt 0
+vq_5_42
+R1
+!i10b 1
+!s100 WkJP]OH^_3JFJWMDVz02^0
+IM`X>4CL;IiL2kSO^nmTRc1
+R2
+R0
+w1571511516
+8C:/Users/home/Documents/Fpga_proj/q_5_42/q_5_42.v
+FC:/Users/home/Documents/Fpga_proj/q_5_42/q_5_42.v
+L0 1
+R3
+r1
+!s85 0
+31
+R4
+!s107 C:/Users/home/Documents/Fpga_proj/q_5_42/q_5_42.v|
+!s90 -##implicit##push_minusfile_path##|C:/Users/home/Documents/Fpga_proj/moore_binary_counter/simulation/modelsim/vlog.opt|-##implicit##pop_minusfile_path##|-reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/home/Documents/Fpga_proj/q_5_42|C:/Users/home/Documents/Fpga_proj/q_5_42/q_5_42.v|
+!s101 -O0
+!i113 1
+R5
+!s92 -O0 -vlog01compat -work work +incdir+C:/Users/home/Documents/Fpga_proj/q_5_42
+R6
+vq_5_42_tb
+!s110 1571511993
+!i10b 1
+!s100 :1Q;Sj0:T@eThzkTB3<8C2
+IY`DL@VY?7kHHl@c[c^GF@1
+R2
+R0
+w1571511990
+8C:/Users/home/Documents/Fpga_proj/q_5_42/q_5_42_tb.v
+FC:/Users/home/Documents/Fpga_proj/q_5_42/q_5_42_tb.v
+L0 1
+R3
+r1
+!s85 0
+31
+!s108 1571511993.000000
+!s107 C:/Users/home/Documents/Fpga_proj/q_5_42/q_5_42_tb.v|
+!s90 -##implicit##push_minusfile_path##|C:/Users/home/Documents/Fpga_proj/moore_binary_counter/simulation/modelsim/vlog.opt|-##implicit##pop_minusfile_path##|-reportprogress|300|-O0|-work|work|C:/Users/home/Documents/Fpga_proj/q_5_42/q_5_42_tb.v|
+!s101 -O0 -O0
+!i113 1
+o-O0 -O0 -work work
+R6

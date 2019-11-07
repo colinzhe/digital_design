@@ -1,0 +1,82 @@
+# Reading C:/intelFPGA/18.1/modelsim_ase/tcl/vsim/pref.tcl
+# do jk_ff_beh_st_run_msim_rtl_verilog.do
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Model Technology ModelSim - Intel FPGA Edition vmap 10.5b Lib Mapping Utility 2016.10 Oct  5 2016
+# vmap work rtl_work 
+# Copying C:/intelFPGA/18.1/modelsim_ase/win32aloem/../modelsim.ini to modelsim.ini
+# Modifying modelsim.ini
+# 
+# vlog -vlog01compat -work work +incdir+C:/Users/home/Documents/Fpga_proj/jk_ff_beh_st {C:/Users/home/Documents/Fpga_proj/jk_ff_beh_st/jk_ff_beh_st.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 17:59:16 on Oct 15,2019
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/home/Documents/Fpga_proj/jk_ff_beh_st" C:/Users/home/Documents/Fpga_proj/jk_ff_beh_st/jk_ff_beh_st.v 
+# -- Compiling module jk_ff_beh_st
+# 
+# Top level modules:
+# 	jk_ff_beh_st
+# End time: 17:59:16 on Oct 15,2019, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+vlog -reportprogress 300 -work work C:/Users/home/Documents/Fpga_proj/jk_ff_beh_st/jk_ff_beh_st_tb.v
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 17:59:40 on Oct 15,2019
+# vlog -reportprogress 300 -work work C:/Users/home/Documents/Fpga_proj/jk_ff_beh_st/jk_ff_beh_st_tb.v 
+# -- Compiling module jk_ff_beh_st_tb
+# 
+# Top level modules:
+# 	jk_ff_beh_st_tb
+# End time: 17:59:40 on Oct 15,2019, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vsim work.jk_ff_beh_st_tb
+# vsim work.jk_ff_beh_st_tb 
+# Start time: 17:59:43 on Oct 15,2019
+# Loading work.jk_ff_beh_st_tb
+# Loading work.jk_ff_beh_st
+add wave -position insertpoint  \
+sim:/jk_ff_beh_st_tb/rstn \
+sim:/jk_ff_beh_st_tb/clk \
+sim:/jk_ff_beh_st_tb/J \
+sim:/jk_ff_beh_st_tb/K \
+sim:/jk_ff_beh_st_tb/Q
+run
+# ** Note: $finish    : C:/Users/home/Documents/Fpga_proj/jk_ff_beh_st/jk_ff_beh_st_tb.v(20)
+#    Time: 300 ps  Iteration: 0  Instance: /jk_ff_beh_st_tb
+# 1
+# Break in Module jk_ff_beh_st_tb at C:/Users/home/Documents/Fpga_proj/jk_ff_beh_st/jk_ff_beh_st_tb.v line 20
+vlog -vlog01compat -work work +incdir+C:/Users/home/Documents/Fpga_proj/jk_ff_beh_st C:/Users/home/Documents/Fpga_proj/jk_ff_beh_st/jk_ff_beh_st.v
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 18:09:00 on Oct 15,2019
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/home/Documents/Fpga_proj/jk_ff_beh_st" C:/Users/home/Documents/Fpga_proj/jk_ff_beh_st/jk_ff_beh_st.v 
+# -- Compiling module jk_ff_beh_st
+# 
+# Top level modules:
+# 	jk_ff_beh_st
+# End time: 18:09:00 on Oct 15,2019, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vlog -work work C:/Users/home/Documents/Fpga_proj/jk_ff_beh_st/jk_ff_beh_st_tb.v
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 18:09:02 on Oct 15,2019
+# vlog -reportprogress 300 -work work C:/Users/home/Documents/Fpga_proj/jk_ff_beh_st/jk_ff_beh_st_tb.v 
+# -- Compiling module jk_ff_beh_st_tb
+# 
+# Top level modules:
+# 	jk_ff_beh_st_tb
+# End time: 18:09:02 on Oct 15,2019, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+restart
+# Loading work.jk_ff_beh_st_tb
+# Loading work.jk_ff_beh_st
+run
+# GetModuleFileName: The specified module could not be found.
+# 
+# 
+# ** Note: $finish    : C:/Users/home/Documents/Fpga_proj/jk_ff_beh_st/jk_ff_beh_st_tb.v(20)
+#    Time: 300 ps  Iteration: 0  Instance: /jk_ff_beh_st_tb
+# 1
+# Break in Module jk_ff_beh_st_tb at C:/Users/home/Documents/Fpga_proj/jk_ff_beh_st/jk_ff_beh_st_tb.v line 20
+# End time: 18:13:50 on Oct 15,2019, Elapsed time: 0:14:07
+# Errors: 0, Warnings: 0

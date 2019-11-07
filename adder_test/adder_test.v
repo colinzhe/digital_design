@@ -1,0 +1,7 @@
+module adder_test (x, y, z, C1, C2);
+	input x, y, z;
+	output C1, C2;
+	
+	assign C1 = (x && y) || (x && z) || (y && z);
+	assign C2 = (x && y) || (z && (x ^ y));
+endmodule

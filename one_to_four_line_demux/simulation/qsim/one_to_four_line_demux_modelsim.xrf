@@ -1,0 +1,17 @@
+vendor_name = ModelSim
+source_file = 1, C:/Users/home/Documents/Fpga_proj/one_to_four_line_demux/one_to_four_line_demux.v
+source_file = 1, C:/Users/home/Documents/Fpga_proj/one_to_four_line_demux/Waveform.vwf
+source_file = 1, C:/Users/home/Documents/Fpga_proj/one_to_four_line_demux/db/one_to_four_line_demux.cbx.xml
+design_name = one_to_four_line_demux
+instance = comp, \D[0]~output , D[0]~output, one_to_four_line_demux, 1
+instance = comp, \D[1]~output , D[1]~output, one_to_four_line_demux, 1
+instance = comp, \D[2]~output , D[2]~output, one_to_four_line_demux, 1
+instance = comp, \D[3]~output , D[3]~output, one_to_four_line_demux, 1
+instance = comp, \B~input , B~input, one_to_four_line_demux, 1
+instance = comp, \A~input , A~input, one_to_four_line_demux, 1
+instance = comp, \E~input , E~input, one_to_four_line_demux, 1
+instance = comp, \D~0 , D~0, one_to_four_line_demux, 1
+instance = comp, \D~1 , D~1, one_to_four_line_demux, 1
+instance = comp, \D~2 , D~2, one_to_four_line_demux, 1
+instance = comp, \D~3 , D~3, one_to_four_line_demux, 1
+instance = comp, \~QUARTUS_CREATED_GND~I , ~QUARTUS_CREATED_GND~I, one_to_four_line_demux, 1

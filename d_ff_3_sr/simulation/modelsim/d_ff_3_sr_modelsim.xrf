@@ -1,0 +1,14 @@
+vendor_name = ModelSim
+source_file = 1, C:/Users/home/Documents/Fpga_proj/common/sr_latch.v
+source_file = 1, C:/Users/home/Documents/Fpga_proj/d_ff_3_sr/d_ff_3_sr.v
+source_file = 1, C:/Users/home/Documents/Fpga_proj/d_ff_3_sr/db/d_ff_3_sr.cbx.xml
+design_name = d_ff_3_sr
+instance = comp, \Q~output , Q~output, d_ff_3_sr, 1
+instance = comp, \Qn~output , Qn~output, d_ff_3_sr, 1
+instance = comp, \D~input , D~input, d_ff_3_sr, 1
+instance = comp, \clk~input , clk~input, d_ff_3_sr, 1
+instance = comp, \sr_latch_1|G1 , sr_latch_1|G1, d_ff_3_sr, 1
+instance = comp, \G1~1 , G1~1, d_ff_3_sr, 1
+instance = comp, \sr_latch_0|G1 , sr_latch_0|G1, d_ff_3_sr, 1
+instance = comp, \sr_latch_0|G2 , sr_latch_0|G2, d_ff_3_sr, 1
+instance = comp, \~QUARTUS_CREATED_GND~I , ~QUARTUS_CREATED_GND~I, d_ff_3_sr, 1

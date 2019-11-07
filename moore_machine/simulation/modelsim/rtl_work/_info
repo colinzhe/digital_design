@@ -1,0 +1,53 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/Users/home/Documents/Fpga_proj/moore_machine/simulation/modelsim
+vmoore_machine
+!s110 1571248002
+!i10b 1
+!s100 GGQGAY[S19TnRdEJ=7`md3
+IVkfi9?gBj:bYicI4ZW=`a1
+Z1 VDg1SIo80bB@j0V0VzS_@n1
+R0
+w1571247976
+8C:/Users/home/Documents/Fpga_proj/moore_machine/moore_machine.v
+FC:/Users/home/Documents/Fpga_proj/moore_machine/moore_machine.v
+L0 1
+Z2 OV;L;10.5b;63
+r1
+!s85 0
+31
+!s108 1571248002.000000
+!s107 C:/Users/home/Documents/Fpga_proj/moore_machine/moore_machine.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/home/Documents/Fpga_proj/moore_machine|C:/Users/home/Documents/Fpga_proj/moore_machine/moore_machine.v|
+!i113 1
+o-vlog01compat -work work
+!s92 -vlog01compat -work work +incdir+C:/Users/home/Documents/Fpga_proj/moore_machine
+Z3 tCvgOpt 0
+vmoore_machine_tb
+!s110 1571248004
+!i10b 1
+!s100 oCgZzCaOWz;B5G12HL9i@1
+I:C_VZ?A;_V^;4n1GPf`Q]0
+R1
+R0
+w1571247984
+8C:/Users/home/Documents/Fpga_proj/moore_machine/more_machine_tb.v
+FC:/Users/home/Documents/Fpga_proj/moore_machine/more_machine_tb.v
+L0 1
+R2
+r1
+!s85 0
+31
+!s108 1571248004.000000
+!s107 C:/Users/home/Documents/Fpga_proj/moore_machine/more_machine_tb.v|
+!s90 -reportprogress|300|-work|work|C:/Users/home/Documents/Fpga_proj/moore_machine/more_machine_tb.v|
+!i113 1
+o-work work
+R3

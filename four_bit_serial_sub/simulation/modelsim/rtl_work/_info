@@ -1,0 +1,78 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/Users/home/Documents/Fpga_proj/four_bit_serial_sub/simulation/modelsim
+vex_6_1_usr
+Z1 !s110 1573011873
+!i10b 1
+!s100 a9[5`fMV>jCjdNASfBZ[A2
+IU_k@SG4G22=4VcM6]6;Bf2
+Z2 VDg1SIo80bB@j0V0VzS_@n1
+R0
+w1572744503
+8C:/Users/home/Documents/Fpga_proj/ex_6_1_usr/ex_6_1_usr.v
+FC:/Users/home/Documents/Fpga_proj/ex_6_1_usr/ex_6_1_usr.v
+L0 1
+Z3 OV;L;10.5b;63
+r1
+!s85 0
+31
+Z4 !s108 1573011873.000000
+!s107 C:/Users/home/Documents/Fpga_proj/ex_6_1_usr/ex_6_1_usr.v|
+!s90 -##implicit##push_minusfile_path##|C:/Users/home/Documents/Fpga_proj/moore_binary_counter/simulation/modelsim/vlog.opt|-##implicit##pop_minusfile_path##|-reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/home/Documents/Fpga_proj/ex_6_1_usr|C:/Users/home/Documents/Fpga_proj/ex_6_1_usr/ex_6_1_usr.v|
+!s101 -O0
+!i113 1
+Z5 o-O0 -vlog01compat -work work
+!s92 -O0 -vlog01compat -work work +incdir+C:/Users/home/Documents/Fpga_proj/ex_6_1_usr
+Z6 tDisableOpt 1 CvgOpt 0
+vfour_bit_serial_sub
+R1
+!i10b 1
+!s100 E9SKAo6DnM00NM=COlCTz1
+IWgF>89fF9gN^?9dY47ba]1
+R2
+R0
+w1573011711
+8C:/Users/home/Documents/Fpga_proj/four_bit_serial_sub/four_bit_serial_sub.v
+FC:/Users/home/Documents/Fpga_proj/four_bit_serial_sub/four_bit_serial_sub.v
+L0 1
+R3
+r1
+!s85 0
+31
+R4
+!s107 C:/Users/home/Documents/Fpga_proj/four_bit_serial_sub/four_bit_serial_sub.v|
+!s90 -##implicit##push_minusfile_path##|C:/Users/home/Documents/Fpga_proj/moore_binary_counter/simulation/modelsim/vlog.opt|-##implicit##pop_minusfile_path##|-reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/home/Documents/Fpga_proj/four_bit_serial_sub|C:/Users/home/Documents/Fpga_proj/four_bit_serial_sub/four_bit_serial_sub.v|
+!s101 -O0
+!i113 1
+R5
+!s92 -O0 -vlog01compat -work work +incdir+C:/Users/home/Documents/Fpga_proj/four_bit_serial_sub
+R6
+vfour_bit_serial_sub_tb
+!s110 1573011920
+!i10b 1
+!s100 E60DjL24af_G0[HTO>Xz?3
+IOl^F>PzhE74:zc1]jTDX22
+R2
+R0
+w1573011916
+8C:/Users/home/Documents/Fpga_proj/four_bit_serial_sub/four_bit_serial_sub_tb2.v
+FC:/Users/home/Documents/Fpga_proj/four_bit_serial_sub/four_bit_serial_sub_tb2.v
+L0 1
+R3
+r1
+!s85 0
+31
+!s108 1573011920.000000
+!s107 C:/Users/home/Documents/Fpga_proj/four_bit_serial_sub/four_bit_serial_sub_tb2.v|
+!s90 -##implicit##push_minusfile_path##|C:/Users/home/Documents/Fpga_proj/moore_binary_counter/simulation/modelsim/vlog.opt|-##implicit##pop_minusfile_path##|-reportprogress|300|-O0|-work|work|C:/Users/home/Documents/Fpga_proj/four_bit_serial_sub/four_bit_serial_sub_tb2.v|
+!s101 -O0 -O0
+!i113 1
+o-O0 -O0 -work work
+R6

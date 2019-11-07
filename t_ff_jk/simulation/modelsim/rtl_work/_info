@@ -1,0 +1,97 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/Users/home/Documents/Fpga_proj/t_ff/simulation/modelsim
+vd_ff_3_sr_wr
+Z1 !s110 1570646031
+!i10b 1
+!s100 OiT[J?eiZEU4D5b8C`CLG2
+Iz0mb@Rl8=7ac6nb4K>LmT0
+Z2 VDg1SIo80bB@j0V0VzS_@n1
+R0
+w1570643121
+8C:/Users/home/Documents/Fpga_proj/common/d_ff_3_sr_wr.v
+FC:/Users/home/Documents/Fpga_proj/common/d_ff_3_sr_wr.v
+L0 1
+Z3 OV;L;10.5b;63
+r1
+!s85 0
+31
+Z4 !s108 1570646031.000000
+!s107 C:/Users/home/Documents/Fpga_proj/common/d_ff_3_sr_wr.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/home/Documents/Fpga_proj/common|C:/Users/home/Documents/Fpga_proj/common/d_ff_3_sr_wr.v|
+!i113 1
+Z5 o-vlog01compat -work work
+Z6 !s92 -vlog01compat -work work +incdir+C:/Users/home/Documents/Fpga_proj/common
+Z7 tCvgOpt 0
+vjk_ff
+R1
+!i10b 1
+!s100 g[obWOimWjPgz[OBKGn9e0
+I99i11d5g8ni[ZUKALhFC63
+R2
+R0
+w1570644959
+8C:/Users/home/Documents/Fpga_proj/common/jk_ff.v
+FC:/Users/home/Documents/Fpga_proj/common/jk_ff.v
+L0 1
+R3
+r1
+!s85 0
+31
+R4
+!s107 C:/Users/home/Documents/Fpga_proj/common/jk_ff.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/home/Documents/Fpga_proj/common|C:/Users/home/Documents/Fpga_proj/common/jk_ff.v|
+!i113 1
+R5
+R6
+R7
+vt_ff_jk
+R1
+!i10b 1
+!s100 BiBN0z;V=Vg68Ggdg8g6F1
+I@QGFe__N[:=ER[^e;1Fdd1
+R2
+R0
+w1570645924
+8C:/Users/home/Documents/Fpga_proj/t_ff/t_ff_jk.v
+FC:/Users/home/Documents/Fpga_proj/t_ff/t_ff_jk.v
+L0 1
+R3
+r1
+!s85 0
+31
+R4
+!s107 C:/Users/home/Documents/Fpga_proj/t_ff/t_ff_jk.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/home/Documents/Fpga_proj/t_ff|C:/Users/home/Documents/Fpga_proj/t_ff/t_ff_jk.v|
+!i113 1
+R5
+!s92 -vlog01compat -work work +incdir+C:/Users/home/Documents/Fpga_proj/t_ff
+R7
+vt_ff_jk_tb
+!s110 1570646174
+!i10b 1
+!s100 S3?3TEo2VEPX_3_7QW[JU2
+I0a@?mz>W5@0nTghCm26G^3
+R2
+R0
+w1570646169
+8C:/Users/home/Documents/Fpga_proj/t_ff/t_ff_jk_tb.v
+FC:/Users/home/Documents/Fpga_proj/t_ff/t_ff_jk_tb.v
+L0 1
+R3
+r1
+!s85 0
+31
+!s108 1570646174.000000
+!s107 C:/Users/home/Documents/Fpga_proj/t_ff/t_ff_jk_tb.v|
+!s90 -reportprogress|300|-work|work|C:/Users/home/Documents/Fpga_proj/t_ff/t_ff_jk_tb.v|
+!i113 1
+o-work work
+R7

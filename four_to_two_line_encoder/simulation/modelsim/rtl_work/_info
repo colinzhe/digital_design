@@ -1,0 +1,53 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/Users/home/Documents/Fpga_proj/four_to_two_line_encoder/simulation/modelsim
+vfour_to_two_pri_encoder_beh
+!s110 1570487235
+!i10b 1
+!s100 PET5N]KPJkEE0OZM7i=;03
+I@UBECzV;kl1MzMkWfo;ZJ2
+Z1 VDg1SIo80bB@j0V0VzS_@n1
+R0
+w1570486388
+8C:/Users/home/Documents/Fpga_proj/four_to_two_line_encoder/four_to_two_pri_encoder_beh.v
+FC:/Users/home/Documents/Fpga_proj/four_to_two_line_encoder/four_to_two_pri_encoder_beh.v
+L0 1
+Z2 OV;L;10.5b;63
+r1
+!s85 0
+31
+!s108 1570487235.000000
+!s107 C:/Users/home/Documents/Fpga_proj/four_to_two_line_encoder/four_to_two_pri_encoder_beh.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/home/Documents/Fpga_proj/four_to_two_line_encoder|C:/Users/home/Documents/Fpga_proj/four_to_two_line_encoder/four_to_two_pri_encoder_beh.v|
+!i113 1
+o-vlog01compat -work work
+!s92 -vlog01compat -work work +incdir+C:/Users/home/Documents/Fpga_proj/four_to_two_line_encoder
+Z3 tCvgOpt 0
+vfour_to_two_pri_encoder_beh_tb
+!s110 1570488684
+!i10b 1
+!s100 9NI58l4kD1ZFhRATn^[lQ1
+INiQJhOA_Zhg7nKjez^g;a3
+R1
+R0
+w1570488680
+8C:/Users/home/Documents/Fpga_proj/four_to_two_line_encoder/four_to_two_pri_encoder_beh_tb.v
+FC:/Users/home/Documents/Fpga_proj/four_to_two_line_encoder/four_to_two_pri_encoder_beh_tb.v
+L0 1
+R2
+r1
+!s85 0
+31
+!s108 1570488684.000000
+!s107 C:/Users/home/Documents/Fpga_proj/four_to_two_line_encoder/four_to_two_pri_encoder_beh_tb.v|
+!s90 -reportprogress|300|-work|work|C:/Users/home/Documents/Fpga_proj/four_to_two_line_encoder/four_to_two_pri_encoder_beh_tb.v|
+!i113 1
+o-work work
+R3

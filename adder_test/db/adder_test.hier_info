@@ -1,0 +1,14 @@
+|adder_test
+x => C1.IN0
+x => C1.IN0
+x => C2.IN0
+y => C1.IN1
+y => C1.IN0
+y => C2.IN1
+z => C1.IN1
+z => C1.IN1
+z => C2.IN1
+C1 << C1.DB_MAX_OUTPUT_PORT_TYPE
+C2 << C2.DB_MAX_OUTPUT_PORT_TYPE
+
+

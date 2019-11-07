@@ -1,0 +1,38 @@
+|four_bit_usr
+rstn => shift_reg[0]~reg0.ACLR
+rstn => shift_reg[1]~reg0.ACLR
+rstn => shift_reg[2]~reg0.ACLR
+rstn => shift_reg[3]~reg0.ACLR
+clk => shift_reg[0]~reg0.CLK
+clk => shift_reg[1]~reg0.CLK
+clk => shift_reg[2]~reg0.CLK
+clk => shift_reg[3]~reg0.CLK
+mode[0] => Mux0.IN1
+mode[0] => Mux1.IN1
+mode[0] => Mux2.IN1
+mode[0] => Mux3.IN1
+mode[0] => Equal0.IN3
+mode[0] => Equal1.IN3
+mode[1] => Mux0.IN0
+mode[1] => Mux1.IN0
+mode[1] => Mux2.IN0
+mode[1] => Mux3.IN0
+mode[1] => Equal0.IN2
+mode[1] => Equal1.IN2
+par_in[0] => Mux3.IN2
+par_in[1] => Mux2.IN2
+par_in[2] => Mux1.IN2
+par_in[3] => Mux0.IN2
+SI => Mux0.IN3
+SI => Mux3.IN3
+par_out[0] <= shift_reg[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+par_out[1] <= shift_reg[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+par_out[2] <= shift_reg[2]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+par_out[3] <= shift_reg[3]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+shift_reg[0] <= shift_reg[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+shift_reg[1] <= shift_reg[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+shift_reg[2] <= shift_reg[2]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+shift_reg[3] <= shift_reg[3]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+SO <= SO.DB_MAX_OUTPUT_PORT_TYPE
+
+

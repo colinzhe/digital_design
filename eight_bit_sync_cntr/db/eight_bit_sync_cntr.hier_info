@@ -1,0 +1,101 @@
+|eight_bit_sync_cntr
+rstn => rstn.IN2
+clk => clk.IN2
+cnt_en => cnt_en.IN1
+count[0] <= four_bit_sync_cntr:cntr0.count
+count[1] <= four_bit_sync_cntr:cntr0.count
+count[2] <= four_bit_sync_cntr:cntr0.count
+count[3] <= four_bit_sync_cntr:cntr0.count
+count[4] <= four_bit_sync_cntr:cntr1.count
+count[5] <= four_bit_sync_cntr:cntr1.count
+count[6] <= four_bit_sync_cntr:cntr1.count
+count[7] <= four_bit_sync_cntr:cntr1.count
+carry <= four_bit_sync_cntr:cntr1.carry
+
+
+|eight_bit_sync_cntr|four_bit_sync_cntr:cntr0
+rstn => rstn.IN4
+clk => clk.IN4
+cnt_en => T_in[0].IN1
+count[0] <= t_ff:tff_A0.Q
+count[1] <= t_ff:tff_A1.Q
+count[2] <= t_ff:tff_A2.Q
+count[3] <= t_ff:tff_A3.Q
+carry <= carry.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|eight_bit_sync_cntr|four_bit_sync_cntr:cntr0|t_ff:tff_A0
+rstn => Q~reg0.ACLR
+clk => Q~reg0.CLK
+T => Q~reg0.ENA
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Qn <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|eight_bit_sync_cntr|four_bit_sync_cntr:cntr0|t_ff:tff_A1
+rstn => Q~reg0.ACLR
+clk => Q~reg0.CLK
+T => Q~reg0.ENA
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Qn <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|eight_bit_sync_cntr|four_bit_sync_cntr:cntr0|t_ff:tff_A2
+rstn => Q~reg0.ACLR
+clk => Q~reg0.CLK
+T => Q~reg0.ENA
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Qn <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|eight_bit_sync_cntr|four_bit_sync_cntr:cntr0|t_ff:tff_A3
+rstn => Q~reg0.ACLR
+clk => Q~reg0.CLK
+T => Q~reg0.ENA
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Qn <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|eight_bit_sync_cntr|four_bit_sync_cntr:cntr1
+rstn => rstn.IN4
+clk => clk.IN4
+cnt_en => T_in[0].IN1
+count[0] <= t_ff:tff_A0.Q
+count[1] <= t_ff:tff_A1.Q
+count[2] <= t_ff:tff_A2.Q
+count[3] <= t_ff:tff_A3.Q
+carry <= carry.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|eight_bit_sync_cntr|four_bit_sync_cntr:cntr1|t_ff:tff_A0
+rstn => Q~reg0.ACLR
+clk => Q~reg0.CLK
+T => Q~reg0.ENA
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Qn <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|eight_bit_sync_cntr|four_bit_sync_cntr:cntr1|t_ff:tff_A1
+rstn => Q~reg0.ACLR
+clk => Q~reg0.CLK
+T => Q~reg0.ENA
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Qn <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|eight_bit_sync_cntr|four_bit_sync_cntr:cntr1|t_ff:tff_A2
+rstn => Q~reg0.ACLR
+clk => Q~reg0.CLK
+T => Q~reg0.ENA
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Qn <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|eight_bit_sync_cntr|four_bit_sync_cntr:cntr1|t_ff:tff_A3
+rstn => Q~reg0.ACLR
+clk => Q~reg0.CLK
+T => Q~reg0.ENA
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Qn <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+

@@ -1,0 +1,20 @@
+|jk_ff
+rstn => rstn.IN1
+clk => clk.IN1
+J => D.IN1
+K => D.IN1
+Q << d_ff_3_sr_wr:d_ff_3_sr_wr_0.Q
+Qn << d_ff_3_sr_wr:d_ff_3_sr_wr_0.Qn
+
+
+|jk_ff|d_ff_3_sr_wr:d_ff_3_sr_wr_0
+D => G4.IN1
+clk => G2.IN1
+clk => G3.IN0
+rstn => G2.IN2
+rstn => G4.IN2
+rstn => G6.IN1
+Q <= Q.DB_MAX_OUTPUT_PORT_TYPE
+Qn <= G6.DB_MAX_OUTPUT_PORT_TYPE
+
+

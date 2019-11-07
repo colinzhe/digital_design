@@ -1,0 +1,96 @@
+# Reading C:/intelFPGA/18.1/modelsim_ase/tcl/vsim/pref.tcl
+# do d_ff_3_sr_run_msim_rtl_verilog.do
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Model Technology ModelSim - Intel FPGA Edition vmap 10.5b Lib Mapping Utility 2016.10 Oct  5 2016
+# vmap work rtl_work 
+# Copying C:/intelFPGA/18.1/modelsim_ase/win32aloem/../modelsim.ini to modelsim.ini
+# Modifying modelsim.ini
+# 
+# vlog -vlog01compat -work work +incdir+C:/Users/home/Documents/Fpga_proj/common {C:/Users/home/Documents/Fpga_proj/common/sr_latch.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 10:14:30 on Oct 09,2019
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/home/Documents/Fpga_proj/common" C:/Users/home/Documents/Fpga_proj/common/sr_latch.v 
+# -- Compiling module sr_latch
+# 
+# Top level modules:
+# 	sr_latch
+# End time: 10:14:30 on Oct 09,2019, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+C:/Users/home/Documents/Fpga_proj/d_ff_3_sr {C:/Users/home/Documents/Fpga_proj/d_ff_3_sr/d_ff_3_sr.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 10:14:30 on Oct 09,2019
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/home/Documents/Fpga_proj/d_ff_3_sr" C:/Users/home/Documents/Fpga_proj/d_ff_3_sr/d_ff_3_sr.v 
+# -- Compiling module d_ff_3_sr
+# 
+# Top level modules:
+# 	d_ff_3_sr
+# End time: 10:14:30 on Oct 09,2019, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+vlog -reportprogress 300 -work work C:/Users/home/Documents/Fpga_proj/d_ff_3_sr/d_ff_3_sr_tb.v
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 10:14:39 on Oct 09,2019
+# vlog -reportprogress 300 -work work C:/Users/home/Documents/Fpga_proj/d_ff_3_sr/d_ff_3_sr_tb.v 
+# -- Compiling module d_ff_3_sr_tb
+# 
+# Top level modules:
+# 	d_ff_3_sr_tb
+# End time: 10:14:39 on Oct 09,2019, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vsim work.d_ff_3_sr_tb
+# vsim work.d_ff_3_sr_tb 
+# Start time: 10:14:43 on Oct 09,2019
+# Loading work.d_ff_3_sr_tb
+# Loading work.d_ff_3_sr
+# Loading work.sr_latch
+add wave -position insertpoint  \
+sim:/d_ff_3_sr_tb/D \
+sim:/d_ff_3_sr_tb/clk \
+sim:/d_ff_3_sr_tb/Q \
+sim:/d_ff_3_sr_tb/Qn
+# ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
+#           File in use by: home  Hostname: DESKTOP-13LUBCD  ProcessID: 16268
+#           Attempting to use alternate WLF file "./wlftfjt92j".
+# ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
+#           Using alternate file: ./wlftfjt92j
+run
+# ** Note: $finish    : C:/Users/home/Documents/Fpga_proj/d_ff_3_sr/d_ff_3_sr_tb.v(21)
+#    Time: 100 ps  Iteration: 0  Instance: /d_ff_3_sr_tb
+# 1
+# Break in Module d_ff_3_sr_tb at C:/Users/home/Documents/Fpga_proj/d_ff_3_sr/d_ff_3_sr_tb.v line 21
+vlog -work work C:/Users/home/Documents/Fpga_proj/d_ff_3_sr/d_ff_3_sr_tb.v
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 10:16:39 on Oct 09,2019
+# vlog -reportprogress 300 -work work C:/Users/home/Documents/Fpga_proj/d_ff_3_sr/d_ff_3_sr_tb.v 
+# -- Compiling module d_ff_3_sr_tb
+# 
+# Top level modules:
+# 	d_ff_3_sr_tb
+# End time: 10:16:40 on Oct 09,2019, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+vlog -work work C:/Users/home/Documents/Fpga_proj/d_ff_3_sr/d_ff_3_sr_tb.v
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 10:16:44 on Oct 09,2019
+# vlog -reportprogress 300 -work work C:/Users/home/Documents/Fpga_proj/d_ff_3_sr/d_ff_3_sr_tb.v 
+# -- Compiling module d_ff_3_sr_tb
+# 
+# Top level modules:
+# 	d_ff_3_sr_tb
+# End time: 10:16:44 on Oct 09,2019, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+restart
+# Loading work.d_ff_3_sr_tb
+run
+# GetModuleFileName: The specified module could not be found.
+# 
+# 
+# ** Note: $finish    : C:/Users/home/Documents/Fpga_proj/d_ff_3_sr/d_ff_3_sr_tb.v(21)
+#    Time: 100 ps  Iteration: 0  Instance: /d_ff_3_sr_tb
+# 1
+# Break in Module d_ff_3_sr_tb at C:/Users/home/Documents/Fpga_proj/d_ff_3_sr/d_ff_3_sr_tb.v line 21
+# End time: 11:19:22 on Oct 09,2019, Elapsed time: 1:04:39
+# Errors: 0, Warnings: 2

@@ -1,0 +1,55 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/Users/home/Documents/Fpga_proj/jk_ff_mux/simulation/modelsim
+vjk_ff_mux
+!s110 1571324530
+!i10b 1
+!s100 0XV_[lBF[]GX_^PS7VlX[1
+IE^G;YR88GL2[W21zZG=>W1
+Z1 VDg1SIo80bB@j0V0VzS_@n1
+R0
+w1571324475
+8C:/Users/home/Documents/Fpga_proj/jk_ff_mux/jk_ff_mux.v
+FC:/Users/home/Documents/Fpga_proj/jk_ff_mux/jk_ff_mux.v
+L0 1
+Z2 OV;L;10.5b;63
+r1
+!s85 0
+31
+!s108 1571324530.000000
+!s107 C:/Users/home/Documents/Fpga_proj/jk_ff_mux/jk_ff_mux.v|
+!s90 -##implicit##push_minusfile_path##|C:/Users/home/Documents/Fpga_proj/moore_binary_counter/simulation/modelsim/vlog.opt|-##implicit##pop_minusfile_path##|-reportprogress|300|-O0|-vlog01compat|-work|work|+incdir+C:/Users/home/Documents/Fpga_proj/jk_ff_mux|C:/Users/home/Documents/Fpga_proj/jk_ff_mux/jk_ff_mux.v|
+!s101 -O0 -O0
+!i113 1
+o-O0 -O0 -vlog01compat -work work
+!s92 -O0 -O0 -vlog01compat -work work +incdir+C:/Users/home/Documents/Fpga_proj/jk_ff_mux
+Z3 tDisableOpt 1 CvgOpt 0
+vjk_ff_mux_tb
+!s110 1571324407
+!i10b 1
+!s100 :MzG8mzRjhPJQSDEzDRU21
+I9gV>?@zo]CTMYe`a2U3aK1
+R1
+R0
+w1571324400
+8C:/Users/home/Documents/Fpga_proj/jk_ff_mux/jk_ff_mux_tb.v
+FC:/Users/home/Documents/Fpga_proj/jk_ff_mux/jk_ff_mux_tb.v
+L0 1
+R2
+r1
+!s85 0
+31
+!s108 1571324407.000000
+!s107 C:/Users/home/Documents/Fpga_proj/jk_ff_mux/jk_ff_mux_tb.v|
+!s90 -##implicit##push_minusfile_path##|C:/Users/home/Documents/Fpga_proj/moore_binary_counter/simulation/modelsim/vlog.opt|-##implicit##pop_minusfile_path##|-reportprogress|300|-work|work|C:/Users/home/Documents/Fpga_proj/jk_ff_mux/jk_ff_mux_tb.v|
+!s101 -O0
+!i113 1
+o-O0 -work work
+R3

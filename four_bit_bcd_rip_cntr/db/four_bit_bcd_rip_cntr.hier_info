@@ -1,0 +1,45 @@
+|four_bit_bcd_rip_cntr
+rstn => rstn.IN4
+cnt_en => cnt_en.IN1
+count[0] <= count[0].DB_MAX_OUTPUT_PORT_TYPE
+count[1] <= count[1].DB_MAX_OUTPUT_PORT_TYPE
+count[2] <= jk_ff:jkff_A2.Q
+count[3] <= jk_ff:jkff_A3.Q
+
+
+|four_bit_bcd_rip_cntr|jk_ff:jkff_A0
+rstn => Q~reg0.ACLR
+clk => Q~reg0.CLK
+J => Q.IN1
+K => Q.IN1
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Qn <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|four_bit_bcd_rip_cntr|jk_ff:jkff_A1
+rstn => Q~reg0.ACLR
+clk => Q~reg0.CLK
+J => Q.IN1
+K => Q.IN1
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Qn <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|four_bit_bcd_rip_cntr|jk_ff:jkff_A2
+rstn => Q~reg0.ACLR
+clk => Q~reg0.CLK
+J => Q.IN1
+K => Q.IN1
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Qn <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|four_bit_bcd_rip_cntr|jk_ff:jkff_A3
+rstn => Q~reg0.ACLR
+clk => Q~reg0.CLK
+J => Q.IN1
+K => Q.IN1
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Qn <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+

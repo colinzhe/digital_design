@@ -1,0 +1,15 @@
+vendor_name = ModelSim
+source_file = 1, C:/Users/home/Documents/Fpga_proj/d_ff_master_slave/d_ff_master_slave_tb.v
+source_file = 1, C:/Users/home/Documents/Fpga_proj/d_ff_master_slave/d_ff_master_slave.v
+source_file = 1, C:/Users/home/Documents/Fpga_proj/common/sr_latch.v
+source_file = 1, C:/Users/home/Documents/Fpga_proj/common/d_latch.v
+source_file = 1, C:/Users/home/Documents/Fpga_proj/d_ff_master_slave/db/d_ff_master_slave.cbx.xml
+design_name = d_ff_master_slave
+instance = comp, \Q~output , Q~output, d_ff_master_slave, 1
+instance = comp, \Qn~output , Qn~output, d_ff_master_slave, 1
+instance = comp, \D~input , D~input, d_ff_master_slave, 1
+instance = comp, \clk~input , clk~input, d_ff_master_slave, 1
+instance = comp, \d_latch_master|sr_latch_0|G1~0 , d_latch_master|sr_latch_0|G1~0, d_ff_master_slave, 1
+instance = comp, \d_latch_slave|sr_latch_0|G1~0 , d_latch_slave|sr_latch_0|G1~0, d_ff_master_slave, 1
+instance = comp, \d_latch_slave|sr_latch_0|G2 , d_latch_slave|sr_latch_0|G2, d_ff_master_slave, 1
+instance = comp, \~QUARTUS_CREATED_GND~I , ~QUARTUS_CREATED_GND~I, d_ff_master_slave, 1

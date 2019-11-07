@@ -1,0 +1,75 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/Users/home/Documents/Fpga_proj/d_ff_3_sr/simulation/modelsim
+vd_ff_3_sr
+Z1 !s110 1570630470
+!i10b 1
+!s100 iWJYSNa5P6ISbg75;78R22
+I8?gC[COKU@J9FgcH]W9]:1
+Z2 VDg1SIo80bB@j0V0VzS_@n1
+R0
+w1570566267
+8C:/Users/home/Documents/Fpga_proj/d_ff_3_sr/d_ff_3_sr.v
+FC:/Users/home/Documents/Fpga_proj/d_ff_3_sr/d_ff_3_sr.v
+L0 1
+Z3 OV;L;10.5b;63
+r1
+!s85 0
+31
+Z4 !s108 1570630470.000000
+!s107 C:/Users/home/Documents/Fpga_proj/d_ff_3_sr/d_ff_3_sr.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/home/Documents/Fpga_proj/d_ff_3_sr|C:/Users/home/Documents/Fpga_proj/d_ff_3_sr/d_ff_3_sr.v|
+!i113 1
+Z5 o-vlog01compat -work work
+!s92 -vlog01compat -work work +incdir+C:/Users/home/Documents/Fpga_proj/d_ff_3_sr
+Z6 tCvgOpt 0
+vd_ff_3_sr_tb
+!s110 1570630604
+!i10b 1
+!s100 eEgi06ZRHLS;bgME;006]1
+IZVH<8zf`PFic<<OMOCV8?2
+R2
+R0
+w1570566825
+8C:/Users/home/Documents/Fpga_proj/d_ff_3_sr/d_ff_3_sr_tb.v
+FC:/Users/home/Documents/Fpga_proj/d_ff_3_sr/d_ff_3_sr_tb.v
+L0 1
+R3
+r1
+!s85 0
+31
+!s108 1570630604.000000
+!s107 C:/Users/home/Documents/Fpga_proj/d_ff_3_sr/d_ff_3_sr_tb.v|
+!s90 -reportprogress|300|-work|work|C:/Users/home/Documents/Fpga_proj/d_ff_3_sr/d_ff_3_sr_tb.v|
+!i113 1
+o-work work
+R6
+vsr_latch
+R1
+!i10b 1
+!s100 ;1AKeC_VaWYlF4hlMPBz[2
+I_Gk9WO3_QCfM@P4KH[1a<2
+R2
+R0
+w1570555881
+8C:/Users/home/Documents/Fpga_proj/common/sr_latch.v
+FC:/Users/home/Documents/Fpga_proj/common/sr_latch.v
+L0 1
+R3
+r1
+!s85 0
+31
+R4
+!s107 C:/Users/home/Documents/Fpga_proj/common/sr_latch.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/home/Documents/Fpga_proj/common|C:/Users/home/Documents/Fpga_proj/common/sr_latch.v|
+!i113 1
+R5
+!s92 -vlog01compat -work work +incdir+C:/Users/home/Documents/Fpga_proj/common
+R6

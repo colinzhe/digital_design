@@ -1,0 +1,78 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/Users/home/Documents/Fpga_proj/four_bit_rip_cntr/simulation/modelsim
+vfour_bit_rip_cntr
+Z1 !s110 1572316403
+!i10b 1
+!s100 MfC9`13R_4^EK@jlz=`Uc1
+I[L7[1EbBdWD9mj4bk7RLd3
+Z2 VDg1SIo80bB@j0V0VzS_@n1
+R0
+Z3 w1572316377
+Z4 8C:/Users/home/Documents/Fpga_proj/four_bit_rip_cntr/four_bit_rip_cntr.v
+Z5 FC:/Users/home/Documents/Fpga_proj/four_bit_rip_cntr/four_bit_rip_cntr.v
+L0 1
+Z6 OV;L;10.5b;63
+r1
+!s85 0
+31
+Z7 !s108 1572316403.000000
+Z8 !s107 C:/Users/home/Documents/Fpga_proj/four_bit_rip_cntr/four_bit_rip_cntr.v|
+Z9 !s90 -##implicit##push_minusfile_path##|C:/Users/home/Documents/Fpga_proj/moore_binary_counter/simulation/modelsim/vlog.opt|-##implicit##pop_minusfile_path##|-reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/home/Documents/Fpga_proj/four_bit_rip_cntr|C:/Users/home/Documents/Fpga_proj/four_bit_rip_cntr/four_bit_rip_cntr.v|
+!s101 -O0
+!i113 1
+Z10 o-O0 -vlog01compat -work work
+Z11 !s92 -O0 -vlog01compat -work work +incdir+C:/Users/home/Documents/Fpga_proj/four_bit_rip_cntr
+Z12 tDisableOpt 1 CvgOpt 0
+vfour_bit_rip_cntr_tb
+!s110 1572316418
+!i10b 1
+!s100 QUBHo97YC8;?=z^iU9c]K2
+In[jeZd]L?;;_iBbW9A6DA0
+R2
+R0
+w1572315854
+8C:/Users/home/Documents/Fpga_proj/four_bit_rip_cntr/four_bit_rip_cntr_tb.v
+FC:/Users/home/Documents/Fpga_proj/four_bit_rip_cntr/four_bit_rip_cntr_tb.v
+L0 1
+R6
+r1
+!s85 0
+31
+!s108 1572316418.000000
+!s107 C:/Users/home/Documents/Fpga_proj/four_bit_rip_cntr/four_bit_rip_cntr_tb.v|
+!s90 -##implicit##push_minusfile_path##|C:/Users/home/Documents/Fpga_proj/moore_binary_counter/simulation/modelsim/vlog.opt|-##implicit##pop_minusfile_path##|-reportprogress|300|-work|work|C:/Users/home/Documents/Fpga_proj/four_bit_rip_cntr/four_bit_rip_cntr_tb.v|
+!s101 -O0
+!i113 1
+o-O0 -work work
+R12
+vt_ff
+R1
+!i10b 1
+!s100 SLeX8kMaok>m1l]eQiFRM2
+IL`2>2c^Y<8EVXCVXU:Me>0
+R2
+R0
+R3
+R4
+R5
+L0 38
+R6
+r1
+!s85 0
+31
+R7
+R8
+R9
+!s101 -O0
+!i113 1
+R10
+R11
+R12

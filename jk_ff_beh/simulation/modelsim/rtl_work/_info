@@ -1,0 +1,75 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/Users/home/Documents/Fpga_proj/jk_ff_beh/simulation/modelsim
+vd_ff_beh
+Z1 !s110 1571171967
+!i10b 1
+!s100 oBCbS7O;aDokiZ`XB9=zP1
+Idz7HlLiPmMjG];MRCYU^I2
+Z2 VDg1SIo80bB@j0V0VzS_@n1
+R0
+w1571169784
+8C:/Users/home/Documents/Fpga_proj/common/d_ff_beh.v
+FC:/Users/home/Documents/Fpga_proj/common/d_ff_beh.v
+L0 1
+Z3 OV;L;10.5b;63
+r1
+!s85 0
+31
+Z4 !s108 1571171967.000000
+!s107 C:/Users/home/Documents/Fpga_proj/common/d_ff_beh.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/home/Documents/Fpga_proj/common|C:/Users/home/Documents/Fpga_proj/common/d_ff_beh.v|
+!i113 1
+Z5 o-vlog01compat -work work
+!s92 -vlog01compat -work work +incdir+C:/Users/home/Documents/Fpga_proj/common
+Z6 tCvgOpt 0
+vjk_ff_beh
+R1
+!i10b 1
+!s100 8KBLXR:a<V?niW_]N][W^3
+IKOUNfLz50E7g2e;V_z@iR3
+R2
+R0
+w1571171560
+8C:/Users/home/Documents/Fpga_proj/jk_ff_beh/jk_ff_beh.v
+FC:/Users/home/Documents/Fpga_proj/jk_ff_beh/jk_ff_beh.v
+L0 1
+R3
+r1
+!s85 0
+31
+R4
+!s107 C:/Users/home/Documents/Fpga_proj/jk_ff_beh/jk_ff_beh.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/home/Documents/Fpga_proj/jk_ff_beh|C:/Users/home/Documents/Fpga_proj/jk_ff_beh/jk_ff_beh.v|
+!i113 1
+R5
+!s92 -vlog01compat -work work +incdir+C:/Users/home/Documents/Fpga_proj/jk_ff_beh
+R6
+vjk_ff_beh_tb
+!s110 1571172053
+!i10b 1
+!s100 92PZTBSZal58RV3S9FJ5=3
+IAQ7mg?RQWNDKhXf00Yj5c1
+R2
+R0
+w1571172046
+8C:/Users/home/Documents/Fpga_proj/jk_ff_beh/jk_ff_beh_tb.v
+FC:/Users/home/Documents/Fpga_proj/jk_ff_beh/jk_ff_beh_tb.v
+L0 1
+R3
+r1
+!s85 0
+31
+!s108 1571172053.000000
+!s107 C:/Users/home/Documents/Fpga_proj/jk_ff_beh/jk_ff_beh_tb.v|
+!s90 -reportprogress|300|-work|work|C:/Users/home/Documents/Fpga_proj/jk_ff_beh/jk_ff_beh_tb.v|
+!i113 1
+o-work work
+R6

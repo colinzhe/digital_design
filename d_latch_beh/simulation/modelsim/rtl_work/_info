@@ -1,0 +1,53 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/Users/home/Documents/Fpga_proj/d_latch_beh/simulation/modelsim
+vd_latch_beh
+!s110 1571168824
+!i10b 1
+!s100 :<n1;z7@l@ko2Q]SonY>T2
+IXX>URBz0F1:AeZ:oQS2cI1
+Z1 VDg1SIo80bB@j0V0VzS_@n1
+R0
+w1571168293
+8C:/Users/home/Documents/Fpga_proj/d_latch_beh/d_latch_beh.v
+FC:/Users/home/Documents/Fpga_proj/d_latch_beh/d_latch_beh.v
+L0 1
+Z2 OV;L;10.5b;63
+r1
+!s85 0
+31
+!s108 1571168824.000000
+!s107 C:/Users/home/Documents/Fpga_proj/d_latch_beh/d_latch_beh.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/home/Documents/Fpga_proj/d_latch_beh|C:/Users/home/Documents/Fpga_proj/d_latch_beh/d_latch_beh.v|
+!i113 1
+o-vlog01compat -work work
+!s92 -vlog01compat -work work +incdir+C:/Users/home/Documents/Fpga_proj/d_latch_beh
+Z3 tCvgOpt 0
+vd_latch_beh_tb
+!s110 1571168916
+!i10b 1
+!s100 EfIF;]O6C1JBLP1h:^37V1
+IE4ZZ0_?2Y;67IcL14hA`L1
+R1
+R0
+w1571168910
+8C:/Users/home/Documents/Fpga_proj/d_latch_beh/d_latch_beh_tb.v
+FC:/Users/home/Documents/Fpga_proj/d_latch_beh/d_latch_beh_tb.v
+L0 1
+R2
+r1
+!s85 0
+31
+!s108 1571168916.000000
+!s107 C:/Users/home/Documents/Fpga_proj/d_latch_beh/d_latch_beh_tb.v|
+!s90 -reportprogress|300|-work|work|C:/Users/home/Documents/Fpga_proj/d_latch_beh/d_latch_beh_tb.v|
+!i113 1
+o-work work
+R3

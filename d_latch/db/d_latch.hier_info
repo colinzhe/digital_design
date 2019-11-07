@@ -1,0 +1,16 @@
+|d_latch
+D => G1.IN0
+D => G2.IN0
+En => G1.IN1
+En => G2.IN1
+Q << sr_latch:sr_latch_0.Q
+Qn << sr_latch:sr_latch_0.Qn
+
+
+|d_latch|sr_latch:sr_latch_0
+S => G1.IN1
+R => G2.IN0
+Q <= Q.DB_MAX_OUTPUT_PORT_TYPE
+Qn <= G2.DB_MAX_OUTPUT_PORT_TYPE
+
+

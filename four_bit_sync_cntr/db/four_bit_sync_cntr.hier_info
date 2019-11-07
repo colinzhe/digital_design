@@ -1,0 +1,47 @@
+|four_bit_sync_cntr
+rstn => rstn.IN4
+clk => clk.IN4
+cnt_en => T_in[0].IN1
+count[0] <= t_ff:tff_A0.Q
+count[1] <= t_ff:tff_A1.Q
+count[2] <= t_ff:tff_A2.Q
+count[3] <= t_ff:tff_A3.Q
+carry <= carry.DB_MAX_OUTPUT_PORT_TYPE
+T_in[0] <= T_in[0].DB_MAX_OUTPUT_PORT_TYPE
+T_in[1] <= T_in[1].DB_MAX_OUTPUT_PORT_TYPE
+T_in[2] <= T_in[2].DB_MAX_OUTPUT_PORT_TYPE
+T_in[3] <= T_in[3].DB_MAX_OUTPUT_PORT_TYPE
+
+
+|four_bit_sync_cntr|t_ff:tff_A0
+rstn => Q~reg0.ACLR
+clk => Q~reg0.CLK
+T => Q~reg0.ENA
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Qn <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|four_bit_sync_cntr|t_ff:tff_A1
+rstn => Q~reg0.ACLR
+clk => Q~reg0.CLK
+T => Q~reg0.ENA
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Qn <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|four_bit_sync_cntr|t_ff:tff_A2
+rstn => Q~reg0.ACLR
+clk => Q~reg0.CLK
+T => Q~reg0.ENA
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Qn <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|four_bit_sync_cntr|t_ff:tff_A3
+rstn => Q~reg0.ACLR
+clk => Q~reg0.CLK
+T => Q~reg0.ENA
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Qn <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+

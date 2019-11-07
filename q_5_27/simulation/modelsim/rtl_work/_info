@@ -1,0 +1,55 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/Users/home/Documents/Fpga_proj/q_5_27/simulation/modelsim
+vq_5_27
+!s110 1571431987
+!i10b 1
+!s100 <Qe2Ah_c`5X0n30zkIhzX0
+IN;FB`B4`;dN_bWG8CzE1[3
+Z1 VDg1SIo80bB@j0V0VzS_@n1
+R0
+w1571431974
+8C:/Users/home/Documents/Fpga_proj/q_5_27/q_5_27.v
+FC:/Users/home/Documents/Fpga_proj/q_5_27/q_5_27.v
+L0 1
+Z2 OV;L;10.5b;63
+r1
+!s85 0
+31
+!s108 1571431987.000000
+!s107 C:/Users/home/Documents/Fpga_proj/q_5_27/q_5_27.v|
+!s90 -##implicit##push_minusfile_path##|C:/Users/home/Documents/Fpga_proj/moore_binary_counter/simulation/modelsim/vlog.opt|-##implicit##pop_minusfile_path##|-reportprogress|300|-O0|-vlog01compat|-work|work|+incdir+C:/Users/home/Documents/Fpga_proj/q_5_27|C:/Users/home/Documents/Fpga_proj/q_5_27/q_5_27.v|
+Z3 !s101 -O0 -O0
+!i113 1
+o-O0 -O0 -vlog01compat -work work
+!s92 -O0 -O0 -vlog01compat -work work +incdir+C:/Users/home/Documents/Fpga_proj/q_5_27
+Z4 tDisableOpt 1 CvgOpt 0
+vq_5_27_tb
+!s110 1571431988
+!i10b 1
+!s100 >FWFOnl]IAMg7WMi29PiN1
+IIYD5<JGUQSWk9PSGGlcla3
+R1
+R0
+w1571431968
+8C:/Users/home/Documents/Fpga_proj/q_5_27/q_5_27_tb.v
+FC:/Users/home/Documents/Fpga_proj/q_5_27/q_5_27_tb.v
+L0 1
+R2
+r1
+!s85 0
+31
+!s108 1571431988.000000
+!s107 C:/Users/home/Documents/Fpga_proj/q_5_27/q_5_27_tb.v|
+!s90 -##implicit##push_minusfile_path##|C:/Users/home/Documents/Fpga_proj/moore_binary_counter/simulation/modelsim/vlog.opt|-##implicit##pop_minusfile_path##|-reportprogress|300|-O0|-work|work|C:/Users/home/Documents/Fpga_proj/q_5_27/q_5_27_tb.v|
+R3
+!i113 1
+o-O0 -O0 -work work
+R4

@@ -1,0 +1,81 @@
+{
+	"partitions" : [
+		{
+			"name" : "Top",
+			"pins" : [
+				{
+					"name" : "par_out[0]",
+					"strict" : false
+				},
+				{
+					"name" : "par_out[1]",
+					"strict" : false
+				},
+				{
+					"name" : "par_out[2]",
+					"strict" : false
+				},
+				{
+					"name" : "par_out[3]",
+					"strict" : false
+				},
+				{
+					"name" : "shift_reg[0]",
+					"strict" : false
+				},
+				{
+					"name" : "shift_reg[1]",
+					"strict" : false
+				},
+				{
+					"name" : "shift_reg[2]",
+					"strict" : false
+				},
+				{
+					"name" : "shift_reg[3]",
+					"strict" : false
+				},
+				{
+					"name" : "SO",
+					"strict" : false
+				},
+				{
+					"name" : "mode[1]",
+					"strict" : false
+				},
+				{
+					"name" : "mode[0]",
+					"strict" : false
+				},
+				{
+					"name" : "par_in[0]",
+					"strict" : false
+				},
+				{
+					"name" : "SI",
+					"strict" : false
+				},
+				{
+					"name" : "clk",
+					"strict" : false
+				},
+				{
+					"name" : "rstn",
+					"strict" : false
+				},
+				{
+					"name" : "par_in[1]",
+					"strict" : false
+				},
+				{
+					"name" : "par_in[2]",
+					"strict" : false
+				},
+				{
+					"name" : "par_in[3]",
+					"strict" : false
+				}
+			]
+		}
+	]
+}

@@ -1,0 +1,14 @@
+|t_ff_beh_st
+rstn => rstn.IN1
+clk => clk.IN1
+T => comb.IN1
+Q << d_ff_beh:d_ff_beh_0.Q
+
+
+|t_ff_beh_st|d_ff_beh:d_ff_beh_0
+rstn => Q~reg0.ACLR
+clk => Q~reg0.CLK
+D => Q~reg0.DATAIN
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+

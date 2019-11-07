@@ -1,0 +1,21 @@
+|four_bit_shift_reg
+rstn => shift_reg[0]~reg0.ACLR
+rstn => shift_reg[1]~reg0.ACLR
+rstn => shift_reg[2]~reg0.ACLR
+rstn => shift_reg[3]~reg0.ACLR
+clk => shift_reg[0]~reg0.CLK
+clk => shift_reg[1]~reg0.CLK
+clk => shift_reg[2]~reg0.CLK
+clk => shift_reg[3]~reg0.CLK
+SI => shift_reg[0]~reg0.DATAIN
+SE => shift_reg[0]~reg0.ENA
+SE => shift_reg[3]~reg0.ENA
+SE => shift_reg[2]~reg0.ENA
+SE => shift_reg[1]~reg0.ENA
+SO <= shift_reg[3]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+shift_reg[0] <= shift_reg[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+shift_reg[1] <= shift_reg[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+shift_reg[2] <= shift_reg[2]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+shift_reg[3] <= shift_reg[3]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+

@@ -1,0 +1,23 @@
+|three_to_eight_line_decoder_with_en
+x => D.IN0
+x => D.IN0
+x => D.IN0
+x => D.IN0
+y => D.IN1
+y => D.IN1
+y => D.IN1
+y => D.IN1
+z => D.IN0
+z => D.IN0
+E => D.IN1
+E => D.IN1
+D[0] <= D.DB_MAX_OUTPUT_PORT_TYPE
+D[1] <= D.DB_MAX_OUTPUT_PORT_TYPE
+D[2] <= D.DB_MAX_OUTPUT_PORT_TYPE
+D[3] <= D.DB_MAX_OUTPUT_PORT_TYPE
+D[4] <= D.DB_MAX_OUTPUT_PORT_TYPE
+D[5] <= D.DB_MAX_OUTPUT_PORT_TYPE
+D[6] <= D.DB_MAX_OUTPUT_PORT_TYPE
+D[7] <= D.DB_MAX_OUTPUT_PORT_TYPE
+
+

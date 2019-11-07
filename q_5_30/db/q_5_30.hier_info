@@ -1,0 +1,9 @@
+|q_5_30
+clk => Q~reg0.CLK
+clk => E.CLK
+A => E.IN0
+B => E.IN1
+C => Q.IN1
+Q << Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+

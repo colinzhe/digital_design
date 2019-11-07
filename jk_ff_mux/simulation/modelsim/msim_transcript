@@ -1,0 +1,69 @@
+# Reading C:/intelFPGA/18.1/modelsim_ase/tcl/vsim/pref.tcl
+# do jk_ff_mux_run_msim_rtl_verilog.do
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Model Technology ModelSim - Intel FPGA Edition vmap 10.5b Lib Mapping Utility 2016.10 Oct  5 2016
+# vmap work rtl_work 
+# Modifying C:/intelFPGA/18.1/modelsim_ase/win32aloem/../modelsim.ini
+# 
+# vlog -vlog01compat -work work +incdir+C:/Users/home/Documents/Fpga_proj/jk_ff_mux {C:/Users/home/Documents/Fpga_proj/jk_ff_mux/jk_ff_mux.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 10:59:10 on Oct 17,2019
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/home/Documents/Fpga_proj/jk_ff_mux" C:/Users/home/Documents/Fpga_proj/jk_ff_mux/jk_ff_mux.v 
+# -- Compiling module jk_ff_mux
+# 
+# Top level modules:
+# 	jk_ff_mux
+# End time: 10:59:10 on Oct 17,2019, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+vlog -reportprogress 300 -work work C:/Users/home/Documents/Fpga_proj/jk_ff_mux/jk_ff_mux_tb.v
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 11:00:07 on Oct 17,2019
+# vlog -reportprogress 300 -work work C:/Users/home/Documents/Fpga_proj/jk_ff_mux/jk_ff_mux_tb.v 
+# -- Compiling module jk_ff_mux_tb
+# 
+# Top level modules:
+# 	jk_ff_mux_tb
+# End time: 11:00:07 on Oct 17,2019, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vsim work.jk_ff_mux_tb
+# vsim work.jk_ff_mux_tb 
+# Start time: 11:00:13 on Oct 17,2019
+# Loading work.jk_ff_mux_tb
+# Loading work.jk_ff_mux
+add wave -position insertpoint  \
+sim:/jk_ff_mux_tb/rstn \
+sim:/jk_ff_mux_tb/clk \
+sim:/jk_ff_mux_tb/J \
+sim:/jk_ff_mux_tb/K \
+sim:/jk_ff_mux_tb/Q \
+sim:/jk_ff_mux_tb/Qn
+run
+run
+# ** Note: $finish    : C:/Users/home/Documents/Fpga_proj/jk_ff_mux/jk_ff_mux_tb.v(20)
+#    Time: 300 ps  Iteration: 0  Instance: /jk_ff_mux_tb
+# 1
+# Break in Module jk_ff_mux_tb at C:/Users/home/Documents/Fpga_proj/jk_ff_mux/jk_ff_mux_tb.v line 20
+vlog -O0 -vlog01compat -work work +incdir+C:/Users/home/Documents/Fpga_proj/jk_ff_mux C:/Users/home/Documents/Fpga_proj/jk_ff_mux/jk_ff_mux.v
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 11:02:10 on Oct 17,2019
+# vlog -reportprogress 300 -O0 -vlog01compat -work work "+incdir+C:/Users/home/Documents/Fpga_proj/jk_ff_mux" C:/Users/home/Documents/Fpga_proj/jk_ff_mux/jk_ff_mux.v 
+# -- Compiling module jk_ff_mux
+# 
+# Top level modules:
+# 	jk_ff_mux
+# End time: 11:02:10 on Oct 17,2019, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+restart
+# Loading work.jk_ff_mux
+run
+# ** Note: $finish    : C:/Users/home/Documents/Fpga_proj/jk_ff_mux/jk_ff_mux_tb.v(20)
+#    Time: 300 ps  Iteration: 0  Instance: /jk_ff_mux_tb
+# 1
+# Break in Module jk_ff_mux_tb at C:/Users/home/Documents/Fpga_proj/jk_ff_mux/jk_ff_mux_tb.v line 20
+# End time: 11:02:58 on Oct 17,2019, Elapsed time: 0:02:45
+# Errors: 0, Warnings: 0

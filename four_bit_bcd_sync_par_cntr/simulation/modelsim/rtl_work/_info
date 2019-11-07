@@ -1,0 +1,78 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/Users/home/Documents/Fpga_proj/four_bit_bcd_sync_par_cntr/simulation/modelsim
+vfour_bit_bcd_sync_par_cntr
+Z1 !s110 1572577384
+!i10b 1
+!s100 gCXJQUe7V8ncJVmFRZ4]S3
+Iogi1c_g`[4ghfMzTV<]8L0
+Z2 VDg1SIo80bB@j0V0VzS_@n1
+R0
+w1572577333
+8C:/Users/home/Documents/Fpga_proj/four_bit_bcd_sync_par_cntr/four_bit_bcd_sync_par_cntr.v
+FC:/Users/home/Documents/Fpga_proj/four_bit_bcd_sync_par_cntr/four_bit_bcd_sync_par_cntr.v
+L0 1
+Z3 OV;L;10.5b;63
+r1
+!s85 0
+31
+Z4 !s108 1572577384.000000
+!s107 C:/Users/home/Documents/Fpga_proj/four_bit_bcd_sync_par_cntr/four_bit_bcd_sync_par_cntr.v|
+!s90 -##implicit##push_minusfile_path##|C:/Users/home/Documents/Fpga_proj/moore_binary_counter/simulation/modelsim/vlog.opt|-##implicit##pop_minusfile_path##|-reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/home/Documents/Fpga_proj/four_bit_bcd_sync_par_cntr|C:/Users/home/Documents/Fpga_proj/four_bit_bcd_sync_par_cntr/four_bit_bcd_sync_par_cntr.v|
+!s101 -O0
+!i113 1
+Z5 o-O0 -vlog01compat -work work
+Z6 !s92 -O0 -vlog01compat -work work +incdir+C:/Users/home/Documents/Fpga_proj/four_bit_bcd_sync_par_cntr
+Z7 tDisableOpt 1 CvgOpt 0
+vfour_bit_bcd_sync_par_cntr_tb
+!s110 1572577395
+!i10b 1
+!s100 gJ@G0Dj=FIQW2IggVb4jk2
+IWAjkG76AEfDmUlJKgCzZG3
+R2
+R0
+w1572577328
+8C:/Users/home/Documents/Fpga_proj/four_bit_bcd_sync_par_cntr/four_bit_bcd_sync_par_cntr_tb.v
+FC:/Users/home/Documents/Fpga_proj/four_bit_bcd_sync_par_cntr/four_bit_bcd_sync_par_cntr_tb.v
+L0 1
+R3
+r1
+!s85 0
+31
+!s108 1572577395.000000
+!s107 C:/Users/home/Documents/Fpga_proj/four_bit_bcd_sync_par_cntr/four_bit_bcd_sync_par_cntr_tb.v|
+!s90 -##implicit##push_minusfile_path##|C:/Users/home/Documents/Fpga_proj/moore_binary_counter/simulation/modelsim/vlog.opt|-##implicit##pop_minusfile_path##|-reportprogress|300|-work|work|C:/Users/home/Documents/Fpga_proj/four_bit_bcd_sync_par_cntr/four_bit_bcd_sync_par_cntr_tb.v|
+!s101 -O0
+!i113 1
+o-O0 -work work
+R7
+vfour_bit_sync_par_cntr
+R1
+!i10b 1
+!s100 o;lFzzz@[XJfoVl^TbO[k3
+I2hi?LFO5_2eO[GiRb4gDg0
+R2
+R0
+w1572576844
+8C:/Users/home/Documents/Fpga_proj/four_bit_bcd_sync_par_cntr/four_bit_sync_par_cntr.v
+FC:/Users/home/Documents/Fpga_proj/four_bit_bcd_sync_par_cntr/four_bit_sync_par_cntr.v
+L0 1
+R3
+r1
+!s85 0
+31
+R4
+!s107 C:/Users/home/Documents/Fpga_proj/four_bit_bcd_sync_par_cntr/four_bit_sync_par_cntr.v|
+!s90 -##implicit##push_minusfile_path##|C:/Users/home/Documents/Fpga_proj/moore_binary_counter/simulation/modelsim/vlog.opt|-##implicit##pop_minusfile_path##|-reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/home/Documents/Fpga_proj/four_bit_bcd_sync_par_cntr|C:/Users/home/Documents/Fpga_proj/four_bit_bcd_sync_par_cntr/four_bit_sync_par_cntr.v|
+!s101 -O0
+!i113 1
+R5
+R6
+R7

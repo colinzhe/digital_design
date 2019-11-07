@@ -1,0 +1,27 @@
+|adder
+X[0] => Xreg[0].DATAIN
+X[1] => Xreg[1].DATAIN
+X[2] => Xreg[2].DATAIN
+X[3] => Xreg[3].DATAIN
+Y[0] => Yreg[0].DATAIN
+Y[1] => Yreg[1].DATAIN
+Y[2] => Yreg[2].DATAIN
+Y[3] => Yreg[3].DATAIN
+Z[0] <= Sreg[0].DB_MAX_OUTPUT_PORT_TYPE
+Z[1] <= Sreg[1].DB_MAX_OUTPUT_PORT_TYPE
+Z[2] <= Sreg[2].DB_MAX_OUTPUT_PORT_TYPE
+Z[3] <= Sreg[3].DB_MAX_OUTPUT_PORT_TYPE
+clk => Yreg[0].CLK
+clk => Yreg[1].CLK
+clk => Yreg[2].CLK
+clk => Yreg[3].CLK
+clk => Xreg[0].CLK
+clk => Xreg[1].CLK
+clk => Xreg[2].CLK
+clk => Xreg[3].CLK
+clk => Sreg[0].CLK
+clk => Sreg[1].CLK
+clk => Sreg[2].CLK
+clk => Sreg[3].CLK
+
+

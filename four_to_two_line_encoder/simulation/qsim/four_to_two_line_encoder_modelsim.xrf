@@ -1,0 +1,14 @@
+vendor_name = ModelSim
+source_file = 1, C:/Users/home/Documents/Fpga_proj/four_to_two_line_encoder/four_to_two_line_encoder.v
+source_file = 1, C:/Users/home/Documents/Fpga_proj/four_to_two_line_encoder/db/four_to_two_line_encoder.cbx.xml
+design_name = four_to_two_line_encoder
+instance = comp, \x~output , x~output, four_to_two_line_encoder, 1
+instance = comp, \y~output , y~output, four_to_two_line_encoder, 1
+instance = comp, \V~output , V~output, four_to_two_line_encoder, 1
+instance = comp, \D[2]~input , D[2]~input, four_to_two_line_encoder, 1
+instance = comp, \D[3]~input , D[3]~input, four_to_two_line_encoder, 1
+instance = comp, \x~0 , x~0, four_to_two_line_encoder, 1
+instance = comp, \D[1]~input , D[1]~input, four_to_two_line_encoder, 1
+instance = comp, \y~0 , y~0, four_to_two_line_encoder, 1
+instance = comp, \D[0]~input , D[0]~input, four_to_two_line_encoder, 1
+instance = comp, \~QUARTUS_CREATED_GND~I , ~QUARTUS_CREATED_GND~I, four_to_two_line_encoder, 1

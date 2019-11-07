@@ -1,0 +1,13 @@
+|q_5_25
+rstn => Q~reg0.ACLR
+clk => Q~reg0.CLK
+sel[0] => Q.OUTPUTSELECT
+sel[0] => Q.OUTPUTSELECT
+sel[1] => Q.OUTPUTSELECT
+D[0] => Q.DATAA
+D[1] => Q.DATAB
+D[2] => Q.DATAA
+D[3] => Q.DATAB
+Q << Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+

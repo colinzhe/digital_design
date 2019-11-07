@@ -1,0 +1,11 @@
+|mealy_zero_detector
+rstn => state~3.DATAIN
+clk => state~1.DATAIN
+x_in => next_state.S1.DATAB
+x_in => next_state.S3.DATAB
+x_in => Selector0.IN1
+x_in => y_out.DATAA
+x_in => state.S0.DATAIN
+y_out << y_out.DB_MAX_OUTPUT_PORT_TYPE
+
+

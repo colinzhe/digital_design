@@ -1,0 +1,13 @@
+vendor_name = ModelSim
+source_file = 1, C:/Users/home/Documents/Fpga_proj/introtutorial/light.v
+source_file = 1, output_files/light.vwf
+source_file = 1, simulation/qsim/light.vwf
+source_file = 1, C:/Users/home/Documents/Fpga_proj/introtutorial/Waveform.vwf
+source_file = 1, C:/Users/home/Documents/Fpga_proj/introtutorial/db/light.cmp.rdb
+source_file = 1, C:/Users/home/Documents/Fpga_proj/introtutorial/db/light.cbx.xml
+design_name = light
+instance = comp, \f~output , f~output, light, 1
+instance = comp, \x1~input , x1~input, light, 1
+instance = comp, \x2~input , x2~input, light, 1
+instance = comp, \f~0 , f~0, light, 1
+instance = comp, \~QUARTUS_CREATED_GND~I , ~QUARTUS_CREATED_GND~I, light, 1

@@ -1,0 +1,257 @@
+# Reading C:/intelFPGA/18.1/modelsim_ase/tcl/vsim/pref.tcl
+# do d_ff_3_sr_wr_run_msim_rtl_verilog.do
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Model Technology ModelSim - Intel FPGA Edition vmap 10.5b Lib Mapping Utility 2016.10 Oct  5 2016
+# vmap work rtl_work 
+# Copying C:/intelFPGA/18.1/modelsim_ase/win32aloem/../modelsim.ini to modelsim.ini
+# Modifying modelsim.ini
+# 
+# vlog -vlog01compat -work work +incdir+C:/Users/home/Documents/Fpga_proj/d_ff_3_sr_wr {C:/Users/home/Documents/Fpga_proj/d_ff_3_sr_wr/d_ff_3_sr_wr.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 13:37:52 on Oct 09,2019
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/home/Documents/Fpga_proj/d_ff_3_sr_wr" C:/Users/home/Documents/Fpga_proj/d_ff_3_sr_wr/d_ff_3_sr_wr.v 
+# -- Compiling module d_ff_3_sr_wr
+# 
+# Top level modules:
+# 	d_ff_3_sr_wr
+# End time: 13:37:52 on Oct 09,2019, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+vlog -reportprogress 300 -work work C:/Users/home/Documents/Fpga_proj/d_ff_3_sr_wr/d_ff_3_sr__wr_tb.v
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 13:38:01 on Oct 09,2019
+# vlog -reportprogress 300 -work work C:/Users/home/Documents/Fpga_proj/d_ff_3_sr_wr/d_ff_3_sr__wr_tb.v 
+# -- Compiling module d_ff_3_sr_tb
+# 
+# Top level modules:
+# 	d_ff_3_sr_tb
+# End time: 13:38:01 on Oct 09,2019, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vsim work.d_ff_3_sr_tb
+# vsim work.d_ff_3_sr_tb 
+# Start time: 13:38:14 on Oct 09,2019
+# Loading work.d_ff_3_sr_tb
+# ** Error: (vsim-3033) C:/Users/home/Documents/Fpga_proj/d_ff_3_sr_wr/d_ff_3_sr__wr_tb.v(5): Instantiation of 'd_ff_3_sr' failed. The design unit was not found.
+#    Time: 0 ps  Iteration: 0  Instance: /d_ff_3_sr_tb File: C:/Users/home/Documents/Fpga_proj/d_ff_3_sr_wr/d_ff_3_sr__wr_tb.v
+#         Searched libraries:
+#             C:/Users/home/Documents/Fpga_proj/d_ff_3_sr_wr/simulation/modelsim/rtl_work
+# Error loading design
+# End time: 13:38:14 on Oct 09,2019, Elapsed time: 0:00:00
+# Errors: 1, Warnings: 0
+vlog -reportprogress 300 -work work C:/Users/home/Documents/Fpga_proj/d_ff_3_sr_wr/d_ff_3_sr_wr_tb.v
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 13:39:10 on Oct 09,2019
+# vlog -reportprogress 300 -work work C:/Users/home/Documents/Fpga_proj/d_ff_3_sr_wr/d_ff_3_sr_wr_tb.v 
+# -- Compiling module d_ff_3_sr_wr_tb
+# 
+# Top level modules:
+# 	d_ff_3_sr_wr_tb
+# End time: 13:39:10 on Oct 09,2019, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vsim work.d_ff_3_sr_wr_tb
+# vsim work.d_ff_3_sr_wr_tb 
+# Start time: 13:39:13 on Oct 09,2019
+# Loading work.d_ff_3_sr_wr_tb
+# Loading work.d_ff_3_sr_wr
+vlog -work work C:/Users/home/Documents/Fpga_proj/d_ff_3_sr_wr/d_ff_3_sr_wr_tb.v
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 13:39:37 on Oct 09,2019
+# vlog -reportprogress 300 -work work C:/Users/home/Documents/Fpga_proj/d_ff_3_sr_wr/d_ff_3_sr_wr_tb.v 
+# -- Compiling module d_ff_3_sr_wr_tb
+# 
+# Top level modules:
+# 	d_ff_3_sr_wr_tb
+# End time: 13:39:37 on Oct 09,2019, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vsim work.d_ff_3_sr_wr_tb
+# End time: 13:39:41 on Oct 09,2019, Elapsed time: 0:00:28
+# Errors: 0, Warnings: 0
+# vsim work.d_ff_3_sr_wr_tb 
+# Start time: 13:39:41 on Oct 09,2019
+# Loading work.d_ff_3_sr_wr_tb
+# Loading work.d_ff_3_sr_wr
+add wave -position insertpoint  \
+sim:/d_ff_3_sr_wr_tb/rstn \
+sim:/d_ff_3_sr_wr_tb/clk \
+sim:/d_ff_3_sr_wr_tb/D \
+sim:/d_ff_3_sr_wr_tb/Q \
+sim:/d_ff_3_sr_wr_tb/Qn
+run
+# ** Note: $finish    : C:/Users/home/Documents/Fpga_proj/d_ff_3_sr_wr/d_ff_3_sr_wr_tb.v(17)
+#    Time: 100 ps  Iteration: 0  Instance: /d_ff_3_sr_wr_tb
+# 1
+# Break in Module d_ff_3_sr_wr_tb at C:/Users/home/Documents/Fpga_proj/d_ff_3_sr_wr/d_ff_3_sr_wr_tb.v line 17
+vlog -work work C:/Users/home/Documents/Fpga_proj/d_ff_3_sr_wr/d_ff_3_sr_wr_tb.v
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 13:41:10 on Oct 09,2019
+# vlog -reportprogress 300 -work work C:/Users/home/Documents/Fpga_proj/d_ff_3_sr_wr/d_ff_3_sr_wr_tb.v 
+# -- Compiling module d_ff_3_sr_wr_tb
+# 
+# Top level modules:
+# 	d_ff_3_sr_wr_tb
+# End time: 13:41:10 on Oct 09,2019, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+restart
+# Loading work.d_ff_3_sr_wr_tb
+run
+# GetModuleFileName: The specified module could not be found.
+# 
+# 
+# ** Note: $finish    : C:/Users/home/Documents/Fpga_proj/d_ff_3_sr_wr/d_ff_3_sr_wr_tb.v(17)
+#    Time: 100 ps  Iteration: 0  Instance: /d_ff_3_sr_wr_tb
+# 1
+# Break in Module d_ff_3_sr_wr_tb at C:/Users/home/Documents/Fpga_proj/d_ff_3_sr_wr/d_ff_3_sr_wr_tb.v line 17
+vlog -work work C:/Users/home/Documents/Fpga_proj/d_ff_3_sr_wr/d_ff_3_sr_wr_tb.v
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 13:42:11 on Oct 09,2019
+# vlog -reportprogress 300 -work work C:/Users/home/Documents/Fpga_proj/d_ff_3_sr_wr/d_ff_3_sr_wr_tb.v 
+# -- Compiling module d_ff_3_sr_wr_tb
+# 
+# Top level modules:
+# 	d_ff_3_sr_wr_tb
+# End time: 13:42:11 on Oct 09,2019, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+restart
+# Loading work.d_ff_3_sr_wr_tb
+run
+# GetModuleFileName: The specified module could not be found.
+# 
+# 
+# ** Note: $finish    : C:/Users/home/Documents/Fpga_proj/d_ff_3_sr_wr/d_ff_3_sr_wr_tb.v(17)
+#    Time: 100 ps  Iteration: 0  Instance: /d_ff_3_sr_wr_tb
+# 1
+# Break in Module d_ff_3_sr_wr_tb at C:/Users/home/Documents/Fpga_proj/d_ff_3_sr_wr/d_ff_3_sr_wr_tb.v line 17
+vlog -vlog01compat -work work +incdir+C:/Users/home/Documents/Fpga_proj/d_ff_3_sr_wr C:/Users/home/Documents/Fpga_proj/d_ff_3_sr_wr/d_ff_3_sr_wr.v
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 13:45:45 on Oct 09,2019
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/home/Documents/Fpga_proj/d_ff_3_sr_wr" C:/Users/home/Documents/Fpga_proj/d_ff_3_sr_wr/d_ff_3_sr_wr.v 
+# -- Compiling module d_ff_3_sr_wr
+# 
+# Top level modules:
+# 	d_ff_3_sr_wr
+# End time: 13:45:45 on Oct 09,2019, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vlog -work work C:/Users/home/Documents/Fpga_proj/d_ff_3_sr_wr/d_ff_3_sr_wr_tb.v
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 13:45:47 on Oct 09,2019
+# vlog -reportprogress 300 -work work C:/Users/home/Documents/Fpga_proj/d_ff_3_sr_wr/d_ff_3_sr_wr_tb.v 
+# -- Compiling module d_ff_3_sr_wr_tb
+# 
+# Top level modules:
+# 	d_ff_3_sr_wr_tb
+# End time: 13:45:47 on Oct 09,2019, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+restart
+# Loading work.d_ff_3_sr_wr_tb
+# Loading work.d_ff_3_sr_wr
+run
+# GetModuleFileName: The specified module could not be found.
+# 
+# 
+# ** Note: $finish    : C:/Users/home/Documents/Fpga_proj/d_ff_3_sr_wr/d_ff_3_sr_wr_tb.v(17)
+#    Time: 100 ps  Iteration: 0  Instance: /d_ff_3_sr_wr_tb
+# 1
+# Break in Module d_ff_3_sr_wr_tb at C:/Users/home/Documents/Fpga_proj/d_ff_3_sr_wr/d_ff_3_sr_wr_tb.v line 17
+vlog -work work C:/Users/home/Documents/Fpga_proj/d_ff_3_sr_wr/d_ff_3_sr_wr_tb.v
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 13:46:29 on Oct 09,2019
+# vlog -reportprogress 300 -work work C:/Users/home/Documents/Fpga_proj/d_ff_3_sr_wr/d_ff_3_sr_wr_tb.v 
+# -- Compiling module d_ff_3_sr_wr_tb
+# 
+# Top level modules:
+# 	d_ff_3_sr_wr_tb
+# End time: 13:46:29 on Oct 09,2019, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+restart
+# Loading work.d_ff_3_sr_wr_tb
+run
+# GetModuleFileName: The specified module could not be found.
+# 
+# 
+# ** Note: $finish    : C:/Users/home/Documents/Fpga_proj/d_ff_3_sr_wr/d_ff_3_sr_wr_tb.v(17)
+#    Time: 100 ps  Iteration: 0  Instance: /d_ff_3_sr_wr_tb
+# 1
+# Break in Module d_ff_3_sr_wr_tb at C:/Users/home/Documents/Fpga_proj/d_ff_3_sr_wr/d_ff_3_sr_wr_tb.v line 17
+vlog -work work C:/Users/home/Documents/Fpga_proj/d_ff_3_sr_wr/d_ff_3_sr_wr_tb.v
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 13:46:56 on Oct 09,2019
+# vlog -reportprogress 300 -work work C:/Users/home/Documents/Fpga_proj/d_ff_3_sr_wr/d_ff_3_sr_wr_tb.v 
+# -- Compiling module d_ff_3_sr_wr_tb
+# 
+# Top level modules:
+# 	d_ff_3_sr_wr_tb
+# End time: 13:46:56 on Oct 09,2019, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+restart
+# Loading work.d_ff_3_sr_wr_tb
+run
+# GetModuleFileName: The specified module could not be found.
+# 
+# 
+# ** Note: $finish    : C:/Users/home/Documents/Fpga_proj/d_ff_3_sr_wr/d_ff_3_sr_wr_tb.v(18)
+#    Time: 120 ps  Iteration: 0  Instance: /d_ff_3_sr_wr_tb
+# 1
+# Break in Module d_ff_3_sr_wr_tb at C:/Users/home/Documents/Fpga_proj/d_ff_3_sr_wr/d_ff_3_sr_wr_tb.v line 18
+vlog -work work C:/Users/home/Documents/Fpga_proj/d_ff_3_sr_wr/d_ff_3_sr_wr_tb.v
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 13:47:22 on Oct 09,2019
+# vlog -reportprogress 300 -work work C:/Users/home/Documents/Fpga_proj/d_ff_3_sr_wr/d_ff_3_sr_wr_tb.v 
+# -- Compiling module d_ff_3_sr_wr_tb
+# 
+# Top level modules:
+# 	d_ff_3_sr_wr_tb
+# End time: 13:47:22 on Oct 09,2019, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+restart
+# Loading work.d_ff_3_sr_wr_tb
+run
+# GetModuleFileName: The specified module could not be found.
+# 
+# 
+# ** Note: $finish    : C:/Users/home/Documents/Fpga_proj/d_ff_3_sr_wr/d_ff_3_sr_wr_tb.v(18)
+#    Time: 120 ps  Iteration: 0  Instance: /d_ff_3_sr_wr_tb
+# 1
+# Break in Module d_ff_3_sr_wr_tb at C:/Users/home/Documents/Fpga_proj/d_ff_3_sr_wr/d_ff_3_sr_wr_tb.v line 18
+vlog -work work C:/Users/home/Documents/Fpga_proj/d_ff_3_sr_wr/d_ff_3_sr_wr_tb.v
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 13:47:51 on Oct 09,2019
+# vlog -reportprogress 300 -work work C:/Users/home/Documents/Fpga_proj/d_ff_3_sr_wr/d_ff_3_sr_wr_tb.v 
+# -- Compiling module d_ff_3_sr_wr_tb
+# 
+# Top level modules:
+# 	d_ff_3_sr_wr_tb
+# End time: 13:47:51 on Oct 09,2019, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+restart
+# Loading work.d_ff_3_sr_wr_tb
+run
+# GetModuleFileName: The specified module could not be found.
+# 
+# 
+# ** Error (suppressible): (vsim-3601) Iteration limit 5000 reached at time 15 ps.
+vlog -work work C:/Users/home/Documents/Fpga_proj/d_ff_3_sr_wr/d_ff_3_sr_wr_tb.v
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 13:48:35 on Oct 09,2019
+# vlog -reportprogress 300 -work work C:/Users/home/Documents/Fpga_proj/d_ff_3_sr_wr/d_ff_3_sr_wr_tb.v 
+# -- Compiling module d_ff_3_sr_wr_tb
+# 
+# Top level modules:
+# 	d_ff_3_sr_wr_tb
+# End time: 13:48:35 on Oct 09,2019, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+restart
+# Loading work.d_ff_3_sr_wr_tb
+run
+# GetModuleFileName: The specified module could not be found.
+# 
+# 
+# ** Note: $finish    : C:/Users/home/Documents/Fpga_proj/d_ff_3_sr_wr/d_ff_3_sr_wr_tb.v(18)
+#    Time: 120 ps  Iteration: 0  Instance: /d_ff_3_sr_wr_tb
+# 1
+# Break in Module d_ff_3_sr_wr_tb at C:/Users/home/Documents/Fpga_proj/d_ff_3_sr_wr/d_ff_3_sr_wr_tb.v line 18
+# End time: 14:16:09 on Oct 09,2019, Elapsed time: 0:36:28
+# Errors: 1, Warnings: 0

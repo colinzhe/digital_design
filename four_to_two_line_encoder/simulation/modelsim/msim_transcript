@@ -1,0 +1,729 @@
+# Reading C:/intelFPGA/18.1/modelsim_ase/tcl/vsim/pref.tcl
+# do four_to_two_line_encoder_run_msim_rtl_verilog.do
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Model Technology ModelSim - Intel FPGA Edition vmap 10.5b Lib Mapping Utility 2016.10 Oct  5 2016
+# vmap work rtl_work 
+# Copying C:/intelFPGA/18.1/modelsim_ase/win32aloem/../modelsim.ini to modelsim.ini
+# Modifying modelsim.ini
+# 
+# vlog -vlog01compat -work work +incdir+C:/Users/home/Documents/Fpga_proj/four_to_two_line_encoder {C:/Users/home/Documents/Fpga_proj/four_to_two_line_encoder/four_to_two_pri_encoder_beh.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 18:22:54 on Oct 07,2019
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/home/Documents/Fpga_proj/four_to_two_line_encoder" C:/Users/home/Documents/Fpga_proj/four_to_two_line_encoder/four_to_two_pri_encoder_beh.v 
+# -- Compiling module four_to_two_pri_encoder_beh
+# 
+# Top level modules:
+# 	four_to_two_pri_encoder_beh
+# End time: 18:22:54 on Oct 07,2019, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+vlog -reportprogress 300 -work work C:/Users/home/Documents/Fpga_proj/four_to_two_line_encoder/four_to_two_pri_encoder_beh_tb.v
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 18:24:05 on Oct 07,2019
+# vlog -reportprogress 300 -work work C:/Users/home/Documents/Fpga_proj/four_to_two_line_encoder/four_to_two_pri_encoder_beh_tb.v 
+# -- Compiling module four_to_two_pri_encoder_beh_tb
+# 
+# Top level modules:
+# 	--none--
+# End time: 18:24:06 on Oct 07,2019, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+vsim work.four_to_two_pri_encoder_beh_tb
+# vsim work.four_to_two_pri_encoder_beh_tb 
+# Start time: 18:24:15 on Oct 07,2019
+# Loading work.four_to_two_pri_encoder_beh_tb
+# ** Warning: (vsim-3035) Instantiation depth of '/four_to_two_pri_encoder_beh_tb/dut/dut/dut/dut/dut/dut/dut/dut/dut/dut/dut/dut/dut/dut/dut/dut/dut/dut/dut/dut/dut/dut/dut/dut/dut/dut/dut/dut/dut/dut/dut/dut/dut/dut/dut/dut/dut/dut/dut/dut/dut/dut/dut/dut/dut/dut/dut/dut/dut/dut' is 51. This might indicate a recursive instantiation. Increasing limit to 75.
+# ** Error: (vsim-3036) Instantiation depth of '/four_to_two_pri_encoder_beh_tb/dut/dut/dut/dut/dut/dut/dut/dut/dut/dut/dut/dut/dut/dut/dut/dut/dut/dut/dut/dut/dut/dut/dut/dut/dut/dut/dut/dut/dut/dut/dut/dut/dut/dut/dut/dut/dut/dut/dut/dut/dut/dut/dut/dut/dut/dut/dut/dut/dut/dut/dut/dut/dut/dut/dut/dut/dut/dut/dut/dut/dut/dut/dut/dut/dut/dut/dut/dut/dut/dut/dut/dut/dut/dut' is 75. Assuming recursive instantiation.
+#    Time: 0 ps  Iteration: 0  Instance: /four_to_two_pri_encoder_beh_tb/dut/dut/dut/dut/dut/dut/dut/dut/dut/dut/dut/dut/dut/dut/dut/dut/dut/dut/dut/dut/dut/dut/dut/dut/dut/dut/dut/dut/dut/dut/dut/dut/dut/dut/dut/dut/dut/dut/dut/dut/dut/dut/dut/dut/dut/dut/dut/dut/dut/dut/dut/dut/dut/dut/dut/dut/dut/dut/dut/dut/dut/dut/dut/dut/dut/dut/dut/dut/dut/dut/dut/dut/dut/dut File: C:/Users/home/Documents/Fpga_proj/four_to_two_line_encoder/four_to_two_pri_encoder_beh_tb.v
+# Error loading design
+# End time: 18:24:15 on Oct 07,2019, Elapsed time: 0:00:00
+# Errors: 1, Warnings: 1
+vsim work.four_to_two_pri_encoder_beh_tb
+# vsim work.four_to_two_pri_encoder_beh_tb 
+# Start time: 18:24:18 on Oct 07,2019
+# Loading work.four_to_two_pri_encoder_beh_tb
+# ** Warning: (vsim-3035) Instantiation depth of '/four_to_two_pri_encoder_beh_tb/dut/dut/dut/dut/dut/dut/dut/dut/dut/dut/dut/dut/dut/dut/dut/dut/dut/dut/dut/dut/dut/dut/dut/dut/dut/dut/dut/dut/dut/dut/dut/dut/dut/dut/dut/dut/dut/dut/dut/dut/dut/dut/dut/dut/dut/dut/dut/dut/dut/dut' is 51. This might indicate a recursive instantiation. Increasing limit to 75.
+# ** Error: (vsim-3036) Instantiation depth of '/four_to_two_pri_encoder_beh_tb/dut/dut/dut/dut/dut/dut/dut/dut/dut/dut/dut/dut/dut/dut/dut/dut/dut/dut/dut/dut/dut/dut/dut/dut/dut/dut/dut/dut/dut/dut/dut/dut/dut/dut/dut/dut/dut/dut/dut/dut/dut/dut/dut/dut/dut/dut/dut/dut/dut/dut/dut/dut/dut/dut/dut/dut/dut/dut/dut/dut/dut/dut/dut/dut/dut/dut/dut/dut/dut/dut/dut/dut/dut/dut' is 75. Assuming recursive instantiation.
+#    Time: 0 ps  Iteration: 0  Instance: /four_to_two_pri_encoder_beh_tb/dut/dut/dut/dut/dut/dut/dut/dut/dut/dut/dut/dut/dut/dut/dut/dut/dut/dut/dut/dut/dut/dut/dut/dut/dut/dut/dut/dut/dut/dut/dut/dut/dut/dut/dut/dut/dut/dut/dut/dut/dut/dut/dut/dut/dut/dut/dut/dut/dut/dut/dut/dut/dut/dut/dut/dut/dut/dut/dut/dut/dut/dut/dut/dut/dut/dut/dut/dut/dut/dut/dut/dut/dut/dut File: C:/Users/home/Documents/Fpga_proj/four_to_two_line_encoder/four_to_two_pri_encoder_beh_tb.v
+# Error loading design
+# End time: 18:24:18 on Oct 07,2019, Elapsed time: 0:00:00
+# Errors: 1, Warnings: 1
+vlog -vlog01compat -work work +incdir+C:/Users/home/Documents/Fpga_proj/four_to_two_line_encoder C:/Users/home/Documents/Fpga_proj/four_to_two_line_encoder/four_to_two_pri_encoder_beh.v
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 18:27:15 on Oct 07,2019
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/home/Documents/Fpga_proj/four_to_two_line_encoder" C:/Users/home/Documents/Fpga_proj/four_to_two_line_encoder/four_to_two_pri_encoder_beh.v 
+# -- Compiling module four_to_two_pri_encoder_beh
+# 
+# Top level modules:
+# 	four_to_two_pri_encoder_beh
+# End time: 18:27:15 on Oct 07,2019, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vlog -work work C:/Users/home/Documents/Fpga_proj/four_to_two_line_encoder/four_to_two_pri_encoder_beh_tb.v
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 18:27:16 on Oct 07,2019
+# vlog -reportprogress 300 -work work C:/Users/home/Documents/Fpga_proj/four_to_two_line_encoder/four_to_two_pri_encoder_beh_tb.v 
+# -- Compiling module four_to_two_pri_encoder_beh_tb
+# 
+# Top level modules:
+# 	four_to_two_pri_encoder_beh_tb
+# End time: 18:27:16 on Oct 07,2019, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vsim work.four_to_two_pri_encoder_beh_tb
+# vsim work.four_to_two_pri_encoder_beh_tb 
+# Start time: 18:27:19 on Oct 07,2019
+# Loading work.four_to_two_pri_encoder_beh_tb
+# Loading work.four_to_two_pri_encoder_beh
+add wave -position insertpoint  \
+sim:/four_to_two_pri_encoder_beh_tb/D1t \
+sim:/four_to_two_pri_encoder_beh_tb/D2t \
+sim:/four_to_two_pri_encoder_beh_tb/wt \
+sim:/four_to_two_pri_encoder_beh_tb/xt \
+sim:/four_to_two_pri_encoder_beh_tb/yt \
+sim:/four_to_two_pri_encoder_beh_tb/zt \
+sim:/four_to_two_pri_encoder_beh_tb/V1t \
+sim:/four_to_two_pri_encoder_beh_tb/V2t
+run
+# ** Note: $finish    : C:/Users/home/Documents/Fpga_proj/four_to_two_line_encoder/four_to_two_pri_encoder_beh_tb.v(18)
+#    Time: 16 ps  Iteration: 0  Instance: /four_to_two_pri_encoder_beh_tb
+# 1
+# Break in Module four_to_two_pri_encoder_beh_tb at C:/Users/home/Documents/Fpga_proj/four_to_two_line_encoder/four_to_two_pri_encoder_beh_tb.v line 18
+vlog -work work C:/Users/home/Documents/Fpga_proj/four_to_two_line_encoder/four_to_two_pri_encoder_beh_tb.v
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 18:30:40 on Oct 07,2019
+# vlog -reportprogress 300 -work work C:/Users/home/Documents/Fpga_proj/four_to_two_line_encoder/four_to_two_pri_encoder_beh_tb.v 
+# -- Compiling module four_to_two_pri_encoder_beh_tb
+# 
+# Top level modules:
+# 	four_to_two_pri_encoder_beh_tb
+# End time: 18:30:40 on Oct 07,2019, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+restart
+# Loading work.four_to_two_pri_encoder_beh_tb
+run
+# GetModuleFileName: The specified module could not be found.
+# 
+# 
+# ** Note: $finish    : C:/Users/home/Documents/Fpga_proj/four_to_two_line_encoder/four_to_two_pri_encoder_beh_tb.v(28)
+#    Time: 16 ps  Iteration: 0  Instance: /four_to_two_pri_encoder_beh_tb
+# 1
+# Break in Module four_to_two_pri_encoder_beh_tb at C:/Users/home/Documents/Fpga_proj/four_to_two_line_encoder/four_to_two_pri_encoder_beh_tb.v line 28
+vlog -work work C:/Users/home/Documents/Fpga_proj/four_to_two_line_encoder/four_to_two_pri_encoder_beh_tb.v
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 18:32:35 on Oct 07,2019
+# vlog -reportprogress 300 -work work C:/Users/home/Documents/Fpga_proj/four_to_two_line_encoder/four_to_two_pri_encoder_beh_tb.v 
+# -- Compiling module four_to_two_pri_encoder_beh_tb
+# 
+# Top level modules:
+# 	four_to_two_pri_encoder_beh_tb
+# End time: 18:32:35 on Oct 07,2019, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+restart
+# Loading work.four_to_two_pri_encoder_beh_tb
+run
+# GetModuleFileName: The specified module could not be found.
+# 
+# 
+# k = 0000000000000000000000000000xxxx
+# k = 00000000000000000000000000000000
+# ** Note: $finish    : C:/Users/home/Documents/Fpga_proj/four_to_two_line_encoder/four_to_two_pri_encoder_beh_tb.v(28)
+#    Time: 16 ps  Iteration: 0  Instance: /four_to_two_pri_encoder_beh_tb
+# 1
+# Break in Module four_to_two_pri_encoder_beh_tb at C:/Users/home/Documents/Fpga_proj/four_to_two_line_encoder/four_to_two_pri_encoder_beh_tb.v line 28
+vlog -work work C:/Users/home/Documents/Fpga_proj/four_to_two_line_encoder/four_to_two_pri_encoder_beh_tb.v
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 18:34:58 on Oct 07,2019
+# vlog -reportprogress 300 -work work C:/Users/home/Documents/Fpga_proj/four_to_two_line_encoder/four_to_two_pri_encoder_beh_tb.v 
+# -- Compiling module four_to_two_pri_encoder_beh_tb
+# 
+# Top level modules:
+# 	four_to_two_pri_encoder_beh_tb
+# End time: 18:34:58 on Oct 07,2019, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+restart
+# Loading work.four_to_two_pri_encoder_beh_tb
+run
+# GetModuleFileName: The specified module could not be found.
+# 
+# 
+# k = xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+# k = 00000000000000000000000000000000
+# ** Note: $finish    : C:/Users/home/Documents/Fpga_proj/four_to_two_line_encoder/four_to_two_pri_encoder_beh_tb.v(28)
+#    Time: 16 ps  Iteration: 0  Instance: /four_to_two_pri_encoder_beh_tb
+# 1
+# Break in Module four_to_two_pri_encoder_beh_tb at C:/Users/home/Documents/Fpga_proj/four_to_two_line_encoder/four_to_two_pri_encoder_beh_tb.v line 28
+vlog -work work C:/Users/home/Documents/Fpga_proj/four_to_two_line_encoder/four_to_two_pri_encoder_beh_tb.v
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 18:36:46 on Oct 07,2019
+# vlog -reportprogress 300 -work work C:/Users/home/Documents/Fpga_proj/four_to_two_line_encoder/four_to_two_pri_encoder_beh_tb.v 
+# -- Compiling module four_to_two_pri_encoder_beh_tb
+# 
+# Top level modules:
+# 	four_to_two_pri_encoder_beh_tb
+# End time: 18:36:46 on Oct 07,2019, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+restart
+# Loading work.four_to_two_pri_encoder_beh_tb
+run
+# GetModuleFileName: The specified module could not be found.
+# 
+# 
+# k = xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+# k = 00000000000000000000000000000000
+# k = 00000000000000000000000000000001
+# k = 00000000000000000000000000000010
+# k = 00000000000000000000000000000011
+# k = 00000000000000000000000000000100
+# k = 00000000000000000000000000000101
+# k = 00000000000000000000000000000110
+# k = 00000000000000000000000000000111
+# k = 00000000000000000000000000001000
+# k = 00000000000000000000000000001001
+# k = 00000000000000000000000000001010
+# k = 00000000000000000000000000001011
+# k = 00000000000000000000000000001100
+# k = 00000000000000000000000000001101
+# k = 00000000000000000000000000001110
+# ** Note: $finish    : C:/Users/home/Documents/Fpga_proj/four_to_two_line_encoder/four_to_two_pri_encoder_beh_tb.v(28)
+#    Time: 160 ps  Iteration: 0  Instance: /four_to_two_pri_encoder_beh_tb
+# 1
+# Break in Module four_to_two_pri_encoder_beh_tb at C:/Users/home/Documents/Fpga_proj/four_to_two_line_encoder/four_to_two_pri_encoder_beh_tb.v line 28
+vlog -work work C:/Users/home/Documents/Fpga_proj/four_to_two_line_encoder/four_to_two_pri_encoder_beh_tb.v
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 18:39:29 on Oct 07,2019
+# vlog -reportprogress 300 -work work C:/Users/home/Documents/Fpga_proj/four_to_two_line_encoder/four_to_two_pri_encoder_beh_tb.v 
+# -- Compiling module four_to_two_pri_encoder_beh_tb
+# ** Error: (vlog-13069) C:/Users/home/Documents/Fpga_proj/four_to_two_line_encoder/four_to_two_pri_encoder_beh_tb.v(28): near "=": syntax error, unexpected '='.
+# ** Error: C:/Users/home/Documents/Fpga_proj/four_to_two_line_encoder/four_to_two_pri_encoder_beh_tb.v(28): (vlog-13205) Syntax error found in the scope following 'D2t'. Is there a missing '::'?
+# End time: 18:39:29 on Oct 07,2019, Elapsed time: 0:00:00
+# Errors: 2, Warnings: 0
+# C:/intelFPGA/18.1/modelsim_ase/win32aloem/vlog failed.
+vlog -work work C:/Users/home/Documents/Fpga_proj/four_to_two_line_encoder/four_to_two_pri_encoder_beh_tb.v
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 18:39:48 on Oct 07,2019
+# vlog -reportprogress 300 -work work C:/Users/home/Documents/Fpga_proj/four_to_two_line_encoder/four_to_two_pri_encoder_beh_tb.v 
+# -- Compiling module four_to_two_pri_encoder_beh_tb
+# 
+# Top level modules:
+# 	four_to_two_pri_encoder_beh_tb
+# End time: 18:39:48 on Oct 07,2019, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+restart
+# Loading work.four_to_two_pri_encoder_beh_tb
+run
+# GetModuleFileName: The specified module could not be found.
+# 
+# 
+# k = xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+# k = 00000000000000000000000000000000
+# k = 00000000000000000000000000000010
+# k = 00000000000000000000000000000100
+# k = 00000000000000000000000000000110
+# k = 00000000000000000000000000001000
+# k = 00000000000000000000000000001010
+# k = 00000000000000000000000000001100
+# k = 00000000000000000000000000001110
+# k = 00000000000000000000000000010000
+# k = 00000000000000000000000000010010
+vlog -work work C:/Users/home/Documents/Fpga_proj/four_to_two_line_encoder/four_to_two_pri_encoder_beh_tb.v
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 18:40:51 on Oct 07,2019
+# vlog -reportprogress 300 -work work C:/Users/home/Documents/Fpga_proj/four_to_two_line_encoder/four_to_two_pri_encoder_beh_tb.v 
+# -- Compiling module four_to_two_pri_encoder_beh_tb
+# 
+# Top level modules:
+# 	four_to_two_pri_encoder_beh_tb
+# End time: 18:40:51 on Oct 07,2019, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+restart
+# Loading work.four_to_two_pri_encoder_beh_tb
+run
+# GetModuleFileName: The specified module could not be found.
+# 
+# 
+# k = xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+# k = 00000000000000000000000000000000
+# k = 00000000000000000000000000000001
+# k = 00000000000000000000000000000010
+# k = 00000000000000000000000000000011
+# k = 00000000000000000000000000000100
+# k = 00000000000000000000000000000101
+# k = 00000000000000000000000000000110
+# k = 00000000000000000000000000000111
+# k = 00000000000000000000000000001000
+# k = 00000000000000000000000000001001
+# k = 00000000000000000000000000001010
+# k = 00000000000000000000000000001011
+# k = 00000000000000000000000000001100
+# k = 00000000000000000000000000001101
+# k = 00000000000000000000000000001110
+restart
+run
+# GetModuleFileName: The specified module could not be found.
+# 
+# 
+# k = xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+# k = 00000000000000000000000000000000
+# k = 00000000000000000000000000000001
+# k = 00000000000000000000000000000010
+# k = 00000000000000000000000000000011
+# k = 00000000000000000000000000000100
+# k = 00000000000000000000000000000101
+# k = 00000000000000000000000000000110
+# k = 00000000000000000000000000000111
+# k = 00000000000000000000000000001000
+# k = 00000000000000000000000000001001
+# k = 00000000000000000000000000001010
+# k = 00000000000000000000000000001011
+# k = 00000000000000000000000000001100
+# k = 00000000000000000000000000001101
+# k = 00000000000000000000000000001110
+vlog -work work C:/Users/home/Documents/Fpga_proj/four_to_two_line_encoder/four_to_two_pri_encoder_beh_tb.v
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 18:41:31 on Oct 07,2019
+# vlog -reportprogress 300 -work work C:/Users/home/Documents/Fpga_proj/four_to_two_line_encoder/four_to_two_pri_encoder_beh_tb.v 
+# -- Compiling module four_to_two_pri_encoder_beh_tb
+# 
+# Top level modules:
+# 	four_to_two_pri_encoder_beh_tb
+# End time: 18:41:31 on Oct 07,2019, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+restart
+# Loading work.four_to_two_pri_encoder_beh_tb
+run
+# GetModuleFileName: The specified module could not be found.
+# 
+# 
+# k = xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+# k = 00000000000000000000000000000000
+# ** Note: $finish    : C:/Users/home/Documents/Fpga_proj/four_to_two_line_encoder/four_to_two_pri_encoder_beh_tb.v(18)
+#    Time: 16 ps  Iteration: 0  Instance: /four_to_two_pri_encoder_beh_tb
+# 1
+# Break in Module four_to_two_pri_encoder_beh_tb at C:/Users/home/Documents/Fpga_proj/four_to_two_line_encoder/four_to_two_pri_encoder_beh_tb.v line 18
+vlog -work work C:/Users/home/Documents/Fpga_proj/four_to_two_line_encoder/four_to_two_pri_encoder_beh_tb.v
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 18:41:56 on Oct 07,2019
+# vlog -reportprogress 300 -work work C:/Users/home/Documents/Fpga_proj/four_to_two_line_encoder/four_to_two_pri_encoder_beh_tb.v 
+# -- Compiling module four_to_two_pri_encoder_beh_tb
+# 
+# Top level modules:
+# 	four_to_two_pri_encoder_beh_tb
+# End time: 18:41:56 on Oct 07,2019, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+restart
+# Loading work.four_to_two_pri_encoder_beh_tb
+run
+# GetModuleFileName: The specified module could not be found.
+# 
+# 
+# k = xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+# k = 00000000000000000000000000000000
+# k = 00000000000000000000000000000001
+# k = 00000000000000000000000000000010
+# k = 00000000000000000000000000000011
+# k = 00000000000000000000000000000100
+# k = 00000000000000000000000000000101
+# k = 00000000000000000000000000000110
+# k = 00000000000000000000000000000111
+# k = 00000000000000000000000000001000
+# k = 00000000000000000000000000001001
+# k = 00000000000000000000000000001010
+# k = 00000000000000000000000000001011
+# k = 00000000000000000000000000001100
+# k = 00000000000000000000000000001101
+# k = 00000000000000000000000000001110
+vlog -work work C:/Users/home/Documents/Fpga_proj/four_to_two_line_encoder/four_to_two_pri_encoder_beh_tb.v
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 18:42:21 on Oct 07,2019
+# vlog -reportprogress 300 -work work C:/Users/home/Documents/Fpga_proj/four_to_two_line_encoder/four_to_two_pri_encoder_beh_tb.v 
+# -- Compiling module four_to_two_pri_encoder_beh_tb
+# 
+# Top level modules:
+# 	four_to_two_pri_encoder_beh_tb
+# End time: 18:42:21 on Oct 07,2019, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+restart
+# Loading work.four_to_two_pri_encoder_beh_tb
+run
+# GetModuleFileName: The specified module could not be found.
+# 
+# 
+# k = xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+# k = 00000000000000000000000000000000
+# k = 00000000000000000000000000000001
+# k = 00000000000000000000000000000010
+# k = 00000000000000000000000000000011
+# k = 00000000000000000000000000000100
+# k = 00000000000000000000000000000101
+# k = 00000000000000000000000000000110
+# k = 00000000000000000000000000000111
+# k = 00000000000000000000000000001000
+# k = 00000000000000000000000000001001
+# k = 00000000000000000000000000001010
+# k = 00000000000000000000000000001011
+# k = 00000000000000000000000000001100
+# k = 00000000000000000000000000001101
+# k = 00000000000000000000000000001110
+vlog -work work C:/Users/home/Documents/Fpga_proj/four_to_two_line_encoder/four_to_two_pri_encoder_beh_tb.v
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 18:42:46 on Oct 07,2019
+# vlog -reportprogress 300 -work work C:/Users/home/Documents/Fpga_proj/four_to_two_line_encoder/four_to_two_pri_encoder_beh_tb.v 
+# -- Compiling module four_to_two_pri_encoder_beh_tb
+# 
+# Top level modules:
+# 	four_to_two_pri_encoder_beh_tb
+# End time: 18:42:46 on Oct 07,2019, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+restart
+# Loading work.four_to_two_pri_encoder_beh_tb
+run
+# GetModuleFileName: The specified module could not be found.
+# 
+# 
+# k = xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+# k = 00000000000000000000000000000000
+# k = 00000000000000000000000000000001
+# k = 00000000000000000000000000000010
+# k = 00000000000000000000000000000011
+# k = 00000000000000000000000000000100
+# k = 00000000000000000000000000000101
+# k = 00000000000000000000000000000110
+# k = 00000000000000000000000000000111
+# k = 00000000000000000000000000001000
+# k = 00000000000000000000000000001001
+# k = 00000000000000000000000000001010
+# k = 00000000000000000000000000001011
+# k = 00000000000000000000000000001100
+# k = 00000000000000000000000000001101
+# k = 00000000000000000000000000001110
+run
+# k = 00000000000000000000000000001111
+# ** Note: $finish    : C:/Users/home/Documents/Fpga_proj/four_to_two_line_encoder/four_to_two_pri_encoder_beh_tb.v(18)
+#    Time: 170 ps  Iteration: 0  Instance: /four_to_two_pri_encoder_beh_tb
+# 1
+# Break in Module four_to_two_pri_encoder_beh_tb at C:/Users/home/Documents/Fpga_proj/four_to_two_line_encoder/four_to_two_pri_encoder_beh_tb.v line 18
+vlog -work work C:/Users/home/Documents/Fpga_proj/four_to_two_line_encoder/four_to_two_pri_encoder_beh_tb.v
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 18:43:46 on Oct 07,2019
+# vlog -reportprogress 300 -work work C:/Users/home/Documents/Fpga_proj/four_to_two_line_encoder/four_to_two_pri_encoder_beh_tb.v 
+# -- Compiling module four_to_two_pri_encoder_beh_tb
+# 
+# Top level modules:
+# 	four_to_two_pri_encoder_beh_tb
+# End time: 18:43:46 on Oct 07,2019, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+run
+# k = 00000000000000000000000000010000
+# k = 00000000000000000000000000010001
+# k = 00000000000000000000000000010010
+restart
+# Loading work.four_to_two_pri_encoder_beh_tb
+run
+# GetModuleFileName: The specified module could not be found.
+# 
+# 
+# k = xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+# k = 00000000000000000000000000000000
+# k = 00000000000000000000000000000001
+# k = 00000000000000000000000000000010
+# k = 00000000000000000000000000000011
+# k = 00000000000000000000000000000100
+# k = 00000000000000000000000000000101
+# k = 00000000000000000000000000000110
+# k = 00000000000000000000000000000111
+# k = 00000000000000000000000000001000
+# k = 00000000000000000000000000001001
+# k = 00000000000000000000000000001010
+# k = 00000000000000000000000000001011
+# k = 00000000000000000000000000001100
+# k = 00000000000000000000000000001101
+# k = 00000000000000000000000000001110
+vlog -work work C:/Users/home/Documents/Fpga_proj/four_to_two_line_encoder/four_to_two_pri_encoder_beh_tb.v
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 18:44:09 on Oct 07,2019
+# vlog -reportprogress 300 -work work C:/Users/home/Documents/Fpga_proj/four_to_two_line_encoder/four_to_two_pri_encoder_beh_tb.v 
+# -- Compiling module four_to_two_pri_encoder_beh_tb
+# 
+# Top level modules:
+# 	four_to_two_pri_encoder_beh_tb
+# End time: 18:44:09 on Oct 07,2019, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+run
+# k = 00000000000000000000000000001111
+# k = 00000000000000000000000000010000
+# ** Note: $finish    : C:/Users/home/Documents/Fpga_proj/four_to_two_line_encoder/four_to_two_pri_encoder_beh_tb.v(18)
+#    Time: 180 ps  Iteration: 0  Instance: /four_to_two_pri_encoder_beh_tb
+# 1
+# Break in Module four_to_two_pri_encoder_beh_tb at C:/Users/home/Documents/Fpga_proj/four_to_two_line_encoder/four_to_two_pri_encoder_beh_tb.v line 18
+vlog -work work C:/Users/home/Documents/Fpga_proj/four_to_two_line_encoder/four_to_two_pri_encoder_beh_tb.v
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 18:44:42 on Oct 07,2019
+# vlog -reportprogress 300 -work work C:/Users/home/Documents/Fpga_proj/four_to_two_line_encoder/four_to_two_pri_encoder_beh_tb.v 
+# -- Compiling module four_to_two_pri_encoder_beh_tb
+# 
+# Top level modules:
+# 	four_to_two_pri_encoder_beh_tb
+# End time: 18:44:42 on Oct 07,2019, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+run
+# k = 00000000000000000000000000010001
+# k = 00000000000000000000000000010010
+# k = 00000000000000000000000000010011
+run
+restart
+# Loading work.four_to_two_pri_encoder_beh_tb
+run
+# GetModuleFileName: The specified module could not be found.
+# 
+# 
+# k = 00000000000000000000000000000000
+# k = 00000000000000000000000000000001
+# k = 00000000000000000000000000000010
+# k = 00000000000000000000000000000011
+# k = 00000000000000000000000000000100
+# k = 00000000000000000000000000000101
+# k = 00000000000000000000000000000110
+# k = 00000000000000000000000000000111
+# k = 00000000000000000000000000001000
+# k = 00000000000000000000000000001001
+# k = 00000000000000000000000000001010
+# k = 00000000000000000000000000001011
+# k = 00000000000000000000000000001100
+# k = 00000000000000000000000000001101
+# k = 00000000000000000000000000001110
+# k = 00000000000000000000000000001111
+vlog -work work C:/Users/home/Documents/Fpga_proj/four_to_two_line_encoder/four_to_two_pri_encoder_beh_tb.v
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 18:45:17 on Oct 07,2019
+# vlog -reportprogress 300 -work work C:/Users/home/Documents/Fpga_proj/four_to_two_line_encoder/four_to_two_pri_encoder_beh_tb.v 
+# -- Compiling module four_to_two_pri_encoder_beh_tb
+# 
+# Top level modules:
+# 	four_to_two_pri_encoder_beh_tb
+# End time: 18:45:18 on Oct 07,2019, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+restart
+# Loading work.four_to_two_pri_encoder_beh_tb
+run
+# GetModuleFileName: The specified module could not be found.
+# 
+# 
+# k = 00000000000000000000000000000000
+# k = 00000000000000000000000000000001
+# k = 00000000000000000000000000000010
+# k = 00000000000000000000000000000011
+# k = 00000000000000000000000000000100
+# k = 00000000000000000000000000000101
+# k = 00000000000000000000000000000110
+# k = 00000000000000000000000000000111
+# k = 00000000000000000000000000001000
+# k = 00000000000000000000000000001001
+# k = 00000000000000000000000000001010
+# k = 00000000000000000000000000001011
+# k = 00000000000000000000000000001100
+# k = 00000000000000000000000000001101
+# k = 00000000000000000000000000001110
+# k = 00000000000000000000000000001111
+run
+# k = 00000000000000000000000000010000
+# k = 00000000000000000000000000010001
+# ** Note: $finish    : C:/Users/home/Documents/Fpga_proj/four_to_two_line_encoder/four_to_two_pri_encoder_beh_tb.v(18)
+#    Time: 180 ps  Iteration: 0  Instance: /four_to_two_pri_encoder_beh_tb
+# 1
+# Break in Module four_to_two_pri_encoder_beh_tb at C:/Users/home/Documents/Fpga_proj/four_to_two_line_encoder/four_to_two_pri_encoder_beh_tb.v line 18
+vlog -work work C:/Users/home/Documents/Fpga_proj/four_to_two_line_encoder/four_to_two_pri_encoder_beh_tb.v
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 18:46:36 on Oct 07,2019
+# vlog -reportprogress 300 -work work C:/Users/home/Documents/Fpga_proj/four_to_two_line_encoder/four_to_two_pri_encoder_beh_tb.v 
+# -- Compiling module four_to_two_pri_encoder_beh_tb
+# 
+# Top level modules:
+# 	four_to_two_pri_encoder_beh_tb
+# End time: 18:46:36 on Oct 07,2019, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+restart
+# Loading work.four_to_two_pri_encoder_beh_tb
+run
+# GetModuleFileName: The specified module could not be found.
+# 
+# 
+# k = 00000000000000000000000000000000, j = xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+# k = 00000000000000000000000000000001, j = 00000000000000000000000000000000
+# k = 00000000000000000000000000000010, j = 00000000000000000000000000000001
+# k = 00000000000000000000000000000011, j = 00000000000000000000000000000010
+# k = 00000000000000000000000000000100, j = 00000000000000000000000000000011
+# k = 00000000000000000000000000000101, j = 00000000000000000000000000000100
+# k = 00000000000000000000000000000110, j = 00000000000000000000000000000101
+# k = 00000000000000000000000000000111, j = 00000000000000000000000000000110
+# k = 00000000000000000000000000001000, j = 00000000000000000000000000000111
+# k = 00000000000000000000000000001001, j = 00000000000000000000000000001000
+# k = 00000000000000000000000000001010, j = 00000000000000000000000000001001
+# k = 00000000000000000000000000001011, j = 00000000000000000000000000001010
+# k = 00000000000000000000000000001100, j = 00000000000000000000000000001011
+# k = 00000000000000000000000000001101, j = 00000000000000000000000000001100
+# k = 00000000000000000000000000001110, j = 00000000000000000000000000001101
+# k = 00000000000000000000000000001111, j = 00000000000000000000000000001110
+vlog -work work C:/Users/home/Documents/Fpga_proj/four_to_two_line_encoder/four_to_two_pri_encoder_beh_tb.v
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 18:46:55 on Oct 07,2019
+# vlog -reportprogress 300 -work work C:/Users/home/Documents/Fpga_proj/four_to_two_line_encoder/four_to_two_pri_encoder_beh_tb.v 
+# -- Compiling module four_to_two_pri_encoder_beh_tb
+# 
+# Top level modules:
+# 	four_to_two_pri_encoder_beh_tb
+# End time: 18:46:55 on Oct 07,2019, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+restart
+# Loading work.four_to_two_pri_encoder_beh_tb
+run
+# GetModuleFileName: The specified module could not be found.
+# 
+# 
+# k = 00000000000000000000000000000000, j = 00000000000000000000000000000000
+# k = 00000000000000000000000000000001, j = 00000000000000000000000000000001
+# k = 00000000000000000000000000000010, j = 00000000000000000000000000000010
+# k = 00000000000000000000000000000011, j = 00000000000000000000000000000011
+# k = 00000000000000000000000000000100, j = 00000000000000000000000000000100
+# k = 00000000000000000000000000000101, j = 00000000000000000000000000000101
+# k = 00000000000000000000000000000110, j = 00000000000000000000000000000110
+# k = 00000000000000000000000000000111, j = 00000000000000000000000000000111
+# k = 00000000000000000000000000001000, j = 00000000000000000000000000001000
+# k = 00000000000000000000000000001001, j = 00000000000000000000000000001001
+# k = 00000000000000000000000000001010, j = 00000000000000000000000000001010
+# k = 00000000000000000000000000001011, j = 00000000000000000000000000001011
+# k = 00000000000000000000000000001100, j = 00000000000000000000000000001100
+# k = 00000000000000000000000000001101, j = 00000000000000000000000000001101
+# k = 00000000000000000000000000001110, j = 00000000000000000000000000001110
+# k = 00000000000000000000000000001111, j = 00000000000000000000000000001111
+vlog -work work C:/Users/home/Documents/Fpga_proj/four_to_two_line_encoder/four_to_two_pri_encoder_beh_tb.v
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 18:48:12 on Oct 07,2019
+# vlog -reportprogress 300 -work work C:/Users/home/Documents/Fpga_proj/four_to_two_line_encoder/four_to_two_pri_encoder_beh_tb.v 
+# -- Compiling module four_to_two_pri_encoder_beh_tb
+# ** Error: (vlog-13069) C:/Users/home/Documents/Fpga_proj/four_to_two_line_encoder/four_to_two_pri_encoder_beh_tb.v(24): near "#": syntax error, unexpected '#', expecting ';'.
+# ** Error: (vlog-13069) C:/Users/home/Documents/Fpga_proj/four_to_two_line_encoder/four_to_two_pri_encoder_beh_tb.v(31): near "#": syntax error, unexpected '#', expecting ';'.
+# End time: 18:48:12 on Oct 07,2019, Elapsed time: 0:00:00
+# Errors: 2, Warnings: 0
+# C:/intelFPGA/18.1/modelsim_ase/win32aloem/vlog failed.
+vlog -work work C:/Users/home/Documents/Fpga_proj/four_to_two_line_encoder/four_to_two_pri_encoder_beh_tb.v
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 18:48:38 on Oct 07,2019
+# vlog -reportprogress 300 -work work C:/Users/home/Documents/Fpga_proj/four_to_two_line_encoder/four_to_two_pri_encoder_beh_tb.v 
+# -- Compiling module four_to_two_pri_encoder_beh_tb
+# 
+# Top level modules:
+# 	four_to_two_pri_encoder_beh_tb
+# End time: 18:48:38 on Oct 07,2019, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+restart
+# Loading work.four_to_two_pri_encoder_beh_tb
+run
+# GetModuleFileName: The specified module could not be found.
+# 
+# 
+# k = 00000000000000000000000000010011, j = 00000000000000000000000000010011
+restart
+run
+# GetModuleFileName: The specified module could not be found.
+# 
+# 
+# k = 00000000000000000000000000010011, j = 00000000000000000000000000010011
+vlog -work work C:/Users/home/Documents/Fpga_proj/four_to_two_line_encoder/four_to_two_pri_encoder_beh_tb.v
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 18:49:14 on Oct 07,2019
+# vlog -reportprogress 300 -work work C:/Users/home/Documents/Fpga_proj/four_to_two_line_encoder/four_to_two_pri_encoder_beh_tb.v 
+# -- Compiling module four_to_two_pri_encoder_beh_tb
+# 
+# Top level modules:
+# 	four_to_two_pri_encoder_beh_tb
+# End time: 18:49:14 on Oct 07,2019, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+restart
+# Loading work.four_to_two_pri_encoder_beh_tb
+run
+# GetModuleFileName: The specified module could not be found.
+# 
+# 
+# k = 00000000000000000000000000010011, j = 00000000000000000000000000010011
+vlog -work work C:/Users/home/Documents/Fpga_proj/four_to_two_line_encoder/four_to_two_pri_encoder_beh_tb.v
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 18:50:31 on Oct 07,2019
+# vlog -reportprogress 300 -work work C:/Users/home/Documents/Fpga_proj/four_to_two_line_encoder/four_to_two_pri_encoder_beh_tb.v 
+# -- Compiling module four_to_two_pri_encoder_beh_tb
+# ** Error: (vlog-13069) C:/Users/home/Documents/Fpga_proj/four_to_two_line_encoder/four_to_two_pri_encoder_beh_tb.v(28): near "end": syntax error, unexpected end.
+# ** Error: C:/Users/home/Documents/Fpga_proj/four_to_two_line_encoder/four_to_two_pri_encoder_beh_tb.v(33): (vlog-13205) Syntax error found in the scope following 'j'. Is there a missing '::'?
+# End time: 18:50:31 on Oct 07,2019, Elapsed time: 0:00:00
+# Errors: 2, Warnings: 0
+# C:/intelFPGA/18.1/modelsim_ase/win32aloem/vlog failed.
+vlog -work work C:/Users/home/Documents/Fpga_proj/four_to_two_line_encoder/four_to_two_pri_encoder_beh_tb.v
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 18:51:01 on Oct 07,2019
+# vlog -reportprogress 300 -work work C:/Users/home/Documents/Fpga_proj/four_to_two_line_encoder/four_to_two_pri_encoder_beh_tb.v 
+# -- Compiling module four_to_two_pri_encoder_beh_tb
+# 
+# Top level modules:
+# 	four_to_two_pri_encoder_beh_tb
+# End time: 18:51:01 on Oct 07,2019, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+restart
+# Loading work.four_to_two_pri_encoder_beh_tb
+run
+# GetModuleFileName: The specified module could not be found.
+# 
+# 
+# k = 00000000000000000000000000000000, j = 00000000000000000000000000000000
+# k = 00000000000000000000000000000001, j = 00000000000000000000000000000001
+# k = 00000000000000000000000000000010, j = 00000000000000000000000000000010
+# k = 00000000000000000000000000000011, j = 00000000000000000000000000000011
+# k = 00000000000000000000000000000100, j = 00000000000000000000000000000100
+# k = 00000000000000000000000000000101, j = 00000000000000000000000000000101
+# k = 00000000000000000000000000000110, j = 00000000000000000000000000000110
+# k = 00000000000000000000000000000111, j = 00000000000000000000000000000111
+# k = 00000000000000000000000000001000, j = 00000000000000000000000000001000
+# k = 00000000000000000000000000001001, j = 00000000000000000000000000001001
+# k = 00000000000000000000000000001010, j = 00000000000000000000000000001010
+# k = 00000000000000000000000000001011, j = 00000000000000000000000000001011
+# k = 00000000000000000000000000001100, j = 00000000000000000000000000001100
+# k = 00000000000000000000000000001101, j = 00000000000000000000000000001101
+# k = 00000000000000000000000000001110, j = 00000000000000000000000000001110
+# k = 00000000000000000000000000001111, j = 00000000000000000000000000001111
+vlog -work work C:/Users/home/Documents/Fpga_proj/four_to_two_line_encoder/four_to_two_pri_encoder_beh_tb.v
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 18:51:24 on Oct 07,2019
+# vlog -reportprogress 300 -work work C:/Users/home/Documents/Fpga_proj/four_to_two_line_encoder/four_to_two_pri_encoder_beh_tb.v 
+# -- Compiling module four_to_two_pri_encoder_beh_tb
+# 
+# Top level modules:
+# 	four_to_two_pri_encoder_beh_tb
+# End time: 18:51:24 on Oct 07,2019, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+restart
+# Loading work.four_to_two_pri_encoder_beh_tb
+run
+# GetModuleFileName: The specified module could not be found.
+# 
+# 
+# k = 00000000000000000000000000000000, j = 00000000000000000000000000000000
+# k = 00000000000000000000000000000001, j = 00000000000000000000000000000001
+# k = 00000000000000000000000000000010, j = 00000000000000000000000000000010
+# k = 00000000000000000000000000000011, j = 00000000000000000000000000000011
+# k = 00000000000000000000000000000100, j = 00000000000000000000000000000100
+# k = 00000000000000000000000000000101, j = 00000000000000000000000000000101
+# k = 00000000000000000000000000000110, j = 00000000000000000000000000000110
+# k = 00000000000000000000000000000111, j = 00000000000000000000000000000111
+# k = 00000000000000000000000000001000, j = 00000000000000000000000000001000
+# k = 00000000000000000000000000001001, j = 00000000000000000000000000001001
+# k = 00000000000000000000000000001010, j = 00000000000000000000000000001010
+# k = 00000000000000000000000000001011, j = 00000000000000000000000000001011
+# k = 00000000000000000000000000001100, j = 00000000000000000000000000001100
+# k = 00000000000000000000000000001101, j = 00000000000000000000000000001101
+# k = 00000000000000000000000000001110, j = 00000000000000000000000000001110
+# k = 00000000000000000000000000001111, j = 00000000000000000000000000001111
+# ** Note: $finish    : C:/Users/home/Documents/Fpga_proj/four_to_two_line_encoder/four_to_two_pri_encoder_beh_tb.v(18)
+#    Time: 160 ps  Iteration: 0  Instance: /four_to_two_pri_encoder_beh_tb
+# 1
+# Break in Module four_to_two_pri_encoder_beh_tb at C:/Users/home/Documents/Fpga_proj/four_to_two_line_encoder/four_to_two_pri_encoder_beh_tb.v line 18
+# End time: 10:14:21 on Oct 08,2019, Elapsed time: 15:47:02
+# Errors: 9, Warnings: 0

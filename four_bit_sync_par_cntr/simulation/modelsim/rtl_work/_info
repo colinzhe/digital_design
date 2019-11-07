@@ -1,0 +1,55 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/Users/home/Documents/Fpga_proj/four_bit_sync_par_cntr/simulation/modelsim
+vfour_bit_sync_par_cntr
+!s110 1572571408
+!i10b 1
+!s100 =]mn^G5NKCGRR27P@_3gk1
+ILG:8a?a?;lmDclVSLbzhz1
+Z1 VDg1SIo80bB@j0V0VzS_@n1
+R0
+w1572571071
+8C:/Users/home/Documents/Fpga_proj/four_bit_sync_par_cntr/four_bit_sync_par_cntr.v
+FC:/Users/home/Documents/Fpga_proj/four_bit_sync_par_cntr/four_bit_sync_par_cntr.v
+L0 1
+Z2 OV;L;10.5b;63
+r1
+!s85 0
+31
+!s108 1572571408.000000
+!s107 C:/Users/home/Documents/Fpga_proj/four_bit_sync_par_cntr/four_bit_sync_par_cntr.v|
+!s90 -##implicit##push_minusfile_path##|C:/Users/home/Documents/Fpga_proj/moore_binary_counter/simulation/modelsim/vlog.opt|-##implicit##pop_minusfile_path##|-reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/home/Documents/Fpga_proj/four_bit_sync_par_cntr|C:/Users/home/Documents/Fpga_proj/four_bit_sync_par_cntr/four_bit_sync_par_cntr.v|
+!s101 -O0
+!i113 1
+o-O0 -vlog01compat -work work
+!s92 -O0 -vlog01compat -work work +incdir+C:/Users/home/Documents/Fpga_proj/four_bit_sync_par_cntr
+Z3 tDisableOpt 1 CvgOpt 0
+vfour_bit_sync_par_cntr_tb
+!s110 1572572501
+!i10b 1
+!s100 S;Q7^<cm8^BhVT4>7Cc621
+IJLlSBFm^8``CA[HRHjEmP2
+R1
+R0
+w1572572498
+8C:/Users/home/Documents/Fpga_proj/four_bit_sync_par_cntr/four_bit_sync_par_cntr_tb.v
+FC:/Users/home/Documents/Fpga_proj/four_bit_sync_par_cntr/four_bit_sync_par_cntr_tb.v
+L0 1
+R2
+r1
+!s85 0
+31
+!s108 1572572501.000000
+!s107 C:/Users/home/Documents/Fpga_proj/four_bit_sync_par_cntr/four_bit_sync_par_cntr_tb.v|
+!s90 -##implicit##push_minusfile_path##|C:/Users/home/Documents/Fpga_proj/moore_binary_counter/simulation/modelsim/vlog.opt|-##implicit##pop_minusfile_path##|-reportprogress|300|-O0|-work|work|C:/Users/home/Documents/Fpga_proj/four_bit_sync_par_cntr/four_bit_sync_par_cntr_tb.v|
+!s101 -O0 -O0
+!i113 1
+o-O0 -O0 -work work
+R3

@@ -1,0 +1,19 @@
+|one_to_four_line_demux
+A => D.IN0
+A => D.IN0
+A => D.IN0
+A => D.IN0
+B => D.IN1
+B => D.IN1
+B => D.IN1
+B => D.IN1
+E => D.IN1
+E => D.IN1
+E => D.IN1
+E => D.IN1
+D[0] <= D.DB_MAX_OUTPUT_PORT_TYPE
+D[1] <= D.DB_MAX_OUTPUT_PORT_TYPE
+D[2] <= D.DB_MAX_OUTPUT_PORT_TYPE
+D[3] <= D.DB_MAX_OUTPUT_PORT_TYPE
+
+

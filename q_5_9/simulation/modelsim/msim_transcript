@@ -1,0 +1,137 @@
+# Reading C:/intelFPGA/18.1/modelsim_ase/tcl/vsim/pref.tcl
+# do q_5_9_run_msim_rtl_verilog.do
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Model Technology ModelSim - Intel FPGA Edition vmap 10.5b Lib Mapping Utility 2016.10 Oct  5 2016
+# vmap work rtl_work 
+# Modifying C:/intelFPGA/18.1/modelsim_ase/win32aloem/../modelsim.ini
+# 
+# vlog -vlog01compat -work work +incdir+C:/Users/home/Documents/Fpga_proj/q_5_9 {C:/Users/home/Documents/Fpga_proj/q_5_9/q_5_9.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 15:15:21 on Oct 17,2019
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/home/Documents/Fpga_proj/q_5_9" C:/Users/home/Documents/Fpga_proj/q_5_9/q_5_9.v 
+# -- Compiling module q_5_9
+# 
+# Top level modules:
+# 	q_5_9
+# End time: 15:15:21 on Oct 17,2019, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+vlog -reportprogress 300 -work work C:/Users/home/Documents/Fpga_proj/q_5_9/q_5_9_tb.v
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 15:15:31 on Oct 17,2019
+# vlog -reportprogress 300 -work work C:/Users/home/Documents/Fpga_proj/q_5_9/q_5_9_tb.v 
+# -- Compiling module q_5_9_tb
+# 
+# Top level modules:
+# 	q_5_9_tb
+# End time: 15:15:32 on Oct 17,2019, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+vsim work.q_5_9_tb
+# vsim work.q_5_9_tb 
+# Start time: 15:15:36 on Oct 17,2019
+# Loading work.q_5_9_tb
+# Loading work.q_5_9
+# ** Warning: (vsim-3015) C:/Users/home/Documents/Fpga_proj/q_5_9/q_5_9_tb.v(5): [PCDPC] - Port size (2) does not match connection size (1) for port 'y_out'. The port definition is at: C:/Users/home/Documents/Fpga_proj/q_5_9/q_5_9.v(3).
+#    Time: 0 ps  Iteration: 0  Instance: /q_5_9_tb/dut File: C:/Users/home/Documents/Fpga_proj/q_5_9/q_5_9.v
+add wave -position insertpoint  \
+sim:/q_5_9_tb/rstn \
+sim:/q_5_9_tb/clk \
+sim:/q_5_9_tb/x_in \
+sim:/q_5_9_tb/y_out
+run
+# ** Note: $finish    : C:/Users/home/Documents/Fpga_proj/q_5_9/q_5_9_tb.v(19)
+#    Time: 300 ps  Iteration: 0  Instance: /q_5_9_tb
+# 1
+# Break in Module q_5_9_tb at C:/Users/home/Documents/Fpga_proj/q_5_9/q_5_9_tb.v line 19
+vlog -O0 -vlog01compat -work work +incdir+C:/Users/home/Documents/Fpga_proj/q_5_9 C:/Users/home/Documents/Fpga_proj/q_5_9/q_5_9.v
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 15:16:19 on Oct 17,2019
+# vlog -reportprogress 300 -O0 -vlog01compat -work work "+incdir+C:/Users/home/Documents/Fpga_proj/q_5_9" C:/Users/home/Documents/Fpga_proj/q_5_9/q_5_9.v 
+# -- Compiling module q_5_9
+# 
+# Top level modules:
+# 	q_5_9
+# End time: 15:16:20 on Oct 17,2019, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+restart
+# Loading work.q_5_9
+# ** Warning: (vsim-3015) C:/Users/home/Documents/Fpga_proj/q_5_9/q_5_9_tb.v(5): [PCDPC] - Port size (2) does not match connection size (1) for port 'y_out'. The port definition is at: C:/Users/home/Documents/Fpga_proj/q_5_9/q_5_9.v(3).
+#    Time: 0 ps  Iteration: 0  Instance: /q_5_9_tb/dut File: C:/Users/home/Documents/Fpga_proj/q_5_9/q_5_9.v
+run
+# ** Note: $finish    : C:/Users/home/Documents/Fpga_proj/q_5_9/q_5_9_tb.v(19)
+#    Time: 300 ps  Iteration: 0  Instance: /q_5_9_tb
+# 1
+# Break in Module q_5_9_tb at C:/Users/home/Documents/Fpga_proj/q_5_9/q_5_9_tb.v line 19
+vlog -O0 -vlog01compat -work work +incdir+C:/Users/home/Documents/Fpga_proj/q_5_9 C:/Users/home/Documents/Fpga_proj/q_5_9/q_5_9.v
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 15:16:31 on Oct 17,2019
+# vlog -reportprogress 300 -O0 -vlog01compat -work work "+incdir+C:/Users/home/Documents/Fpga_proj/q_5_9" C:/Users/home/Documents/Fpga_proj/q_5_9/q_5_9.v 
+# -- Compiling module q_5_9
+# 
+# Top level modules:
+# 	q_5_9
+# End time: 15:16:31 on Oct 17,2019, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vlog -O0 -work work C:/Users/home/Documents/Fpga_proj/q_5_9/q_5_9_tb.v
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 15:16:36 on Oct 17,2019
+# vlog -reportprogress 300 -O0 -work work C:/Users/home/Documents/Fpga_proj/q_5_9/q_5_9_tb.v 
+# -- Compiling module q_5_9_tb
+# 
+# Top level modules:
+# 	q_5_9_tb
+# End time: 15:16:36 on Oct 17,2019, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+restart
+# Loading work.q_5_9_tb
+# Loading work.q_5_9
+run
+# ** Note: $finish    : C:/Users/home/Documents/Fpga_proj/q_5_9/q_5_9_tb.v(19)
+#    Time: 300 ps  Iteration: 0  Instance: /q_5_9_tb
+# 1
+# Break in Module q_5_9_tb at C:/Users/home/Documents/Fpga_proj/q_5_9/q_5_9_tb.v line 19
+vlog -O0 -work work C:/Users/home/Documents/Fpga_proj/q_5_9/q_5_9_tb.v
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 15:17:45 on Oct 17,2019
+# vlog -reportprogress 300 -O0 -work work C:/Users/home/Documents/Fpga_proj/q_5_9/q_5_9_tb.v 
+# -- Compiling module q_5_9_tb
+# 
+# Top level modules:
+# 	q_5_9_tb
+# End time: 15:17:45 on Oct 17,2019, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+restart
+# Loading work.q_5_9_tb
+run
+vlog -O0 -vlog01compat -work work +incdir+C:/Users/home/Documents/Fpga_proj/q_5_9 C:/Users/home/Documents/Fpga_proj/q_5_9/q_5_9.v
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 15:19:28 on Oct 17,2019
+# vlog -reportprogress 300 -O0 -vlog01compat -work work "+incdir+C:/Users/home/Documents/Fpga_proj/q_5_9" C:/Users/home/Documents/Fpga_proj/q_5_9/q_5_9.v 
+# -- Compiling module q_5_9
+# 
+# Top level modules:
+# 	q_5_9
+# End time: 15:19:28 on Oct 17,2019, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+restart
+# Loading work.q_5_9
+run
+vlog -O0 -work work C:/Users/home/Documents/Fpga_proj/q_5_9/q_5_9_tb.v
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 15:20:45 on Oct 17,2019
+# vlog -reportprogress 300 -O0 -work work C:/Users/home/Documents/Fpga_proj/q_5_9/q_5_9_tb.v 
+# -- Compiling module q_5_9_tb
+# 
+# Top level modules:
+# 	q_5_9_tb
+# End time: 15:20:45 on Oct 17,2019, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+restart
+# Loading work.q_5_9_tb
+run
+# End time: 15:21:27 on Oct 17,2019, Elapsed time: 0:05:51
+# Errors: 0, Warnings: 2

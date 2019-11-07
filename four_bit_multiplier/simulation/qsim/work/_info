@@ -1,0 +1,52 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/Users/home/Documents/Fpga_proj/four_bit_multiplier/simulation/qsim
+vfour_bit_multiplier
+Z1 !s110 1569196243
+!i10b 1
+!s100 =?UQ2eM=88X<P4iClBh8`3
+IaFL1f4l^HaXNJUb1>KoOP2
+Z2 VDg1SIo80bB@j0V0VzS_@n1
+R0
+w1569196242
+8four_bit_multiplier.vo
+Ffour_bit_multiplier.vo
+L0 31
+Z3 OV;L;10.5b;63
+r1
+!s85 0
+31
+Z4 !s108 1569196243.000000
+!s107 four_bit_multiplier.vo|
+!s90 -work|work|four_bit_multiplier.vo|
+!i113 1
+Z5 o-work work
+Z6 tCvgOpt 0
+vfour_bit_multiplier_vlg_vec_tst
+R1
+!i10b 1
+!s100 [iQUPPokdgDbM1a>VcTfH1
+IDOLg9K@:;hTQD7iIZXC8c1
+R2
+R0
+w1569196240
+8Waveform.vwf.vt
+FWaveform.vwf.vt
+L0 29
+R3
+r1
+!s85 0
+31
+R4
+!s107 Waveform.vwf.vt|
+!s90 -work|work|Waveform.vwf.vt|
+!i113 1
+R5
+R6

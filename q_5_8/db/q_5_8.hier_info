@@ -1,0 +1,23 @@
+|q_5_8
+rstn => rstn.IN2
+clk => clk.IN2
+y_out[0] <= t_ff:t_ff_B.Q
+y_out[1] <= t_ff:t_ff_A.Q
+
+
+|q_5_8|t_ff:t_ff_A
+rstn => Q~reg0.ACLR
+clk => Q~reg0.CLK
+T => Q~reg0.ENA
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Qn <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|q_5_8|t_ff:t_ff_B
+rstn => Q~reg0.ACLR
+clk => Q~reg0.CLK
+T => Q~reg0.ENA
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Qn <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+

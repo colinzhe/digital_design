@@ -1,0 +1,52 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/Users/home/Documents/Fpga_proj/introtutorial/simulation/qsim
+vlight
+!s110 1566523556
+!i10b 1
+!s100 aP7]c49bh41PEBHcM>o><2
+I2ZcLlYo6>ek]okHKg?oV83
+Z1 VDg1SIo80bB@j0V0VzS_@n1
+R0
+w1566523556
+8light.vo
+Flight.vo
+L0 31
+Z2 OV;L;10.5b;63
+r1
+!s85 0
+31
+!s108 1566523556.000000
+!s107 light.vo|
+!s90 -work|work|light.vo|
+!i113 1
+Z3 o-work work
+Z4 tCvgOpt 0
+vlight_vlg_vec_tst
+!s110 1566523557
+!i10b 1
+!s100 ]ocB;`<Xf[@;f2>Ieh;C40
+IF>LJacQ6oQc[jIAlBVd042
+R1
+R0
+w1566523554
+8Waveform.vwf.vt
+FWaveform.vwf.vt
+L0 29
+R2
+r1
+!s85 0
+31
+!s108 1566523557.000000
+!s107 Waveform.vwf.vt|
+!s90 -work|work|Waveform.vwf.vt|
+!i113 1
+R3
+R4

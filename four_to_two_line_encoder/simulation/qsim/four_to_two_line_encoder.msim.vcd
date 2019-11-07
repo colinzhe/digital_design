@@ -1,0 +1,137 @@
+$comment
+	File created using the following command:
+		vcd file four_to_two_line_encoder.msim.vcd -direction
+$end
+$date
+	Wed Sep 25 22:05:50 2019
+$end
+$version
+	ModelSim Version 10.5b
+$end
+$timescale
+	1ps
+$end
+
+$scope module four_to_two_line_encoder_vlg_vec_tst $end
+$var reg 4 ! D [3:0] $end
+$var wire 1 " V $end
+$var wire 1 # x $end
+$var wire 1 $ y $end
+
+$scope module i1 $end
+$var wire 1 % gnd $end
+$var wire 1 & vcc $end
+$var wire 1 ' unknown $end
+$var tri1 1 ( devclrn $end
+$var tri1 1 ) devpor $end
+$var tri1 1 * devoe $end
+$var wire 1 + ~QUARTUS_CREATED_GND~I_combout $end
+$var wire 1 , D[2]~input_o $end
+$var wire 1 - D[3]~input_o $end
+$var wire 1 . x~0_combout $end
+$var wire 1 / D[1]~input_o $end
+$var wire 1 0 y~0_combout $end
+$var wire 1 1 D[0]~input_o $end
+$var wire 1 2 WideOr0~combout $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+#0
+$dumpvars
+b0 !
+0"
+0#
+0$
+0%
+1&
+x'
+1(
+1)
+1*
+0+
+0,
+0-
+1.
+0/
+00
+01
+02
+$end
+#10000
+b1 !
+11
+12
+1"
+#20000
+b11 !
+b10 !
+01
+1/
+10
+1$
+#30000
+b11 !
+11
+#40000
+b111 !
+b101 !
+b100 !
+01
+0/
+1,
+0.
+00
+0$
+1#
+#50000
+b101 !
+11
+#60000
+b111 !
+b110 !
+01
+1/
+#70000
+b111 !
+11
+#80000
+b1111 !
+b1011 !
+b1001 !
+b1000 !
+01
+0/
+0,
+1-
+10
+1$
+#90000
+b1001 !
+11
+#100000
+b1011 !
+b1010 !
+01
+1/
+#110000
+b1011 !
+11
+#120000
+b1111 !
+b1101 !
+b1100 !
+01
+0/
+1,
+#130000
+b1101 !
+11
+#140000
+b1111 !
+b1110 !
+01
+1/
+#150000
+b1111 !
+11
+#160000

@@ -1,0 +1,18 @@
+module four_bit_adder (
+	A, // augend
+	B, // addend
+	S, // sum
+	C, // carry out
+);
+	input [3:0] A, B;
+	output [3:0] S;
+	output C;
+	
+	wire C1, C2, C3;
+	
+	full_adder full_adder_0 (
+		A[0],
+		B[0],
+		0,
+		S[0],
+		

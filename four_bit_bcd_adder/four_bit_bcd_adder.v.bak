@@ -1,0 +1,8 @@
+module four_bit_bcd_adder (
+	A,
+	B,
+	Cin,
+	Cout,
+	S
+);
+endmodule

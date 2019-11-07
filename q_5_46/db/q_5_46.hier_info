@@ -1,0 +1,14 @@
+|q_5_46
+rstn => state[0]~reg0.ACLR
+rstn => state[1]~reg0.ACLR
+rstn => state[2]~reg0.ACLR
+clk => state[0]~reg0.CLK
+clk => state[1]~reg0.CLK
+clk => state[2]~reg0.CLK
+x_in => Mux0.IN7
+state[0] <= state[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+state[1] <= state[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+state[2] <= state[2]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+y_out <= WideOr0.DB_MAX_OUTPUT_PORT_TYPE
+
+

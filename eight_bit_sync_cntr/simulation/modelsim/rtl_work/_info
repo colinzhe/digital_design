@@ -1,0 +1,101 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/Users/home/Documents/Fpga_proj/eight_bit_sync_cntr/simulation/modelsim
+veight_bit_sync_cntr
+Z1 !s110 1572486082
+!i10b 1
+!s100 GO047<N]Uf2=]7F5zBP:Q3
+I44?V8cEEKD;KzAW=KRC;f0
+Z2 VDg1SIo80bB@j0V0VzS_@n1
+R0
+w1572486025
+8C:/Users/home/Documents/Fpga_proj/eight_bit_sync_cntr/eight_bit_sync_cntr.v
+FC:/Users/home/Documents/Fpga_proj/eight_bit_sync_cntr/eight_bit_sync_cntr.v
+L0 1
+Z3 OV;L;10.5b;63
+r1
+!s85 0
+31
+Z4 !s108 1572486082.000000
+!s107 C:/Users/home/Documents/Fpga_proj/eight_bit_sync_cntr/eight_bit_sync_cntr.v|
+!s90 -##implicit##push_minusfile_path##|C:/Users/home/Documents/Fpga_proj/moore_binary_counter/simulation/modelsim/vlog.opt|-##implicit##pop_minusfile_path##|-reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/home/Documents/Fpga_proj/eight_bit_sync_cntr|C:/Users/home/Documents/Fpga_proj/eight_bit_sync_cntr/eight_bit_sync_cntr.v|
+!s101 -O0
+!i113 1
+Z5 o-O0 -vlog01compat -work work
+!s92 -O0 -vlog01compat -work work +incdir+C:/Users/home/Documents/Fpga_proj/eight_bit_sync_cntr
+Z6 tDisableOpt 1 CvgOpt 0
+veight_bit_sync_cntr_tb
+!s110 1572486219
+!i10b 1
+!s100 `nFQX_L;8fK;fBA[19[[l0
+IbHM>73M_FQ61k`6I`7^^h2
+R2
+R0
+w1572486215
+8C:/Users/home/Documents/Fpga_proj/eight_bit_sync_cntr/eight_bit_sync_cntr_tb.v
+FC:/Users/home/Documents/Fpga_proj/eight_bit_sync_cntr/eight_bit_sync_cntr_tb.v
+L0 1
+R3
+r1
+!s85 0
+31
+!s108 1572486219.000000
+!s107 C:/Users/home/Documents/Fpga_proj/eight_bit_sync_cntr/eight_bit_sync_cntr_tb.v|
+!s90 -##implicit##push_minusfile_path##|C:/Users/home/Documents/Fpga_proj/moore_binary_counter/simulation/modelsim/vlog.opt|-##implicit##pop_minusfile_path##|-reportprogress|300|-O0|-work|work|C:/Users/home/Documents/Fpga_proj/eight_bit_sync_cntr/eight_bit_sync_cntr_tb.v|
+!s101 -O0 -O0
+!i113 1
+o-O0 -O0 -work work
+R6
+vfour_bit_sync_cntr
+R1
+!i10b 1
+!s100 hFo>m5T<dN=k5_4Eail^>3
+IN<D0KJ@a2`bCbjc]@WWN>1
+R2
+R0
+Z7 w1572485560
+Z8 8C:/Users/home/Documents/Fpga_proj/common/four_bit_sync_cntr.v
+Z9 FC:/Users/home/Documents/Fpga_proj/common/four_bit_sync_cntr.v
+L0 1
+R3
+r1
+!s85 0
+31
+R4
+Z10 !s107 C:/Users/home/Documents/Fpga_proj/common/four_bit_sync_cntr.v|
+Z11 !s90 -##implicit##push_minusfile_path##|C:/Users/home/Documents/Fpga_proj/moore_binary_counter/simulation/modelsim/vlog.opt|-##implicit##pop_minusfile_path##|-reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/home/Documents/Fpga_proj/common|C:/Users/home/Documents/Fpga_proj/common/four_bit_sync_cntr.v|
+!s101 -O0
+!i113 1
+R5
+Z12 !s92 -O0 -vlog01compat -work work +incdir+C:/Users/home/Documents/Fpga_proj/common
+R6
+vt_ff
+R1
+!i10b 1
+!s100 <1A:i0LYXh:zncS`=FOX=2
+I^If=oC5O9gG29=LV1Uc<P1
+R2
+R0
+R7
+R8
+R9
+L0 48
+R3
+r1
+!s85 0
+31
+R4
+R10
+R11
+!s101 -O0
+!i113 1
+R5
+R12
+R6

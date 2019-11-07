@@ -1,0 +1,52 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/Users/home/Documents/Fpga_proj/four_to_two_line_encoder/simulation/qsim
+vfour_to_two_line_encoder
+Z1 !s110 1569463550
+!i10b 1
+!s100 Oi?@3;[?=IREX1:=RTlML2
+IjnmaX:cf09I28dkjI;OX]3
+Z2 VDg1SIo80bB@j0V0VzS_@n1
+R0
+w1569463549
+8four_to_two_line_encoder.vo
+Ffour_to_two_line_encoder.vo
+L0 31
+Z3 OV;L;10.5b;63
+r1
+!s85 0
+31
+Z4 !s108 1569463550.000000
+!s107 four_to_two_line_encoder.vo|
+!s90 -work|work|four_to_two_line_encoder.vo|
+!i113 1
+Z5 o-work work
+Z6 tCvgOpt 0
+vfour_to_two_line_encoder_vlg_vec_tst
+R1
+!i10b 1
+!s100 ZS5EgbVn^8KA0k2hScMK@0
+Ioj3`SP0QR6Z4[P^e35W4S1
+R2
+R0
+w1569463547
+8Waveform.vwf.vt
+FWaveform.vwf.vt
+L0 29
+R3
+r1
+!s85 0
+31
+R4
+!s107 Waveform.vwf.vt|
+!s90 -work|work|Waveform.vwf.vt|
+!i113 1
+R5
+R6

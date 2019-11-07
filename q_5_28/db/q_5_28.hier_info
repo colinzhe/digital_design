@@ -1,0 +1,15 @@
+|q_5_28_str
+rstn => rstn.IN1
+clk => clk.IN1
+x_in[0] => WideXor0.IN0
+x_in[1] => WideXor0.IN1
+y_out << d_ff:dff_A.Q
+
+
+|q_5_28_str|d_ff:dff_A
+rstn => Q~reg0.ACLR
+clk => Q~reg0.CLK
+D => Q~reg0.DATAIN
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
