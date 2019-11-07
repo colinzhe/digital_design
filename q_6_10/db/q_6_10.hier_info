@@ -1,0 +1,50 @@
+|q_6_10
+rstn => rstn.IN2
+clk => clk.IN2
+shift => shift.IN2
+load => load.IN1
+SI => SI.IN1
+I[0] => I[0].IN1
+I[1] => I[1].IN1
+I[2] => I[2].IN1
+I[3] => I[3].IN1
+y <= y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|q_6_10|d_ff:dff_0
+rstn => Q~reg0.ACLR
+clk => Q~reg0.CLK
+D => Q~reg0.DATAIN
+en => Q~reg0.ENA
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|q_6_10|shift_reg:sr_0
+rstn => A[0]~reg0.ACLR
+rstn => A[1]~reg0.ACLR
+rstn => A[2]~reg0.ACLR
+rstn => A[3]~reg0.ACLR
+clk => A[0]~reg0.CLK
+clk => A[1]~reg0.CLK
+clk => A[2]~reg0.CLK
+clk => A[3]~reg0.CLK
+SI => A.DATAB
+shift => A.OUTPUTSELECT
+shift => A.OUTPUTSELECT
+shift => A.OUTPUTSELECT
+shift => A.OUTPUTSELECT
+load => A.OUTPUTSELECT
+load => A.OUTPUTSELECT
+load => A.OUTPUTSELECT
+load => A.OUTPUTSELECT
+I[0] => A.DATAB
+I[1] => A.DATAB
+I[2] => A.DATAB
+I[3] => A.DATAB
+SO <= A[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+A[0] <= A[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+A[1] <= A[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+A[2] <= A[2]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+A[3] <= A[3]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+

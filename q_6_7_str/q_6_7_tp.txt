@@ -1,0 +1,4 @@
+- sync reset in beginning
+- sync reset in middle
+- 4 mux modes
+- various input loads

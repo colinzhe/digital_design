@@ -1,0 +1,5 @@
+insert sync reset in middle of test
+try load during reste
+test load of several values
+test hold
+test gate-level

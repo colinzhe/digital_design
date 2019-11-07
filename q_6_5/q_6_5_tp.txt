@@ -1,0 +1,7 @@
+4b usr tp:
+- async reset in middle of test
+    - load or shift during rest
+- hold current value
+- load new value
+- shift right
+- shift left

@@ -1,0 +1,6 @@
+- async reset at beginning
+- async reset in middle
+- load
+- shift
+- load and shift both asserted
+- load and shift during reset

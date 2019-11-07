@@ -1,0 +1,97 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/Users/czhe/Documents/fpga_proj/four_bit_dec_ring_cntr/simulation/modelsim
+vfour_bit_dec_ring_cntr
+Z1 !s110 1572718454
+!i10b 1
+!s100 K8hd4WVH<H=V[Fl@1=5CL0
+IizhgC2dn5cnF4an;a`O1F2
+Z2 VDg1SIo80bB@j0V0VzS_@n1
+R0
+Z3 w1572718450
+Z4 8C:/Users/czhe/Documents/fpga_proj/four_bit_dec_ring_cntr/four_bit_dec_ring_cntr.v
+Z5 FC:/Users/czhe/Documents/fpga_proj/four_bit_dec_ring_cntr/four_bit_dec_ring_cntr.v
+L0 1
+Z6 OV;L;10.5b;63
+r1
+!s85 0
+31
+Z7 !s108 1572718453.000000
+Z8 !s107 C:/Users/czhe/Documents/fpga_proj/four_bit_dec_ring_cntr/four_bit_dec_ring_cntr.v|
+Z9 !s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/czhe/Documents/fpga_proj/four_bit_dec_ring_cntr|C:/Users/czhe/Documents/fpga_proj/four_bit_dec_ring_cntr/four_bit_dec_ring_cntr.v|
+!i113 1
+Z10 o-vlog01compat -work work
+Z11 !s92 -vlog01compat -work work +incdir+C:/Users/czhe/Documents/fpga_proj/four_bit_dec_ring_cntr
+Z12 tCvgOpt 0
+vfour_bit_dec_ring_cntr_tb
+!s110 1572718429
+!i10b 1
+!s100 V@l1Y7jD2iJ]>ITB<eEiR3
+IG<h@kLYFo]N<?SeQ8`7UA3
+R2
+R0
+w1572718047
+8C:/Users/czhe/Documents/fpga_proj/four_bit_dec_ring_cntr/four_bit_dec_ring_cntr_tb.v
+FC:/Users/czhe/Documents/fpga_proj/four_bit_dec_ring_cntr/four_bit_dec_ring_cntr_tb.v
+L0 1
+R6
+r1
+!s85 0
+31
+!s108 1572718429.000000
+!s107 C:/Users/czhe/Documents/fpga_proj/four_bit_dec_ring_cntr/four_bit_dec_ring_cntr_tb.v|
+!s90 -reportprogress|300|-work|work|C:/Users/czhe/Documents/fpga_proj/four_bit_dec_ring_cntr/four_bit_dec_ring_cntr_tb.v|
+!i113 1
+o-work work
+R12
+vtwo_bit_cntr
+R1
+!i10b 1
+!s100 15VGcBc_lDm?NNJG^@l770
+IVN@10zAl>zdPUUTP]@XCS3
+R2
+R0
+R3
+R4
+R5
+L0 36
+R6
+r1
+!s85 0
+31
+R7
+R8
+R9
+!i113 1
+R10
+R11
+R12
+vtwo_by_four_dec
+R1
+!i10b 1
+!s100 8J8;:dl;9VZz[2jk;l<481
+IkST:HoGQND5dZEAM@:iz50
+R2
+R0
+R3
+R4
+R5
+L0 20
+R6
+r1
+!s85 0
+31
+R7
+R8
+R9
+!i113 1
+R10
+R11
+R12

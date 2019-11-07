@@ -1,0 +1,75 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/Users/czhe/Documents/fpga_proj/four_bit_sync_bcd_cntr/simulation/modelsim
+vfour_bit_sync_bcd_cntr
+Z1 !s110 1572530409
+!i10b 1
+!s100 lJf;VAijfBf3_d0bV:;]b3
+InO7LZHcN;O>j=?OQ8CQ>71
+Z2 VDg1SIo80bB@j0V0VzS_@n1
+R0
+Z3 w1572530271
+Z4 8C:/Users/czhe/Documents/fpga_proj/four_bit_sync_bcd_cntr/four_bit_sync_bcd_cntr.v
+Z5 FC:/Users/czhe/Documents/fpga_proj/four_bit_sync_bcd_cntr/four_bit_sync_bcd_cntr.v
+L0 1
+Z6 OV;L;10.5b;63
+r1
+!s85 0
+31
+Z7 !s108 1572530408.000000
+Z8 !s107 C:/Users/czhe/Documents/fpga_proj/four_bit_sync_bcd_cntr/four_bit_sync_bcd_cntr.v|
+Z9 !s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/czhe/Documents/fpga_proj/four_bit_sync_bcd_cntr|C:/Users/czhe/Documents/fpga_proj/four_bit_sync_bcd_cntr/four_bit_sync_bcd_cntr.v|
+!i113 1
+Z10 o-vlog01compat -work work
+Z11 !s92 -vlog01compat -work work +incdir+C:/Users/czhe/Documents/fpga_proj/four_bit_sync_bcd_cntr
+Z12 tCvgOpt 0
+vfour_bit_sync_bcd_cntr_tb
+!s110 1572530465
+!i10b 1
+!s100 7kQN0hegKo5Z85ESSkH<o3
+I0]>KIdIbY0AW:`ak6LSFX3
+R2
+R0
+w1572530459
+8C:/Users/czhe/Documents/fpga_proj/four_bit_sync_bcd_cntr/four_bit_sync_bcd_cntr_tb.v
+FC:/Users/czhe/Documents/fpga_proj/four_bit_sync_bcd_cntr/four_bit_sync_bcd_cntr_tb.v
+L0 1
+R6
+r1
+!s85 0
+31
+!s108 1572530465.000000
+!s107 C:/Users/czhe/Documents/fpga_proj/four_bit_sync_bcd_cntr/four_bit_sync_bcd_cntr_tb.v|
+!s90 -reportprogress|300|-work|work|C:/Users/czhe/Documents/fpga_proj/four_bit_sync_bcd_cntr/four_bit_sync_bcd_cntr_tb.v|
+!i113 1
+o-work work
+R12
+vt_ff
+R1
+!i10b 1
+!s100 LbagfO3R=7lWW=ZbaZgKc2
+IT6[JW?:`J6ji=Aiad5_BH1
+R2
+R0
+R3
+R4
+R5
+L0 49
+R6
+r1
+!s85 0
+31
+R7
+R8
+R9
+!i113 1
+R10
+R11
+R12

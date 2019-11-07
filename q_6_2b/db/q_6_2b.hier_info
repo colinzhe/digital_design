@@ -1,0 +1,48 @@
+|q_6_2b
+rst => D_in.IN1
+rst => D_in.IN1
+rst => D_in.IN1
+rst => D_in.IN1
+clk => clk.IN4
+load => D_in.IN0
+load => D_in.IN0
+load => D_in.IN0
+load => D_in.IN0
+load => D_in.IN1
+load => D_in.IN1
+load => D_in.IN1
+load => D_in.IN1
+I[0] => D_in.IN1
+I[1] => D_in.IN1
+I[2] => D_in.IN1
+I[3] => D_in.IN1
+A[0] <= d_ff:dff_0.Q
+A[1] <= d_ff:dff_1.Q
+A[2] <= d_ff:dff_2.Q
+A[3] <= d_ff:dff_3.Q
+
+
+|q_6_2b|d_ff:dff_0
+clk => Q~reg0.CLK
+D => Q~reg0.DATAIN
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|q_6_2b|d_ff:dff_1
+clk => Q~reg0.CLK
+D => Q~reg0.DATAIN
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|q_6_2b|d_ff:dff_2
+clk => Q~reg0.CLK
+D => Q~reg0.DATAIN
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|q_6_2b|d_ff:dff_3
+clk => Q~reg0.CLK
+D => Q~reg0.DATAIN
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+

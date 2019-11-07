@@ -1,0 +1,53 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/Users/czhe/Documents/fpga_proj/q_6_7_beh/simulation/modelsim
+vq_6_7_beh
+!s110 1572973404
+!i10b 1
+!s100 SBP_a;2LX=ACFFfddi[Mb0
+Im6oH;QW4TE?LDfRPYejMM3
+Z1 VDg1SIo80bB@j0V0VzS_@n1
+R0
+w1572973334
+8C:/Users/czhe/Documents/fpga_proj/q_6_7_beh/q_6_7_beh.v
+FC:/Users/czhe/Documents/fpga_proj/q_6_7_beh/q_6_7_beh.v
+L0 1
+Z2 OV;L;10.5b;63
+r1
+!s85 0
+31
+!s108 1572973403.000000
+!s107 C:/Users/czhe/Documents/fpga_proj/q_6_7_beh/q_6_7_beh.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/czhe/Documents/fpga_proj/q_6_7_beh|C:/Users/czhe/Documents/fpga_proj/q_6_7_beh/q_6_7_beh.v|
+!i113 1
+o-vlog01compat -work work
+!s92 -vlog01compat -work work +incdir+C:/Users/czhe/Documents/fpga_proj/q_6_7_beh
+Z3 tCvgOpt 0
+vq_6_7_beh_tb
+!s110 1572973413
+!i10b 1
+!s100 GH_M2PEc[j5?b5f`gAK>Y1
+IhV[31lDQH5kRNVOQNM]kD0
+R1
+R0
+w1572973393
+8C:/Users/czhe/Documents/fpga_proj/q_6_7_beh/q_6_7_beh_tb.v
+FC:/Users/czhe/Documents/fpga_proj/q_6_7_beh/q_6_7_beh_tb.v
+L0 1
+R2
+r1
+!s85 0
+31
+!s108 1572973413.000000
+!s107 C:/Users/czhe/Documents/fpga_proj/q_6_7_beh/q_6_7_beh_tb.v|
+!s90 -reportprogress|300|-work|work|C:/Users/czhe/Documents/fpga_proj/q_6_7_beh/q_6_7_beh_tb.v|
+!i113 1
+o-work work
+R3

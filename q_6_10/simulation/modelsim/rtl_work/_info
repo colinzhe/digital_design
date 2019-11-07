@@ -1,0 +1,97 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/Users/czhe/Documents/fpga_proj/q_6_10/simulation/modelsim
+vd_ff
+Z1 !s110 1573055320
+!i10b 1
+!s100 12]^3j8nX>Chgn:U=SAA@2
+IAfI_KC1RmVU8HhNMK]?DX3
+Z2 VDg1SIo80bB@j0V0VzS_@n1
+R0
+Z3 w1573055303
+Z4 8C:/Users/czhe/Documents/fpga_proj/q_6_10/q_6_10.v
+Z5 FC:/Users/czhe/Documents/fpga_proj/q_6_10/q_6_10.v
+L0 31
+Z6 OV;L;10.5b;63
+r1
+!s85 0
+31
+Z7 !s108 1573055320.000000
+Z8 !s107 C:/Users/czhe/Documents/fpga_proj/q_6_10/q_6_10.v|
+Z9 !s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/czhe/Documents/fpga_proj/q_6_10|C:/Users/czhe/Documents/fpga_proj/q_6_10/q_6_10.v|
+!i113 1
+Z10 o-vlog01compat -work work
+Z11 !s92 -vlog01compat -work work +incdir+C:/Users/czhe/Documents/fpga_proj/q_6_10
+Z12 tCvgOpt 0
+vq_6_10
+R1
+!i10b 1
+!s100 g^L5Co>M6HF[?EXBz=YKe3
+I=LEDmE<30c`PUn8^WTU423
+R2
+R0
+R3
+R4
+R5
+L0 1
+R6
+r1
+!s85 0
+31
+R7
+R8
+R9
+!i113 1
+R10
+R11
+R12
+vq_6_10_tb
+!s110 1573055342
+!i10b 1
+!s100 oM8=PI@86Q8XSe59z`@cC3
+IW6fD=]@KBMo0<BcGh0Sz?0
+R2
+R0
+w1573055310
+8C:/Users/czhe/Documents/fpga_proj/q_6_10/q_6_10_tb.v
+FC:/Users/czhe/Documents/fpga_proj/q_6_10/q_6_10_tb.v
+L0 1
+R6
+r1
+!s85 0
+31
+!s108 1573055342.000000
+!s107 C:/Users/czhe/Documents/fpga_proj/q_6_10/q_6_10_tb.v|
+!s90 -reportprogress|300|-work|work|C:/Users/czhe/Documents/fpga_proj/q_6_10/q_6_10_tb.v|
+!i113 1
+o-work work
+R12
+vshift_reg
+R1
+!i10b 1
+!s100 Zdfh1]17IcQC4QkM<K`0S0
+I=B9RI8fV7UL5fWXj;=[@H1
+R2
+R0
+R3
+R4
+R5
+L0 51
+R6
+r1
+!s85 0
+31
+R7
+R8
+R9
+!i113 1
+R10
+R11
+R12

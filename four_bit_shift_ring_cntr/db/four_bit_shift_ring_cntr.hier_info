@@ -1,0 +1,19 @@
+|four_bit_shift_ring_cntr
+rstn => count[0]~reg0.ACLR
+rstn => count[1]~reg0.ACLR
+rstn => count[2]~reg0.ACLR
+rstn => count[3]~reg0.PRESET
+clk => count[0]~reg0.CLK
+clk => count[1]~reg0.CLK
+clk => count[2]~reg0.CLK
+clk => count[3]~reg0.CLK
+cnt_en => count[0]~reg0.ENA
+cnt_en => count[3]~reg0.ENA
+cnt_en => count[2]~reg0.ENA
+cnt_en => count[1]~reg0.ENA
+count[0] <= count[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+count[1] <= count[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+count[2] <= count[2]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+count[3] <= count[3]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+

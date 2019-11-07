@@ -1,0 +1,184 @@
+# Reading C:/intelFPGA_lite/18.1/modelsim_ase/tcl/vsim/pref.tcl
+# do q_6_6_run_msim_rtl_verilog.do
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Model Technology ModelSim - Intel FPGA Edition vmap 10.5b Lib Mapping Utility 2016.10 Oct  5 2016
+# vmap work rtl_work 
+# Copying C:/intelFPGA_lite/18.1/modelsim_ase/win32aloem/../modelsim.ini to modelsim.ini
+# Modifying modelsim.ini
+# 
+# vlog -vlog01compat -work work +incdir+C:/Users/czhe/Documents/fpga_proj/q_6_6 {C:/Users/czhe/Documents/fpga_proj/q_6_6/q_6_6.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 21:46:01 on Nov 04,2019
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/czhe/Documents/fpga_proj/q_6_6" C:/Users/czhe/Documents/fpga_proj/q_6_6/q_6_6.v 
+# -- Compiling module q_6_6
+# -- Compiling module d_ff
+# 
+# Top level modules:
+# 	q_6_6
+# End time: 21:46:01 on Nov 04,2019, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+vlog -reportprogress 300 -work work C:/Users/czhe/Documents/fpga_proj/q_6_6/q_6_6_tb.v
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 21:46:46 on Nov 04,2019
+# vlog -reportprogress 300 -work work C:/Users/czhe/Documents/fpga_proj/q_6_6/q_6_6_tb.v 
+# -- Compiling module q_6_6_tb
+# 
+# Top level modules:
+# 	q_6_6_tb
+# End time: 21:46:47 on Nov 04,2019, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+vsim work.q_6_6_tb
+# vsim work.q_6_6_tb 
+# Start time: 21:46:51 on Nov 04,2019
+# Loading work.q_6_6_tb
+# Loading work.q_6_6
+# Loading work.d_ff
+add wave -position insertpoint  \
+sim:/q_6_6_tb/rstn \
+sim:/q_6_6_tb/clk \
+sim:/q_6_6_tb/load \
+sim:/q_6_6_tb/shift \
+sim:/q_6_6_tb/SI \
+sim:/q_6_6_tb/I \
+sim:/q_6_6_tb/SO
+run
+restart
+run
+# ** Note: $finish    : C:/Users/czhe/Documents/fpga_proj/q_6_6/q_6_6_tb.v(31)
+#    Time: 280 ps  Iteration: 0  Instance: /q_6_6_tb
+# 1
+# Break in Module q_6_6_tb at C:/Users/czhe/Documents/fpga_proj/q_6_6/q_6_6_tb.v line 31
+vlog -vlog01compat -work work +incdir+C:/Users/czhe/Documents/fpga_proj/q_6_6 C:/Users/czhe/Documents/fpga_proj/q_6_6/q_6_6.v
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 21:48:43 on Nov 04,2019
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/czhe/Documents/fpga_proj/q_6_6" C:/Users/czhe/Documents/fpga_proj/q_6_6/q_6_6.v 
+# -- Compiling module q_6_6
+# ** Error: (vlog-13069) C:/Users/czhe/Documents/fpga_proj/q_6_6/q_6_6.v(6): near ";": syntax error, unexpected ';', expecting ')'.
+# End time: 21:48:43 on Nov 04,2019, Elapsed time: 0:00:00
+# Errors: 1, Warnings: 0
+# C:/intelFPGA_lite/18.1/modelsim_ase/win32aloem/vlog failed.
+vlog -vlog01compat -work work +incdir+C:/Users/czhe/Documents/fpga_proj/q_6_6 C:/Users/czhe/Documents/fpga_proj/q_6_6/q_6_6.v
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 21:48:43 on Nov 04,2019
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/czhe/Documents/fpga_proj/q_6_6" C:/Users/czhe/Documents/fpga_proj/q_6_6/q_6_6.v 
+# -- Compiling module q_6_6
+# ** Error: (vlog-13069) C:/Users/czhe/Documents/fpga_proj/q_6_6/q_6_6.v(6): near ";": syntax error, unexpected ';', expecting ')'.
+# End time: 21:48:43 on Nov 04,2019, Elapsed time: 0:00:00
+# Errors: 1, Warnings: 0
+# C:/intelFPGA_lite/18.1/modelsim_ase/win32aloem/vlog failed.
+vlog -work work C:/Users/czhe/Documents/fpga_proj/q_6_6/q_6_6_tb.v
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 21:48:44 on Nov 04,2019
+# vlog -reportprogress 300 -work work C:/Users/czhe/Documents/fpga_proj/q_6_6/q_6_6_tb.v 
+# -- Compiling module q_6_6_tb
+# 
+# Top level modules:
+# 	q_6_6_tb
+# End time: 21:48:44 on Nov 04,2019, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vlog -vlog01compat -work work +incdir+C:/Users/czhe/Documents/fpga_proj/q_6_6 C:/Users/czhe/Documents/fpga_proj/q_6_6/q_6_6.v
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 21:48:57 on Nov 04,2019
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/czhe/Documents/fpga_proj/q_6_6" C:/Users/czhe/Documents/fpga_proj/q_6_6/q_6_6.v 
+# -- Compiling module q_6_6
+# -- Compiling module d_ff
+# 
+# Top level modules:
+# 	q_6_6
+# End time: 21:48:57 on Nov 04,2019, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vlog -vlog01compat -work work +incdir+C:/Users/czhe/Documents/fpga_proj/q_6_6 C:/Users/czhe/Documents/fpga_proj/q_6_6/q_6_6.v
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 21:48:57 on Nov 04,2019
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/czhe/Documents/fpga_proj/q_6_6" C:/Users/czhe/Documents/fpga_proj/q_6_6/q_6_6.v 
+# -- Compiling module q_6_6
+# -- Compiling module d_ff
+# 
+# Top level modules:
+# 	q_6_6
+# End time: 21:48:57 on Nov 04,2019, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vlog -work work C:/Users/czhe/Documents/fpga_proj/q_6_6/q_6_6_tb.v
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 21:48:57 on Nov 04,2019
+# vlog -reportprogress 300 -work work C:/Users/czhe/Documents/fpga_proj/q_6_6/q_6_6_tb.v 
+# -- Compiling module q_6_6_tb
+# 
+# Top level modules:
+# 	q_6_6_tb
+# End time: 21:48:57 on Nov 04,2019, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vsim work.q_6_6_tb
+# End time: 21:49:05 on Nov 04,2019, Elapsed time: 0:02:14
+# Errors: 4, Warnings: 0
+# vsim work.q_6_6_tb 
+# Start time: 21:49:05 on Nov 04,2019
+# Loading work.q_6_6_tb
+# Loading work.q_6_6
+# Loading work.d_ff
+add wave -position insertpoint  \
+sim:/q_6_6_tb/rstn \
+sim:/q_6_6_tb/clk \
+sim:/q_6_6_tb/load \
+sim:/q_6_6_tb/shift \
+sim:/q_6_6_tb/SI \
+sim:/q_6_6_tb/I \
+sim:/q_6_6_tb/SO \
+sim:/q_6_6_tb/A
+run
+# ** Note: $finish    : C:/Users/czhe/Documents/fpga_proj/q_6_6/q_6_6_tb.v(32)
+#    Time: 280 ps  Iteration: 0  Instance: /q_6_6_tb
+# 1
+# Break in Module q_6_6_tb at C:/Users/czhe/Documents/fpga_proj/q_6_6/q_6_6_tb.v line 32
+vlog -work work C:/Users/czhe/Documents/fpga_proj/q_6_6/q_6_6_tb.v
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 21:52:47 on Nov 04,2019
+# vlog -reportprogress 300 -work work C:/Users/czhe/Documents/fpga_proj/q_6_6/q_6_6_tb.v 
+# -- Compiling module q_6_6_tb
+# 
+# Top level modules:
+# 	q_6_6_tb
+# End time: 21:52:47 on Nov 04,2019, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+restart
+# Loading work.q_6_6_tb
+run
+# GetModuleFileName: The specified module could not be found.
+# 
+# 
+restart
+run
+# GetModuleFileName: The specified module could not be found.
+# 
+# 
+# ** Note: $finish    : C:/Users/czhe/Documents/fpga_proj/q_6_6/q_6_6_tb.v(35)
+#    Time: 310 ps  Iteration: 0  Instance: /q_6_6_tb
+# 1
+# Break in Module q_6_6_tb at C:/Users/czhe/Documents/fpga_proj/q_6_6/q_6_6_tb.v line 35
+vlog -work work C:/Users/czhe/Documents/fpga_proj/q_6_6/q_6_6_tb.v
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 21:53:54 on Nov 04,2019
+# vlog -reportprogress 300 -work work C:/Users/czhe/Documents/fpga_proj/q_6_6/q_6_6_tb.v 
+# -- Compiling module q_6_6_tb
+# 
+# Top level modules:
+# 	q_6_6_tb
+# End time: 21:53:54 on Nov 04,2019, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+restart
+# Loading work.q_6_6_tb
+run
+# GetModuleFileName: The specified module could not be found.
+# 
+# 
+# ** Note: $finish    : C:/Users/czhe/Documents/fpga_proj/q_6_6/q_6_6_tb.v(36)
+#    Time: 330 ps  Iteration: 0  Instance: /q_6_6_tb
+# 1
+# Break in Module q_6_6_tb at C:/Users/czhe/Documents/fpga_proj/q_6_6/q_6_6_tb.v line 36
+# End time: 21:55:04 on Nov 04,2019, Elapsed time: 0:05:59
+# Errors: 0, Warnings: 0

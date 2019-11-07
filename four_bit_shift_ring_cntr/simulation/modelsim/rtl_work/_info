@@ -1,0 +1,53 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/Users/czhe/Documents/fpga_proj/four_bit_shift_ring_cntr/simulation/modelsim
+vfour_bit_shift_ring_cntr
+!s110 1572616481
+!i10b 1
+!s100 Ya<:FEW0Xf:CgC3^hLC_o0
+IHzj;X96MF0ndG6AS<K0lM3
+Z1 VDg1SIo80bB@j0V0VzS_@n1
+R0
+w1572616328
+8C:/Users/czhe/Documents/fpga_proj/four_bit_shift_ring_cntr/four_bit_shift_ring_cntr.v
+FC:/Users/czhe/Documents/fpga_proj/four_bit_shift_ring_cntr/four_bit_shift_ring_cntr.v
+L0 1
+Z2 OV;L;10.5b;63
+r1
+!s85 0
+31
+!s108 1572616481.000000
+!s107 C:/Users/czhe/Documents/fpga_proj/four_bit_shift_ring_cntr/four_bit_shift_ring_cntr.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/czhe/Documents/fpga_proj/four_bit_shift_ring_cntr|C:/Users/czhe/Documents/fpga_proj/four_bit_shift_ring_cntr/four_bit_shift_ring_cntr.v|
+!i113 1
+o-vlog01compat -work work
+!s92 -vlog01compat -work work +incdir+C:/Users/czhe/Documents/fpga_proj/four_bit_shift_ring_cntr
+Z3 tCvgOpt 0
+vfour_bit_shift_ring_cntr_tb
+!s110 1572616495
+!i10b 1
+!s100 O1DBGP7]JCX@>nePYR7nm3
+Ij`JQi]iWml:ZkU5?dV[4z0
+R1
+R0
+w1572616450
+8C:/Users/czhe/Documents/fpga_proj/four_bit_shift_ring_cntr/four_bit_shift_ring_cntr_tb.v
+FC:/Users/czhe/Documents/fpga_proj/four_bit_shift_ring_cntr/four_bit_shift_ring_cntr_tb.v
+L0 1
+R2
+r1
+!s85 0
+31
+!s108 1572616495.000000
+!s107 C:/Users/czhe/Documents/fpga_proj/four_bit_shift_ring_cntr/four_bit_shift_ring_cntr_tb.v|
+!s90 -reportprogress|300|-work|work|C:/Users/czhe/Documents/fpga_proj/four_bit_shift_ring_cntr/four_bit_shift_ring_cntr_tb.v|
+!i113 1
+o-work work
+R3

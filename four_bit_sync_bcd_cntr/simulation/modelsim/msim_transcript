@@ -1,0 +1,64 @@
+# Reading C:/intelFPGA_lite/18.1/modelsim_ase/tcl/vsim/pref.tcl
+# do four_bit_sync_bcd_cntr_run_msim_rtl_verilog.do
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Model Technology ModelSim - Intel FPGA Edition vmap 10.5b Lib Mapping Utility 2016.10 Oct  5 2016
+# vmap work rtl_work 
+# Copying C:/intelFPGA_lite/18.1/modelsim_ase/win32aloem/../modelsim.ini to modelsim.ini
+# Modifying modelsim.ini
+# 
+# vlog -vlog01compat -work work +incdir+C:/Users/czhe/Documents/fpga_proj/four_bit_sync_bcd_cntr {C:/Users/czhe/Documents/fpga_proj/four_bit_sync_bcd_cntr/four_bit_sync_bcd_cntr.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 10:00:08 on Oct 31,2019
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/czhe/Documents/fpga_proj/four_bit_sync_bcd_cntr" C:/Users/czhe/Documents/fpga_proj/four_bit_sync_bcd_cntr/four_bit_sync_bcd_cntr.v 
+# -- Compiling module four_bit_sync_bcd_cntr
+# -- Compiling module t_ff
+# 
+# Top level modules:
+# 	four_bit_sync_bcd_cntr
+# End time: 10:00:09 on Oct 31,2019, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# 
+vlog -reportprogress 300 -work work C:/Users/czhe/Documents/fpga_proj/four_bit_sync_bcd_cntr/four_bit_sync_bcd_cntr_tb.v
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 10:00:19 on Oct 31,2019
+# vlog -reportprogress 300 -work work C:/Users/czhe/Documents/fpga_proj/four_bit_sync_bcd_cntr/four_bit_sync_bcd_cntr_tb.v 
+# -- Compiling module four_bit_sync_bcd_cntr_tb
+# 
+# Top level modules:
+# 	four_bit_sync_bcd_cntr_tb
+# End time: 10:00:20 on Oct 31,2019, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+vsim work.four_bit_sync_bcd_cntr_tb
+# vsim work.four_bit_sync_bcd_cntr_tb 
+# Start time: 10:00:38 on Oct 31,2019
+# Loading work.four_bit_sync_bcd_cntr_tb
+# Loading work.four_bit_sync_bcd_cntr
+# Loading work.t_ff
+add wave -position insertpoint  \
+sim:/four_bit_sync_bcd_cntr_tb/rstn \
+sim:/four_bit_sync_bcd_cntr_tb/clk \
+sim:/four_bit_sync_bcd_cntr_tb/count \
+sim:/four_bit_sync_bcd_cntr_tb/carry
+vlog -work work C:/Users/czhe/Documents/fpga_proj/four_bit_sync_bcd_cntr/four_bit_sync_bcd_cntr_tb.v
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 10:01:05 on Oct 31,2019
+# vlog -reportprogress 300 -work work C:/Users/czhe/Documents/fpga_proj/four_bit_sync_bcd_cntr/four_bit_sync_bcd_cntr_tb.v 
+# -- Compiling module four_bit_sync_bcd_cntr_tb
+# 
+# Top level modules:
+# 	four_bit_sync_bcd_cntr_tb
+# End time: 10:01:05 on Oct 31,2019, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+restart
+# Loading work.four_bit_sync_bcd_cntr_tb
+run
+# ** Note: $finish    : C:/Users/czhe/Documents/fpga_proj/four_bit_sync_bcd_cntr/four_bit_sync_bcd_cntr_tb.v(20)
+#    Time: 1 ns  Iteration: 0  Instance: /four_bit_sync_bcd_cntr_tb
+# 1
+# Break in Module four_bit_sync_bcd_cntr_tb at C:/Users/czhe/Documents/fpga_proj/four_bit_sync_bcd_cntr/four_bit_sync_bcd_cntr_tb.v line 20
+# End time: 10:01:43 on Oct 31,2019, Elapsed time: 0:01:05
+# Errors: 0, Warnings: 0

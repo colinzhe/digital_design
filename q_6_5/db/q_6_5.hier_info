@@ -1,0 +1,83 @@
+|q_6_5
+rstn => rstn.IN2
+clk => clk.IN2
+MSB_in => MSB_in.IN1
+LSB_in => LSB_in.IN1
+sel[0] => sel[0].IN2
+sel[1] => sel[1].IN2
+I[0] => I[0].IN1
+I[1] => I[1].IN1
+I[2] => I[2].IN1
+I[3] => I[3].IN1
+I[4] => I[4].IN1
+I[5] => I[5].IN1
+I[6] => I[6].IN1
+I[7] => I[7].IN1
+A[0] <= four_bit_usr:lsb_usr.A
+A[1] <= four_bit_usr:lsb_usr.A
+A[2] <= four_bit_usr:lsb_usr.A
+A[3] <= A[3].DB_MAX_OUTPUT_PORT_TYPE
+A[4] <= A[4].DB_MAX_OUTPUT_PORT_TYPE
+A[5] <= four_bit_usr:msb_usr.A
+A[6] <= four_bit_usr:msb_usr.A
+A[7] <= four_bit_usr:msb_usr.A
+
+
+|q_6_5|four_bit_usr:msb_usr
+rstn => A[0]~reg0.ACLR
+rstn => A[1]~reg0.ACLR
+rstn => A[2]~reg0.ACLR
+rstn => A[3]~reg0.ACLR
+clk => A[0]~reg0.CLK
+clk => A[1]~reg0.CLK
+clk => A[2]~reg0.CLK
+clk => A[3]~reg0.CLK
+MSB_in => Mux0.IN0
+LSB_in => Mux3.IN0
+sel[0] => Mux0.IN2
+sel[0] => Mux1.IN1
+sel[0] => Mux2.IN1
+sel[0] => Mux3.IN2
+sel[1] => Mux0.IN1
+sel[1] => Mux1.IN0
+sel[1] => Mux2.IN0
+sel[1] => Mux3.IN1
+I[0] => Mux3.IN3
+I[1] => Mux2.IN2
+I[2] => Mux1.IN2
+I[3] => Mux0.IN3
+A[0] <= A[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+A[1] <= A[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+A[2] <= A[2]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+A[3] <= A[3]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|q_6_5|four_bit_usr:lsb_usr
+rstn => A[0]~reg0.ACLR
+rstn => A[1]~reg0.ACLR
+rstn => A[2]~reg0.ACLR
+rstn => A[3]~reg0.ACLR
+clk => A[0]~reg0.CLK
+clk => A[1]~reg0.CLK
+clk => A[2]~reg0.CLK
+clk => A[3]~reg0.CLK
+MSB_in => Mux0.IN0
+LSB_in => Mux3.IN0
+sel[0] => Mux0.IN2
+sel[0] => Mux1.IN1
+sel[0] => Mux2.IN1
+sel[0] => Mux3.IN2
+sel[1] => Mux0.IN1
+sel[1] => Mux1.IN0
+sel[1] => Mux2.IN0
+sel[1] => Mux3.IN1
+I[0] => Mux3.IN3
+I[1] => Mux2.IN2
+I[2] => Mux1.IN2
+I[3] => Mux0.IN3
+A[0] <= A[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+A[1] <= A[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+A[2] <= A[2]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+A[3] <= A[3]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
