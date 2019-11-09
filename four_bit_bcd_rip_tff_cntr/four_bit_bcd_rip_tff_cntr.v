@@ -1,9 +1,8 @@
 module four_bit_bcd_rip_tff_cntr (
     input rstn, cnt_en,
-    output [3:0] count
+    output [3:0] count,
+    output rstn_int
 );
-    wire rstn_int;
-
     assign rstn_int = ~(count[3] && count[1]);
 
     t_ff tff_A0 (

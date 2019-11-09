@@ -20,6 +20,10 @@
 					"strict" : false
 				},
 				{
+					"name" : "rstn_int",
+					"strict" : false
+				},
+				{
 					"name" : "cnt_en",
 					"strict" : false
 				},

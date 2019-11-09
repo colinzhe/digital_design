@@ -1,0 +1,139 @@
+# Reading C:/intelFPGA_lite/18.1/modelsim_ase/tcl/vsim/pref.tcl
+# do q_6_17_run_msim_rtl_verilog.do
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Model Technology ModelSim - Intel FPGA Edition vmap 10.5b Lib Mapping Utility 2016.10 Oct  5 2016
+# vmap work rtl_work 
+# Copying C:/intelFPGA_lite/18.1/modelsim_ase/win32aloem/../modelsim.ini to modelsim.ini
+# Modifying modelsim.ini
+# 
+# vlog -vlog01compat -work work +incdir+C:/Users/czhe/Downloads/digital_design/q_6_17 {C:/Users/czhe/Downloads/digital_design/q_6_17/q_6_17.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 09:52:56 on Nov 08,2019
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/czhe/Downloads/digital_design/q_6_17" C:/Users/czhe/Downloads/digital_design/q_6_17/q_6_17.v 
+# -- Compiling module q_6_17
+# -- Compiling module d_ff
+# 
+# Top level modules:
+# 	q_6_17
+# End time: 09:52:56 on Nov 08,2019, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+vlog -reportprogress 300 -work work C:/Users/czhe/Downloads/digital_design/q_6_17/q_6_17_tb.v
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 09:53:09 on Nov 08,2019
+# vlog -reportprogress 300 -work work C:/Users/czhe/Downloads/digital_design/q_6_17/q_6_17_tb.v 
+# -- Compiling module q_6_17_tb
+# 
+# Top level modules:
+# 	q_6_17_tb
+# End time: 09:53:09 on Nov 08,2019, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vsim work.q_6_17_tb
+# vsim work.q_6_17_tb 
+# Start time: 09:53:14 on Nov 08,2019
+# Loading work.q_6_17_tb
+# Loading work.q_6_17
+# Loading work.d_ff
+add wave -position insertpoint  \
+sim:/q_6_17_tb/rstb \
+sim:/q_6_17_tb/clk \
+sim:/q_6_17_tb/count
+run
+# ** Note: $finish    : C:/Users/czhe/Downloads/digital_design/q_6_17/q_6_17_tb.v(12)
+#    Time: 200 ps  Iteration: 0  Instance: /q_6_17_tb
+# 1
+# Break in Module q_6_17_tb at C:/Users/czhe/Downloads/digital_design/q_6_17/q_6_17_tb.v line 12
+vlog -vlog01compat -work work +incdir+C:/Users/czhe/Downloads/digital_design/q_6_17 C:/Users/czhe/Downloads/digital_design/q_6_17/q_6_17.v
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 10:10:56 on Nov 08,2019
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/czhe/Downloads/digital_design/q_6_17" C:/Users/czhe/Downloads/digital_design/q_6_17/q_6_17.v 
+# -- Compiling module q_6_17
+# -- Compiling module d_ff
+# 
+# Top level modules:
+# 	q_6_17
+# End time: 10:10:56 on Nov 08,2019, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vlog -vlog01compat -work work +incdir+C:/Users/czhe/Downloads/digital_design/q_6_17 C:/Users/czhe/Downloads/digital_design/q_6_17/q_6_17.v
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 10:10:56 on Nov 08,2019
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/czhe/Downloads/digital_design/q_6_17" C:/Users/czhe/Downloads/digital_design/q_6_17/q_6_17.v 
+# -- Compiling module q_6_17
+# -- Compiling module d_ff
+# 
+# Top level modules:
+# 	q_6_17
+# End time: 10:10:56 on Nov 08,2019, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vlog -work work C:/Users/czhe/Downloads/digital_design/q_6_17/q_6_17_tb.v
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 10:10:57 on Nov 08,2019
+# vlog -reportprogress 300 -work work C:/Users/czhe/Downloads/digital_design/q_6_17/q_6_17_tb.v 
+# -- Compiling module q_6_17_tb
+# 
+# Top level modules:
+# 	q_6_17_tb
+# End time: 10:10:57 on Nov 08,2019, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+restart
+# Loading work.q_6_17_tb
+# Loading work.q_6_17
+# Loading work.d_ff
+run
+# GetModuleFileName: The specified module could not be found.
+# 
+# 
+# ** Note: $finish    : C:/Users/czhe/Downloads/digital_design/q_6_17/q_6_17_tb.v(12)
+#    Time: 200 ps  Iteration: 0  Instance: /q_6_17_tb
+# 1
+# Break in Module q_6_17_tb at C:/Users/czhe/Downloads/digital_design/q_6_17/q_6_17_tb.v line 12
+vlog -vlog01compat -work work +incdir+C:/Users/czhe/Downloads/digital_design/q_6_17 C:/Users/czhe/Downloads/digital_design/q_6_17/q_6_17.v
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 10:11:36 on Nov 08,2019
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/czhe/Downloads/digital_design/q_6_17" C:/Users/czhe/Downloads/digital_design/q_6_17/q_6_17.v 
+# -- Compiling module q_6_17
+# -- Compiling module d_ff
+# 
+# Top level modules:
+# 	q_6_17
+# End time: 10:11:36 on Nov 08,2019, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vlog -vlog01compat -work work +incdir+C:/Users/czhe/Downloads/digital_design/q_6_17 C:/Users/czhe/Downloads/digital_design/q_6_17/q_6_17.v
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 10:11:36 on Nov 08,2019
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/czhe/Downloads/digital_design/q_6_17" C:/Users/czhe/Downloads/digital_design/q_6_17/q_6_17.v 
+# -- Compiling module q_6_17
+# -- Compiling module d_ff
+# 
+# Top level modules:
+# 	q_6_17
+# End time: 10:11:36 on Nov 08,2019, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vlog -work work C:/Users/czhe/Downloads/digital_design/q_6_17/q_6_17_tb.v
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 10:11:36 on Nov 08,2019
+# vlog -reportprogress 300 -work work C:/Users/czhe/Downloads/digital_design/q_6_17/q_6_17_tb.v 
+# -- Compiling module q_6_17_tb
+# 
+# Top level modules:
+# 	q_6_17_tb
+# End time: 10:11:37 on Nov 08,2019, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+restart
+# Loading work.q_6_17_tb
+# Loading work.q_6_17
+# Loading work.d_ff
+run
+# GetModuleFileName: The specified module could not be found.
+# 
+# 
+# ** Note: $finish    : C:/Users/czhe/Downloads/digital_design/q_6_17/q_6_17_tb.v(12)
+#    Time: 200 ps  Iteration: 0  Instance: /q_6_17_tb
+# 1
+# Break in Module q_6_17_tb at C:/Users/czhe/Downloads/digital_design/q_6_17/q_6_17_tb.v line 12
+# End time: 10:12:08 on Nov 08,2019, Elapsed time: 0:18:54
+# Errors: 0, Warnings: 0

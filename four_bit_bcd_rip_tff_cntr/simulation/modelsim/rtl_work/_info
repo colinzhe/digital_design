@@ -8,36 +8,36 @@ z2
 !i10f 100
 cModel Technology
 Z0 dC:/Users/czhe/Downloads/digital_design/four_bit_bcd_rip_tff_cntr/simulation/modelsim
-vfour_bit_bcd_rip_tff_cntr
-Z1 !s110 1573095959
+vfour_bit_bcd_rip_tff_cntr_beh
+Z1 !s110 1573181169
 !i10b 1
-!s100 ^a?:A:>AjF]o2bCQhOk2P0
-I[;Wo@S_Vke3@5Y;i=4MR]0
+!s100 bC2QNLME@in]K;HmCK4mB2
+Ifg42j3SQkF2Sk@<E44Q5j2
 Z2 VDg1SIo80bB@j0V0VzS_@n1
 R0
-Z3 w1573095946
-Z4 8C:/Users/czhe/Downloads/digital_design/four_bit_bcd_rip_tff_cntr/four_bit_bcd_rip_tff_cntr.v
-Z5 FC:/Users/czhe/Downloads/digital_design/four_bit_bcd_rip_tff_cntr/four_bit_bcd_rip_tff_cntr.v
+Z3 w1573181122
+Z4 8C:/Users/czhe/Downloads/digital_design/four_bit_bcd_rip_tff_cntr/four_bit_bcd_rip_tff_cntr_beh.v
+Z5 FC:/Users/czhe/Downloads/digital_design/four_bit_bcd_rip_tff_cntr/four_bit_bcd_rip_tff_cntr_beh.v
 L0 1
 Z6 OV;L;10.5b;63
 r1
 !s85 0
 31
-Z7 !s108 1573095959.000000
-Z8 !s107 C:/Users/czhe/Downloads/digital_design/four_bit_bcd_rip_tff_cntr/four_bit_bcd_rip_tff_cntr.v|
-Z9 !s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/czhe/Downloads/digital_design/four_bit_bcd_rip_tff_cntr|C:/Users/czhe/Downloads/digital_design/four_bit_bcd_rip_tff_cntr/four_bit_bcd_rip_tff_cntr.v|
+Z7 !s108 1573181168.000000
+Z8 !s107 C:/Users/czhe/Downloads/digital_design/four_bit_bcd_rip_tff_cntr/four_bit_bcd_rip_tff_cntr_beh.v|
+Z9 !s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/czhe/Downloads/digital_design/four_bit_bcd_rip_tff_cntr|C:/Users/czhe/Downloads/digital_design/four_bit_bcd_rip_tff_cntr/four_bit_bcd_rip_tff_cntr_beh.v|
 !i113 1
 Z10 o-vlog01compat -work work
 Z11 !s92 -vlog01compat -work work +incdir+C:/Users/czhe/Downloads/digital_design/four_bit_bcd_rip_tff_cntr
 Z12 tCvgOpt 0
 vfour_bit_bcd_rip_tff_cntr_tb
-R1
+!s110 1573181168
 !i10b 1
-!s100 BA:B7j>MN`7[BQU6kh4JZ2
-IWD`55]IV<XA@oP012g_]l2
+!s100 `_zGeXn]B25;RB]=PTP932
+Ih<fgeP8aVYcWh?[M0YJVL3
 R2
 R0
-w1573095713
+w1573180409
 8C:/Users/czhe/Downloads/digital_design/four_bit_bcd_rip_tff_cntr/four_bit_bcd_rip_tff_cntr_tb.v
 FC:/Users/czhe/Downloads/digital_design/four_bit_bcd_rip_tff_cntr/four_bit_bcd_rip_tff_cntr_tb.v
 L0 1
@@ -51,17 +51,17 @@ R7
 !i113 1
 o-work work
 R12
-vt_ff
+vfour_bit_rip_cntr
 R1
 !i10b 1
-!s100 Bli1Add9]@PUQASNUoKaf2
-I3G^e]JmTF_l8iFzz4U1jA3
+!s100 L1MMendik<AJc>3>DDCIT3
+IgQPK785>LF@CBzX;ajKGn1
 R2
 R0
 R3
 R4
 R5
-L0 42
+L0 17
 R6
 r1
 !s85 0

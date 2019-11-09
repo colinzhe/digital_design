@@ -10,86 +10,87 @@
 # Copying C:/intelFPGA_lite/18.1/modelsim_ase/win32aloem/../modelsim.ini to modelsim.ini
 # Modifying modelsim.ini
 # 
-# vlog -vlog01compat -work work +incdir+C:/Users/czhe/Downloads/digital_design/four_bit_bcd_rip_tff_cntr {C:/Users/czhe/Downloads/digital_design/four_bit_bcd_rip_tff_cntr/four_bit_bcd_rip_tff_cntr.v}
+# vlog -vlog01compat -work work +incdir+C:/Users/czhe/Downloads/digital_design/four_bit_bcd_rip_tff_cntr {C:/Users/czhe/Downloads/digital_design/four_bit_bcd_rip_tff_cntr/four_bit_bcd_rip_tff_cntr_beh.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 22:02:48 on Nov 06,2019
-# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/czhe/Downloads/digital_design/four_bit_bcd_rip_tff_cntr" C:/Users/czhe/Downloads/digital_design/four_bit_bcd_rip_tff_cntr/four_bit_bcd_rip_tff_cntr.v 
-# -- Compiling module four_bit_bcd_rip_tff_cntr
-# -- Compiling module t_ff
+# Start time: 21:34:19 on Nov 07,2019
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/czhe/Downloads/digital_design/four_bit_bcd_rip_tff_cntr" C:/Users/czhe/Downloads/digital_design/four_bit_bcd_rip_tff_cntr/four_bit_bcd_rip_tff_cntr_beh.v 
+# -- Compiling module four_bit_bcd_rip_tff_cntr_beh
+# -- Compiling module four_bit_rip_cntr
 # 
 # Top level modules:
-# 	four_bit_bcd_rip_tff_cntr
-# End time: 22:02:48 on Nov 06,2019, Elapsed time: 0:00:00
+# 	four_bit_bcd_rip_tff_cntr_beh
+# End time: 21:34:19 on Nov 07,2019, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # 
 vlog -reportprogress 300 -work work C:/Users/czhe/Downloads/digital_design/four_bit_bcd_rip_tff_cntr/four_bit_bcd_rip_tff_cntr_tb.v
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 22:02:55 on Nov 06,2019
+# Start time: 21:35:29 on Nov 07,2019
 # vlog -reportprogress 300 -work work C:/Users/czhe/Downloads/digital_design/four_bit_bcd_rip_tff_cntr/four_bit_bcd_rip_tff_cntr_tb.v 
 # -- Compiling module four_bit_bcd_rip_tff_cntr_tb
 # 
 # Top level modules:
 # 	four_bit_bcd_rip_tff_cntr_tb
-# End time: 22:02:55 on Nov 06,2019, Elapsed time: 0:00:00
+# End time: 21:35:29 on Nov 07,2019, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 vsim work.four_bit_bcd_rip_tff_cntr_tb
 # vsim work.four_bit_bcd_rip_tff_cntr_tb 
-# Start time: 22:03:00 on Nov 06,2019
+# Start time: 21:35:52 on Nov 07,2019
 # Loading work.four_bit_bcd_rip_tff_cntr_tb
-# Loading work.four_bit_bcd_rip_tff_cntr
-# Loading work.t_ff
+# Loading work.four_bit_bcd_rip_tff_cntr_beh
+# Loading work.four_bit_rip_cntr
 add wave -position insertpoint  \
 sim:/four_bit_bcd_rip_tff_cntr_tb/rstn \
 sim:/four_bit_bcd_rip_tff_cntr_tb/cnt_en \
-sim:/four_bit_bcd_rip_tff_cntr_tb/count
+sim:/four_bit_bcd_rip_tff_cntr_tb/count \
+sim:/four_bit_bcd_rip_tff_cntr_tb/rstn_int
 run
-# ** Note: $finish    : C:/Users/czhe/Downloads/digital_design/four_bit_bcd_rip_tff_cntr/four_bit_bcd_rip_tff_cntr_tb.v(19)
+# ** Note: $finish    : C:/Users/czhe/Downloads/digital_design/four_bit_bcd_rip_tff_cntr/four_bit_bcd_rip_tff_cntr_tb.v(21)
 #    Time: 1 ns  Iteration: 0  Instance: /four_bit_bcd_rip_tff_cntr_tb
 # 1
-# Break in Module four_bit_bcd_rip_tff_cntr_tb at C:/Users/czhe/Downloads/digital_design/four_bit_bcd_rip_tff_cntr/four_bit_bcd_rip_tff_cntr_tb.v line 19
-vlog -vlog01compat -work work +incdir+C:/Users/czhe/Downloads/digital_design/four_bit_bcd_rip_tff_cntr C:/Users/czhe/Downloads/digital_design/four_bit_bcd_rip_tff_cntr/four_bit_bcd_rip_tff_cntr.v
+# Break in Module four_bit_bcd_rip_tff_cntr_tb at C:/Users/czhe/Downloads/digital_design/four_bit_bcd_rip_tff_cntr/four_bit_bcd_rip_tff_cntr_tb.v line 21
+vlog -vlog01compat -work work +incdir+C:/Users/czhe/Downloads/digital_design/four_bit_bcd_rip_tff_cntr C:/Users/czhe/Downloads/digital_design/four_bit_bcd_rip_tff_cntr/four_bit_bcd_rip_tff_cntr_beh.v
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 22:05:59 on Nov 06,2019
-# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/czhe/Downloads/digital_design/four_bit_bcd_rip_tff_cntr" C:/Users/czhe/Downloads/digital_design/four_bit_bcd_rip_tff_cntr/four_bit_bcd_rip_tff_cntr.v 
-# -- Compiling module four_bit_bcd_rip_tff_cntr
-# -- Compiling module t_ff
+# Start time: 21:46:08 on Nov 07,2019
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/czhe/Downloads/digital_design/four_bit_bcd_rip_tff_cntr" C:/Users/czhe/Downloads/digital_design/four_bit_bcd_rip_tff_cntr/four_bit_bcd_rip_tff_cntr_beh.v 
+# -- Compiling module four_bit_bcd_rip_tff_cntr_beh
+# -- Compiling module four_bit_rip_cntr
 # 
 # Top level modules:
-# 	four_bit_bcd_rip_tff_cntr
-# End time: 22:05:59 on Nov 06,2019, Elapsed time: 0:00:00
+# 	four_bit_bcd_rip_tff_cntr_beh
+# End time: 21:46:08 on Nov 07,2019, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 vlog -work work C:/Users/czhe/Downloads/digital_design/four_bit_bcd_rip_tff_cntr/four_bit_bcd_rip_tff_cntr_tb.v
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 22:05:59 on Nov 06,2019
+# Start time: 21:46:08 on Nov 07,2019
 # vlog -reportprogress 300 -work work C:/Users/czhe/Downloads/digital_design/four_bit_bcd_rip_tff_cntr/four_bit_bcd_rip_tff_cntr_tb.v 
 # -- Compiling module four_bit_bcd_rip_tff_cntr_tb
 # 
 # Top level modules:
 # 	four_bit_bcd_rip_tff_cntr_tb
-# End time: 22:05:59 on Nov 06,2019, Elapsed time: 0:00:00
+# End time: 21:46:08 on Nov 07,2019, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
-vlog -vlog01compat -work work +incdir+C:/Users/czhe/Downloads/digital_design/four_bit_bcd_rip_tff_cntr C:/Users/czhe/Downloads/digital_design/four_bit_bcd_rip_tff_cntr/four_bit_bcd_rip_tff_cntr.v
+vlog -vlog01compat -work work +incdir+C:/Users/czhe/Downloads/digital_design/four_bit_bcd_rip_tff_cntr C:/Users/czhe/Downloads/digital_design/four_bit_bcd_rip_tff_cntr/four_bit_bcd_rip_tff_cntr_beh.v
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 22:05:59 on Nov 06,2019
-# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/czhe/Downloads/digital_design/four_bit_bcd_rip_tff_cntr" C:/Users/czhe/Downloads/digital_design/four_bit_bcd_rip_tff_cntr/four_bit_bcd_rip_tff_cntr.v 
-# -- Compiling module four_bit_bcd_rip_tff_cntr
-# -- Compiling module t_ff
+# Start time: 21:46:08 on Nov 07,2019
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/czhe/Downloads/digital_design/four_bit_bcd_rip_tff_cntr" C:/Users/czhe/Downloads/digital_design/four_bit_bcd_rip_tff_cntr/four_bit_bcd_rip_tff_cntr_beh.v 
+# -- Compiling module four_bit_bcd_rip_tff_cntr_beh
+# -- Compiling module four_bit_rip_cntr
 # 
 # Top level modules:
-# 	four_bit_bcd_rip_tff_cntr
-# End time: 22:05:59 on Nov 06,2019, Elapsed time: 0:00:00
+# 	four_bit_bcd_rip_tff_cntr_beh
+# End time: 21:46:09 on Nov 07,2019, Elapsed time: 0:00:01
 # Errors: 0, Warnings: 0
 restart
 # Loading work.four_bit_bcd_rip_tff_cntr_tb
-# Loading work.four_bit_bcd_rip_tff_cntr
-# Loading work.t_ff
+# Loading work.four_bit_bcd_rip_tff_cntr_beh
+# Loading work.four_bit_rip_cntr
 run
 # GetModuleFileName: The specified module could not be found.
 # 
 # 
-# ** Note: $finish    : C:/Users/czhe/Downloads/digital_design/four_bit_bcd_rip_tff_cntr/four_bit_bcd_rip_tff_cntr_tb.v(19)
+# ** Note: $finish    : C:/Users/czhe/Downloads/digital_design/four_bit_bcd_rip_tff_cntr/four_bit_bcd_rip_tff_cntr_tb.v(21)
 #    Time: 1 ns  Iteration: 0  Instance: /four_bit_bcd_rip_tff_cntr_tb
 # 1
-# Break in Module four_bit_bcd_rip_tff_cntr_tb at C:/Users/czhe/Downloads/digital_design/four_bit_bcd_rip_tff_cntr/four_bit_bcd_rip_tff_cntr_tb.v line 19
-# End time: 22:06:22 on Nov 06,2019, Elapsed time: 0:03:22
+# Break in Module four_bit_bcd_rip_tff_cntr_tb at C:/Users/czhe/Downloads/digital_design/four_bit_bcd_rip_tff_cntr/four_bit_bcd_rip_tff_cntr_tb.v line 21
+# End time: 09:14:42 on Nov 08,2019, Elapsed time: 11:38:50
 # Errors: 0, Warnings: 0

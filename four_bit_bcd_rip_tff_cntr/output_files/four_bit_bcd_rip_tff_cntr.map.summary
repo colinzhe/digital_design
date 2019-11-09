@@ -1,11 +1,11 @@
-Analysis & Synthesis Status : Successful - Wed Nov 06 21:37:40 2019
+Analysis & Synthesis Status : Successful - Thu Nov 07 21:32:22 2019
 Quartus Prime Version : 18.1.0 Build 625 09/12/2018 SJ Lite Edition
 Revision Name : four_bit_bcd_rip_tff_cntr
-Top-level Entity Name : four_bit_bcd_rip_tff_cntr
+Top-level Entity Name : four_bit_bcd_rip_tff_cntr_beh
 Family : Cyclone V
 Logic utilization (in ALMs) : N/A
 Total registers : 4
-Total pins : 6
+Total pins : 7
 Total virtual pins : 0
 Total block memory bits : 0
 Total DSP Blocks : 0

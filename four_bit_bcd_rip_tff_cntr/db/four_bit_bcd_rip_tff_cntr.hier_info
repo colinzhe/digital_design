@@ -1,52 +1,20 @@
-|four_bit_bcd_rip_tff_cntr
-rstn => comb.IN1
-rstn => comb.IN1
-rstn => comb.IN1
-rstn => comb.IN1
+|four_bit_bcd_rip_tff_cntr_beh
+rstn => rstn.IN1
 cnt_en => cnt_en.IN1
-count[0] <= count[0].DB_MAX_OUTPUT_PORT_TYPE
-count[1] <= count[1].DB_MAX_OUTPUT_PORT_TYPE
-count[2] <= count[2].DB_MAX_OUTPUT_PORT_TYPE
-count[3] <= t_ff:tff_A3.Q
+count[0] <= four_bit_rip_cntr:rip_cntr.A
+count[1] <= four_bit_rip_cntr:rip_cntr.A
+count[2] <= four_bit_rip_cntr:rip_cntr.A
+count[3] <= four_bit_rip_cntr:rip_cntr.A
+rstn_int <= rstn_int.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|four_bit_bcd_rip_tff_cntr|t_ff:tff_A0
-rstn => Qn~reg0.PRESET
-rstn => Q~reg0.ACLR
-clk => Qn~reg0.CLK
-clk => Q~reg0.CLK
-T => Q~reg0.ENA
-Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
-Qn <= Qn~reg0.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|four_bit_bcd_rip_tff_cntr|t_ff:tff_A1
-rstn => Qn~reg0.PRESET
-rstn => Q~reg0.ACLR
-clk => Qn~reg0.CLK
-clk => Q~reg0.CLK
-T => Q~reg0.ENA
-Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
-Qn <= Qn~reg0.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|four_bit_bcd_rip_tff_cntr|t_ff:tff_A2
-rstn => Qn~reg0.PRESET
-rstn => Q~reg0.ACLR
-clk => Qn~reg0.CLK
-clk => Q~reg0.CLK
-T => Q~reg0.ENA
-Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
-Qn <= Qn~reg0.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|four_bit_bcd_rip_tff_cntr|t_ff:tff_A3
-rstn => Qn~reg0.PRESET
-rstn => Q~reg0.ACLR
-clk => Qn~reg0.CLK
-clk => Q~reg0.CLK
-T => Q~reg0.ENA
-Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
-Qn <= Qn~reg0.DB_MAX_OUTPUT_PORT_TYPE
+|four_bit_bcd_rip_tff_cntr_beh|four_bit_rip_cntr:rip_cntr
+rstn => always3.IN0
+cnt_en => A0.CLK
+clr => always3.IN1
+A[0] <= A0.DB_MAX_OUTPUT_PORT_TYPE
+A[1] <= A1.DB_MAX_OUTPUT_PORT_TYPE
+A[2] <= A2.DB_MAX_OUTPUT_PORT_TYPE
+A[3] <= A3.DB_MAX_OUTPUT_PORT_TYPE
 
 
