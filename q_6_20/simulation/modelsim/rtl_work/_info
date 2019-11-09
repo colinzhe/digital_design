@@ -1,0 +1,75 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/Users/czhe/Downloads/digital_design/q_6_20/simulation/modelsim
+vfour_bit_sync_par_cntr
+Z1 !s110 1573339980
+!i10b 1
+!s100 =]mn^G5NKCGRR27P@_3gk1
+IMTicVIi6;Gmh[Z6;a7Hed1
+Z2 VDg1SIo80bB@j0V0VzS_@n1
+R0
+w1573089162
+8C:/Users/czhe/Downloads/digital_design/common/four_bit_sync_par_cntr.v
+FC:/Users/czhe/Downloads/digital_design/common/four_bit_sync_par_cntr.v
+L0 1
+Z3 OV;L;10.5b;63
+r1
+!s85 0
+31
+Z4 !s108 1573339980.000000
+!s107 C:/Users/czhe/Downloads/digital_design/common/four_bit_sync_par_cntr.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/czhe/Downloads/digital_design/common|C:/Users/czhe/Downloads/digital_design/common/four_bit_sync_par_cntr.v|
+!i113 1
+Z5 o-vlog01compat -work work
+!s92 -vlog01compat -work work +incdir+C:/Users/czhe/Downloads/digital_design/common
+Z6 tCvgOpt 0
+vq_6_20
+!s110 1573339987
+!i10b 1
+!s100 J@f9VAN=V6J;aPbN[8SH33
+I`fHOAHfZ2dY]>OhkH@bT=3
+R2
+R0
+w1573339976
+8C:/Users/czhe/Downloads/digital_design/q_6_20/q_6_20.v
+FC:/Users/czhe/Downloads/digital_design/q_6_20/q_6_20.v
+L0 1
+R3
+r1
+!s85 0
+31
+!s108 1573339987.000000
+!s107 C:/Users/czhe/Downloads/digital_design/q_6_20/q_6_20.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/czhe/Downloads/digital_design/q_6_20|C:/Users/czhe/Downloads/digital_design/q_6_20/q_6_20.v|
+!i113 1
+R5
+!s92 -vlog01compat -work work +incdir+C:/Users/czhe/Downloads/digital_design/q_6_20
+R6
+vq_6_20_tb
+R1
+!i10b 1
+!s100 ?Di?zY^T6FnomDzgROOh02
+IWNjIYPj=aff89J^Cfc2242
+R2
+R0
+w1573339563
+8C:/Users/czhe/Downloads/digital_design/q_6_20/q_6_20_tb.v
+FC:/Users/czhe/Downloads/digital_design/q_6_20/q_6_20_tb.v
+L0 1
+R3
+r1
+!s85 0
+31
+R4
+!s107 C:/Users/czhe/Downloads/digital_design/q_6_20/q_6_20_tb.v|
+!s90 -reportprogress|300|-work|work|C:/Users/czhe/Downloads/digital_design/q_6_20/q_6_20_tb.v|
+!i113 1
+o-work work
+R6

@@ -1,0 +1,3 @@
+- async reset
+- cnt_en
+- check count never goes beyond 8'd127

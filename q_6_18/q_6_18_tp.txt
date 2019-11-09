@@ -1,0 +1,2 @@
+- all combinations of up, down
+- async reset

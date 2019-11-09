@@ -1,0 +1,51 @@
+|q_6_18
+rstn => rstn.IN4
+clk => clk.IN4
+up => T02.IN0
+up => T_in.IN1
+up => T01.IN0
+down => T01.IN1
+down => T02.IN1
+count[0] <= t_ff:tff_A0.Q
+count[1] <= t_ff:tff_A1.Q
+count[2] <= t_ff:tff_A2.Q
+count[3] <= t_ff:tff_A3.Q
+carry <= carry.DB_MAX_OUTPUT_PORT_TYPE
+T_in[0] <= T_in[0].DB_MAX_OUTPUT_PORT_TYPE
+T_in[1] <= T_in[1].DB_MAX_OUTPUT_PORT_TYPE
+T_in[2] <= T_in[2].DB_MAX_OUTPUT_PORT_TYPE
+T_in[3] <= T_in[3].DB_MAX_OUTPUT_PORT_TYPE
+
+
+|q_6_18|t_ff:tff_A0
+rstn => Q~reg0.ACLR
+clk => Q~reg0.CLK
+T => Q~reg0.ENA
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Qn <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|q_6_18|t_ff:tff_A1
+rstn => Q~reg0.ACLR
+clk => Q~reg0.CLK
+T => Q~reg0.ENA
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Qn <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|q_6_18|t_ff:tff_A2
+rstn => Q~reg0.ACLR
+clk => Q~reg0.CLK
+T => Q~reg0.ENA
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Qn <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|q_6_18|t_ff:tff_A3
+rstn => Q~reg0.ACLR
+clk => Q~reg0.CLK
+T => Q~reg0.ENA
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Qn <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+

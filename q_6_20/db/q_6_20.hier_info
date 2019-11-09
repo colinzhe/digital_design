@@ -1,0 +1,79 @@
+|q_6_20
+rstb => rstb.IN2
+clk => clk.IN2
+cnt_en => cnt_en.IN1
+count[0] <= four_bit_sync_par_cntr:cntr_lsb.count
+count[1] <= four_bit_sync_par_cntr:cntr_lsb.count
+count[2] <= four_bit_sync_par_cntr:cntr_lsb.count
+count[3] <= four_bit_sync_par_cntr:cntr_lsb.count
+count[4] <= four_bit_sync_par_cntr:cntr_msb.count
+count[5] <= four_bit_sync_par_cntr:cntr_msb.count
+count[6] <= load.DB_MAX_OUTPUT_PORT_TYPE
+count[7] <= four_bit_sync_par_cntr:cntr_msb.count
+carry <= WideAnd0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|q_6_20|four_bit_sync_par_cntr:cntr_lsb
+rstn => count[0]~reg0.ACLR
+rstn => count[1]~reg0.ACLR
+rstn => count[2]~reg0.ACLR
+rstn => count[3]~reg0.ACLR
+clk => count[0]~reg0.CLK
+clk => count[1]~reg0.CLK
+clk => count[2]~reg0.CLK
+clk => count[3]~reg0.CLK
+cnt_en => Mux0.IN1
+cnt_en => Mux1.IN1
+cnt_en => Mux2.IN1
+cnt_en => Mux3.IN1
+load => Mux0.IN2
+load => Mux1.IN2
+load => Mux2.IN2
+load => Mux3.IN2
+I[0] => Mux3.IN3
+I[0] => Mux3.IN4
+I[1] => Mux2.IN3
+I[1] => Mux2.IN4
+I[2] => Mux1.IN3
+I[2] => Mux1.IN4
+I[3] => Mux0.IN3
+I[3] => Mux0.IN4
+count[0] <= count[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+count[1] <= count[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+count[2] <= count[2]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+count[3] <= count[3]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+carry <= WideAnd0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|q_6_20|four_bit_sync_par_cntr:cntr_msb
+rstn => count[0]~reg0.ACLR
+rstn => count[1]~reg0.ACLR
+rstn => count[2]~reg0.ACLR
+rstn => count[3]~reg0.ACLR
+clk => count[0]~reg0.CLK
+clk => count[1]~reg0.CLK
+clk => count[2]~reg0.CLK
+clk => count[3]~reg0.CLK
+cnt_en => Mux0.IN1
+cnt_en => Mux1.IN1
+cnt_en => Mux2.IN1
+cnt_en => Mux3.IN1
+load => Mux0.IN2
+load => Mux1.IN2
+load => Mux2.IN2
+load => Mux3.IN2
+I[0] => Mux3.IN3
+I[0] => Mux3.IN4
+I[1] => Mux2.IN3
+I[1] => Mux2.IN4
+I[2] => Mux1.IN3
+I[2] => Mux1.IN4
+I[3] => Mux0.IN3
+I[3] => Mux0.IN4
+count[0] <= count[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+count[1] <= count[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+count[2] <= count[2]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+count[3] <= count[3]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+carry <= WideAnd0.DB_MAX_OUTPUT_PORT_TYPE
+
+
