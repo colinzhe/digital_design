@@ -1,0 +1,12 @@
+|q_6_23_beh
+rstb => state~3.DATAIN
+clk => state~1.DATAIN
+cnt_en => next_state.S1.DATAB
+cnt_en => Selector0.IN2
+count[0] <= WideOr3.DB_MAX_OUTPUT_PORT_TYPE
+count[1] <= WideOr2.DB_MAX_OUTPUT_PORT_TYPE
+count[2] <= WideOr1.DB_MAX_OUTPUT_PORT_TYPE
+count[3] <= WideOr0.DB_MAX_OUTPUT_PORT_TYPE
+y <= y.DB_MAX_OUTPUT_PORT_TYPE
+
+

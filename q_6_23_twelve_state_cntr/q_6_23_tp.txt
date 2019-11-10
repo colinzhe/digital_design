@@ -1,0 +1,5 @@
+- async reset
+- count sequence only has 13 states
+- output asserted for only 12 states
+- unused states
+- cnt_en toggling during counting
