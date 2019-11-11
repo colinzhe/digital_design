@@ -1,0 +1,3 @@
+- async reset
+- cnt_en
+- clock periods
