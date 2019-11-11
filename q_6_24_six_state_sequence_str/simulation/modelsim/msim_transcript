@@ -1,0 +1,298 @@
+# Reading C:/intelFPGA_lite/18.1/modelsim_ase/tcl/vsim/pref.tcl
+# do q_6_24_str_run_msim_rtl_verilog.do
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Model Technology ModelSim - Intel FPGA Edition vmap 10.5b Lib Mapping Utility 2016.10 Oct  5 2016
+# vmap work rtl_work 
+# Copying C:/intelFPGA_lite/18.1/modelsim_ase/win32aloem/../modelsim.ini to modelsim.ini
+# Modifying modelsim.ini
+# 
+# vlog -vlog01compat -work work +incdir+C:/Users/czhe/Downloads/digital_design/q_6_24_six_state_sequence_str {C:/Users/czhe/Downloads/digital_design/q_6_24_six_state_sequence_str/q_6_24_str.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 20:21:43 on Nov 10,2019
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/czhe/Downloads/digital_design/q_6_24_six_state_sequence_str" C:/Users/czhe/Downloads/digital_design/q_6_24_six_state_sequence_str/q_6_24_str.v 
+# -- Compiling module q_6_24_str
+# -- Compiling module t_ff
+# 
+# Top level modules:
+# 	q_6_24_str
+# End time: 20:21:43 on Nov 10,2019, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+vlog -reportprogress 300 -work work C:/Users/czhe/Downloads/digital_design/q_6_24_six_state_sequence_str/q_6_24_str_tb.v
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 20:21:51 on Nov 10,2019
+# vlog -reportprogress 300 -work work C:/Users/czhe/Downloads/digital_design/q_6_24_six_state_sequence_str/q_6_24_str_tb.v 
+# -- Compiling module q_6_24_str
+# 
+# Top level modules:
+# 	--none--
+# End time: 20:21:51 on Nov 10,2019, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vlog -reportprogress 300 -work work C:/Users/czhe/Downloads/digital_design/q_6_24_six_state_sequence_str/q_6_24_str_tb.v
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 20:22:12 on Nov 10,2019
+# vlog -reportprogress 300 -work work C:/Users/czhe/Downloads/digital_design/q_6_24_six_state_sequence_str/q_6_24_str_tb.v 
+# -- Compiling module q_6_24_str_tb
+# 
+# Top level modules:
+# 	q_6_24_str_tb
+# End time: 20:22:12 on Nov 10,2019, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vlog -reportprogress 300 -work work C:/Users/czhe/Downloads/digital_design/q_6_24_six_state_sequence_str/q_6_24_str.v
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 20:22:21 on Nov 10,2019
+# vlog -reportprogress 300 -work work C:/Users/czhe/Downloads/digital_design/q_6_24_six_state_sequence_str/q_6_24_str.v 
+# -- Compiling module q_6_24_str
+# -- Compiling module t_ff
+# 
+# Top level modules:
+# 	q_6_24_str
+# End time: 20:22:21 on Nov 10,2019, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vsim work.q_6_24_str_tb
+# vsim work.q_6_24_str_tb 
+# Start time: 20:22:25 on Nov 10,2019
+# Loading work.q_6_24_str_tb
+# Loading work.q_6_24_str
+# Loading work.t_ff
+add wave -position insertpoint  \
+sim:/q_6_24_str_tb/rstb \
+sim:/q_6_24_str_tb/clk \
+sim:/q_6_24_str_tb/count
+run
+vlog -work work C:/Users/czhe/Downloads/digital_design/q_6_24_six_state_sequence_str/q_6_24_str_tb.v
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 20:23:09 on Nov 10,2019
+# vlog -reportprogress 300 -work work C:/Users/czhe/Downloads/digital_design/q_6_24_six_state_sequence_str/q_6_24_str_tb.v 
+# -- Compiling module q_6_24_str_tb
+# 
+# Top level modules:
+# 	q_6_24_str_tb
+# End time: 20:23:09 on Nov 10,2019, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+restart
+# Loading work.q_6_24_str_tb
+run
+# ** Note: $finish    : C:/Users/czhe/Downloads/digital_design/q_6_24_six_state_sequence_str/q_6_24_str_tb.v(17)
+#    Time: 500 ps  Iteration: 0  Instance: /q_6_24_str_tb
+# 1
+# Break in Module q_6_24_str_tb at C:/Users/czhe/Downloads/digital_design/q_6_24_six_state_sequence_str/q_6_24_str_tb.v line 17
+vlog -work work C:/Users/czhe/Downloads/digital_design/q_6_24_six_state_sequence_str/q_6_24_str.v
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 20:26:57 on Nov 10,2019
+# vlog -reportprogress 300 -work work C:/Users/czhe/Downloads/digital_design/q_6_24_six_state_sequence_str/q_6_24_str.v 
+# -- Compiling module q_6_24_str
+# ** Error: (vlog-13032) C:/Users/czhe/Downloads/digital_design/q_6_24_six_state_sequence_str/q_6_24_str.v(20): near "#": Syntax error.
+# -- Compiling module t_ff
+# End time: 20:26:57 on Nov 10,2019, Elapsed time: 0:00:00
+# Errors: 1, Warnings: 0
+# C:/intelFPGA_lite/18.1/modelsim_ase/win32aloem/vlog failed.
+restart
+# Loading work.t_ff
+run
+# GetModuleFileName: The specified module could not be found.
+# 
+# 
+# ** Note: $finish    : C:/Users/czhe/Downloads/digital_design/q_6_24_six_state_sequence_str/q_6_24_str_tb.v(17)
+#    Time: 500 ps  Iteration: 0  Instance: /q_6_24_str_tb
+# 1
+# Break in Module q_6_24_str_tb at C:/Users/czhe/Downloads/digital_design/q_6_24_six_state_sequence_str/q_6_24_str_tb.v line 17
+vlog -work work C:/Users/czhe/Downloads/digital_design/q_6_24_six_state_sequence_str/q_6_24_str.v
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 20:27:24 on Nov 10,2019
+# vlog -reportprogress 300 -work work C:/Users/czhe/Downloads/digital_design/q_6_24_six_state_sequence_str/q_6_24_str.v 
+# -- Compiling module q_6_24_str
+# ** Error: (vlog-13032) C:/Users/czhe/Downloads/digital_design/q_6_24_six_state_sequence_str/q_6_24_str.v(20): near "#": Syntax error.
+# -- Compiling module t_ff
+# End time: 20:27:25 on Nov 10,2019, Elapsed time: 0:00:01
+# Errors: 1, Warnings: 0
+# C:/intelFPGA_lite/18.1/modelsim_ase/win32aloem/vlog failed.
+restart
+# Loading work.t_ff
+run
+# GetModuleFileName: The specified module could not be found.
+# 
+# 
+# ** Note: $finish    : C:/Users/czhe/Downloads/digital_design/q_6_24_six_state_sequence_str/q_6_24_str_tb.v(17)
+#    Time: 500 ps  Iteration: 0  Instance: /q_6_24_str_tb
+# 1
+# Break in Module q_6_24_str_tb at C:/Users/czhe/Downloads/digital_design/q_6_24_six_state_sequence_str/q_6_24_str_tb.v line 17
+vlog -work work C:/Users/czhe/Downloads/digital_design/q_6_24_six_state_sequence_str/q_6_24_str.v
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 20:27:38 on Nov 10,2019
+# vlog -reportprogress 300 -work work C:/Users/czhe/Downloads/digital_design/q_6_24_six_state_sequence_str/q_6_24_str.v 
+# -- Compiling module q_6_24_str
+# ** Error: (vlog-13032) C:/Users/czhe/Downloads/digital_design/q_6_24_six_state_sequence_str/q_6_24_str.v(20): near "#": Syntax error.
+# -- Compiling module t_ff
+# End time: 20:27:38 on Nov 10,2019, Elapsed time: 0:00:00
+# Errors: 1, Warnings: 0
+# C:/intelFPGA_lite/18.1/modelsim_ase/win32aloem/vlog failed.
+vlog -work work C:/Users/czhe/Downloads/digital_design/q_6_24_six_state_sequence_str/q_6_24_str_tb.v
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 20:27:38 on Nov 10,2019
+# vlog -reportprogress 300 -work work C:/Users/czhe/Downloads/digital_design/q_6_24_six_state_sequence_str/q_6_24_str_tb.v 
+# -- Compiling module q_6_24_str_tb
+# 
+# Top level modules:
+# 	q_6_24_str_tb
+# End time: 20:27:38 on Nov 10,2019, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vlog -work work C:/Users/czhe/Downloads/digital_design/q_6_24_six_state_sequence_str/q_6_24_str.v
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 20:27:38 on Nov 10,2019
+# vlog -reportprogress 300 -work work C:/Users/czhe/Downloads/digital_design/q_6_24_six_state_sequence_str/q_6_24_str.v 
+# -- Compiling module q_6_24_str
+# ** Error: (vlog-13032) C:/Users/czhe/Downloads/digital_design/q_6_24_six_state_sequence_str/q_6_24_str.v(20): near "#": Syntax error.
+# -- Compiling module t_ff
+# End time: 20:27:39 on Nov 10,2019, Elapsed time: 0:00:01
+# Errors: 1, Warnings: 0
+# C:/intelFPGA_lite/18.1/modelsim_ase/win32aloem/vlog failed.
+restart
+# Loading work.q_6_24_str_tb
+# Loading work.t_ff
+run
+# GetModuleFileName: The specified module could not be found.
+# 
+# 
+# ** Note: $finish    : C:/Users/czhe/Downloads/digital_design/q_6_24_six_state_sequence_str/q_6_24_str_tb.v(17)
+#    Time: 500 ps  Iteration: 0  Instance: /q_6_24_str_tb
+# 1
+# Break in Module q_6_24_str_tb at C:/Users/czhe/Downloads/digital_design/q_6_24_six_state_sequence_str/q_6_24_str_tb.v line 17
+vlog -work work C:/Users/czhe/Downloads/digital_design/q_6_24_six_state_sequence_str/q_6_24_str.v
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 20:28:16 on Nov 10,2019
+# vlog -reportprogress 300 -work work C:/Users/czhe/Downloads/digital_design/q_6_24_six_state_sequence_str/q_6_24_str.v 
+# -- Compiling module q_6_24_str
+# ** Error: (vlog-13032) C:/Users/czhe/Downloads/digital_design/q_6_24_six_state_sequence_str/q_6_24_str.v(20): near "#": Syntax error.
+# ** Error: (vlog-13051) C:/Users/czhe/Downloads/digital_design/q_6_24_six_state_sequence_str/q_6_24_str.v(20): Illegal digit for specified base in numeric constant.
+# -- Compiling module t_ff
+# End time: 20:28:17 on Nov 10,2019, Elapsed time: 0:00:01
+# Errors: 2, Warnings: 0
+# C:/intelFPGA_lite/18.1/modelsim_ase/win32aloem/vlog failed.
+vlog -work work C:/Users/czhe/Downloads/digital_design/q_6_24_six_state_sequence_str/q_6_24_str_tb.v
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 20:28:17 on Nov 10,2019
+# vlog -reportprogress 300 -work work C:/Users/czhe/Downloads/digital_design/q_6_24_six_state_sequence_str/q_6_24_str_tb.v 
+# -- Compiling module q_6_24_str_tb
+# 
+# Top level modules:
+# 	q_6_24_str_tb
+# End time: 20:28:17 on Nov 10,2019, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vlog -work work C:/Users/czhe/Downloads/digital_design/q_6_24_six_state_sequence_str/q_6_24_str.v
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 20:28:17 on Nov 10,2019
+# vlog -reportprogress 300 -work work C:/Users/czhe/Downloads/digital_design/q_6_24_six_state_sequence_str/q_6_24_str.v 
+# -- Compiling module q_6_24_str
+# ** Error: (vlog-13032) C:/Users/czhe/Downloads/digital_design/q_6_24_six_state_sequence_str/q_6_24_str.v(20): near "#": Syntax error.
+# ** Error: (vlog-13051) C:/Users/czhe/Downloads/digital_design/q_6_24_six_state_sequence_str/q_6_24_str.v(20): Illegal digit for specified base in numeric constant.
+# -- Compiling module t_ff
+# End time: 20:28:17 on Nov 10,2019, Elapsed time: 0:00:00
+# Errors: 2, Warnings: 0
+# C:/intelFPGA_lite/18.1/modelsim_ase/win32aloem/vlog failed.
+vlog -work work C:/Users/czhe/Downloads/digital_design/q_6_24_six_state_sequence_str/q_6_24_str.v
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 20:28:51 on Nov 10,2019
+# vlog -reportprogress 300 -work work C:/Users/czhe/Downloads/digital_design/q_6_24_six_state_sequence_str/q_6_24_str.v 
+# -- Compiling module q_6_24_str
+# -- Compiling module t_ff
+# 
+# Top level modules:
+# 	q_6_24_str
+# End time: 20:28:51 on Nov 10,2019, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+restart
+# Loading work.q_6_24_str_tb
+# Loading work.q_6_24_str
+# Loading work.t_ff
+run
+# GetModuleFileName: The specified module could not be found.
+# 
+# 
+# ** Note: $finish    : C:/Users/czhe/Downloads/digital_design/q_6_24_six_state_sequence_str/q_6_24_str_tb.v(17)
+#    Time: 500 ps  Iteration: 0  Instance: /q_6_24_str_tb
+# 1
+# Break in Module q_6_24_str_tb at C:/Users/czhe/Downloads/digital_design/q_6_24_six_state_sequence_str/q_6_24_str_tb.v line 17
+vlog -work work C:/Users/czhe/Downloads/digital_design/q_6_24_six_state_sequence_str/q_6_24_str.v
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 20:29:48 on Nov 10,2019
+# vlog -reportprogress 300 -work work C:/Users/czhe/Downloads/digital_design/q_6_24_six_state_sequence_str/q_6_24_str.v 
+# -- Compiling module q_6_24_str
+# -- Compiling module t_ff
+# 
+# Top level modules:
+# 	q_6_24_str
+# End time: 20:29:48 on Nov 10,2019, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+restart
+# Loading work.q_6_24_str
+# Loading work.t_ff
+run
+# GetModuleFileName: The specified module could not be found.
+# 
+# 
+# ** Note: $finish    : C:/Users/czhe/Downloads/digital_design/q_6_24_six_state_sequence_str/q_6_24_str_tb.v(17)
+#    Time: 500 ps  Iteration: 0  Instance: /q_6_24_str_tb
+# 1
+# Break in Module q_6_24_str_tb at C:/Users/czhe/Downloads/digital_design/q_6_24_six_state_sequence_str/q_6_24_str_tb.v line 17
+vlog -work work C:/Users/czhe/Downloads/digital_design/q_6_24_six_state_sequence_str/q_6_24_str.v
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 20:30:34 on Nov 10,2019
+# vlog -reportprogress 300 -work work C:/Users/czhe/Downloads/digital_design/q_6_24_six_state_sequence_str/q_6_24_str.v 
+# -- Compiling module q_6_24_str
+# -- Compiling module t_ff
+# 
+# Top level modules:
+# 	q_6_24_str
+# End time: 20:30:34 on Nov 10,2019, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vlog -work work C:/Users/czhe/Downloads/digital_design/q_6_24_six_state_sequence_str/q_6_24_str.v
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 20:33:08 on Nov 10,2019
+# vlog -reportprogress 300 -work work C:/Users/czhe/Downloads/digital_design/q_6_24_six_state_sequence_str/q_6_24_str.v 
+# -- Compiling module q_6_24_str
+# -- Compiling module t_ff
+# 
+# Top level modules:
+# 	q_6_24_str
+# End time: 20:33:08 on Nov 10,2019, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+restart
+# Loading work.q_6_24_str
+# Loading work.t_ff
+run
+# GetModuleFileName: The specified module could not be found.
+# 
+# 
+# ** Note: $finish    : C:/Users/czhe/Downloads/digital_design/q_6_24_six_state_sequence_str/q_6_24_str_tb.v(17)
+#    Time: 500 ps  Iteration: 0  Instance: /q_6_24_str_tb
+# 1
+# Break in Module q_6_24_str_tb at C:/Users/czhe/Downloads/digital_design/q_6_24_six_state_sequence_str/q_6_24_str_tb.v line 17
+vlog -work work C:/Users/czhe/Downloads/digital_design/q_6_24_six_state_sequence_str/q_6_24_str.v
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 20:33:34 on Nov 10,2019
+# vlog -reportprogress 300 -work work C:/Users/czhe/Downloads/digital_design/q_6_24_six_state_sequence_str/q_6_24_str.v 
+# -- Compiling module q_6_24_str
+# -- Compiling module t_ff
+# 
+# Top level modules:
+# 	q_6_24_str
+# End time: 20:33:34 on Nov 10,2019, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+restart
+# Loading work.q_6_24_str
+# Loading work.t_ff
+run
+# GetModuleFileName: The specified module could not be found.
+# 
+# 
+# ** Note: $finish    : C:/Users/czhe/Downloads/digital_design/q_6_24_six_state_sequence_str/q_6_24_str_tb.v(17)
+#    Time: 500 ps  Iteration: 0  Instance: /q_6_24_str_tb
+# 1
+# Break in Module q_6_24_str_tb at C:/Users/czhe/Downloads/digital_design/q_6_24_six_state_sequence_str/q_6_24_str_tb.v line 17
+# End time: 20:37:39 on Nov 10,2019, Elapsed time: 0:15:14
+# Errors: 14, Warnings: 0

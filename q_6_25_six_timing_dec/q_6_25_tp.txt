@@ -1,0 +1,5 @@
+- async reset
+- count sequence
+- timing sequence
+- stop count with cnt_en
+- cnt_en during reset

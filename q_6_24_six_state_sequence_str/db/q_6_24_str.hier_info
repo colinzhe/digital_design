@@ -1,0 +1,32 @@
+|q_6_24_str
+rstb => rstb.IN3
+clk => clk.IN3
+count[0] <= t_ff:tff_0.Q
+count[1] <= t_ff:tff_1.Q
+count[2] <= t_ff:tff_2.Q
+
+
+|q_6_24_str|t_ff:tff_0
+rstb => Q~reg0.ACLR
+clk => Q~reg0.CLK
+T => Q~reg0.ENA
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Qn <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|q_6_24_str|t_ff:tff_1
+rstb => Q~reg0.ACLR
+clk => Q~reg0.CLK
+T => Q~reg0.ENA
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Qn <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|q_6_24_str|t_ff:tff_2
+rstb => Q~reg0.ACLR
+clk => Q~reg0.CLK
+T => Q~reg0.ENA
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Qn <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+

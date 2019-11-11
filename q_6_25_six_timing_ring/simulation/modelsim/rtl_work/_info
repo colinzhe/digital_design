@@ -1,0 +1,53 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/Users/czhe/Downloads/digital_design/q_6_25_six_timing_ring/simulation/modelsim
+vq_6_25_ring
+!s110 1573444738
+!i10b 1
+!s100 4b1o^7ZQEY:Ugn5kl>mD`3
+I=ZL]HMinhESSb`mbHb]_f2
+Z1 VDg1SIo80bB@j0V0VzS_@n1
+R0
+w1573444687
+8C:/Users/czhe/Downloads/digital_design/q_6_25_six_timing_ring/q_6_25_ring.v
+FC:/Users/czhe/Downloads/digital_design/q_6_25_six_timing_ring/q_6_25_ring.v
+L0 1
+Z2 OV;L;10.5b;63
+r1
+!s85 0
+31
+!s108 1573444738.000000
+!s107 C:/Users/czhe/Downloads/digital_design/q_6_25_six_timing_ring/q_6_25_ring.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/czhe/Downloads/digital_design/q_6_25_six_timing_ring|C:/Users/czhe/Downloads/digital_design/q_6_25_six_timing_ring/q_6_25_ring.v|
+!i113 1
+o-vlog01compat -work work
+!s92 -vlog01compat -work work +incdir+C:/Users/czhe/Downloads/digital_design/q_6_25_six_timing_ring
+Z3 tCvgOpt 0
+vq_6_25_ring_tb
+!s110 1573444783
+!i10b 1
+!s100 >E;m7SYM81VSom9OdP;Ql0
+IO6elohSlkRlnio=MJeQPG2
+R1
+R0
+w1573444777
+8C:/Users/czhe/Downloads/digital_design/q_6_25_six_timing_ring/q_6_25_ring_tb.v
+FC:/Users/czhe/Downloads/digital_design/q_6_25_six_timing_ring/q_6_25_ring_tb.v
+L0 1
+R2
+r1
+!s85 0
+31
+!s108 1573444783.000000
+!s107 C:/Users/czhe/Downloads/digital_design/q_6_25_six_timing_ring/q_6_25_ring_tb.v|
+!s90 -reportprogress|300|-work|work|C:/Users/czhe/Downloads/digital_design/q_6_25_six_timing_ring/q_6_25_ring_tb.v|
+!i113 1
+o-work work
+R3

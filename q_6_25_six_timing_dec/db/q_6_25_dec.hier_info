@@ -1,0 +1,42 @@
+|q_6_25_dec
+rstb => rstb.IN1
+clk => clk.IN1
+cnt_en => cnt_en.IN1
+out[0] <= three_by_eight_dec:dec.y_out
+out[1] <= three_by_eight_dec:dec.y_out
+out[2] <= three_by_eight_dec:dec.y_out
+out[3] <= three_by_eight_dec:dec.y_out
+out[4] <= three_by_eight_dec:dec.y_out
+out[5] <= three_by_eight_dec:dec.y_out
+count[0] <= count[0].DB_MAX_OUTPUT_PORT_TYPE
+count[1] <= count[1].DB_MAX_OUTPUT_PORT_TYPE
+count[2] <= count[2].DB_MAX_OUTPUT_PORT_TYPE
+
+
+|q_6_25_dec|three_bit_cntr:cntr
+rstb => count[0]~reg0.ACLR
+rstb => count[1]~reg0.ACLR
+rstb => count[2]~reg0.ACLR
+clk => count[0]~reg0.CLK
+clk => count[1]~reg0.CLK
+clk => count[2]~reg0.CLK
+cnt_en => count[0]~reg0.ENA
+cnt_en => count[2]~reg0.ENA
+cnt_en => count[1]~reg0.ENA
+count[0] <= count[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+count[1] <= count[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+count[2] <= count[2]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|q_6_25_dec|three_by_eight_dec:dec
+x_in[0] => Decoder0.IN2
+x_in[1] => Decoder0.IN1
+x_in[2] => Decoder0.IN0
+y_out[0] <= Decoder0.DB_MAX_OUTPUT_PORT_TYPE
+y_out[1] <= Decoder0.DB_MAX_OUTPUT_PORT_TYPE
+y_out[2] <= Decoder0.DB_MAX_OUTPUT_PORT_TYPE
+y_out[3] <= Decoder0.DB_MAX_OUTPUT_PORT_TYPE
+y_out[4] <= Decoder0.DB_MAX_OUTPUT_PORT_TYPE
+y_out[5] <= Decoder0.DB_MAX_OUTPUT_PORT_TYPE
+
+
