@@ -1,0 +1,115 @@
+# Reading C:/intelFPGA_lite/18.1/modelsim_ase/tcl/vsim/pref.tcl
+# do q_6_27_run_msim_rtl_verilog.do
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Model Technology ModelSim - Intel FPGA Edition vmap 10.5b Lib Mapping Utility 2016.10 Oct  5 2016
+# vmap work rtl_work 
+# Copying C:/intelFPGA_lite/18.1/modelsim_ase/win32aloem/../modelsim.ini to modelsim.ini
+# Modifying modelsim.ini
+# 
+# vlog -vlog01compat -work work +incdir+C:/Users/czhe/Downloads/digital_design/q_6_27_jk_7_state_counter {C:/Users/czhe/Downloads/digital_design/q_6_27_jk_7_state_counter/q_6_27.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 10:47:07 on Nov 11,2019
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/czhe/Downloads/digital_design/q_6_27_jk_7_state_counter" C:/Users/czhe/Downloads/digital_design/q_6_27_jk_7_state_counter/q_6_27.v 
+# -- Compiling module q_6_27
+# -- Compiling module jk_ff
+# ** Error: C:/Users/czhe/Downloads/digital_design/q_6_27_jk_7_state_counter/q_6_27.v(46): Parameter declaration missing required 'parameter' keyword.
+# End time: 10:47:07 on Nov 11,2019, Elapsed time: 0:00:00
+# Errors: 1, Warnings: 0
+# ** Error: C:/intelFPGA_lite/18.1/modelsim_ase/win32aloem/vlog failed.
+# Error in macro ./q_6_27_run_msim_rtl_verilog.do line 8
+# C:/intelFPGA_lite/18.1/modelsim_ase/win32aloem/vlog failed.
+#     while executing
+# "vlog -vlog01compat -work work +incdir+C:/Users/czhe/Downloads/digital_design/q_6_27_jk_7_state_counter {C:/Users/czhe/Downloads/digital_design/q_6_27_..."
+vlog -reportprogress 300 -work work C:/Users/czhe/Downloads/digital_design/q_6_27_jk_7_state_counter/q_6_27_tb.v
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 10:48:33 on Nov 11,2019
+# vlog -reportprogress 300 -work work C:/Users/czhe/Downloads/digital_design/q_6_27_jk_7_state_counter/q_6_27_tb.v 
+# -- Compiling module q_6_27
+# 
+# Top level modules:
+# 	--none--
+# End time: 10:48:34 on Nov 11,2019, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+vlog -reportprogress 300 -work work C:/Users/czhe/Downloads/digital_design/q_6_27_jk_7_state_counter/q_6_27.v
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 10:49:01 on Nov 11,2019
+# vlog -reportprogress 300 -work work C:/Users/czhe/Downloads/digital_design/q_6_27_jk_7_state_counter/q_6_27.v 
+# -- Compiling module q_6_27
+# -- Compiling module jk_ff
+# ** Error: C:/Users/czhe/Downloads/digital_design/q_6_27_jk_7_state_counter/q_6_27.v(46): Parameter declaration missing required 'parameter' keyword.
+# End time: 10:49:01 on Nov 11,2019, Elapsed time: 0:00:00
+# Errors: 1, Warnings: 0
+vlog -reportprogress 300 -work work C:/Users/czhe/Downloads/digital_design/q_6_27_jk_7_state_counter/q_6_27_tb.v
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 10:49:01 on Nov 11,2019
+# vlog -reportprogress 300 -work work C:/Users/czhe/Downloads/digital_design/q_6_27_jk_7_state_counter/q_6_27_tb.v 
+# -- Compiling module q_6_27_tb
+# 
+# Top level modules:
+# 	q_6_27_tb
+# End time: 10:49:01 on Nov 11,2019, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vlog -reportprogress 300 -work work C:/Users/czhe/Downloads/digital_design/q_6_27_jk_7_state_counter/q_6_27.v
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 10:49:20 on Nov 11,2019
+# vlog -reportprogress 300 -work work C:/Users/czhe/Downloads/digital_design/q_6_27_jk_7_state_counter/q_6_27.v 
+# -- Compiling module q_6_27
+# -- Compiling module jk_ff
+# 
+# Top level modules:
+# 	q_6_27
+# End time: 10:49:20 on Nov 11,2019, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vlog -reportprogress 300 -work work C:/Users/czhe/Downloads/digital_design/q_6_27_jk_7_state_counter/q_6_27_tb.v
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 10:49:20 on Nov 11,2019
+# vlog -reportprogress 300 -work work C:/Users/czhe/Downloads/digital_design/q_6_27_jk_7_state_counter/q_6_27_tb.v 
+# -- Compiling module q_6_27_tb
+# 
+# Top level modules:
+# 	q_6_27_tb
+# End time: 10:49:20 on Nov 11,2019, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vsim work.q_6_27_tb
+# vsim work.q_6_27_tb 
+# Start time: 10:49:30 on Nov 11,2019
+# Loading work.q_6_27_tb
+# Loading work.q_6_27
+# Loading work.jk_ff
+add wave -position insertpoint  \
+sim:/q_6_27_tb/rstb \
+sim:/q_6_27_tb/clk \
+sim:/q_6_27_tb/count
+run
+# ** Note: $finish    : C:/Users/czhe/Downloads/digital_design/q_6_27_jk_7_state_counter/q_6_27_tb.v(22)
+#    Time: 200 ps  Iteration: 0  Instance: /q_6_27_tb
+# 1
+# Break in Module q_6_27_tb at C:/Users/czhe/Downloads/digital_design/q_6_27_jk_7_state_counter/q_6_27_tb.v line 22
+vlog -work work C:/Users/czhe/Downloads/digital_design/q_6_27_jk_7_state_counter/q_6_27.v
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 10:51:32 on Nov 11,2019
+# vlog -reportprogress 300 -work work C:/Users/czhe/Downloads/digital_design/q_6_27_jk_7_state_counter/q_6_27.v 
+# -- Compiling module q_6_27
+# -- Compiling module jk_ff
+# 
+# Top level modules:
+# 	q_6_27
+# End time: 10:51:32 on Nov 11,2019, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+restart
+# Loading work.q_6_27
+# Loading work.jk_ff
+run
+# GetModuleFileName: The specified module could not be found.
+# 
+# 
+# ** Note: $finish    : C:/Users/czhe/Downloads/digital_design/q_6_27_jk_7_state_counter/q_6_27_tb.v(22)
+#    Time: 200 ps  Iteration: 0  Instance: /q_6_27_tb
+# 1
+# Break in Module q_6_27_tb at C:/Users/czhe/Downloads/digital_design/q_6_27_jk_7_state_counter/q_6_27_tb.v line 22
+# End time: 10:53:17 on Nov 11,2019, Elapsed time: 0:03:47
+# Errors: 0, Warnings: 0
