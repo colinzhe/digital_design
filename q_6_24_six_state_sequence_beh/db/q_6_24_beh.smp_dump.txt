@@ -1,9 +1,10 @@
 
 State Machine - |q_6_24_beh|state
-Name state.S3 state.S4 state.S5 state.S2 state.S1 state.000 
-state.000 0 0 0 0 0 0 
-state.S1 0 0 0 0 1 1 
-state.S2 0 0 0 1 0 1 
-state.S5 0 0 1 0 0 1 
-state.S4 0 1 0 0 0 1 
-state.S3 1 0 0 0 0 1 
+Name state.S3 state.S4 state.S0 state.S5 state.S2 state.S1 state.101 
+state.101 0 0 0 0 0 0 0 
+state.S1 0 0 0 0 0 1 1 
+state.S2 0 0 0 0 1 0 1 
+state.S5 0 0 0 1 0 0 1 
+state.S0 0 0 1 0 0 0 1 
+state.S4 0 1 0 0 0 0 1 
+state.S3 1 0 0 0 0 0 1 

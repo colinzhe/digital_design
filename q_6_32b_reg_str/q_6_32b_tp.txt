@@ -1,0 +1,3 @@
+- async reset
+- load and hold
+- random inputs

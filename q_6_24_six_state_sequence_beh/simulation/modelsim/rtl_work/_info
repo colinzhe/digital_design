@@ -9,13 +9,13 @@ z2
 cModel Technology
 Z0 dC:/Users/czhe/Downloads/digital_design/q_6_24_six_state_sequence_beh/simulation/modelsim
 vq_6_24_beh
-!s110 1573437837
+!s110 1573572748
 !i10b 1
-!s100 chN0BLdaKbM^<`a]oCZ920
-Id]_KC^2EDYY3kzPXKh9Uh0
+!s100 Ad<V1_Xz?EQe;2mIE8[9@3
+IWAN[;H2NY0E;:dYlQ57ZR0
 Z1 VDg1SIo80bB@j0V0VzS_@n1
 R0
-w1573437834
+w1573572556
 8C:/Users/czhe/Downloads/digital_design/q_6_24_six_state_sequence_beh/q_6_24_beh.v
 FC:/Users/czhe/Downloads/digital_design/q_6_24_six_state_sequence_beh/q_6_24_beh.v
 L0 1
@@ -23,7 +23,7 @@ Z2 OV;L;10.5b;63
 r1
 !s85 0
 31
-!s108 1573437837.000000
+!s108 1573572748.000000
 !s107 C:/Users/czhe/Downloads/digital_design/q_6_24_six_state_sequence_beh/q_6_24_beh.v|
 !s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/czhe/Downloads/digital_design/q_6_24_six_state_sequence_beh|C:/Users/czhe/Downloads/digital_design/q_6_24_six_state_sequence_beh/q_6_24_beh.v|
 !i113 1
@@ -31,7 +31,7 @@ o-vlog01compat -work work
 !s92 -vlog01compat -work work +incdir+C:/Users/czhe/Downloads/digital_design/q_6_24_six_state_sequence_beh
 Z3 tCvgOpt 0
 vq_6_24_beh_tb
-!s110 1573437747
+!s110 1573572759
 !i10b 1
 !s100 bodTKc=ES3W00_59n1z=V1
 IV3dWYmNOVnXkRWTGZ8lOd0
@@ -45,7 +45,7 @@ R2
 r1
 !s85 0
 31
-!s108 1573437747.000000
+!s108 1573572759.000000
 !s107 C:/Users/czhe/Downloads/digital_design/q_6_24_six_state_sequence_beh/q_6_24_beh_tb.v|
 !s90 -reportprogress|300|-work|work|C:/Users/czhe/Downloads/digital_design/q_6_24_six_state_sequence_beh/q_6_24_beh_tb.v|
 !i113 1

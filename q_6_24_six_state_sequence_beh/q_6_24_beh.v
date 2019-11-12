@@ -22,14 +22,21 @@ module q_6_24_beh (
 
     always @ (state)
     begin
-        case (state)
-            S0 : next_state = S1;
-            S1 : next_state = S2;
-            S2 : next_state = S3;
-            S3 : next_state = S4;
-            S4 : next_state = S5;
-            S5 : next_state = S0;
-            default : next_state = S0;
-        endcase
+        if (state == S0) next_state = S1;
+        else if (state == S1) next_state = S2;
+        else if (state == S2) next_state = S3;
+        else if (state == S3) next_state = S4;
+        else if (state == S4) next_state = S5;
+        else if (state == S5) next_state = S0;
+        else next_state = S0;
+        //case (state)
+        //    S0 : next_state = S1;
+        //    S1 : next_state = S2;
+        //    S2 : next_state = S3;
+        //    S3 : next_state = S4;
+        //    S4 : next_state = S5;
+        //    S5 : next_state = S0;
+        //    default : next_state = S0;
+        //endcase
     end
 endmodule

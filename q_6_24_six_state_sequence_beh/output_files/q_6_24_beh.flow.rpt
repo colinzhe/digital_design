@@ -1,5 +1,5 @@
 Flow report for q_6_24_beh
-Sun Nov 10 21:01:28 2019
+Tue Nov 12 10:32:11 2019
 Quartus Prime Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
 
 
@@ -40,7 +40,7 @@ refer to the applicable agreement for further details.
 +-------------------------------------------------------------------------------+
 ; Flow Summary                                                                  ;
 +---------------------------------+---------------------------------------------+
-; Flow Status                     ; Successful - Sun Nov 10 21:01:28 2019       ;
+; Flow Status                     ; Successful - Tue Nov 12 10:32:11 2019       ;
 ; Quartus Prime Version           ; 18.1.0 Build 625 09/12/2018 SJ Lite Edition ;
 ; Revision Name                   ; q_6_24_beh                                  ;
 ; Top-level Entity Name           ; q_6_24_beh                                  ;
@@ -67,7 +67,7 @@ refer to the applicable agreement for further details.
 +-------------------+---------------------+
 ; Option            ; Setting             ;
 +-------------------+---------------------+
-; Start date & time ; 11/10/2019 21:01:14 ;
+; Start date & time ; 11/12/2019 10:31:44 ;
 ; Main task         ; Compilation         ;
 ; Revision Name     ; q_6_24_beh          ;
 +-------------------+---------------------+
@@ -78,7 +78,7 @@ refer to the applicable agreement for further details.
 +-------------------------------------+----------------------------------------+---------------+-------------+----------------+
 ; Assignment Name                     ; Value                                  ; Default Value ; Entity Name ; Section Id     ;
 +-------------------------------------+----------------------------------------+---------------+-------------+----------------+
-; COMPILER_SIGNATURE_ID               ; 2543711158273.157343767415704          ; --            ; --          ; --             ;
+; COMPILER_SIGNATURE_ID               ; 2543711158273.157357270307832          ; --            ; --          ; --             ;
 ; EDA_OUTPUT_DATA_FORMAT              ; Verilog Hdl                            ; --            ; --          ; eda_simulation ;
 ; EDA_SIMULATION_TOOL                 ; ModelSim-Altera (Verilog)              ; <None>        ; --          ; --             ;
 ; EDA_TIME_SCALE                      ; 1 ps                                   ; --            ; --          ; eda_simulation ;
@@ -98,8 +98,8 @@ refer to the applicable agreement for further details.
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
 ; Module Name          ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
-; Analysis & Synthesis ; 00:00:14     ; 1.0                     ; 4882 MB             ; 00:00:32                           ;
-; Total                ; 00:00:14     ; --                      ; --                  ; 00:00:32                           ;
+; Analysis & Synthesis ; 00:00:29     ; 1.0                     ; 4887 MB             ; 00:01:10                           ;
+; Total                ; 00:00:29     ; --                      ; --                  ; 00:01:10                           ;
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
 
 

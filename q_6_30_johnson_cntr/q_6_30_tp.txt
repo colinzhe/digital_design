@@ -1,0 +1,3 @@
+- async reset
+- switch ring seq
+- and gate seq

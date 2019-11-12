@@ -1,0 +1,94 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/Users/czhe/Downloads/digital_design/q_6_32b_reg_str/simulation/modelsim
+vd_ff
+Z1 !s110 1573571083
+!i10b 1
+!s100 L^_fKlQT?4D`L=7]Q`GST1
+IE^`5IXPZ5kc_DS8IFi?ag0
+Z2 VDg1SIo80bB@j0V0VzS_@n1
+R0
+Z3 w1573571078
+Z4 8C:/Users/czhe/Downloads/digital_design/q_6_32b_reg_str/q_6_32b.v
+Z5 FC:/Users/czhe/Downloads/digital_design/q_6_32b_reg_str/q_6_32b.v
+L0 73
+Z6 OV;L;10.5b;63
+r1
+!s85 0
+31
+Z7 !s108 1573571083.000000
+Z8 !s107 C:/Users/czhe/Downloads/digital_design/q_6_32b_reg_str/q_6_32b.v|
+Z9 !s90 -reportprogress|300|-work|work|C:/Users/czhe/Downloads/digital_design/q_6_32b_reg_str/q_6_32b.v|
+!i113 1
+Z10 o-work work
+Z11 tCvgOpt 0
+vq_6_32b
+R1
+!i10b 1
+!s100 d8L]<4[:IWaUW6?HLOh_A0
+I`;IKBiO?^oj<^;j4c@[Rn2
+R2
+R0
+R3
+R4
+R5
+L0 1
+R6
+r1
+!s85 0
+31
+R7
+R8
+R9
+!i113 1
+R10
+R11
+vq_6_32b_tb
+!s110 1573570965
+!i10b 1
+!s100 d8Z0eGIA?d5bXFM1zzO:d1
+IA^ee7<3L8b5zgDRQKL71S2
+R2
+R0
+w1573570938
+8C:/Users/czhe/Downloads/digital_design/q_6_32b_reg_str/q_6_32b_tb.v
+FC:/Users/czhe/Downloads/digital_design/q_6_32b_reg_str/q_6_32b_tb.v
+L0 1
+R6
+r1
+!s85 0
+31
+!s108 1573570965.000000
+!s107 C:/Users/czhe/Downloads/digital_design/q_6_32b_reg_str/q_6_32b_tb.v|
+!s90 -reportprogress|300|-work|work|C:/Users/czhe/Downloads/digital_design/q_6_32b_reg_str/q_6_32b_tb.v|
+!i113 1
+R10
+R11
+vtwo_by_one_mux
+R1
+!i10b 1
+!s100 h6^Qa_^SLc;4f<>DaESh>1
+IEc2?>U>hzYIHg1J0ghBN]0
+R2
+R0
+R3
+R4
+R5
+L0 65
+R6
+r1
+!s85 0
+31
+R7
+R8
+R9
+!i113 1
+R10
+R11

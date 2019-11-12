@@ -1,5 +1,5 @@
 Analysis & Synthesis report for q_6_24_beh
-Sun Nov 10 21:01:28 2019
+Tue Nov 12 10:32:11 2019
 Quartus Prime Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
 
 
@@ -16,10 +16,11 @@ Quartus Prime Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
   8. State Machine - |q_6_24_beh|state
   9. Registers Removed During Synthesis
  10. General Register Statistics
- 11. Parameter Settings for User Entity Instance: Top-level Entity: |q_6_24_beh
- 12. Post-Synthesis Netlist Statistics for Top Partition
- 13. Elapsed Time Per Partition
- 14. Analysis & Synthesis Messages
+ 11. Multiplexer Restructuring Statistics (Restructuring Performed)
+ 12. Parameter Settings for User Entity Instance: Top-level Entity: |q_6_24_beh
+ 13. Post-Synthesis Netlist Statistics for Top Partition
+ 14. Elapsed Time Per Partition
+ 15. Analysis & Synthesis Messages
 
 
 
@@ -45,7 +46,7 @@ refer to the applicable agreement for further details.
 +-------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                  ;
 +---------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status     ; Successful - Sun Nov 10 21:01:28 2019       ;
+; Analysis & Synthesis Status     ; Successful - Tue Nov 12 10:32:11 2019       ;
 ; Quartus Prime Version           ; 18.1.0 Build 625 09/12/2018 SJ Lite Edition ;
 ; Revision Name                   ; q_6_24_beh                                  ;
 ; Top-level Entity Name           ; q_6_24_beh                                  ;
@@ -188,9 +189,9 @@ refer to the applicable agreement for further details.
 ; Combinational ALUT usage for logic          ; 5         ;
 ;     -- 7 input functions                    ; 0         ;
 ;     -- 6 input functions                    ; 0         ;
-;     -- 5 input functions                    ; 0         ;
+;     -- 5 input functions                    ; 2         ;
 ;     -- 4 input functions                    ; 0         ;
-;     -- <=3 input functions                  ; 5         ;
+;     -- <=3 input functions                  ; 3         ;
 ;                                             ;           ;
 ; Dedicated logic registers                   ; 6         ;
 ;                                             ;           ;
@@ -200,8 +201,8 @@ refer to the applicable agreement for further details.
 ;                                             ;           ;
 ; Maximum fan-out node                        ; clk~input ;
 ; Maximum fan-out                             ; 6         ;
-; Total fan-out                               ; 37        ;
-; Average fan-out                             ; 1.76      ;
+; Total fan-out                               ; 45        ;
+; Average fan-out                             ; 2.14      ;
 +---------------------------------------------+-----------+
 
 
@@ -216,18 +217,19 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 
 
 Encoding Type:  One-Hot
-+------------------------------------------------------------------------------+
-; State Machine - |q_6_24_beh|state                                            ;
-+-----------+----------+----------+----------+----------+----------+-----------+
-; Name      ; state.S3 ; state.S4 ; state.S5 ; state.S2 ; state.S1 ; state.000 ;
-+-----------+----------+----------+----------+----------+----------+-----------+
-; state.000 ; 0        ; 0        ; 0        ; 0        ; 0        ; 0         ;
-; state.S1  ; 0        ; 0        ; 0        ; 0        ; 1        ; 1         ;
-; state.S2  ; 0        ; 0        ; 0        ; 1        ; 0        ; 1         ;
-; state.S5  ; 0        ; 0        ; 1        ; 0        ; 0        ; 1         ;
-; state.S4  ; 0        ; 1        ; 0        ; 0        ; 0        ; 1         ;
-; state.S3  ; 1        ; 0        ; 0        ; 0        ; 0        ; 1         ;
-+-----------+----------+----------+----------+----------+----------+-----------+
++-----------------------------------------------------------------------------------------+
+; State Machine - |q_6_24_beh|state                                                       ;
++-----------+----------+----------+----------+----------+----------+----------+-----------+
+; Name      ; state.S3 ; state.S4 ; state.S0 ; state.S5 ; state.S2 ; state.S1 ; state.101 ;
++-----------+----------+----------+----------+----------+----------+----------+-----------+
+; state.101 ; 0        ; 0        ; 0        ; 0        ; 0        ; 0        ; 0         ;
+; state.S1  ; 0        ; 0        ; 0        ; 0        ; 0        ; 1        ; 1         ;
+; state.S2  ; 0        ; 0        ; 0        ; 0        ; 1        ; 0        ; 1         ;
+; state.S5  ; 0        ; 0        ; 0        ; 1        ; 0        ; 0        ; 1         ;
+; state.S0  ; 0        ; 0        ; 1        ; 0        ; 0        ; 0        ; 1         ;
+; state.S4  ; 0        ; 1        ; 0        ; 0        ; 0        ; 0        ; 1         ;
+; state.S3  ; 1        ; 0        ; 0        ; 0        ; 0        ; 0        ; 1         ;
++-----------+----------+----------+----------+----------+----------+----------+-----------+
 
 
 +------------------------------------------------------------+
@@ -235,10 +237,11 @@ Encoding Type:  One-Hot
 +---------------------------------------+--------------------+
 ; Register name                         ; Reason for Removal ;
 +---------------------------------------+--------------------+
+; state.101                             ; Lost fanout        ;
 ; state~4                               ; Lost fanout        ;
 ; state~5                               ; Lost fanout        ;
 ; state~6                               ; Lost fanout        ;
-; Total Number of Removed Registers = 3 ;                    ;
+; Total Number of Removed Registers = 4 ;                    ;
 +---------------------------------------+--------------------+
 
 
@@ -255,6 +258,15 @@ Encoding Type:  One-Hot
 ; Number of registers using Clock Enable       ; 0     ;
 ; Number of registers using Preset             ; 0     ;
 +----------------------------------------------+-------+
+
+
++------------------------------------------------------------------------------------------------------------------------------------------+
+; Multiplexer Restructuring Statistics (Restructuring Performed)                                                                           ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+----------------------------+
+; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+----------------------------+
+; 5:1                ; 2 bits    ; 6 LEs         ; 6 LEs                ; 0 LEs                  ; No         ; |q_6_24_beh|next_state.S5  ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+----------------------------+
 
 
 +----------------------------------------------------------------------------+
@@ -279,14 +291,15 @@ Note: In order to hide this table in the UI and the text report file, please set
 +-----------------------+-----------------------------+
 ; arriav_ff             ; 6                           ;
 ;     CLR               ; 6                           ;
-; arriav_lcell_comb     ; 8                           ;
-;     normal            ; 8                           ;
-;         1 data inputs ; 5                           ;
+; arriav_lcell_comb     ; 6                           ;
+;     normal            ; 6                           ;
+;         1 data inputs ; 1                           ;
 ;         3 data inputs ; 3                           ;
+;         5 data inputs ; 2                           ;
 ; boundary_port         ; 5                           ;
 ;                       ;                             ;
 ; Max LUT depth         ; 2.00                        ;
-; Average LUT depth     ; 1.50                        ;
+; Average LUT depth     ; 1.21                        ;
 +-----------------------+-----------------------------+
 
 
@@ -295,7 +308,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 +----------------+--------------+
 ; Partition Name ; Elapsed Time ;
 +----------------+--------------+
-; Top            ; 00:00:00     ;
+; Top            ; 00:00:01     ;
 +----------------+--------------+
 
 
@@ -305,7 +318,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
-    Info: Processing started: Sun Nov 10 21:01:14 2019
+    Info: Processing started: Tue Nov 12 10:31:42 2019
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off q_6_24_beh -c q_6_24_beh
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 8 of the 8 processors detected
@@ -313,7 +326,7 @@ Info (12021): Found 1 design units, including 1 entities, in source file q_6_24_
     Info (12023): Found entity 1: q_6_24_beh File: C:/Users/czhe/Downloads/digital_design/q_6_24_six_state_sequence_beh/q_6_24_beh.v Line: 1
 Info (12127): Elaborating entity "q_6_24_beh" for the top level hierarchy
 Info (286030): Timing-Driven Synthesis is running
-Info (17049): 3 registers lost all their fanouts during netlist optimizations.
+Info (17049): 4 registers lost all their fanouts during netlist optimizations.
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
 Info (21057): Implemented 14 device resources after synthesis - the final resource count might be different
@@ -321,9 +334,9 @@ Info (21057): Implemented 14 device resources after synthesis - the final resour
     Info (21059): Implemented 3 output pins
     Info (21061): Implemented 9 logic cells
 Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 1 warning
-    Info: Peak virtual memory: 4882 megabytes
-    Info: Processing ended: Sun Nov 10 21:01:28 2019
-    Info: Elapsed time: 00:00:14
-    Info: Total CPU time (on all processors): 00:00:32
+    Info: Peak virtual memory: 4887 megabytes
+    Info: Processing ended: Tue Nov 12 10:32:11 2019
+    Info: Elapsed time: 00:00:29
+    Info: Total CPU time (on all processors): 00:01:10
 
 

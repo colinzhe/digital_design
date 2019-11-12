@@ -1,0 +1,355 @@
+# Reading C:/intelFPGA_lite/18.1/modelsim_ase/tcl/vsim/pref.tcl
+# do q_6_28b_run_msim_rtl_verilog.do
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Model Technology ModelSim - Intel FPGA Edition vmap 10.5b Lib Mapping Utility 2016.10 Oct  5 2016
+# vmap work rtl_work 
+# Copying C:/intelFPGA_lite/18.1/modelsim_ase/win32aloem/../modelsim.ini to modelsim.ini
+# Modifying modelsim.ini
+# 
+# vlog -vlog01compat -work work +incdir+C:/Users/czhe/Downloads/digital_design/q_6_28b_bin_seq {C:/Users/czhe/Downloads/digital_design/q_6_28b_bin_seq/q_6_28b.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 19:37:01 on Nov 11,2019
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/czhe/Downloads/digital_design/q_6_28b_bin_seq" C:/Users/czhe/Downloads/digital_design/q_6_28b_bin_seq/q_6_28b.v 
+# -- Compiling module q_6_28b
+# 
+# Top level modules:
+# 	q_6_28b
+# End time: 19:37:01 on Nov 11,2019, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+vlog -reportprogress 300 -work work C:/Users/czhe/Downloads/digital_design/q_6_28b_bin_seq/q_6_28b_tb.v
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 19:37:10 on Nov 11,2019
+# vlog -reportprogress 300 -work work C:/Users/czhe/Downloads/digital_design/q_6_28b_bin_seq/q_6_28b_tb.v 
+# -- Compiling module q_6_28b_tb
+# 
+# Top level modules:
+# 	q_6_28b_tb
+# End time: 19:37:10 on Nov 11,2019, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vsim work.q_6_28b_tb
+# vsim work.q_6_28b_tb 
+# Start time: 19:37:15 on Nov 11,2019
+# Loading work.q_6_28b_tb
+# Loading work.q_6_28b
+# ** Warning: (vsim-3017) C:/Users/czhe/Downloads/digital_design/q_6_28b_bin_seq/q_6_28b_tb.v(5): [TFMPC] - Too few port connections. Expected 4, found 3.
+#    Time: 0 ps  Iteration: 0  Instance: /q_6_28b_tb/dut File: C:/Users/czhe/Downloads/digital_design/q_6_28b_bin_seq/q_6_28b.v
+# ** Warning: (vsim-3015) C:/Users/czhe/Downloads/digital_design/q_6_28b_bin_seq/q_6_28b_tb.v(5): [PCDPC] - Port size (1) does not match connection size (3) for port 'cnt_en'. The port definition is at: C:/Users/czhe/Downloads/digital_design/q_6_28b_bin_seq/q_6_28b.v(2).
+#    Time: 0 ps  Iteration: 0  Instance: /q_6_28b_tb/dut File: C:/Users/czhe/Downloads/digital_design/q_6_28b_bin_seq/q_6_28b.v
+# ** Warning: (vsim-3722) C:/Users/czhe/Downloads/digital_design/q_6_28b_bin_seq/q_6_28b_tb.v(5): [TFMPC] - Missing connection for port 'count'.
+add wave -position insertpoint  \
+sim:/q_6_28b_tb/rstb \
+sim:/q_6_28b_tb/clk \
+sim:/q_6_28b_tb/count
+run
+# ** Note: $finish    : C:/Users/czhe/Downloads/digital_design/q_6_28b_bin_seq/q_6_28b_tb.v(22)
+#    Time: 200 ps  Iteration: 0  Instance: /q_6_28b_tb
+# 1
+# Break in Module q_6_28b_tb at C:/Users/czhe/Downloads/digital_design/q_6_28b_bin_seq/q_6_28b_tb.v line 22
+# Can't move the Now cursor.
+vlog -work work C:/Users/czhe/Downloads/digital_design/q_6_28b_bin_seq/q_6_28b_tb.v
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 19:39:37 on Nov 11,2019
+# vlog -reportprogress 300 -work work C:/Users/czhe/Downloads/digital_design/q_6_28b_bin_seq/q_6_28b_tb.v 
+# -- Compiling module q_6_28b_tb
+# 
+# Top level modules:
+# 	q_6_28b_tb
+# End time: 19:39:37 on Nov 11,2019, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vsim work.q_6_28b_tb
+# End time: 19:39:45 on Nov 11,2019, Elapsed time: 0:02:30
+# Errors: 1, Warnings: 3
+# vsim work.q_6_28b_tb 
+# Start time: 19:39:45 on Nov 11,2019
+# Loading work.q_6_28b_tb
+# Loading work.q_6_28b
+# ** Warning: (vsim-3015) C:/Users/czhe/Downloads/digital_design/q_6_28b_bin_seq/q_6_28b_tb.v(5): [PCDPC] - Port size (4) does not match connection size (3) for port 'count'. The port definition is at: C:/Users/czhe/Downloads/digital_design/q_6_28b_bin_seq/q_6_28b.v(3).
+#    Time: 0 ps  Iteration: 0  Instance: /q_6_28b_tb/dut File: C:/Users/czhe/Downloads/digital_design/q_6_28b_bin_seq/q_6_28b.v
+add wave -position insertpoint  \
+sim:/q_6_28b_tb/rstb \
+sim:/q_6_28b_tb/clk \
+sim:/q_6_28b_tb/cnt_en \
+sim:/q_6_28b_tb/count
+run
+# ** Note: $finish    : C:/Users/czhe/Downloads/digital_design/q_6_28b_bin_seq/q_6_28b_tb.v(22)
+#    Time: 200 ps  Iteration: 0  Instance: /q_6_28b_tb
+# 1
+# Break in Module q_6_28b_tb at C:/Users/czhe/Downloads/digital_design/q_6_28b_bin_seq/q_6_28b_tb.v line 22
+vlog -work work C:/Users/czhe/Downloads/digital_design/q_6_28b_bin_seq/q_6_28b_tb.v
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 19:40:19 on Nov 11,2019
+# vlog -reportprogress 300 -work work C:/Users/czhe/Downloads/digital_design/q_6_28b_bin_seq/q_6_28b_tb.v 
+# -- Compiling module q_6_28b_tb
+# 
+# Top level modules:
+# 	q_6_28b_tb
+# End time: 19:40:19 on Nov 11,2019, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+restart
+# Loading work.q_6_28b_tb
+# ** Warning: (vsim-3015) C:/Users/czhe/Downloads/digital_design/q_6_28b_bin_seq/q_6_28b_tb.v(5): [PCDPC] - Port size (4) does not match connection size (3) for port 'count'. The port definition is at: C:/Users/czhe/Downloads/digital_design/q_6_28b_bin_seq/q_6_28b.v(3).
+#    Time: 0 ps  Iteration: 0  Instance: /q_6_28b_tb/dut File: C:/Users/czhe/Downloads/digital_design/q_6_28b_bin_seq/q_6_28b.v
+run
+# ** Note: $finish    : C:/Users/czhe/Downloads/digital_design/q_6_28b_bin_seq/q_6_28b_tb.v(22)
+#    Time: 200 ps  Iteration: 0  Instance: /q_6_28b_tb
+# 1
+# Break in Module q_6_28b_tb at C:/Users/czhe/Downloads/digital_design/q_6_28b_bin_seq/q_6_28b_tb.v line 22
+vlog -work work C:/Users/czhe/Downloads/digital_design/q_6_28b_bin_seq/q_6_28b_tb.v
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 19:41:05 on Nov 11,2019
+# vlog -reportprogress 300 -work work C:/Users/czhe/Downloads/digital_design/q_6_28b_bin_seq/q_6_28b_tb.v 
+# -- Compiling module q_6_28b_tb
+# 
+# Top level modules:
+# 	q_6_28b_tb
+# End time: 19:41:06 on Nov 11,2019, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+restart
+# Loading work.q_6_28b_tb
+run
+# GetModuleFileName: The specified module could not be found.
+# 
+# 
+# ** Note: $finish    : C:/Users/czhe/Downloads/digital_design/q_6_28b_bin_seq/q_6_28b_tb.v(22)
+#    Time: 200 ps  Iteration: 0  Instance: /q_6_28b_tb
+# 1
+# Break in Module q_6_28b_tb at C:/Users/czhe/Downloads/digital_design/q_6_28b_bin_seq/q_6_28b_tb.v line 22
+vlog -vlog01compat -work work +incdir+C:/Users/czhe/Downloads/digital_design/q_6_28b_bin_seq C:/Users/czhe/Downloads/digital_design/q_6_28b_bin_seq/q_6_28b.v
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 19:46:10 on Nov 11,2019
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/czhe/Downloads/digital_design/q_6_28b_bin_seq" C:/Users/czhe/Downloads/digital_design/q_6_28b_bin_seq/q_6_28b.v 
+# -- Compiling module q_6_28b
+# ** Error: (vlog-13069) C:/Users/czhe/Downloads/digital_design/q_6_28b_bin_seq/q_6_28b.v(4): near "(": syntax error, unexpected '(', expecting ')'.
+# End time: 19:46:10 on Nov 11,2019, Elapsed time: 0:00:00
+# Errors: 1, Warnings: 0
+# C:/intelFPGA_lite/18.1/modelsim_ase/win32aloem/vlog failed.
+vlog -work work C:/Users/czhe/Downloads/digital_design/q_6_28b_bin_seq/q_6_28b_tb.v
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 19:46:10 on Nov 11,2019
+# vlog -reportprogress 300 -work work C:/Users/czhe/Downloads/digital_design/q_6_28b_bin_seq/q_6_28b_tb.v 
+# -- Compiling module q_6_28b_tb
+# 
+# Top level modules:
+# 	q_6_28b_tb
+# End time: 19:46:10 on Nov 11,2019, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vlog -vlog01compat -work work +incdir+C:/Users/czhe/Downloads/digital_design/q_6_28b_bin_seq C:/Users/czhe/Downloads/digital_design/q_6_28b_bin_seq/q_6_28b.v
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 19:46:29 on Nov 11,2019
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/czhe/Downloads/digital_design/q_6_28b_bin_seq" C:/Users/czhe/Downloads/digital_design/q_6_28b_bin_seq/q_6_28b.v 
+# -- Compiling module q_6_28b
+# 
+# Top level modules:
+# 	q_6_28b
+# End time: 19:46:29 on Nov 11,2019, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vlog -work work C:/Users/czhe/Downloads/digital_design/q_6_28b_bin_seq/q_6_28b_tb.v
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 19:46:29 on Nov 11,2019
+# vlog -reportprogress 300 -work work C:/Users/czhe/Downloads/digital_design/q_6_28b_bin_seq/q_6_28b_tb.v 
+# -- Compiling module q_6_28b_tb
+# 
+# Top level modules:
+# 	q_6_28b_tb
+# End time: 19:46:29 on Nov 11,2019, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vsim work.q_6_28b_tb
+# End time: 19:46:39 on Nov 11,2019, Elapsed time: 0:06:54
+# Errors: 2, Warnings: 2
+# vsim work.q_6_28b_tb 
+# Start time: 19:46:39 on Nov 11,2019
+# Loading work.q_6_28b_tb
+# Loading work.q_6_28b
+add wave -position insertpoint  \
+sim:/q_6_28b_tb/rstb \
+sim:/q_6_28b_tb/clk \
+sim:/q_6_28b_tb/cnt_en \
+sim:/q_6_28b_tb/count \
+{sim:/q_6_28b_tb/count[2]} \
+{sim:/q_6_28b_tb/count[1]} \
+{sim:/q_6_28b_tb/count[0]}
+run
+# ** Note: $finish    : C:/Users/czhe/Downloads/digital_design/q_6_28b_bin_seq/q_6_28b_tb.v(32)
+#    Time: 200 ps  Iteration: 0  Instance: /q_6_28b_tb
+# 1
+# Break in Module q_6_28b_tb at C:/Users/czhe/Downloads/digital_design/q_6_28b_bin_seq/q_6_28b_tb.v line 32
+vlog -work work C:/Users/czhe/Downloads/digital_design/q_6_28b_bin_seq/q_6_28b_tb.v
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 19:54:49 on Nov 11,2019
+# vlog -reportprogress 300 -work work C:/Users/czhe/Downloads/digital_design/q_6_28b_bin_seq/q_6_28b_tb.v 
+# -- Compiling module q_6_28b_tb
+# ** Warning: C:/Users/czhe/Downloads/digital_design/q_6_28b_bin_seq/q_6_28b_tb.v(8): (vlog-2226) The inline genvar declaration for 'i' is only legal in SystemVerilog.
+# Use -error for strict enforcement.
+# ** Error: (vlog-13036) C:/Users/czhe/Downloads/digital_design/q_6_28b_bin_seq/q_6_28b_tb.v(8): near "++": Operator only allowed in SystemVerilog.
+# ** Error: (vlog-13069) C:/Users/czhe/Downloads/digital_design/q_6_28b_bin_seq/q_6_28b_tb.v(11): near "end": syntax error, unexpected end, expecting ')'.
+# End time: 19:54:49 on Nov 11,2019, Elapsed time: 0:00:00
+# Errors: 2, Warnings: 1
+# C:/intelFPGA_lite/18.1/modelsim_ase/win32aloem/vlog failed.
+vlog -work work C:/Users/czhe/Downloads/digital_design/q_6_28b_bin_seq/q_6_28b_tb.v
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 19:55:14 on Nov 11,2019
+# vlog -reportprogress 300 -work work C:/Users/czhe/Downloads/digital_design/q_6_28b_bin_seq/q_6_28b_tb.v 
+# -- Compiling module q_6_28b_tb
+# ** Warning: C:/Users/czhe/Downloads/digital_design/q_6_28b_bin_seq/q_6_28b_tb.v(8): (vlog-2226) The inline genvar declaration for 'i' is only legal in SystemVerilog.
+# Use -error for strict enforcement.
+# ** Error: (vlog-13069) C:/Users/czhe/Downloads/digital_design/q_6_28b_bin_seq/q_6_28b_tb.v(12): near "end": syntax error, unexpected end.
+# End time: 19:55:14 on Nov 11,2019, Elapsed time: 0:00:00
+# Errors: 1, Warnings: 1
+# C:/intelFPGA_lite/18.1/modelsim_ase/win32aloem/vlog failed.
+vlog -work work C:/Users/czhe/Downloads/digital_design/q_6_28b_bin_seq/q_6_28b_tb.v
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 19:55:57 on Nov 11,2019
+# vlog -reportprogress 300 -work work C:/Users/czhe/Downloads/digital_design/q_6_28b_bin_seq/q_6_28b_tb.v 
+# -- Compiling module q_6_28b_tb
+# ** Warning: C:/Users/czhe/Downloads/digital_design/q_6_28b_bin_seq/q_6_28b_tb.v(8): (vlog-2226) The inline genvar declaration for 'i' is only legal in SystemVerilog.
+# Use -error for strict enforcement.
+# ** Error: C:/Users/czhe/Downloads/digital_design/q_6_28b_bin_seq/q_6_28b_tb.v(5): (vlog-2110) Illegal reference to memory "reset_vals".
+# ** Error: C:/Users/czhe/Downloads/digital_design/q_6_28b_bin_seq/q_6_28b_tb.v(5): Illegal LHS of assignment.
+# ** Error (suppressible): C:/Users/czhe/Downloads/digital_design/q_6_28b_bin_seq/q_6_28b_tb.v(5): (vlog-13174) Illegal assignment pattern. The number of elements (8) doesn't match with the type's width (11).
+# ** Error: C:/Users/czhe/Downloads/digital_design/q_6_28b_bin_seq/q_6_28b_tb.v(10): The expression for a parameter actual associated with the parameter name ('RESET_VALUE') for the module instance ('dut') must be constant.
+# End time: 19:55:57 on Nov 11,2019, Elapsed time: 0:00:00
+# Errors: 4, Warnings: 1
+# C:/intelFPGA_lite/18.1/modelsim_ase/win32aloem/vlog failed.
+vlog -work work C:/Users/czhe/Downloads/digital_design/q_6_28b_bin_seq/q_6_28b_tb.v
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 19:57:51 on Nov 11,2019
+# vlog -reportprogress 300 -work work C:/Users/czhe/Downloads/digital_design/q_6_28b_bin_seq/q_6_28b_tb.v 
+# -- Compiling module q_6_28b_tb
+# ** Warning: C:/Users/czhe/Downloads/digital_design/q_6_28b_bin_seq/q_6_28b_tb.v(8): (vlog-2226) The inline genvar declaration for 'i' is only legal in SystemVerilog.
+# Use -error for strict enforcement.
+# ** Error: C:/Users/czhe/Downloads/digital_design/q_6_28b_bin_seq/q_6_28b_tb.v(5): (vlog-2110) Illegal reference to memory "reset_vals".
+# ** Error: C:/Users/czhe/Downloads/digital_design/q_6_28b_bin_seq/q_6_28b_tb.v(5): Illegal LHS of assignment.
+# ** Warning: (vlog-2121) C:/Users/czhe/Downloads/digital_design/q_6_28b_bin_seq/q_6_28b_tb.v(5): Illegal concatenation of an unsized constant. Will treat it as a 32-bit value.
+# ** Warning: (vlog-2121) C:/Users/czhe/Downloads/digital_design/q_6_28b_bin_seq/q_6_28b_tb.v(5): Illegal concatenation of an unsized constant. Will treat it as a 32-bit value.
+# ** Warning: (vlog-2121) C:/Users/czhe/Downloads/digital_design/q_6_28b_bin_seq/q_6_28b_tb.v(5): Illegal concatenation of an unsized constant. Will treat it as a 32-bit value.
+# ** Warning: (vlog-2121) C:/Users/czhe/Downloads/digital_design/q_6_28b_bin_seq/q_6_28b_tb.v(5): Illegal concatenation of an unsized constant. Will treat it as a 32-bit value.
+# ** Warning: (vlog-2121) C:/Users/czhe/Downloads/digital_design/q_6_28b_bin_seq/q_6_28b_tb.v(5): Illegal concatenation of an unsized constant. Will treat it as a 32-bit value.
+# ** Warning: (vlog-2121) C:/Users/czhe/Downloads/digital_design/q_6_28b_bin_seq/q_6_28b_tb.v(5): Illegal concatenation of an unsized constant. Will treat it as a 32-bit value.
+# ** Warning: (vlog-2121) C:/Users/czhe/Downloads/digital_design/q_6_28b_bin_seq/q_6_28b_tb.v(5): Illegal concatenation of an unsized constant. Will treat it as a 32-bit value.
+# ** Warning: (vlog-2121) C:/Users/czhe/Downloads/digital_design/q_6_28b_bin_seq/q_6_28b_tb.v(5): Illegal concatenation of an unsized constant. Will treat it as a 32-bit value.
+# ** Error (suppressible): (vlog-2997) C:/Users/czhe/Downloads/digital_design/q_6_28b_bin_seq/q_6_28b_tb.v(5): Cannot assign a packed type 'reg[255:0]' to an unpacked type 'integer $[10:0]'.
+# ** Error: C:/Users/czhe/Downloads/digital_design/q_6_28b_bin_seq/q_6_28b_tb.v(10): The expression for a parameter actual associated with the parameter name ('RESET_VALUE') for the module instance ('dut') must be constant.
+# End time: 19:57:51 on Nov 11,2019, Elapsed time: 0:00:00
+# Errors: 4, Warnings: 9
+# C:/intelFPGA_lite/18.1/modelsim_ase/win32aloem/vlog failed.
+vlog -work work C:/Users/czhe/Downloads/digital_design/q_6_28b_bin_seq/q_6_28b_tb.v
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 20:00:57 on Nov 11,2019
+# vlog -reportprogress 300 -work work C:/Users/czhe/Downloads/digital_design/q_6_28b_bin_seq/q_6_28b_tb.v 
+# -- Compiling module q_6_28b_tb
+# ** Error: (vlog-13069) C:/Users/czhe/Downloads/digital_design/q_6_28b_bin_seq/q_6_28b_tb.v(6): near "[": syntax error, unexpected '['.
+# ** Error: C:/Users/czhe/Downloads/digital_design/q_6_28b_bin_seq/q_6_28b_tb.v(6): (vlog-13205) Syntax error found in the scope following 'reset_vals'. Is there a missing '::'?
+# End time: 20:00:57 on Nov 11,2019, Elapsed time: 0:00:00
+# Errors: 2, Warnings: 0
+# C:/intelFPGA_lite/18.1/modelsim_ase/win32aloem/vlog failed.
+vlog -work work C:/Users/czhe/Downloads/digital_design/q_6_28b_bin_seq/q_6_28b_tb.v
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 20:02:10 on Nov 11,2019
+# vlog -reportprogress 300 -work work C:/Users/czhe/Downloads/digital_design/q_6_28b_bin_seq/q_6_28b_tb.v 
+# -- Compiling module q_6_28b_tb
+# ** Error: (vlog-13069) C:/Users/czhe/Downloads/digital_design/q_6_28b_bin_seq/q_6_28b_tb.v(6): near "[": syntax error, unexpected '['.
+# ** Error: C:/Users/czhe/Downloads/digital_design/q_6_28b_bin_seq/q_6_28b_tb.v(6): (vlog-13205) Syntax error found in the scope following 'reset_vals'. Is there a missing '::'?
+# End time: 20:02:10 on Nov 11,2019, Elapsed time: 0:00:00
+# Errors: 2, Warnings: 0
+# C:/intelFPGA_lite/18.1/modelsim_ase/win32aloem/vlog failed.
+vlog -work work C:/Users/czhe/Downloads/digital_design/q_6_28b_bin_seq/q_6_28b_tb.v
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 20:06:03 on Nov 11,2019
+# vlog -reportprogress 300 -work work C:/Users/czhe/Downloads/digital_design/q_6_28b_bin_seq/q_6_28b_tb.v 
+# -- Compiling module q_6_28b_tb
+# ** Error: C:/Users/czhe/Downloads/digital_design/q_6_28b_bin_seq/q_6_28b_tb.v(6): (vlog-2730) Undefined variable: 'int'.
+# ** Error: (vlog-13069) C:/Users/czhe/Downloads/digital_design/q_6_28b_bin_seq/q_6_28b_tb.v(6): near "i": syntax error, unexpected IDENTIFIER.
+# ** Error: C:/Users/czhe/Downloads/digital_design/q_6_28b_bin_seq/q_6_28b_tb.v(6): (vlog-2730) Undefined variable: 'i'.
+# ** Error: (vlog-13036) C:/Users/czhe/Downloads/digital_design/q_6_28b_bin_seq/q_6_28b_tb.v(6): near "++": Operator only allowed in SystemVerilog.
+# ** Error: (vlog-13069) C:/Users/czhe/Downloads/digital_design/q_6_28b_bin_seq/q_6_28b_tb.v(6): near ")": syntax error, unexpected ')', expecting ';'.
+# ** Error: C:/Users/czhe/Downloads/digital_design/q_6_28b_bin_seq/q_6_28b_tb.v(9): (vlog-13161) unexpected '$display'
+# ** Error: C:/Users/czhe/Downloads/digital_design/q_6_28b_bin_seq/q_6_28b_tb.v(9): (vlog-2730) Undefined variable: 'test'.
+# ** Error: (vlog-13069) C:/Users/czhe/Downloads/digital_design/q_6_28b_bin_seq/q_6_28b_tb.v(10): near "end": syntax error, unexpected end.
+# ** Error: C:/Users/czhe/Downloads/digital_design/q_6_28b_bin_seq/q_6_28b_tb.v(13): (vlog-13205) Syntax error found in the scope following 'reset_vals'. Is there a missing '::'?
+# End time: 20:06:03 on Nov 11,2019, Elapsed time: 0:00:00
+# Errors: 9, Warnings: 0
+# C:/intelFPGA_lite/18.1/modelsim_ase/win32aloem/vlog failed.
+vlog -work work C:/Users/czhe/Downloads/digital_design/q_6_28b_bin_seq/q_6_28b_tb.v
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 20:06:28 on Nov 11,2019
+# vlog -reportprogress 300 -work work C:/Users/czhe/Downloads/digital_design/q_6_28b_bin_seq/q_6_28b_tb.v 
+# -- Compiling module q_6_28b_tb
+# ** Error: C:/Users/czhe/Downloads/digital_design/q_6_28b_bin_seq/q_6_28b_tb.v(6): (vlog-2730) Undefined variable: 'int'.
+# ** Error: (vlog-13069) C:/Users/czhe/Downloads/digital_design/q_6_28b_bin_seq/q_6_28b_tb.v(6): near "i": syntax error, unexpected IDENTIFIER.
+# ** Error: C:/Users/czhe/Downloads/digital_design/q_6_28b_bin_seq/q_6_28b_tb.v(6): (vlog-2730) Undefined variable: 'i'.
+# ** Error: (vlog-13069) C:/Users/czhe/Downloads/digital_design/q_6_28b_bin_seq/q_6_28b_tb.v(6): near ")": syntax error, unexpected ')', expecting ';'.
+# ** Error: C:/Users/czhe/Downloads/digital_design/q_6_28b_bin_seq/q_6_28b_tb.v(9): (vlog-13161) unexpected '$display'
+# ** Error: C:/Users/czhe/Downloads/digital_design/q_6_28b_bin_seq/q_6_28b_tb.v(9): (vlog-2730) Undefined variable: 'test'.
+# ** Error: (vlog-13069) C:/Users/czhe/Downloads/digital_design/q_6_28b_bin_seq/q_6_28b_tb.v(10): near "end": syntax error, unexpected end.
+# ** Error: C:/Users/czhe/Downloads/digital_design/q_6_28b_bin_seq/q_6_28b_tb.v(13): (vlog-13205) Syntax error found in the scope following 'reset_vals'. Is there a missing '::'?
+# End time: 20:06:28 on Nov 11,2019, Elapsed time: 0:00:00
+# Errors: 8, Warnings: 0
+# C:/intelFPGA_lite/18.1/modelsim_ase/win32aloem/vlog failed.
+vlog -work work C:/Users/czhe/Downloads/digital_design/q_6_28b_bin_seq/q_6_28b_tb.v
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 20:16:27 on Nov 11,2019
+# vlog -reportprogress 300 -work work C:/Users/czhe/Downloads/digital_design/q_6_28b_bin_seq/q_6_28b_tb.v 
+# -- Compiling module q_6_28b_tb
+# ** Warning: C:/Users/czhe/Downloads/digital_design/q_6_28b_bin_seq/q_6_28b_tb.v(19): (vlog-2226) The inline genvar declaration for 'i' is only legal in SystemVerilog.
+# Use -error for strict enforcement.
+# ** Error: (vlog-13069) C:/Users/czhe/Downloads/digital_design/q_6_28b_bin_seq/q_6_28b_tb.v(21): near "dut": syntax error, unexpected IDENTIFIER, expecting ')' or ','.
+# End time: 20:16:27 on Nov 11,2019, Elapsed time: 0:00:00
+# Errors: 1, Warnings: 1
+# C:/intelFPGA_lite/18.1/modelsim_ase/win32aloem/vlog failed.
+vlog -work work C:/Users/czhe/Downloads/digital_design/q_6_28b_bin_seq/q_6_28b_tb.v
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 20:16:46 on Nov 11,2019
+# vlog -reportprogress 300 -work work C:/Users/czhe/Downloads/digital_design/q_6_28b_bin_seq/q_6_28b_tb.v 
+# -- Compiling module q_6_28b_tb
+# ** Warning: C:/Users/czhe/Downloads/digital_design/q_6_28b_bin_seq/q_6_28b_tb.v(19): (vlog-2226) The inline genvar declaration for 'i' is only legal in SystemVerilog.
+# Use -error for strict enforcement.
+# 
+# Top level modules:
+# 	q_6_28b_tb
+# End time: 20:16:46 on Nov 11,2019, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 1
+vlog -work work C:/Users/czhe/Downloads/digital_design/q_6_28b_bin_seq/q_6_28b_tb.v
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 20:30:07 on Nov 11,2019
+# vlog -reportprogress 300 -work work C:/Users/czhe/Downloads/digital_design/q_6_28b_bin_seq/q_6_28b_tb.v 
+# -- Compiling module q_6_28b_tb
+# 
+# Top level modules:
+# 	q_6_28b_tb
+# End time: 20:30:07 on Nov 11,2019, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vsim work.q_6_28b_tb
+# End time: 20:30:21 on Nov 11,2019, Elapsed time: 0:43:42
+# Errors: 40, Warnings: 14
+# vsim work.q_6_28b_tb 
+# Start time: 20:30:22 on Nov 11,2019
+# Loading work.q_6_28b_tb
+# Loading work.q_6_28b
+add wave -position insertpoint  \
+sim:/q_6_28b_tb/rstb \
+sim:/q_6_28b_tb/clk \
+sim:/q_6_28b_tb/cnt_en
+add wave -position insertpoint  \
+{sim:/q_6_28b_tb/count[10]} \
+{sim:/q_6_28b_tb/count[9]} \
+{sim:/q_6_28b_tb/count[8]} \
+{sim:/q_6_28b_tb/count[7]} \
+{sim:/q_6_28b_tb/count[6]} \
+{sim:/q_6_28b_tb/count[5]} \
+{sim:/q_6_28b_tb/count[4]} \
+{sim:/q_6_28b_tb/count[3]} \
+{sim:/q_6_28b_tb/count[2]} \
+{sim:/q_6_28b_tb/count[1]} \
+{sim:/q_6_28b_tb/count[0]}
+run
+# ** Note: $finish    : C:/Users/czhe/Downloads/digital_design/q_6_28b_bin_seq/q_6_28b_tb.v(55)
+#    Time: 200 ps  Iteration: 0  Instance: /q_6_28b_tb
+# 1
+# Break in Module q_6_28b_tb at C:/Users/czhe/Downloads/digital_design/q_6_28b_bin_seq/q_6_28b_tb.v line 55
+# End time: 20:31:31 on Nov 11,2019, Elapsed time: 0:01:09
+# Errors: 0, Warnings: 0

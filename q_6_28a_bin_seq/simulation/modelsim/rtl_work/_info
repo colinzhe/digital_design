@@ -1,0 +1,75 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/Users/czhe/Downloads/digital_design/q_6_28a_bin_seq/simulation/modelsim
+vd_ff
+Z1 !s110 1573506107
+!i10b 1
+!s100 Vj]bBSn7Pg=[WJM6Kb]CN2
+IjS20oa`6OV^]80i5z6YXR3
+Z2 VDg1SIo80bB@j0V0VzS_@n1
+R0
+Z3 w1573506103
+Z4 8C:/Users/czhe/Downloads/digital_design/q_6_28a_bin_seq/q_6_28a.v
+Z5 FC:/Users/czhe/Downloads/digital_design/q_6_28a_bin_seq/q_6_28a.v
+L0 36
+Z6 OV;L;10.5b;63
+r1
+!s85 0
+31
+Z7 !s108 1573506107.000000
+Z8 !s107 C:/Users/czhe/Downloads/digital_design/q_6_28a_bin_seq/q_6_28a.v|
+Z9 !s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/czhe/Downloads/digital_design/q_6_28a_bin_seq|C:/Users/czhe/Downloads/digital_design/q_6_28a_bin_seq/q_6_28a.v|
+!i113 1
+Z10 o-vlog01compat -work work
+Z11 !s92 -vlog01compat -work work +incdir+C:/Users/czhe/Downloads/digital_design/q_6_28a_bin_seq
+Z12 tCvgOpt 0
+vq_6_28a
+R1
+!i10b 1
+!s100 @a4QY]RIlJU?[_e24GI^K1
+I_VkeiUzFhhil>Cn8L41;23
+R2
+R0
+R3
+R4
+R5
+L0 1
+R6
+r1
+!s85 0
+31
+R7
+R8
+R9
+!i113 1
+R10
+R11
+R12
+vq_6_28a_tb
+!s110 1573503250
+!i10b 1
+!s100 MNmMXzWTTQf;lT;F23RPE3
+I;KYe6dEe2=5DH1CzOE5UW2
+R2
+R0
+w1573503245
+8C:/Users/czhe/Downloads/digital_design/q_6_28a_bin_seq/q_6_28_tb.v
+FC:/Users/czhe/Downloads/digital_design/q_6_28a_bin_seq/q_6_28_tb.v
+L0 1
+R6
+r1
+!s85 0
+31
+!s108 1573503250.000000
+!s107 C:/Users/czhe/Downloads/digital_design/q_6_28a_bin_seq/q_6_28_tb.v|
+!s90 -reportprogress|300|-work|work|C:/Users/czhe/Downloads/digital_design/q_6_28a_bin_seq/q_6_28_tb.v|
+!i113 1
+o-work work
+R12

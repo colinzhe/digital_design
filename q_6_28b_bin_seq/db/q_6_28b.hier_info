@@ -1,0 +1,14 @@
+|q_6_28b
+rstb => state~4.DATAIN
+clk => state~2.DATAIN
+cnt_en => state.OUTPUTSELECT
+cnt_en => state.OUTPUTSELECT
+cnt_en => state.OUTPUTSELECT
+cnt_en => state.OUTPUTSELECT
+cnt_en => state.OUTPUTSELECT
+count[0] <= <GND>
+count[1] <= count.DB_MAX_OUTPUT_PORT_TYPE
+count[2] <= count.DB_MAX_OUTPUT_PORT_TYPE
+count[3] <= count[3].DB_MAX_OUTPUT_PORT_TYPE
+
+
