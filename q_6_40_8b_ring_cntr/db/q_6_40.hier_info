@@ -1,0 +1,77 @@
+|q_6_40
+rstb => rstb.IN8
+clk => clk.IN8
+count[0] <= count[0].DB_MAX_OUTPUT_PORT_TYPE
+count[1] <= count[1].DB_MAX_OUTPUT_PORT_TYPE
+count[2] <= count[2].DB_MAX_OUTPUT_PORT_TYPE
+count[3] <= count[3].DB_MAX_OUTPUT_PORT_TYPE
+count[4] <= count[4].DB_MAX_OUTPUT_PORT_TYPE
+count[5] <= count[5].DB_MAX_OUTPUT_PORT_TYPE
+count[6] <= count[6].DB_MAX_OUTPUT_PORT_TYPE
+count[7] <= count[7].DB_MAX_OUTPUT_PORT_TYPE
+
+
+|q_6_40|d_ff:dff_7
+rstb => Q~reg0.PRESET
+clk => Q~reg0.CLK
+D => Q~reg0.DATAIN
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Qb <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|q_6_40|d_ff:dff_6
+rstb => Q~reg0.ACLR
+clk => Q~reg0.CLK
+D => Q~reg0.DATAIN
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Qb <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|q_6_40|d_ff:dff_5
+rstb => Q~reg0.ACLR
+clk => Q~reg0.CLK
+D => Q~reg0.DATAIN
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Qb <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|q_6_40|d_ff:dff_4
+rstb => Q~reg0.ACLR
+clk => Q~reg0.CLK
+D => Q~reg0.DATAIN
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Qb <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|q_6_40|d_ff:dff_3
+rstb => Q~reg0.ACLR
+clk => Q~reg0.CLK
+D => Q~reg0.DATAIN
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Qb <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|q_6_40|d_ff:dff_2
+rstb => Q~reg0.ACLR
+clk => Q~reg0.CLK
+D => Q~reg0.DATAIN
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Qb <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|q_6_40|d_ff:dff_1
+rstb => Q~reg0.ACLR
+clk => Q~reg0.CLK
+D => Q~reg0.DATAIN
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Qb <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|q_6_40|d_ff:dff_0
+rstb => Q~reg0.ACLR
+clk => Q~reg0.CLK
+D => Q~reg0.DATAIN
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Qb <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+

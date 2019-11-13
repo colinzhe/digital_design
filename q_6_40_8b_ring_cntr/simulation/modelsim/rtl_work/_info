@@ -1,0 +1,75 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/Users/czhe/Downloads/digital_design/q_6_40_8b_ring_cntr/simulation/modelsim
+vd_ff
+Z1 !s110 1573594737
+!i10b 1
+!s100 DWnj7gz:DeQ<BnGMEbF@_1
+I<BNn7C`zRT=hf3BJBii_Y0
+Z2 VDg1SIo80bB@j0V0VzS_@n1
+R0
+Z3 w1573593973
+Z4 8C:/Users/czhe/Downloads/digital_design/q_6_40_8b_ring_cntr/q_6_40.v
+Z5 FC:/Users/czhe/Downloads/digital_design/q_6_40_8b_ring_cntr/q_6_40.v
+L0 70
+Z6 OV;L;10.5b;63
+r1
+!s85 0
+31
+Z7 !s108 1573594736.000000
+Z8 !s107 C:/Users/czhe/Downloads/digital_design/q_6_40_8b_ring_cntr/q_6_40.v|
+Z9 !s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/czhe/Downloads/digital_design/q_6_40_8b_ring_cntr|C:/Users/czhe/Downloads/digital_design/q_6_40_8b_ring_cntr/q_6_40.v|
+!i113 1
+Z10 o-vlog01compat -work work
+Z11 !s92 -vlog01compat -work work +incdir+C:/Users/czhe/Downloads/digital_design/q_6_40_8b_ring_cntr
+Z12 tCvgOpt 0
+vq_6_40
+R1
+!i10b 1
+!s100 F=Em@nMS`UbLQ^<UfTQJ:2
+I]RIHRRjLY_o]0Woa6API]3
+R2
+R0
+R3
+R4
+R5
+L0 1
+R6
+r1
+!s85 0
+31
+R7
+R8
+R9
+!i113 1
+R10
+R11
+R12
+vq_6_40_tb
+!s110 1573594813
+!i10b 1
+!s100 20I7KJ@CK99l<8FAQf8kc3
+IbHEeY6RzVzhR?H>n[6iJJ0
+R2
+R0
+w1573594805
+8C:/Users/czhe/Downloads/digital_design/q_6_40_8b_ring_cntr/q_6_40_tb.v
+FC:/Users/czhe/Downloads/digital_design/q_6_40_8b_ring_cntr/q_6_40_tb.v
+L0 1
+R6
+r1
+!s85 0
+31
+!s108 1573594813.000000
+!s107 C:/Users/czhe/Downloads/digital_design/q_6_40_8b_ring_cntr/q_6_40_tb.v|
+!s90 -reportprogress|300|-work|work|C:/Users/czhe/Downloads/digital_design/q_6_40_8b_ring_cntr/q_6_40_tb.v|
+!i113 1
+o-work work
+R12
