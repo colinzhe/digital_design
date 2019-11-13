@@ -1,0 +1,205 @@
+|q_6_43
+rstb => rstb.IN8
+clk => clk.IN8
+mode[0] => mode[0].IN8
+mode[1] => mode[1].IN8
+I[0] => I[0].IN1
+I[1] => I[1].IN1
+I[2] => I[2].IN1
+I[3] => I[3].IN1
+SR_A[0] <= SR_A[0].DB_MAX_OUTPUT_PORT_TYPE
+SR_A[1] <= SR_A[1].DB_MAX_OUTPUT_PORT_TYPE
+SR_A[2] <= SR_A[2].DB_MAX_OUTPUT_PORT_TYPE
+SR_A[3] <= SR_A[3].DB_MAX_OUTPUT_PORT_TYPE
+SR_B[0] <= SR_B[0].DB_MAX_OUTPUT_PORT_TYPE
+SR_B[1] <= SR_B[1].DB_MAX_OUTPUT_PORT_TYPE
+SR_B[2] <= SR_B[2].DB_MAX_OUTPUT_PORT_TYPE
+SR_B[3] <= SR_B[3].DB_MAX_OUTPUT_PORT_TYPE
+SO_A <= SR_A[0].DB_MAX_OUTPUT_PORT_TYPE
+SO_B <= SR_B[0].DB_MAX_OUTPUT_PORT_TYPE
+
+
+|q_6_43|two_by_one_mux:sra_mux_0
+sel[0] => Equal0.IN1
+sel[0] => Equal1.IN0
+sel[0] => Equal2.IN1
+sel[1] => Equal0.IN0
+sel[1] => Equal1.IN1
+sel[1] => Equal2.IN0
+x_in[0] => y_out.DATAA
+x_in[0] => y_out.DATAB
+x_in[1] => y_out.DATAB
+x_in[2] => y_out.DATAB
+x_in[3] => ~NO_FANOUT~
+y_out <= y_out.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|q_6_43|two_by_one_mux:sra_mux_1
+sel[0] => Equal0.IN1
+sel[0] => Equal1.IN0
+sel[0] => Equal2.IN1
+sel[1] => Equal0.IN0
+sel[1] => Equal1.IN1
+sel[1] => Equal2.IN0
+x_in[0] => y_out.DATAA
+x_in[0] => y_out.DATAB
+x_in[1] => y_out.DATAB
+x_in[2] => y_out.DATAB
+x_in[3] => ~NO_FANOUT~
+y_out <= y_out.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|q_6_43|two_by_one_mux:sra_mux_2
+sel[0] => Equal0.IN1
+sel[0] => Equal1.IN0
+sel[0] => Equal2.IN1
+sel[1] => Equal0.IN0
+sel[1] => Equal1.IN1
+sel[1] => Equal2.IN0
+x_in[0] => y_out.DATAA
+x_in[0] => y_out.DATAB
+x_in[1] => y_out.DATAB
+x_in[2] => y_out.DATAB
+x_in[3] => ~NO_FANOUT~
+y_out <= y_out.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|q_6_43|two_by_one_mux:sra_mux_3
+sel[0] => Equal0.IN1
+sel[0] => Equal1.IN0
+sel[0] => Equal2.IN1
+sel[1] => Equal0.IN0
+sel[1] => Equal1.IN1
+sel[1] => Equal2.IN0
+x_in[0] => y_out.DATAA
+x_in[0] => y_out.DATAB
+x_in[1] => y_out.DATAB
+x_in[2] => y_out.DATAB
+x_in[3] => ~NO_FANOUT~
+y_out <= y_out.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|q_6_43|d_ff:sra_dff_0
+rstb => Q~reg0.ACLR
+clk => Q~reg0.CLK
+D => Q~reg0.DATAIN
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Qb <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|q_6_43|d_ff:sra_dff_1
+rstb => Q~reg0.ACLR
+clk => Q~reg0.CLK
+D => Q~reg0.DATAIN
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Qb <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|q_6_43|d_ff:sra_dff_2
+rstb => Q~reg0.ACLR
+clk => Q~reg0.CLK
+D => Q~reg0.DATAIN
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Qb <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|q_6_43|d_ff:sra_dff_3
+rstb => Q~reg0.ACLR
+clk => Q~reg0.CLK
+D => Q~reg0.DATAIN
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Qb <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|q_6_43|two_by_one_mux:srb_mux_0
+sel[0] => Equal0.IN1
+sel[0] => Equal1.IN0
+sel[0] => Equal2.IN1
+sel[1] => Equal0.IN0
+sel[1] => Equal1.IN1
+sel[1] => Equal2.IN0
+x_in[0] => y_out.DATAA
+x_in[0] => y_out.DATAB
+x_in[1] => y_out.DATAB
+x_in[2] => y_out.DATAB
+x_in[3] => ~NO_FANOUT~
+y_out <= y_out.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|q_6_43|two_by_one_mux:srb_mux_1
+sel[0] => Equal0.IN1
+sel[0] => Equal1.IN0
+sel[0] => Equal2.IN1
+sel[1] => Equal0.IN0
+sel[1] => Equal1.IN1
+sel[1] => Equal2.IN0
+x_in[0] => y_out.DATAA
+x_in[0] => y_out.DATAB
+x_in[1] => y_out.DATAB
+x_in[2] => y_out.DATAB
+x_in[3] => ~NO_FANOUT~
+y_out <= y_out.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|q_6_43|two_by_one_mux:srb_mux_2
+sel[0] => Equal0.IN1
+sel[0] => Equal1.IN0
+sel[0] => Equal2.IN1
+sel[1] => Equal0.IN0
+sel[1] => Equal1.IN1
+sel[1] => Equal2.IN0
+x_in[0] => y_out.DATAA
+x_in[0] => y_out.DATAB
+x_in[1] => y_out.DATAB
+x_in[2] => y_out.DATAB
+x_in[3] => ~NO_FANOUT~
+y_out <= y_out.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|q_6_43|two_by_one_mux:srb_mux_3
+sel[0] => Equal0.IN1
+sel[0] => Equal1.IN0
+sel[0] => Equal2.IN1
+sel[1] => Equal0.IN0
+sel[1] => Equal1.IN1
+sel[1] => Equal2.IN0
+x_in[0] => y_out.DATAA
+x_in[0] => y_out.DATAB
+x_in[1] => y_out.DATAB
+x_in[2] => y_out.DATAB
+x_in[3] => ~NO_FANOUT~
+y_out <= y_out.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|q_6_43|d_ff:srb_dff_0
+rstb => Q~reg0.ACLR
+clk => Q~reg0.CLK
+D => Q~reg0.DATAIN
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Qb <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|q_6_43|d_ff:srb_dff_1
+rstb => Q~reg0.ACLR
+clk => Q~reg0.CLK
+D => Q~reg0.DATAIN
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Qb <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|q_6_43|d_ff:srb_dff_2
+rstb => Q~reg0.ACLR
+clk => Q~reg0.CLK
+D => Q~reg0.DATAIN
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Qb <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|q_6_43|d_ff:srb_dff_3
+rstb => Q~reg0.ACLR
+clk => Q~reg0.CLK
+D => Q~reg0.DATAIN
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Qb <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+

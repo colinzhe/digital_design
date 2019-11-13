@@ -1,0 +1,6 @@
+- async reset
+- load
+- shift
+- hold
+- changing of I during reset, load, shift, hold
+- verify outputs

@@ -1,0 +1,81 @@
+{
+	"partitions" : [
+		{
+			"name" : "Top",
+			"pins" : [
+				{
+					"name" : "SR_A[0]",
+					"strict" : false
+				},
+				{
+					"name" : "SR_A[1]",
+					"strict" : false
+				},
+				{
+					"name" : "SR_A[2]",
+					"strict" : false
+				},
+				{
+					"name" : "SR_A[3]",
+					"strict" : false
+				},
+				{
+					"name" : "SR_B[0]",
+					"strict" : false
+				},
+				{
+					"name" : "SR_B[1]",
+					"strict" : false
+				},
+				{
+					"name" : "SR_B[2]",
+					"strict" : false
+				},
+				{
+					"name" : "SR_B[3]",
+					"strict" : false
+				},
+				{
+					"name" : "SO_A",
+					"strict" : false
+				},
+				{
+					"name" : "SO_B",
+					"strict" : false
+				},
+				{
+					"name" : "mode[0]",
+					"strict" : false
+				},
+				{
+					"name" : "mode[1]",
+					"strict" : false
+				},
+				{
+					"name" : "I[0]",
+					"strict" : false
+				},
+				{
+					"name" : "clk",
+					"strict" : false
+				},
+				{
+					"name" : "rstb",
+					"strict" : false
+				},
+				{
+					"name" : "I[1]",
+					"strict" : false
+				},
+				{
+					"name" : "I[2]",
+					"strict" : false
+				},
+				{
+					"name" : "I[3]",
+					"strict" : false
+				}
+			]
+		}
+	]
+}
