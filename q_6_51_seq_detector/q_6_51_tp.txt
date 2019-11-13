@@ -1,0 +1,3 @@
+- async reset
+- shift reg contents
+- detect assertion

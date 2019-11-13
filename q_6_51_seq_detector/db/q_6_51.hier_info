@@ -1,0 +1,14 @@
+|q_6_51
+rstb => shift_reg[0]~reg0.ACLR
+rstb => shift_reg[1]~reg0.ACLR
+rstb => shift_reg[2]~reg0.ACLR
+clk => shift_reg[0]~reg0.CLK
+clk => shift_reg[1]~reg0.CLK
+clk => shift_reg[2]~reg0.CLK
+x_in => shift_reg[2]~reg0.DATAIN
+shift_reg[0] <= shift_reg[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+shift_reg[1] <= shift_reg[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+shift_reg[2] <= shift_reg[2]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+y_out <= WideAnd0.DB_MAX_OUTPUT_PORT_TYPE
+
+
