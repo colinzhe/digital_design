@@ -1,0 +1,25 @@
+{
+	"partitions" : [
+		{
+			"name" : "Top",
+			"pins" : [
+				{
+					"name" : "odd_out",
+					"strict" : false
+				},
+				{
+					"name" : "x_in",
+					"strict" : false
+				},
+				{
+					"name" : "clk",
+					"strict" : false
+				},
+				{
+					"name" : "rstb",
+					"strict" : false
+				}
+			]
+		}
+	]
+}

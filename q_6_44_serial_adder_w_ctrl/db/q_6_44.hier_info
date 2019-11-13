@@ -1,0 +1,88 @@
+|q_6_44
+rstn => rstn.IN3
+clk => clk.IN3
+SI => SI.IN1
+SE => SE.IN3
+shift_reg_A_out[0] << four_bit_shift_reg:shift_reg_A.shift_reg
+shift_reg_A_out[1] << four_bit_shift_reg:shift_reg_A.shift_reg
+shift_reg_A_out[2] << four_bit_shift_reg:shift_reg_A.shift_reg
+shift_reg_A_out[3] << four_bit_shift_reg:shift_reg_A.shift_reg
+shift_reg_B_out[0] << four_bit_shift_reg:shift_reg_B.shift_reg
+shift_reg_B_out[1] << four_bit_shift_reg:shift_reg_B.shift_reg
+shift_reg_B_out[2] << four_bit_shift_reg:shift_reg_B.shift_reg
+shift_reg_B_out[3] << four_bit_shift_reg:shift_reg_B.shift_reg
+x << x.DB_MAX_OUTPUT_PORT_TYPE
+y << y.DB_MAX_OUTPUT_PORT_TYPE
+Cin << Cin.DB_MAX_OUTPUT_PORT_TYPE
+Sum << Sum.DB_MAX_OUTPUT_PORT_TYPE
+Cout << Cout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|q_6_44|four_bit_shift_reg:shift_reg_A
+rstn => shift_reg[0]~reg0.ACLR
+rstn => shift_reg[1]~reg0.ACLR
+rstn => shift_reg[2]~reg0.ACLR
+rstn => shift_reg[3]~reg0.ACLR
+clk => shift_reg[0]~reg0.CLK
+clk => shift_reg[1]~reg0.CLK
+clk => shift_reg[2]~reg0.CLK
+clk => shift_reg[3]~reg0.CLK
+SI => shift_reg[3]~reg0.DATAIN
+SE => shift_reg[0]~reg0.ENA
+SE => shift_reg[3]~reg0.ENA
+SE => shift_reg[2]~reg0.ENA
+SE => shift_reg[1]~reg0.ENA
+SO <= shift_reg[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+shift_reg[0] <= shift_reg[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+shift_reg[1] <= shift_reg[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+shift_reg[2] <= shift_reg[2]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+shift_reg[3] <= shift_reg[3]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|q_6_44|four_bit_shift_reg:shift_reg_B
+rstn => shift_reg[0]~reg0.ACLR
+rstn => shift_reg[1]~reg0.ACLR
+rstn => shift_reg[2]~reg0.ACLR
+rstn => shift_reg[3]~reg0.ACLR
+clk => shift_reg[0]~reg0.CLK
+clk => shift_reg[1]~reg0.CLK
+clk => shift_reg[2]~reg0.CLK
+clk => shift_reg[3]~reg0.CLK
+SI => shift_reg[3]~reg0.DATAIN
+SE => shift_reg[0]~reg0.ENA
+SE => shift_reg[3]~reg0.ENA
+SE => shift_reg[2]~reg0.ENA
+SE => shift_reg[1]~reg0.ENA
+SO <= shift_reg[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+shift_reg[0] <= shift_reg[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+shift_reg[1] <= shift_reg[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+shift_reg[2] <= shift_reg[2]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+shift_reg[3] <= shift_reg[3]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|q_6_44|full_adder:adder_0
+x => Sp1.IN0
+x => Cp1.IN0
+y => Sp1.IN1
+y => Cp1.IN1
+Cin => comb.IN1
+Cin => Cp2.IN1
+S <= comb.DB_MAX_OUTPUT_PORT_TYPE
+Cout <= comb.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|q_6_44|two_by_one_mux:mux
+sel => y_out.OUTPUTSELECT
+x_in[0] => y_out.DATAA
+x_in[1] => y_out.DATAB
+y_out <= y_out.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|q_6_44|d_ff:dff
+rstb => Q~reg0.ACLR
+clk => Q~reg0.CLK
+D => Q~reg0.DATAIN
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Qb <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+

@@ -1,0 +1,77 @@
+{
+	"partitions" : [
+		{
+			"name" : "Top",
+			"pins" : [
+				{
+					"name" : "shift_reg_A_out[0]",
+					"strict" : false
+				},
+				{
+					"name" : "shift_reg_A_out[1]",
+					"strict" : false
+				},
+				{
+					"name" : "shift_reg_A_out[2]",
+					"strict" : false
+				},
+				{
+					"name" : "shift_reg_A_out[3]",
+					"strict" : false
+				},
+				{
+					"name" : "shift_reg_B_out[0]",
+					"strict" : false
+				},
+				{
+					"name" : "shift_reg_B_out[1]",
+					"strict" : false
+				},
+				{
+					"name" : "shift_reg_B_out[2]",
+					"strict" : false
+				},
+				{
+					"name" : "shift_reg_B_out[3]",
+					"strict" : false
+				},
+				{
+					"name" : "x",
+					"strict" : false
+				},
+				{
+					"name" : "y",
+					"strict" : false
+				},
+				{
+					"name" : "Cin",
+					"strict" : false
+				},
+				{
+					"name" : "Sum",
+					"strict" : false
+				},
+				{
+					"name" : "Cout",
+					"strict" : false
+				},
+				{
+					"name" : "clk",
+					"strict" : false
+				},
+				{
+					"name" : "rstn",
+					"strict" : false
+				},
+				{
+					"name" : "SE",
+					"strict" : false
+				},
+				{
+					"name" : "SI",
+					"strict" : false
+				}
+			]
+		}
+	]
+}

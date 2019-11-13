@@ -1,0 +1,141 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/Users/czhe/Downloads/digital_design/q_6_44_serial_adder_w_ctrl/simulation/modelsim
+vd_ff
+Z1 !s110 1573658283
+!i10b 1
+!s100 NPLffhnTOOVJISidQ0[2@2
+IiDTh1@KXXa^LF>a`TaTZa1
+Z2 VDg1SIo80bB@j0V0VzS_@n1
+R0
+Z3 w1573657155
+Z4 8C:/Users/czhe/Downloads/digital_design/q_6_44_serial_adder_w_ctrl/q_6_44.v
+Z5 FC:/Users/czhe/Downloads/digital_design/q_6_44_serial_adder_w_ctrl/q_6_44.v
+L0 57
+Z6 OV;L;10.5b;63
+r1
+!s85 0
+31
+Z7 !s108 1573658283.000000
+Z8 !s107 C:/Users/czhe/Downloads/digital_design/q_6_44_serial_adder_w_ctrl/q_6_44.v|
+Z9 !s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/czhe/Downloads/digital_design/q_6_44_serial_adder_w_ctrl|C:/Users/czhe/Downloads/digital_design/q_6_44_serial_adder_w_ctrl/q_6_44.v|
+!i113 1
+Z10 o-vlog01compat -work work
+Z11 !s92 -vlog01compat -work work +incdir+C:/Users/czhe/Downloads/digital_design/q_6_44_serial_adder_w_ctrl
+Z12 tCvgOpt 0
+vfour_bit_shift_reg
+R1
+!i10b 1
+!s100 >oKmb8_EkZF:H>z2BccRR2
+I0Ubh`K0n<97zZ`4M<FBMa3
+R2
+R0
+Z13 w1573089156
+8C:/Users/czhe/Downloads/digital_design/common/four_bit_shift_reg.v
+FC:/Users/czhe/Downloads/digital_design/common/four_bit_shift_reg.v
+L0 1
+R6
+r1
+!s85 0
+31
+R7
+!s107 C:/Users/czhe/Downloads/digital_design/common/four_bit_shift_reg.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/czhe/Downloads/digital_design/common|C:/Users/czhe/Downloads/digital_design/common/four_bit_shift_reg.v|
+!i113 1
+R10
+Z14 !s92 -vlog01compat -work work +incdir+C:/Users/czhe/Downloads/digital_design/common
+R12
+vfull_adder
+R1
+!i10b 1
+!s100 JcHmID]hZVZn1RInzlmon3
+Ie0^=FRdFzMbVkoNG2:bP93
+R2
+R0
+R13
+8C:/Users/czhe/Downloads/digital_design/common/full_adder.v
+FC:/Users/czhe/Downloads/digital_design/common/full_adder.v
+L0 1
+R6
+r1
+!s85 0
+31
+R7
+!s107 C:/Users/czhe/Downloads/digital_design/common/full_adder.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/czhe/Downloads/digital_design/common|C:/Users/czhe/Downloads/digital_design/common/full_adder.v|
+!i113 1
+R10
+R14
+R12
+vq_6_44
+R1
+!i10b 1
+!s100 7W^<?9ckQfoF]j2Y_SEmc3
+Il0O<:Jn2FgEWl369Iim^N1
+R2
+R0
+R3
+R4
+R5
+L0 1
+R6
+r1
+!s85 0
+31
+R7
+R8
+R9
+!i113 1
+R10
+R11
+R12
+vq_6_44_tb
+!s110 1573658747
+!i10b 1
+!s100 _FId:anf>6:nHejEbY=kF1
+I5LPWKK76X3V<g2^c1:<A:3
+R2
+R0
+w1573658741
+8C:/Users/czhe/Downloads/digital_design/q_6_44_serial_adder_w_ctrl/q_6_44_tb.v
+FC:/Users/czhe/Downloads/digital_design/q_6_44_serial_adder_w_ctrl/q_6_44_tb.v
+L0 1
+R6
+r1
+!s85 0
+31
+!s108 1573658746.000000
+!s107 C:/Users/czhe/Downloads/digital_design/q_6_44_serial_adder_w_ctrl/q_6_44_tb.v|
+!s90 -reportprogress|300|-work|work|C:/Users/czhe/Downloads/digital_design/q_6_44_serial_adder_w_ctrl/q_6_44_tb.v|
+!i113 1
+o-work work
+R12
+vtwo_by_one_mux
+R1
+!i10b 1
+!s100 ;]8A1eCa2DR_V89<dV3<N1
+Ikc=QoI3<gbkjnGdz1IE5C1
+R2
+R0
+R3
+R4
+R5
+L0 49
+R6
+r1
+!s85 0
+31
+R7
+R8
+R9
+!i113 1
+R10
+R11
+R12

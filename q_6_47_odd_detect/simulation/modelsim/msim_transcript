@@ -1,0 +1,67 @@
+# Reading C:/intelFPGA_lite/18.1/modelsim_ase/tcl/vsim/pref.tcl
+# do q_6_47_run_msim_rtl_verilog.do
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Model Technology ModelSim - Intel FPGA Edition vmap 10.5b Lib Mapping Utility 2016.10 Oct  5 2016
+# vmap work rtl_work 
+# Copying C:/intelFPGA_lite/18.1/modelsim_ase/win32aloem/../modelsim.ini to modelsim.ini
+# Modifying modelsim.ini
+# 
+# vlog -vlog01compat -work work +incdir+C:/Users/czhe/Downloads/digital_design/q_6_47_odd_detect {C:/Users/czhe/Downloads/digital_design/q_6_47_odd_detect/q_6_47.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 10:49:23 on Nov 13,2019
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/czhe/Downloads/digital_design/q_6_47_odd_detect" C:/Users/czhe/Downloads/digital_design/q_6_47_odd_detect/q_6_47.v 
+# -- Compiling module q_6_47
+# 
+# Top level modules:
+# 	q_6_47
+# End time: 10:49:23 on Nov 13,2019, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+vlog -reportprogress 300 -work work C:/Users/czhe/Downloads/digital_design/q_6_47_odd_detect/q_6_47_tb.v
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 10:49:35 on Nov 13,2019
+# vlog -reportprogress 300 -work work C:/Users/czhe/Downloads/digital_design/q_6_47_odd_detect/q_6_47_tb.v 
+# -- Compiling module q_6_47_tb
+# 
+# Top level modules:
+# 	q_6_47_tb
+# End time: 10:49:35 on Nov 13,2019, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vsim work.q_6_47_tb
+# vsim work.q_6_47_tb 
+# Start time: 10:49:42 on Nov 13,2019
+# Loading work.q_6_47_tb
+# Loading work.q_6_47
+add wave -position insertpoint  \
+sim:/q_6_47_tb/rstb \
+sim:/q_6_47_tb/clk \
+sim:/q_6_47_tb/x_in \
+sim:/q_6_47_tb/odd_out
+run
+# ** Note: $finish    : C:/Users/czhe/Downloads/digital_design/q_6_47_odd_detect/q_6_47_tb.v(18)
+#    Time: 200 ps  Iteration: 0  Instance: /q_6_47_tb
+# 1
+# Break in Module q_6_47_tb at C:/Users/czhe/Downloads/digital_design/q_6_47_odd_detect/q_6_47_tb.v line 18
+vlog -work work C:/Users/czhe/Downloads/digital_design/q_6_47_odd_detect/q_6_47_tb.v
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 10:50:31 on Nov 13,2019
+# vlog -reportprogress 300 -work work C:/Users/czhe/Downloads/digital_design/q_6_47_odd_detect/q_6_47_tb.v 
+# -- Compiling module q_6_47_tb
+# 
+# Top level modules:
+# 	q_6_47_tb
+# End time: 10:50:31 on Nov 13,2019, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+restart
+# Loading work.q_6_47_tb
+run
+# ** Note: $finish    : C:/Users/czhe/Downloads/digital_design/q_6_47_odd_detect/q_6_47_tb.v(19)
+#    Time: 200 ps  Iteration: 0  Instance: /q_6_47_tb
+# 1
+# Break in Module q_6_47_tb at C:/Users/czhe/Downloads/digital_design/q_6_47_odd_detect/q_6_47_tb.v line 19
+# End time: 10:54:40 on Nov 13,2019, Elapsed time: 0:04:58
+# Errors: 0, Warnings: 0

@@ -1,0 +1,11 @@
+|q_6_46
+rstb => state~3.DATAIN
+clk => state~1.DATAIN
+count[0] << count[0].DB_MAX_OUTPUT_PORT_TYPE
+count[1] << count[1].DB_MAX_OUTPUT_PORT_TYPE
+count[2] << count[2].DB_MAX_OUTPUT_PORT_TYPE
+count[3] << count[3].DB_MAX_OUTPUT_PORT_TYPE
+count[4] << count[4].DB_MAX_OUTPUT_PORT_TYPE
+count[5] << count[5].DB_MAX_OUTPUT_PORT_TYPE
+
+
