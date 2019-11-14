@@ -6,7 +6,7 @@ module four_bit_usr_tb;
     wire [3:0] shift_reg;
     wire SO;
 
-    four_bit_usr dut (
+    four_bit_usr_str dut (
         rstn, clk, mode, par_in, SI,
         par_out, shift_reg, SO
     );
@@ -26,6 +26,8 @@ module four_bit_usr_tb;
         forever #10 mode = $random;
         forever #10 par_in = $random;
         forever #10 SI = $random;
+        #500 rstn = 1'b0;
+        #550 rstn = 1'b1;
         #1000 $finish;
     join
 endmodule

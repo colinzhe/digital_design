@@ -1,0 +1,6 @@
+- async reset
+- shift right, SI, SO bits
+- shift left, SI, SO bits
+- load
+- hold
+- all four modes while in reset

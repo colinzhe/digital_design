@@ -1,38 +1,93 @@
-|four_bit_usr
-rstn => shift_reg[0]~reg0.ACLR
-rstn => shift_reg[1]~reg0.ACLR
-rstn => shift_reg[2]~reg0.ACLR
-rstn => shift_reg[3]~reg0.ACLR
-clk => shift_reg[0]~reg0.CLK
-clk => shift_reg[1]~reg0.CLK
-clk => shift_reg[2]~reg0.CLK
-clk => shift_reg[3]~reg0.CLK
-mode[0] => Mux0.IN1
-mode[0] => Mux1.IN1
-mode[0] => Mux2.IN1
-mode[0] => Mux3.IN1
-mode[0] => Equal0.IN3
-mode[0] => Equal1.IN3
-mode[1] => Mux0.IN0
-mode[1] => Mux1.IN0
-mode[1] => Mux2.IN0
-mode[1] => Mux3.IN0
-mode[1] => Equal0.IN2
-mode[1] => Equal1.IN2
-par_in[0] => Mux3.IN2
-par_in[1] => Mux2.IN2
-par_in[2] => Mux1.IN2
-par_in[3] => Mux0.IN2
-SI => Mux0.IN3
-SI => Mux3.IN3
-par_out[0] <= shift_reg[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
-par_out[1] <= shift_reg[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
-par_out[2] <= shift_reg[2]~reg0.DB_MAX_OUTPUT_PORT_TYPE
-par_out[3] <= shift_reg[3]~reg0.DB_MAX_OUTPUT_PORT_TYPE
-shift_reg[0] <= shift_reg[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
-shift_reg[1] <= shift_reg[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
-shift_reg[2] <= shift_reg[2]~reg0.DB_MAX_OUTPUT_PORT_TYPE
-shift_reg[3] <= shift_reg[3]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+|four_bit_usr_str
+rstb => rstb.IN4
+clk => clk.IN4
+mode[0] => mode[0].IN4
+mode[1] => mode[1].IN4
+par_in[0] => par_in[0].IN1
+par_in[1] => par_in[1].IN1
+par_in[2] => par_in[2].IN1
+par_in[3] => par_in[3].IN1
+SI => SI.IN2
+par_out[0] <= shift_reg[0].DB_MAX_OUTPUT_PORT_TYPE
+par_out[1] <= shift_reg[1].DB_MAX_OUTPUT_PORT_TYPE
+par_out[2] <= shift_reg[2].DB_MAX_OUTPUT_PORT_TYPE
+par_out[3] <= shift_reg[3].DB_MAX_OUTPUT_PORT_TYPE
+shift_reg[0] <= shift_reg[0].DB_MAX_OUTPUT_PORT_TYPE
+shift_reg[1] <= shift_reg[1].DB_MAX_OUTPUT_PORT_TYPE
+shift_reg[2] <= shift_reg[2].DB_MAX_OUTPUT_PORT_TYPE
+shift_reg[3] <= shift_reg[3].DB_MAX_OUTPUT_PORT_TYPE
 SO <= SO.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|four_bit_usr_str|d_ff:dff_0
+rstb => Q~reg0.PRESET
+clk => Q~reg0.CLK
+D => Q~reg0.DATAIN
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Qb <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|four_bit_usr_str|d_ff:dff_1
+rstb => Q~reg0.PRESET
+clk => Q~reg0.CLK
+D => Q~reg0.DATAIN
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Qb <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|four_bit_usr_str|d_ff:dff_2
+rstb => Q~reg0.PRESET
+clk => Q~reg0.CLK
+D => Q~reg0.DATAIN
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Qb <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|four_bit_usr_str|d_ff:dff_3
+rstb => Q~reg0.PRESET
+clk => Q~reg0.CLK
+D => Q~reg0.DATAIN
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Qb <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|four_bit_usr_str|four_by_one_mux:mux_0
+sel[0] => Mux0.IN1
+sel[1] => Mux0.IN0
+x_in[0] => Mux0.IN5
+x_in[1] => Mux0.IN4
+x_in[2] => Mux0.IN3
+x_in[3] => Mux0.IN2
+y_out <= Mux0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|four_bit_usr_str|four_by_one_mux:mux_1
+sel[0] => Mux0.IN1
+sel[1] => Mux0.IN0
+x_in[0] => Mux0.IN5
+x_in[1] => Mux0.IN4
+x_in[2] => Mux0.IN3
+x_in[3] => Mux0.IN2
+y_out <= Mux0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|four_bit_usr_str|four_by_one_mux:mux_2
+sel[0] => Mux0.IN1
+sel[1] => Mux0.IN0
+x_in[0] => Mux0.IN5
+x_in[1] => Mux0.IN4
+x_in[2] => Mux0.IN3
+x_in[3] => Mux0.IN2
+y_out <= Mux0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|four_bit_usr_str|four_by_one_mux:mux_3
+sel[0] => Mux0.IN1
+sel[1] => Mux0.IN0
+x_in[0] => Mux0.IN5
+x_in[1] => Mux0.IN4
+x_in[2] => Mux0.IN3
+x_in[3] => Mux0.IN2
+y_out <= Mux0.DB_MAX_OUTPUT_PORT_TYPE
 
 

@@ -7,49 +7,95 @@ z2
 !i10e 25
 !i10f 100
 cModel Technology
-Z0 dC:/Users/home/Documents/Fpga_proj/four_bit_usr/simulation/modelsim
-vfour_bit_usr
-Z1 !s110 1572119391
+Z0 dC:/Users/home/Downloads/digital_design/four_bit_usr/simulation/modelsim
+vd_ff
+Z1 !s110 1573697784
 !i10b 1
-!s100 Rm@Td?An_FPHmofD48b5d2
-IeEBhI`JYG_i[L8i8L>MKA3
+!s100 SV=mH86VOP:EMNY[hSI:@3
+IZOnIP]ikCRFlTHGT7==fl0
 Z2 VDg1SIo80bB@j0V0VzS_@n1
 R0
-w1572119384
-8C:/Users/home/Documents/Fpga_proj/four_bit_usr/four_bit_usr.v
-FC:/Users/home/Documents/Fpga_proj/four_bit_usr/four_bit_usr.v
-L0 1
-Z3 OV;L;10.5b;63
+Z3 w1573697781
+Z4 8C:/Users/home/Downloads/digital_design/four_bit_usr/four_bit_usr_str.v
+Z5 FC:/Users/home/Downloads/digital_design/four_bit_usr/four_bit_usr_str.v
+L0 95
+Z6 OV;L;10.5b;63
 r1
 !s85 0
 31
-Z4 !s108 1572119391.000000
-!s107 C:/Users/home/Documents/Fpga_proj/four_bit_usr/four_bit_usr.v|
-!s90 -##implicit##push_minusfile_path##|C:/Users/home/Documents/Fpga_proj/moore_binary_counter/simulation/modelsim/vlog.opt|-##implicit##pop_minusfile_path##|-reportprogress|300|-O0|-vlog01compat|-work|work|+incdir+C:/Users/home/Documents/Fpga_proj/four_bit_usr|C:/Users/home/Documents/Fpga_proj/four_bit_usr/four_bit_usr.v|
-Z5 !s101 -O0 -O0
+Z7 !s108 1573697784.000000
+Z8 !s107 C:/Users/home/Downloads/digital_design/four_bit_usr/four_bit_usr_str.v|
+Z9 !s90 -reportprogress|300|-O0|-vlog01compat|-work|work|+incdir+C:/Users/home/Downloads/digital_design/four_bit_usr|C:/Users/home/Downloads/digital_design/four_bit_usr/four_bit_usr_str.v|
+Z10 !s101 -O0 -O0
 !i113 1
-o-O0 -O0 -vlog01compat -work work
-!s92 -O0 -O0 -vlog01compat -work work +incdir+C:/Users/home/Documents/Fpga_proj/four_bit_usr
-Z6 tDisableOpt 1 CvgOpt 0
-vfour_bit_usr_tb
+Z11 o-O0 -O0 -vlog01compat -work work
+Z12 !s92 -O0 -O0 -vlog01compat -work work +incdir+C:/Users/home/Downloads/digital_design/four_bit_usr
+Z13 tDisableOpt 1 CvgOpt 0
+vfour_bit_usr_str
 R1
 !i10b 1
-!s100 Zn2f1_MWbJn]V4g6d<4=Y1
-IOM:?^C:hSUG[aL`JV:;BG0
+!s100 T7^^:]DL9lPNlO6?96^<D3
+IZ4o97I>=IZoPAC;iz]eNi2
 R2
 R0
-w1572119252
-8C:/Users/home/Documents/Fpga_proj/four_bit_usr/four_bit_usr_tb.v
-FC:/Users/home/Documents/Fpga_proj/four_bit_usr/four_bit_usr_tb.v
-L0 1
 R3
+R4
+R5
+L0 1
+R6
 r1
 !s85 0
 31
-R4
-!s107 C:/Users/home/Documents/Fpga_proj/four_bit_usr/four_bit_usr_tb.v|
-!s90 -##implicit##push_minusfile_path##|C:/Users/home/Documents/Fpga_proj/moore_binary_counter/simulation/modelsim/vlog.opt|-##implicit##pop_minusfile_path##|-reportprogress|300|-O0|-work|work|C:/Users/home/Documents/Fpga_proj/four_bit_usr/four_bit_usr_tb.v|
-R5
+R7
+R8
+R9
+R10
+!i113 1
+R11
+R12
+R13
+vfour_bit_usr_tb
+!s110 1573697602
+!i10b 1
+!s100 ^cBY2j1bYLj@]N[4UCHeG1
+I5Ikf@26mmobm82[QJh4Kc0
+R2
+R0
+w1573697599
+8C:/Users/home/Downloads/digital_design/four_bit_usr/four_bit_usr_tb.v
+FC:/Users/home/Downloads/digital_design/four_bit_usr/four_bit_usr_tb.v
+L0 1
+R6
+r1
+!s85 0
+31
+!s108 1573697602.000000
+!s107 C:/Users/home/Downloads/digital_design/four_bit_usr/four_bit_usr_tb.v|
+!s90 -reportprogress|300|-O0|-work|work|C:/Users/home/Downloads/digital_design/four_bit_usr/four_bit_usr_tb.v|
+R10
 !i113 1
 o-O0 -O0 -work work
+R13
+vfour_by_one_mux
+R1
+!i10b 1
+!s100 aOncbk0B6B]MDj6k8S9J02
+I53IPz0@8m>:mD=NoKmWM32
+R2
+R0
+R3
+R4
+R5
+L0 78
 R6
+r1
+!s85 0
+31
+R7
+R8
+R9
+R10
+!i113 1
+R11
+R12
+R13

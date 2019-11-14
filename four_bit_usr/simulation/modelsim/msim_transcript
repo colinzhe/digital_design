@@ -9,64 +9,38 @@
 # vmap work rtl_work 
 # Modifying C:/intelFPGA/18.1/modelsim_ase/win32aloem/../modelsim.ini
 # 
-# vlog -vlog01compat -work work +incdir+C:/Users/home/Documents/Fpga_proj/four_bit_usr {C:/Users/home/Documents/Fpga_proj/four_bit_usr/four_bit_usr.v}
+# vlog -vlog01compat -work work +incdir+C:/Users/home/Downloads/digital_design/four_bit_usr {C:/Users/home/Downloads/digital_design/four_bit_usr/four_bit_usr_str.v}
+# ** Note: (vlog-1901) OptionFile "C:/Users/home/Documents/Fpga_proj/moore_binary_counter/simulation/modelsim/vlog.opt" not found. Ignored.
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 15:47:08 on Oct 26,2019
-# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/home/Documents/Fpga_proj/four_bit_usr" C:/Users/home/Documents/Fpga_proj/four_bit_usr/four_bit_usr.v 
-# -- Compiling module four_bit_usr
+# Start time: 21:08:59 on Nov 13,2019
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/home/Downloads/digital_design/four_bit_usr" C:/Users/home/Downloads/digital_design/four_bit_usr/four_bit_usr_str.v 
+# -- Compiling module four_bit_usr_str
+# -- Compiling module four_by_one_mux
+# -- Compiling module d_ff
 # 
 # Top level modules:
-# 	four_bit_usr
-# End time: 15:47:08 on Oct 26,2019, Elapsed time: 0:00:00
+# 	four_bit_usr_str
+# End time: 21:09:00 on Nov 13,2019, Elapsed time: 0:00:01
 # Errors: 0, Warnings: 0
 # 
-vlog -reportprogress 300 -work work C:/Users/home/Documents/Fpga_proj/four_bit_usr/four_bit_usr_tb.v
+vlog -reportprogress 300 -work work C:/Users/home/Downloads/digital_design/four_bit_usr/four_bit_usr_tb.v
+# ** Note: (vlog-1901) OptionFile "C:/Users/home/Documents/Fpga_proj/moore_binary_counter/simulation/modelsim/vlog.opt" not found. Ignored.
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 15:47:15 on Oct 26,2019
-# vlog -reportprogress 300 -work work C:/Users/home/Documents/Fpga_proj/four_bit_usr/four_bit_usr_tb.v 
+# Start time: 21:09:35 on Nov 13,2019
+# vlog -reportprogress 300 -work work C:/Users/home/Downloads/digital_design/four_bit_usr/four_bit_usr_tb.v 
 # -- Compiling module four_bit_usr_tb
 # 
 # Top level modules:
 # 	four_bit_usr_tb
-# End time: 15:47:15 on Oct 26,2019, Elapsed time: 0:00:00
+# End time: 21:09:35 on Nov 13,2019, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 vsim work.four_bit_usr_tb
 # vsim work.four_bit_usr_tb 
-# Start time: 15:47:20 on Oct 26,2019
+# Start time: 21:09:40 on Nov 13,2019
 # Loading work.four_bit_usr_tb
-# ** Error: (vsim-3033) C:/Users/home/Documents/Fpga_proj/four_bit_usr/four_bit_usr_tb.v(9): Instantiation of 'four_bit_register' failed. The design unit was not found.
-#    Time: 0 ps  Iteration: 0  Instance: /four_bit_usr_tb File: C:/Users/home/Documents/Fpga_proj/four_bit_usr/four_bit_usr_tb.v
-#         Searched libraries:
-#             C:/Users/home/Documents/Fpga_proj/four_bit_usr/simulation/modelsim/rtl_work
-# Error loading design
-# End time: 15:47:21 on Oct 26,2019, Elapsed time: 0:00:01
-# Errors: 1, Warnings: 0
-vsim work.four_bit_usr_tb
-# vsim work.four_bit_usr_tb 
-# Start time: 15:47:35 on Oct 26,2019
-# Loading work.four_bit_usr_tb
-# ** Error: (vsim-3033) C:/Users/home/Documents/Fpga_proj/four_bit_usr/four_bit_usr_tb.v(9): Instantiation of 'four_bit_register' failed. The design unit was not found.
-#    Time: 0 ps  Iteration: 0  Instance: /four_bit_usr_tb File: C:/Users/home/Documents/Fpga_proj/four_bit_usr/four_bit_usr_tb.v
-#         Searched libraries:
-#             C:/Users/home/Documents/Fpga_proj/four_bit_usr/simulation/modelsim/rtl_work
-# Error loading design
-# End time: 15:47:35 on Oct 26,2019, Elapsed time: 0:00:00
-# Errors: 1, Warnings: 0
-vlog -reportprogress 300 -work work C:/Users/home/Documents/Fpga_proj/four_bit_usr/four_bit_usr_tb.v
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 15:47:40 on Oct 26,2019
-# vlog -reportprogress 300 -work work C:/Users/home/Documents/Fpga_proj/four_bit_usr/four_bit_usr_tb.v 
-# -- Compiling module four_bit_usr_tb
-# 
-# Top level modules:
-# 	four_bit_usr_tb
-# End time: 15:47:40 on Oct 26,2019, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-vsim work.four_bit_usr_tb
-# vsim work.four_bit_usr_tb 
-# Start time: 15:47:43 on Oct 26,2019
-# Loading work.four_bit_usr_tb
-# Loading work.four_bit_usr
+# Loading work.four_bit_usr_str
+# Loading work.d_ff
+# Loading work.four_by_one_mux
 add wave -position insertpoint  \
 sim:/four_bit_usr_tb/rstn \
 sim:/four_bit_usr_tb/clk \
@@ -77,40 +51,87 @@ sim:/four_bit_usr_tb/par_out \
 sim:/four_bit_usr_tb/shift_reg \
 sim:/four_bit_usr_tb/SO
 run
-# ** Note: $finish    : C:/Users/home/Documents/Fpga_proj/four_bit_usr/four_bit_usr_tb.v(29)
+# ** Note: $finish    : C:/Users/home/Downloads/digital_design/four_bit_usr/four_bit_usr_tb.v(29)
 #    Time: 1 ns  Iteration: 0  Instance: /four_bit_usr_tb
 # 1
-# Break in Module four_bit_usr_tb at C:/Users/home/Documents/Fpga_proj/four_bit_usr/four_bit_usr_tb.v line 29
-vlog -O0 -vlog01compat -work work +incdir+C:/Users/home/Documents/Fpga_proj/four_bit_usr C:/Users/home/Documents/Fpga_proj/four_bit_usr/four_bit_usr.v
+# Break in Module four_bit_usr_tb at C:/Users/home/Downloads/digital_design/four_bit_usr/four_bit_usr_tb.v line 29
+vlog -O0 -work work C:/Users/home/Downloads/digital_design/four_bit_usr/four_bit_usr_tb.v
+# ** Note: (vlog-1901) OptionFile "C:/Users/home/Documents/Fpga_proj/moore_binary_counter/simulation/modelsim/vlog.opt" not found. Ignored.
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 15:49:51 on Oct 26,2019
-# vlog -reportprogress 300 -O0 -vlog01compat -work work "+incdir+C:/Users/home/Documents/Fpga_proj/four_bit_usr" C:/Users/home/Documents/Fpga_proj/four_bit_usr/four_bit_usr.v 
-# -- Compiling module four_bit_usr
-# 
-# Top level modules:
-# 	four_bit_usr
-# End time: 15:49:51 on Oct 26,2019, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-vlog -O0 -work work C:/Users/home/Documents/Fpga_proj/four_bit_usr/four_bit_usr_tb.v
+# Start time: 21:13:02 on Nov 13,2019
+# vlog -reportprogress 300 -O0 -work work C:/Users/home/Downloads/digital_design/four_bit_usr/four_bit_usr_tb.v 
+# -- Compiling module four_bit_usr_tb
+# ** Error: C:/Users/home/Downloads/digital_design/four_bit_usr/four_bit_usr_tb.v(29): (vlog-2730) Undefined variable: 'rstb'.
+# End time: 21:13:02 on Nov 13,2019, Elapsed time: 0:00:00
+# Errors: 1, Warnings: 0
+# C:/intelFPGA/18.1/modelsim_ase/win32aloem/vlog failed.
+restart
+run
+# ** Note: $finish    : C:/Users/home/Downloads/digital_design/four_bit_usr/four_bit_usr_tb.v(29)
+#    Time: 1 ns  Iteration: 0  Instance: /four_bit_usr_tb
+# 1
+# Break in Module four_bit_usr_tb at C:/Users/home/Downloads/digital_design/four_bit_usr/four_bit_usr_tb.v line 29
+vlog -O0 -work work C:/Users/home/Downloads/digital_design/four_bit_usr/four_bit_usr_tb.v
+# ** Note: (vlog-1901) OptionFile "C:/Users/home/Documents/Fpga_proj/moore_binary_counter/simulation/modelsim/vlog.opt" not found. Ignored.
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 15:49:51 on Oct 26,2019
-# vlog -reportprogress 300 -O0 -work work C:/Users/home/Documents/Fpga_proj/four_bit_usr/four_bit_usr_tb.v 
+# Start time: 21:13:22 on Nov 13,2019
+# vlog -reportprogress 300 -O0 -work work C:/Users/home/Downloads/digital_design/four_bit_usr/four_bit_usr_tb.v 
 # -- Compiling module four_bit_usr_tb
 # 
 # Top level modules:
 # 	four_bit_usr_tb
-# End time: 15:49:51 on Oct 26,2019, Elapsed time: 0:00:00
+# End time: 21:13:22 on Nov 13,2019, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 restart
 # Loading work.four_bit_usr_tb
-# Loading work.four_bit_usr
 run
-# GetModuleFileName: The specified module could not be found.
-# 
-# 
-# ** Note: $finish    : C:/Users/home/Documents/Fpga_proj/four_bit_usr/four_bit_usr_tb.v(29)
+# ** Note: $finish    : C:/Users/home/Downloads/digital_design/four_bit_usr/four_bit_usr_tb.v(31)
 #    Time: 1 ns  Iteration: 0  Instance: /four_bit_usr_tb
 # 1
-# Break in Module four_bit_usr_tb at C:/Users/home/Documents/Fpga_proj/four_bit_usr/four_bit_usr_tb.v line 29
-# End time: 15:52:15 on Oct 26,2019, Elapsed time: 0:04:32
+# Break in Module four_bit_usr_tb at C:/Users/home/Downloads/digital_design/four_bit_usr/four_bit_usr_tb.v line 31
+vlog -O0 -vlog01compat -work work +incdir+C:/Users/home/Downloads/digital_design/four_bit_usr C:/Users/home/Downloads/digital_design/four_bit_usr/four_bit_usr_str.v
+# ** Note: (vlog-1901) OptionFile "C:/Users/home/Documents/Fpga_proj/moore_binary_counter/simulation/modelsim/vlog.opt" not found. Ignored.
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 21:14:05 on Nov 13,2019
+# vlog -reportprogress 300 -O0 -vlog01compat -work work "+incdir+C:/Users/home/Downloads/digital_design/four_bit_usr" C:/Users/home/Downloads/digital_design/four_bit_usr/four_bit_usr_str.v 
+# -- Compiling module four_bit_usr_str
+# -- Compiling module four_by_one_mux
+# -- Compiling module d_ff
+# 
+# Top level modules:
+# 	four_bit_usr_str
+# End time: 21:14:05 on Nov 13,2019, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
+restart
+# Loading work.four_bit_usr_str
+# Loading work.d_ff
+# Loading work.four_by_one_mux
+run
+# ** Note: $finish    : C:/Users/home/Downloads/digital_design/four_bit_usr/four_bit_usr_tb.v(31)
+#    Time: 1 ns  Iteration: 0  Instance: /four_bit_usr_tb
+# 1
+# Break in Module four_bit_usr_tb at C:/Users/home/Downloads/digital_design/four_bit_usr/four_bit_usr_tb.v line 31
+vlog -O0 -vlog01compat -work work +incdir+C:/Users/home/Downloads/digital_design/four_bit_usr C:/Users/home/Downloads/digital_design/four_bit_usr/four_bit_usr_str.v
+# ** Note: (vlog-1901) OptionFile "C:/Users/home/Documents/Fpga_proj/moore_binary_counter/simulation/modelsim/vlog.opt" not found. Ignored.
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 21:16:24 on Nov 13,2019
+# vlog -reportprogress 300 -O0 -vlog01compat -work work "+incdir+C:/Users/home/Downloads/digital_design/four_bit_usr" C:/Users/home/Downloads/digital_design/four_bit_usr/four_bit_usr_str.v 
+# -- Compiling module four_bit_usr_str
+# -- Compiling module four_by_one_mux
+# -- Compiling module d_ff
+# 
+# Top level modules:
+# 	four_bit_usr_str
+# End time: 21:16:24 on Nov 13,2019, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+restart
+# Loading work.four_bit_usr_str
+# Loading work.d_ff
+# Loading work.four_by_one_mux
+run
+# ** Note: $finish    : C:/Users/home/Downloads/digital_design/four_bit_usr/four_bit_usr_tb.v(31)
+#    Time: 1 ns  Iteration: 0  Instance: /four_bit_usr_tb
+# 1
+# Break in Module four_bit_usr_tb at C:/Users/home/Downloads/digital_design/four_bit_usr/four_bit_usr_tb.v line 31
+# End time: 21:17:04 on Nov 13,2019, Elapsed time: 0:07:24
+# Errors: 2, Warnings: 0

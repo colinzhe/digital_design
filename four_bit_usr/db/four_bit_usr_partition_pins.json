@@ -44,6 +44,10 @@
 					"strict" : false
 				},
 				{
+					"name" : "SI",
+					"strict" : false
+				},
+				{
 					"name" : "mode[0]",
 					"strict" : false
 				},
@@ -52,15 +56,11 @@
 					"strict" : false
 				},
 				{
-					"name" : "SI",
-					"strict" : false
-				},
-				{
 					"name" : "clk",
 					"strict" : false
 				},
 				{
-					"name" : "rstn",
+					"name" : "rstb",
 					"strict" : false
 				},
 				{

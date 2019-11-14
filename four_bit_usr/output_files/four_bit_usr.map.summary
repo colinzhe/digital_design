@@ -1,7 +1,7 @@
-Analysis & Synthesis Status : Successful - Sat Oct 26 15:43:29 2019
+Analysis & Synthesis Status : Successful - Wed Nov 13 21:07:22 2019
 Quartus Prime Version : 18.1.0 Build 625 09/12/2018 SJ Lite Edition
 Revision Name : four_bit_usr
-Top-level Entity Name : four_bit_usr
+Top-level Entity Name : four_bit_usr_str
 Family : Cyclone V
 Logic utilization (in ALMs) : N/A
 Total registers : 4

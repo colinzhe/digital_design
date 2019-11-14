@@ -1,5 +1,5 @@
 Flow report for four_bit_usr
-Sat Oct 26 15:43:29 2019
+Wed Nov 13 21:07:22 2019
 Quartus Prime Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
 
 
@@ -40,10 +40,10 @@ refer to the applicable agreement for further details.
 +-------------------------------------------------------------------------------+
 ; Flow Summary                                                                  ;
 +---------------------------------+---------------------------------------------+
-; Flow Status                     ; Successful - Sat Oct 26 15:43:29 2019       ;
+; Flow Status                     ; Successful - Wed Nov 13 21:07:22 2019       ;
 ; Quartus Prime Version           ; 18.1.0 Build 625 09/12/2018 SJ Lite Edition ;
 ; Revision Name                   ; four_bit_usr                                ;
-; Top-level Entity Name           ; four_bit_usr                                ;
+; Top-level Entity Name           ; four_bit_usr_str                            ;
 ; Family                          ; Cyclone V                                   ;
 ; Device                          ; 5CGXFC5C6F27C7                              ;
 ; Timing Models                   ; Final                                       ;
@@ -67,35 +67,36 @@ refer to the applicable agreement for further details.
 +-------------------+---------------------+
 ; Option            ; Setting             ;
 +-------------------+---------------------+
-; Start date & time ; 10/26/2019 15:43:20 ;
+; Start date & time ; 11/13/2019 21:07:13 ;
 ; Main task         ; Compilation         ;
 ; Revision Name     ; four_bit_usr        ;
 +-------------------+---------------------+
 
 
-+-----------------------------------------------------------------------------------------------------------------------------+
-; Flow Non-Default Global Settings                                                                                            ;
-+-------------------------------------+----------------------------------------+---------------+-------------+----------------+
-; Assignment Name                     ; Value                                  ; Default Value ; Entity Name ; Section Id     ;
-+-------------------------------------+----------------------------------------+---------------+-------------+----------------+
-; COMPILER_SIGNATURE_ID               ; 123719795489914.157211899902716        ; --            ; --          ; --             ;
-; EDA_OUTPUT_DATA_FORMAT              ; Verilog Hdl                            ; --            ; --          ; eda_simulation ;
-; EDA_SIMULATION_TOOL                 ; ModelSim-Altera (Verilog)              ; <None>        ; --          ; --             ;
-; EDA_TIME_SCALE                      ; 1 ps                                   ; --            ; --          ; eda_simulation ;
-; FITTER_EFFORT                       ; Standard Fit                           ; Auto Fit      ; --          ; --             ;
-; MAX_CORE_JUNCTION_TEMP              ; 85                                     ; --            ; --          ; --             ;
-; MIN_CORE_JUNCTION_TEMP              ; 0                                      ; --            ; --          ; --             ;
-; OUTPUT_IO_TIMING_FAR_END_VMEAS      ; Half Signal Swing                      ; --            ; --          ; --             ;
-; OUTPUT_IO_TIMING_FAR_END_VMEAS      ; Half Signal Swing                      ; --            ; --          ; --             ;
-; OUTPUT_IO_TIMING_NEAR_END_VMEAS     ; Half Vccio                             ; --            ; --          ; --             ;
-; OUTPUT_IO_TIMING_NEAR_END_VMEAS     ; Half Vccio                             ; --            ; --          ; --             ;
-; PARTITION_COLOR                     ; -- (Not supported for targeted family) ; --            ; --          ; Top            ;
-; PARTITION_FITTER_PRESERVATION_LEVEL ; -- (Not supported for targeted family) ; --            ; --          ; Top            ;
-; PARTITION_NETLIST_TYPE              ; -- (Not supported for targeted family) ; --            ; --          ; Top            ;
-; POWER_BOARD_THERMAL_MODEL           ; None (CONSERVATIVE)                    ; --            ; --          ; --             ;
-; POWER_PRESET_COOLING_SOLUTION       ; 23 MM HEAT SINK WITH 200 LFPM AIRFLOW  ; --            ; --          ; --             ;
-; PROJECT_OUTPUT_DIRECTORY            ; output_files                           ; --            ; --          ; --             ;
-+-------------------------------------+----------------------------------------+---------------+-------------+----------------+
++----------------------------------------------------------------------------------------------------------------------------------+
+; Flow Non-Default Global Settings                                                                                                 ;
++-------------------------------------+----------------------------------------+---------------+------------------+----------------+
+; Assignment Name                     ; Value                                  ; Default Value ; Entity Name      ; Section Id     ;
++-------------------------------------+----------------------------------------+---------------+------------------+----------------+
+; COMPILER_SIGNATURE_ID               ; 123719795489914.157369723305828        ; --            ; --               ; --             ;
+; EDA_OUTPUT_DATA_FORMAT              ; Verilog Hdl                            ; --            ; --               ; eda_simulation ;
+; EDA_SIMULATION_TOOL                 ; ModelSim-Altera (Verilog)              ; <None>        ; --               ; --             ;
+; EDA_TIME_SCALE                      ; 1 ps                                   ; --            ; --               ; eda_simulation ;
+; FITTER_EFFORT                       ; Standard Fit                           ; Auto Fit      ; --               ; --             ;
+; MAX_CORE_JUNCTION_TEMP              ; 85                                     ; --            ; --               ; --             ;
+; MIN_CORE_JUNCTION_TEMP              ; 0                                      ; --            ; --               ; --             ;
+; OUTPUT_IO_TIMING_FAR_END_VMEAS      ; Half Signal Swing                      ; --            ; --               ; --             ;
+; OUTPUT_IO_TIMING_FAR_END_VMEAS      ; Half Signal Swing                      ; --            ; --               ; --             ;
+; OUTPUT_IO_TIMING_NEAR_END_VMEAS     ; Half Vccio                             ; --            ; --               ; --             ;
+; OUTPUT_IO_TIMING_NEAR_END_VMEAS     ; Half Vccio                             ; --            ; --               ; --             ;
+; PARTITION_COLOR                     ; -- (Not supported for targeted family) ; --            ; four_bit_usr_str ; Top            ;
+; PARTITION_FITTER_PRESERVATION_LEVEL ; -- (Not supported for targeted family) ; --            ; four_bit_usr_str ; Top            ;
+; PARTITION_NETLIST_TYPE              ; -- (Not supported for targeted family) ; --            ; four_bit_usr_str ; Top            ;
+; POWER_BOARD_THERMAL_MODEL           ; None (CONSERVATIVE)                    ; --            ; --               ; --             ;
+; POWER_PRESET_COOLING_SOLUTION       ; 23 MM HEAT SINK WITH 200 LFPM AIRFLOW  ; --            ; --               ; --             ;
+; PROJECT_OUTPUT_DIRECTORY            ; output_files                           ; --            ; --               ; --             ;
+; TOP_LEVEL_ENTITY                    ; four_bit_usr_str                       ; four_bit_usr  ; --               ; --             ;
++-------------------------------------+----------------------------------------+---------------+------------------+----------------+
 
 
 +--------------------------------------------------------------------------------------------------------------------------+
@@ -103,8 +104,8 @@ refer to the applicable agreement for further details.
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
 ; Module Name          ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
-; Analysis & Synthesis ; 00:00:10     ; 1.0                     ; 4889 MB             ; 00:00:26                           ;
-; Total                ; 00:00:10     ; --                      ; --                  ; 00:00:26                           ;
+; Analysis & Synthesis ; 00:00:09     ; 1.0                     ; 4881 MB             ; 00:00:25                           ;
+; Total                ; 00:00:09     ; --                      ; --                  ; 00:00:25                           ;
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
 
 
