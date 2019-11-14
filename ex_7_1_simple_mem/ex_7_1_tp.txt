@@ -1,0 +1,3 @@
+- write
+- read after write
+- write mode while addr and data in changes

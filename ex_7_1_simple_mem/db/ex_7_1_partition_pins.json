@@ -1,0 +1,121 @@
+{
+	"partitions" : [
+		{
+			"name" : "Top",
+			"pins" : [
+				{
+					"name" : "data_out[0]",
+					"strict" : false
+				},
+				{
+					"name" : "data_out[1]",
+					"strict" : false
+				},
+				{
+					"name" : "data_out[2]",
+					"strict" : false
+				},
+				{
+					"name" : "data_out[3]",
+					"strict" : false
+				},
+				{
+					"name" : "mem_000000[0]",
+					"strict" : false
+				},
+				{
+					"name" : "mem_000000[1]",
+					"strict" : false
+				},
+				{
+					"name" : "mem_000000[2]",
+					"strict" : false
+				},
+				{
+					"name" : "mem_000000[3]",
+					"strict" : false
+				},
+				{
+					"name" : "mem_000111[0]",
+					"strict" : false
+				},
+				{
+					"name" : "mem_000111[1]",
+					"strict" : false
+				},
+				{
+					"name" : "mem_000111[2]",
+					"strict" : false
+				},
+				{
+					"name" : "mem_000111[3]",
+					"strict" : false
+				},
+				{
+					"name" : "mem_110000[0]",
+					"strict" : false
+				},
+				{
+					"name" : "mem_110000[1]",
+					"strict" : false
+				},
+				{
+					"name" : "mem_110000[2]",
+					"strict" : false
+				},
+				{
+					"name" : "mem_110000[3]",
+					"strict" : false
+				},
+				{
+					"name" : "data_in[0]",
+					"strict" : false
+				},
+				{
+					"name" : "addr[5]",
+					"strict" : false
+				},
+				{
+					"name" : "addr[0]",
+					"strict" : false
+				},
+				{
+					"name" : "enable",
+					"strict" : false
+				},
+				{
+					"name" : "rd_wr",
+					"strict" : false
+				},
+				{
+					"name" : "addr[1]",
+					"strict" : false
+				},
+				{
+					"name" : "addr[2]",
+					"strict" : false
+				},
+				{
+					"name" : "addr[3]",
+					"strict" : false
+				},
+				{
+					"name" : "addr[4]",
+					"strict" : false
+				},
+				{
+					"name" : "data_in[1]",
+					"strict" : false
+				},
+				{
+					"name" : "data_in[2]",
+					"strict" : false
+				},
+				{
+					"name" : "data_in[3]",
+					"strict" : false
+				}
+			]
+		}
+	]
+}

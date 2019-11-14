@@ -1,0 +1,53 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/Users/czhe/Downloads/digital_design/ex_7_1_simple_mem/simulation/modelsim
+vex_7_1
+Z1 !s110 1573746656
+!i10b 1
+!s100 ?Sjcg1ETOZDX^<ZdSZP;03
+I9?J8ieBT1kH9jB3gfQa0G0
+Z2 VDg1SIo80bB@j0V0VzS_@n1
+R0
+w1573746605
+8C:/Users/czhe/Downloads/digital_design/ex_7_1_simple_mem/ex_7_1.v
+FC:/Users/czhe/Downloads/digital_design/ex_7_1_simple_mem/ex_7_1.v
+L0 1
+Z3 OV;L;10.5b;63
+r1
+!s85 0
+31
+Z4 !s108 1573746656.000000
+!s107 C:/Users/czhe/Downloads/digital_design/ex_7_1_simple_mem/ex_7_1.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/czhe/Downloads/digital_design/ex_7_1_simple_mem|C:/Users/czhe/Downloads/digital_design/ex_7_1_simple_mem/ex_7_1.v|
+!i113 1
+o-vlog01compat -work work
+!s92 -vlog01compat -work work +incdir+C:/Users/czhe/Downloads/digital_design/ex_7_1_simple_mem
+Z5 tCvgOpt 0
+vex_7_1_tb
+R1
+!i10b 1
+!s100 RT5VkS5QYEJQWAa^?c@T>2
+I^?cedk;O5WdJT]QP;EXb^2
+R2
+R0
+w1573746371
+8C:/Users/czhe/Downloads/digital_design/ex_7_1_simple_mem/ex_7_1_tb.v
+FC:/Users/czhe/Downloads/digital_design/ex_7_1_simple_mem/ex_7_1_tb.v
+L0 1
+R3
+r1
+!s85 0
+31
+R4
+!s107 C:/Users/czhe/Downloads/digital_design/ex_7_1_simple_mem/ex_7_1_tb.v|
+!s90 -reportprogress|300|-work|work|C:/Users/czhe/Downloads/digital_design/ex_7_1_simple_mem/ex_7_1_tb.v|
+!i113 1
+o-work work
+R5
