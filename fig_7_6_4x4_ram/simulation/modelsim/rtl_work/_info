@@ -1,0 +1,117 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/Users/czhe/Downloads/digital_design/fig_7_6_4x4_ram/simulation/modelsim
+vbinary_cell
+Z1 !s110 1573856083
+!i10b 1
+!s100 cHeHWJRSJj9ZFa7=^0DDk3
+IW2SMfZmb6lgBBRLRVVSA_0
+Z2 VDg1SIo80bB@j0V0VzS_@n1
+R0
+Z3 w1573853535
+Z4 8C:/Users/czhe/Downloads/digital_design/common/binary_cell.v
+Z5 FC:/Users/czhe/Downloads/digital_design/common/binary_cell.v
+L0 1
+Z6 OV;L;10.5b;63
+r1
+!s85 0
+31
+Z7 !s108 1573856083.000000
+Z8 !s107 C:/Users/czhe/Downloads/digital_design/common/binary_cell.v|
+Z9 !s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/czhe/Downloads/digital_design/common|C:/Users/czhe/Downloads/digital_design/common/binary_cell.v|
+!i113 1
+Z10 o-vlog01compat -work work
+Z11 !s92 -vlog01compat -work work +incdir+C:/Users/czhe/Downloads/digital_design/common
+Z12 tCvgOpt 0
+vfour_by_four_ram
+Z13 !s110 1573856147
+!i10b 1
+!s100 h9l_CQh_MkB`8efRNVUQD1
+IEQJ`a;M;fo:U@T[>`o[G63
+R2
+R0
+Z14 w1573854677
+Z15 8C:/Users/czhe/Downloads/digital_design/fig_7_6_4x4_ram/four_by_four_ram.v
+Z16 FC:/Users/czhe/Downloads/digital_design/fig_7_6_4x4_ram/four_by_four_ram.v
+L0 1
+R6
+r1
+!s85 0
+31
+Z17 !s108 1573856147.000000
+Z18 !s107 C:/Users/czhe/Downloads/digital_design/fig_7_6_4x4_ram/four_by_four_ram.v|
+Z19 !s90 -reportprogress|300|-work|work|C:/Users/czhe/Downloads/digital_design/fig_7_6_4x4_ram/four_by_four_ram.v|
+!i113 1
+Z20 o-work work
+R12
+vfour_by_four_ram_tb
+!s110 1573856507
+!i10b 1
+!s100 mATmQ;G7@FzW<ljVj48;l2
+IFAJYjF3dINhEb56a6YL?P3
+R2
+R0
+w1573856500
+8C:/Users/czhe/Downloads/digital_design/fig_7_6_4x4_ram/fig_7_6_tb.v
+FC:/Users/czhe/Downloads/digital_design/fig_7_6_4x4_ram/fig_7_6_tb.v
+L0 1
+R6
+r1
+!s85 0
+31
+!s108 1573856507.000000
+!s107 C:/Users/czhe/Downloads/digital_design/fig_7_6_4x4_ram/fig_7_6_tb.v|
+!s90 -reportprogress|300|-work|work|C:/Users/czhe/Downloads/digital_design/fig_7_6_4x4_ram/fig_7_6_tb.v|
+!i113 1
+R20
+R12
+vsr_latch
+R1
+!i10b 1
+!s100 OLg?^V7hLgO@DC>X;26[o1
+I6fo=_o8X373mb4J8:i>=^3
+R2
+R0
+R3
+R4
+R5
+L0 20
+R6
+r1
+!s85 0
+31
+R7
+R8
+R9
+!i113 1
+R10
+R11
+R12
+vtwo_by_four_dec
+R13
+!i10b 1
+!s100 [Eb>XJ<`kPRQCXz[5:Nh^2
+IAkdH:kX6DFPe^0D[cUG4b0
+R2
+R0
+R14
+R15
+R16
+L0 40
+R6
+r1
+!s85 0
+31
+R17
+R18
+R19
+!i113 1
+R20
+R12

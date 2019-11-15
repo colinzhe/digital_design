@@ -1,0 +1,25 @@
+{
+	"partitions" : [
+		{
+			"name" : "Top",
+			"pins" : [
+				{
+					"name" : "rd_data",
+					"strict" : false
+				},
+				{
+					"name" : "cs",
+					"strict" : false
+				},
+				{
+					"name" : "rd_wr",
+					"strict" : false
+				},
+				{
+					"name" : "wr_data",
+					"strict" : false
+				}
+			]
+		}
+	]
+}

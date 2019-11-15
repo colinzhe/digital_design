@@ -1,0 +1,114 @@
+# Reading C:/intelFPGA_lite/18.1/modelsim_ase/tcl/vsim/pref.tcl
+# do fig_7_6_run_msim_rtl_verilog.do
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Model Technology ModelSim - Intel FPGA Edition vmap 10.5b Lib Mapping Utility 2016.10 Oct  5 2016
+# vmap work rtl_work 
+# Copying C:/intelFPGA_lite/18.1/modelsim_ase/win32aloem/../modelsim.ini to modelsim.ini
+# Modifying modelsim.ini
+# 
+# vlog -vlog01compat -work work +incdir+C:/Users/czhe/Downloads/digital_design/fig_7_6_4x4_ram {C:/Users/czhe/Downloads/digital_design/fig_7_6_4x4_ram/four_by_four_ram.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 17:14:43 on Nov 15,2019
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/czhe/Downloads/digital_design/fig_7_6_4x4_ram" C:/Users/czhe/Downloads/digital_design/fig_7_6_4x4_ram/four_by_four_ram.v 
+# -- Compiling module four_by_four_ram
+# -- Compiling module two_by_four_dec
+# 
+# Top level modules:
+# 	four_by_four_ram
+# End time: 17:14:43 on Nov 15,2019, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+C:/Users/czhe/Downloads/digital_design/common {C:/Users/czhe/Downloads/digital_design/common/binary_cell.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 17:14:43 on Nov 15,2019
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/czhe/Downloads/digital_design/common" C:/Users/czhe/Downloads/digital_design/common/binary_cell.v 
+# -- Compiling module binary_cell
+# -- Compiling module sr_latch
+# 
+# Top level modules:
+# 	binary_cell
+# End time: 17:14:43 on Nov 15,2019, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+vlog -reportprogress 300 -work work C:/Users/czhe/Downloads/digital_design/fig_7_6_4x4_ram/four_by_four_ram.v
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 17:15:47 on Nov 15,2019
+# vlog -reportprogress 300 -work work C:/Users/czhe/Downloads/digital_design/fig_7_6_4x4_ram/four_by_four_ram.v 
+# -- Compiling module four_by_four_ram
+# -- Compiling module two_by_four_dec
+# 
+# Top level modules:
+# 	four_by_four_ram
+# End time: 17:15:47 on Nov 15,2019, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vlog -reportprogress 300 -work work C:/Users/czhe/Downloads/digital_design/fig_7_6_4x4_ram/fig_7_6_tb.v
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 17:16:14 on Nov 15,2019
+# vlog -reportprogress 300 -work work C:/Users/czhe/Downloads/digital_design/fig_7_6_4x4_ram/fig_7_6_tb.v 
+# -- Compiling module fig_7_6_tb
+# ** Error: (vlog-13069) C:/Users/czhe/Downloads/digital_design/fig_7_6_4x4_ram/fig_7_6_tb.v(9): near "rd_data": syntax error, unexpected IDENTIFIER, expecting ')'.
+# ** Error: (vlog-13069) C:/Users/czhe/Downloads/digital_design/fig_7_6_4x4_ram/fig_7_6_tb.v(32): near "#": syntax error, unexpected '#', expecting ';'.
+# End time: 17:16:14 on Nov 15,2019, Elapsed time: 0:00:00
+# Errors: 2, Warnings: 0
+vlog -reportprogress 300 -work work C:/Users/czhe/Downloads/digital_design/fig_7_6_4x4_ram/fig_7_6_tb.v
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 17:17:34 on Nov 15,2019
+# vlog -reportprogress 300 -work work C:/Users/czhe/Downloads/digital_design/fig_7_6_4x4_ram/fig_7_6_tb.v 
+# -- Compiling module four_by_four_ram_tb
+# ** Error: (vlog-13069) C:/Users/czhe/Downloads/digital_design/fig_7_6_4x4_ram/fig_7_6_tb.v(32): near "#": syntax error, unexpected '#', expecting ';'.
+# End time: 17:17:34 on Nov 15,2019, Elapsed time: 0:00:00
+# Errors: 1, Warnings: 0
+vlog -reportprogress 300 -work work C:/Users/czhe/Downloads/digital_design/fig_7_6_4x4_ram/fig_7_6_tb.v
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 17:17:57 on Nov 15,2019
+# vlog -reportprogress 300 -work work C:/Users/czhe/Downloads/digital_design/fig_7_6_4x4_ram/fig_7_6_tb.v 
+# -- Compiling module four_by_four_ram_tb
+# 
+# Top level modules:
+# 	four_by_four_ram_tb
+# End time: 17:17:57 on Nov 15,2019, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vsim work.four_by_four_ram_tb
+# vsim work.four_by_four_ram_tb 
+# Start time: 17:18:01 on Nov 15,2019
+# Loading work.four_by_four_ram_tb
+# Loading work.four_by_four_ram
+# Loading work.two_by_four_dec
+# Loading work.binary_cell
+# Loading work.sr_latch
+add wave -position insertpoint  \
+sim:/four_by_four_ram_tb/mem_en \
+sim:/four_by_four_ram_tb/rd_wr \
+sim:/four_by_four_ram_tb/addr \
+sim:/four_by_four_ram_tb/wr_data \
+sim:/four_by_four_ram_tb/rd_data
+run
+# ** Note: $finish    : C:/Users/czhe/Downloads/digital_design/fig_7_6_4x4_ram/fig_7_6_tb.v(44)
+#    Time: 300 ps  Iteration: 0  Instance: /four_by_four_ram_tb
+# 1
+# Break in Module four_by_four_ram_tb at C:/Users/czhe/Downloads/digital_design/fig_7_6_4x4_ram/fig_7_6_tb.v line 44
+vlog -work work C:/Users/czhe/Downloads/digital_design/fig_7_6_4x4_ram/fig_7_6_tb.v
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 17:21:47 on Nov 15,2019
+# vlog -reportprogress 300 -work work C:/Users/czhe/Downloads/digital_design/fig_7_6_4x4_ram/fig_7_6_tb.v 
+# -- Compiling module four_by_four_ram_tb
+# 
+# Top level modules:
+# 	four_by_four_ram_tb
+# End time: 17:21:47 on Nov 15,2019, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+restart
+# Loading work.four_by_four_ram_tb
+run
+# GetModuleFileName: The specified module could not be found.
+# 
+# 
+# ** Note: $finish    : C:/Users/czhe/Downloads/digital_design/fig_7_6_4x4_ram/fig_7_6_tb.v(45)
+#    Time: 330 ps  Iteration: 0  Instance: /four_by_four_ram_tb
+# 1
+# Break in Module four_by_four_ram_tb at C:/Users/czhe/Downloads/digital_design/fig_7_6_4x4_ram/fig_7_6_tb.v line 45
+# End time: 17:22:34 on Nov 15,2019, Elapsed time: 0:04:33
+# Errors: 0, Warnings: 0

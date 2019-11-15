@@ -1,0 +1,19 @@
+|fig_7_5
+cs => S_in.IN0
+cs => R_in.IN0
+cs => rd_data.IN1
+wr_data => S_in.IN1
+wr_data => R_in.IN1
+rd_wr => rd_data.IN1
+rd_wr => S_in.IN1
+rd_wr => R_in.IN1
+rd_data <= rd_data.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|fig_7_5|sr_latch:srlatch
+S => Qn.IN0
+R => Q.IN1
+Q <= Q.DB_MAX_OUTPUT_PORT_TYPE
+Qn <= Qn.DB_MAX_OUTPUT_PORT_TYPE
+
+

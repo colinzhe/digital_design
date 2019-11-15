@@ -1,0 +1,3 @@
+- write
+- read
+- output when cs = 0 or in write mode

@@ -12,245 +12,36 @@
 # 
 # vlog -vlog01compat -work work +incdir+C:/Users/czhe/Downloads/digital_design/ex_7_1_simple_mem {C:/Users/czhe/Downloads/digital_design/ex_7_1_simple_mem/ex_7_1.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 10:35:08 on Nov 14,2019
+# Start time: 09:36:05 on Nov 15,2019
 # vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/czhe/Downloads/digital_design/ex_7_1_simple_mem" C:/Users/czhe/Downloads/digital_design/ex_7_1_simple_mem/ex_7_1.v 
 # -- Compiling module ex_7_1
+# ** Warning: C:/Users/czhe/Downloads/digital_design/ex_7_1_simple_mem/ex_7_1.v(16): (vlog-2256) Event expressions should result in a singular type.
 # 
 # Top level modules:
 # 	ex_7_1
-# End time: 10:35:08 on Nov 14,2019, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
+# End time: 09:36:05 on Nov 15,2019, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 1
 # 
 vlog -reportprogress 300 -work work C:/Users/czhe/Downloads/digital_design/ex_7_1_simple_mem/ex_7_1_tb.v
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 10:35:20 on Nov 14,2019
-# vlog -reportprogress 300 -work work C:/Users/czhe/Downloads/digital_design/ex_7_1_simple_mem/ex_7_1_tb.v 
-# -- Compiling module ex_7_1_tb
-# ** Error: (vlog-13069) C:/Users/czhe/Downloads/digital_design/ex_7_1_simple_mem/ex_7_1_tb.v(37): near "EOF": syntax error, unexpected end of source code.
-# End time: 10:35:20 on Nov 14,2019, Elapsed time: 0:00:00
-# Errors: 1, Warnings: 0
-vlog -reportprogress 300 -work work C:/Users/czhe/Downloads/digital_design/ex_7_1_simple_mem/ex_7_1_tb.v
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 10:35:34 on Nov 14,2019
+# Start time: 09:36:17 on Nov 15,2019
 # vlog -reportprogress 300 -work work C:/Users/czhe/Downloads/digital_design/ex_7_1_simple_mem/ex_7_1_tb.v 
 # -- Compiling module ex_7_1_tb
 # 
 # Top level modules:
 # 	ex_7_1_tb
-# End time: 10:35:34 on Nov 14,2019, Elapsed time: 0:00:00
+# End time: 09:36:17 on Nov 15,2019, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 vsim work.ex_7_1_tb
 # vsim work.ex_7_1_tb 
-# Start time: 10:35:42 on Nov 14,2019
+# Start time: 09:36:23 on Nov 15,2019
 # Loading work.ex_7_1_tb
 # Loading work.ex_7_1
 add wave -position insertpoint sim:/ex_7_1_tb/*
 run
-vlog -work work C:/Users/czhe/Downloads/digital_design/ex_7_1_simple_mem/ex_7_1_tb.v
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 10:36:16 on Nov 14,2019
-# vlog -reportprogress 300 -work work C:/Users/czhe/Downloads/digital_design/ex_7_1_simple_mem/ex_7_1_tb.v 
-# -- Compiling module ex_7_1_tb
-# 
-# Top level modules:
-# 	ex_7_1_tb
-# End time: 10:36:16 on Nov 14,2019, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-restart
-# Loading work.ex_7_1_tb
-run
-# ** Note: $finish    : C:/Users/czhe/Downloads/digital_design/ex_7_1_simple_mem/ex_7_1_tb.v(35)
-#    Time: 190 ps  Iteration: 0  Instance: /ex_7_1_tb
-# 1
-# Break in Module ex_7_1_tb at C:/Users/czhe/Downloads/digital_design/ex_7_1_simple_mem/ex_7_1_tb.v line 35
-vsim work.ex_7_1
-# End time: 10:42:11 on Nov 14,2019, Elapsed time: 0:06:29
-# Errors: 0, Warnings: 0
-# vsim work.ex_7_1 
-# Start time: 10:42:11 on Nov 14,2019
-# Loading work.ex_7_1
-vlog -vlog01compat -work work +incdir+C:/Users/czhe/Downloads/digital_design/ex_7_1_simple_mem C:/Users/czhe/Downloads/digital_design/ex_7_1_simple_mem/ex_7_1.v
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 10:44:23 on Nov 14,2019
-# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/czhe/Downloads/digital_design/ex_7_1_simple_mem" C:/Users/czhe/Downloads/digital_design/ex_7_1_simple_mem/ex_7_1.v 
-# -- Compiling module ex_7_1
-# 
-# Top level modules:
-# 	ex_7_1
-# End time: 10:44:23 on Nov 14,2019, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-vlog -work work C:/Users/czhe/Downloads/digital_design/ex_7_1_simple_mem/ex_7_1_tb.v
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 10:44:23 on Nov 14,2019
-# vlog -reportprogress 300 -work work C:/Users/czhe/Downloads/digital_design/ex_7_1_simple_mem/ex_7_1_tb.v 
-# -- Compiling module ex_7_1_tb
-# 
-# Top level modules:
-# 	ex_7_1_tb
-# End time: 10:44:23 on Nov 14,2019, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-restart
-# Loading work.ex_7_1
-run
-# GetModuleFileName: The specified module could not be found.
-# 
-# 
-add wave -position insertpoint  \
-sim:/ex_7_1/enable \
-sim:/ex_7_1/rd_wr \
-sim:/ex_7_1/data_in \
-sim:/ex_7_1/addr \
-sim:/ex_7_1/data_out \
-sim:/ex_7_1/mem_000000 \
-sim:/ex_7_1/mem_000111 \
-sim:/ex_7_1/mem_110000 \
-sim:/ex_7_1/mem
-restart
-run
-# GetModuleFileName: The specified module could not be found.
-# 
-# 
-vlog -vlog01compat -work work +incdir+C:/Users/czhe/Downloads/digital_design/ex_7_1_simple_mem C:/Users/czhe/Downloads/digital_design/ex_7_1_simple_mem/ex_7_1.v
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 10:45:16 on Nov 14,2019
-# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/czhe/Downloads/digital_design/ex_7_1_simple_mem" C:/Users/czhe/Downloads/digital_design/ex_7_1_simple_mem/ex_7_1.v 
-# -- Compiling module ex_7_1
-# 
-# Top level modules:
-# 	ex_7_1
-# End time: 10:45:16 on Nov 14,2019, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-vlog -work work C:/Users/czhe/Downloads/digital_design/ex_7_1_simple_mem/ex_7_1_tb.v
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 10:45:16 on Nov 14,2019
-# vlog -reportprogress 300 -work work C:/Users/czhe/Downloads/digital_design/ex_7_1_simple_mem/ex_7_1_tb.v 
-# -- Compiling module ex_7_1_tb
-# 
-# Top level modules:
-# 	ex_7_1_tb
-# End time: 10:45:16 on Nov 14,2019, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-vsim work.ex_7_1_tb
-# End time: 10:45:21 on Nov 14,2019, Elapsed time: 0:03:10
-# Errors: 0, Warnings: 0
-# vsim work.ex_7_1_tb 
-# Start time: 10:45:21 on Nov 14,2019
-# Loading work.ex_7_1_tb
-# Loading work.ex_7_1
-# ** Warning: (vsim-3015) C:/Users/czhe/Downloads/digital_design/ex_7_1_simple_mem/ex_7_1_tb.v(10): [PCDPC] - Port size (4) does not match connection size (1) for port 'mem_000000'. The port definition is at: C:/Users/czhe/Downloads/digital_design/ex_7_1_simple_mem/ex_7_1.v(6).
-#    Time: 0 ps  Iteration: 0  Instance: /ex_7_1_tb/dut File: C:/Users/czhe/Downloads/digital_design/ex_7_1_simple_mem/ex_7_1.v
-# ** Warning: (vsim-3015) C:/Users/czhe/Downloads/digital_design/ex_7_1_simple_mem/ex_7_1_tb.v(10): [PCDPC] - Port size (4) does not match connection size (1) for port 'mem_000111'. The port definition is at: C:/Users/czhe/Downloads/digital_design/ex_7_1_simple_mem/ex_7_1.v(7).
-#    Time: 0 ps  Iteration: 0  Instance: /ex_7_1_tb/dut File: C:/Users/czhe/Downloads/digital_design/ex_7_1_simple_mem/ex_7_1.v
-add wave -position insertpoint  \
-sim:/ex_7_1_tb/enable \
-sim:/ex_7_1_tb/rd_wr \
-sim:/ex_7_1_tb/data_in \
-sim:/ex_7_1_tb/addr \
-sim:/ex_7_1_tb/data_out \
-sim:/ex_7_1_tb/mem_000000 \
-sim:/ex_7_1_tb/mem_000111 \
-sim:/ex_7_1_tb/mem_110000 \
-sim:/ex_7_1_tb/mem_0000000 \
-sim:/ex_7_1_tb/mem_0000111
-run
 # ** Note: $finish    : C:/Users/czhe/Downloads/digital_design/ex_7_1_simple_mem/ex_7_1_tb.v(38)
 #    Time: 190 ps  Iteration: 0  Instance: /ex_7_1_tb
 # 1
 # Break in Module ex_7_1_tb at C:/Users/czhe/Downloads/digital_design/ex_7_1_simple_mem/ex_7_1_tb.v line 38
-vlog -work work C:/Users/czhe/Downloads/digital_design/ex_7_1_simple_mem/ex_7_1_tb.v
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 10:46:21 on Nov 14,2019
-# vlog -reportprogress 300 -work work C:/Users/czhe/Downloads/digital_design/ex_7_1_simple_mem/ex_7_1_tb.v 
-# -- Compiling module ex_7_1_tb
-# 
-# Top level modules:
-# 	ex_7_1_tb
-# End time: 10:46:21 on Nov 14,2019, Elapsed time: 0:00:00
+# End time: 09:38:10 on Nov 15,2019, Elapsed time: 0:01:47
 # Errors: 0, Warnings: 0
-vsim work.ex_7_1_tb
-# End time: 10:46:24 on Nov 14,2019, Elapsed time: 0:01:03
-# Errors: 0, Warnings: 2
-# vsim work.ex_7_1_tb 
-# Start time: 10:46:24 on Nov 14,2019
-# Loading work.ex_7_1_tb
-# Loading work.ex_7_1
-add wave -position insertpoint  \
-sim:/ex_7_1_tb/enable \
-sim:/ex_7_1_tb/rd_wr \
-sim:/ex_7_1_tb/data_in \
-sim:/ex_7_1_tb/addr \
-sim:/ex_7_1_tb/data_out \
-sim:/ex_7_1_tb/mem_000000 \
-sim:/ex_7_1_tb/mem_000111 \
-sim:/ex_7_1_tb/mem_110000
-run
-# ** Note: $finish    : C:/Users/czhe/Downloads/digital_design/ex_7_1_simple_mem/ex_7_1_tb.v(38)
-#    Time: 190 ps  Iteration: 0  Instance: /ex_7_1_tb
-# 1
-# Break in Module ex_7_1_tb at C:/Users/czhe/Downloads/digital_design/ex_7_1_simple_mem/ex_7_1_tb.v line 38
-vlog -vlog01compat -work work +incdir+C:/Users/czhe/Downloads/digital_design/ex_7_1_simple_mem C:/Users/czhe/Downloads/digital_design/ex_7_1_simple_mem/ex_7_1.v
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 10:49:03 on Nov 14,2019
-# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/czhe/Downloads/digital_design/ex_7_1_simple_mem" C:/Users/czhe/Downloads/digital_design/ex_7_1_simple_mem/ex_7_1.v 
-# -- Compiling module ex_7_1
-# ** Warning: C:/Users/czhe/Downloads/digital_design/ex_7_1_simple_mem/ex_7_1.v(16): (vlog-2256) Event expressions should result in a singular type.
-# 
-# Top level modules:
-# 	ex_7_1
-# End time: 10:49:03 on Nov 14,2019, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 1
-vlog -work work C:/Users/czhe/Downloads/digital_design/ex_7_1_simple_mem/ex_7_1_tb.v
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 10:49:03 on Nov 14,2019
-# vlog -reportprogress 300 -work work C:/Users/czhe/Downloads/digital_design/ex_7_1_simple_mem/ex_7_1_tb.v 
-# -- Compiling module ex_7_1_tb
-# 
-# Top level modules:
-# 	ex_7_1_tb
-# End time: 10:49:04 on Nov 14,2019, Elapsed time: 0:00:01
-# Errors: 0, Warnings: 0
-restart
-# Loading work.ex_7_1_tb
-# Loading work.ex_7_1
-run
-# GetModuleFileName: The specified module could not be found.
-# 
-# 
-# ** Note: $finish    : C:/Users/czhe/Downloads/digital_design/ex_7_1_simple_mem/ex_7_1_tb.v(38)
-#    Time: 190 ps  Iteration: 0  Instance: /ex_7_1_tb
-# 1
-# Break in Module ex_7_1_tb at C:/Users/czhe/Downloads/digital_design/ex_7_1_simple_mem/ex_7_1_tb.v line 38
-vlog -vlog01compat -work work +incdir+C:/Users/czhe/Downloads/digital_design/ex_7_1_simple_mem C:/Users/czhe/Downloads/digital_design/ex_7_1_simple_mem/ex_7_1.v
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 10:50:56 on Nov 14,2019
-# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/czhe/Downloads/digital_design/ex_7_1_simple_mem" C:/Users/czhe/Downloads/digital_design/ex_7_1_simple_mem/ex_7_1.v 
-# -- Compiling module ex_7_1
-# ** Warning: C:/Users/czhe/Downloads/digital_design/ex_7_1_simple_mem/ex_7_1.v(16): (vlog-2256) Event expressions should result in a singular type.
-# 
-# Top level modules:
-# 	ex_7_1
-# End time: 10:50:56 on Nov 14,2019, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 1
-vlog -work work C:/Users/czhe/Downloads/digital_design/ex_7_1_simple_mem/ex_7_1_tb.v
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 10:50:56 on Nov 14,2019
-# vlog -reportprogress 300 -work work C:/Users/czhe/Downloads/digital_design/ex_7_1_simple_mem/ex_7_1_tb.v 
-# -- Compiling module ex_7_1_tb
-# 
-# Top level modules:
-# 	ex_7_1_tb
-# End time: 10:50:56 on Nov 14,2019, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-restart
-# Loading work.ex_7_1_tb
-# Loading work.ex_7_1
-run
-# GetModuleFileName: The specified module could not be found.
-# 
-# 
-# ** Note: $finish    : C:/Users/czhe/Downloads/digital_design/ex_7_1_simple_mem/ex_7_1_tb.v(38)
-#    Time: 190 ps  Iteration: 0  Instance: /ex_7_1_tb
-# 1
-# Break in Module ex_7_1_tb at C:/Users/czhe/Downloads/digital_design/ex_7_1_simple_mem/ex_7_1_tb.v line 38
-# End time: 10:58:28 on Nov 14,2019, Elapsed time: 0:12:04
-# Errors: 0, Warnings: 2

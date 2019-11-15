@@ -1,0 +1,4 @@
+- write
+- read
+- output when cs = 0 or in write mode
+- test more variations of wr_data
