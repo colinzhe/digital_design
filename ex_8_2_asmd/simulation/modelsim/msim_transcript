@@ -1,0 +1,91 @@
+# Reading C:/intelFPGA_lite/18.1/modelsim_ase/tcl/vsim/pref.tcl
+# do ex_8_2_asmd_run_msim_rtl_verilog.do
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Model Technology ModelSim - Intel FPGA Edition vmap 10.5b Lib Mapping Utility 2016.10 Oct  5 2016
+# vmap work rtl_work 
+# Copying C:/intelFPGA_lite/18.1/modelsim_ase/win32aloem/../modelsim.ini to modelsim.ini
+# Modifying modelsim.ini
+# 
+# vlog -sv -work work +incdir+C:/Users/czhe/Downloads/digital_design/ex_8_2_asmd {C:/Users/czhe/Downloads/digital_design/ex_8_2_asmd/ex_8_2_asmd.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 18:09:54 on Nov 25,2019
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/czhe/Downloads/digital_design/ex_8_2_asmd" C:/Users/czhe/Downloads/digital_design/ex_8_2_asmd/ex_8_2_asmd.sv 
+# -- Compiling module ex_8_2_asmd
+# -- Compiling module controller
+# ** Error: C:/Users/czhe/Downloads/digital_design/ex_8_2_asmd/ex_8_2_asmd.sv(52): (vlog-2730) Undefined variable: 'state'.
+# ** Error: C:/Users/czhe/Downloads/digital_design/ex_8_2_asmd/ex_8_2_asmd.sv(53): (vlog-2730) Undefined variable: 'next_state'.
+# -- Compiling module datapath
+# End time: 18:09:55 on Nov 25,2019, Elapsed time: 0:00:01
+# Errors: 2, Warnings: 0
+# ** Error: C:/intelFPGA_lite/18.1/modelsim_ase/win32aloem/vlog failed.
+# Error in macro ./ex_8_2_asmd_run_msim_rtl_verilog.do line 8
+# C:/intelFPGA_lite/18.1/modelsim_ase/win32aloem/vlog failed.
+#     while executing
+# "vlog -sv -work work +incdir+C:/Users/czhe/Downloads/digital_design/ex_8_2_asmd {C:/Users/czhe/Downloads/digital_design/ex_8_2_asmd/ex_8_2_asmd.sv}"
+vlog -reportprogress 300 -work work C:/Users/czhe/Downloads/digital_design/ex_8_2_asmd/ex_8_2_asmd_tb.v
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 18:10:10 on Nov 25,2019
+# vlog -reportprogress 300 -work work C:/Users/czhe/Downloads/digital_design/ex_8_2_asmd/ex_8_2_asmd_tb.v 
+# -- Compiling module ex_8_2_asmd_tb
+# 
+# Top level modules:
+# 	ex_8_2_asmd_tb
+# End time: 18:10:10 on Nov 25,2019, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vlog -reportprogress 300 -work work C:/Users/czhe/Downloads/digital_design/ex_8_2_asmd/ex_8_2_asmd.sv
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 18:11:30 on Nov 25,2019
+# vlog -reportprogress 300 -work work C:/Users/czhe/Downloads/digital_design/ex_8_2_asmd/ex_8_2_asmd.sv 
+# -- Compiling module ex_8_2_asmd
+# -- Compiling module controller
+# -- Compiling module datapath
+# 
+# Top level modules:
+# 	ex_8_2_asmd
+# End time: 18:11:30 on Nov 25,2019, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vlog -reportprogress 300 -work work C:/Users/czhe/Downloads/digital_design/ex_8_2_asmd/ex_8_2_asmd_tb.v
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 18:11:30 on Nov 25,2019
+# vlog -reportprogress 300 -work work C:/Users/czhe/Downloads/digital_design/ex_8_2_asmd/ex_8_2_asmd_tb.v 
+# -- Compiling module ex_8_2_asmd_tb
+# 
+# Top level modules:
+# 	ex_8_2_asmd_tb
+# End time: 18:11:30 on Nov 25,2019, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vsim work.ex_8_2_asmd_tb
+# vsim work.ex_8_2_asmd_tb 
+# Start time: 18:11:40 on Nov 25,2019
+# Loading work.ex_8_2_asmd_tb
+# Loading sv_std.std
+# Loading work.ex_8_2_asmd
+# Loading work.controller
+# Loading work.datapath
+add wave -position insertpoint  \
+sim:/ex_8_2_asmd_tb/rstb \
+sim:/ex_8_2_asmd_tb/clk \
+sim:/ex_8_2_asmd_tb/start \
+sim:/ex_8_2_asmd_tb/A \
+sim:/ex_8_2_asmd_tb/E \
+sim:/ex_8_2_asmd_tb/F \
+sim:/ex_8_2_asmd_tb/state \
+sim:/ex_8_2_asmd_tb/next_state \
+sim:/ex_8_2_asmd_tb/set_E \
+sim:/ex_8_2_asmd_tb/clr_E \
+sim:/ex_8_2_asmd_tb/set_F \
+sim:/ex_8_2_asmd_tb/clr_A_F \
+sim:/ex_8_2_asmd_tb/incr_A \
+sim:/ex_8_2_asmd_tb/A2 \
+sim:/ex_8_2_asmd_tb/A3
+run
+# ** Note: $finish    : C:/Users/czhe/Downloads/digital_design/ex_8_2_asmd/ex_8_2_asmd_tb.v(15)
+#    Time: 500 ps  Iteration: 0  Instance: /ex_8_2_asmd_tb
+# 1
+# Break in Module ex_8_2_asmd_tb at C:/Users/czhe/Downloads/digital_design/ex_8_2_asmd/ex_8_2_asmd_tb.v line 15
+# End time: 18:28:47 on Nov 25,2019, Elapsed time: 0:17:07
+# Errors: 0, Warnings: 0

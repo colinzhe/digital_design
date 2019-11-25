@@ -1,0 +1,6 @@
+
+State Machine - |ex_8_2_asmd|controller:c0|state
+Name state.S_idle state.S_2 state.S_1 
+state.S_idle 0 0 0 
+state.S_1 1 0 1 
+state.S_2 1 1 0 
