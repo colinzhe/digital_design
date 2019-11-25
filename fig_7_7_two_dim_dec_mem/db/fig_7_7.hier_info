@@ -1,0 +1,335 @@
+|fig_7_7
+mem_en => mem_en.IN2
+rd_wr => rd_wr.IN16
+addr[0] => addr[0].IN1
+addr[1] => addr[1].IN1
+wr_data[0] => wr_data[0].IN4
+wr_data[1] => wr_data[1].IN4
+wr_data[2] => wr_data[2].IN4
+wr_data[3] => wr_data[3].IN4
+rd_data[0] <= rd_data[0].DB_MAX_OUTPUT_PORT_TYPE
+rd_data[1] <= rd_data[1].DB_MAX_OUTPUT_PORT_TYPE
+rd_data[2] <= rd_data[2].DB_MAX_OUTPUT_PORT_TYPE
+rd_data[3] <= rd_data[3].DB_MAX_OUTPUT_PORT_TYPE
+
+
+|fig_7_7|one_by_two_dec:dec_row
+x_in => Decoder0.IN0
+en => y_out.OUTPUTSELECT
+en => y_out.OUTPUTSELECT
+y_out[0] <= y_out.DB_MAX_OUTPUT_PORT_TYPE
+y_out[1] <= y_out.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|fig_7_7|one_by_two_dec:dec_col
+x_in => Decoder0.IN0
+en => y_out.OUTPUTSELECT
+en => y_out.OUTPUTSELECT
+y_out[0] <= y_out.DB_MAX_OUTPUT_PORT_TYPE
+y_out[1] <= y_out.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|fig_7_7|binary_cell:bc_loop[0].word_sel_loop[0].bc
+cs => S_in.IN0
+cs => R_in.IN0
+cs => rd_data.IN1
+wr_data => S_in.IN1
+wr_data => R_in.IN1
+rd_wr => rd_data.IN1
+rd_wr => S_in.IN1
+rd_wr => R_in.IN1
+rd_data <= rd_data.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|fig_7_7|binary_cell:bc_loop[0].word_sel_loop[0].bc|sr_latch:srlatch
+S => Qn.IN0
+R => Q.IN1
+Q <= Q.DB_MAX_OUTPUT_PORT_TYPE
+Qn <= Qn.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|fig_7_7|binary_cell:bc_loop[0].word_sel_loop[1].bc
+cs => S_in.IN0
+cs => R_in.IN0
+cs => rd_data.IN1
+wr_data => S_in.IN1
+wr_data => R_in.IN1
+rd_wr => rd_data.IN1
+rd_wr => S_in.IN1
+rd_wr => R_in.IN1
+rd_data <= rd_data.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|fig_7_7|binary_cell:bc_loop[0].word_sel_loop[1].bc|sr_latch:srlatch
+S => Qn.IN0
+R => Q.IN1
+Q <= Q.DB_MAX_OUTPUT_PORT_TYPE
+Qn <= Qn.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|fig_7_7|binary_cell:bc_loop[0].word_sel_loop[2].bc
+cs => S_in.IN0
+cs => R_in.IN0
+cs => rd_data.IN1
+wr_data => S_in.IN1
+wr_data => R_in.IN1
+rd_wr => rd_data.IN1
+rd_wr => S_in.IN1
+rd_wr => R_in.IN1
+rd_data <= rd_data.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|fig_7_7|binary_cell:bc_loop[0].word_sel_loop[2].bc|sr_latch:srlatch
+S => Qn.IN0
+R => Q.IN1
+Q <= Q.DB_MAX_OUTPUT_PORT_TYPE
+Qn <= Qn.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|fig_7_7|binary_cell:bc_loop[0].word_sel_loop[3].bc
+cs => S_in.IN0
+cs => R_in.IN0
+cs => rd_data.IN1
+wr_data => S_in.IN1
+wr_data => R_in.IN1
+rd_wr => rd_data.IN1
+rd_wr => S_in.IN1
+rd_wr => R_in.IN1
+rd_data <= rd_data.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|fig_7_7|binary_cell:bc_loop[0].word_sel_loop[3].bc|sr_latch:srlatch
+S => Qn.IN0
+R => Q.IN1
+Q <= Q.DB_MAX_OUTPUT_PORT_TYPE
+Qn <= Qn.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|fig_7_7|binary_cell:bc_loop[1].word_sel_loop[0].bc
+cs => S_in.IN0
+cs => R_in.IN0
+cs => rd_data.IN1
+wr_data => S_in.IN1
+wr_data => R_in.IN1
+rd_wr => rd_data.IN1
+rd_wr => S_in.IN1
+rd_wr => R_in.IN1
+rd_data <= rd_data.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|fig_7_7|binary_cell:bc_loop[1].word_sel_loop[0].bc|sr_latch:srlatch
+S => Qn.IN0
+R => Q.IN1
+Q <= Q.DB_MAX_OUTPUT_PORT_TYPE
+Qn <= Qn.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|fig_7_7|binary_cell:bc_loop[1].word_sel_loop[1].bc
+cs => S_in.IN0
+cs => R_in.IN0
+cs => rd_data.IN1
+wr_data => S_in.IN1
+wr_data => R_in.IN1
+rd_wr => rd_data.IN1
+rd_wr => S_in.IN1
+rd_wr => R_in.IN1
+rd_data <= rd_data.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|fig_7_7|binary_cell:bc_loop[1].word_sel_loop[1].bc|sr_latch:srlatch
+S => Qn.IN0
+R => Q.IN1
+Q <= Q.DB_MAX_OUTPUT_PORT_TYPE
+Qn <= Qn.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|fig_7_7|binary_cell:bc_loop[1].word_sel_loop[2].bc
+cs => S_in.IN0
+cs => R_in.IN0
+cs => rd_data.IN1
+wr_data => S_in.IN1
+wr_data => R_in.IN1
+rd_wr => rd_data.IN1
+rd_wr => S_in.IN1
+rd_wr => R_in.IN1
+rd_data <= rd_data.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|fig_7_7|binary_cell:bc_loop[1].word_sel_loop[2].bc|sr_latch:srlatch
+S => Qn.IN0
+R => Q.IN1
+Q <= Q.DB_MAX_OUTPUT_PORT_TYPE
+Qn <= Qn.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|fig_7_7|binary_cell:bc_loop[1].word_sel_loop[3].bc
+cs => S_in.IN0
+cs => R_in.IN0
+cs => rd_data.IN1
+wr_data => S_in.IN1
+wr_data => R_in.IN1
+rd_wr => rd_data.IN1
+rd_wr => S_in.IN1
+rd_wr => R_in.IN1
+rd_data <= rd_data.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|fig_7_7|binary_cell:bc_loop[1].word_sel_loop[3].bc|sr_latch:srlatch
+S => Qn.IN0
+R => Q.IN1
+Q <= Q.DB_MAX_OUTPUT_PORT_TYPE
+Qn <= Qn.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|fig_7_7|binary_cell:bc_loop[2].word_sel_loop[0].bc
+cs => S_in.IN0
+cs => R_in.IN0
+cs => rd_data.IN1
+wr_data => S_in.IN1
+wr_data => R_in.IN1
+rd_wr => rd_data.IN1
+rd_wr => S_in.IN1
+rd_wr => R_in.IN1
+rd_data <= rd_data.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|fig_7_7|binary_cell:bc_loop[2].word_sel_loop[0].bc|sr_latch:srlatch
+S => Qn.IN0
+R => Q.IN1
+Q <= Q.DB_MAX_OUTPUT_PORT_TYPE
+Qn <= Qn.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|fig_7_7|binary_cell:bc_loop[2].word_sel_loop[1].bc
+cs => S_in.IN0
+cs => R_in.IN0
+cs => rd_data.IN1
+wr_data => S_in.IN1
+wr_data => R_in.IN1
+rd_wr => rd_data.IN1
+rd_wr => S_in.IN1
+rd_wr => R_in.IN1
+rd_data <= rd_data.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|fig_7_7|binary_cell:bc_loop[2].word_sel_loop[1].bc|sr_latch:srlatch
+S => Qn.IN0
+R => Q.IN1
+Q <= Q.DB_MAX_OUTPUT_PORT_TYPE
+Qn <= Qn.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|fig_7_7|binary_cell:bc_loop[2].word_sel_loop[2].bc
+cs => S_in.IN0
+cs => R_in.IN0
+cs => rd_data.IN1
+wr_data => S_in.IN1
+wr_data => R_in.IN1
+rd_wr => rd_data.IN1
+rd_wr => S_in.IN1
+rd_wr => R_in.IN1
+rd_data <= rd_data.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|fig_7_7|binary_cell:bc_loop[2].word_sel_loop[2].bc|sr_latch:srlatch
+S => Qn.IN0
+R => Q.IN1
+Q <= Q.DB_MAX_OUTPUT_PORT_TYPE
+Qn <= Qn.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|fig_7_7|binary_cell:bc_loop[2].word_sel_loop[3].bc
+cs => S_in.IN0
+cs => R_in.IN0
+cs => rd_data.IN1
+wr_data => S_in.IN1
+wr_data => R_in.IN1
+rd_wr => rd_data.IN1
+rd_wr => S_in.IN1
+rd_wr => R_in.IN1
+rd_data <= rd_data.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|fig_7_7|binary_cell:bc_loop[2].word_sel_loop[3].bc|sr_latch:srlatch
+S => Qn.IN0
+R => Q.IN1
+Q <= Q.DB_MAX_OUTPUT_PORT_TYPE
+Qn <= Qn.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|fig_7_7|binary_cell:bc_loop[3].word_sel_loop[0].bc
+cs => S_in.IN0
+cs => R_in.IN0
+cs => rd_data.IN1
+wr_data => S_in.IN1
+wr_data => R_in.IN1
+rd_wr => rd_data.IN1
+rd_wr => S_in.IN1
+rd_wr => R_in.IN1
+rd_data <= rd_data.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|fig_7_7|binary_cell:bc_loop[3].word_sel_loop[0].bc|sr_latch:srlatch
+S => Qn.IN0
+R => Q.IN1
+Q <= Q.DB_MAX_OUTPUT_PORT_TYPE
+Qn <= Qn.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|fig_7_7|binary_cell:bc_loop[3].word_sel_loop[1].bc
+cs => S_in.IN0
+cs => R_in.IN0
+cs => rd_data.IN1
+wr_data => S_in.IN1
+wr_data => R_in.IN1
+rd_wr => rd_data.IN1
+rd_wr => S_in.IN1
+rd_wr => R_in.IN1
+rd_data <= rd_data.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|fig_7_7|binary_cell:bc_loop[3].word_sel_loop[1].bc|sr_latch:srlatch
+S => Qn.IN0
+R => Q.IN1
+Q <= Q.DB_MAX_OUTPUT_PORT_TYPE
+Qn <= Qn.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|fig_7_7|binary_cell:bc_loop[3].word_sel_loop[2].bc
+cs => S_in.IN0
+cs => R_in.IN0
+cs => rd_data.IN1
+wr_data => S_in.IN1
+wr_data => R_in.IN1
+rd_wr => rd_data.IN1
+rd_wr => S_in.IN1
+rd_wr => R_in.IN1
+rd_data <= rd_data.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|fig_7_7|binary_cell:bc_loop[3].word_sel_loop[2].bc|sr_latch:srlatch
+S => Qn.IN0
+R => Q.IN1
+Q <= Q.DB_MAX_OUTPUT_PORT_TYPE
+Qn <= Qn.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|fig_7_7|binary_cell:bc_loop[3].word_sel_loop[3].bc
+cs => S_in.IN0
+cs => R_in.IN0
+cs => rd_data.IN1
+wr_data => S_in.IN1
+wr_data => R_in.IN1
+rd_wr => rd_data.IN1
+rd_wr => S_in.IN1
+rd_wr => R_in.IN1
+rd_data <= rd_data.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|fig_7_7|binary_cell:bc_loop[3].word_sel_loop[3].bc|sr_latch:srlatch
+S => Qn.IN0
+R => Q.IN1
+Q <= Q.DB_MAX_OUTPUT_PORT_TYPE
+Qn <= Qn.DB_MAX_OUTPUT_PORT_TYPE
+
+

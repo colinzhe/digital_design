@@ -1,0 +1,124 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/Users/home/Downloads/digital_design/fig_7_7_two_dim_dec_mem/simulation/modelsim
+vbinary_cell
+Z1 !s110 1574020107
+!i10b 1
+!s100 cHeHWJRSJj9ZFa7=^0DDk3
+I_DG]TfbHL`AMnd=l=R^Ni0
+Z2 VDg1SIo80bB@j0V0VzS_@n1
+R0
+Z3 w1574015954
+Z4 8C:/Users/home/Downloads/digital_design/common/binary_cell.v
+Z5 FC:/Users/home/Downloads/digital_design/common/binary_cell.v
+L0 1
+Z6 OV;L;10.5b;63
+r1
+!s85 0
+31
+Z7 !s108 1574020107.000000
+Z8 !s107 C:/Users/home/Downloads/digital_design/common/binary_cell.v|
+Z9 !s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/home/Downloads/digital_design/common|C:/Users/home/Downloads/digital_design/common/binary_cell.v|
+!s101 -O0
+!i113 1
+Z10 o-O0 -vlog01compat -work work
+Z11 !s92 -O0 -vlog01compat -work work +incdir+C:/Users/home/Downloads/digital_design/common
+Z12 tDisableOpt 1 CvgOpt 0
+vfig_7_7
+R1
+!i10b 1
+!s100 5XleY84dFkjfNN<1gYX353
+IYmQbOIi6;bj1VFf=bXY6M0
+R2
+R0
+Z13 w1574020039
+Z14 8C:/Users/home/Downloads/digital_design/fig_7_7_two_dim_dec_mem/fig_7_7.v
+Z15 FC:/Users/home/Downloads/digital_design/fig_7_7_two_dim_dec_mem/fig_7_7.v
+L0 1
+R6
+r1
+!s85 0
+31
+Z16 !s108 1574020106.000000
+Z17 !s107 C:/Users/home/Downloads/digital_design/fig_7_7_two_dim_dec_mem/fig_7_7.v|
+Z18 !s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/home/Downloads/digital_design/fig_7_7_two_dim_dec_mem|C:/Users/home/Downloads/digital_design/fig_7_7_two_dim_dec_mem/fig_7_7.v|
+!s101 -O0
+!i113 1
+R10
+Z19 !s92 -O0 -vlog01compat -work work +incdir+C:/Users/home/Downloads/digital_design/fig_7_7_two_dim_dec_mem
+R12
+vfig_7_7_tb
+!s110 1574020187
+!i10b 1
+!s100 ooef5Dmo6@b@8[9Iazi4]3
+Ik>[kcKc0Y?gl7GQa`hH890
+R2
+R0
+w1574020095
+8C:/Users/home/Downloads/digital_design/fig_7_7_two_dim_dec_mem/fig_7_7_tb.v
+FC:/Users/home/Downloads/digital_design/fig_7_7_two_dim_dec_mem/fig_7_7_tb.v
+L0 1
+R6
+r1
+!s85 0
+31
+!s108 1574020187.000000
+!s107 C:/Users/home/Downloads/digital_design/fig_7_7_two_dim_dec_mem/fig_7_7_tb.v|
+!s90 -reportprogress|300|-work|work|C:/Users/home/Downloads/digital_design/fig_7_7_two_dim_dec_mem/fig_7_7_tb.v|
+!s101 -O0
+!i113 1
+o-O0 -work work
+R12
+vone_by_two_dec
+R1
+!i10b 1
+!s100 @89148DF?6Kin0bJjPAlm3
+I^PPM2fCChBM3P^?A3F7l91
+R2
+R0
+R13
+R14
+R15
+L0 62
+R6
+r1
+!s85 0
+31
+R16
+R17
+R18
+!s101 -O0
+!i113 1
+R10
+R19
+R12
+vsr_latch
+R1
+!i10b 1
+!s100 OLg?^V7hLgO@DC>X;26[o1
+I@XA[BF84nZTnS656<6THd0
+R2
+R0
+R3
+R4
+R5
+L0 20
+R6
+r1
+!s85 0
+31
+R7
+R8
+R9
+!s101 -O0
+!i113 1
+R10
+R11
+R12
