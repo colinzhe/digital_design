@@ -1,3 +1,5 @@
+import state_pkg::*;
+
 module ex_8_2_asmd (
     input rstb, clk, start,
     output logic [3:0] A,
@@ -25,8 +27,8 @@ module ex_8_2_asmd (
         .set_F (set_F),
         .clr_A_F (clr_A_F),
         .incr_A (incr_A),
-        .state_out (state),
-        .next_state_out (next_state)
+        .state (state),
+        .next_state (next_state)
     );
     
     datapath d0 (
@@ -45,16 +47,16 @@ endmodule
 module controller (
     input rstb, clk, start, A2, A3,
     output logic set_E, clr_E, set_F, clr_A_F, incr_A,
-    output logic [1:0] state_out, next_state_out
+    //output logic [1:0] state_out, next_state_out
+    output state_t state, next_state
 );
     //parameter S_idle = 2'b00, S_1 = 2'b01, S_2 = 2'b11;
-    enum logic [1:0] {S_idle, S_1, S_2} state, next_state;
 
-    always_comb
-    begin
-        state_out = state;
-        next_state_out = next_state;
-    end
+    //always_comb
+    //begin
+    //    state_out = state;
+    //    next_state_out = next_state;
+    //end
 
     always_ff @ (posedge clk, negedge rstb)
     begin

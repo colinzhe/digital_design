@@ -10,94 +10,149 @@ cModel Technology
 Z0 dC:/Users/czhe/Downloads/digital_design/ex_8_2_asmd/simulation/modelsim
 vcontroller
 Z1 DXx6 sv_std 3 std 0 22 AD7iAPLo6nTIKk<N0eo=D3
-Z2 !s110 1574723490
-!i10b 1
-!s100 :LALb3^EGRD1^2_KEf6c_0
-ICllzGHdXTGP6;`1=YCDL92
-Z3 VDg1SIo80bB@j0V0VzS_@n1
-Z4 !s105 ex_8_2_asmd_sv_unit
-S1
-R0
-Z5 w1574723482
-Z6 8C:/Users/czhe/Downloads/digital_design/ex_8_2_asmd/ex_8_2_asmd.sv
-Z7 FC:/Users/czhe/Downloads/digital_design/ex_8_2_asmd/ex_8_2_asmd.sv
-L0 45
-Z8 OV;L;10.5b;63
+Z2 DXx4 work 9 state_pkg 0 22 Yhid@_imE`ELf6DdZ92`72
+Z3 DXx4 work 19 ex_8_2_asmd_sv_unit 0 22 6Le5QH`OQC6cG82YG]9A92
+Z4 VDg1SIo80bB@j0V0VzS_@n1
 r1
 !s85 0
 31
-Z9 !s108 1574723490.000000
-Z10 !s107 C:/Users/czhe/Downloads/digital_design/ex_8_2_asmd/ex_8_2_asmd.sv|
-Z11 !s90 -reportprogress|300|-work|work|C:/Users/czhe/Downloads/digital_design/ex_8_2_asmd/ex_8_2_asmd.sv|
+!i10b 1
+!s100 zinSaKfVbZXO[EZlnPaKZ3
+I=;J>=XZ;e_lcImhmSZUED1
+Z5 !s105 ex_8_2_asmd_sv_unit
+S1
+R0
+Z6 w1574865615
+Z7 8C:/Users/czhe/Downloads/digital_design/ex_8_2_asmd/ex_8_2_asmd.sv
+Z8 FC:/Users/czhe/Downloads/digital_design/ex_8_2_asmd/ex_8_2_asmd.sv
+L0 47
+Z9 OV;L;10.5b;63
+Z10 !s108 1574865858.000000
+Z11 !s107 C:/Users/czhe/Downloads/digital_design/ex_8_2_asmd/ex_8_2_asmd.sv|
+Z12 !s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/czhe/Downloads/digital_design/ex_8_2_asmd|C:/Users/czhe/Downloads/digital_design/ex_8_2_asmd/ex_8_2_asmd.sv|
 !i113 1
-Z12 o-work work
-Z13 tCvgOpt 0
+Z13 o-sv -work work
+Z14 !s92 -sv -work work +incdir+C:/Users/czhe/Downloads/digital_design/ex_8_2_asmd
+Z15 tCvgOpt 0
 vdatapath
 R1
 R2
-!i10b 1
-!s100 jE_Kj6V33n32V6SbiYb@E3
-IZHIlH@Qf^FS0N9TY^T>Zb3
 R3
 R4
-S1
-R0
-R5
-R6
-R7
-L0 88
-R8
 r1
 !s85 0
 31
+!i10b 1
+!s100 S?G4AU6kG20B_g=0IVhCa3
+IK6bj=ERNo51?cm_JRk4aW2
+R5
+S1
+R0
+R6
+R7
+R8
+L0 90
 R9
 R10
 R11
-!i113 1
 R12
+!i113 1
 R13
+R14
+R15
 vex_8_2_asmd
 R1
 R2
-!i10b 1
-!s100 O`5hI=PkF`8=o572Ej6<?0
-IS?KR[B8j@fDLSZ@><k]`X0
 R3
 R4
-S1
-R0
-R5
-R6
-R7
-L0 1
-R8
 r1
 !s85 0
 31
+!i10b 1
+!s100 DbkfAg9l8h>>a`o9X6Q7L2
+I_kY@hICnCT7LPh8e8n[Va0
+R5
+S1
+R0
+R6
+R7
+R8
+L0 3
 R9
 R10
 R11
-!i113 1
 R12
+!i113 1
 R13
-vex_8_2_asmd_tb
+R14
+R15
+Xex_8_2_asmd_sv_unit
+R1
 R2
+V6Le5QH`OQC6cG82YG]9A92
+r1
+!s85 0
+31
+!i10b 1
+!s100 LQS8=<K5km19OBM;XF9P03
+I6Le5QH`OQC6cG82YG]9A92
+!i103 1
+S1
+R0
+R6
+R7
+R8
+L0 1
+R9
+R10
+R11
+R12
+!i113 1
+R13
+R14
+R15
+vex_8_2_asmd_tb
+!s110 1574865901
 !i10b 1
 !s100 lH>0kOn][0Aeb[Xcb53Wd3
 I<T<40hc=4Z83>E4^dVLBB0
-R3
+R4
 R0
 w1574697066
 8C:/Users/czhe/Downloads/digital_design/ex_8_2_asmd/ex_8_2_asmd_tb.v
 FC:/Users/czhe/Downloads/digital_design/ex_8_2_asmd/ex_8_2_asmd_tb.v
 L0 1
-R8
+R9
 r1
 !s85 0
 31
-R9
+!s108 1574865901.000000
 !s107 C:/Users/czhe/Downloads/digital_design/ex_8_2_asmd/ex_8_2_asmd_tb.v|
 !s90 -reportprogress|300|-work|work|C:/Users/czhe/Downloads/digital_design/ex_8_2_asmd/ex_8_2_asmd_tb.v|
 !i113 1
-R12
+o-work work
+R15
+Xstate_pkg
+R1
+!s110 1574865858
+!i10b 1
+!s100 ]9oj<b`U5ASFHMckP6Z9G1
+IYhid@_imE`ELf6DdZ92`72
+VYhid@_imE`ELf6DdZ92`72
+S1
+R0
+w1574865535
+8C:/Users/czhe/Downloads/digital_design/ex_8_2_asmd/state_pkg.sv
+FC:/Users/czhe/Downloads/digital_design/ex_8_2_asmd/state_pkg.sv
+L0 1
+R9
+r1
+!s85 0
+31
+R10
+!s107 C:/Users/czhe/Downloads/digital_design/ex_8_2_asmd/state_pkg.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/czhe/Downloads/digital_design/ex_8_2_asmd|C:/Users/czhe/Downloads/digital_design/ex_8_2_asmd/state_pkg.sv|
+!i113 1
 R13
+R14
+R15

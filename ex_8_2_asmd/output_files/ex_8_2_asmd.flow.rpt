@@ -1,5 +1,5 @@
 Flow report for ex_8_2_asmd
-Mon Nov 25 18:09:30 2019
+Wed Nov 27 09:40:45 2019
 Quartus Prime Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
 
 
@@ -40,7 +40,7 @@ refer to the applicable agreement for further details.
 +-------------------------------------------------------------------------------+
 ; Flow Summary                                                                  ;
 +---------------------------------+---------------------------------------------+
-; Flow Status                     ; Successful - Mon Nov 25 18:09:30 2019       ;
+; Flow Status                     ; Successful - Wed Nov 27 09:40:44 2019       ;
 ; Quartus Prime Version           ; 18.1.0 Build 625 09/12/2018 SJ Lite Edition ;
 ; Revision Name                   ; ex_8_2_asmd                                 ;
 ; Top-level Entity Name           ; ex_8_2_asmd                                 ;
@@ -48,7 +48,7 @@ refer to the applicable agreement for further details.
 ; Device                          ; 5CGXFC5C6F27C7                              ;
 ; Timing Models                   ; Final                                       ;
 ; Logic utilization (in ALMs)     ; N/A                                         ;
-; Total registers                 ; 9                                           ;
+; Total registers                 ; 8                                           ;
 ; Total pins                      ; 20                                          ;
 ; Total virtual pins              ; 0                                           ;
 ; Total block memory bits         ; 0                                           ;
@@ -67,7 +67,7 @@ refer to the applicable agreement for further details.
 +-------------------+---------------------+
 ; Option            ; Setting             ;
 +-------------------+---------------------+
-; Start date & time ; 11/25/2019 18:09:14 ;
+; Start date & time ; 11/27/2019 09:40:19 ;
 ; Main task         ; Compilation         ;
 ; Revision Name     ; ex_8_2_asmd         ;
 +-------------------+---------------------+
@@ -78,7 +78,7 @@ refer to the applicable agreement for further details.
 +-------------------------------------+----------------------------------------+---------------+-------------+----------------+
 ; Assignment Name                     ; Value                                  ; Default Value ; Entity Name ; Section Id     ;
 +-------------------------------------+----------------------------------------+---------------+-------------+----------------+
-; COMPILER_SIGNATURE_ID               ; 2543711158273.157472335323916          ; --            ; --          ; --             ;
+; COMPILER_SIGNATURE_ID               ; 2543711158273.157486561819196          ; --            ; --          ; --             ;
 ; EDA_OUTPUT_DATA_FORMAT              ; Verilog Hdl                            ; --            ; --          ; eda_simulation ;
 ; EDA_SIMULATION_TOOL                 ; ModelSim-Altera (Verilog)              ; <None>        ; --          ; --             ;
 ; EDA_TIME_SCALE                      ; 1 ps                                   ; --            ; --          ; eda_simulation ;
@@ -98,8 +98,8 @@ refer to the applicable agreement for further details.
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
 ; Module Name          ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
-; Analysis & Synthesis ; 00:00:17     ; 1.0                     ; 4887 MB             ; 00:00:38                           ;
-; Total                ; 00:00:17     ; --                      ; --                  ; 00:00:38                           ;
+; Analysis & Synthesis ; 00:00:27     ; 1.0                     ; 4888 MB             ; 00:01:01                           ;
+; Total                ; 00:00:27     ; --                      ; --                  ; 00:01:01                           ;
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
 
 

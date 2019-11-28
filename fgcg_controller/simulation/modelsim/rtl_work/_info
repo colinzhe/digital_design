@@ -1,0 +1,56 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/Users/czhe/Downloads/digital_design/fgcg_controller/simulation/modelsim
+vfgcg_controller
+DXx6 sv_std 3 std 0 22 AD7iAPLo6nTIKk<N0eo=D3
+!s110 1574971190
+!i10b 1
+!s100 bjEd1m1oN`bo1dMYW9F3U2
+IiV8HA?mBFmOE95k1AKF222
+Z1 VDg1SIo80bB@j0V0VzS_@n1
+!s105 fgcg_controller_sv_unit
+S1
+R0
+w1574971183
+8C:/Users/czhe/Downloads/digital_design/fgcg_controller/fgcg_controller.sv
+FC:/Users/czhe/Downloads/digital_design/fgcg_controller/fgcg_controller.sv
+L0 1
+Z2 OV;L;10.5b;63
+r1
+!s85 0
+31
+!s108 1574971190.000000
+!s107 C:/Users/czhe/Downloads/digital_design/fgcg_controller/fgcg_controller.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/czhe/Downloads/digital_design/fgcg_controller|C:/Users/czhe/Downloads/digital_design/fgcg_controller/fgcg_controller.sv|
+!i113 1
+o-sv -work work
+!s92 -sv -work work +incdir+C:/Users/czhe/Downloads/digital_design/fgcg_controller
+Z3 tCvgOpt 0
+vfgcg_controller_tb
+!s110 1574971258
+!i10b 1
+!s100 EJh1]Nok?VijX0gF^1S8K0
+IiVo:1<RTk^2a<@Uo<HPga1
+R1
+R0
+w1574971253
+8C:/Users/czhe/Downloads/digital_design/fgcg_controller/fgcg_controller_tb.v
+FC:/Users/czhe/Downloads/digital_design/fgcg_controller/fgcg_controller_tb.v
+L0 1
+R2
+r1
+!s85 0
+31
+!s108 1574971258.000000
+!s107 C:/Users/czhe/Downloads/digital_design/fgcg_controller/fgcg_controller_tb.v|
+!s90 -reportprogress|300|-work|work|C:/Users/czhe/Downloads/digital_design/fgcg_controller/fgcg_controller_tb.v|
+!i113 1
+o-work work
+R3

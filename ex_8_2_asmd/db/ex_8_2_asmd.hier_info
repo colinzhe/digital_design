@@ -1,45 +1,46 @@
 |ex_8_2_asmd
-rstb => rstb.IN1
-clk => clk.IN2
-start => start.IN1
+rstb => controller:c0.rstb
+clk => clk.IN1
+start => controller:c0.start
 A[0] <= datapath:d0.A
 A[1] <= datapath:d0.A
-A[2] <= A2.DB_MAX_OUTPUT_PORT_TYPE
-A[3] <= A3.DB_MAX_OUTPUT_PORT_TYPE
+A[2] <= datapath:d0.A
+A[3] <= datapath:d0.A
 E <= datapath:d0.E
 F <= datapath:d0.F
-state[0] <= controller:c0.state_out
-state[1] <= controller:c0.state_out
-next_state[0] <= controller:c0.next_state_out
-next_state[1] <= controller:c0.next_state_out
+state[0] <= controller:c0.state[0]
+state[1] <= controller:c0.state[1]
+next_state[0] <= controller:c0.next_state[0]
+next_state[1] <= controller:c0.next_state[1]
 set_E <= set_E.DB_MAX_OUTPUT_PORT_TYPE
 clr_E <= clr_E.DB_MAX_OUTPUT_PORT_TYPE
 set_F <= set_F.DB_MAX_OUTPUT_PORT_TYPE
 clr_A_F <= clr_A_F.DB_MAX_OUTPUT_PORT_TYPE
 incr_A <= incr_A.DB_MAX_OUTPUT_PORT_TYPE
-A2 <= A2.DB_MAX_OUTPUT_PORT_TYPE
-A3 <= A3.DB_MAX_OUTPUT_PORT_TYPE
+A2 <= datapath:d0.A
+A3 <= datapath:d0.A
 
 
 |ex_8_2_asmd|controller:c0
-rstb => state~3.DATAIN
-clk => state~1.DATAIN
-start => Selector1.IN2
+rstb => state[0]~reg0.ACLR
+rstb => state[1]~reg0.ACLR
+clk => state[0]~reg0.CLK
+clk => state[1]~reg0.CLK
+start => Selector0.IN5
 start => clr_A_F.DATAB
-start => Selector0.IN2
-A2 => always2.IN0
+A2 => always1.IN0
 A2 => set_E.DATAB
 A2 => clr_E.DATAB
-A3 => always2.IN1
+A3 => always1.IN1
 set_E <= set_E.DB_MAX_OUTPUT_PORT_TYPE
 clr_E <= clr_E.DB_MAX_OUTPUT_PORT_TYPE
-set_F <= set_F.DB_MAX_OUTPUT_PORT_TYPE
+set_F <= Equal2.DB_MAX_OUTPUT_PORT_TYPE
 clr_A_F <= clr_A_F.DB_MAX_OUTPUT_PORT_TYPE
-incr_A <= incr_A.DB_MAX_OUTPUT_PORT_TYPE
-state_out[0] <= incr_A.DB_MAX_OUTPUT_PORT_TYPE
-state_out[1] <= set_F.DB_MAX_OUTPUT_PORT_TYPE
-next_state_out[0] <= Selector1.DB_MAX_OUTPUT_PORT_TYPE
-next_state_out[1] <= next_state.S_2.DB_MAX_OUTPUT_PORT_TYPE
+incr_A <= Equal1.DB_MAX_OUTPUT_PORT_TYPE
+state[0] <= state[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+state[1] <= state[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+next_state[0] <= Selector0.DB_MAX_OUTPUT_PORT_TYPE
+next_state[1] <= next_state.DB_MAX_OUTPUT_PORT_TYPE
 
 
 |ex_8_2_asmd|datapath:d0

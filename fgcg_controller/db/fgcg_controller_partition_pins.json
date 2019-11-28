@@ -1,0 +1,33 @@
+{
+	"partitions" : [
+		{
+			"name" : "Top",
+			"pins" : [
+				{
+					"name" : "valid_out",
+					"strict" : false
+				},
+				{
+					"name" : "clk_en_out",
+					"strict" : false
+				},
+				{
+					"name" : "valid_clk",
+					"strict" : false
+				},
+				{
+					"name" : "valid_in",
+					"strict" : false
+				},
+				{
+					"name" : "clk_en_in",
+					"strict" : false
+				},
+				{
+					"name" : "clk",
+					"strict" : false
+				}
+			]
+		}
+	]
+}

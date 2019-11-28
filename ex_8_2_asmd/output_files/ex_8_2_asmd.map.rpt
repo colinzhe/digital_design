@@ -1,5 +1,5 @@
 Analysis & Synthesis report for ex_8_2_asmd
-Mon Nov 25 18:09:30 2019
+Wed Nov 27 09:40:44 2019
 Quartus Prime Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
 
 
@@ -13,12 +13,11 @@ Quartus Prime Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
   5. Analysis & Synthesis Source Files Read
   6. Analysis & Synthesis Resource Usage Summary
   7. Analysis & Synthesis Resource Utilization by Entity
-  8. State Machine - |ex_8_2_asmd|controller:c0|state
-  9. General Register Statistics
- 10. Multiplexer Restructuring Statistics (Restructuring Performed)
- 11. Post-Synthesis Netlist Statistics for Top Partition
- 12. Elapsed Time Per Partition
- 13. Analysis & Synthesis Messages
+  8. General Register Statistics
+  9. Multiplexer Restructuring Statistics (Restructuring Performed)
+ 10. Post-Synthesis Netlist Statistics for Top Partition
+ 11. Elapsed Time Per Partition
+ 12. Analysis & Synthesis Messages
 
 
 
@@ -44,13 +43,13 @@ refer to the applicable agreement for further details.
 +-------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                  ;
 +---------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status     ; Successful - Mon Nov 25 18:09:30 2019       ;
+; Analysis & Synthesis Status     ; Successful - Wed Nov 27 09:40:44 2019       ;
 ; Quartus Prime Version           ; 18.1.0 Build 625 09/12/2018 SJ Lite Edition ;
 ; Revision Name                   ; ex_8_2_asmd                                 ;
 ; Top-level Entity Name           ; ex_8_2_asmd                                 ;
 ; Family                          ; Cyclone V                                   ;
 ; Logic utilization (in ALMs)     ; N/A                                         ;
-; Total registers                 ; 9                                           ;
+; Total registers                 ; 8                                           ;
 ; Total pins                      ; 20                                          ;
 ; Total virtual pins              ; 0                                           ;
 ; Total block memory bits         ; 0                                           ;
@@ -173,35 +172,36 @@ refer to the applicable agreement for further details.
 +----------------------------------+-----------------+------------------------------+-------------------------------------------------------------------+---------+
 ; File Name with User-Entered Path ; Used in Netlist ; File Type                    ; File Name with Absolute Path                                      ; Library ;
 +----------------------------------+-----------------+------------------------------+-------------------------------------------------------------------+---------+
+; state_pkg.sv                     ; yes             ; User SystemVerilog HDL File  ; C:/Users/czhe/Downloads/digital_design/ex_8_2_asmd/state_pkg.sv   ;         ;
 ; ex_8_2_asmd.sv                   ; yes             ; User SystemVerilog HDL File  ; C:/Users/czhe/Downloads/digital_design/ex_8_2_asmd/ex_8_2_asmd.sv ;         ;
 +----------------------------------+-----------------+------------------------------+-------------------------------------------------------------------+---------+
 
 
-+-----------------------------------------------------------------------+
-; Analysis & Synthesis Resource Usage Summary                           ;
-+---------------------------------------------+-------------------------+
-; Resource                                    ; Usage                   ;
-+---------------------------------------------+-------------------------+
-; Estimate of Logic utilization (ALMs needed) ; 7                       ;
-;                                             ;                         ;
-; Combinational ALUT usage for logic          ; 13                      ;
-;     -- 7 input functions                    ; 0                       ;
-;     -- 6 input functions                    ; 0                       ;
-;     -- 5 input functions                    ; 2                       ;
-;     -- 4 input functions                    ; 2                       ;
-;     -- <=3 input functions                  ; 9                       ;
-;                                             ;                         ;
-; Dedicated logic registers                   ; 9                       ;
-;                                             ;                         ;
-; I/O pins                                    ; 20                      ;
-;                                             ;                         ;
-; Total DSP Blocks                            ; 0                       ;
-;                                             ;                         ;
-; Maximum fan-out node                        ; controller:c0|state.S_1 ;
-; Maximum fan-out                             ; 12                      ;
-; Total fan-out                               ; 103                     ;
-; Average fan-out                             ; 1.66                    ;
-+---------------------------------------------+-------------------------+
++----------------------------------------------------------------------+
+; Analysis & Synthesis Resource Usage Summary                          ;
++---------------------------------------------+------------------------+
+; Resource                                    ; Usage                  ;
++---------------------------------------------+------------------------+
+; Estimate of Logic utilization (ALMs needed) ; 8                      ;
+;                                             ;                        ;
+; Combinational ALUT usage for logic          ; 14                     ;
+;     -- 7 input functions                    ; 0                      ;
+;     -- 6 input functions                    ; 1                      ;
+;     -- 5 input functions                    ; 2                      ;
+;     -- 4 input functions                    ; 4                      ;
+;     -- <=3 input functions                  ; 7                      ;
+;                                             ;                        ;
+; Dedicated logic registers                   ; 8                      ;
+;                                             ;                        ;
+; I/O pins                                    ; 20                     ;
+;                                             ;                        ;
+; Total DSP Blocks                            ; 0                      ;
+;                                             ;                        ;
+; Maximum fan-out node                        ; controller:c0|state[0] ;
+; Maximum fan-out                             ; 15                     ;
+; Total fan-out                               ; 110                    ;
+; Average fan-out                             ; 1.77                   ;
++---------------------------------------------+------------------------+
 
 
 +-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
@@ -209,23 +209,11 @@ refer to the applicable agreement for further details.
 +----------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+----------------------------+-------------+--------------+
 ; Compilation Hierarchy Node ; Combinational ALUTs ; Dedicated Logic Registers ; Block Memory Bits ; DSP Blocks ; Pins ; Virtual Pins ; Full Hierarchy Name        ; Entity Name ; Library Name ;
 +----------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+----------------------------+-------------+--------------+
-; |ex_8_2_asmd               ; 13 (0)              ; 9 (0)                     ; 0                 ; 0          ; 20   ; 0            ; |ex_8_2_asmd               ; ex_8_2_asmd ; work         ;
-;    |controller:c0|         ; 6 (6)               ; 3 (3)                     ; 0                 ; 0          ; 0    ; 0            ; |ex_8_2_asmd|controller:c0 ; controller  ; work         ;
+; |ex_8_2_asmd               ; 14 (0)              ; 8 (0)                     ; 0                 ; 0          ; 20   ; 0            ; |ex_8_2_asmd               ; ex_8_2_asmd ; work         ;
+;    |controller:c0|         ; 7 (7)               ; 2 (2)                     ; 0                 ; 0          ; 0    ; 0            ; |ex_8_2_asmd|controller:c0 ; controller  ; work         ;
 ;    |datapath:d0|           ; 7 (7)               ; 6 (6)                     ; 0                 ; 0          ; 0    ; 0            ; |ex_8_2_asmd|datapath:d0   ; datapath    ; work         ;
 +----------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+----------------------------+-------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
-
-
-Encoding Type:  One-Hot
-+-----------------------------------------------------+
-; State Machine - |ex_8_2_asmd|controller:c0|state    ;
-+--------------+--------------+-----------+-----------+
-; Name         ; state.S_idle ; state.S_2 ; state.S_1 ;
-+--------------+--------------+-----------+-----------+
-; state.S_idle ; 0            ; 0         ; 0         ;
-; state.S_1    ; 1            ; 0         ; 1         ;
-; state.S_2    ; 1            ; 1         ; 0         ;
-+--------------+--------------+-----------+-----------+
 
 
 +------------------------------------------------------+
@@ -233,10 +221,10 @@ Encoding Type:  One-Hot
 +----------------------------------------------+-------+
 ; Statistic                                    ; Value ;
 +----------------------------------------------+-------+
-; Total registers                              ; 9     ;
+; Total registers                              ; 8     ;
 ; Number of registers using Synchronous Clear  ; 0     ;
 ; Number of registers using Synchronous Load   ; 0     ;
-; Number of registers using Asynchronous Clear ; 3     ;
+; Number of registers using Asynchronous Clear ; 2     ;
 ; Number of registers using Asynchronous Load  ; 0     ;
 ; Number of registers using Clock Enable       ; 4     ;
 ; Number of registers using Preset             ; 0     ;
@@ -257,21 +245,22 @@ Encoding Type:  One-Hot
 +-----------------------+-----------------------------+
 ; Type                  ; Count                       ;
 +-----------------------+-----------------------------+
-; arriav_ff             ; 9                           ;
-;     CLR               ; 3                           ;
+; arriav_ff             ; 8                           ;
+;     CLR               ; 2                           ;
 ;     ENA               ; 4                           ;
 ;     plain             ; 2                           ;
-; arriav_lcell_comb     ; 14                          ;
-;     normal            ; 14                          ;
+; arriav_lcell_comb     ; 15                          ;
+;     normal            ; 15                          ;
 ;         1 data inputs ; 1                           ;
-;         2 data inputs ; 4                           ;
+;         2 data inputs ; 2                           ;
 ;         3 data inputs ; 5                           ;
-;         4 data inputs ; 2                           ;
+;         4 data inputs ; 4                           ;
 ;         5 data inputs ; 2                           ;
+;         6 data inputs ; 1                           ;
 ; boundary_port         ; 20                          ;
 ;                       ;                             ;
 ; Max LUT depth         ; 2.00                        ;
-; Average LUT depth     ; 1.08                        ;
+; Average LUT depth     ; 1.12                        ;
 +-----------------------+-----------------------------+
 
 
@@ -280,7 +269,7 @@ Encoding Type:  One-Hot
 +----------------+--------------+
 ; Partition Name ; Elapsed Time ;
 +----------------+--------------+
-; Top            ; 00:00:00     ;
+; Top            ; 00:00:01     ;
 +----------------+--------------+
 
 
@@ -290,28 +279,30 @@ Encoding Type:  One-Hot
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
-    Info: Processing started: Mon Nov 25 18:09:12 2019
+    Info: Processing started: Wed Nov 27 09:40:17 2019
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off ex_8_2_asmd -c ex_8_2_asmd
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 8 of the 8 processors detected
+Info (12021): Found 1 design units, including 0 entities, in source file state_pkg.sv
+    Info (12022): Found design unit 1: state_pkg (SystemVerilog) File: C:/Users/czhe/Downloads/digital_design/ex_8_2_asmd/state_pkg.sv Line: 1
 Info (12021): Found 3 design units, including 3 entities, in source file ex_8_2_asmd.sv
-    Info (12023): Found entity 1: ex_8_2_asmd File: C:/Users/czhe/Downloads/digital_design/ex_8_2_asmd/ex_8_2_asmd.sv Line: 1
-    Info (12023): Found entity 2: controller File: C:/Users/czhe/Downloads/digital_design/ex_8_2_asmd/ex_8_2_asmd.sv Line: 45
-    Info (12023): Found entity 3: datapath File: C:/Users/czhe/Downloads/digital_design/ex_8_2_asmd/ex_8_2_asmd.sv Line: 87
+    Info (12023): Found entity 1: ex_8_2_asmd File: C:/Users/czhe/Downloads/digital_design/ex_8_2_asmd/ex_8_2_asmd.sv Line: 3
+    Info (12023): Found entity 2: controller File: C:/Users/czhe/Downloads/digital_design/ex_8_2_asmd/ex_8_2_asmd.sv Line: 47
+    Info (12023): Found entity 3: datapath File: C:/Users/czhe/Downloads/digital_design/ex_8_2_asmd/ex_8_2_asmd.sv Line: 90
 Info (12127): Elaborating entity "ex_8_2_asmd" for the top level hierarchy
-Info (12128): Elaborating entity "controller" for hierarchy "controller:c0" File: C:/Users/czhe/Downloads/digital_design/ex_8_2_asmd/ex_8_2_asmd.sv Line: 30
-Info (12128): Elaborating entity "datapath" for hierarchy "datapath:d0" File: C:/Users/czhe/Downloads/digital_design/ex_8_2_asmd/ex_8_2_asmd.sv Line: 42
+Info (12128): Elaborating entity "controller" for hierarchy "controller:c0" File: C:/Users/czhe/Downloads/digital_design/ex_8_2_asmd/ex_8_2_asmd.sv Line: 32
+Info (12128): Elaborating entity "datapath" for hierarchy "datapath:d0" File: C:/Users/czhe/Downloads/digital_design/ex_8_2_asmd/ex_8_2_asmd.sv Line: 44
 Info (286030): Timing-Driven Synthesis is running
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
-Info (21057): Implemented 35 device resources after synthesis - the final resource count might be different
+Info (21057): Implemented 36 device resources after synthesis - the final resource count might be different
     Info (21058): Implemented 3 input pins
     Info (21059): Implemented 17 output pins
-    Info (21061): Implemented 15 logic cells
+    Info (21061): Implemented 16 logic cells
 Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 1 warning
-    Info: Peak virtual memory: 4887 megabytes
-    Info: Processing ended: Mon Nov 25 18:09:30 2019
-    Info: Elapsed time: 00:00:18
-    Info: Total CPU time (on all processors): 00:00:38
+    Info: Peak virtual memory: 4888 megabytes
+    Info: Processing ended: Wed Nov 27 09:40:45 2019
+    Info: Elapsed time: 00:00:28
+    Info: Total CPU time (on all processors): 00:01:01
 
 

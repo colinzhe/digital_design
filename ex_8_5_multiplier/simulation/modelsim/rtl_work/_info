@@ -1,0 +1,131 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/Users/czhe/Downloads/digital_design/ex_8_5_multiplier/simulation/modelsim
+vex_8_5
+Z1 DXx6 sv_std 3 std 0 22 AD7iAPLo6nTIKk<N0eo=D3
+Z2 DXx4 work 10 ex_8_5_pkg 0 22 Di0c`iK74N_MOTk<:DLzf0
+DXx4 work 14 ex_8_5_sv_unit 0 22 RVR9YcGf_N7aAda669a<90
+Z3 VDg1SIo80bB@j0V0VzS_@n1
+r1
+!s85 0
+31
+!i10b 1
+!s100 :gPHE1N:nYd:<<]XKONEa1
+IJiLlbYCb75Ie[jc?Go@bI1
+!s105 ex_8_5_sv_unit
+S1
+R0
+Z4 w1574953343
+Z5 8C:/Users/czhe/Downloads/digital_design/ex_8_5_multiplier/ex_8_5.sv
+Z6 FC:/Users/czhe/Downloads/digital_design/ex_8_5_multiplier/ex_8_5.sv
+L0 3
+Z7 OV;L;10.5b;63
+Z8 !s108 1574955782.000000
+Z9 !s107 C:/Users/czhe/Downloads/digital_design/ex_8_5_multiplier/ex_8_5.sv|
+Z10 !s90 -reportprogress|300|-work|work|C:/Users/czhe/Downloads/digital_design/ex_8_5_multiplier/ex_8_5.sv|
+!i113 1
+Z11 o-work work
+Z12 tCvgOpt 0
+Xex_8_5_pkg
+R1
+!s110 1574955782
+!i10b 1
+!s100 g?MDLE7?8;TDCVT1c9F]`0
+IDi0c`iK74N_MOTk<:DLzf0
+VDi0c`iK74N_MOTk<:DLzf0
+S1
+R0
+w1574955566
+8C:/Users/czhe/Downloads/digital_design/ex_8_5_multiplier/ex_8_5_pkg.sv
+FC:/Users/czhe/Downloads/digital_design/ex_8_5_multiplier/ex_8_5_pkg.sv
+L0 1
+R7
+r1
+!s85 0
+31
+R8
+!s107 C:/Users/czhe/Downloads/digital_design/ex_8_5_multiplier/ex_8_5_pkg.sv|
+!s90 -reportprogress|300|-work|work|C:/Users/czhe/Downloads/digital_design/ex_8_5_multiplier/ex_8_5_pkg.sv|
+!i113 1
+R11
+R12
+Xex_8_5_sv_unit
+R1
+R2
+VRVR9YcGf_N7aAda669a<90
+r1
+!s85 0
+31
+!i10b 1
+!s100 7;=Q:MdY[DEQ:<SScm_oZ3
+IRVR9YcGf_N7aAda669a<90
+!i103 1
+S1
+R0
+R4
+R5
+R6
+L0 1
+R7
+R8
+R9
+R10
+!i113 1
+R11
+R12
+vex_8_5_tb
+R1
+R2
+DXx4 work 17 ex_8_5_tb_sv_unit 0 22 i@8T9nf[[heR76PO:RnLS1
+R3
+r1
+!s85 0
+31
+!i10b 1
+!s100 fGN@:V8_?H3z6@Z5@6JPc1
+I[@CGP_lkogTiCG]o1U`9i1
+!s105 ex_8_5_tb_sv_unit
+S1
+R0
+Z13 w1574955574
+Z14 8C:/Users/czhe/Downloads/digital_design/ex_8_5_multiplier/ex_8_5_tb.sv
+Z15 FC:/Users/czhe/Downloads/digital_design/ex_8_5_multiplier/ex_8_5_tb.sv
+L0 3
+R7
+R8
+Z16 !s107 C:/Users/czhe/Downloads/digital_design/ex_8_5_multiplier/ex_8_5_tb.sv|
+Z17 !s90 -reportprogress|300|-work|work|C:/Users/czhe/Downloads/digital_design/ex_8_5_multiplier/ex_8_5_tb.sv|
+!i113 1
+R11
+R12
+Xex_8_5_tb_sv_unit
+R1
+R2
+Vi@8T9nf[[heR76PO:RnLS1
+r1
+!s85 0
+31
+!i10b 1
+!s100 GDaRk`HZW7@BLeR`d@8lk1
+Ii@8T9nf[[heR76PO:RnLS1
+!i103 1
+S1
+R0
+R13
+R14
+R15
+L0 1
+R7
+R8
+R16
+R17
+!i113 1
+R11
+R12

@@ -1,0 +1,1 @@
+Warning (10268): Verilog HDL information at ex_8_5.sv(52): always construct contains both blocking and non-blocking assignments File: C:/Users/czhe/Downloads/digital_design/ex_8_5_multiplier/ex_8_5.sv Line: 52
