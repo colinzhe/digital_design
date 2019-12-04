@@ -1,0 +1,266 @@
+# Reading C:/intelFPGA/18.1/modelsim_ase/tcl/vsim/pref.tcl
+# do ex_8_7_alg_run_msim_rtl_verilog.do
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Model Technology ModelSim - Intel FPGA Edition vmap 10.5b Lib Mapping Utility 2016.10 Oct  5 2016
+# vmap work rtl_work 
+# Modifying C:/intelFPGA/18.1/modelsim_ase/win32aloem/../modelsim.ini
+# 
+# vlog -sv -work work +incdir+C:/Users/home/Downloads/digital_design/ex_8_7_alg {C:/Users/home/Downloads/digital_design/ex_8_7_alg/ex_8_7_alg.sv}
+# ** Note: (vlog-1901) OptionFile "C:/Users/home/Documents/Fpga_proj/moore_binary_counter/simulation/modelsim/vlog.opt" not found. Ignored.
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 13:58:53 on Dec 03,2019
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/home/Downloads/digital_design/ex_8_7_alg" C:/Users/home/Downloads/digital_design/ex_8_7_alg/ex_8_7_alg.sv 
+# -- Compiling module ex_8_7_alg
+# 
+# Top level modules:
+# 	ex_8_7_alg
+# End time: 13:58:54 on Dec 03,2019, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# 
+vlog -reportprogress 300 -work work C:/Users/home/Downloads/digital_design/ex_8_7_alg/ex_8_7_alg_tb.sv
+# ** Note: (vlog-1901) OptionFile "C:/Users/home/Documents/Fpga_proj/moore_binary_counter/simulation/modelsim/vlog.opt" not found. Ignored.
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 13:59:00 on Dec 03,2019
+# vlog -reportprogress 300 -work work C:/Users/home/Downloads/digital_design/ex_8_7_alg/ex_8_7_alg_tb.sv 
+# -- Compiling module ex_8_7_alg_tb
+# 
+# Top level modules:
+# 	ex_8_7_alg_tb
+# End time: 13:59:00 on Dec 03,2019, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vsim work.ex_8_7_alg_tb
+# vsim work.ex_8_7_alg_tb 
+# Start time: 13:59:03 on Dec 03,2019
+# Loading sv_std.std
+# Loading work.ex_8_7_alg_tb
+# Loading work.ex_8_7_alg
+add wave -position insertpoint  \
+sim:/ex_8_7_alg_tb/multiplicand \
+sim:/ex_8_7_alg_tb/multiplier \
+sim:/ex_8_7_alg_tb/product \
+sim:/ex_8_7_alg_tb/expected_val \
+sim:/ex_8_7_alg_tb/error
+run
+# ** Note: $finish    : C:/Users/home/Downloads/digital_design/ex_8_7_alg/ex_8_7_alg_tb.sv(13)
+#    Time: 10500 ps  Iteration: 0  Instance: /ex_8_7_alg_tb
+# 1
+# Break in Module ex_8_7_alg_tb at C:/Users/home/Downloads/digital_design/ex_8_7_alg/ex_8_7_alg_tb.sv line 13
+vlog -O0 -sv -work work +incdir+C:/Users/home/Downloads/digital_design/ex_8_7_alg C:/Users/home/Downloads/digital_design/ex_8_7_alg/ex_8_7_alg.sv
+# ** Note: (vlog-1901) OptionFile "C:/Users/home/Documents/Fpga_proj/moore_binary_counter/simulation/modelsim/vlog.opt" not found. Ignored.
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 14:06:07 on Dec 03,2019
+# vlog -reportprogress 300 -O0 -sv -work work "+incdir+C:/Users/home/Downloads/digital_design/ex_8_7_alg" C:/Users/home/Downloads/digital_design/ex_8_7_alg/ex_8_7_alg.sv 
+# -- Compiling module ex_8_7_alg
+# ** Error: (vlog-13069) C:/Users/home/Downloads/digital_design/ex_8_7_alg/ex_8_7_alg.sv(4): near "output": syntax error, unexpected output, expecting ')'.
+# End time: 14:06:07 on Dec 03,2019, Elapsed time: 0:00:00
+# Errors: 1, Warnings: 0
+# C:/intelFPGA/18.1/modelsim_ase/win32aloem/vlog failed.
+vlog -O0 -work work C:/Users/home/Downloads/digital_design/ex_8_7_alg/ex_8_7_alg_tb.sv
+# ** Note: (vlog-1901) OptionFile "C:/Users/home/Documents/Fpga_proj/moore_binary_counter/simulation/modelsim/vlog.opt" not found. Ignored.
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 14:06:07 on Dec 03,2019
+# vlog -reportprogress 300 -O0 -work work C:/Users/home/Downloads/digital_design/ex_8_7_alg/ex_8_7_alg_tb.sv 
+# -- Compiling module ex_8_7_alg_tb
+# 
+# Top level modules:
+# 	ex_8_7_alg_tb
+# End time: 14:06:07 on Dec 03,2019, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vlog -O0 -sv -work work +incdir+C:/Users/home/Downloads/digital_design/ex_8_7_alg C:/Users/home/Downloads/digital_design/ex_8_7_alg/ex_8_7_alg.sv
+# ** Note: (vlog-1901) OptionFile "C:/Users/home/Documents/Fpga_proj/moore_binary_counter/simulation/modelsim/vlog.opt" not found. Ignored.
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 14:06:16 on Dec 03,2019
+# vlog -reportprogress 300 -O0 -sv -work work "+incdir+C:/Users/home/Downloads/digital_design/ex_8_7_alg" C:/Users/home/Downloads/digital_design/ex_8_7_alg/ex_8_7_alg.sv 
+# -- Compiling module ex_8_7_alg
+# 
+# Top level modules:
+# 	ex_8_7_alg
+# End time: 14:06:16 on Dec 03,2019, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vlog -O0 -work work C:/Users/home/Downloads/digital_design/ex_8_7_alg/ex_8_7_alg_tb.sv
+# ** Note: (vlog-1901) OptionFile "C:/Users/home/Documents/Fpga_proj/moore_binary_counter/simulation/modelsim/vlog.opt" not found. Ignored.
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 14:06:16 on Dec 03,2019
+# vlog -reportprogress 300 -O0 -work work C:/Users/home/Downloads/digital_design/ex_8_7_alg/ex_8_7_alg_tb.sv 
+# -- Compiling module ex_8_7_alg_tb
+# 
+# Top level modules:
+# 	ex_8_7_alg_tb
+# End time: 14:06:16 on Dec 03,2019, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+restart
+# Loading work.ex_8_7_alg_tb
+# Loading work.ex_8_7_alg
+# ** Warning: (vsim-3017) C:/Users/home/Downloads/digital_design/ex_8_7_alg/ex_8_7_alg_tb.sv(8): [TFMPC] - Too few port connections. Expected 7, found 3.
+#    Time: 0 ps  Iteration: 0  Instance: /ex_8_7_alg_tb/dut File: C:/Users/home/Downloads/digital_design/ex_8_7_alg/ex_8_7_alg.sv
+# ** Warning: (vsim-3722) C:/Users/home/Downloads/digital_design/ex_8_7_alg/ex_8_7_alg_tb.sv(8): [TFMPC] - Missing connection for port 'A'.
+# ** Warning: (vsim-3722) C:/Users/home/Downloads/digital_design/ex_8_7_alg/ex_8_7_alg_tb.sv(8): [TFMPC] - Missing connection for port 'B'.
+# ** Warning: (vsim-3722) C:/Users/home/Downloads/digital_design/ex_8_7_alg/ex_8_7_alg_tb.sv(8): [TFMPC] - Missing connection for port 'Q'.
+# ** Warning: (vsim-3722) C:/Users/home/Downloads/digital_design/ex_8_7_alg/ex_8_7_alg_tb.sv(8): [TFMPC] - Missing connection for port 'C'.
+vsim work.ex_8_7_alg_tb
+# End time: 14:06:24 on Dec 03,2019, Elapsed time: 0:07:21
+# Errors: 2, Warnings: 5
+# vsim work.ex_8_7_alg_tb 
+# Start time: 14:06:24 on Dec 03,2019
+# Loading sv_std.std
+# Loading work.ex_8_7_alg_tb
+# Loading work.ex_8_7_alg
+# ** Warning: (vsim-3017) C:/Users/home/Downloads/digital_design/ex_8_7_alg/ex_8_7_alg_tb.sv(8): [TFMPC] - Too few port connections. Expected 7, found 3.
+#    Time: 0 ps  Iteration: 0  Instance: /ex_8_7_alg_tb/dut File: C:/Users/home/Downloads/digital_design/ex_8_7_alg/ex_8_7_alg.sv
+# ** Warning: (vsim-3722) C:/Users/home/Downloads/digital_design/ex_8_7_alg/ex_8_7_alg_tb.sv(8): [TFMPC] - Missing connection for port 'A'.
+# ** Warning: (vsim-3722) C:/Users/home/Downloads/digital_design/ex_8_7_alg/ex_8_7_alg_tb.sv(8): [TFMPC] - Missing connection for port 'B'.
+# ** Warning: (vsim-3722) C:/Users/home/Downloads/digital_design/ex_8_7_alg/ex_8_7_alg_tb.sv(8): [TFMPC] - Missing connection for port 'Q'.
+# ** Warning: (vsim-3722) C:/Users/home/Downloads/digital_design/ex_8_7_alg/ex_8_7_alg_tb.sv(8): [TFMPC] - Missing connection for port 'C'.
+vsim work.ex_8_7_alg_tb
+# End time: 14:07:06 on Dec 03,2019, Elapsed time: 0:00:42
+# Errors: 0, Warnings: 5
+# vsim work.ex_8_7_alg_tb 
+# Start time: 14:07:06 on Dec 03,2019
+# Loading sv_std.std
+# Loading work.ex_8_7_alg_tb
+# Loading work.ex_8_7_alg
+# ** Warning: (vsim-3017) C:/Users/home/Downloads/digital_design/ex_8_7_alg/ex_8_7_alg_tb.sv(8): [TFMPC] - Too few port connections. Expected 7, found 3.
+#    Time: 0 ps  Iteration: 0  Instance: /ex_8_7_alg_tb/dut File: C:/Users/home/Downloads/digital_design/ex_8_7_alg/ex_8_7_alg.sv
+# ** Warning: (vsim-3722) C:/Users/home/Downloads/digital_design/ex_8_7_alg/ex_8_7_alg_tb.sv(8): [TFMPC] - Missing connection for port 'A'.
+# ** Warning: (vsim-3722) C:/Users/home/Downloads/digital_design/ex_8_7_alg/ex_8_7_alg_tb.sv(8): [TFMPC] - Missing connection for port 'B'.
+# ** Warning: (vsim-3722) C:/Users/home/Downloads/digital_design/ex_8_7_alg/ex_8_7_alg_tb.sv(8): [TFMPC] - Missing connection for port 'Q'.
+# ** Warning: (vsim-3722) C:/Users/home/Downloads/digital_design/ex_8_7_alg/ex_8_7_alg_tb.sv(8): [TFMPC] - Missing connection for port 'C'.
+vlog -O0 -work work C:/Users/home/Downloads/digital_design/ex_8_7_alg/ex_8_7_alg_tb.sv
+# ** Note: (vlog-1901) OptionFile "C:/Users/home/Documents/Fpga_proj/moore_binary_counter/simulation/modelsim/vlog.opt" not found. Ignored.
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 14:07:10 on Dec 03,2019
+# vlog -reportprogress 300 -O0 -work work C:/Users/home/Downloads/digital_design/ex_8_7_alg/ex_8_7_alg_tb.sv 
+# -- Compiling module ex_8_7_alg_tb
+# 
+# Top level modules:
+# 	ex_8_7_alg_tb
+# End time: 14:07:10 on Dec 03,2019, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vsim work.ex_8_7_alg_tb
+# End time: 14:07:12 on Dec 03,2019, Elapsed time: 0:00:06
+# Errors: 0, Warnings: 5
+# vsim work.ex_8_7_alg_tb 
+# Start time: 14:07:12 on Dec 03,2019
+# Loading sv_std.std
+# Loading work.ex_8_7_alg_tb
+# Loading work.ex_8_7_alg
+# ** Warning: (vsim-3017) C:/Users/home/Downloads/digital_design/ex_8_7_alg/ex_8_7_alg_tb.sv(10): [TFMPC] - Too few port connections. Expected 7, found 3.
+#    Time: 0 ps  Iteration: 0  Instance: /ex_8_7_alg_tb/dut File: C:/Users/home/Downloads/digital_design/ex_8_7_alg/ex_8_7_alg.sv
+# ** Warning: (vsim-3722) C:/Users/home/Downloads/digital_design/ex_8_7_alg/ex_8_7_alg_tb.sv(10): [TFMPC] - Missing connection for port 'A'.
+# ** Warning: (vsim-3722) C:/Users/home/Downloads/digital_design/ex_8_7_alg/ex_8_7_alg_tb.sv(10): [TFMPC] - Missing connection for port 'B'.
+# ** Warning: (vsim-3722) C:/Users/home/Downloads/digital_design/ex_8_7_alg/ex_8_7_alg_tb.sv(10): [TFMPC] - Missing connection for port 'Q'.
+# ** Warning: (vsim-3722) C:/Users/home/Downloads/digital_design/ex_8_7_alg/ex_8_7_alg_tb.sv(10): [TFMPC] - Missing connection for port 'C'.
+add wave -position insertpoint  \
+sim:/ex_8_7_alg_tb/multiplicand \
+sim:/ex_8_7_alg_tb/multiplier \
+sim:/ex_8_7_alg_tb/product \
+sim:/ex_8_7_alg_tb/A \
+sim:/ex_8_7_alg_tb/B \
+sim:/ex_8_7_alg_tb/Q \
+sim:/ex_8_7_alg_tb/C \
+sim:/ex_8_7_alg_tb/expected_val \
+sim:/ex_8_7_alg_tb/error
+run
+# ** Note: $finish    : C:/Users/home/Downloads/digital_design/ex_8_7_alg/ex_8_7_alg_tb.sv(15)
+#    Time: 10500 ps  Iteration: 0  Instance: /ex_8_7_alg_tb
+# 1
+# Break in Module ex_8_7_alg_tb at C:/Users/home/Downloads/digital_design/ex_8_7_alg/ex_8_7_alg_tb.sv line 15
+vlog -O0 -sv -work work +incdir+C:/Users/home/Downloads/digital_design/ex_8_7_alg C:/Users/home/Downloads/digital_design/ex_8_7_alg/ex_8_7_alg.sv
+# ** Note: (vlog-1901) OptionFile "C:/Users/home/Documents/Fpga_proj/moore_binary_counter/simulation/modelsim/vlog.opt" not found. Ignored.
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 14:10:30 on Dec 03,2019
+# vlog -reportprogress 300 -O0 -sv -work work "+incdir+C:/Users/home/Downloads/digital_design/ex_8_7_alg" C:/Users/home/Downloads/digital_design/ex_8_7_alg/ex_8_7_alg.sv 
+# -- Compiling module ex_8_7_alg
+# 
+# Top level modules:
+# 	ex_8_7_alg
+# End time: 14:10:30 on Dec 03,2019, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vlog -O0 -work work C:/Users/home/Downloads/digital_design/ex_8_7_alg/ex_8_7_alg_tb.sv
+# ** Note: (vlog-1901) OptionFile "C:/Users/home/Documents/Fpga_proj/moore_binary_counter/simulation/modelsim/vlog.opt" not found. Ignored.
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 14:10:30 on Dec 03,2019
+# vlog -reportprogress 300 -O0 -work work C:/Users/home/Downloads/digital_design/ex_8_7_alg/ex_8_7_alg_tb.sv 
+# -- Compiling module ex_8_7_alg_tb
+# 
+# Top level modules:
+# 	ex_8_7_alg_tb
+# End time: 14:10:30 on Dec 03,2019, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vsim work.ex_8_7_alg_tb
+# End time: 14:10:33 on Dec 03,2019, Elapsed time: 0:03:21
+# Errors: 0, Warnings: 5
+# vsim work.ex_8_7_alg_tb 
+# Start time: 14:10:33 on Dec 03,2019
+# Loading sv_std.std
+# Loading work.ex_8_7_alg_tb
+# Loading work.ex_8_7_alg
+vlog -O0 -sv -work work +incdir+C:/Users/home/Downloads/digital_design/ex_8_7_alg C:/Users/home/Downloads/digital_design/ex_8_7_alg/ex_8_7_alg.sv
+# ** Note: (vlog-1901) OptionFile "C:/Users/home/Documents/Fpga_proj/moore_binary_counter/simulation/modelsim/vlog.opt" not found. Ignored.
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 14:11:17 on Dec 03,2019
+# vlog -reportprogress 300 -O0 -sv -work work "+incdir+C:/Users/home/Downloads/digital_design/ex_8_7_alg" C:/Users/home/Downloads/digital_design/ex_8_7_alg/ex_8_7_alg.sv 
+# -- Compiling module ex_8_7_alg
+# 
+# Top level modules:
+# 	ex_8_7_alg
+# End time: 14:11:17 on Dec 03,2019, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vlog -O0 -work work C:/Users/home/Downloads/digital_design/ex_8_7_alg/ex_8_7_alg_tb.sv
+# ** Note: (vlog-1901) OptionFile "C:/Users/home/Documents/Fpga_proj/moore_binary_counter/simulation/modelsim/vlog.opt" not found. Ignored.
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 14:11:17 on Dec 03,2019
+# vlog -reportprogress 300 -O0 -work work C:/Users/home/Downloads/digital_design/ex_8_7_alg/ex_8_7_alg_tb.sv 
+# -- Compiling module ex_8_7_alg_tb
+# 
+# Top level modules:
+# 	ex_8_7_alg_tb
+# End time: 14:11:17 on Dec 03,2019, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vsim work.ex_8_7_alg_tb
+# End time: 14:11:21 on Dec 03,2019, Elapsed time: 0:00:48
+# Errors: 0, Warnings: 0
+# vsim work.ex_8_7_alg_tb 
+# Start time: 14:11:21 on Dec 03,2019
+# Loading sv_std.std
+# Loading work.ex_8_7_alg_tb
+# Loading work.ex_8_7_alg
+add wave -position insertpoint  \
+sim:/ex_8_7_alg_tb/multiplicand \
+sim:/ex_8_7_alg_tb/multiplier \
+sim:/ex_8_7_alg_tb/product \
+sim:/ex_8_7_alg_tb/A \
+sim:/ex_8_7_alg_tb/B \
+sim:/ex_8_7_alg_tb/Q \
+sim:/ex_8_7_alg_tb/C \
+sim:/ex_8_7_alg_tb/expected_val \
+sim:/ex_8_7_alg_tb/error
+run
+# ** Note: $finish    : C:/Users/home/Downloads/digital_design/ex_8_7_alg/ex_8_7_alg_tb.sv(17)
+#    Time: 10500 ps  Iteration: 0  Instance: /ex_8_7_alg_tb
+# 1
+# Break in Module ex_8_7_alg_tb at C:/Users/home/Downloads/digital_design/ex_8_7_alg/ex_8_7_alg_tb.sv line 17
+vlog -O0 -sv -work work +incdir+C:/Users/home/Downloads/digital_design/ex_8_7_alg C:/Users/home/Downloads/digital_design/ex_8_7_alg/ex_8_7_alg.sv
+# ** Note: (vlog-1901) OptionFile "C:/Users/home/Documents/Fpga_proj/moore_binary_counter/simulation/modelsim/vlog.opt" not found. Ignored.
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 14:14:01 on Dec 03,2019
+# vlog -reportprogress 300 -O0 -sv -work work "+incdir+C:/Users/home/Downloads/digital_design/ex_8_7_alg" C:/Users/home/Downloads/digital_design/ex_8_7_alg/ex_8_7_alg.sv 
+# -- Compiling module ex_8_7_alg
+# 
+# Top level modules:
+# 	ex_8_7_alg
+# End time: 14:14:01 on Dec 03,2019, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+restart
+# Loading work.ex_8_7_alg
+run
+# ** Note: $finish    : C:/Users/home/Downloads/digital_design/ex_8_7_alg/ex_8_7_alg_tb.sv(17)
+#    Time: 10500 ps  Iteration: 0  Instance: /ex_8_7_alg_tb
+# 1
+# Break in Module ex_8_7_alg_tb at C:/Users/home/Downloads/digital_design/ex_8_7_alg/ex_8_7_alg_tb.sv line 17
+# End time: 14:14:37 on Dec 03,2019, Elapsed time: 0:03:16
+# Errors: 0, Warnings: 0

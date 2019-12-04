@@ -1,4 +1,4 @@
-# Reading C:/intelFPGA_lite/18.1/modelsim_ase/tcl/vsim/pref.tcl
+# Reading C:/intelFPGA/18.1/modelsim_ase/tcl/vsim/pref.tcl
 # do ex_8_5_run_msim_rtl_verilog.do
 # if {[file exists rtl_work]} {
 # 	vdel -lib rtl_work -all
@@ -7,141 +7,49 @@
 # vmap work rtl_work
 # Model Technology ModelSim - Intel FPGA Edition vmap 10.5b Lib Mapping Utility 2016.10 Oct  5 2016
 # vmap work rtl_work 
-# Copying C:/intelFPGA_lite/18.1/modelsim_ase/win32aloem/../modelsim.ini to modelsim.ini
-# Modifying modelsim.ini
+# Modifying C:/intelFPGA/18.1/modelsim_ase/win32aloem/../modelsim.ini
 # 
-# vlog -sv -work work +incdir+C:/Users/czhe/Downloads/digital_design/ex_8_5_multiplier {C:/Users/czhe/Downloads/digital_design/ex_8_5_multiplier/ex_8_5_pkg.sv}
+# vlog -sv -work work +incdir+C:/Users/home/Downloads/digital_design/ex_8_5_multiplier {C:/Users/home/Downloads/digital_design/ex_8_5_multiplier/ex_8_5_pkg.sv}
+# ** Note: (vlog-1901) OptionFile "C:/Users/home/Documents/Fpga_proj/moore_binary_counter/simulation/modelsim/vlog.opt" not found. Ignored.
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 10:39:12 on Nov 28,2019
-# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/czhe/Downloads/digital_design/ex_8_5_multiplier" C:/Users/czhe/Downloads/digital_design/ex_8_5_multiplier/ex_8_5_pkg.sv 
+# Start time: 11:29:07 on Nov 29,2019
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/home/Downloads/digital_design/ex_8_5_multiplier" C:/Users/home/Downloads/digital_design/ex_8_5_multiplier/ex_8_5_pkg.sv 
 # -- Compiling package ex_8_5_pkg
 # 
 # Top level modules:
 # 	--none--
-# End time: 10:39:13 on Nov 28,2019, Elapsed time: 0:00:01
+# End time: 11:29:07 on Nov 29,2019, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
-# vlog -sv -work work +incdir+C:/Users/czhe/Downloads/digital_design/ex_8_5_multiplier {C:/Users/czhe/Downloads/digital_design/ex_8_5_multiplier/ex_8_5.sv}
+# vlog -sv -work work +incdir+C:/Users/home/Downloads/digital_design/ex_8_5_multiplier {C:/Users/home/Downloads/digital_design/ex_8_5_multiplier/ex_8_5.sv}
+# ** Note: (vlog-1901) OptionFile "C:/Users/home/Documents/Fpga_proj/moore_binary_counter/simulation/modelsim/vlog.opt" not found. Ignored.
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 10:39:13 on Nov 28,2019
-# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/czhe/Downloads/digital_design/ex_8_5_multiplier" C:/Users/czhe/Downloads/digital_design/ex_8_5_multiplier/ex_8_5.sv 
+# Start time: 11:29:07 on Nov 29,2019
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/home/Downloads/digital_design/ex_8_5_multiplier" C:/Users/home/Downloads/digital_design/ex_8_5_multiplier/ex_8_5.sv 
 # -- Compiling package ex_8_5_sv_unit
 # -- Importing package ex_8_5_pkg
 # -- Compiling module ex_8_5
 # 
 # Top level modules:
 # 	ex_8_5
-# End time: 10:39:13 on Nov 28,2019, Elapsed time: 0:00:00
+# End time: 11:29:07 on Nov 29,2019, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # 
-vlog -reportprogress 300 -work work C:/Users/czhe/Downloads/digital_design/ex_8_5_multiplier/ex_8_5.sv
+vlog -reportprogress 300 -work work C:/Users/home/Downloads/digital_design/ex_8_5_multiplier/ex_8_5_tb.sv
+# ** Note: (vlog-1901) OptionFile "C:/Users/home/Documents/Fpga_proj/moore_binary_counter/simulation/modelsim/vlog.opt" not found. Ignored.
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 10:42:24 on Nov 28,2019
-# vlog -reportprogress 300 -work work C:/Users/czhe/Downloads/digital_design/ex_8_5_multiplier/ex_8_5.sv 
-# ** Warning: C:/Users/czhe/Downloads/digital_design/ex_8_5_multiplier/ex_8_5.sv(1): (vlog-13233) Design unit "ex_8_5_sv_unit" already exists and will be overwritten. Design unit compiled with different set of options.
-# -- Compiling package ex_8_5_sv_unit
-# -- Importing package ex_8_5_pkg
-# -- Compiling module ex_8_5
-# 
-# Top level modules:
-# 	ex_8_5
-# End time: 10:42:24 on Nov 28,2019, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 1
-vlog -reportprogress 300 -work work C:/Users/czhe/Downloads/digital_design/ex_8_5_multiplier/ex_8_5_pkg.sv
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 10:42:24 on Nov 28,2019
-# vlog -reportprogress 300 -work work C:/Users/czhe/Downloads/digital_design/ex_8_5_multiplier/ex_8_5_pkg.sv 
-# -- Compiling package ex_8_5_pkg
-# 
-# Top level modules:
-# 	--none--
-# End time: 10:42:25 on Nov 28,2019, Elapsed time: 0:00:01
-# Errors: 0, Warnings: 0
-vlog -reportprogress 300 -work work C:/Users/czhe/Downloads/digital_design/ex_8_5_multiplier/ex_8_5_tb.sv
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 10:42:25 on Nov 28,2019
-# vlog -reportprogress 300 -work work C:/Users/czhe/Downloads/digital_design/ex_8_5_multiplier/ex_8_5_tb.sv 
+# Start time: 11:29:14 on Nov 29,2019
+# vlog -reportprogress 300 -work work C:/Users/home/Downloads/digital_design/ex_8_5_multiplier/ex_8_5_tb.sv 
 # -- Compiling package ex_8_5_tb_sv_unit
 # -- Importing package ex_8_5_pkg
 # -- Compiling module ex_8_5_tb
 # 
 # Top level modules:
 # 	ex_8_5_tb
-# End time: 10:42:25 on Nov 28,2019, Elapsed time: 0:00:00
+# End time: 11:29:14 on Nov 29,2019, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 vsim work.ex_8_5_tb
 # vsim work.ex_8_5_tb 
-# Start time: 10:42:30 on Nov 28,2019
-# Loading sv_std.std
-# Loading work.ex_8_5_pkg
-# Loading work.ex_8_5_tb_sv_unit
-# Loading work.ex_8_5_tb
-# ** Error: (vsim-13) Recompile work.ex_8_5_sv_unit because work.ex_8_5_pkg has changed.
-# ** Error (suppressible): (vsim-12) Recompile work.ex_8_5 after work.ex_8_5_sv_unit is recompiled.
-# ** Error: (vsim-13) Recompile work.ex_8_5 because work.ex_8_5_pkg has changed.
-# Error loading design
-# End time: 10:42:30 on Nov 28,2019, Elapsed time: 0:00:00
-# Errors: 3, Warnings: 0
-vlog -work work C:/Users/czhe/Downloads/digital_design/ex_8_5_multiplier/ex_8_5.sv
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 10:43:01 on Nov 28,2019
-# vlog -reportprogress 300 -work work C:/Users/czhe/Downloads/digital_design/ex_8_5_multiplier/ex_8_5.sv 
-# -- Compiling package ex_8_5_sv_unit
-# -- Importing package ex_8_5_pkg
-# -- Compiling module ex_8_5
-# 
-# Top level modules:
-# 	ex_8_5
-# End time: 10:43:02 on Nov 28,2019, Elapsed time: 0:00:01
-# Errors: 0, Warnings: 0
-vlog -work work C:/Users/czhe/Downloads/digital_design/ex_8_5_multiplier/ex_8_5_pkg.sv
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 10:43:02 on Nov 28,2019
-# vlog -reportprogress 300 -work work C:/Users/czhe/Downloads/digital_design/ex_8_5_multiplier/ex_8_5_pkg.sv 
-# -- Compiling package ex_8_5_pkg
-# 
-# Top level modules:
-# 	--none--
-# End time: 10:43:02 on Nov 28,2019, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-vlog -work work C:/Users/czhe/Downloads/digital_design/ex_8_5_multiplier/ex_8_5.sv
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 10:43:02 on Nov 28,2019
-# vlog -reportprogress 300 -work work C:/Users/czhe/Downloads/digital_design/ex_8_5_multiplier/ex_8_5.sv 
-# -- Compiling package ex_8_5_sv_unit
-# -- Importing package ex_8_5_pkg
-# -- Compiling module ex_8_5
-# 
-# Top level modules:
-# 	ex_8_5
-# End time: 10:43:02 on Nov 28,2019, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-vlog -work work C:/Users/czhe/Downloads/digital_design/ex_8_5_multiplier/ex_8_5_tb.sv
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 10:43:02 on Nov 28,2019
-# vlog -reportprogress 300 -work work C:/Users/czhe/Downloads/digital_design/ex_8_5_multiplier/ex_8_5_tb.sv 
-# -- Compiling package ex_8_5_tb_sv_unit
-# -- Importing package ex_8_5_pkg
-# -- Compiling module ex_8_5_tb
-# 
-# Top level modules:
-# 	ex_8_5_tb
-# End time: 10:43:02 on Nov 28,2019, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-vlog -work work C:/Users/czhe/Downloads/digital_design/ex_8_5_multiplier/ex_8_5_tb.sv
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 10:43:02 on Nov 28,2019
-# vlog -reportprogress 300 -work work C:/Users/czhe/Downloads/digital_design/ex_8_5_multiplier/ex_8_5_tb.sv 
-# -- Compiling package ex_8_5_tb_sv_unit
-# -- Importing package ex_8_5_pkg
-# -- Compiling module ex_8_5_tb
-# 
-# Top level modules:
-# 	ex_8_5_tb
-# End time: 10:43:03 on Nov 28,2019, Elapsed time: 0:00:01
-# Errors: 0, Warnings: 0
-vsim work.ex_8_5_tb
-# vsim work.ex_8_5_tb 
-# Start time: 10:43:12 on Nov 28,2019
+# Start time: 11:29:24 on Nov 29,2019
 # Loading sv_std.std
 # Loading work.ex_8_5_pkg
 # Loading work.ex_8_5_tb_sv_unit
@@ -169,29 +77,9 @@ sim:/ex_8_5_tb/product \
 sim:/ex_8_5_tb/multiplicand \
 sim:/ex_8_5_tb/multiplier
 run
-# C = 0, A = 00000, Q = 10011, P = 101, time =                    5
-# C = 0, A = 10111, Q = 10011, P = 100, time =                   15
-# C = 0, A = 01011, Q = 11001, P = 100, time =                   25
-# C = 1, A = 00010, Q = 11001, P = 011, time =                   35
-# C = 0, A = 10001, Q = 01100, P = 011, time =                   45
-# C = 0, A = 10001, Q = 01100, P = 010, time =                   55
-# C = 0, A = 01000, Q = 10110, P = 010, time =                   65
-# C = 0, A = 01000, Q = 10110, P = 001, time =                   75
-# C = 0, A = 00100, Q = 01011, P = 001, time =                   85
-# C = 0, A = 11011, Q = 01011, P = 000, time =                   95
-# C = 0, A = 01101, Q = 10101, P = 000, time =                  105
-# C = 0, A = 00000, Q = 10011, P = 101, time =                  115
-# C = 0, A = 00000, Q = 10011, P = 101, time =                  125
-# C = 0, A = 00000, Q = 10011, P = 101, time =                  135
-# C = 0, A = 00000, Q = 10011, P = 101, time =                  145
-# C = 0, A = 00000, Q = 10011, P = 101, time =                  155
-# C = 0, A = 00000, Q = 10011, P = 101, time =                  165
-# C = 0, A = 00000, Q = 10011, P = 101, time =                  175
-# C = 0, A = 00000, Q = 10011, P = 101, time =                  185
-# C = 0, A = 00000, Q = 10011, P = 101, time =                  195
-# ** Note: $finish    : C:/Users/czhe/Downloads/digital_design/ex_8_5_multiplier/ex_8_5_tb.sv(24)
-#    Time: 200 ps  Iteration: 0  Instance: /ex_8_5_tb
+# ** Note: $finish    : C:/Users/home/Downloads/digital_design/ex_8_5_multiplier/ex_8_5_tb.sv(24)
+#    Time: 103 ns  Iteration: 0  Instance: /ex_8_5_tb
 # 1
-# Break in Module ex_8_5_tb at C:/Users/czhe/Downloads/digital_design/ex_8_5_multiplier/ex_8_5_tb.sv line 24
-# End time: 10:59:27 on Nov 28,2019, Elapsed time: 0:16:15
+# Break in Module ex_8_5_tb at C:/Users/home/Downloads/digital_design/ex_8_5_multiplier/ex_8_5_tb.sv line 24
+# End time: 12:44:13 on Nov 29,2019, Elapsed time: 1:14:49
 # Errors: 0, Warnings: 0

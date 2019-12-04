@@ -1,0 +1,95 @@
+# Reading C:/intelFPGA/18.1/modelsim_ase/tcl/vsim/pref.tcl
+# do ex_8_7_rtl_run_msim_rtl_verilog.do
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Model Technology ModelSim - Intel FPGA Edition vmap 10.5b Lib Mapping Utility 2016.10 Oct  5 2016
+# vmap work rtl_work 
+# Modifying C:/intelFPGA/18.1/modelsim_ase/win32aloem/../modelsim.ini
+# 
+# vlog -sv -work work +incdir+C:/Users/home/Downloads/digital_design/ex_8_7_rtl {C:/Users/home/Downloads/digital_design/ex_8_7_rtl/ex_8_7_rtl.sv}
+# ** Note: (vlog-1901) OptionFile "C:/Users/home/Documents/Fpga_proj/moore_binary_counter/simulation/modelsim/vlog.opt" not found. Ignored.
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 13:10:31 on Dec 03,2019
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/home/Downloads/digital_design/ex_8_7_rtl" C:/Users/home/Downloads/digital_design/ex_8_7_rtl/ex_8_7_rtl.sv 
+# -- Compiling module ex_8_7_rtl
+# 
+# Top level modules:
+# 	ex_8_7_rtl
+# End time: 13:10:31 on Dec 03,2019, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+vlog -reportprogress 300 -work work C:/Users/home/Downloads/digital_design/ex_8_7_rtl/ex_8_7_rtl_tb.sv
+# ** Note: (vlog-1901) OptionFile "C:/Users/home/Documents/Fpga_proj/moore_binary_counter/simulation/modelsim/vlog.opt" not found. Ignored.
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 13:10:41 on Dec 03,2019
+# vlog -reportprogress 300 -work work C:/Users/home/Downloads/digital_design/ex_8_7_rtl/ex_8_7_rtl_tb.sv 
+# -- Compiling module ex_8_7_rtl_tb
+# 
+# Top level modules:
+# 	ex_8_7_rtl_tb
+# End time: 13:10:41 on Dec 03,2019, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vsim work.ex_8_7_rtl_tb
+# vsim work.ex_8_7_rtl_tb 
+# Start time: 13:10:46 on Dec 03,2019
+# Loading sv_std.std
+# Loading work.ex_8_7_rtl_tb
+# Loading work.ex_8_7_rtl
+run
+# ** Note: $finish    : C:/Users/home/Downloads/digital_design/ex_8_7_rtl/ex_8_7_rtl_tb.sv(13)
+#    Time: 10500 ps  Iteration: 0  Instance: /ex_8_7_rtl_tb
+# 1
+# Break in Module ex_8_7_rtl_tb at C:/Users/home/Downloads/digital_design/ex_8_7_rtl/ex_8_7_rtl_tb.sv line 13
+add wave -position insertpoint  \
+sim:/ex_8_7_rtl_tb/dp_width \
+sim:/ex_8_7_rtl_tb/multiplicand \
+sim:/ex_8_7_rtl_tb/multiplier \
+sim:/ex_8_7_rtl_tb/product \
+sim:/ex_8_7_rtl_tb/expected_val \
+sim:/ex_8_7_rtl_tb/error
+restart
+run
+# ** Note: $finish    : C:/Users/home/Downloads/digital_design/ex_8_7_rtl/ex_8_7_rtl_tb.sv(13)
+#    Time: 10500 ps  Iteration: 0  Instance: /ex_8_7_rtl_tb
+# 1
+# Break in Module ex_8_7_rtl_tb at C:/Users/home/Downloads/digital_design/ex_8_7_rtl/ex_8_7_rtl_tb.sv line 13
+restart
+vlog -O0 -work work C:/Users/home/Downloads/digital_design/ex_8_7_rtl/ex_8_7_rtl_tb.sv
+# ** Note: (vlog-1901) OptionFile "C:/Users/home/Documents/Fpga_proj/moore_binary_counter/simulation/modelsim/vlog.opt" not found. Ignored.
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 13:14:38 on Dec 03,2019
+# vlog -reportprogress 300 -O0 -work work C:/Users/home/Downloads/digital_design/ex_8_7_rtl/ex_8_7_rtl_tb.sv 
+# -- Compiling module ex_8_7_rtl_tb
+# 
+# Top level modules:
+# 	ex_8_7_rtl_tb
+# End time: 13:14:38 on Dec 03,2019, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+run
+# ** Note: $finish    : C:/Users/home/Downloads/digital_design/ex_8_7_rtl/ex_8_7_rtl_tb.sv(13)
+#    Time: 10500 ps  Iteration: 0  Instance: /ex_8_7_rtl_tb
+# 1
+# Break in Module ex_8_7_rtl_tb at C:/Users/home/Downloads/digital_design/ex_8_7_rtl/ex_8_7_rtl_tb.sv line 13
+vlog -O0 -work work C:/Users/home/Downloads/digital_design/ex_8_7_rtl/ex_8_7_rtl_tb.sv
+# ** Note: (vlog-1901) OptionFile "C:/Users/home/Documents/Fpga_proj/moore_binary_counter/simulation/modelsim/vlog.opt" not found. Ignored.
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 13:15:11 on Dec 03,2019
+# vlog -reportprogress 300 -O0 -work work C:/Users/home/Downloads/digital_design/ex_8_7_rtl/ex_8_7_rtl_tb.sv 
+# -- Compiling module ex_8_7_rtl_tb
+# 
+# Top level modules:
+# 	ex_8_7_rtl_tb
+# End time: 13:15:11 on Dec 03,2019, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+restart
+# Loading work.ex_8_7_rtl_tb
+run
+# ** Note: $finish    : C:/Users/home/Downloads/digital_design/ex_8_7_rtl/ex_8_7_rtl_tb.sv(13)
+#    Time: 10500 ps  Iteration: 0  Instance: /ex_8_7_rtl_tb
+# 1
+# Break in Module ex_8_7_rtl_tb at C:/Users/home/Downloads/digital_design/ex_8_7_rtl/ex_8_7_rtl_tb.sv line 13
+# End time: 13:16:35 on Dec 03,2019, Elapsed time: 0:05:49
+# Errors: 0, Warnings: 0

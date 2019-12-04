@@ -7,65 +7,69 @@ z2
 !i10e 25
 !i10f 100
 cModel Technology
-Z0 dC:/Users/czhe/Downloads/digital_design/ex_8_5_multiplier/simulation/modelsim
+Z0 dC:/Users/home/Downloads/digital_design/ex_8_5_multiplier/simulation/modelsim
 vex_8_5
 Z1 DXx6 sv_std 3 std 0 22 AD7iAPLo6nTIKk<N0eo=D3
-Z2 DXx4 work 10 ex_8_5_pkg 0 22 Di0c`iK74N_MOTk<:DLzf0
-DXx4 work 14 ex_8_5_sv_unit 0 22 RVR9YcGf_N7aAda669a<90
+Z2 DXx4 work 10 ex_8_5_pkg 0 22 FYH7==701Lb?z4[;9T3H^0
+DXx4 work 14 ex_8_5_sv_unit 0 22 TO=DQdGdOhTib63AoQQHP0
 Z3 VDg1SIo80bB@j0V0VzS_@n1
 r1
 !s85 0
 31
 !i10b 1
 !s100 :gPHE1N:nYd:<<]XKONEa1
-IJiLlbYCb75Ie[jc?Go@bI1
+IC>aD[Bl<L6OFmN3KX=[E]3
 !s105 ex_8_5_sv_unit
 S1
 R0
-Z4 w1574953343
-Z5 8C:/Users/czhe/Downloads/digital_design/ex_8_5_multiplier/ex_8_5.sv
-Z6 FC:/Users/czhe/Downloads/digital_design/ex_8_5_multiplier/ex_8_5.sv
+Z4 w1575044629
+Z5 8C:/Users/home/Downloads/digital_design/ex_8_5_multiplier/ex_8_5.sv
+Z6 FC:/Users/home/Downloads/digital_design/ex_8_5_multiplier/ex_8_5.sv
 L0 3
 Z7 OV;L;10.5b;63
-Z8 !s108 1574955782.000000
-Z9 !s107 C:/Users/czhe/Downloads/digital_design/ex_8_5_multiplier/ex_8_5.sv|
-Z10 !s90 -reportprogress|300|-work|work|C:/Users/czhe/Downloads/digital_design/ex_8_5_multiplier/ex_8_5.sv|
+Z8 !s108 1575044947.000000
+Z9 !s107 C:/Users/home/Downloads/digital_design/ex_8_5_multiplier/ex_8_5.sv|
+Z10 !s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/home/Downloads/digital_design/ex_8_5_multiplier|C:/Users/home/Downloads/digital_design/ex_8_5_multiplier/ex_8_5.sv|
+!s101 -O0
 !i113 1
-Z11 o-work work
-Z12 tCvgOpt 0
+Z11 o-O0 -sv -work work
+Z12 !s92 -O0 -sv -work work +incdir+C:/Users/home/Downloads/digital_design/ex_8_5_multiplier
+Z13 tDisableOpt 1 CvgOpt 0
 Xex_8_5_pkg
 R1
-!s110 1574955782
+!s110 1575044947
 !i10b 1
 !s100 g?MDLE7?8;TDCVT1c9F]`0
-IDi0c`iK74N_MOTk<:DLzf0
-VDi0c`iK74N_MOTk<:DLzf0
+IFYH7==701Lb?z4[;9T3H^0
+VFYH7==701Lb?z4[;9T3H^0
 S1
 R0
-w1574955566
-8C:/Users/czhe/Downloads/digital_design/ex_8_5_multiplier/ex_8_5_pkg.sv
-FC:/Users/czhe/Downloads/digital_design/ex_8_5_multiplier/ex_8_5_pkg.sv
+R4
+8C:/Users/home/Downloads/digital_design/ex_8_5_multiplier/ex_8_5_pkg.sv
+FC:/Users/home/Downloads/digital_design/ex_8_5_multiplier/ex_8_5_pkg.sv
 L0 1
 R7
 r1
 !s85 0
 31
 R8
-!s107 C:/Users/czhe/Downloads/digital_design/ex_8_5_multiplier/ex_8_5_pkg.sv|
-!s90 -reportprogress|300|-work|work|C:/Users/czhe/Downloads/digital_design/ex_8_5_multiplier/ex_8_5_pkg.sv|
+!s107 C:/Users/home/Downloads/digital_design/ex_8_5_multiplier/ex_8_5_pkg.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/home/Downloads/digital_design/ex_8_5_multiplier|C:/Users/home/Downloads/digital_design/ex_8_5_multiplier/ex_8_5_pkg.sv|
+!s101 -O0
 !i113 1
 R11
 R12
+R13
 Xex_8_5_sv_unit
 R1
 R2
-VRVR9YcGf_N7aAda669a<90
+VTO=DQdGdOhTib63AoQQHP0
 r1
 !s85 0
 31
 !i10b 1
 !s100 7;=Q:MdY[DEQ:<SScm_oZ3
-IRVR9YcGf_N7aAda669a<90
+ITO=DQdGdOhTib63AoQQHP0
 !i103 1
 S1
 R0
@@ -77,55 +81,59 @@ R7
 R8
 R9
 R10
+!s101 -O0
 !i113 1
 R11
 R12
+R13
 vex_8_5_tb
 R1
 R2
-DXx4 work 17 ex_8_5_tb_sv_unit 0 22 i@8T9nf[[heR76PO:RnLS1
+DXx4 work 17 ex_8_5_tb_sv_unit 0 22 mcHnPoXI5BADZ=NY5[1ad3
 R3
 r1
 !s85 0
 31
 !i10b 1
-!s100 fGN@:V8_?H3z6@Z5@6JPc1
-I[@CGP_lkogTiCG]o1U`9i1
+!s100 oL=zno1LF@g^czj2z@zFS3
+I9H]KjWJ;RX??Jb6h6^Bcd1
 !s105 ex_8_5_tb_sv_unit
 S1
 R0
-Z13 w1574955574
-Z14 8C:/Users/czhe/Downloads/digital_design/ex_8_5_multiplier/ex_8_5_tb.sv
-Z15 FC:/Users/czhe/Downloads/digital_design/ex_8_5_multiplier/ex_8_5_tb.sv
+Z14 w1575044853
+Z15 8C:/Users/home/Downloads/digital_design/ex_8_5_multiplier/ex_8_5_tb.sv
+Z16 FC:/Users/home/Downloads/digital_design/ex_8_5_multiplier/ex_8_5_tb.sv
 L0 3
 R7
-R8
-Z16 !s107 C:/Users/czhe/Downloads/digital_design/ex_8_5_multiplier/ex_8_5_tb.sv|
-Z17 !s90 -reportprogress|300|-work|work|C:/Users/czhe/Downloads/digital_design/ex_8_5_multiplier/ex_8_5_tb.sv|
+Z17 !s108 1575044954.000000
+Z18 !s107 C:/Users/home/Downloads/digital_design/ex_8_5_multiplier/ex_8_5_tb.sv|
+Z19 !s90 -reportprogress|300|-work|work|C:/Users/home/Downloads/digital_design/ex_8_5_multiplier/ex_8_5_tb.sv|
+!s101 -O0
 !i113 1
-R11
-R12
+Z20 o-O0 -work work
+R13
 Xex_8_5_tb_sv_unit
 R1
 R2
-Vi@8T9nf[[heR76PO:RnLS1
+VmcHnPoXI5BADZ=NY5[1ad3
 r1
 !s85 0
 31
 !i10b 1
 !s100 GDaRk`HZW7@BLeR`d@8lk1
-Ii@8T9nf[[heR76PO:RnLS1
+ImcHnPoXI5BADZ=NY5[1ad3
 !i103 1
 S1
 R0
-R13
 R14
 R15
+R16
 L0 1
 R7
-R8
-R16
 R17
+R18
+R19
+!s101 -O0
 !i113 1
-R11
-R12
+R20
+R13

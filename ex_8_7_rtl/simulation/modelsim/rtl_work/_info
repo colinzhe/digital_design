@@ -1,0 +1,61 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/Users/home/Downloads/digital_design/ex_8_7_rtl/simulation/modelsim
+vex_8_7_rtl
+Z1 DXx6 sv_std 3 std 0 22 AD7iAPLo6nTIKk<N0eo=D3
+!s110 1575396631
+!i10b 1
+!s100 PMm<Gj?aWXO_lLJ^C?m7m2
+IE0CQhEE2T6]hEl]AXi]H?0
+Z2 VDg1SIo80bB@j0V0VzS_@n1
+!s105 ex_8_7_rtl_sv_unit
+S1
+R0
+w1575053964
+8C:/Users/home/Downloads/digital_design/ex_8_7_rtl/ex_8_7_rtl.sv
+FC:/Users/home/Downloads/digital_design/ex_8_7_rtl/ex_8_7_rtl.sv
+L0 1
+Z3 OV;L;10.5b;63
+r1
+!s85 0
+31
+!s108 1575396631.000000
+!s107 C:/Users/home/Downloads/digital_design/ex_8_7_rtl/ex_8_7_rtl.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/home/Downloads/digital_design/ex_8_7_rtl|C:/Users/home/Downloads/digital_design/ex_8_7_rtl/ex_8_7_rtl.sv|
+!s101 -O0
+!i113 1
+o-O0 -sv -work work
+!s92 -O0 -sv -work work +incdir+C:/Users/home/Downloads/digital_design/ex_8_7_rtl
+Z4 tDisableOpt 1 CvgOpt 0
+vex_8_7_rtl_tb
+R1
+!s110 1575396911
+!i10b 1
+!s100 ilzS;n9UV:9JjO`g:Ld4J0
+IEbODl`2L68I<J7Q?3D@952
+R2
+!s105 ex_8_7_rtl_tb_sv_unit
+S1
+R0
+w1575396908
+8C:/Users/home/Downloads/digital_design/ex_8_7_rtl/ex_8_7_rtl_tb.sv
+FC:/Users/home/Downloads/digital_design/ex_8_7_rtl/ex_8_7_rtl_tb.sv
+L0 1
+R3
+r1
+!s85 0
+31
+!s108 1575396911.000000
+!s107 C:/Users/home/Downloads/digital_design/ex_8_7_rtl/ex_8_7_rtl_tb.sv|
+!s90 -reportprogress|300|-O0|-work|work|C:/Users/home/Downloads/digital_design/ex_8_7_rtl/ex_8_7_rtl_tb.sv|
+!s101 -O0 -O0
+!i113 1
+o-O0 -O0 -work work
+R4

@@ -21,14 +21,14 @@ module ex_8_5_tb;
         rdy
     );
 
-    initial #200 $finish;
+    initial #103000 $finish;
 
     initial
     begin
         {rstb, clk, start} = 3'b000;
-        #2 start = 1; rstb = 1;
-        multiplicand = 5'b10111; multiplier = 5'b10011;
-        #10 start = 0;
+        #5 start = 1; rstb = 1;
+        //multiplicand = 5'b10111; multiplier = 5'b10011;
+        //#10 start = 0;
     end
 
     initial
@@ -36,9 +36,19 @@ module ex_8_5_tb;
         forever #5 clk = ~clk;
     end
 
-    always_ff @ (posedge clk)
+    initial
     begin
-        $strobe ("C = %b, A = %b, Q = %b, P = %b, time = %d",
-            dut.C, dut.A, dut.Q, dut.P, $time);
+        #5 multiplicand = 0; multiplier = 0;
+        repeat (32) #10
+        begin
+            multiplier++;
+            repeat (32) @ (posedge dut.rdy) #5 multiplicand++;
+        end
     end
+
+    //always_ff @ (posedge clk)
+    //begin
+    //    $strobe ("C = %b, A = %b, Q = %b, P = %b, time = %d",
+    //        dut.C, dut.A, dut.Q, dut.P, $time);
+    //end
 endmodule
