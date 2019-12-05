@@ -16,20 +16,20 @@ module controller (
     input rstb, clk, start, zero, msb,
     output logic rdy, load_regs, shift_left, incr_r2
 );
-    logic G0, G0_b, D0_in, D1_in, G1, G1_b;
-    logic zero_b = ~zero, msb_b = ~msb;
-    logic [1:0] sel = {G1, G0};
+    logic G0, D0_in, D1_in, G1;
+    wire zero_b = ~zero, msb_b = ~msb;
+    wire [1:0] sel = {G1, G0};
     logic [0:3] dec_out;
     
-    assign rdy = ~dec_out[0];
-    assign incr_r2 = ~dec_out[1];
-    assign shift_left = ~dec_out[2];
-    assign load_regs = rdy & start;
+    assign  rdy = ~dec_out[0],
+            incr_r2 = ~dec_out[1],
+            shift_left = ~dec_out[2],
+            load_regs = rdy & start;
 
-    mux_4x1_beh mux_1 (sel, GND, zero_b, PWR, msb_b, D1_in);
-    mux_4x1_beh mux_0 (sel, start, GND, PWR, msb, D0_in);
-    d_ff dff_1 (rstb, clk, D1_in, G1, G1_b);
-    d_ff dff_0 (rstb, clk, D0_in, G0, G0_b);
+    mux_4x1 mux_1 (sel, GND, zero_b, PWR, msb_b, D1_in);
+    mux_4x1 mux_0 (sel, start, GND, PWR, msb, D0_in);
+    d_ff dff_1 (rstb, clk, D1_in, G1);
+    d_ff dff_0 (rstb, clk, D0_in, G0);
     dec_2x4 dec_0 (G1, G0, GND, dec_out);
 endmodule
 
@@ -41,9 +41,81 @@ module data_path (
 );
     logic [r1_size-1:0] r1;
     assign zero = (r1 == 0);
-    assign w1 = r1[R1_size-1] & shift_left;
+    wire w1 = r1[r1_size-1] & shift_left;
 
-    shift_reg shift_reg_0 (PWR, clk, data, GND, shift_left, load_regs);
-    counter counter_0 (PWR, clk, count, load_regs, incr_r2);
+    shift_reg shift_reg_0 (PWR, clk, data, GND, shift_left, load_regs, r1);
+    counter counter_0 (PWR, clk, load_regs, incr_r2, count);
     d_ff dff_2 (PWR, clk, msb, w1);
+endmodule
+
+module shift_reg (
+    input rstb, clk,
+    input [r1_size-1:0] data_in,
+    input shift_in, shift_en, load,
+    output logic [r1_size-1:0] shift_reg
+);
+    always_ff @ (posedge clk, negedge rstb)
+    begin
+        if (!rstb) shift_reg <= {r1_size{1'b0}};
+        else
+        begin
+            if (load) shift_reg <= data_in;
+            else if (shift_en) shift_reg <= {shift_reg[r1_size-2:0], shift_in};
+            else shift_reg <= shift_reg;
+        end
+    end
+endmodule
+
+module counter (
+    input rstb, clk,
+    input load, cnt_en,
+    output logic [r2_size-1:0] count
+);
+    always_ff @ (posedge clk, negedge rstb)
+    begin
+        if (!rstb) count <= 0;
+        else
+        begin
+            if (load) count <= {r2_size{1'b1}};
+            else if (cnt_en) count <= count + 1'b1;
+            else count <= count;
+        end
+    end
+endmodule
+
+module d_ff (
+    input rstb, clk, D,
+    output logic Q
+);
+    always_ff @ (posedge clk, negedge rstb)
+    begin
+        if (!rstb) Q <= 1'b0;
+        else Q <= D;
+    end
+endmodule
+
+module mux_4x1 (
+    input [1:0] sel,
+    input in_0, in_1, in_2, in_3,
+    output m_out
+);
+    always_comb
+    begin
+        case (sel)
+            2'b00 : m_out = in_0;
+            2'b01 : m_out = in_1;
+            2'b10 : m_out = in_2;
+            2'b11 : m_out = in_3;
+        endcase
+    end
+endmodule
+
+module dec_2x4 (
+    input A, B, enable_b,
+    output [0:3] D
+);
+    assign  D[0] = ~(~A & ~B & ~enable_b),
+            D[1] = ~(~A & B & ~enable_b),
+            D[2] = ~(A & ~B & ~enable_b),
+            D[3] = ~(A & B & ~enable_b);
 endmodule
