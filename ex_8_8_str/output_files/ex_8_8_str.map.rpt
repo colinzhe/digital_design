@@ -1,5 +1,5 @@
 Analysis & Synthesis report for ex_8_8_str
-Wed Dec 04 22:32:31 2019
+Thu Dec 05 10:00:29 2019
 Quartus Prime Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
 
 
@@ -10,7 +10,16 @@ Quartus Prime Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
   2. Analysis & Synthesis Summary
   3. Analysis & Synthesis Settings
   4. Parallel Compilation
-  5. Analysis & Synthesis Messages
+  5. Analysis & Synthesis Source Files Read
+  6. Analysis & Synthesis Resource Usage Summary
+  7. Analysis & Synthesis Resource Utilization by Entity
+  8. General Register Statistics
+  9. Port Connectivity Checks: "dec_2x4:dec_0"
+ 10. Port Connectivity Checks: "mux_4x1:mux_0"
+ 11. Port Connectivity Checks: "mux_4x1:mux_1"
+ 12. Post-Synthesis Netlist Statistics for Top Partition
+ 13. Elapsed Time Per Partition
+ 14. Analysis & Synthesis Messages
 
 
 
@@ -33,22 +42,27 @@ refer to the applicable agreement for further details.
 
 
 
-+---------------------------------------------------------------------------+
-; Analysis & Synthesis Summary                                              ;
-+-----------------------------+---------------------------------------------+
-; Analysis & Synthesis Status ; Failed - Wed Dec 04 22:32:31 2019           ;
-; Quartus Prime Version       ; 18.1.0 Build 625 09/12/2018 SJ Lite Edition ;
-; Revision Name               ; ex_8_8_str                                  ;
-; Top-level Entity Name       ; ex_8_8_str                                  ;
-; Family                      ; Cyclone V                                   ;
-; Logic utilization (in ALMs) ; N/A until Partition Merge                   ;
-; Total registers             ; N/A until Partition Merge                   ;
-; Total pins                  ; N/A until Partition Merge                   ;
-; Total virtual pins          ; N/A until Partition Merge                   ;
-; Total block memory bits     ; N/A until Partition Merge                   ;
-; Total PLLs                  ; N/A until Partition Merge                   ;
-; Total DLLs                  ; N/A until Partition Merge                   ;
-+-----------------------------+---------------------------------------------+
++-------------------------------------------------------------------------------+
+; Analysis & Synthesis Summary                                                  ;
++---------------------------------+---------------------------------------------+
+; Analysis & Synthesis Status     ; Successful - Thu Dec 05 10:00:29 2019       ;
+; Quartus Prime Version           ; 18.1.0 Build 625 09/12/2018 SJ Lite Edition ;
+; Revision Name                   ; ex_8_8_str                                  ;
+; Top-level Entity Name           ; controller_elab                             ;
+; Family                          ; Cyclone V                                   ;
+; Logic utilization (in ALMs)     ; N/A                                         ;
+; Total registers                 ; 2                                           ;
+; Total pins                      ; 9                                           ;
+; Total virtual pins              ; 0                                           ;
+; Total block memory bits         ; 0                                           ;
+; Total DSP Blocks                ; 0                                           ;
+; Total HSSI RX PCSs              ; 0                                           ;
+; Total HSSI PMA RX Deserializers ; 0                                           ;
+; Total HSSI TX PCSs              ; 0                                           ;
+; Total HSSI PMA TX Serializers   ; 0                                           ;
+; Total PLLs                      ; 0                                           ;
+; Total DLLs                      ; 0                                           ;
++---------------------------------+---------------------------------------------+
 
 
 +---------------------------------------------------------------------------------------------------------------------------+
@@ -57,7 +71,7 @@ refer to the applicable agreement for further details.
 ; Option                                                                          ; Setting            ; Default Value      ;
 +---------------------------------------------------------------------------------+--------------------+--------------------+
 ; Device                                                                          ; 5CGXFC5C6F27C7     ;                    ;
-; Top-level entity name                                                           ; ex_8_8_str         ; ex_8_8_str         ;
+; Top-level entity name                                                           ; controller_elab    ; ex_8_8_str         ;
 ; Family name                                                                     ; Cyclone V          ; Cyclone V          ;
 ; Use smart compilation                                                           ; Off                ; Off                ;
 ; Enable parallel Assembler and Timing Analyzer during compilation                ; On                 ; On                 ;
@@ -143,15 +157,142 @@ refer to the applicable agreement for further details.
 +----------------------------+-------------+
 ; Processors                 ; Number      ;
 +----------------------------+-------------+
-; Number detected on machine ; 16          ;
-; Maximum allowed            ; 16          ;
+; Number detected on machine ; 8           ;
+; Maximum allowed            ; 8           ;
 ;                            ;             ;
 ; Average used               ; 1.00        ;
-; Maximum used               ; 1           ;
+; Maximum used               ; 8           ;
 ;                            ;             ;
 ; Usage by Processor         ; % Time Used ;
 ;     Processor 1            ; 100.0%      ;
+;     Processors 2-8         ;   0.0%      ;
 +----------------------------+-------------+
+
+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                                             ;
++----------------------------------+-----------------+------------------------------+----------------------------------------------------------------------+---------+
+; File Name with User-Entered Path ; Used in Netlist ; File Type                    ; File Name with Absolute Path                                         ; Library ;
++----------------------------------+-----------------+------------------------------+----------------------------------------------------------------------+---------+
+; controller_elab.sv               ; yes             ; User SystemVerilog HDL File  ; C:/Users/czhe/Downloads/digital_design/ex_8_8_str/controller_elab.sv ;         ;
+; ex_8_8_pkg.sv                    ; yes             ; User SystemVerilog HDL File  ; C:/Users/czhe/Downloads/digital_design/ex_8_8_str/ex_8_8_pkg.sv      ;         ;
++----------------------------------+-----------------+------------------------------+----------------------------------------------------------------------+---------+
+
+
++------------------------------------------------------------+
+; Analysis & Synthesis Resource Usage Summary                ;
++---------------------------------------------+--------------+
+; Resource                                    ; Usage        ;
++---------------------------------------------+--------------+
+; Estimate of Logic utilization (ALMs needed) ; 3            ;
+;                                             ;              ;
+; Combinational ALUT usage for logic          ; 6            ;
+;     -- 7 input functions                    ; 0            ;
+;     -- 6 input functions                    ; 0            ;
+;     -- 5 input functions                    ; 0            ;
+;     -- 4 input functions                    ; 2            ;
+;     -- <=3 input functions                  ; 4            ;
+;                                             ;              ;
+; Dedicated logic registers                   ; 2            ;
+;                                             ;              ;
+; I/O pins                                    ; 9            ;
+;                                             ;              ;
+; Total DSP Blocks                            ; 0            ;
+;                                             ;              ;
+; Maximum fan-out node                        ; d_ff:dff_1|Q ;
+; Maximum fan-out                             ; 6            ;
+; Total fan-out                               ; 36           ;
+; Average fan-out                             ; 1.38         ;
++---------------------------------------------+--------------+
+
+
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                   ;
++----------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+--------------------------------+-----------------+--------------+
+; Compilation Hierarchy Node ; Combinational ALUTs ; Dedicated Logic Registers ; Block Memory Bits ; DSP Blocks ; Pins ; Virtual Pins ; Full Hierarchy Name            ; Entity Name     ; Library Name ;
++----------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+--------------------------------+-----------------+--------------+
+; |controller_elab           ; 6 (1)               ; 2 (0)                     ; 0                 ; 0          ; 9    ; 0            ; |controller_elab               ; controller_elab ; work         ;
+;    |d_ff:dff_0|            ; 0 (0)               ; 1 (1)                     ; 0                 ; 0          ; 0    ; 0            ; |controller_elab|d_ff:dff_0    ; d_ff            ; work         ;
+;    |d_ff:dff_1|            ; 0 (0)               ; 1 (1)                     ; 0                 ; 0          ; 0    ; 0            ; |controller_elab|d_ff:dff_1    ; d_ff            ; work         ;
+;    |dec_2x4:dec_0|         ; 3 (3)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |controller_elab|dec_2x4:dec_0 ; dec_2x4         ; work         ;
+;    |mux_4x1:mux_0|         ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |controller_elab|mux_4x1:mux_0 ; mux_4x1         ; work         ;
+;    |mux_4x1:mux_1|         ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |controller_elab|mux_4x1:mux_1 ; mux_4x1         ; work         ;
++----------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+--------------------------------+-----------------+--------------+
+Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
+
+
++------------------------------------------------------+
+; General Register Statistics                          ;
++----------------------------------------------+-------+
+; Statistic                                    ; Value ;
++----------------------------------------------+-------+
+; Total registers                              ; 2     ;
+; Number of registers using Synchronous Clear  ; 0     ;
+; Number of registers using Synchronous Load   ; 0     ;
+; Number of registers using Asynchronous Clear ; 2     ;
+; Number of registers using Asynchronous Load  ; 0     ;
+; Number of registers using Clock Enable       ; 0     ;
+; Number of registers using Preset             ; 0     ;
++----------------------------------------------+-------+
+
+
++--------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "dec_2x4:dec_0"                                                                          ;
++----------+--------+----------+-------------------------------------------------------------------------------------+
+; Port     ; Type   ; Severity ; Details                                                                             ;
++----------+--------+----------+-------------------------------------------------------------------------------------+
+; enable_b ; Input  ; Info     ; Stuck at GND                                                                        ;
+; D[3]     ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++----------+--------+----------+-------------------------------------------------------------------------------------+
+
+
++-------------------------------------------+
+; Port Connectivity Checks: "mux_4x1:mux_0" ;
++------+-------+----------+-----------------+
+; Port ; Type  ; Severity ; Details         ;
++------+-------+----------+-----------------+
+; in_1 ; Input ; Info     ; Stuck at GND    ;
+; in_2 ; Input ; Info     ; Stuck at VCC    ;
++------+-------+----------+-----------------+
+
+
++-------------------------------------------+
+; Port Connectivity Checks: "mux_4x1:mux_1" ;
++------+-------+----------+-----------------+
+; Port ; Type  ; Severity ; Details         ;
++------+-------+----------+-----------------+
+; in_0 ; Input ; Info     ; Stuck at GND    ;
+; in_2 ; Input ; Info     ; Stuck at VCC    ;
++------+-------+----------+-----------------+
+
+
++-----------------------------------------------------+
+; Post-Synthesis Netlist Statistics for Top Partition ;
++-----------------------+-----------------------------+
+; Type                  ; Count                       ;
++-----------------------+-----------------------------+
+; arriav_ff             ; 2                           ;
+;     CLR               ; 2                           ;
+; arriav_lcell_comb     ; 7                           ;
+;     normal            ; 7                           ;
+;         1 data inputs ; 1                           ;
+;         2 data inputs ; 3                           ;
+;         3 data inputs ; 1                           ;
+;         4 data inputs ; 2                           ;
+; boundary_port         ; 9                           ;
+;                       ;                             ;
+; Max LUT depth         ; 2.00                        ;
+; Average LUT depth     ; 1.14                        ;
++-----------------------+-----------------------------+
+
+
++-------------------------------+
+; Elapsed Time Per Partition    ;
++----------------+--------------+
+; Partition Name ; Elapsed Time ;
++----------------+--------------+
+; Top            ; 00:00:01     ;
++----------------+--------------+
 
 
 +-------------------------------+
@@ -160,30 +301,32 @@ refer to the applicable agreement for further details.
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
-    Info: Processing started: Wed Dec 04 22:32:22 2019
+    Info: Processing started: Thu Dec 05 10:00:01 2019
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off ex_8_8_str -c ex_8_8_str
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
-Info (20030): Parallel compilation is enabled and will use 16 of the 16 processors detected
+Info (20030): Parallel compilation is enabled and will use 8 of the 8 processors detected
+Info (12021): Found 4 design units, including 4 entities, in source file controller_elab.sv
+    Info (12023): Found entity 1: controller_elab File: C:/Users/czhe/Downloads/digital_design/ex_8_8_str/controller_elab.sv Line: 20
+    Info (12023): Found entity 2: d_ff File: C:/Users/czhe/Downloads/digital_design/ex_8_8_str/controller_elab.sv Line: 41
+    Info (12023): Found entity 3: mux_4x1 File: C:/Users/czhe/Downloads/digital_design/ex_8_8_str/controller_elab.sv Line: 52
+    Info (12023): Found entity 4: dec_2x4 File: C:/Users/czhe/Downloads/digital_design/ex_8_8_str/controller_elab.sv Line: 68
 Info (12021): Found 1 design units, including 0 entities, in source file ex_8_8_pkg.sv
-    Info (12022): Found design unit 1: ex_8_8_pkg (SystemVerilog) File: C:/Users/home/Downloads/digital_design/ex_8_8_str/ex_8_8_pkg.sv Line: 1
-Info (12021): Found 8 design units, including 8 entities, in source file ex_8_8_str.sv
-    Info (12023): Found entity 1: ex_8_8_str File: C:/Users/home/Downloads/digital_design/ex_8_8_str/ex_8_8_str.sv Line: 3
-    Info (12023): Found entity 2: controller File: C:/Users/home/Downloads/digital_design/ex_8_8_str/ex_8_8_str.sv Line: 15
-    Info (12023): Found entity 3: data_path File: C:/Users/home/Downloads/digital_design/ex_8_8_str/ex_8_8_str.sv Line: 36
-    Info (12023): Found entity 4: shift_reg File: C:/Users/home/Downloads/digital_design/ex_8_8_str/ex_8_8_str.sv Line: 51
-    Info (12023): Found entity 5: counter File: C:/Users/home/Downloads/digital_design/ex_8_8_str/ex_8_8_str.sv Line: 69
-    Info (12023): Found entity 6: d_ff File: C:/Users/home/Downloads/digital_design/ex_8_8_str/ex_8_8_str.sv Line: 86
-    Info (12023): Found entity 7: mux_4x1 File: C:/Users/home/Downloads/digital_design/ex_8_8_str/ex_8_8_str.sv Line: 97
-    Info (12023): Found entity 8: dec_2x4 File: C:/Users/home/Downloads/digital_design/ex_8_8_str/ex_8_8_str.sv Line: 113
-Warning (10236): Verilog HDL Implicit Net warning at ex_8_8_str.sv(44): created implicit net for "w1" File: C:/Users/home/Downloads/digital_design/ex_8_8_str/ex_8_8_str.sv Line: 44
-Info (12127): Elaborating entity "ex_8_8_str" for the top level hierarchy
-Info (12128): Elaborating entity "controller" for hierarchy "controller:controller_0" File: C:/Users/home/Downloads/digital_design/ex_8_8_str/ex_8_8_str.sv Line: 11
-Error (10748): Verilog HDL error at ex_8_8_str.sv(21): expression in variable declaration assignment to sel must be constant File: C:/Users/home/Downloads/digital_design/ex_8_8_str/ex_8_8_str.sv Line: 21
-Error (12152): Can't elaborate user hierarchy "controller:controller_0" File: C:/Users/home/Downloads/digital_design/ex_8_8_str/ex_8_8_str.sv Line: 11
-Error: Quartus Prime Analysis & Synthesis was unsuccessful. 2 errors, 2 warnings
-    Error: Peak virtual memory: 4788 megabytes
-    Error: Processing ended: Wed Dec 04 22:32:31 2019
-    Error: Elapsed time: 00:00:09
-    Error: Total CPU time (on all processors): 00:00:24
+    Info (12022): Found design unit 1: ex_8_8_pkg (SystemVerilog) File: C:/Users/czhe/Downloads/digital_design/ex_8_8_str/ex_8_8_pkg.sv Line: 1
+Info (12127): Elaborating entity "controller_elab" for the top level hierarchy
+Info (12128): Elaborating entity "mux_4x1" for hierarchy "mux_4x1:mux_1" File: C:/Users/czhe/Downloads/digital_design/ex_8_8_str/controller_elab.sv Line: 34
+Info (12128): Elaborating entity "d_ff" for hierarchy "d_ff:dff_1" File: C:/Users/czhe/Downloads/digital_design/ex_8_8_str/controller_elab.sv Line: 36
+Info (12128): Elaborating entity "dec_2x4" for hierarchy "dec_2x4:dec_0" File: C:/Users/czhe/Downloads/digital_design/ex_8_8_str/controller_elab.sv Line: 38
+Info (286030): Timing-Driven Synthesis is running
+Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
+    Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
+Info (21057): Implemented 15 device resources after synthesis - the final resource count might be different
+    Info (21058): Implemented 5 input pins
+    Info (21059): Implemented 4 output pins
+    Info (21061): Implemented 6 logic cells
+Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 1 warning
+    Info: Peak virtual memory: 4887 megabytes
+    Info: Processing ended: Thu Dec 05 10:00:29 2019
+    Info: Elapsed time: 00:00:28
+    Info: Total CPU time (on all processors): 00:01:05
 
 

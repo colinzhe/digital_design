@@ -8,8 +8,28 @@ module ex_8_8_str (
 );
     logic load_regs, shift_left, incr_r2, zero, msb;
 
-    controller controller_0 (.*);
-    data_path data_path_0 (.*);
+    controller controller_0 (
+        .rstb(rstb),
+        .clk(clk),
+        .start(start),
+        .zero(zero),
+        .msb(msb),
+        .rdy(rdy),
+        .load_regs(load_regs),
+        .shift_left(shift_left),
+        .incr_r2(incr_r2)
+    );
+
+    data_path data_path_0 (
+        .clk(clk),
+        .load_regs(load_regs),
+        .shift_left(shift_left),
+        .incr_r2(incr_r2),
+        .data(data),
+        .count(count),
+        .zero(zero),
+        .msb(msb)
+    );
 endmodule
 
 module controller (
@@ -45,7 +65,7 @@ module data_path (
 
     shift_reg shift_reg_0 (PWR, clk, data, GND, shift_left, load_regs, r1);
     counter counter_0 (PWR, clk, load_regs, incr_r2, count);
-    d_ff dff_2 (PWR, clk, msb, w1);
+    d_ff dff_2 (PWR, clk, w1, msb);
 endmodule
 
 module shift_reg (

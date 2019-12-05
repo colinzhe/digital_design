@@ -1,0 +1,65 @@
+|controller_elab
+rstb => rstb.IN2
+clk => clk.IN2
+start => start.IN1
+zero => zero_b.IN1
+msb => msb.IN1
+rdy <= dec_2x4:dec_0.port3
+load_regs <= load_regs.DB_MAX_OUTPUT_PORT_TYPE
+shift_left <= dec_2x4:dec_0.port3
+incr_r2 <= dec_2x4:dec_0.port3
+
+
+|controller_elab|mux_4x1:mux_1
+sel[0] => Mux0.IN1
+sel[1] => Mux0.IN0
+in_0 => Mux0.IN2
+in_1 => Mux0.IN3
+in_2 => Mux0.IN4
+in_3 => Mux0.IN5
+m_out <= Mux0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|controller_elab|mux_4x1:mux_0
+sel[0] => Mux0.IN1
+sel[1] => Mux0.IN0
+in_0 => Mux0.IN2
+in_1 => Mux0.IN3
+in_2 => Mux0.IN4
+in_3 => Mux0.IN5
+m_out <= Mux0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|controller_elab|d_ff:dff_1
+rstb => Q~reg0.ACLR
+clk => Q~reg0.CLK
+D => Q~reg0.DATAIN
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|controller_elab|d_ff:dff_0
+rstb => Q~reg0.ACLR
+clk => Q~reg0.CLK
+D => Q~reg0.DATAIN
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|controller_elab|dec_2x4:dec_0
+A => D.IN0
+A => D.IN0
+A => D.IN0
+A => D.IN0
+B => D.IN1
+B => D.IN1
+B => D.IN1
+B => D.IN1
+enable_b => D.IN1
+enable_b => D.IN1
+enable_b => D.IN1
+enable_b => D.IN1
+D[3] <= D.DB_MAX_OUTPUT_PORT_TYPE
+D[2] <= D.DB_MAX_OUTPUT_PORT_TYPE
+D[1] <= D.DB_MAX_OUTPUT_PORT_TYPE
+D[0] <= D.DB_MAX_OUTPUT_PORT_TYPE
+
+
