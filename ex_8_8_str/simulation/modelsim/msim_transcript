@@ -1,0 +1,206 @@
+# Reading C:/intelFPGA_lite/18.1/modelsim_ase/tcl/vsim/pref.tcl
+# do ex_8_8_str_run_msim_rtl_verilog.do
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Model Technology ModelSim - Intel FPGA Edition vmap 10.5b Lib Mapping Utility 2016.10 Oct  5 2016
+# vmap work rtl_work 
+# Copying C:/intelFPGA_lite/18.1/modelsim_ase/win32aloem/../modelsim.ini to modelsim.ini
+# Modifying modelsim.ini
+# 
+# vlog -sv -work work +incdir+C:/Users/czhe/Downloads/digital_design/ex_8_8_str {C:/Users/czhe/Downloads/digital_design/ex_8_8_str/ex_8_8_pkg.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 15:09:44 on Dec 06,2019
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/czhe/Downloads/digital_design/ex_8_8_str" C:/Users/czhe/Downloads/digital_design/ex_8_8_str/ex_8_8_pkg.sv 
+# -- Compiling package ex_8_8_pkg
+# 
+# Top level modules:
+# 	--none--
+# End time: 15:09:44 on Dec 06,2019, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/Users/czhe/Downloads/digital_design/ex_8_8_str {C:/Users/czhe/Downloads/digital_design/ex_8_8_str/ex_8_8_str.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 15:09:44 on Dec 06,2019
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/czhe/Downloads/digital_design/ex_8_8_str" C:/Users/czhe/Downloads/digital_design/ex_8_8_str/ex_8_8_str.sv 
+# -- Compiling package ex_8_8_str_sv_unit
+# -- Importing package ex_8_8_pkg
+# -- Compiling module ex_8_8_str
+# -- Compiling module controller
+# -- Compiling module data_path
+# -- Compiling module shift_reg
+# -- Compiling module counter
+# -- Compiling module d_ff
+# -- Compiling module mux_4x1
+# -- Compiling module dec_2x4
+# 
+# Top level modules:
+# 	ex_8_8_str
+# End time: 15:09:44 on Dec 06,2019, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+vlog -reportprogress 300 -work work C:/Users/czhe/Downloads/digital_design/ex_8_8_str/ex_8_8_str_tb.sv
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 15:10:03 on Dec 06,2019
+# vlog -reportprogress 300 -work work C:/Users/czhe/Downloads/digital_design/ex_8_8_str/ex_8_8_str_tb.sv 
+# ** Error: (vlog-13069) C:/Users/czhe/Downloads/digital_design/ex_8_8_str/ex_8_8_str_tb.sv(12): near "count": syntax error, unexpected IDENTIFIER, expecting ')'.
+# End time: 15:10:03 on Dec 06,2019, Elapsed time: 0:00:00
+# Errors: 1, Warnings: 0
+vlog -reportprogress 300 -work work C:/Users/czhe/Downloads/digital_design/ex_8_8_str/ex_8_8_str_tb.sv
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 15:10:16 on Dec 06,2019
+# vlog -reportprogress 300 -work work C:/Users/czhe/Downloads/digital_design/ex_8_8_str/ex_8_8_str_tb.sv 
+# -- Compiling package ex_8_8_str_tb_sv_unit
+# -- Importing package ex_8_8_pkg
+# -- Compiling module ex_8_8_str_tb
+# 
+# Top level modules:
+# 	ex_8_8_str_tb
+# End time: 15:10:16 on Dec 06,2019, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vsim work.ex_8_8_str_tb
+# vsim work.ex_8_8_str_tb 
+# Start time: 15:10:23 on Dec 06,2019
+# Loading sv_std.std
+# Loading work.ex_8_8_pkg
+# Loading work.ex_8_8_str_tb_sv_unit
+# Loading work.ex_8_8_str_tb
+# Loading work.ex_8_8_str_sv_unit
+# Loading work.ex_8_8_str
+# Loading work.controller
+# Loading work.mux_4x1
+# Loading work.d_ff
+# Loading work.dec_2x4
+# Loading work.data_path
+# Loading work.shift_reg
+# Loading work.counter
+add wave -position insertpoint  \
+sim:/ex_8_8_str_tb/rstb \
+sim:/ex_8_8_str_tb/clk \
+sim:/ex_8_8_str_tb/start \
+sim:/ex_8_8_str_tb/data \
+sim:/ex_8_8_str_tb/count \
+sim:/ex_8_8_str_tb/rdy \
+sim:/ex_8_8_str_tb/state
+run
+restart
+run
+# ** Note: $finish    : C:/Users/czhe/Downloads/digital_design/ex_8_8_str/ex_8_8_str_tb.sv(17)
+#    Time: 650 ps  Iteration: 0  Instance: /ex_8_8_str_tb
+# 1
+# Break in Module ex_8_8_str_tb at C:/Users/czhe/Downloads/digital_design/ex_8_8_str/ex_8_8_str_tb.sv line 17
+vlog -work work C:/Users/czhe/Downloads/digital_design/ex_8_8_str/ex_8_8_str_tb.sv
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 15:11:50 on Dec 06,2019
+# vlog -reportprogress 300 -work work C:/Users/czhe/Downloads/digital_design/ex_8_8_str/ex_8_8_str_tb.sv 
+# -- Compiling package ex_8_8_str_tb_sv_unit
+# -- Importing package ex_8_8_pkg
+# -- Compiling module ex_8_8_str_tb
+# 
+# Top level modules:
+# 	ex_8_8_str_tb
+# End time: 15:11:50 on Dec 06,2019, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vsim work.ex_8_8_str_tb
+# End time: 15:11:54 on Dec 06,2019, Elapsed time: 0:01:31
+# Errors: 0, Warnings: 0
+# vsim work.ex_8_8_str_tb 
+# Start time: 15:11:54 on Dec 06,2019
+# Loading sv_std.std
+# Loading work.ex_8_8_pkg
+# Loading work.ex_8_8_str_tb_sv_unit
+# Loading work.ex_8_8_str_tb
+# Loading work.ex_8_8_str_sv_unit
+# Loading work.ex_8_8_str
+# Loading work.controller
+# Loading work.mux_4x1
+# Loading work.d_ff
+# Loading work.dec_2x4
+# Loading work.data_path
+# Loading work.shift_reg
+# Loading work.counter
+add wave -position insertpoint  \
+sim:/ex_8_8_str_tb/rstb \
+sim:/ex_8_8_str_tb/clk \
+sim:/ex_8_8_str_tb/start \
+sim:/ex_8_8_str_tb/data \
+sim:/ex_8_8_str_tb/count \
+sim:/ex_8_8_str_tb/rdy \
+sim:/ex_8_8_str_tb/state
+run
+# ** Note: $finish    : C:/Users/czhe/Downloads/digital_design/ex_8_8_str/ex_8_8_str_tb.sv(17)
+#    Time: 650 ps  Iteration: 0  Instance: /ex_8_8_str_tb
+# 1
+# Break in Module ex_8_8_str_tb at C:/Users/czhe/Downloads/digital_design/ex_8_8_str/ex_8_8_str_tb.sv line 17
+vlog -work work C:/Users/czhe/Downloads/digital_design/ex_8_8_str/ex_8_8_str_tb.sv
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 15:14:22 on Dec 06,2019
+# vlog -reportprogress 300 -work work C:/Users/czhe/Downloads/digital_design/ex_8_8_str/ex_8_8_str_tb.sv 
+# -- Compiling package ex_8_8_str_tb_sv_unit
+# -- Importing package ex_8_8_pkg
+# -- Compiling module ex_8_8_str_tb
+# 
+# Top level modules:
+# 	ex_8_8_str_tb
+# End time: 15:14:22 on Dec 06,2019, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+restart
+# Loading work.ex_8_8_str_tb_sv_unit
+# Loading work.ex_8_8_str_tb
+run
+# GetModuleFileName: The specified module could not be found.
+# 
+# 
+# ** Note: $finish    : C:/Users/czhe/Downloads/digital_design/ex_8_8_str/ex_8_8_str_tb.sv(17)
+#    Time: 650 ps  Iteration: 0  Instance: /ex_8_8_str_tb
+# 1
+# Break in Module ex_8_8_str_tb at C:/Users/czhe/Downloads/digital_design/ex_8_8_str/ex_8_8_str_tb.sv line 17
+vlog -work work C:/Users/czhe/Downloads/digital_design/ex_8_8_str/ex_8_8_str_tb.sv
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 15:15:32 on Dec 06,2019
+# vlog -reportprogress 300 -work work C:/Users/czhe/Downloads/digital_design/ex_8_8_str/ex_8_8_str_tb.sv 
+# -- Compiling package ex_8_8_str_tb_sv_unit
+# -- Importing package ex_8_8_pkg
+# -- Compiling module ex_8_8_str_tb
+# 
+# Top level modules:
+# 	ex_8_8_str_tb
+# End time: 15:15:32 on Dec 06,2019, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+restart
+# Loading work.ex_8_8_str_tb_sv_unit
+# Loading work.ex_8_8_str_tb
+run
+# GetModuleFileName: The specified module could not be found.
+# 
+# 
+# ** Note: $finish    : C:/Users/czhe/Downloads/digital_design/ex_8_8_str/ex_8_8_str_tb.sv(17)
+#    Time: 650 ps  Iteration: 0  Instance: /ex_8_8_str_tb
+# 1
+# Break in Module ex_8_8_str_tb at C:/Users/czhe/Downloads/digital_design/ex_8_8_str/ex_8_8_str_tb.sv line 17
+vlog -work work C:/Users/czhe/Downloads/digital_design/ex_8_8_str/ex_8_8_str_tb.sv
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 15:16:09 on Dec 06,2019
+# vlog -reportprogress 300 -work work C:/Users/czhe/Downloads/digital_design/ex_8_8_str/ex_8_8_str_tb.sv 
+# -- Compiling package ex_8_8_str_tb_sv_unit
+# -- Importing package ex_8_8_pkg
+# -- Compiling module ex_8_8_str_tb
+# 
+# Top level modules:
+# 	ex_8_8_str_tb
+# End time: 15:16:09 on Dec 06,2019, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+restart
+# Loading work.ex_8_8_str_tb_sv_unit
+# Loading work.ex_8_8_str_tb
+run
+# GetModuleFileName: The specified module could not be found.
+# 
+# 
+# ** Note: $finish    : C:/Users/czhe/Downloads/digital_design/ex_8_8_str/ex_8_8_str_tb.sv(17)
+#    Time: 650 ps  Iteration: 0  Instance: /ex_8_8_str_tb
+# 1
+# Break in Module ex_8_8_str_tb at C:/Users/czhe/Downloads/digital_design/ex_8_8_str/ex_8_8_str_tb.sv line 17
+# End time: 15:38:00 on Dec 06,2019, Elapsed time: 0:26:06
+# Errors: 0, Warnings: 0

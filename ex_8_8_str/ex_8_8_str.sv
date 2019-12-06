@@ -1,4 +1,9 @@
-import ex_8_8_pkg::*;
+//`define nopkg;
+
+`ifdef nopkg
+`else
+    import ex_8_8_pkg::*;
+`endif
 
 module ex_8_8_str (
     input rstb, clk, start,
@@ -6,30 +11,33 @@ module ex_8_8_str (
     output logic [r2_size-1:0] count,
     output logic rdy
 );
+    `ifdef nopkg
+        parameter r1_size = 8, r2_size = 4;
+    `endif
     logic load_regs, shift_left, incr_r2, zero, msb;
 
-    controller controller_0 (
-        .rstb(rstb),
-        .clk(clk),
-        .start(start),
-        .zero(zero),
-        .msb(msb),
-        .rdy(rdy),
-        .load_regs(load_regs),
-        .shift_left(shift_left),
-        .incr_r2(incr_r2)
-    );
+    controller controller_0 (.*);
+    //    .rstb(rstb),
+    //    .clk(clk),
+    //    .start(start),
+    //    .zero(zero),
+    //    .msb(msb),
+    //    .rdy(rdy),
+    //    .load_regs(load_regs),
+    //    .shift_left(shift_left),
+    //    .incr_r2(incr_r2)
+    //);
 
-    data_path data_path_0 (
-        .clk(clk),
-        .load_regs(load_regs),
-        .shift_left(shift_left),
-        .incr_r2(incr_r2),
-        .data(data),
-        .count(count),
-        .zero(zero),
-        .msb(msb)
-    );
+    data_path data_path_0 (.*);
+    //    .clk(clk),
+    //    .load_regs(load_regs),
+    //    .shift_left(shift_left),
+    //    .incr_r2(incr_r2),
+    //    .data(data),
+    //    .count(count),
+    //    .zero(zero),
+    //    .msb(msb)
+    //);
 endmodule
 
 module controller (
@@ -40,6 +48,9 @@ module controller (
     wire zero_b = ~zero, msb_b = ~msb;
     wire [1:0] sel = {G1, G0};
     logic [0:3] dec_out;
+
+    supply0 GND;
+    supply1 PWR;
     
     assign  rdy = ~dec_out[0],
             incr_r2 = ~dec_out[1],
@@ -59,6 +70,13 @@ module data_path (
     output logic [r2_size-1:0] count,
     output logic zero, msb
 );
+    supply0 GND;
+    supply1 PWR;
+
+    `ifdef nopkg
+        parameter r1_size = 8, r2_size = 4;
+    `endif
+
     logic [r1_size-1:0] r1;
     assign zero = (r1 == 0);
     wire w1 = r1[r1_size-1] & shift_left;
@@ -74,6 +92,10 @@ module shift_reg (
     input shift_in, shift_en, load,
     output logic [r1_size-1:0] shift_reg
 );
+    `ifdef nopkg
+        parameter r1_size = 8, r2_size = 4;
+    `endif
+
     always_ff @ (posedge clk, negedge rstb)
     begin
         if (!rstb) shift_reg <= {r1_size{1'b0}};
@@ -91,6 +113,10 @@ module counter (
     input load, cnt_en,
     output logic [r2_size-1:0] count
 );
+    `ifdef nopkg
+        parameter r1_size = 8, r2_size = 4;
+    `endif
+
     always_ff @ (posedge clk, negedge rstb)
     begin
         if (!rstb) count <= 0;
@@ -117,7 +143,7 @@ endmodule
 module mux_4x1 (
     input [1:0] sel,
     input in_0, in_1, in_2, in_3,
-    output m_out
+    output logic m_out
 );
     always_comb
     begin

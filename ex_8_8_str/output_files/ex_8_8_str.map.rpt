@@ -1,5 +1,5 @@
 Analysis & Synthesis report for ex_8_8_str
-Thu Dec 05 10:00:29 2019
+Fri Dec 06 15:08:54 2019
 Quartus Prime Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
 
 
@@ -14,12 +14,16 @@ Quartus Prime Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
   6. Analysis & Synthesis Resource Usage Summary
   7. Analysis & Synthesis Resource Utilization by Entity
   8. General Register Statistics
-  9. Port Connectivity Checks: "dec_2x4:dec_0"
- 10. Port Connectivity Checks: "mux_4x1:mux_0"
- 11. Port Connectivity Checks: "mux_4x1:mux_1"
- 12. Post-Synthesis Netlist Statistics for Top Partition
- 13. Elapsed Time Per Partition
- 14. Analysis & Synthesis Messages
+  9. Multiplexer Restructuring Statistics (Restructuring Performed)
+ 10. Port Connectivity Checks: "data_path:data_path_0|d_ff:dff_2"
+ 11. Port Connectivity Checks: "data_path:data_path_0|counter:counter_0"
+ 12. Port Connectivity Checks: "data_path:data_path_0|shift_reg:shift_reg_0"
+ 13. Port Connectivity Checks: "controller:controller_0|dec_2x4:dec_0"
+ 14. Port Connectivity Checks: "controller:controller_0|mux_4x1:mux_0"
+ 15. Port Connectivity Checks: "controller:controller_0|mux_4x1:mux_1"
+ 16. Post-Synthesis Netlist Statistics for Top Partition
+ 17. Elapsed Time Per Partition
+ 18. Analysis & Synthesis Messages
 
 
 
@@ -45,14 +49,14 @@ refer to the applicable agreement for further details.
 +-------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                  ;
 +---------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status     ; Successful - Thu Dec 05 10:00:29 2019       ;
+; Analysis & Synthesis Status     ; Successful - Fri Dec 06 15:08:54 2019       ;
 ; Quartus Prime Version           ; 18.1.0 Build 625 09/12/2018 SJ Lite Edition ;
 ; Revision Name                   ; ex_8_8_str                                  ;
-; Top-level Entity Name           ; controller_elab                             ;
+; Top-level Entity Name           ; ex_8_8_str                                  ;
 ; Family                          ; Cyclone V                                   ;
 ; Logic utilization (in ALMs)     ; N/A                                         ;
-; Total registers                 ; 2                                           ;
-; Total pins                      ; 9                                           ;
+; Total registers                 ; 15                                          ;
+; Total pins                      ; 16                                          ;
 ; Total virtual pins              ; 0                                           ;
 ; Total block memory bits         ; 0                                           ;
 ; Total DSP Blocks                ; 0                                           ;
@@ -71,7 +75,7 @@ refer to the applicable agreement for further details.
 ; Option                                                                          ; Setting            ; Default Value      ;
 +---------------------------------------------------------------------------------+--------------------+--------------------+
 ; Device                                                                          ; 5CGXFC5C6F27C7     ;                    ;
-; Top-level entity name                                                           ; controller_elab    ; ex_8_8_str         ;
+; Top-level entity name                                                           ; ex_8_8_str         ; ex_8_8_str         ;
 ; Family name                                                                     ; Cyclone V          ; Cyclone V          ;
 ; Use smart compilation                                                           ; Off                ; Off                ;
 ; Enable parallel Assembler and Timing Analyzer during compilation                ; On                 ; On                 ;
@@ -169,55 +173,60 @@ refer to the applicable agreement for further details.
 +----------------------------+-------------+
 
 
-+--------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Source Files Read                                                                                                                             ;
-+----------------------------------+-----------------+------------------------------+----------------------------------------------------------------------+---------+
-; File Name with User-Entered Path ; Used in Netlist ; File Type                    ; File Name with Absolute Path                                         ; Library ;
-+----------------------------------+-----------------+------------------------------+----------------------------------------------------------------------+---------+
-; controller_elab.sv               ; yes             ; User SystemVerilog HDL File  ; C:/Users/czhe/Downloads/digital_design/ex_8_8_str/controller_elab.sv ;         ;
-; ex_8_8_pkg.sv                    ; yes             ; User SystemVerilog HDL File  ; C:/Users/czhe/Downloads/digital_design/ex_8_8_str/ex_8_8_pkg.sv      ;         ;
-+----------------------------------+-----------------+------------------------------+----------------------------------------------------------------------+---------+
++---------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                                        ;
++----------------------------------+-----------------+------------------------------+-----------------------------------------------------------------+---------+
+; File Name with User-Entered Path ; Used in Netlist ; File Type                    ; File Name with Absolute Path                                    ; Library ;
++----------------------------------+-----------------+------------------------------+-----------------------------------------------------------------+---------+
+; ex_8_8_str.sv                    ; yes             ; User SystemVerilog HDL File  ; C:/Users/czhe/Downloads/digital_design/ex_8_8_str/ex_8_8_str.sv ;         ;
+; ex_8_8_pkg.sv                    ; yes             ; User SystemVerilog HDL File  ; C:/Users/czhe/Downloads/digital_design/ex_8_8_str/ex_8_8_pkg.sv ;         ;
++----------------------------------+-----------------+------------------------------+-----------------------------------------------------------------+---------+
 
 
-+------------------------------------------------------------+
-; Analysis & Synthesis Resource Usage Summary                ;
-+---------------------------------------------+--------------+
-; Resource                                    ; Usage        ;
-+---------------------------------------------+--------------+
-; Estimate of Logic utilization (ALMs needed) ; 3            ;
-;                                             ;              ;
-; Combinational ALUT usage for logic          ; 6            ;
-;     -- 7 input functions                    ; 0            ;
-;     -- 6 input functions                    ; 0            ;
-;     -- 5 input functions                    ; 0            ;
-;     -- 4 input functions                    ; 2            ;
-;     -- <=3 input functions                  ; 4            ;
-;                                             ;              ;
-; Dedicated logic registers                   ; 2            ;
-;                                             ;              ;
-; I/O pins                                    ; 9            ;
-;                                             ;              ;
-; Total DSP Blocks                            ; 0            ;
-;                                             ;              ;
-; Maximum fan-out node                        ; d_ff:dff_1|Q ;
-; Maximum fan-out                             ; 6            ;
-; Total fan-out                               ; 36           ;
-; Average fan-out                             ; 1.38         ;
-+---------------------------------------------+--------------+
++------------------------------------------------------------------------------------+
+; Analysis & Synthesis Resource Usage Summary                                        ;
++---------------------------------------------+--------------------------------------+
+; Resource                                    ; Usage                                ;
++---------------------------------------------+--------------------------------------+
+; Estimate of Logic utilization (ALMs needed) ; 12                                   ;
+;                                             ;                                      ;
+; Combinational ALUT usage for logic          ; 19                                   ;
+;     -- 7 input functions                    ; 0                                    ;
+;     -- 6 input functions                    ; 4                                    ;
+;     -- 5 input functions                    ; 9                                    ;
+;     -- 4 input functions                    ; 2                                    ;
+;     -- <=3 input functions                  ; 4                                    ;
+;                                             ;                                      ;
+; Dedicated logic registers                   ; 15                                   ;
+;                                             ;                                      ;
+; I/O pins                                    ; 16                                   ;
+;                                             ;                                      ;
+; Total DSP Blocks                            ; 0                                    ;
+;                                             ;                                      ;
+; Maximum fan-out node                        ; controller:controller_0|d_ff:dff_1|Q ;
+; Maximum fan-out                             ; 17                                   ;
+; Total fan-out                               ; 152                                  ;
+; Average fan-out                             ; 2.30                                 ;
++---------------------------------------------+--------------------------------------+
 
 
-+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                   ;
-+----------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+--------------------------------+-----------------+--------------+
-; Compilation Hierarchy Node ; Combinational ALUTs ; Dedicated Logic Registers ; Block Memory Bits ; DSP Blocks ; Pins ; Virtual Pins ; Full Hierarchy Name            ; Entity Name     ; Library Name ;
-+----------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+--------------------------------+-----------------+--------------+
-; |controller_elab           ; 6 (1)               ; 2 (0)                     ; 0                 ; 0          ; 9    ; 0            ; |controller_elab               ; controller_elab ; work         ;
-;    |d_ff:dff_0|            ; 0 (0)               ; 1 (1)                     ; 0                 ; 0          ; 0    ; 0            ; |controller_elab|d_ff:dff_0    ; d_ff            ; work         ;
-;    |d_ff:dff_1|            ; 0 (0)               ; 1 (1)                     ; 0                 ; 0          ; 0    ; 0            ; |controller_elab|d_ff:dff_1    ; d_ff            ; work         ;
-;    |dec_2x4:dec_0|         ; 3 (3)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |controller_elab|dec_2x4:dec_0 ; dec_2x4         ; work         ;
-;    |mux_4x1:mux_0|         ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |controller_elab|mux_4x1:mux_0 ; mux_4x1         ; work         ;
-;    |mux_4x1:mux_1|         ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |controller_elab|mux_4x1:mux_1 ; mux_4x1         ; work         ;
-+----------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+--------------------------------+-----------------+--------------+
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                                           ;
++-------------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+---------------------------------------------------------+-------------+--------------+
+; Compilation Hierarchy Node    ; Combinational ALUTs ; Dedicated Logic Registers ; Block Memory Bits ; DSP Blocks ; Pins ; Virtual Pins ; Full Hierarchy Name                                     ; Entity Name ; Library Name ;
++-------------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+---------------------------------------------------------+-------------+--------------+
+; |ex_8_8_str                   ; 19 (0)              ; 15 (0)                    ; 0                 ; 0          ; 16   ; 0            ; |ex_8_8_str                                             ; ex_8_8_str  ; work         ;
+;    |controller:controller_0|  ; 3 (0)               ; 2 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |ex_8_8_str|controller:controller_0                     ; controller  ; work         ;
+;       |d_ff:dff_0|            ; 0 (0)               ; 1 (1)                     ; 0                 ; 0          ; 0    ; 0            ; |ex_8_8_str|controller:controller_0|d_ff:dff_0          ; d_ff        ; work         ;
+;       |d_ff:dff_1|            ; 0 (0)               ; 1 (1)                     ; 0                 ; 0          ; 0    ; 0            ; |ex_8_8_str|controller:controller_0|d_ff:dff_1          ; d_ff        ; work         ;
+;       |dec_2x4:dec_0|         ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |ex_8_8_str|controller:controller_0|dec_2x4:dec_0       ; dec_2x4     ; work         ;
+;       |mux_4x1:mux_0|         ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |ex_8_8_str|controller:controller_0|mux_4x1:mux_0       ; mux_4x1     ; work         ;
+;       |mux_4x1:mux_1|         ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |ex_8_8_str|controller:controller_0|mux_4x1:mux_1       ; mux_4x1     ; work         ;
+;    |data_path:data_path_0|    ; 16 (2)              ; 13 (0)                    ; 0                 ; 0          ; 0    ; 0            ; |ex_8_8_str|data_path:data_path_0                       ; data_path   ; work         ;
+;       |counter:counter_0|     ; 5 (5)               ; 4 (4)                     ; 0                 ; 0          ; 0    ; 0            ; |ex_8_8_str|data_path:data_path_0|counter:counter_0     ; counter     ; work         ;
+;       |d_ff:dff_2|            ; 0 (0)               ; 1 (1)                     ; 0                 ; 0          ; 0    ; 0            ; |ex_8_8_str|data_path:data_path_0|d_ff:dff_2            ; d_ff        ; work         ;
+;       |shift_reg:shift_reg_0| ; 9 (9)               ; 8 (8)                     ; 0                 ; 0          ; 0    ; 0            ; |ex_8_8_str|data_path:data_path_0|shift_reg:shift_reg_0 ; shift_reg   ; work         ;
++-------------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+---------------------------------------------------------+-------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
 
 
@@ -226,18 +235,56 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +----------------------------------------------+-------+
 ; Statistic                                    ; Value ;
 +----------------------------------------------+-------+
-; Total registers                              ; 2     ;
+; Total registers                              ; 15    ;
 ; Number of registers using Synchronous Clear  ; 0     ;
 ; Number of registers using Synchronous Load   ; 0     ;
 ; Number of registers using Asynchronous Clear ; 2     ;
 ; Number of registers using Asynchronous Load  ; 0     ;
-; Number of registers using Clock Enable       ; 0     ;
+; Number of registers using Clock Enable       ; 11    ;
 ; Number of registers using Preset             ; 0     ;
 +----------------------------------------------+-------+
 
 
++------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Multiplexer Restructuring Statistics (Restructuring Performed)                                                                                                                     ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+----------------------------------------------------------------------+
+; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output                                           ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+----------------------------------------------------------------------+
+; 3:1                ; 4 bits    ; 8 LEs         ; 4 LEs                ; 4 LEs                  ; Yes        ; |ex_8_8_str|data_path:data_path_0|counter:counter_0|count[0]         ;
+; 3:1                ; 7 bits    ; 14 LEs        ; 7 LEs                ; 7 LEs                  ; Yes        ; |ex_8_8_str|data_path:data_path_0|shift_reg:shift_reg_0|shift_reg[7] ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+----------------------------------------------------------------------+
+
+
++--------------------------------------------------------------+
+; Port Connectivity Checks: "data_path:data_path_0|d_ff:dff_2" ;
++------+-------+----------+------------------------------------+
+; Port ; Type  ; Severity ; Details                            ;
++------+-------+----------+------------------------------------+
+; rstb ; Input ; Info     ; Stuck at VCC                       ;
++------+-------+----------+------------------------------------+
+
+
++---------------------------------------------------------------------+
+; Port Connectivity Checks: "data_path:data_path_0|counter:counter_0" ;
++------+-------+----------+-------------------------------------------+
+; Port ; Type  ; Severity ; Details                                   ;
++------+-------+----------+-------------------------------------------+
+; rstb ; Input ; Info     ; Stuck at VCC                              ;
++------+-------+----------+-------------------------------------------+
+
+
++-------------------------------------------------------------------------+
+; Port Connectivity Checks: "data_path:data_path_0|shift_reg:shift_reg_0" ;
++----------+-------+----------+-------------------------------------------+
+; Port     ; Type  ; Severity ; Details                                   ;
++----------+-------+----------+-------------------------------------------+
+; rstb     ; Input ; Info     ; Stuck at VCC                              ;
+; shift_in ; Input ; Info     ; Stuck at GND                              ;
++----------+-------+----------+-------------------------------------------+
+
+
 +--------------------------------------------------------------------------------------------------------------------+
-; Port Connectivity Checks: "dec_2x4:dec_0"                                                                          ;
+; Port Connectivity Checks: "controller:controller_0|dec_2x4:dec_0"                                                  ;
 +----------+--------+----------+-------------------------------------------------------------------------------------+
 ; Port     ; Type   ; Severity ; Details                                                                             ;
 +----------+--------+----------+-------------------------------------------------------------------------------------+
@@ -246,24 +293,24 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +----------+--------+----------+-------------------------------------------------------------------------------------+
 
 
-+-------------------------------------------+
-; Port Connectivity Checks: "mux_4x1:mux_0" ;
-+------+-------+----------+-----------------+
-; Port ; Type  ; Severity ; Details         ;
-+------+-------+----------+-----------------+
-; in_1 ; Input ; Info     ; Stuck at GND    ;
-; in_2 ; Input ; Info     ; Stuck at VCC    ;
-+------+-------+----------+-----------------+
++-------------------------------------------------------------------+
+; Port Connectivity Checks: "controller:controller_0|mux_4x1:mux_0" ;
++------+-------+----------+-----------------------------------------+
+; Port ; Type  ; Severity ; Details                                 ;
++------+-------+----------+-----------------------------------------+
+; in_1 ; Input ; Info     ; Stuck at GND                            ;
+; in_2 ; Input ; Info     ; Stuck at VCC                            ;
++------+-------+----------+-----------------------------------------+
 
 
-+-------------------------------------------+
-; Port Connectivity Checks: "mux_4x1:mux_1" ;
-+------+-------+----------+-----------------+
-; Port ; Type  ; Severity ; Details         ;
-+------+-------+----------+-----------------+
-; in_0 ; Input ; Info     ; Stuck at GND    ;
-; in_2 ; Input ; Info     ; Stuck at VCC    ;
-+------+-------+----------+-----------------+
++-------------------------------------------------------------------+
+; Port Connectivity Checks: "controller:controller_0|mux_4x1:mux_1" ;
++------+-------+----------+-----------------------------------------+
+; Port ; Type  ; Severity ; Details                                 ;
++------+-------+----------+-----------------------------------------+
+; in_0 ; Input ; Info     ; Stuck at GND                            ;
+; in_2 ; Input ; Info     ; Stuck at VCC                            ;
++------+-------+----------+-----------------------------------------+
 
 
 +-----------------------------------------------------+
@@ -271,18 +318,22 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +-----------------------+-----------------------------+
 ; Type                  ; Count                       ;
 +-----------------------+-----------------------------+
-; arriav_ff             ; 2                           ;
+; arriav_ff             ; 15                          ;
 ;     CLR               ; 2                           ;
-; arriav_lcell_comb     ; 7                           ;
-;     normal            ; 7                           ;
+;     ENA               ; 11                          ;
+;     plain             ; 2                           ;
+; arriav_lcell_comb     ; 20                          ;
+;     normal            ; 20                          ;
 ;         1 data inputs ; 1                           ;
-;         2 data inputs ; 3                           ;
-;         3 data inputs ; 1                           ;
+;         2 data inputs ; 1                           ;
+;         3 data inputs ; 3                           ;
 ;         4 data inputs ; 2                           ;
-; boundary_port         ; 9                           ;
+;         5 data inputs ; 9                           ;
+;         6 data inputs ; 4                           ;
+; boundary_port         ; 16                          ;
 ;                       ;                             ;
 ; Max LUT depth         ; 2.00                        ;
-; Average LUT depth     ; 1.14                        ;
+; Average LUT depth     ; 1.24                        ;
 +-----------------------+-----------------------------+
 
 
@@ -291,7 +342,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +----------------+--------------+
 ; Partition Name ; Elapsed Time ;
 +----------------+--------------+
-; Top            ; 00:00:01     ;
+; Top            ; 00:00:00     ;
 +----------------+--------------+
 
 
@@ -301,32 +352,40 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
-    Info: Processing started: Thu Dec 05 10:00:01 2019
+    Info: Processing started: Fri Dec 06 15:08:37 2019
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off ex_8_8_str -c ex_8_8_str
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 8 of the 8 processors detected
-Info (12021): Found 4 design units, including 4 entities, in source file controller_elab.sv
-    Info (12023): Found entity 1: controller_elab File: C:/Users/czhe/Downloads/digital_design/ex_8_8_str/controller_elab.sv Line: 20
-    Info (12023): Found entity 2: d_ff File: C:/Users/czhe/Downloads/digital_design/ex_8_8_str/controller_elab.sv Line: 41
-    Info (12023): Found entity 3: mux_4x1 File: C:/Users/czhe/Downloads/digital_design/ex_8_8_str/controller_elab.sv Line: 52
-    Info (12023): Found entity 4: dec_2x4 File: C:/Users/czhe/Downloads/digital_design/ex_8_8_str/controller_elab.sv Line: 68
+Info (12021): Found 8 design units, including 8 entities, in source file ex_8_8_str.sv
+    Info (12023): Found entity 1: ex_8_8_str File: C:/Users/czhe/Downloads/digital_design/ex_8_8_str/ex_8_8_str.sv Line: 8
+    Info (12023): Found entity 2: controller File: C:/Users/czhe/Downloads/digital_design/ex_8_8_str/ex_8_8_str.sv Line: 43
+    Info (12023): Found entity 3: data_path File: C:/Users/czhe/Downloads/digital_design/ex_8_8_str/ex_8_8_str.sv Line: 67
+    Info (12023): Found entity 4: shift_reg File: C:/Users/czhe/Downloads/digital_design/ex_8_8_str/ex_8_8_str.sv Line: 89
+    Info (12023): Found entity 5: counter File: C:/Users/czhe/Downloads/digital_design/ex_8_8_str/ex_8_8_str.sv Line: 111
+    Info (12023): Found entity 6: d_ff File: C:/Users/czhe/Downloads/digital_design/ex_8_8_str/ex_8_8_str.sv Line: 132
+    Info (12023): Found entity 7: mux_4x1 File: C:/Users/czhe/Downloads/digital_design/ex_8_8_str/ex_8_8_str.sv Line: 143
+    Info (12023): Found entity 8: dec_2x4 File: C:/Users/czhe/Downloads/digital_design/ex_8_8_str/ex_8_8_str.sv Line: 159
 Info (12021): Found 1 design units, including 0 entities, in source file ex_8_8_pkg.sv
     Info (12022): Found design unit 1: ex_8_8_pkg (SystemVerilog) File: C:/Users/czhe/Downloads/digital_design/ex_8_8_str/ex_8_8_pkg.sv Line: 1
-Info (12127): Elaborating entity "controller_elab" for the top level hierarchy
-Info (12128): Elaborating entity "mux_4x1" for hierarchy "mux_4x1:mux_1" File: C:/Users/czhe/Downloads/digital_design/ex_8_8_str/controller_elab.sv Line: 34
-Info (12128): Elaborating entity "d_ff" for hierarchy "d_ff:dff_1" File: C:/Users/czhe/Downloads/digital_design/ex_8_8_str/controller_elab.sv Line: 36
-Info (12128): Elaborating entity "dec_2x4" for hierarchy "dec_2x4:dec_0" File: C:/Users/czhe/Downloads/digital_design/ex_8_8_str/controller_elab.sv Line: 38
+Info (12127): Elaborating entity "ex_8_8_str" for the top level hierarchy
+Info (12128): Elaborating entity "controller" for hierarchy "controller:controller_0" File: C:/Users/czhe/Downloads/digital_design/ex_8_8_str/ex_8_8_str.sv Line: 19
+Info (12128): Elaborating entity "mux_4x1" for hierarchy "controller:controller_0|mux_4x1:mux_1" File: C:/Users/czhe/Downloads/digital_design/ex_8_8_str/ex_8_8_str.sv Line: 60
+Info (12128): Elaborating entity "d_ff" for hierarchy "controller:controller_0|d_ff:dff_1" File: C:/Users/czhe/Downloads/digital_design/ex_8_8_str/ex_8_8_str.sv Line: 62
+Info (12128): Elaborating entity "dec_2x4" for hierarchy "controller:controller_0|dec_2x4:dec_0" File: C:/Users/czhe/Downloads/digital_design/ex_8_8_str/ex_8_8_str.sv Line: 64
+Info (12128): Elaborating entity "data_path" for hierarchy "data_path:data_path_0" File: C:/Users/czhe/Downloads/digital_design/ex_8_8_str/ex_8_8_str.sv Line: 31
+Info (12128): Elaborating entity "shift_reg" for hierarchy "data_path:data_path_0|shift_reg:shift_reg_0" File: C:/Users/czhe/Downloads/digital_design/ex_8_8_str/ex_8_8_str.sv Line: 84
+Info (12128): Elaborating entity "counter" for hierarchy "data_path:data_path_0|counter:counter_0" File: C:/Users/czhe/Downloads/digital_design/ex_8_8_str/ex_8_8_str.sv Line: 85
 Info (286030): Timing-Driven Synthesis is running
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
-Info (21057): Implemented 15 device resources after synthesis - the final resource count might be different
-    Info (21058): Implemented 5 input pins
-    Info (21059): Implemented 4 output pins
-    Info (21061): Implemented 6 logic cells
+Info (21057): Implemented 35 device resources after synthesis - the final resource count might be different
+    Info (21058): Implemented 11 input pins
+    Info (21059): Implemented 5 output pins
+    Info (21061): Implemented 19 logic cells
 Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 1 warning
     Info: Peak virtual memory: 4887 megabytes
-    Info: Processing ended: Thu Dec 05 10:00:29 2019
-    Info: Elapsed time: 00:00:28
-    Info: Total CPU time (on all processors): 00:01:05
+    Info: Processing ended: Fri Dec 06 15:08:54 2019
+    Info: Elapsed time: 00:00:17
+    Info: Total CPU time (on all processors): 00:00:38
 
 

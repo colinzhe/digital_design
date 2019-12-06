@@ -1,4 +1,24 @@
-|controller_elab
+|ex_8_8_str
+rstb => controller:controller_0.rstb
+clk => controller:controller_0.clk
+clk => data_path:data_path_0.clk
+start => controller:controller_0.start
+data[0] => data_path:data_path_0.data[0]
+data[1] => data_path:data_path_0.data[1]
+data[2] => data_path:data_path_0.data[2]
+data[3] => data_path:data_path_0.data[3]
+data[4] => data_path:data_path_0.data[4]
+data[5] => data_path:data_path_0.data[5]
+data[6] => data_path:data_path_0.data[6]
+data[7] => data_path:data_path_0.data[7]
+count[0] <= data_path:data_path_0.count[0]
+count[1] <= data_path:data_path_0.count[1]
+count[2] <= data_path:data_path_0.count[2]
+count[3] <= data_path:data_path_0.count[3]
+rdy <= controller:controller_0.rdy
+
+
+|ex_8_8_str|controller:controller_0
 rstb => rstb.IN2
 clk => clk.IN2
 start => start.IN1
@@ -10,7 +30,7 @@ shift_left <= dec_2x4:dec_0.port3
 incr_r2 <= dec_2x4:dec_0.port3
 
 
-|controller_elab|mux_4x1:mux_1
+|ex_8_8_str|controller:controller_0|mux_4x1:mux_1
 sel[0] => Mux0.IN1
 sel[1] => Mux0.IN0
 in_0 => Mux0.IN2
@@ -20,7 +40,7 @@ in_3 => Mux0.IN5
 m_out <= Mux0.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|controller_elab|mux_4x1:mux_0
+|ex_8_8_str|controller:controller_0|mux_4x1:mux_0
 sel[0] => Mux0.IN1
 sel[1] => Mux0.IN0
 in_0 => Mux0.IN2
@@ -30,21 +50,21 @@ in_3 => Mux0.IN5
 m_out <= Mux0.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|controller_elab|d_ff:dff_1
+|ex_8_8_str|controller:controller_0|d_ff:dff_1
 rstb => Q~reg0.ACLR
 clk => Q~reg0.CLK
 D => Q~reg0.DATAIN
 Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|controller_elab|d_ff:dff_0
+|ex_8_8_str|controller:controller_0|d_ff:dff_0
 rstb => Q~reg0.ACLR
 clk => Q~reg0.CLK
 D => Q~reg0.DATAIN
 Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|controller_elab|dec_2x4:dec_0
+|ex_8_8_str|controller:controller_0|dec_2x4:dec_0
 A => D.IN0
 A => D.IN0
 A => D.IN0
@@ -61,5 +81,108 @@ D[3] <= D.DB_MAX_OUTPUT_PORT_TYPE
 D[2] <= D.DB_MAX_OUTPUT_PORT_TYPE
 D[1] <= D.DB_MAX_OUTPUT_PORT_TYPE
 D[0] <= D.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ex_8_8_str|data_path:data_path_0
+clk => clk.IN3
+load_regs => load_regs.IN2
+shift_left => shift_left.IN1
+incr_r2 => incr_r2.IN1
+data[0] => data[0].IN1
+data[1] => data[1].IN1
+data[2] => data[2].IN1
+data[3] => data[3].IN1
+data[4] => data[4].IN1
+data[5] => data[5].IN1
+data[6] => data[6].IN1
+data[7] => data[7].IN1
+count[0] <= counter:counter_0.port4
+count[1] <= counter:counter_0.port4
+count[2] <= counter:counter_0.port4
+count[3] <= counter:counter_0.port4
+zero <= Equal0.DB_MAX_OUTPUT_PORT_TYPE
+msb <= d_ff:dff_2.port3
+
+
+|ex_8_8_str|data_path:data_path_0|shift_reg:shift_reg_0
+rstb => shift_reg[0]~reg0.ACLR
+rstb => shift_reg[1]~reg0.ACLR
+rstb => shift_reg[2]~reg0.ACLR
+rstb => shift_reg[3]~reg0.ACLR
+rstb => shift_reg[4]~reg0.ACLR
+rstb => shift_reg[5]~reg0.ACLR
+rstb => shift_reg[6]~reg0.ACLR
+rstb => shift_reg[7]~reg0.ACLR
+clk => shift_reg[0]~reg0.CLK
+clk => shift_reg[1]~reg0.CLK
+clk => shift_reg[2]~reg0.CLK
+clk => shift_reg[3]~reg0.CLK
+clk => shift_reg[4]~reg0.CLK
+clk => shift_reg[5]~reg0.CLK
+clk => shift_reg[6]~reg0.CLK
+clk => shift_reg[7]~reg0.CLK
+data_in[0] => shift_reg.DATAB
+data_in[1] => shift_reg.DATAB
+data_in[2] => shift_reg.DATAB
+data_in[3] => shift_reg.DATAB
+data_in[4] => shift_reg.DATAB
+data_in[5] => shift_reg.DATAB
+data_in[6] => shift_reg.DATAB
+data_in[7] => shift_reg.DATAB
+shift_in => shift_reg.DATAB
+shift_en => shift_reg.OUTPUTSELECT
+shift_en => shift_reg.OUTPUTSELECT
+shift_en => shift_reg.OUTPUTSELECT
+shift_en => shift_reg.OUTPUTSELECT
+shift_en => shift_reg.OUTPUTSELECT
+shift_en => shift_reg.OUTPUTSELECT
+shift_en => shift_reg.OUTPUTSELECT
+shift_en => shift_reg.OUTPUTSELECT
+load => shift_reg.OUTPUTSELECT
+load => shift_reg.OUTPUTSELECT
+load => shift_reg.OUTPUTSELECT
+load => shift_reg.OUTPUTSELECT
+load => shift_reg.OUTPUTSELECT
+load => shift_reg.OUTPUTSELECT
+load => shift_reg.OUTPUTSELECT
+load => shift_reg.OUTPUTSELECT
+shift_reg[0] <= shift_reg[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+shift_reg[1] <= shift_reg[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+shift_reg[2] <= shift_reg[2]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+shift_reg[3] <= shift_reg[3]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+shift_reg[4] <= shift_reg[4]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+shift_reg[5] <= shift_reg[5]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+shift_reg[6] <= shift_reg[6]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+shift_reg[7] <= shift_reg[7]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ex_8_8_str|data_path:data_path_0|counter:counter_0
+rstb => count[0]~reg0.ACLR
+rstb => count[1]~reg0.ACLR
+rstb => count[2]~reg0.ACLR
+rstb => count[3]~reg0.ACLR
+clk => count[0]~reg0.CLK
+clk => count[1]~reg0.CLK
+clk => count[2]~reg0.CLK
+clk => count[3]~reg0.CLK
+load => count.OUTPUTSELECT
+load => count.OUTPUTSELECT
+load => count.OUTPUTSELECT
+load => count.OUTPUTSELECT
+cnt_en => count.OUTPUTSELECT
+cnt_en => count.OUTPUTSELECT
+cnt_en => count.OUTPUTSELECT
+cnt_en => count.OUTPUTSELECT
+count[0] <= count[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+count[1] <= count[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+count[2] <= count[2]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+count[3] <= count[3]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ex_8_8_str|data_path:data_path_0|d_ff:dff_2
+rstb => Q~reg0.ACLR
+clk => Q~reg0.CLK
+D => Q~reg0.DATAIN
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
 
 
