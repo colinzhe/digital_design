@@ -1,4 +1,4 @@
-# Reading C:/intelFPGA/18.1/modelsim_ase/tcl/vsim/pref.tcl
+# Reading C:/intelFPGA_lite/18.1/modelsim_ase/tcl/vsim/pref.tcl
 # do q_8_7_run_msim_rtl_verilog.do
 # if {[file exists rtl_work]} {
 # 	vdel -lib rtl_work -all
@@ -7,24 +7,23 @@
 # vmap work rtl_work
 # Model Technology ModelSim - Intel FPGA Edition vmap 10.5b Lib Mapping Utility 2016.10 Oct  5 2016
 # vmap work rtl_work 
-# Modifying C:/intelFPGA/18.1/modelsim_ase/win32aloem/../modelsim.ini
+# Copying C:/intelFPGA_lite/18.1/modelsim_ase/win32aloem/../modelsim.ini to modelsim.ini
+# Modifying modelsim.ini
 # 
-# vlog -sv -work work +incdir+C:/Users/home/Downloads/digital_design/q_8_7_subtractor {C:/Users/home/Downloads/digital_design/q_8_7_subtractor/q_8_7_pkg.sv}
-# ** Note: (vlog-1901) OptionFile "C:/Users/home/Documents/Fpga_proj/moore_binary_counter/simulation/modelsim/vlog.opt" not found. Ignored.
+# vlog -sv -work work +incdir+C:/Users/czhe/Downloads/digital_design/q_8_7_subtractor {C:/Users/czhe/Downloads/digital_design/q_8_7_subtractor/q_8_7_pkg.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 22:17:22 on Dec 10,2019
-# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/home/Downloads/digital_design/q_8_7_subtractor" C:/Users/home/Downloads/digital_design/q_8_7_subtractor/q_8_7_pkg.sv 
+# Start time: 09:46:44 on Dec 11,2019
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/czhe/Downloads/digital_design/q_8_7_subtractor" C:/Users/czhe/Downloads/digital_design/q_8_7_subtractor/q_8_7_pkg.sv 
 # -- Compiling package q_8_7_pkg
 # 
 # Top level modules:
 # 	--none--
-# End time: 22:17:22 on Dec 10,2019, Elapsed time: 0:00:00
+# End time: 09:46:45 on Dec 11,2019, Elapsed time: 0:00:01
 # Errors: 0, Warnings: 0
-# vlog -sv -work work +incdir+C:/Users/home/Downloads/digital_design/q_8_7_subtractor {C:/Users/home/Downloads/digital_design/q_8_7_subtractor/q_8_7.sv}
-# ** Note: (vlog-1901) OptionFile "C:/Users/home/Documents/Fpga_proj/moore_binary_counter/simulation/modelsim/vlog.opt" not found. Ignored.
+# vlog -sv -work work +incdir+C:/Users/czhe/Downloads/digital_design/q_8_7_subtractor {C:/Users/czhe/Downloads/digital_design/q_8_7_subtractor/q_8_7.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 22:17:23 on Dec 10,2019
-# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/home/Downloads/digital_design/q_8_7_subtractor" C:/Users/home/Downloads/digital_design/q_8_7_subtractor/q_8_7.sv 
+# Start time: 09:46:45 on Dec 11,2019
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/czhe/Downloads/digital_design/q_8_7_subtractor" C:/Users/czhe/Downloads/digital_design/q_8_7_subtractor/q_8_7.sv 
 # -- Compiling package q_8_7_sv_unit
 # -- Importing package q_8_7_pkg
 # -- Compiling module q_8_7
@@ -33,228 +32,24 @@
 # 
 # Top level modules:
 # 	q_8_7
-# End time: 22:17:23 on Dec 10,2019, Elapsed time: 0:00:00
+# End time: 09:46:45 on Dec 11,2019, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # 
-vlog -reportprogress 300 -work work C:/Users/home/Downloads/digital_design/q_8_7_subtractor/q_8_7_tb.sv
-# ** Note: (vlog-1901) OptionFile "C:/Users/home/Documents/Fpga_proj/moore_binary_counter/simulation/modelsim/vlog.opt" not found. Ignored.
+vlog -reportprogress 300 -work work C:/Users/czhe/Downloads/digital_design/q_8_7_subtractor/q_8_7_tb.sv
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 22:17:30 on Dec 10,2019
-# vlog -reportprogress 300 -work work C:/Users/home/Downloads/digital_design/q_8_7_subtractor/q_8_7_tb.sv 
+# Start time: 09:46:58 on Dec 11,2019
+# vlog -reportprogress 300 -work work C:/Users/czhe/Downloads/digital_design/q_8_7_subtractor/q_8_7_tb.sv 
+# -- Compiling package q_8_7_tb_sv_unit
+# -- Importing package q_8_7_pkg
 # -- Compiling module q_8_7_tb
 # 
 # Top level modules:
 # 	q_8_7_tb
-# End time: 22:17:30 on Dec 10,2019, Elapsed time: 0:00:00
+# End time: 09:46:58 on Dec 11,2019, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 vsim work.q_8_7_tb
 # vsim work.q_8_7_tb 
-# Start time: 22:17:46 on Dec 10,2019
-# Loading sv_std.std
-# Loading work.q_8_7_tb
-# Loading work.q_8_7_pkg
-# Loading work.q_8_7_sv_unit
-# Loading work.q_8_7
-# Loading work.controller
-# Loading work.datapath
-add wave -position insertpoint  \
-sim:/q_8_7_tb/rst_b \
-sim:/q_8_7_tb/clk \
-sim:/q_8_7_tb/start \
-sim:/q_8_7_tb/A \
-sim:/q_8_7_tb/B \
-sim:/q_8_7_tb/result \
-sim:/q_8_7_tb/rdy \
-sim:/q_8_7_tb/state \
-sim:/q_8_7_tb/load_regs \
-sim:/q_8_7_tb/sub_regs \
-sim:/q_8_7_tb/borrow \
-sim:/q_8_7_tb/comp \
-sim:/q_8_7_tb/RA \
-sim:/q_8_7_tb/RB
-run
-# ** Note: $finish    : C:/Users/home/Downloads/digital_design/q_8_7_subtractor/q_8_7_tb.sv(21)
-#    Time: 500 ps  Iteration: 0  Instance: /q_8_7_tb
-# 1
-# Break in Module q_8_7_tb at C:/Users/home/Downloads/digital_design/q_8_7_subtractor/q_8_7_tb.sv line 21
-vlog -O0 -work work C:/Users/home/Downloads/digital_design/q_8_7_subtractor/q_8_7_tb.sv
-# ** Note: (vlog-1901) OptionFile "C:/Users/home/Documents/Fpga_proj/moore_binary_counter/simulation/modelsim/vlog.opt" not found. Ignored.
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 22:18:25 on Dec 10,2019
-# vlog -reportprogress 300 -O0 -work work C:/Users/home/Downloads/digital_design/q_8_7_subtractor/q_8_7_tb.sv 
-# -- Compiling module q_8_7_tb
-# 
-# Top level modules:
-# 	q_8_7_tb
-# End time: 22:18:25 on Dec 10,2019, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-restart
-# Loading work.q_8_7_tb
-run
-# ** Note: $finish    : C:/Users/home/Downloads/digital_design/q_8_7_subtractor/q_8_7_tb.sv(21)
-#    Time: 500 ps  Iteration: 0  Instance: /q_8_7_tb
-# 1
-# Break in Module q_8_7_tb at C:/Users/home/Downloads/digital_design/q_8_7_subtractor/q_8_7_tb.sv line 21
-vlog -O0 -work work C:/Users/home/Downloads/digital_design/q_8_7_subtractor/q_8_7_tb.sv
-# ** Note: (vlog-1901) OptionFile "C:/Users/home/Documents/Fpga_proj/moore_binary_counter/simulation/modelsim/vlog.opt" not found. Ignored.
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 22:19:28 on Dec 10,2019
-# vlog -reportprogress 300 -O0 -work work C:/Users/home/Downloads/digital_design/q_8_7_subtractor/q_8_7_tb.sv 
-# -- Compiling package q_8_7_tb_sv_unit
-# -- Importing package q_8_7_pkg
-# -- Compiling module q_8_7_tb
-# 
-# Top level modules:
-# 	q_8_7_tb
-# End time: 22:19:28 on Dec 10,2019, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-restart
-# Loading work.q_8_7_tb_sv_unit
-# Loading work.q_8_7_tb
-run
-# GetModuleFileName: The specified module could not be found.
-# 
-# 
-# ** Note: $finish    : C:/Users/home/Downloads/digital_design/q_8_7_subtractor/q_8_7_tb.sv(23)
-#    Time: 500 ps  Iteration: 0  Instance: /q_8_7_tb
-# 1
-# Break in Module q_8_7_tb at C:/Users/home/Downloads/digital_design/q_8_7_subtractor/q_8_7_tb.sv line 23
-vlog -O0 -sv -work work +incdir+C:/Users/home/Downloads/digital_design/q_8_7_subtractor C:/Users/home/Downloads/digital_design/q_8_7_subtractor/q_8_7.sv
-# ** Note: (vlog-1901) OptionFile "C:/Users/home/Documents/Fpga_proj/moore_binary_counter/simulation/modelsim/vlog.opt" not found. Ignored.
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 22:24:22 on Dec 10,2019
-# vlog -reportprogress 300 -O0 -sv -work work "+incdir+C:/Users/home/Downloads/digital_design/q_8_7_subtractor" C:/Users/home/Downloads/digital_design/q_8_7_subtractor/q_8_7.sv 
-# -- Compiling package q_8_7_sv_unit
-# -- Importing package q_8_7_pkg
-# -- Compiling module q_8_7
-# -- Compiling module controller
-# -- Compiling module datapath
-# 
-# Top level modules:
-# 	q_8_7
-# End time: 22:24:22 on Dec 10,2019, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-restart
-# Loading work.q_8_7_sv_unit
-# Loading work.q_8_7
-# Loading work.controller
-# Loading work.datapath
-run
-# GetModuleFileName: The specified module could not be found.
-# 
-# 
-# ** Note: $finish    : C:/Users/home/Downloads/digital_design/q_8_7_subtractor/q_8_7_tb.sv(23)
-#    Time: 500 ps  Iteration: 0  Instance: /q_8_7_tb
-# 1
-# Break in Module q_8_7_tb at C:/Users/home/Downloads/digital_design/q_8_7_subtractor/q_8_7_tb.sv line 23
-vlog -O0 -work work C:/Users/home/Downloads/digital_design/q_8_7_subtractor/q_8_7_tb.sv
-# ** Note: (vlog-1901) OptionFile "C:/Users/home/Documents/Fpga_proj/moore_binary_counter/simulation/modelsim/vlog.opt" not found. Ignored.
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 22:28:04 on Dec 10,2019
-# vlog -reportprogress 300 -O0 -work work C:/Users/home/Downloads/digital_design/q_8_7_subtractor/q_8_7_tb.sv 
-# -- Compiling package q_8_7_tb_sv_unit
-# -- Importing package q_8_7_pkg
-# -- Compiling module q_8_7_tb
-# 
-# Top level modules:
-# 	q_8_7_tb
-# End time: 22:28:04 on Dec 10,2019, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-restart
-# Loading work.q_8_7_tb_sv_unit
-# Loading work.q_8_7_tb
-run
-# GetModuleFileName: The specified module could not be found.
-# 
-# 
-# ** Note: $finish    : C:/Users/home/Downloads/digital_design/q_8_7_subtractor/q_8_7_tb.sv(23)
-#    Time: 500 ps  Iteration: 0  Instance: /q_8_7_tb
-# 1
-# Break in Module q_8_7_tb at C:/Users/home/Downloads/digital_design/q_8_7_subtractor/q_8_7_tb.sv line 23
-vlog -O0 -sv -work work +incdir+C:/Users/home/Downloads/digital_design/q_8_7_subtractor C:/Users/home/Downloads/digital_design/q_8_7_subtractor/q_8_7.sv
-# ** Note: (vlog-1901) OptionFile "C:/Users/home/Documents/Fpga_proj/moore_binary_counter/simulation/modelsim/vlog.opt" not found. Ignored.
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 22:33:10 on Dec 10,2019
-# vlog -reportprogress 300 -O0 -sv -work work "+incdir+C:/Users/home/Downloads/digital_design/q_8_7_subtractor" C:/Users/home/Downloads/digital_design/q_8_7_subtractor/q_8_7.sv 
-# -- Compiling package q_8_7_sv_unit
-# -- Importing package q_8_7_pkg
-# -- Compiling module q_8_7
-# -- Compiling module controller
-# -- Compiling module datapath
-# 
-# Top level modules:
-# 	q_8_7
-# End time: 22:33:10 on Dec 10,2019, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-restart
-# Loading work.q_8_7_sv_unit
-# Loading work.q_8_7
-# Loading work.controller
-# Loading work.datapath
-run
-# GetModuleFileName: The specified module could not be found.
-# 
-# 
-# ** Note: $finish    : C:/Users/home/Downloads/digital_design/q_8_7_subtractor/q_8_7_tb.sv(23)
-#    Time: 500 ps  Iteration: 0  Instance: /q_8_7_tb
-# 1
-# Break in Module q_8_7_tb at C:/Users/home/Downloads/digital_design/q_8_7_subtractor/q_8_7_tb.sv line 23
-vlog -O0 -sv -work work +incdir+C:/Users/home/Downloads/digital_design/q_8_7_subtractor C:/Users/home/Downloads/digital_design/q_8_7_subtractor/q_8_7.sv
-# ** Note: (vlog-1901) OptionFile "C:/Users/home/Documents/Fpga_proj/moore_binary_counter/simulation/modelsim/vlog.opt" not found. Ignored.
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 22:40:55 on Dec 10,2019
-# vlog -reportprogress 300 -O0 -sv -work work "+incdir+C:/Users/home/Downloads/digital_design/q_8_7_subtractor" C:/Users/home/Downloads/digital_design/q_8_7_subtractor/q_8_7.sv 
-# ** Error: (vlog-13069) C:/Users/home/Downloads/digital_design/q_8_7_subtractor/q_8_7.sv(62): near "else": syntax error, unexpected else.
-# ** Error: (vlog-13069) C:/Users/home/Downloads/digital_design/q_8_7_subtractor/q_8_7.sv(67): near "endmodule": syntax error, unexpected endmodule.
-# End time: 22:40:56 on Dec 10,2019, Elapsed time: 0:00:01
-# Errors: 2, Warnings: 0
-# C:/intelFPGA/18.1/modelsim_ase/win32aloem/vlog failed.
-vlog -O0 -work work C:/Users/home/Downloads/digital_design/q_8_7_subtractor/q_8_7_tb.sv
-# ** Note: (vlog-1901) OptionFile "C:/Users/home/Documents/Fpga_proj/moore_binary_counter/simulation/modelsim/vlog.opt" not found. Ignored.
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 22:40:56 on Dec 10,2019
-# vlog -reportprogress 300 -O0 -work work C:/Users/home/Downloads/digital_design/q_8_7_subtractor/q_8_7_tb.sv 
-# -- Compiling package q_8_7_tb_sv_unit
-# -- Importing package q_8_7_pkg
-# -- Compiling module q_8_7_tb
-# 
-# Top level modules:
-# 	q_8_7_tb
-# End time: 22:40:56 on Dec 10,2019, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-vlog -O0 -sv -work work +incdir+C:/Users/home/Downloads/digital_design/q_8_7_subtractor C:/Users/home/Downloads/digital_design/q_8_7_subtractor/q_8_7.sv
-# ** Note: (vlog-1901) OptionFile "C:/Users/home/Documents/Fpga_proj/moore_binary_counter/simulation/modelsim/vlog.opt" not found. Ignored.
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 22:41:07 on Dec 10,2019
-# vlog -reportprogress 300 -O0 -sv -work work "+incdir+C:/Users/home/Downloads/digital_design/q_8_7_subtractor" C:/Users/home/Downloads/digital_design/q_8_7_subtractor/q_8_7.sv 
-# -- Compiling package q_8_7_sv_unit
-# -- Importing package q_8_7_pkg
-# -- Compiling module q_8_7
-# -- Compiling module controller
-# -- Compiling module datapath
-# 
-# Top level modules:
-# 	q_8_7
-# End time: 22:41:07 on Dec 10,2019, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-vlog -O0 -work work C:/Users/home/Downloads/digital_design/q_8_7_subtractor/q_8_7_tb.sv
-# ** Note: (vlog-1901) OptionFile "C:/Users/home/Documents/Fpga_proj/moore_binary_counter/simulation/modelsim/vlog.opt" not found. Ignored.
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 22:41:07 on Dec 10,2019
-# vlog -reportprogress 300 -O0 -work work C:/Users/home/Downloads/digital_design/q_8_7_subtractor/q_8_7_tb.sv 
-# -- Compiling package q_8_7_tb_sv_unit
-# -- Importing package q_8_7_pkg
-# -- Compiling module q_8_7_tb
-# 
-# Top level modules:
-# 	q_8_7_tb
-# End time: 22:41:07 on Dec 10,2019, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-vsim work.q_8_7_tb
-# End time: 22:41:16 on Dec 10,2019, Elapsed time: 0:23:30
-# Errors: 3, Warnings: 0
-# vsim work.q_8_7_tb 
-# Start time: 22:41:16 on Dec 10,2019
+# Start time: 09:47:04 on Dec 11,2019
 # Loading sv_std.std
 # Loading work.q_8_7_pkg
 # Loading work.q_8_7_tb_sv_unit
@@ -280,15 +75,14 @@ sim:/q_8_7_tb/RA \
 sim:/q_8_7_tb/RB \
 sim:/q_8_7_tb/RC
 run
-# ** Note: $finish    : C:/Users/home/Downloads/digital_design/q_8_7_subtractor/q_8_7_tb.sv(24)
-#    Time: 500 ps  Iteration: 0  Instance: /q_8_7_tb
+# ** Note: $finish    : C:/Users/czhe/Downloads/digital_design/q_8_7_subtractor/q_8_7_tb.sv(24)
+#    Time: 150 ps  Iteration: 0  Instance: /q_8_7_tb
 # 1
-# Break in Module q_8_7_tb at C:/Users/home/Downloads/digital_design/q_8_7_subtractor/q_8_7_tb.sv line 24
-vlog -O0 -sv -work work +incdir+C:/Users/home/Downloads/digital_design/q_8_7_subtractor C:/Users/home/Downloads/digital_design/q_8_7_subtractor/q_8_7.sv
-# ** Note: (vlog-1901) OptionFile "C:/Users/home/Documents/Fpga_proj/moore_binary_counter/simulation/modelsim/vlog.opt" not found. Ignored.
+# Break in Module q_8_7_tb at C:/Users/czhe/Downloads/digital_design/q_8_7_subtractor/q_8_7_tb.sv line 24
+vlog -sv -work work +incdir+C:/Users/czhe/Downloads/digital_design/q_8_7_subtractor C:/Users/czhe/Downloads/digital_design/q_8_7_subtractor/q_8_7.sv
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 22:43:22 on Dec 10,2019
-# vlog -reportprogress 300 -O0 -sv -work work "+incdir+C:/Users/home/Downloads/digital_design/q_8_7_subtractor" C:/Users/home/Downloads/digital_design/q_8_7_subtractor/q_8_7.sv 
+# Start time: 09:51:02 on Dec 11,2019
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/czhe/Downloads/digital_design/q_8_7_subtractor" C:/Users/czhe/Downloads/digital_design/q_8_7_subtractor/q_8_7.sv 
 # -- Compiling package q_8_7_sv_unit
 # -- Importing package q_8_7_pkg
 # -- Compiling module q_8_7
@@ -297,7 +91,7 @@ vlog -O0 -sv -work work +incdir+C:/Users/home/Downloads/digital_design/q_8_7_sub
 # 
 # Top level modules:
 # 	q_8_7
-# End time: 22:43:22 on Dec 10,2019, Elapsed time: 0:00:00
+# End time: 09:51:03 on Dec 11,2019, Elapsed time: 0:00:01
 # Errors: 0, Warnings: 0
 restart
 # Loading work.q_8_7_sv_unit
@@ -308,15 +102,14 @@ run
 # GetModuleFileName: The specified module could not be found.
 # 
 # 
-# ** Note: $finish    : C:/Users/home/Downloads/digital_design/q_8_7_subtractor/q_8_7_tb.sv(24)
-#    Time: 500 ps  Iteration: 0  Instance: /q_8_7_tb
+# ** Note: $finish    : C:/Users/czhe/Downloads/digital_design/q_8_7_subtractor/q_8_7_tb.sv(24)
+#    Time: 150 ps  Iteration: 0  Instance: /q_8_7_tb
 # 1
-# Break in Module q_8_7_tb at C:/Users/home/Downloads/digital_design/q_8_7_subtractor/q_8_7_tb.sv line 24
-vlog -O0 -sv -work work +incdir+C:/Users/home/Downloads/digital_design/q_8_7_subtractor C:/Users/home/Downloads/digital_design/q_8_7_subtractor/q_8_7.sv
-# ** Note: (vlog-1901) OptionFile "C:/Users/home/Documents/Fpga_proj/moore_binary_counter/simulation/modelsim/vlog.opt" not found. Ignored.
+# Break in Module q_8_7_tb at C:/Users/czhe/Downloads/digital_design/q_8_7_subtractor/q_8_7_tb.sv line 24
+vlog -sv -work work +incdir+C:/Users/czhe/Downloads/digital_design/q_8_7_subtractor C:/Users/czhe/Downloads/digital_design/q_8_7_subtractor/q_8_7.sv
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 22:44:06 on Dec 10,2019
-# vlog -reportprogress 300 -O0 -sv -work work "+incdir+C:/Users/home/Downloads/digital_design/q_8_7_subtractor" C:/Users/home/Downloads/digital_design/q_8_7_subtractor/q_8_7.sv 
+# Start time: 09:54:31 on Dec 11,2019
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/czhe/Downloads/digital_design/q_8_7_subtractor" C:/Users/czhe/Downloads/digital_design/q_8_7_subtractor/q_8_7.sv 
 # -- Compiling package q_8_7_sv_unit
 # -- Importing package q_8_7_pkg
 # -- Compiling module q_8_7
@@ -325,7 +118,7 @@ vlog -O0 -sv -work work +incdir+C:/Users/home/Downloads/digital_design/q_8_7_sub
 # 
 # Top level modules:
 # 	q_8_7
-# End time: 22:44:06 on Dec 10,2019, Elapsed time: 0:00:00
+# End time: 09:54:31 on Dec 11,2019, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 restart
 # Loading work.q_8_7_sv_unit
@@ -336,63 +129,14 @@ run
 # GetModuleFileName: The specified module could not be found.
 # 
 # 
-# ** Note: $finish    : C:/Users/home/Downloads/digital_design/q_8_7_subtractor/q_8_7_tb.sv(24)
-#    Time: 500 ps  Iteration: 0  Instance: /q_8_7_tb
+# ** Note: $finish    : C:/Users/czhe/Downloads/digital_design/q_8_7_subtractor/q_8_7_tb.sv(24)
+#    Time: 150 ps  Iteration: 0  Instance: /q_8_7_tb
 # 1
-# Break in Module q_8_7_tb at C:/Users/home/Downloads/digital_design/q_8_7_subtractor/q_8_7_tb.sv line 24
-vlog -O0 -work work C:/Users/home/Downloads/digital_design/q_8_7_subtractor/q_8_7_tb.sv
-# ** Note: (vlog-1901) OptionFile "C:/Users/home/Documents/Fpga_proj/moore_binary_counter/simulation/modelsim/vlog.opt" not found. Ignored.
+# Break in Module q_8_7_tb at C:/Users/czhe/Downloads/digital_design/q_8_7_subtractor/q_8_7_tb.sv line 24
+vlog -sv -work work +incdir+C:/Users/czhe/Downloads/digital_design/q_8_7_subtractor C:/Users/czhe/Downloads/digital_design/q_8_7_subtractor/q_8_7.sv
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 22:45:00 on Dec 10,2019
-# vlog -reportprogress 300 -O0 -work work C:/Users/home/Downloads/digital_design/q_8_7_subtractor/q_8_7_tb.sv 
-# -- Compiling package q_8_7_tb_sv_unit
-# -- Importing package q_8_7_pkg
-# -- Compiling module q_8_7_tb
-# 
-# Top level modules:
-# 	q_8_7_tb
-# End time: 22:45:00 on Dec 10,2019, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-restart
-# Loading work.q_8_7_tb_sv_unit
-# Loading work.q_8_7_tb
-run
-# GetModuleFileName: The specified module could not be found.
-# 
-# 
-# ** Note: $finish    : C:/Users/home/Downloads/digital_design/q_8_7_subtractor/q_8_7_tb.sv(24)
-#    Time: 500 ps  Iteration: 0  Instance: /q_8_7_tb
-# 1
-# Break in Module q_8_7_tb at C:/Users/home/Downloads/digital_design/q_8_7_subtractor/q_8_7_tb.sv line 24
-vlog -O0 -work work C:/Users/home/Downloads/digital_design/q_8_7_subtractor/q_8_7_tb.sv
-# ** Note: (vlog-1901) OptionFile "C:/Users/home/Documents/Fpga_proj/moore_binary_counter/simulation/modelsim/vlog.opt" not found. Ignored.
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 22:45:18 on Dec 10,2019
-# vlog -reportprogress 300 -O0 -work work C:/Users/home/Downloads/digital_design/q_8_7_subtractor/q_8_7_tb.sv 
-# -- Compiling package q_8_7_tb_sv_unit
-# -- Importing package q_8_7_pkg
-# -- Compiling module q_8_7_tb
-# 
-# Top level modules:
-# 	q_8_7_tb
-# End time: 22:45:18 on Dec 10,2019, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-restart
-# Loading work.q_8_7_tb_sv_unit
-# Loading work.q_8_7_tb
-run
-# GetModuleFileName: The specified module could not be found.
-# 
-# 
-# ** Note: $finish    : C:/Users/home/Downloads/digital_design/q_8_7_subtractor/q_8_7_tb.sv(24)
-#    Time: 500 ps  Iteration: 0  Instance: /q_8_7_tb
-# 1
-# Break in Module q_8_7_tb at C:/Users/home/Downloads/digital_design/q_8_7_subtractor/q_8_7_tb.sv line 24
-vlog -O0 -sv -work work +incdir+C:/Users/home/Downloads/digital_design/q_8_7_subtractor C:/Users/home/Downloads/digital_design/q_8_7_subtractor/q_8_7.sv
-# ** Note: (vlog-1901) OptionFile "C:/Users/home/Documents/Fpga_proj/moore_binary_counter/simulation/modelsim/vlog.opt" not found. Ignored.
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 22:50:12 on Dec 10,2019
-# vlog -reportprogress 300 -O0 -sv -work work "+incdir+C:/Users/home/Downloads/digital_design/q_8_7_subtractor" C:/Users/home/Downloads/digital_design/q_8_7_subtractor/q_8_7.sv 
+# Start time: 09:56:20 on Dec 11,2019
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/czhe/Downloads/digital_design/q_8_7_subtractor" C:/Users/czhe/Downloads/digital_design/q_8_7_subtractor/q_8_7.sv 
 # -- Compiling package q_8_7_sv_unit
 # -- Importing package q_8_7_pkg
 # -- Compiling module q_8_7
@@ -401,7 +145,7 @@ vlog -O0 -sv -work work +incdir+C:/Users/home/Downloads/digital_design/q_8_7_sub
 # 
 # Top level modules:
 # 	q_8_7
-# End time: 22:50:12 on Dec 10,2019, Elapsed time: 0:00:00
+# End time: 09:56:21 on Dec 11,2019, Elapsed time: 0:00:01
 # Errors: 0, Warnings: 0
 restart
 # Loading work.q_8_7_sv_unit
@@ -412,43 +156,15 @@ run
 # GetModuleFileName: The specified module could not be found.
 # 
 # 
-# ** Note: $finish    : C:/Users/home/Downloads/digital_design/q_8_7_subtractor/q_8_7_tb.sv(24)
-#    Time: 500 ps  Iteration: 0  Instance: /q_8_7_tb
+# ** Note: $finish    : C:/Users/czhe/Downloads/digital_design/q_8_7_subtractor/q_8_7_tb.sv(24)
+#    Time: 150 ps  Iteration: 0  Instance: /q_8_7_tb
 # 1
-# Break in Module q_8_7_tb at C:/Users/home/Downloads/digital_design/q_8_7_subtractor/q_8_7_tb.sv line 24
-vlog -O0 -sv -work work +incdir+C:/Users/home/Downloads/digital_design/q_8_7_subtractor C:/Users/home/Downloads/digital_design/q_8_7_subtractor/q_8_7.sv
-# ** Note: (vlog-1901) OptionFile "C:/Users/home/Documents/Fpga_proj/moore_binary_counter/simulation/modelsim/vlog.opt" not found. Ignored.
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 22:52:43 on Dec 10,2019
-# vlog -reportprogress 300 -O0 -sv -work work "+incdir+C:/Users/home/Downloads/digital_design/q_8_7_subtractor" C:/Users/home/Downloads/digital_design/q_8_7_subtractor/q_8_7.sv 
-# -- Compiling package q_8_7_sv_unit
-# -- Importing package q_8_7_pkg
-# -- Compiling module q_8_7
-# -- Compiling module controller
-# -- Compiling module datapath
-# 
-# Top level modules:
-# 	q_8_7
-# End time: 22:52:43 on Dec 10,2019, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-vlog -O0 -work work C:/Users/home/Downloads/digital_design/q_8_7_subtractor/q_8_7_tb.sv
-# ** Note: (vlog-1901) OptionFile "C:/Users/home/Documents/Fpga_proj/moore_binary_counter/simulation/modelsim/vlog.opt" not found. Ignored.
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 22:52:43 on Dec 10,2019
-# vlog -reportprogress 300 -O0 -work work C:/Users/home/Downloads/digital_design/q_8_7_subtractor/q_8_7_tb.sv 
-# -- Compiling package q_8_7_tb_sv_unit
-# -- Importing package q_8_7_pkg
-# -- Compiling module q_8_7_tb
-# 
-# Top level modules:
-# 	q_8_7_tb
-# End time: 22:52:43 on Dec 10,2019, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
+# Break in Module q_8_7_tb at C:/Users/czhe/Downloads/digital_design/q_8_7_subtractor/q_8_7_tb.sv line 24
 vsim work.q_8_7_tb
-# End time: 22:52:48 on Dec 10,2019, Elapsed time: 0:11:32
+# End time: 09:58:33 on Dec 11,2019, Elapsed time: 0:11:29
 # Errors: 0, Warnings: 0
 # vsim work.q_8_7_tb 
-# Start time: 22:52:48 on Dec 10,2019
+# Start time: 09:58:34 on Dec 11,2019
 # Loading sv_std.std
 # Loading work.q_8_7_pkg
 # Loading work.q_8_7_tb_sv_unit
@@ -474,9 +190,195 @@ sim:/q_8_7_tb/RA \
 sim:/q_8_7_tb/RB \
 sim:/q_8_7_tb/RC
 run
-# ** Note: $finish    : C:/Users/home/Downloads/digital_design/q_8_7_subtractor/q_8_7_tb.sv(24)
+# ** Note: $finish    : C:/Users/czhe/Downloads/digital_design/q_8_7_subtractor/q_8_7_tb.sv(24)
+#    Time: 150 ps  Iteration: 0  Instance: /q_8_7_tb
+# 1
+# Break in Module q_8_7_tb at C:/Users/czhe/Downloads/digital_design/q_8_7_subtractor/q_8_7_tb.sv line 24
+vlog -work work C:/Users/czhe/Downloads/digital_design/q_8_7_subtractor/q_8_7_tb.sv
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 09:59:21 on Dec 11,2019
+# vlog -reportprogress 300 -work work C:/Users/czhe/Downloads/digital_design/q_8_7_subtractor/q_8_7_tb.sv 
+# -- Compiling package q_8_7_tb_sv_unit
+# -- Importing package q_8_7_pkg
+# -- Compiling module q_8_7_tb
+# 
+# Top level modules:
+# 	q_8_7_tb
+# End time: 09:59:21 on Dec 11,2019, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+restart
+# Loading work.q_8_7_tb_sv_unit
+# Loading work.q_8_7_tb
+run
+# ** Note: $finish    : C:/Users/czhe/Downloads/digital_design/q_8_7_subtractor/q_8_7_tb.sv(24)
+#    Time: 150 ps  Iteration: 0  Instance: /q_8_7_tb
+# 1
+# Break in Module q_8_7_tb at C:/Users/czhe/Downloads/digital_design/q_8_7_subtractor/q_8_7_tb.sv line 24
+vlog -sv -work work +incdir+C:/Users/czhe/Downloads/digital_design/q_8_7_subtractor C:/Users/czhe/Downloads/digital_design/q_8_7_subtractor/q_8_7.sv
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 10:08:32 on Dec 11,2019
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/czhe/Downloads/digital_design/q_8_7_subtractor" C:/Users/czhe/Downloads/digital_design/q_8_7_subtractor/q_8_7.sv 
+# -- Compiling package q_8_7_sv_unit
+# -- Importing package q_8_7_pkg
+# -- Compiling module q_8_7
+# -- Compiling module controller
+# -- Compiling module datapath
+# 
+# Top level modules:
+# 	q_8_7
+# End time: 10:08:32 on Dec 11,2019, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vlog -work work C:/Users/czhe/Downloads/digital_design/q_8_7_subtractor/q_8_7_tb.sv
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 10:08:32 on Dec 11,2019
+# vlog -reportprogress 300 -work work C:/Users/czhe/Downloads/digital_design/q_8_7_subtractor/q_8_7_tb.sv 
+# -- Compiling package q_8_7_tb_sv_unit
+# -- Importing package q_8_7_pkg
+# -- Compiling module q_8_7_tb
+# 
+# Top level modules:
+# 	q_8_7_tb
+# End time: 10:08:32 on Dec 11,2019, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vsim work.q_8_7_tb
+# End time: 10:08:37 on Dec 11,2019, Elapsed time: 0:10:03
+# Errors: 0, Warnings: 0
+# vsim work.q_8_7_tb 
+# Start time: 10:08:37 on Dec 11,2019
+# Loading sv_std.std
+# Loading work.q_8_7_pkg
+# Loading work.q_8_7_tb_sv_unit
+# Loading work.q_8_7_tb
+# Loading work.q_8_7_sv_unit
+# Loading work.q_8_7
+# Loading work.controller
+# Loading work.datapath
+add wave -position insertpoint  \
+sim:/q_8_7_tb/rst_b \
+sim:/q_8_7_tb/clk \
+sim:/q_8_7_tb/start \
+sim:/q_8_7_tb/A \
+sim:/q_8_7_tb/B \
+sim:/q_8_7_tb/result \
+sim:/q_8_7_tb/rdy \
+sim:/q_8_7_tb/state \
+sim:/q_8_7_tb/load_regs \
+sim:/q_8_7_tb/sub_regs \
+sim:/q_8_7_tb/pos \
+sim:/q_8_7_tb/comp \
+sim:/q_8_7_tb/borrow \
+sim:/q_8_7_tb/RA \
+sim:/q_8_7_tb/RB \
+sim:/q_8_7_tb/RC
+run
+# ** Note: $finish    : C:/Users/czhe/Downloads/digital_design/q_8_7_subtractor/q_8_7_tb.sv(25)
+#    Time: 150 ps  Iteration: 0  Instance: /q_8_7_tb
+# 1
+# Break in Module q_8_7_tb at C:/Users/czhe/Downloads/digital_design/q_8_7_subtractor/q_8_7_tb.sv line 25
+vlog -sv -work work +incdir+C:/Users/czhe/Downloads/digital_design/q_8_7_subtractor C:/Users/czhe/Downloads/digital_design/q_8_7_subtractor/q_8_7.sv
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 10:11:31 on Dec 11,2019
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/czhe/Downloads/digital_design/q_8_7_subtractor" C:/Users/czhe/Downloads/digital_design/q_8_7_subtractor/q_8_7.sv 
+# -- Compiling package q_8_7_sv_unit
+# -- Importing package q_8_7_pkg
+# -- Compiling module q_8_7
+# -- Compiling module controller
+# -- Compiling module datapath
+# 
+# Top level modules:
+# 	q_8_7
+# End time: 10:11:31 on Dec 11,2019, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+run
+restart
+# Loading work.q_8_7_sv_unit
+# Loading work.q_8_7
+# Loading work.controller
+# Loading work.datapath
+run
+# GetModuleFileName: The specified module could not be found.
+# 
+# 
+# ** Note: $finish    : C:/Users/czhe/Downloads/digital_design/q_8_7_subtractor/q_8_7_tb.sv(25)
+#    Time: 150 ps  Iteration: 0  Instance: /q_8_7_tb
+# 1
+# Break in Module q_8_7_tb at C:/Users/czhe/Downloads/digital_design/q_8_7_subtractor/q_8_7_tb.sv line 25
+vlog -work work C:/Users/czhe/Downloads/digital_design/q_8_7_subtractor/q_8_7_tb.sv
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 10:25:00 on Dec 11,2019
+# vlog -reportprogress 300 -work work C:/Users/czhe/Downloads/digital_design/q_8_7_subtractor/q_8_7_tb.sv 
+# -- Compiling package q_8_7_tb_sv_unit
+# -- Importing package q_8_7_pkg
+# -- Compiling module q_8_7_tb
+# 
+# Top level modules:
+# 	q_8_7_tb
+# End time: 10:25:00 on Dec 11,2019, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+restart
+# Loading work.q_8_7_tb_sv_unit
+# Loading work.q_8_7_tb
+run
+# GetModuleFileName: The specified module could not be found.
+# 
+# 
+# ** Note: $finish    : C:/Users/czhe/Downloads/digital_design/q_8_7_subtractor/q_8_7_tb.sv(25)
 #    Time: 500 ps  Iteration: 0  Instance: /q_8_7_tb
 # 1
-# Break in Module q_8_7_tb at C:/Users/home/Downloads/digital_design/q_8_7_subtractor/q_8_7_tb.sv line 24
-# End time: 22:53:26 on Dec 10,2019, Elapsed time: 0:00:38
-# Errors: 0, Warnings: 0
+# Break in Module q_8_7_tb at C:/Users/czhe/Downloads/digital_design/q_8_7_subtractor/q_8_7_tb.sv line 25
+vlog -work work C:/Users/czhe/Downloads/digital_design/q_8_7_subtractor/q_8_7_tb.sv
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 10:29:01 on Dec 11,2019
+# vlog -reportprogress 300 -work work C:/Users/czhe/Downloads/digital_design/q_8_7_subtractor/q_8_7_tb.sv 
+# ** Warning: C:/Users/czhe/Downloads/digital_design/q_8_7_subtractor/q_8_7_tb.sv(38): (vlog-2600) [RDGN] - Redundant digits in numeric literal.
+# ** Warning: C:/Users/czhe/Downloads/digital_design/q_8_7_subtractor/q_8_7_tb.sv(55): (vlog-2600) [RDGN] - Redundant digits in numeric literal.
+# -- Compiling package q_8_7_tb_sv_unit
+# -- Importing package q_8_7_pkg
+# -- Compiling module q_8_7_tb
+# ** Warning: C:/Users/czhe/Downloads/digital_design/q_8_7_subtractor/q_8_7_tb.sv(38): (vlog-2600) [RDGN] - Redundant digits in numeric literal.
+# ** Warning: C:/Users/czhe/Downloads/digital_design/q_8_7_subtractor/q_8_7_tb.sv(55): (vlog-2600) [RDGN] - Redundant digits in numeric literal.
+# 
+# Top level modules:
+# 	q_8_7_tb
+# End time: 10:29:01 on Dec 11,2019, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 4
+restart
+# Loading work.q_8_7_tb_sv_unit
+# Loading work.q_8_7_tb
+run
+# GetModuleFileName: The specified module could not be found.
+# 
+# 
+# ** Note: $finish    : C:/Users/czhe/Downloads/digital_design/q_8_7_subtractor/q_8_7_tb.sv(25)
+#    Time: 500 ps  Iteration: 0  Instance: /q_8_7_tb
+# 1
+# Break in Module q_8_7_tb at C:/Users/czhe/Downloads/digital_design/q_8_7_subtractor/q_8_7_tb.sv line 25
+vlog -work work C:/Users/czhe/Downloads/digital_design/q_8_7_subtractor/q_8_7_tb.sv
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 10:30:13 on Dec 11,2019
+# vlog -reportprogress 300 -work work C:/Users/czhe/Downloads/digital_design/q_8_7_subtractor/q_8_7_tb.sv 
+# ** Warning: C:/Users/czhe/Downloads/digital_design/q_8_7_subtractor/q_8_7_tb.sv(38): (vlog-2600) [RDGN] - Redundant digits in numeric literal.
+# ** Warning: C:/Users/czhe/Downloads/digital_design/q_8_7_subtractor/q_8_7_tb.sv(55): (vlog-2600) [RDGN] - Redundant digits in numeric literal.
+# -- Compiling package q_8_7_tb_sv_unit
+# -- Importing package q_8_7_pkg
+# -- Compiling module q_8_7_tb
+# ** Warning: C:/Users/czhe/Downloads/digital_design/q_8_7_subtractor/q_8_7_tb.sv(38): (vlog-2600) [RDGN] - Redundant digits in numeric literal.
+# ** Warning: C:/Users/czhe/Downloads/digital_design/q_8_7_subtractor/q_8_7_tb.sv(55): (vlog-2600) [RDGN] - Redundant digits in numeric literal.
+# 
+# Top level modules:
+# 	q_8_7_tb
+# End time: 10:30:14 on Dec 11,2019, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 4
+restart
+# Loading work.q_8_7_tb_sv_unit
+# Loading work.q_8_7_tb
+run
+# GetModuleFileName: The specified module could not be found.
+# 
+# 
+# ** Note: $finish    : C:/Users/czhe/Downloads/digital_design/q_8_7_subtractor/q_8_7_tb.sv(25)
+#    Time: 600 ps  Iteration: 0  Instance: /q_8_7_tb
+# 1
+# Break in Module q_8_7_tb at C:/Users/czhe/Downloads/digital_design/q_8_7_subtractor/q_8_7_tb.sv line 25
+# End time: 10:31:36 on Dec 11,2019, Elapsed time: 0:22:59
+# Errors: 0, Warnings: 8
