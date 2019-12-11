@@ -1,0 +1,4 @@
+- async reset
+- state transitions
+- controller outputs
+- sub operation and complement
