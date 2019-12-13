@@ -1,0 +1,19 @@
+|q_8_9
+rst_b => state~3.DATAIN
+clk => state~1.DATAIN
+start => Selector0.IN2
+start => clr_A_F.DATAB
+start => Selector1.IN2
+A3 => next_state.DATAA
+A3 => next_state.DATAA
+A2 => set_E.DATAB
+A2 => next_state.OUTPUTSELECT
+A2 => next_state.OUTPUTSELECT
+A2 => clr_E.DATAB
+clr_A_F <= clr_A_F.DB_MAX_OUTPUT_PORT_TYPE
+incr_A <= incr_A.DB_MAX_OUTPUT_PORT_TYPE
+clr_E <= clr_E.DB_MAX_OUTPUT_PORT_TYPE
+set_E <= set_E.DB_MAX_OUTPUT_PORT_TYPE
+set_F <= set_F.DB_MAX_OUTPUT_PORT_TYPE
+
+

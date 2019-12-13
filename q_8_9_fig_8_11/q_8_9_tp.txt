@@ -1,0 +1,3 @@
+- async reset
+- control signals
+- variation of A2, A3
