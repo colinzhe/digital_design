@@ -1,0 +1,114 @@
+# Reading C:/intelFPGA_lite/18.1/modelsim_ase/tcl/vsim/pref.tcl
+# do q_8_9_run_msim_rtl_verilog.do
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Model Technology ModelSim - Intel FPGA Edition vmap 10.5b Lib Mapping Utility 2016.10 Oct  5 2016
+# vmap work rtl_work 
+# Copying C:/intelFPGA_lite/18.1/modelsim_ase/win32aloem/../modelsim.ini to modelsim.ini
+# Modifying modelsim.ini
+# 
+# vlog -sv -work work +incdir+C:/Users/czhe/Downloads/digital_design/q_8_9_fig_8_11 {C:/Users/czhe/Downloads/digital_design/q_8_9_fig_8_11/q_8_9_str.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 17:49:19 on Dec 13,2019
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/czhe/Downloads/digital_design/q_8_9_fig_8_11" C:/Users/czhe/Downloads/digital_design/q_8_9_fig_8_11/q_8_9_str.sv 
+# -- Compiling module q_8_9_str
+# -- Compiling module d_ff
+# 
+# Top level modules:
+# 	q_8_9_str
+# End time: 17:49:20 on Dec 13,2019, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# 
+vlog -reportprogress 300 -work work C:/Users/czhe/Downloads/digital_design/q_8_9_fig_8_11/q_8_9_str.sv
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 17:49:32 on Dec 13,2019
+# vlog -reportprogress 300 -work work C:/Users/czhe/Downloads/digital_design/q_8_9_fig_8_11/q_8_9_str.sv 
+# -- Compiling module q_8_9_str
+# -- Compiling module d_ff
+# 
+# Top level modules:
+# 	q_8_9_str
+# End time: 17:49:33 on Dec 13,2019, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+vlog -reportprogress 300 -work work C:/Users/czhe/Downloads/digital_design/q_8_9_fig_8_11/q_8_9_tb.sv
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 17:49:34 on Dec 13,2019
+# vlog -reportprogress 300 -work work C:/Users/czhe/Downloads/digital_design/q_8_9_fig_8_11/q_8_9_tb.sv 
+# ** Error: C:/Users/czhe/Downloads/digital_design/q_8_9_fig_8_11/q_8_9_tb.sv(1): (vlog-13006) Could not find the package (q_8_9_pkg).  Design read will continue, but expect a cascade of errors after this failure.  Furthermore if you experience a vopt-7 error immediately before this error then please check the package names or the library search paths on the command line.
+# ** Error: C:/Users/czhe/Downloads/digital_design/q_8_9_fig_8_11/q_8_9_tb.sv(9): (vlog-2730) Undefined variable: 'st_width'.
+# End time: 17:49:34 on Dec 13,2019, Elapsed time: 0:00:00
+# Errors: 2, Warnings: 0
+vlog -reportprogress 300 -work work C:/Users/czhe/Downloads/digital_design/q_8_9_fig_8_11/q_8_9_str_tb.sv
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 17:50:32 on Dec 13,2019
+# vlog -reportprogress 300 -work work C:/Users/czhe/Downloads/digital_design/q_8_9_fig_8_11/q_8_9_str_tb.sv 
+# -- Compiling module q_8_9_str_tb
+# 
+# Top level modules:
+# 	q_8_9_str_tb
+# End time: 17:50:32 on Dec 13,2019, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vlog -reportprogress 300 -work work C:/Users/czhe/Downloads/digital_design/q_8_9_fig_8_11/q_8_9_tb.sv
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 17:53:25 on Dec 13,2019
+# vlog -reportprogress 300 -work work C:/Users/czhe/Downloads/digital_design/q_8_9_fig_8_11/q_8_9_tb.sv 
+# ** Error: C:/Users/czhe/Downloads/digital_design/q_8_9_fig_8_11/q_8_9_tb.sv(1): (vlog-13006) Could not find the package (q_8_9_pkg).  Design read will continue, but expect a cascade of errors after this failure.  Furthermore if you experience a vopt-7 error immediately before this error then please check the package names or the library search paths on the command line.
+# ** Error: C:/Users/czhe/Downloads/digital_design/q_8_9_fig_8_11/q_8_9_tb.sv(9): (vlog-2730) Undefined variable: 'st_width'.
+# End time: 17:53:25 on Dec 13,2019, Elapsed time: 0:00:00
+# Errors: 2, Warnings: 0
+vlog -reportprogress 300 -work work C:/Users/czhe/Downloads/digital_design/q_8_9_fig_8_11/q_8_9_tb.sv
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 17:53:43 on Dec 13,2019
+# vlog -reportprogress 300 -work work C:/Users/czhe/Downloads/digital_design/q_8_9_fig_8_11/q_8_9_tb.sv 
+# ** Error: C:/Users/czhe/Downloads/digital_design/q_8_9_fig_8_11/q_8_9_tb.sv(1): (vlog-13006) Could not find the package (q_8_9_pkg).  Design read will continue, but expect a cascade of errors after this failure.  Furthermore if you experience a vopt-7 error immediately before this error then please check the package names or the library search paths on the command line.
+# ** Error: C:/Users/czhe/Downloads/digital_design/q_8_9_fig_8_11/q_8_9_tb.sv(9): (vlog-2730) Undefined variable: 'st_width'.
+# End time: 17:53:43 on Dec 13,2019, Elapsed time: 0:00:00
+# Errors: 2, Warnings: 0
+vsim work.q_8_9_str_tb
+# vsim work.q_8_9_str_tb 
+# Start time: 17:53:50 on Dec 13,2019
+# Loading sv_std.std
+# Loading work.q_8_9_str_tb
+# Loading work.q_8_9_str
+# Loading work.d_ff
+vlog -work work C:/Users/czhe/Downloads/digital_design/q_8_9_fig_8_11/q_8_9_str_tb.sv
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 17:54:02 on Dec 13,2019
+# vlog -reportprogress 300 -work work C:/Users/czhe/Downloads/digital_design/q_8_9_fig_8_11/q_8_9_str_tb.sv 
+# -- Compiling module q_8_9_str_tb
+# 
+# Top level modules:
+# 	q_8_9_str_tb
+# End time: 17:54:02 on Dec 13,2019, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vsim work.q_8_9_str_tb
+# End time: 17:54:05 on Dec 13,2019, Elapsed time: 0:00:15
+# Errors: 0, Warnings: 0
+# vsim work.q_8_9_str_tb 
+# Start time: 17:54:05 on Dec 13,2019
+# Loading sv_std.std
+# Loading work.q_8_9_str_tb
+# Loading work.q_8_9_str
+# Loading work.d_ff
+add wave -position insertpoint  \
+sim:/q_8_9_str_tb/rst_b \
+sim:/q_8_9_str_tb/clk \
+sim:/q_8_9_str_tb/start \
+sim:/q_8_9_str_tb/A3 \
+sim:/q_8_9_str_tb/A2 \
+sim:/q_8_9_str_tb/clr_A_F \
+sim:/q_8_9_str_tb/incr_A \
+sim:/q_8_9_str_tb/clr_E \
+sim:/q_8_9_str_tb/set_E \
+sim:/q_8_9_str_tb/set_F \
+sim:/q_8_9_str_tb/state
+run
+# ** Note: $finish    : C:/Users/czhe/Downloads/digital_design/q_8_9_fig_8_11/q_8_9_str_tb.sv(9)
+#    Time: 150 ps  Iteration: 0  Instance: /q_8_9_str_tb
+# 1
+# Break in Module q_8_9_str_tb at C:/Users/czhe/Downloads/digital_design/q_8_9_fig_8_11/q_8_9_str_tb.sv line 9
+# End time: 17:55:12 on Dec 13,2019, Elapsed time: 0:01:07
+# Errors: 0, Warnings: 0

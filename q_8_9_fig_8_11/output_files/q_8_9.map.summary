@@ -1,7 +1,7 @@
-Analysis & Synthesis Status : Successful - Fri Dec 13 10:44:34 2019
+Analysis & Synthesis Status : Successful - Fri Dec 13 17:49:02 2019
 Quartus Prime Version : 18.1.0 Build 625 09/12/2018 SJ Lite Edition
 Revision Name : q_8_9
-Top-level Entity Name : q_8_9
+Top-level Entity Name : q_8_9_str
 Family : Cyclone V
 Logic utilization (in ALMs) : N/A
 Total registers : 3

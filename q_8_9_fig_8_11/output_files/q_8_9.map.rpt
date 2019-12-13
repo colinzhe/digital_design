@@ -1,5 +1,5 @@
 Analysis & Synthesis report for q_8_9
-Fri Dec 13 10:44:34 2019
+Fri Dec 13 17:49:02 2019
 Quartus Prime Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
 
 
@@ -13,11 +13,14 @@ Quartus Prime Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
   5. Analysis & Synthesis Source Files Read
   6. Analysis & Synthesis Resource Usage Summary
   7. Analysis & Synthesis Resource Utilization by Entity
-  8. State Machine - |q_8_9|state
-  9. General Register Statistics
- 10. Post-Synthesis Netlist Statistics for Top Partition
- 11. Elapsed Time Per Partition
- 12. Analysis & Synthesis Messages
+  8. General Register Statistics
+  9. Inverted Register Statistics
+ 10. Parameter Settings for User Entity Instance: d_ff:G_0
+ 11. Parameter Settings for User Entity Instance: d_ff:G_1
+ 12. Parameter Settings for User Entity Instance: d_ff:G_2
+ 13. Post-Synthesis Netlist Statistics for Top Partition
+ 14. Elapsed Time Per Partition
+ 15. Analysis & Synthesis Messages
 
 
 
@@ -43,10 +46,10 @@ refer to the applicable agreement for further details.
 +-------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                  ;
 +---------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status     ; Successful - Fri Dec 13 10:44:34 2019       ;
+; Analysis & Synthesis Status     ; Successful - Fri Dec 13 17:49:02 2019       ;
 ; Quartus Prime Version           ; 18.1.0 Build 625 09/12/2018 SJ Lite Edition ;
 ; Revision Name                   ; q_8_9                                       ;
-; Top-level Entity Name           ; q_8_9                                       ;
+; Top-level Entity Name           ; q_8_9_str                                   ;
 ; Family                          ; Cyclone V                                   ;
 ; Logic utilization (in ALMs)     ; N/A                                         ;
 ; Total registers                 ; 3                                           ;
@@ -69,7 +72,7 @@ refer to the applicable agreement for further details.
 ; Option                                                                          ; Setting            ; Default Value      ;
 +---------------------------------------------------------------------------------+--------------------+--------------------+
 ; Device                                                                          ; 5CGXFC5C6F27C7     ;                    ;
-; Top-level entity name                                                           ; q_8_9              ; q_8_9              ;
+; Top-level entity name                                                           ; q_8_9_str          ; q_8_9              ;
 ; Family name                                                                     ; Cyclone V          ; Cyclone V          ;
 ; Use smart compilation                                                           ; Off                ; Off                ;
 ; Enable parallel Assembler and Timing Analyzer during compilation                ; On                 ; On                 ;
@@ -172,36 +175,35 @@ refer to the applicable agreement for further details.
 +----------------------------------+-----------------+------------------------------+--------------------------------------------------------------------+---------+
 ; File Name with User-Entered Path ; Used in Netlist ; File Type                    ; File Name with Absolute Path                                       ; Library ;
 +----------------------------------+-----------------+------------------------------+--------------------------------------------------------------------+---------+
-; q_8_9_pkg.sv                     ; yes             ; User SystemVerilog HDL File  ; C:/Users/czhe/Downloads/digital_design/q_8_9_fig_8_11/q_8_9_pkg.sv ;         ;
-; q_8_9.sv                         ; yes             ; User SystemVerilog HDL File  ; C:/Users/czhe/Downloads/digital_design/q_8_9_fig_8_11/q_8_9.sv     ;         ;
+; q_8_9_str.sv                     ; yes             ; User SystemVerilog HDL File  ; C:/Users/czhe/Downloads/digital_design/q_8_9_fig_8_11/q_8_9_str.sv ;         ;
 +----------------------------------+-----------------+------------------------------+--------------------------------------------------------------------+---------+
 
 
-+---------------------------------------------------------+
-; Analysis & Synthesis Resource Usage Summary             ;
-+---------------------------------------------+-----------+
-; Resource                                    ; Usage     ;
-+---------------------------------------------+-----------+
-; Estimate of Logic utilization (ALMs needed) ; 3         ;
-;                                             ;           ;
-; Combinational ALUT usage for logic          ; 6         ;
-;     -- 7 input functions                    ; 0         ;
-;     -- 6 input functions                    ; 0         ;
-;     -- 5 input functions                    ; 1         ;
-;     -- 4 input functions                    ; 0         ;
-;     -- <=3 input functions                  ; 5         ;
-;                                             ;           ;
-; Dedicated logic registers                   ; 3         ;
-;                                             ;           ;
-; I/O pins                                    ; 10        ;
-;                                             ;           ;
-; Total DSP Blocks                            ; 0         ;
-;                                             ;           ;
-; Maximum fan-out node                        ; state.S_1 ;
-; Maximum fan-out                             ; 5         ;
-; Total fan-out                               ; 41        ;
-; Average fan-out                             ; 1.41      ;
-+---------------------------------------------+-----------+
++----------------------------------------------------------+
+; Analysis & Synthesis Resource Usage Summary              ;
++---------------------------------------------+------------+
+; Resource                                    ; Usage      ;
++---------------------------------------------+------------+
+; Estimate of Logic utilization (ALMs needed) ; 3          ;
+;                                             ;            ;
+; Combinational ALUT usage for logic          ; 6          ;
+;     -- 7 input functions                    ; 0          ;
+;     -- 6 input functions                    ; 0          ;
+;     -- 5 input functions                    ; 1          ;
+;     -- 4 input functions                    ; 0          ;
+;     -- <=3 input functions                  ; 5          ;
+;                                             ;            ;
+; Dedicated logic registers                   ; 3          ;
+;                                             ;            ;
+; I/O pins                                    ; 10         ;
+;                                             ;            ;
+; Total DSP Blocks                            ; 0          ;
+;                                             ;            ;
+; Maximum fan-out node                        ; d_ff:G_1|Q ;
+; Maximum fan-out                             ; 5          ;
+; Total fan-out                               ; 41         ;
+; Average fan-out                             ; 1.41       ;
++---------------------------------------------+------------+
 
 
 +----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
@@ -209,21 +211,12 @@ refer to the applicable agreement for further details.
 +----------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+---------------------+-------------+--------------+
 ; Compilation Hierarchy Node ; Combinational ALUTs ; Dedicated Logic Registers ; Block Memory Bits ; DSP Blocks ; Pins ; Virtual Pins ; Full Hierarchy Name ; Entity Name ; Library Name ;
 +----------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+---------------------+-------------+--------------+
-; |q_8_9                     ; 6 (6)               ; 3 (3)                     ; 0                 ; 0          ; 10   ; 0            ; |q_8_9              ; q_8_9       ; work         ;
+; |q_8_9_str                 ; 6 (6)               ; 3 (0)                     ; 0                 ; 0          ; 10   ; 0            ; |q_8_9_str          ; q_8_9_str   ; work         ;
+;    |d_ff:G_0|              ; 0 (0)               ; 1 (1)                     ; 0                 ; 0          ; 0    ; 0            ; |q_8_9_str|d_ff:G_0 ; d_ff        ; work         ;
+;    |d_ff:G_1|              ; 0 (0)               ; 1 (1)                     ; 0                 ; 0          ; 0    ; 0            ; |q_8_9_str|d_ff:G_1 ; d_ff        ; work         ;
+;    |d_ff:G_2|              ; 0 (0)               ; 1 (1)                     ; 0                 ; 0          ; 0    ; 0            ; |q_8_9_str|d_ff:G_2 ; d_ff        ; work         ;
 +----------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+---------------------+-------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
-
-
-Encoding Type:  One-Hot
-+-----------------------------------------------------+
-; State Machine - |q_8_9|state                        ;
-+--------------+--------------+-----------+-----------+
-; Name         ; state.S_idle ; state.S_1 ; state.S_2 ;
-+--------------+--------------+-----------+-----------+
-; state.S_idle ; 0            ; 0         ; 0         ;
-; state.S_1    ; 1            ; 1         ; 0         ;
-; state.S_2    ; 1            ; 0         ; 1         ;
-+--------------+--------------+-----------+-----------+
 
 
 +------------------------------------------------------+
@@ -241,6 +234,46 @@ Encoding Type:  One-Hot
 +----------------------------------------------+-------+
 
 
++--------------------------------------------------+
+; Inverted Register Statistics                     ;
++----------------------------------------+---------+
+; Inverted Register                      ; Fan out ;
++----------------------------------------+---------+
+; d_ff:G_0|Q                             ; 3       ;
+; Total number of inverted registers = 1 ;         ;
++----------------------------------------+---------+
+
+
++-------------------------------------------------------+
+; Parameter Settings for User Entity Instance: d_ff:G_0 ;
++----------------+-------+------------------------------+
+; Parameter Name ; Value ; Type                         ;
++----------------+-------+------------------------------+
+; RESET_VAL      ; 1     ; Unsigned Binary              ;
++----------------+-------+------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-------------------------------------------------------+
+; Parameter Settings for User Entity Instance: d_ff:G_1 ;
++----------------+-------+------------------------------+
+; Parameter Name ; Value ; Type                         ;
++----------------+-------+------------------------------+
+; RESET_VAL      ; 0     ; Unsigned Binary              ;
++----------------+-------+------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-------------------------------------------------------+
+; Parameter Settings for User Entity Instance: d_ff:G_2 ;
++----------------+-------+------------------------------+
+; Parameter Name ; Value ; Type                         ;
++----------------+-------+------------------------------+
+; RESET_VAL      ; 0     ; Unsigned Binary              ;
++----------------+-------+------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
 +-----------------------------------------------------+
 ; Post-Synthesis Netlist Statistics for Top Partition ;
 +-----------------------+-----------------------------+
@@ -248,16 +281,15 @@ Encoding Type:  One-Hot
 +-----------------------+-----------------------------+
 ; arriav_ff             ; 3                           ;
 ;     CLR               ; 3                           ;
-; arriav_lcell_comb     ; 7                           ;
-;     normal            ; 7                           ;
-;         1 data inputs ; 1                           ;
+; arriav_lcell_comb     ; 6                           ;
+;     normal            ; 6                           ;
 ;         2 data inputs ; 3                           ;
 ;         3 data inputs ; 2                           ;
 ;         5 data inputs ; 1                           ;
 ; boundary_port         ; 10                          ;
 ;                       ;                             ;
-; Max LUT depth         ; 2.00                        ;
-; Average LUT depth     ; 1.13                        ;
+; Max LUT depth         ; 1.00                        ;
+; Average LUT depth     ; 0.86                        ;
 +-----------------------+-----------------------------+
 
 
@@ -276,15 +308,18 @@ Encoding Type:  One-Hot
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
-    Info: Processing started: Fri Dec 13 10:44:07 2019
+    Info: Processing started: Fri Dec 13 17:48:35 2019
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off q_8_9 -c q_8_9
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 8 of the 8 processors detected
-Info (12021): Found 1 design units, including 0 entities, in source file q_8_9_pkg.sv
-    Info (12022): Found design unit 1: q_8_9_pkg (SystemVerilog) File: C:/Users/czhe/Downloads/digital_design/q_8_9_fig_8_11/q_8_9_pkg.sv Line: 1
-Info (12021): Found 1 design units, including 1 entities, in source file q_8_9.sv
-    Info (12023): Found entity 1: q_8_9 File: C:/Users/czhe/Downloads/digital_design/q_8_9_fig_8_11/q_8_9.sv Line: 3
-Info (12127): Elaborating entity "q_8_9" for the top level hierarchy
+Info (12021): Found 2 design units, including 2 entities, in source file q_8_9_str.sv
+    Info (12023): Found entity 1: q_8_9_str File: C:/Users/czhe/Downloads/digital_design/q_8_9_fig_8_11/q_8_9_str.sv Line: 1
+    Info (12023): Found entity 2: d_ff File: C:/Users/czhe/Downloads/digital_design/q_8_9_fig_8_11/q_8_9_str.sv Line: 52
+Info (12127): Elaborating entity "q_8_9_str" for the top level hierarchy
+Info (12128): Elaborating entity "d_ff" for hierarchy "d_ff:G_0" File: C:/Users/czhe/Downloads/digital_design/q_8_9_fig_8_11/q_8_9_str.sv Line: 37
+Info (12128): Elaborating entity "d_ff" for hierarchy "d_ff:G_1" File: C:/Users/czhe/Downloads/digital_design/q_8_9_fig_8_11/q_8_9_str.sv Line: 43
+Info (13014): Ignored 2 buffer(s)
+    Info (13019): Ignored 2 SOFT buffer(s)
 Info (286030): Timing-Driven Synthesis is running
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
@@ -293,9 +328,9 @@ Info (21057): Implemented 16 device resources after synthesis - the final resour
     Info (21059): Implemented 5 output pins
     Info (21061): Implemented 6 logic cells
 Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 1 warning
-    Info: Peak virtual memory: 4889 megabytes
-    Info: Processing ended: Fri Dec 13 10:44:34 2019
+    Info: Peak virtual memory: 4887 megabytes
+    Info: Processing ended: Fri Dec 13 17:49:02 2019
     Info: Elapsed time: 00:00:27
-    Info: Total CPU time (on all processors): 00:01:03
+    Info: Total CPU time (on all processors): 00:01:02
 
 

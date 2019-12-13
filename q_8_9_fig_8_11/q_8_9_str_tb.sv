@@ -1,12 +1,10 @@
-import q_8_9_pkg::*;
-
-module q_8_9_tb;
+module q_8_9_str_tb;
     reg rst_b, clk, start, A3, A2;
     wire clr_A_F, incr_A, clr_E, set_E, set_F;
 
-    q_8_9 dut (.*);
+    q_8_9_str dut (.*);
 
-    wire [st_width-1:0] state = dut.state;
+    wire [2:0] state = {<<{dut.Q_out}};
 
     initial #150 $finish;
 
