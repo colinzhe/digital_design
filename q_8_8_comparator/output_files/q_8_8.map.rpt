@@ -1,5 +1,5 @@
 Analysis & Synthesis report for q_8_8
-Thu Dec 12 10:53:52 2019
+Thu Dec 12 23:02:35 2019
 Quartus Prime Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
 
 
@@ -45,14 +45,14 @@ refer to the applicable agreement for further details.
 +-------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                  ;
 +---------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status     ; Successful - Thu Dec 12 10:53:52 2019       ;
+; Analysis & Synthesis Status     ; Successful - Thu Dec 12 23:02:35 2019       ;
 ; Quartus Prime Version           ; 18.1.0 Build 625 09/12/2018 SJ Lite Edition ;
 ; Revision Name                   ; q_8_8                                       ;
 ; Top-level Entity Name           ; q_8_8                                       ;
 ; Family                          ; Cyclone V                                   ;
 ; Logic utilization (in ALMs)     ; N/A                                         ;
-; Total registers                 ; 48                                          ;
-; Total pins                      ; 52                                          ;
+; Total registers                 ; 50                                          ;
+; Total pins                      ; 53                                          ;
 ; Total virtual pins              ; 0                                           ;
 ; Total block memory bits         ; 0                                           ;
 ; Total DSP Blocks                ; 0                                           ;
@@ -157,15 +157,15 @@ refer to the applicable agreement for further details.
 +----------------------------+-------------+
 ; Processors                 ; Number      ;
 +----------------------------+-------------+
-; Number detected on machine ; 8           ;
-; Maximum allowed            ; 8           ;
+; Number detected on machine ; 16          ;
+; Maximum allowed            ; 16          ;
 ;                            ;             ;
 ; Average used               ; 1.00        ;
-; Maximum used               ; 8           ;
+; Maximum used               ; 16          ;
 ;                            ;             ;
 ; Usage by Processor         ; % Time Used ;
 ;     Processor 1            ; 100.0%      ;
-;     Processors 2-8         ;   0.0%      ;
+;     Processors 2-16        ;   0.0%      ;
 +----------------------------+-------------+
 
 
@@ -174,8 +174,8 @@ refer to the applicable agreement for further details.
 +----------------------------------+-----------------+------------------------------+----------------------------------------------------------------------+---------+
 ; File Name with User-Entered Path ; Used in Netlist ; File Type                    ; File Name with Absolute Path                                         ; Library ;
 +----------------------------------+-----------------+------------------------------+----------------------------------------------------------------------+---------+
-; q_8_8_pkg.sv                     ; yes             ; User SystemVerilog HDL File  ; C:/Users/czhe/Downloads/digital_design/q_8_8_comparator/q_8_8_pkg.sv ;         ;
-; q_8_8.sv                         ; yes             ; User SystemVerilog HDL File  ; C:/Users/czhe/Downloads/digital_design/q_8_8_comparator/q_8_8.sv     ;         ;
+; q_8_8_pkg.sv                     ; yes             ; User SystemVerilog HDL File  ; C:/Users/home/Downloads/digital_design/q_8_8_comparator/q_8_8_pkg.sv ;         ;
+; q_8_8.sv                         ; yes             ; User SystemVerilog HDL File  ; C:/Users/home/Downloads/digital_design/q_8_8_comparator/q_8_8.sv     ;         ;
 +----------------------------------+-----------------+------------------------------+----------------------------------------------------------------------+---------+
 
 
@@ -184,25 +184,25 @@ refer to the applicable agreement for further details.
 +---------------------------------------------+-----------+
 ; Resource                                    ; Usage     ;
 +---------------------------------------------+-----------+
-; Estimate of Logic utilization (ALMs needed) ; 26        ;
+; Estimate of Logic utilization (ALMs needed) ; 28        ;
 ;                                             ;           ;
-; Combinational ALUT usage for logic          ; 9         ;
+; Combinational ALUT usage for logic          ; 10        ;
 ;     -- 7 input functions                    ; 0         ;
-;     -- 6 input functions                    ; 2         ;
-;     -- 5 input functions                    ; 1         ;
-;     -- 4 input functions                    ; 3         ;
-;     -- <=3 input functions                  ; 3         ;
+;     -- 6 input functions                    ; 3         ;
+;     -- 5 input functions                    ; 3         ;
+;     -- 4 input functions                    ; 0         ;
+;     -- <=3 input functions                  ; 4         ;
 ;                                             ;           ;
-; Dedicated logic registers                   ; 48        ;
+; Dedicated logic registers                   ; 50        ;
 ;                                             ;           ;
-; I/O pins                                    ; 52        ;
+; I/O pins                                    ; 53        ;
 ;                                             ;           ;
 ; Total DSP Blocks                            ; 0         ;
 ;                                             ;           ;
 ; Maximum fan-out node                        ; clk~input ;
-; Maximum fan-out                             ; 48        ;
-; Total fan-out                               ; 324       ;
-; Average fan-out                             ; 2.01      ;
+; Maximum fan-out                             ; 50        ;
+; Total fan-out                               ; 353       ;
+; Average fan-out                             ; 2.13      ;
 +---------------------------------------------+-----------+
 
 
@@ -211,7 +211,7 @@ refer to the applicable agreement for further details.
 +----------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+---------------------+-------------+--------------+
 ; Compilation Hierarchy Node ; Combinational ALUTs ; Dedicated Logic Registers ; Block Memory Bits ; DSP Blocks ; Pins ; Virtual Pins ; Full Hierarchy Name ; Entity Name ; Library Name ;
 +----------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+---------------------+-------------+--------------+
-; |q_8_8                     ; 9 (9)               ; 48 (48)                   ; 0                 ; 0          ; 52   ; 0            ; |q_8_8              ; q_8_8       ; work         ;
+; |q_8_8                     ; 10 (10)             ; 50 (50)                   ; 0                 ; 0          ; 53   ; 0            ; |q_8_8              ; q_8_8       ; work         ;
 +----------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+---------------------+-------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
 
@@ -242,12 +242,12 @@ Encoding Type:  One-Hot
 +----------------------------------------------+-------+
 ; Statistic                                    ; Value ;
 +----------------------------------------------+-------+
-; Total registers                              ; 48    ;
-; Number of registers using Synchronous Clear  ; 0     ;
+; Total registers                              ; 50    ;
+; Number of registers using Synchronous Clear  ; 14    ;
 ; Number of registers using Synchronous Load   ; 14    ;
-; Number of registers using Asynchronous Clear ; 48    ;
+; Number of registers using Asynchronous Clear ; 49    ;
 ; Number of registers using Asynchronous Load  ; 0     ;
-; Number of registers using Clock Enable       ; 47    ;
+; Number of registers using Clock Enable       ; 48    ;
 ; Number of registers using Preset             ; 0     ;
 +----------------------------------------------+-------+
 
@@ -257,7 +257,7 @@ Encoding Type:  One-Hot
 +--------------------+-----------+---------------+----------------------+------------------------+------------+----------------------------+
 ; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output ;
 +--------------------+-----------+---------------+----------------------+------------------------+------------+----------------------------+
-; 3:1                ; 14 bits   ; 28 LEs        ; 0 LEs                ; 28 LEs                 ; Yes        ; |q_8_8|RC[1]               ;
+; 4:1                ; 14 bits   ; 28 LEs        ; 0 LEs                ; 28 LEs                 ; Yes        ; |q_8_8|RC[1]               ;
 +--------------------+-----------+---------------+----------------------+------------------------+------------+----------------------------+
 
 
@@ -266,21 +266,22 @@ Encoding Type:  One-Hot
 +-----------------------+-----------------------------+
 ; Type                  ; Count                       ;
 +-----------------------+-----------------------------+
-; arriav_ff             ; 48                          ;
+; arriav_ff             ; 50                          ;
 ;     CLR               ; 1                           ;
-;     ENA CLR           ; 33                          ;
-;     ENA CLR SLD       ; 14                          ;
-; arriav_lcell_comb     ; 9                           ;
-;     normal            ; 9                           ;
+;     ENA CLR           ; 34                          ;
+;     ENA CLR SCLR SLD  ; 14                          ;
+;     plain             ; 1                           ;
+; arriav_lcell_comb     ; 11                          ;
+;     normal            ; 11                          ;
+;         1 data inputs ; 1                           ;
 ;         2 data inputs ; 2                           ;
-;         3 data inputs ; 1                           ;
-;         4 data inputs ; 3                           ;
-;         5 data inputs ; 1                           ;
-;         6 data inputs ; 2                           ;
-; boundary_port         ; 52                          ;
+;         3 data inputs ; 2                           ;
+;         5 data inputs ; 3                           ;
+;         6 data inputs ; 3                           ;
+; boundary_port         ; 53                          ;
 ;                       ;                             ;
-; Max LUT depth         ; 2.00                        ;
-; Average LUT depth     ; 0.55                        ;
+; Max LUT depth         ; 3.00                        ;
+; Average LUT depth     ; 0.78                        ;
 +-----------------------+-----------------------------+
 
 
@@ -289,7 +290,7 @@ Encoding Type:  One-Hot
 +----------------+--------------+
 ; Partition Name ; Elapsed Time ;
 +----------------+--------------+
-; Top            ; 00:00:01     ;
+; Top            ; 00:00:00     ;
 +----------------+--------------+
 
 
@@ -299,29 +300,27 @@ Encoding Type:  One-Hot
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
-    Info: Processing started: Thu Dec 12 10:53:24 2019
+    Info: Processing started: Thu Dec 12 23:02:25 2019
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off q_8_8 -c q_8_8
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
-Info (20030): Parallel compilation is enabled and will use 8 of the 8 processors detected
+Info (20030): Parallel compilation is enabled and will use 16 of the 16 processors detected
 Info (12021): Found 1 design units, including 0 entities, in source file q_8_8_pkg.sv
-    Info (12022): Found design unit 1: q_8_8_pkg (SystemVerilog) File: C:/Users/czhe/Downloads/digital_design/q_8_8_comparator/q_8_8_pkg.sv Line: 1
+    Info (12022): Found design unit 1: q_8_8_pkg (SystemVerilog) File: C:/Users/home/Downloads/digital_design/q_8_8_comparator/q_8_8_pkg.sv Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file q_8_8.sv
-    Info (12023): Found entity 1: q_8_8 File: C:/Users/czhe/Downloads/digital_design/q_8_8_comparator/q_8_8.sv Line: 3
+    Info (12023): Found entity 1: q_8_8 File: C:/Users/home/Downloads/digital_design/q_8_8_comparator/q_8_8.sv Line: 3
 Info (12127): Elaborating entity "q_8_8" for the top level hierarchy
 Info (286030): Timing-Driven Synthesis is running
 Info (17049): 1 registers lost all their fanouts during netlist optimizations.
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
-Warning (21074): Design contains 1 input pin(s) that do not drive logic
-    Warning (15610): No output dependent on input pin "B[15]" File: C:/Users/czhe/Downloads/digital_design/q_8_8_comparator/q_8_8.sv Line: 5
-Info (21057): Implemented 107 device resources after synthesis - the final resource count might be different
+Info (21057): Implemented 110 device resources after synthesis - the final resource count might be different
     Info (21058): Implemented 35 input pins
-    Info (21059): Implemented 17 output pins
-    Info (21061): Implemented 55 logic cells
-Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 3 warnings
-    Info: Peak virtual memory: 4887 megabytes
-    Info: Processing ended: Thu Dec 12 10:53:52 2019
-    Info: Elapsed time: 00:00:28
-    Info: Total CPU time (on all processors): 00:01:06
+    Info (21059): Implemented 18 output pins
+    Info (21061): Implemented 57 logic cells
+Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 1 warning
+    Info: Peak virtual memory: 4880 megabytes
+    Info: Processing ended: Thu Dec 12 23:02:35 2019
+    Info: Elapsed time: 00:00:10
+    Info: Total CPU time (on all processors): 00:00:24
 
 

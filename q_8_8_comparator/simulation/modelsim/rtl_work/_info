@@ -1,0 +1,139 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/Users/home/Downloads/digital_design/q_8_8_comparator/simulation/modelsim
+vq_8_8
+Z1 DXx6 sv_std 3 std 0 22 AD7iAPLo6nTIKk<N0eo=D3
+Z2 DXx4 work 9 q_8_8_pkg 0 22 3zkJITKWV]k>1gS8N3DGn2
+DXx4 work 13 q_8_8_sv_unit 0 22 [HhQ^[^Pock4bkijWOZGQ3
+Z3 VDg1SIo80bB@j0V0VzS_@n1
+r1
+!s85 0
+31
+!i10b 1
+!s100 V=4lT92nWzE<c[UmW04YT0
+I]h<X2VMKnbC@1;BV`F]`@3
+!s105 q_8_8_sv_unit
+S1
+R0
+Z4 w1576209742
+Z5 8C:/Users/home/Downloads/digital_design/q_8_8_comparator/q_8_8.sv
+Z6 FC:/Users/home/Downloads/digital_design/q_8_8_comparator/q_8_8.sv
+L0 3
+Z7 OV;L;10.5b;63
+Z8 !s108 1576210344.000000
+Z9 !s107 C:/Users/home/Downloads/digital_design/q_8_8_comparator/q_8_8.sv|
+Z10 !s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/home/Downloads/digital_design/q_8_8_comparator|C:/Users/home/Downloads/digital_design/q_8_8_comparator/q_8_8.sv|
+!s101 -O0
+!i113 1
+Z11 o-O0 -sv -work work
+Z12 !s92 -O0 -sv -work work +incdir+C:/Users/home/Downloads/digital_design/q_8_8_comparator
+Z13 tDisableOpt 1 CvgOpt 0
+Xq_8_8_pkg
+R1
+!s110 1576210344
+!i10b 1
+!s100 eN64@RHPY7g@YWaY98:_c3
+I3zkJITKWV]k>1gS8N3DGn2
+V3zkJITKWV]k>1gS8N3DGn2
+S1
+R0
+w1576207982
+8C:/Users/home/Downloads/digital_design/q_8_8_comparator/q_8_8_pkg.sv
+FC:/Users/home/Downloads/digital_design/q_8_8_comparator/q_8_8_pkg.sv
+L0 1
+R7
+r1
+!s85 0
+31
+R8
+!s107 C:/Users/home/Downloads/digital_design/q_8_8_comparator/q_8_8_pkg.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/home/Downloads/digital_design/q_8_8_comparator|C:/Users/home/Downloads/digital_design/q_8_8_comparator/q_8_8_pkg.sv|
+!s101 -O0
+!i113 1
+R11
+R12
+R13
+Xq_8_8_sv_unit
+R1
+R2
+V[HhQ^[^Pock4bkijWOZGQ3
+r1
+!s85 0
+31
+!i10b 1
+!s100 WC<H8j`757L1Izg]<kRZ:1
+I[HhQ^[^Pock4bkijWOZGQ3
+!i103 1
+S1
+R0
+R4
+R5
+R6
+L0 1
+R7
+R8
+R9
+R10
+!s101 -O0
+!i113 1
+R11
+R12
+R13
+vq_8_8_tb
+R1
+R2
+DXx4 work 16 q_8_8_tb_sv_unit 0 22 OCfH_B0llcI:1fFg7z9i92
+R3
+r1
+!s85 0
+31
+!i10b 1
+!s100 coTZ_9O9KhBIIfeVaM2NT3
+I9eKY[nlPlMJP1X<N9ZMfi3
+!s105 q_8_8_tb_sv_unit
+S1
+R0
+Z14 w1576210430
+Z15 8C:/Users/home/Downloads/digital_design/q_8_8_comparator/q_8_8_tb.sv
+Z16 FC:/Users/home/Downloads/digital_design/q_8_8_comparator/q_8_8_tb.sv
+L0 3
+R7
+Z17 !s108 1576210439.000000
+Z18 !s107 C:/Users/home/Downloads/digital_design/q_8_8_comparator/q_8_8_tb.sv|
+Z19 !s90 -reportprogress|300|-work|work|C:/Users/home/Downloads/digital_design/q_8_8_comparator/q_8_8_tb.sv|
+!s101 -O0
+!i113 1
+Z20 o-O0 -work work
+R13
+Xq_8_8_tb_sv_unit
+R1
+R2
+VOCfH_B0llcI:1fFg7z9i92
+r1
+!s85 0
+31
+!i10b 1
+!s100 bNkkXKnC10hm47F:ST3VW2
+IOCfH_B0llcI:1fFg7z9i92
+!i103 1
+S1
+R0
+R14
+R15
+R16
+L0 1
+R7
+R17
+R18
+R19
+!s101 -O0
+!i113 1
+R20
+R13

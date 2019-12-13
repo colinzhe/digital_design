@@ -1,0 +1,6 @@
+- async reset
+- greater than
+- less than
+- equal
+- state
+- control signals

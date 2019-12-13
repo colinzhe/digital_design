@@ -68,11 +68,11 @@
 					"strict" : false
 				},
 				{
-					"name" : "rdy",
+					"name" : "carry",
 					"strict" : false
 				},
 				{
-					"name" : "start",
+					"name" : "rdy",
 					"strict" : false
 				},
 				{
@@ -84,6 +84,10 @@
 					"strict" : false
 				},
 				{
+					"name" : "start",
+					"strict" : false
+				},
+				{
 					"name" : "A[1]",
 					"strict" : false
 				},
@@ -92,11 +96,15 @@
 					"strict" : false
 				},
 				{
-					"name" : "A[3]",
+					"name" : "A[2]",
 					"strict" : false
 				},
 				{
-					"name" : "A[2]",
+					"name" : "B[0]",
+					"strict" : false
+				},
+				{
+					"name" : "A[3]",
 					"strict" : false
 				},
 				{
@@ -145,10 +153,6 @@
 				},
 				{
 					"name" : "A[4]",
-					"strict" : false
-				},
-				{
-					"name" : "B[0]",
 					"strict" : false
 				},
 				{
@@ -205,6 +209,10 @@
 				},
 				{
 					"name" : "B[14]",
+					"strict" : false
+				},
+				{
+					"name" : "B[15]",
 					"strict" : false
 				}
 			]

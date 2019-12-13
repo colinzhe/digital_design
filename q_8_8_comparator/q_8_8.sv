@@ -4,7 +4,7 @@ module q_8_8 (
     input rst_b, clk, start,
     input [15:0] A, B,
     output logic [15:0] C,
-    output logic rdy
+    output logic carry, rdy
 );
     logic load_regs, div, mul, clr;
     logic RA_lt_0, RA_gt_0, RA_eq_0;
@@ -21,24 +21,26 @@ module q_8_8 (
     always_comb
     begin
         next_state = S_idle;
-        load_regs = 0;
-        div = 0;
-        mul = 0;
-        clr = 0;
-        rdy = 0;
+        load_regs = 1'b0;
+        div = 1'b0;
+        mul = 1'b0;
+        clr = 1'b0;
+        rdy = 1'b0;
         case (state)
             S_idle :
-                if (start)
                 begin
-                    load_regs = 1'b1;
-                    next_state = S_1;
+                    if (start)
+                    begin
+                        load_regs = 1'b1;
+                        next_state = S_1;
+                    end
                     rdy = 1'b1;
                 end
             S_1 :
                 begin
                     if (RA_lt_0) div = 1'b1;
                     else if (RA_gt_0) mul = 1'b1;
-                    else if (RA_eq_0) clr = 1'b0;
+                    else if (RA_eq_0) clr = 1'b1;
                     next_state = S_idle;
                 end
             default : next_state = S_idle;
@@ -50,16 +52,16 @@ module q_8_8 (
     begin
         if (!rst_b)
         begin
-            RA <= 16'h00;
-            RB <= 16'h00;
-            RC <= 16'h00;
+            RA <= 16'h0000;
+            RB <= 16'h0000;
+            RC <= 16'h0000;
         end
         else
         begin
             if (load_regs) begin RA <= A; RB <= B; end
-            else if (div) RC <= RA / 16'd2;
-            else if (mul) RC <= RB * 16'd2;
-            else if (clr) RC <= 16'h00;
+            else if (div) RC <= RA / 2'b10;
+            else if (mul) {carry, RC} <= RB * 2'b10;
+            else if (clr) RC <= 16'h0000;
         end
     end
 
