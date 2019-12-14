@@ -1,0 +1,58 @@
+# Reading C:/intelFPGA/18.1/modelsim_ase/tcl/vsim/pref.tcl
+# do q_8_10_dff_run_msim_rtl_verilog.do
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Model Technology ModelSim - Intel FPGA Edition vmap 10.5b Lib Mapping Utility 2016.10 Oct  5 2016
+# vmap work rtl_work 
+# Modifying C:/intelFPGA/18.1/modelsim_ase/win32aloem/../modelsim.ini
+# 
+# vlog -sv -work work +incdir+C:/Users/home/Downloads/digital_design/q_8_10_fig_p_8_10_dff {C:/Users/home/Downloads/digital_design/q_8_10_fig_p_8_10_dff/q_8_10_dff.sv}
+# ** Note: (vlog-1901) OptionFile "C:/Users/home/Documents/Fpga_proj/moore_binary_counter/simulation/modelsim/vlog.opt" not found. Ignored.
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 15:15:23 on Dec 14,2019
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/home/Downloads/digital_design/q_8_10_fig_p_8_10_dff" C:/Users/home/Downloads/digital_design/q_8_10_fig_p_8_10_dff/q_8_10_dff.sv 
+# -- Compiling module q_8_10_dff
+# -- Compiling module d_ff
+# 
+# Top level modules:
+# 	q_8_10_dff
+# End time: 15:15:23 on Dec 14,2019, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+vlog -reportprogress 300 -work work C:/Users/home/Downloads/digital_design/q_8_10_fig_p_8_10_dff/q_8_10_dff_tb.sv
+# ** Note: (vlog-1901) OptionFile "C:/Users/home/Documents/Fpga_proj/moore_binary_counter/simulation/modelsim/vlog.opt" not found. Ignored.
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 15:15:29 on Dec 14,2019
+# vlog -reportprogress 300 -work work C:/Users/home/Downloads/digital_design/q_8_10_fig_p_8_10_dff/q_8_10_dff_tb.sv 
+# -- Compiling module q_8_10_dff_tb
+# 
+# Top level modules:
+# 	q_8_10_dff_tb
+# End time: 15:15:29 on Dec 14,2019, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vsim work.q_8_10_dff_tb
+# vsim work.q_8_10_dff_tb 
+# Start time: 15:15:32 on Dec 14,2019
+# Loading sv_std.std
+# Loading work.q_8_10_dff_tb
+# Loading work.q_8_10_dff
+# Loading work.d_ff
+add wave -position insertpoint  \
+sim:/q_8_10_dff_tb/rst_b \
+sim:/q_8_10_dff_tb/clk \
+sim:/q_8_10_dff_tb/x \
+sim:/q_8_10_dff_tb/y \
+sim:/q_8_10_dff_tb/state
+restart
+run
+restart
+run
+# ** Note: $finish    : C:/Users/home/Downloads/digital_design/q_8_10_fig_p_8_10_dff/q_8_10_dff_tb.sv(7)
+#    Time: 200 ps  Iteration: 0  Instance: /q_8_10_dff_tb
+# 1
+# Break in Module q_8_10_dff_tb at C:/Users/home/Downloads/digital_design/q_8_10_fig_p_8_10_dff/q_8_10_dff_tb.sv line 7
+# End time: 15:16:33 on Dec 14,2019, Elapsed time: 0:01:01
+# Errors: 0, Warnings: 0
