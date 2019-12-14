@@ -1,0 +1,46 @@
+|q_8_12
+rst_sync_b => N[0].IN0
+rst_sync_b => comb.IN1
+rst_sync_b => comb.IN1
+rst_sync_b => comb.IN1
+rst_sync_b => comb.IN1
+clk => jk_ff:jkff_0.clk
+clk => jk_ff:jkff_1.clk
+clk => jk_ff:jkff_2.clk
+clk => jk_ff:jkff_3.clk
+cnt_en => N[0].IN1
+cnt[0] <= jk_ff:jkff_0.Q
+cnt[1] <= jk_ff:jkff_1.Q
+cnt[2] <= jk_ff:jkff_2.Q
+cnt[3] <= jk_ff:jkff_3.Q
+carry <= carry.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|q_8_12|jk_ff:jkff_0
+clk => Q~reg0.CLK
+J => Q.IN1
+K => Q.IN1
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|q_8_12|jk_ff:jkff_1
+clk => Q~reg0.CLK
+J => Q.IN1
+K => Q.IN1
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|q_8_12|jk_ff:jkff_2
+clk => Q~reg0.CLK
+J => Q.IN1
+K => Q.IN1
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|q_8_12|jk_ff:jkff_3
+clk => Q~reg0.CLK
+J => Q.IN1
+K => Q.IN1
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+

@@ -1,0 +1,3 @@
+- sync reset
+- count sequence
+- cnt_en

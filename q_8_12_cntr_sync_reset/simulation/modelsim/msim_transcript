@@ -1,0 +1,162 @@
+# Reading C:/intelFPGA/18.1/modelsim_ase/tcl/vsim/pref.tcl
+# do q_8_12_run_msim_rtl_verilog.do
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Model Technology ModelSim - Intel FPGA Edition vmap 10.5b Lib Mapping Utility 2016.10 Oct  5 2016
+# vmap work rtl_work 
+# Modifying C:/intelFPGA/18.1/modelsim_ase/win32aloem/../modelsim.ini
+# 
+# vlog -sv -work work +incdir+C:/Users/home/Downloads/digital_design/q_8_12_cntr_sync_reset {C:/Users/home/Downloads/digital_design/q_8_12_cntr_sync_reset/q_8_12.sv}
+# ** Note: (vlog-1901) OptionFile "C:/Users/home/Documents/Fpga_proj/moore_binary_counter/simulation/modelsim/vlog.opt" not found. Ignored.
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 18:09:27 on Dec 14,2019
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/home/Downloads/digital_design/q_8_12_cntr_sync_reset" C:/Users/home/Downloads/digital_design/q_8_12_cntr_sync_reset/q_8_12.sv 
+# -- Compiling module q_8_12
+# -- Compiling module jk_ff
+# 
+# Top level modules:
+# 	q_8_12
+# End time: 18:09:27 on Dec 14,2019, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+vlog -reportprogress 300 -work work C:/Users/home/Downloads/digital_design/q_8_12_cntr_sync_reset/q_8_12_tb.sv
+# ** Note: (vlog-1901) OptionFile "C:/Users/home/Documents/Fpga_proj/moore_binary_counter/simulation/modelsim/vlog.opt" not found. Ignored.
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 18:09:35 on Dec 14,2019
+# vlog -reportprogress 300 -work work C:/Users/home/Downloads/digital_design/q_8_12_cntr_sync_reset/q_8_12_tb.sv 
+# -- Compiling module q_8_12_tb
+# 
+# Top level modules:
+# 	q_8_12_tb
+# End time: 18:09:35 on Dec 14,2019, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vsim work.q_8_12_tb
+# vsim work.q_8_12_tb 
+# Start time: 18:09:39 on Dec 14,2019
+# Loading sv_std.std
+# Loading work.q_8_12_tb
+# Loading work.q_8_12
+# Loading work.jk_ff
+add wave -position insertpoint  \
+sim:/q_8_12_tb/rst_sync_b \
+sim:/q_8_12_tb/clk \
+sim:/q_8_12_tb/cnt_en \
+sim:/q_8_12_tb/cnt \
+sim:/q_8_12_tb/carry
+vlog -O0 -work work C:/Users/home/Downloads/digital_design/q_8_12_cntr_sync_reset/q_8_12_tb.sv
+# ** Note: (vlog-1901) OptionFile "C:/Users/home/Documents/Fpga_proj/moore_binary_counter/simulation/modelsim/vlog.opt" not found. Ignored.
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 18:10:00 on Dec 14,2019
+# vlog -reportprogress 300 -O0 -work work C:/Users/home/Downloads/digital_design/q_8_12_cntr_sync_reset/q_8_12_tb.sv 
+# -- Compiling module q_8_12_tb
+# 
+# Top level modules:
+# 	q_8_12_tb
+# End time: 18:10:01 on Dec 14,2019, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+run
+# ** Note: $finish    : C:/Users/home/Downloads/digital_design/q_8_12_cntr_sync_reset/q_8_12_tb.sv(8)
+#    Time: 200 ps  Iteration: 0  Instance: /q_8_12_tb
+# 1
+# Break in Module q_8_12_tb at C:/Users/home/Downloads/digital_design/q_8_12_cntr_sync_reset/q_8_12_tb.sv line 8
+vlog -O0 -work work C:/Users/home/Downloads/digital_design/q_8_12_cntr_sync_reset/q_8_12_tb.sv
+# ** Note: (vlog-1901) OptionFile "C:/Users/home/Documents/Fpga_proj/moore_binary_counter/simulation/modelsim/vlog.opt" not found. Ignored.
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 18:10:45 on Dec 14,2019
+# vlog -reportprogress 300 -O0 -work work C:/Users/home/Downloads/digital_design/q_8_12_cntr_sync_reset/q_8_12_tb.sv 
+# -- Compiling module q_8_12_tb
+# 
+# Top level modules:
+# 	q_8_12_tb
+# End time: 18:10:45 on Dec 14,2019, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+restart
+# Loading work.q_8_12_tb
+run
+# GetModuleFileName: The specified module could not be found.
+# 
+# 
+# ** Note: $finish    : C:/Users/home/Downloads/digital_design/q_8_12_cntr_sync_reset/q_8_12_tb.sv(8)
+#    Time: 300 ps  Iteration: 0  Instance: /q_8_12_tb
+# 1
+# Break in Module q_8_12_tb at C:/Users/home/Downloads/digital_design/q_8_12_cntr_sync_reset/q_8_12_tb.sv line 8
+vlog -O0 -sv -work work +incdir+C:/Users/home/Downloads/digital_design/q_8_12_cntr_sync_reset C:/Users/home/Downloads/digital_design/q_8_12_cntr_sync_reset/q_8_12.sv
+# ** Note: (vlog-1901) OptionFile "C:/Users/home/Documents/Fpga_proj/moore_binary_counter/simulation/modelsim/vlog.opt" not found. Ignored.
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 18:15:01 on Dec 14,2019
+# vlog -reportprogress 300 -O0 -sv -work work "+incdir+C:/Users/home/Downloads/digital_design/q_8_12_cntr_sync_reset" C:/Users/home/Downloads/digital_design/q_8_12_cntr_sync_reset/q_8_12.sv 
+# -- Compiling module q_8_12
+# -- Compiling module jk_ff
+# 
+# Top level modules:
+# 	q_8_12
+# End time: 18:15:01 on Dec 14,2019, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vlog -O0 -work work C:/Users/home/Downloads/digital_design/q_8_12_cntr_sync_reset/q_8_12_tb.sv
+# ** Note: (vlog-1901) OptionFile "C:/Users/home/Documents/Fpga_proj/moore_binary_counter/simulation/modelsim/vlog.opt" not found. Ignored.
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 18:15:01 on Dec 14,2019
+# vlog -reportprogress 300 -O0 -work work C:/Users/home/Downloads/digital_design/q_8_12_cntr_sync_reset/q_8_12_tb.sv 
+# -- Compiling module q_8_12_tb
+# 
+# Top level modules:
+# 	q_8_12_tb
+# End time: 18:15:01 on Dec 14,2019, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+restart
+# Loading work.q_8_12_tb
+# Loading work.q_8_12
+# Loading work.jk_ff
+add wave -position insertpoint  \
+sim:/q_8_12_tb/N0 \
+sim:/q_8_12_tb/N1 \
+sim:/q_8_12_tb/N2 \
+sim:/q_8_12_tb/N3
+run
+# GetModuleFileName: The specified module could not be found.
+# 
+# 
+# ** Note: $finish    : C:/Users/home/Downloads/digital_design/q_8_12_cntr_sync_reset/q_8_12_tb.sv(13)
+#    Time: 300 ps  Iteration: 0  Instance: /q_8_12_tb
+# 1
+# Break in Module q_8_12_tb at C:/Users/home/Downloads/digital_design/q_8_12_cntr_sync_reset/q_8_12_tb.sv line 13
+vlog -O0 -sv -work work +incdir+C:/Users/home/Downloads/digital_design/q_8_12_cntr_sync_reset C:/Users/home/Downloads/digital_design/q_8_12_cntr_sync_reset/q_8_12.sv
+# ** Note: (vlog-1901) OptionFile "C:/Users/home/Documents/Fpga_proj/moore_binary_counter/simulation/modelsim/vlog.opt" not found. Ignored.
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 18:19:34 on Dec 14,2019
+# vlog -reportprogress 300 -O0 -sv -work work "+incdir+C:/Users/home/Downloads/digital_design/q_8_12_cntr_sync_reset" C:/Users/home/Downloads/digital_design/q_8_12_cntr_sync_reset/q_8_12.sv 
+# -- Compiling module q_8_12
+# -- Compiling module jk_ff
+# 
+# Top level modules:
+# 	q_8_12
+# End time: 18:19:34 on Dec 14,2019, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vlog -O0 -work work C:/Users/home/Downloads/digital_design/q_8_12_cntr_sync_reset/q_8_12_tb.sv
+# ** Note: (vlog-1901) OptionFile "C:/Users/home/Documents/Fpga_proj/moore_binary_counter/simulation/modelsim/vlog.opt" not found. Ignored.
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 18:19:34 on Dec 14,2019
+# vlog -reportprogress 300 -O0 -work work C:/Users/home/Downloads/digital_design/q_8_12_cntr_sync_reset/q_8_12_tb.sv 
+# -- Compiling module q_8_12_tb
+# 
+# Top level modules:
+# 	q_8_12_tb
+# End time: 18:19:34 on Dec 14,2019, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+restart
+# Loading work.q_8_12_tb
+# Loading work.q_8_12
+# Loading work.jk_ff
+run
+# GetModuleFileName: The specified module could not be found.
+# 
+# 
+# ** Note: $finish    : C:/Users/home/Downloads/digital_design/q_8_12_cntr_sync_reset/q_8_12_tb.sv(13)
+#    Time: 300 ps  Iteration: 0  Instance: /q_8_12_tb
+# 1
+# Break in Module q_8_12_tb at C:/Users/home/Downloads/digital_design/q_8_12_cntr_sync_reset/q_8_12_tb.sv line 13
+# End time: 18:19:55 on Dec 14,2019, Elapsed time: 0:10:16
+# Errors: 0, Warnings: 0
