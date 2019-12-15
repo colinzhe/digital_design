@@ -1,0 +1,5 @@
+
+State Machine - |q_8_16|state
+Name state.S_1 
+state.S_idle 0 
+state.S_1 1 

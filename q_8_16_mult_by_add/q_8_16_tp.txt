@@ -1,0 +1,5 @@
+- async reset
+- state
+- counter
+- control signals
+- a few variations of multiplicand and multiplier

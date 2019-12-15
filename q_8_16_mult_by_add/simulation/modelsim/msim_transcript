@@ -1,0 +1,295 @@
+# Reading C:/intelFPGA/18.1/modelsim_ase/tcl/vsim/pref.tcl
+# do q_8_16_run_msim_rtl_verilog.do
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Model Technology ModelSim - Intel FPGA Edition vmap 10.5b Lib Mapping Utility 2016.10 Oct  5 2016
+# vmap work rtl_work 
+# Modifying C:/intelFPGA/18.1/modelsim_ase/win32aloem/../modelsim.ini
+# 
+# vlog -sv -work work +incdir+C:/Users/home/Downloads/digital_design/q_8_16_mult_by_add {C:/Users/home/Downloads/digital_design/q_8_16_mult_by_add/q_8_16_pkg.sv}
+# ** Note: (vlog-1901) OptionFile "C:/Users/home/Documents/Fpga_proj/moore_binary_counter/simulation/modelsim/vlog.opt" not found. Ignored.
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 21:32:49 on Dec 14,2019
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/home/Downloads/digital_design/q_8_16_mult_by_add" C:/Users/home/Downloads/digital_design/q_8_16_mult_by_add/q_8_16_pkg.sv 
+# -- Compiling package q_8_16_pkg
+# 
+# Top level modules:
+# 	--none--
+# End time: 21:32:49 on Dec 14,2019, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/Users/home/Downloads/digital_design/q_8_16_mult_by_add {C:/Users/home/Downloads/digital_design/q_8_16_mult_by_add/q_8_16.sv}
+# ** Note: (vlog-1901) OptionFile "C:/Users/home/Documents/Fpga_proj/moore_binary_counter/simulation/modelsim/vlog.opt" not found. Ignored.
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 21:32:49 on Dec 14,2019
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/home/Downloads/digital_design/q_8_16_mult_by_add" C:/Users/home/Downloads/digital_design/q_8_16_mult_by_add/q_8_16.sv 
+# -- Compiling package q_8_16_sv_unit
+# -- Importing package q_8_16_pkg
+# -- Compiling module q_8_16
+# 
+# Top level modules:
+# 	q_8_16
+# End time: 21:32:49 on Dec 14,2019, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+vlog -reportprogress 300 -work work C:/Users/home/Downloads/digital_design/q_8_16_mult_by_add/q_8_16_tb.sv
+# ** Note: (vlog-1901) OptionFile "C:/Users/home/Documents/Fpga_proj/moore_binary_counter/simulation/modelsim/vlog.opt" not found. Ignored.
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 21:32:56 on Dec 14,2019
+# vlog -reportprogress 300 -work work C:/Users/home/Downloads/digital_design/q_8_16_mult_by_add/q_8_16_tb.sv 
+# ** Error: (vlog-13069) C:/Users/home/Downloads/digital_design/q_8_16_mult_by_add/q_8_16_tb.sv(5): near "reg": syntax error, unexpected reg, expecting IDENTIFIER or TYPE_IDENTIFIER or NETTYPE_IDENTIFIER.
+# ** Error: C:/Users/home/Downloads/digital_design/q_8_16_mult_by_add/q_8_16_tb.sv(24): (vlog-2730) Undefined variable: 'A'.
+# ** Error: C:/Users/home/Downloads/digital_design/q_8_16_mult_by_add/q_8_16_tb.sv(25): (vlog-2730) Undefined variable: 'B'.
+# ** Error: C:/Users/home/Downloads/digital_design/q_8_16_mult_by_add/q_8_16_tb.sv(31): (vlog-2730) Undefined variable: 'rst'.
+# ** Error: C:/Users/home/Downloads/digital_design/q_8_16_mult_by_add/q_8_16_tb.sv(32): (vlog-2730) Undefined variable: 'A'.
+# ** Error: C:/Users/home/Downloads/digital_design/q_8_16_mult_by_add/q_8_16_tb.sv(32): (vlog-2730) Undefined variable: 'B'.
+# End time: 21:32:56 on Dec 14,2019, Elapsed time: 0:00:00
+# Errors: 6, Warnings: 0
+vlog -reportprogress 300 -work work C:/Users/home/Downloads/digital_design/q_8_16_mult_by_add/q_8_16_tb.sv
+# ** Note: (vlog-1901) OptionFile "C:/Users/home/Documents/Fpga_proj/moore_binary_counter/simulation/modelsim/vlog.opt" not found. Ignored.
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 21:33:19 on Dec 14,2019
+# vlog -reportprogress 300 -work work C:/Users/home/Downloads/digital_design/q_8_16_mult_by_add/q_8_16_tb.sv 
+# ** Error: C:/Users/home/Downloads/digital_design/q_8_16_mult_by_add/q_8_16_tb.sv(31): (vlog-2730) Undefined variable: 'rst'.
+# End time: 21:33:19 on Dec 14,2019, Elapsed time: 0:00:00
+# Errors: 1, Warnings: 0
+vlog -reportprogress 300 -work work C:/Users/home/Downloads/digital_design/q_8_16_mult_by_add/q_8_16_tb.sv
+# ** Note: (vlog-1901) OptionFile "C:/Users/home/Documents/Fpga_proj/moore_binary_counter/simulation/modelsim/vlog.opt" not found. Ignored.
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 21:33:28 on Dec 14,2019
+# vlog -reportprogress 300 -work work C:/Users/home/Downloads/digital_design/q_8_16_mult_by_add/q_8_16_tb.sv 
+# -- Compiling package q_8_16_tb_sv_unit
+# -- Importing package q_8_16_pkg
+# -- Compiling module q_8_16_tb
+# 
+# Top level modules:
+# 	q_8_16_tb
+# End time: 21:33:28 on Dec 14,2019, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vsim work.q_8_16_tb
+# vsim work.q_8_16_tb 
+# Start time: 21:33:34 on Dec 14,2019
+# Loading sv_std.std
+# Loading work.q_8_16_pkg
+# Loading work.q_8_16_tb_sv_unit
+# Loading work.q_8_16_tb
+# Loading work.q_8_16_sv_unit
+# Loading work.q_8_16
+add wave -position insertpoint  \
+sim:/q_8_16_tb/rst_b \
+sim:/q_8_16_tb/clk \
+sim:/q_8_16_tb/start \
+sim:/q_8_16_tb/A \
+sim:/q_8_16_tb/B \
+sim:/q_8_16_tb/P \
+sim:/q_8_16_tb/rdy \
+sim:/q_8_16_tb/state \
+sim:/q_8_16_tb/load \
+sim:/q_8_16_tb/add \
+sim:/q_8_16_tb/decr_cntr \
+sim:/q_8_16_tb/cntr_eq_zero \
+sim:/q_8_16_tb/RA \
+sim:/q_8_16_tb/RB \
+sim:/q_8_16_tb/RP
+run
+# ** Note: $finish    : C:/Users/home/Downloads/digital_design/q_8_16_mult_by_add/q_8_16_tb.sv(19)
+#    Time: 200 ps  Iteration: 0  Instance: /q_8_16_tb
+# 1
+# Break in Module q_8_16_tb at C:/Users/home/Downloads/digital_design/q_8_16_mult_by_add/q_8_16_tb.sv line 19
+vlog -O0 -work work C:/Users/home/Downloads/digital_design/q_8_16_mult_by_add/q_8_16_tb.sv
+# ** Note: (vlog-1901) OptionFile "C:/Users/home/Documents/Fpga_proj/moore_binary_counter/simulation/modelsim/vlog.opt" not found. Ignored.
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 21:36:45 on Dec 14,2019
+# vlog -reportprogress 300 -O0 -work work C:/Users/home/Downloads/digital_design/q_8_16_mult_by_add/q_8_16_tb.sv 
+# -- Compiling package q_8_16_tb_sv_unit
+# -- Importing package q_8_16_pkg
+# -- Compiling module q_8_16_tb
+# 
+# Top level modules:
+# 	q_8_16_tb
+# End time: 21:36:45 on Dec 14,2019, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+restart
+# Loading work.q_8_16_tb_sv_unit
+# Loading work.q_8_16_tb
+run
+# GetModuleFileName: The specified module could not be found.
+# 
+# 
+# ** Note: $finish    : C:/Users/home/Downloads/digital_design/q_8_16_mult_by_add/q_8_16_tb.sv(20)
+#    Time: 200 ps  Iteration: 0  Instance: /q_8_16_tb
+# 1
+# Break in Module q_8_16_tb at C:/Users/home/Downloads/digital_design/q_8_16_mult_by_add/q_8_16_tb.sv line 20
+vlog -O0 -work work C:/Users/home/Downloads/digital_design/q_8_16_mult_by_add/q_8_16_tb.sv
+# ** Note: (vlog-1901) OptionFile "C:/Users/home/Documents/Fpga_proj/moore_binary_counter/simulation/modelsim/vlog.opt" not found. Ignored.
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 21:37:46 on Dec 14,2019
+# vlog -reportprogress 300 -O0 -work work C:/Users/home/Downloads/digital_design/q_8_16_mult_by_add/q_8_16_tb.sv 
+# -- Compiling package q_8_16_tb_sv_unit
+# -- Importing package q_8_16_pkg
+# -- Compiling module q_8_16_tb
+# 
+# Top level modules:
+# 	q_8_16_tb
+# End time: 21:37:46 on Dec 14,2019, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+run
+restart
+# Loading work.q_8_16_tb_sv_unit
+# Loading work.q_8_16_tb
+run
+# GetModuleFileName: The specified module could not be found.
+# 
+# 
+# ** Note: $finish    : C:/Users/home/Downloads/digital_design/q_8_16_mult_by_add/q_8_16_tb.sv(20)
+#    Time: 200 ps  Iteration: 0  Instance: /q_8_16_tb
+# 1
+# Break in Module q_8_16_tb at C:/Users/home/Downloads/digital_design/q_8_16_mult_by_add/q_8_16_tb.sv line 20
+vlog -O0 -sv -work work +incdir+C:/Users/home/Downloads/digital_design/q_8_16_mult_by_add C:/Users/home/Downloads/digital_design/q_8_16_mult_by_add/q_8_16.sv
+# ** Note: (vlog-1901) OptionFile "C:/Users/home/Documents/Fpga_proj/moore_binary_counter/simulation/modelsim/vlog.opt" not found. Ignored.
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 21:45:46 on Dec 14,2019
+# vlog -reportprogress 300 -O0 -sv -work work "+incdir+C:/Users/home/Downloads/digital_design/q_8_16_mult_by_add" C:/Users/home/Downloads/digital_design/q_8_16_mult_by_add/q_8_16.sv 
+# -- Compiling package q_8_16_sv_unit
+# -- Importing package q_8_16_pkg
+# -- Compiling module q_8_16
+# 
+# Top level modules:
+# 	q_8_16
+# End time: 21:45:47 on Dec 14,2019, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+restart
+# Loading work.q_8_16_sv_unit
+# Loading work.q_8_16
+run
+# GetModuleFileName: The specified module could not be found.
+# 
+# 
+# ** Note: $finish    : C:/Users/home/Downloads/digital_design/q_8_16_mult_by_add/q_8_16_tb.sv(20)
+#    Time: 200 ps  Iteration: 0  Instance: /q_8_16_tb
+# 1
+# Break in Module q_8_16_tb at C:/Users/home/Downloads/digital_design/q_8_16_mult_by_add/q_8_16_tb.sv line 20
+vlog -O0 -work work C:/Users/home/Downloads/digital_design/q_8_16_mult_by_add/q_8_16_tb.sv
+# ** Note: (vlog-1901) OptionFile "C:/Users/home/Documents/Fpga_proj/moore_binary_counter/simulation/modelsim/vlog.opt" not found. Ignored.
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 21:47:08 on Dec 14,2019
+# vlog -reportprogress 300 -O0 -work work C:/Users/home/Downloads/digital_design/q_8_16_mult_by_add/q_8_16_tb.sv 
+# -- Compiling package q_8_16_tb_sv_unit
+# -- Importing package q_8_16_pkg
+# -- Compiling module q_8_16_tb
+# 
+# Top level modules:
+# 	q_8_16_tb
+# End time: 21:47:08 on Dec 14,2019, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+restart
+# Loading work.q_8_16_tb_sv_unit
+# Loading work.q_8_16_tb
+run
+# GetModuleFileName: The specified module could not be found.
+# 
+# 
+# ** Note: $finish    : C:/Users/home/Downloads/digital_design/q_8_16_mult_by_add/q_8_16_tb.sv(20)
+#    Time: 200 ps  Iteration: 0  Instance: /q_8_16_tb
+# 1
+# Break in Module q_8_16_tb at C:/Users/home/Downloads/digital_design/q_8_16_mult_by_add/q_8_16_tb.sv line 20
+vlog -O0 -work work C:/Users/home/Downloads/digital_design/q_8_16_mult_by_add/q_8_16_tb.sv
+# ** Note: (vlog-1901) OptionFile "C:/Users/home/Documents/Fpga_proj/moore_binary_counter/simulation/modelsim/vlog.opt" not found. Ignored.
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 21:50:23 on Dec 14,2019
+# vlog -reportprogress 300 -O0 -work work C:/Users/home/Downloads/digital_design/q_8_16_mult_by_add/q_8_16_tb.sv 
+# -- Compiling package q_8_16_tb_sv_unit
+# -- Importing package q_8_16_pkg
+# -- Compiling module q_8_16_tb
+# 
+# Top level modules:
+# 	q_8_16_tb
+# End time: 21:50:23 on Dec 14,2019, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+restart
+# Loading work.q_8_16_tb_sv_unit
+# Loading work.q_8_16_tb
+run
+# GetModuleFileName: The specified module could not be found.
+# 
+# 
+# ** Note: $finish    : C:/Users/home/Downloads/digital_design/q_8_16_mult_by_add/q_8_16_tb.sv(20)
+#    Time: 200 ps  Iteration: 0  Instance: /q_8_16_tb
+# 1
+# Break in Module q_8_16_tb at C:/Users/home/Downloads/digital_design/q_8_16_mult_by_add/q_8_16_tb.sv line 20
+vlog -O0 -work work C:/Users/home/Downloads/digital_design/q_8_16_mult_by_add/q_8_16_tb.sv
+# ** Note: (vlog-1901) OptionFile "C:/Users/home/Documents/Fpga_proj/moore_binary_counter/simulation/modelsim/vlog.opt" not found. Ignored.
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 21:50:45 on Dec 14,2019
+# vlog -reportprogress 300 -O0 -work work C:/Users/home/Downloads/digital_design/q_8_16_mult_by_add/q_8_16_tb.sv 
+# -- Compiling package q_8_16_tb_sv_unit
+# -- Importing package q_8_16_pkg
+# -- Compiling module q_8_16_tb
+# 
+# Top level modules:
+# 	q_8_16_tb
+# End time: 21:50:45 on Dec 14,2019, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+restart
+# Loading work.q_8_16_tb_sv_unit
+# Loading work.q_8_16_tb
+run
+# GetModuleFileName: The specified module could not be found.
+# 
+# 
+# ** Note: $finish    : C:/Users/home/Downloads/digital_design/q_8_16_mult_by_add/q_8_16_tb.sv(20)
+#    Time: 300 ps  Iteration: 0  Instance: /q_8_16_tb
+# 1
+# Break in Module q_8_16_tb at C:/Users/home/Downloads/digital_design/q_8_16_mult_by_add/q_8_16_tb.sv line 20
+vlog -O0 -work work C:/Users/home/Downloads/digital_design/q_8_16_mult_by_add/q_8_16_tb.sv
+# ** Note: (vlog-1901) OptionFile "C:/Users/home/Documents/Fpga_proj/moore_binary_counter/simulation/modelsim/vlog.opt" not found. Ignored.
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 21:51:33 on Dec 14,2019
+# vlog -reportprogress 300 -O0 -work work C:/Users/home/Downloads/digital_design/q_8_16_mult_by_add/q_8_16_tb.sv 
+# -- Compiling package q_8_16_tb_sv_unit
+# -- Importing package q_8_16_pkg
+# -- Compiling module q_8_16_tb
+# 
+# Top level modules:
+# 	q_8_16_tb
+# End time: 21:51:33 on Dec 14,2019, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+restart
+# Loading work.q_8_16_tb_sv_unit
+# Loading work.q_8_16_tb
+run
+# GetModuleFileName: The specified module could not be found.
+# 
+# 
+# ** Note: $finish    : C:/Users/home/Downloads/digital_design/q_8_16_mult_by_add/q_8_16_tb.sv(20)
+#    Time: 300 ps  Iteration: 0  Instance: /q_8_16_tb
+# 1
+# Break in Module q_8_16_tb at C:/Users/home/Downloads/digital_design/q_8_16_mult_by_add/q_8_16_tb.sv line 20
+vlog -O0 -work work C:/Users/home/Downloads/digital_design/q_8_16_mult_by_add/q_8_16_tb.sv
+# ** Note: (vlog-1901) OptionFile "C:/Users/home/Documents/Fpga_proj/moore_binary_counter/simulation/modelsim/vlog.opt" not found. Ignored.
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 21:55:29 on Dec 14,2019
+# vlog -reportprogress 300 -O0 -work work C:/Users/home/Downloads/digital_design/q_8_16_mult_by_add/q_8_16_tb.sv 
+# -- Compiling package q_8_16_tb_sv_unit
+# -- Importing package q_8_16_pkg
+# -- Compiling module q_8_16_tb
+# 
+# Top level modules:
+# 	q_8_16_tb
+# End time: 21:55:29 on Dec 14,2019, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+restart
+# Loading work.q_8_16_tb_sv_unit
+# Loading work.q_8_16_tb
+run
+# GetModuleFileName: The specified module could not be found.
+# 
+# 
+# ** Note: $finish    : C:/Users/home/Downloads/digital_design/q_8_16_mult_by_add/q_8_16_tb.sv(20)
+#    Time: 300 ps  Iteration: 0  Instance: /q_8_16_tb
+# 1
+# Break in Module q_8_16_tb at C:/Users/home/Downloads/digital_design/q_8_16_mult_by_add/q_8_16_tb.sv line 20
+# End time: 21:56:14 on Dec 14,2019, Elapsed time: 0:22:40
+# Errors: 0, Warnings: 0
