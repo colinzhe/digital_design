@@ -1,14 +1,14 @@
-import q_8_22_pkg::*;
+import q_8_25_pkg::*;
 
-module q_8_22 (
+module q_8_25 (
     input rst_b, clk, start,
     input [dp_width-1:0] multiplicand, multiplier,
     output logic [dp_width*2-1:0] product,
     output logic rdy
 );
-    logic load_regs, decr_p, add_regs, shift_regs, zero, C;
+    logic load_regs, decr_p, add_regs, shift_regs, cntr_eq_zero, s_multiplier_eq_zero, C;
     state_t state, next_state;
-    logic [dp_width-1:0] A, B, Q;
+    logic [dp_width-1:0] A, B, Q, M;
     logic [bc_size-1:0] P;
 
     // controller begins
@@ -30,21 +30,29 @@ module q_8_22 (
             S_idle :
             begin
                 rdy = 1'b1;
-                if (start) begin load_regs = 1'b1; next_state = S_loaded; end
+                if (start)
+                begin
+                    load_regs = 1'b1; next_state = S_check;
+                end
             end
-            S_loaded :
+            S_check :
             begin
-                if (Q[0]) begin add_regs = 1'b1; next_state = S_sum; end
-                else begin shift_regs = 1'b1; next_state = S_shifted; end
+                if (M == {dp_width{1'b0}} || Q == {dp_width{1'b0}})
+                    next_state = S_idle;
+                else next_state = S_add;
+            end
+            S_add :
+            begin
+                if (Q[0]) begin add_regs = 1'b1; next_state = S_shift; end
+                else next_state = S_shift;
                 decr_p = 1'b1;
             end
-            S_sum :
+            S_shift :
             begin
-                shift_regs = 1'b1; next_state = S_shifted;
+                shift_regs = 1'b1;
+                if (cntr_eq_zero || s_multiplier_eq_zero) next_state = S_idle;
+                else next_state = S_add;
             end
-            S_shifted :
-                if (!zero) next_state = S_loaded;
-                else next_state = S_idle;
             default : next_state = S_idle;
         endcase
     end
@@ -59,6 +67,7 @@ module q_8_22 (
             A <= {dp_width{1'b0}};
             B <= {dp_width{1'b0}};
             Q <= {dp_width{1'b0}};
+            M <= {dp_width{1'b0}};
             C <= 1'b0;
         end
         else
@@ -69,15 +78,17 @@ module q_8_22 (
                 A <= {dp_width{1'b0}};
                 B <= multiplicand;
                 Q <= multiplier;
+                M <= multiplier;
                 C <= 1'b0;
             end
             else if (add_regs) {C, A} = A + B;
-            else if (shift_regs) {C, A, Q} = {C, A, Q} >> 1;
+            else if (shift_regs) begin {C, A, Q} = {C, A, Q} >> 1; M = M >> 1; end
             if (decr_p) P <= P - 1'b1;
         end
     end
 
     assign product = {A, Q};
-    assign zero = (P == {bc_size{1'b0}});
+    assign cntr_eq_zero = (P == {bc_size{1'b0}});
+    assign s_multiplier_eq_zero = (M == {dp_width{1'b0}});
     // datapath ends
 endmodule
