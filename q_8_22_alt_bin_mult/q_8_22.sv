@@ -34,7 +34,7 @@ module q_8_22 (
             end
             S_loaded :
             begin
-                if (!zero) begin add_regs = 1'b1; next_state = S_sum; end
+                if (Q[0]) begin add_regs = 1'b1; next_state = S_sum; end
                 else begin shift_regs = 1'b1; next_state = S_shifted; end
                 decr_p = 1'b1;
             end

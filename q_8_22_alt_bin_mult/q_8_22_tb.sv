@@ -24,18 +24,33 @@ module q_8_22_tb;
 
     wire [2*dp_width-1:0] expected_val = multiplicand * multiplier;
     logic [2*dp_width-1:0] error;
-    always_comb
+
+    always_ff @ (posedge rdy)
     begin
-        if (rdy) error = expected_val ^ product;
-        else error = 1'b0;
+        error <= expected_val ^ product;
+    end
+
+    always_ff @ (negedge rdy)
+    begin
+        error <= 1'b0;
+    end
+    
+    always_ff @ (posedge clk)
+    begin
+        if (rdy)
+        begin
+            CHECK_WHEN_RDY : assert (error == 0)
+            else
+            begin
+                $error ("Error found");
+            end
+        end
     end
 
     initial
     begin
         {rst_b, clk, start} = 3'b000;
         #10 start = 1; rst_b = 1;
-        //multiplicand = 5'b10111; multiplier = 5'b10011;
-        //#10 start = 0;
     end
 
     initial
@@ -52,10 +67,4 @@ module q_8_22_tb;
             multiplier++;
         end
     end
-
-    //always_ff @ (posedge clk)
-    //begin
-    //    $strobe ("C = %b, A = %b, Q = %b, P = %b, time = %d",
-    //        dut.C, dut.A, dut.Q, dut.P, $time);
-    //end
 endmodule

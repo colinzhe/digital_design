@@ -31,7 +31,7 @@ module ex_8_5 (
         else state <= next_state;
     end
 
-    always_ff @ (state, start, Q[0], zero)
+    always_comb
     begin
         next_state = S_idle;
         load_regs = 0;
