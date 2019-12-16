@@ -1,0 +1,7 @@
+
+State Machine - |q_8_22|state
+Name state.S_shifted state.S_sum state.S_loaded state.S_idle 
+state.S_idle 0 0 0 0 
+state.S_loaded 0 0 1 1 
+state.S_sum 0 1 0 1 
+state.S_shifted 1 0 0 1 

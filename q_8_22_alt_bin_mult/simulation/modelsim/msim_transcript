@@ -1,0 +1,343 @@
+# Reading C:/intelFPGA/18.1/modelsim_ase/tcl/vsim/pref.tcl
+# do q_8_22_run_msim_rtl_verilog.do
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Model Technology ModelSim - Intel FPGA Edition vmap 10.5b Lib Mapping Utility 2016.10 Oct  5 2016
+# vmap work rtl_work 
+# Modifying C:/intelFPGA/18.1/modelsim_ase/win32aloem/../modelsim.ini
+# 
+# vlog -sv -work work +incdir+C:/Users/home/Downloads/digital_design/q_8_22_alt_bin_mult {C:/Users/home/Downloads/digital_design/q_8_22_alt_bin_mult/q_8_22_pkg.sv}
+# ** Note: (vlog-1901) OptionFile "C:/Users/home/Documents/Fpga_proj/moore_binary_counter/simulation/modelsim/vlog.opt" not found. Ignored.
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 22:55:27 on Dec 15,2019
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/home/Downloads/digital_design/q_8_22_alt_bin_mult" C:/Users/home/Downloads/digital_design/q_8_22_alt_bin_mult/q_8_22_pkg.sv 
+# -- Compiling package q_8_22_pkg
+# 
+# Top level modules:
+# 	--none--
+# End time: 22:55:27 on Dec 15,2019, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/Users/home/Downloads/digital_design/q_8_22_alt_bin_mult {C:/Users/home/Downloads/digital_design/q_8_22_alt_bin_mult/q_8_22.sv}
+# ** Note: (vlog-1901) OptionFile "C:/Users/home/Documents/Fpga_proj/moore_binary_counter/simulation/modelsim/vlog.opt" not found. Ignored.
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 22:55:27 on Dec 15,2019
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/home/Downloads/digital_design/q_8_22_alt_bin_mult" C:/Users/home/Downloads/digital_design/q_8_22_alt_bin_mult/q_8_22.sv 
+# -- Compiling package q_8_22_sv_unit
+# -- Importing package q_8_22_pkg
+# -- Compiling module q_8_22
+# 
+# Top level modules:
+# 	q_8_22
+# End time: 22:55:27 on Dec 15,2019, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+vlog -reportprogress 300 -work work C:/Users/home/Downloads/digital_design/q_8_22_alt_bin_mult/q_8_22_tb.sv
+# ** Note: (vlog-1901) OptionFile "C:/Users/home/Documents/Fpga_proj/moore_binary_counter/simulation/modelsim/vlog.opt" not found. Ignored.
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 22:55:41 on Dec 15,2019
+# vlog -reportprogress 300 -work work C:/Users/home/Downloads/digital_design/q_8_22_alt_bin_mult/q_8_22_tb.sv 
+# ** Error: C:/Users/home/Downloads/digital_design/q_8_22_alt_bin_mult/q_8_22_tb.sv(1): (vlog-13006) Could not find the package (ex_8_22_pkg).  Design read will continue, but expect a cascade of errors after this failure.  Furthermore if you experience a vopt-7 error immediately before this error then please check the package names or the library search paths on the command line.
+# ** Error: C:/Users/home/Downloads/digital_design/q_8_22_alt_bin_mult/q_8_22_tb.sv(5): (vlog-2730) Undefined variable: 'st_width'.
+# ** Error: C:/Users/home/Downloads/digital_design/q_8_22_alt_bin_mult/q_8_22_tb.sv(11): (vlog-2730) Undefined variable: 'bc_size'.
+# ** Error: C:/Users/home/Downloads/digital_design/q_8_22_alt_bin_mult/q_8_22_tb.sv(13): (vlog-2730) Undefined variable: 'dp_width'.
+# End time: 22:55:41 on Dec 15,2019, Elapsed time: 0:00:00
+# Errors: 4, Warnings: 0
+vlog -reportprogress 300 -work work C:/Users/home/Downloads/digital_design/q_8_22_alt_bin_mult/q_8_22_tb.sv
+# ** Note: (vlog-1901) OptionFile "C:/Users/home/Documents/Fpga_proj/moore_binary_counter/simulation/modelsim/vlog.opt" not found. Ignored.
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 22:56:07 on Dec 15,2019
+# vlog -reportprogress 300 -work work C:/Users/home/Downloads/digital_design/q_8_22_alt_bin_mult/q_8_22_tb.sv 
+# -- Compiling package q_8_22_tb_sv_unit
+# -- Importing package q_8_22_pkg
+# -- Compiling module q_8_22_tb
+# 
+# Top level modules:
+# 	q_8_22_tb
+# End time: 22:56:07 on Dec 15,2019, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vsim work.q_8_22_tb
+# vsim work.q_8_22_tb 
+# Start time: 22:56:17 on Dec 15,2019
+# Loading sv_std.std
+# Loading work.q_8_22_pkg
+# Loading work.q_8_22_tb_sv_unit
+# Loading work.q_8_22_tb
+# Loading work.q_8_22_sv_unit
+# Loading work.q_8_22
+# ** Error: (vsim-3694) The implicit port connection (.*) did not find a matching port, net, variable or interface instance in q_8_22_tb for port 'rst_b'.
+#    Time: 0 ps  Iteration: 0  Instance: /q_8_22_tb/dut File: C:/Users/home/Downloads/digital_design/q_8_22_alt_bin_mult/q_8_22.sv
+# ** Warning: (vsim-3017) C:/Users/home/Downloads/digital_design/q_8_22_alt_bin_mult/q_8_22_tb.sv(21): [TFMPC] - Too few port connections. Expected 7, found 6.
+#    Time: 0 ps  Iteration: 0  Instance: /q_8_22_tb/dut File: C:/Users/home/Downloads/digital_design/q_8_22_alt_bin_mult/q_8_22.sv
+# ** Warning: (vsim-3722) C:/Users/home/Downloads/digital_design/q_8_22_alt_bin_mult/q_8_22_tb.sv(21): [TFMPC] - Missing connection for port 'rst_b'.
+# Error loading design
+# End time: 22:56:17 on Dec 15,2019, Elapsed time: 0:00:00
+# Errors: 1, Warnings: 2
+vlog -O0 -work work C:/Users/home/Downloads/digital_design/q_8_22_alt_bin_mult/q_8_22_tb.sv
+# ** Note: (vlog-1901) OptionFile "C:/Users/home/Documents/Fpga_proj/moore_binary_counter/simulation/modelsim/vlog.opt" not found. Ignored.
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 22:56:35 on Dec 15,2019
+# vlog -reportprogress 300 -O0 -work work C:/Users/home/Downloads/digital_design/q_8_22_alt_bin_mult/q_8_22_tb.sv 
+# ** Error: C:/Users/home/Downloads/digital_design/q_8_22_alt_bin_mult/q_8_22_tb.sv(27): (vlog-2730) Undefined variable: 'rstb'.
+# End time: 22:56:35 on Dec 15,2019, Elapsed time: 0:00:00
+# Errors: 1, Warnings: 0
+# C:/intelFPGA/18.1/modelsim_ase/win32aloem/vlog failed.
+vlog -O0 -work work C:/Users/home/Downloads/digital_design/q_8_22_alt_bin_mult/q_8_22_tb.sv
+# ** Note: (vlog-1901) OptionFile "C:/Users/home/Documents/Fpga_proj/moore_binary_counter/simulation/modelsim/vlog.opt" not found. Ignored.
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 22:56:46 on Dec 15,2019
+# vlog -reportprogress 300 -O0 -work work C:/Users/home/Downloads/digital_design/q_8_22_alt_bin_mult/q_8_22_tb.sv 
+# ** Error: C:/Users/home/Downloads/digital_design/q_8_22_alt_bin_mult/q_8_22_tb.sv(28): (vlog-2730) Undefined variable: 'rstb'.
+# End time: 22:56:46 on Dec 15,2019, Elapsed time: 0:00:00
+# Errors: 1, Warnings: 0
+# C:/intelFPGA/18.1/modelsim_ase/win32aloem/vlog failed.
+vlog -O0 -work work C:/Users/home/Downloads/digital_design/q_8_22_alt_bin_mult/q_8_22_tb.sv
+# ** Note: (vlog-1901) OptionFile "C:/Users/home/Documents/Fpga_proj/moore_binary_counter/simulation/modelsim/vlog.opt" not found. Ignored.
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 22:56:58 on Dec 15,2019
+# vlog -reportprogress 300 -O0 -work work C:/Users/home/Downloads/digital_design/q_8_22_alt_bin_mult/q_8_22_tb.sv 
+# -- Compiling package q_8_22_tb_sv_unit
+# -- Importing package q_8_22_pkg
+# -- Compiling module q_8_22_tb
+# 
+# Top level modules:
+# 	q_8_22_tb
+# End time: 22:56:58 on Dec 15,2019, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vsim work.q_8_22_tb
+# vsim work.q_8_22_tb 
+# Start time: 22:57:00 on Dec 15,2019
+# Loading sv_std.std
+# Loading work.q_8_22_pkg
+# Loading work.q_8_22_tb_sv_unit
+# Loading work.q_8_22_tb
+# Loading work.q_8_22_sv_unit
+# Loading work.q_8_22
+add wave -position insertpoint  \
+sim:/q_8_22_tb/rst_b \
+sim:/q_8_22_tb/clk \
+sim:/q_8_22_tb/start \
+sim:/q_8_22_tb/state \
+sim:/q_8_22_tb/next_state \
+sim:/q_8_22_tb/load_regs \
+sim:/q_8_22_tb/decr_p \
+sim:/q_8_22_tb/add_regs \
+sim:/q_8_22_tb/shift_regs \
+sim:/q_8_22_tb/P \
+sim:/q_8_22_tb/zero \
+sim:/q_8_22_tb/B \
+sim:/q_8_22_tb/A \
+sim:/q_8_22_tb/Q \
+sim:/q_8_22_tb/C \
+sim:/q_8_22_tb/rdy \
+sim:/q_8_22_tb/product \
+sim:/q_8_22_tb/multiplicand \
+sim:/q_8_22_tb/multiplier
+run
+# ** Note: $finish    : C:/Users/home/Downloads/digital_design/q_8_22_alt_bin_mult/q_8_22_tb.sv(23)
+#    Time: 103 ns  Iteration: 0  Instance: /q_8_22_tb
+# 1
+# Break in Module q_8_22_tb at C:/Users/home/Downloads/digital_design/q_8_22_alt_bin_mult/q_8_22_tb.sv line 23
+# Can't move the Now cursor.
+vlog -O0 -work work C:/Users/home/Downloads/digital_design/q_8_22_alt_bin_mult/q_8_22_tb.sv
+# ** Note: (vlog-1901) OptionFile "C:/Users/home/Documents/Fpga_proj/moore_binary_counter/simulation/modelsim/vlog.opt" not found. Ignored.
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 23:01:12 on Dec 15,2019
+# vlog -reportprogress 300 -O0 -work work C:/Users/home/Downloads/digital_design/q_8_22_alt_bin_mult/q_8_22_tb.sv 
+# -- Compiling package q_8_22_tb_sv_unit
+# -- Importing package q_8_22_pkg
+# -- Compiling module q_8_22_tb
+# 
+# Top level modules:
+# 	q_8_22_tb
+# End time: 23:01:12 on Dec 15,2019, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+restart
+# Loading work.q_8_22_tb_sv_unit
+# Loading work.q_8_22_tb
+run
+# ** Note: $finish    : C:/Users/home/Downloads/digital_design/q_8_22_alt_bin_mult/q_8_22_tb.sv(23)
+#    Time: 103 ns  Iteration: 0  Instance: /q_8_22_tb
+# 1
+# Break in Module q_8_22_tb at C:/Users/home/Downloads/digital_design/q_8_22_alt_bin_mult/q_8_22_tb.sv line 23
+vlog -O0 -sv -work work +incdir+C:/Users/home/Downloads/digital_design/q_8_22_alt_bin_mult C:/Users/home/Downloads/digital_design/q_8_22_alt_bin_mult/q_8_22.sv
+# ** Note: (vlog-1901) OptionFile "C:/Users/home/Documents/Fpga_proj/moore_binary_counter/simulation/modelsim/vlog.opt" not found. Ignored.
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 23:03:11 on Dec 15,2019
+# vlog -reportprogress 300 -O0 -sv -work work "+incdir+C:/Users/home/Downloads/digital_design/q_8_22_alt_bin_mult" C:/Users/home/Downloads/digital_design/q_8_22_alt_bin_mult/q_8_22.sv 
+# -- Compiling package q_8_22_sv_unit
+# -- Importing package q_8_22_pkg
+# -- Compiling module q_8_22
+# 
+# Top level modules:
+# 	q_8_22
+# End time: 23:03:11 on Dec 15,2019, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+restart
+# Loading work.q_8_22_sv_unit
+# Loading work.q_8_22
+run
+# ** Note: $finish    : C:/Users/home/Downloads/digital_design/q_8_22_alt_bin_mult/q_8_22_tb.sv(23)
+#    Time: 103 ns  Iteration: 0  Instance: /q_8_22_tb
+# 1
+# Break in Module q_8_22_tb at C:/Users/home/Downloads/digital_design/q_8_22_alt_bin_mult/q_8_22_tb.sv line 23
+vlog -O0 -sv -work work +incdir+C:/Users/home/Downloads/digital_design/q_8_22_alt_bin_mult C:/Users/home/Downloads/digital_design/q_8_22_alt_bin_mult/q_8_22.sv
+# ** Note: (vlog-1901) OptionFile "C:/Users/home/Documents/Fpga_proj/moore_binary_counter/simulation/modelsim/vlog.opt" not found. Ignored.
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 23:13:47 on Dec 15,2019
+# vlog -reportprogress 300 -O0 -sv -work work "+incdir+C:/Users/home/Downloads/digital_design/q_8_22_alt_bin_mult" C:/Users/home/Downloads/digital_design/q_8_22_alt_bin_mult/q_8_22.sv 
+# -- Compiling package q_8_22_sv_unit
+# -- Importing package q_8_22_pkg
+# -- Compiling module q_8_22
+# 
+# Top level modules:
+# 	q_8_22
+# End time: 23:13:47 on Dec 15,2019, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vlog -O0 -work work C:/Users/home/Downloads/digital_design/q_8_22_alt_bin_mult/q_8_22_tb.sv
+# ** Note: (vlog-1901) OptionFile "C:/Users/home/Documents/Fpga_proj/moore_binary_counter/simulation/modelsim/vlog.opt" not found. Ignored.
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 23:13:47 on Dec 15,2019
+# vlog -reportprogress 300 -O0 -work work C:/Users/home/Downloads/digital_design/q_8_22_alt_bin_mult/q_8_22_tb.sv 
+# -- Compiling package q_8_22_tb_sv_unit
+# -- Importing package q_8_22_pkg
+# -- Compiling module q_8_22_tb
+# ** Error: C:/Users/home/Downloads/digital_design/q_8_22_alt_bin_mult/q_8_22_tb.sv(29): (vlog-2110) Illegal reference to net "error".
+# ** Error: C:/Users/home/Downloads/digital_design/q_8_22_alt_bin_mult/q_8_22_tb.sv(30): (vlog-2110) Illegal reference to net "error".
+# End time: 23:13:47 on Dec 15,2019, Elapsed time: 0:00:00
+# Errors: 2, Warnings: 0
+# C:/intelFPGA/18.1/modelsim_ase/win32aloem/vlog failed.
+vlog -reportprogress 300 -work work C:/Users/home/Downloads/digital_design/q_8_22_alt_bin_mult/q_8_22_tb.sv
+# ** Note: (vlog-1901) OptionFile "C:/Users/home/Documents/Fpga_proj/moore_binary_counter/simulation/modelsim/vlog.opt" not found. Ignored.
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 23:14:35 on Dec 15,2019
+# vlog -reportprogress 300 -work work C:/Users/home/Downloads/digital_design/q_8_22_alt_bin_mult/q_8_22_tb.sv 
+# -- Compiling package q_8_22_tb_sv_unit
+# -- Importing package q_8_22_pkg
+# -- Compiling module q_8_22_tb
+# 
+# Top level modules:
+# 	q_8_22_tb
+# End time: 23:14:35 on Dec 15,2019, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vlog -O0 -sv -work work +incdir+C:/Users/home/Downloads/digital_design/q_8_22_alt_bin_mult C:/Users/home/Downloads/digital_design/q_8_22_alt_bin_mult/q_8_22.sv
+# ** Note: (vlog-1901) OptionFile "C:/Users/home/Documents/Fpga_proj/moore_binary_counter/simulation/modelsim/vlog.opt" not found. Ignored.
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 23:14:40 on Dec 15,2019
+# vlog -reportprogress 300 -O0 -sv -work work "+incdir+C:/Users/home/Downloads/digital_design/q_8_22_alt_bin_mult" C:/Users/home/Downloads/digital_design/q_8_22_alt_bin_mult/q_8_22.sv 
+# -- Compiling package q_8_22_sv_unit
+# -- Importing package q_8_22_pkg
+# -- Compiling module q_8_22
+# 
+# Top level modules:
+# 	q_8_22
+# End time: 23:14:40 on Dec 15,2019, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vlog -O0 -work work C:/Users/home/Downloads/digital_design/q_8_22_alt_bin_mult/q_8_22_tb.sv
+# ** Note: (vlog-1901) OptionFile "C:/Users/home/Documents/Fpga_proj/moore_binary_counter/simulation/modelsim/vlog.opt" not found. Ignored.
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 23:14:40 on Dec 15,2019
+# vlog -reportprogress 300 -O0 -work work C:/Users/home/Downloads/digital_design/q_8_22_alt_bin_mult/q_8_22_tb.sv 
+# -- Compiling package q_8_22_tb_sv_unit
+# -- Importing package q_8_22_pkg
+# -- Compiling module q_8_22_tb
+# 
+# Top level modules:
+# 	q_8_22_tb
+# End time: 23:14:40 on Dec 15,2019, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+restart
+# Loading work.q_8_22_tb_sv_unit
+# Loading work.q_8_22_tb
+# Loading work.q_8_22_sv_unit
+# Loading work.q_8_22
+run
+# ** Note: $finish    : C:/Users/home/Downloads/digital_design/q_8_22_alt_bin_mult/q_8_22_tb.sv(23)
+#    Time: 103 ns  Iteration: 0  Instance: /q_8_22_tb
+# 1
+# Break in Module q_8_22_tb at C:/Users/home/Downloads/digital_design/q_8_22_alt_bin_mult/q_8_22_tb.sv line 23
+add wave -position insertpoint  \
+sim:/q_8_22_tb/expected_val \
+sim:/q_8_22_tb/error
+restart
+run
+# ** Note: $finish    : C:/Users/home/Downloads/digital_design/q_8_22_alt_bin_mult/q_8_22_tb.sv(23)
+#    Time: 103 ns  Iteration: 0  Instance: /q_8_22_tb
+# 1
+# Break in Module q_8_22_tb at C:/Users/home/Downloads/digital_design/q_8_22_alt_bin_mult/q_8_22_tb.sv line 23
+vlog -O0 -sv -work work +incdir+C:/Users/home/Downloads/digital_design/q_8_22_alt_bin_mult C:/Users/home/Downloads/digital_design/q_8_22_alt_bin_mult/q_8_22.sv
+# ** Note: (vlog-1901) OptionFile "C:/Users/home/Documents/Fpga_proj/moore_binary_counter/simulation/modelsim/vlog.opt" not found. Ignored.
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 23:15:26 on Dec 15,2019
+# vlog -reportprogress 300 -O0 -sv -work work "+incdir+C:/Users/home/Downloads/digital_design/q_8_22_alt_bin_mult" C:/Users/home/Downloads/digital_design/q_8_22_alt_bin_mult/q_8_22.sv 
+# -- Compiling package q_8_22_sv_unit
+# -- Importing package q_8_22_pkg
+# -- Compiling module q_8_22
+# 
+# Top level modules:
+# 	q_8_22
+# End time: 23:15:26 on Dec 15,2019, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vlog -O0 -work work C:/Users/home/Downloads/digital_design/q_8_22_alt_bin_mult/q_8_22_tb.sv
+# ** Note: (vlog-1901) OptionFile "C:/Users/home/Documents/Fpga_proj/moore_binary_counter/simulation/modelsim/vlog.opt" not found. Ignored.
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 23:15:26 on Dec 15,2019
+# vlog -reportprogress 300 -O0 -work work C:/Users/home/Downloads/digital_design/q_8_22_alt_bin_mult/q_8_22_tb.sv 
+# -- Compiling package q_8_22_tb_sv_unit
+# -- Importing package q_8_22_pkg
+# -- Compiling module q_8_22_tb
+# 
+# Top level modules:
+# 	q_8_22_tb
+# End time: 23:15:26 on Dec 15,2019, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+restart
+# Loading work.q_8_22_tb_sv_unit
+# Loading work.q_8_22_tb
+# Loading work.q_8_22_sv_unit
+# Loading work.q_8_22
+run
+# ** Note: $finish    : C:/Users/home/Downloads/digital_design/q_8_22_alt_bin_mult/q_8_22_tb.sv(23)
+#    Time: 103 ns  Iteration: 0  Instance: /q_8_22_tb
+# 1
+# Break in Module q_8_22_tb at C:/Users/home/Downloads/digital_design/q_8_22_alt_bin_mult/q_8_22_tb.sv line 23
+vlog -O0 -sv -work work +incdir+C:/Users/home/Downloads/digital_design/q_8_22_alt_bin_mult C:/Users/home/Downloads/digital_design/q_8_22_alt_bin_mult/q_8_22.sv
+# ** Note: (vlog-1901) OptionFile "C:/Users/home/Documents/Fpga_proj/moore_binary_counter/simulation/modelsim/vlog.opt" not found. Ignored.
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 23:16:39 on Dec 15,2019
+# vlog -reportprogress 300 -O0 -sv -work work "+incdir+C:/Users/home/Downloads/digital_design/q_8_22_alt_bin_mult" C:/Users/home/Downloads/digital_design/q_8_22_alt_bin_mult/q_8_22.sv 
+# -- Compiling package q_8_22_sv_unit
+# -- Importing package q_8_22_pkg
+# -- Compiling module q_8_22
+# 
+# Top level modules:
+# 	q_8_22
+# End time: 23:16:39 on Dec 15,2019, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vlog -O0 -work work C:/Users/home/Downloads/digital_design/q_8_22_alt_bin_mult/q_8_22_tb.sv
+# ** Note: (vlog-1901) OptionFile "C:/Users/home/Documents/Fpga_proj/moore_binary_counter/simulation/modelsim/vlog.opt" not found. Ignored.
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 23:16:39 on Dec 15,2019
+# vlog -reportprogress 300 -O0 -work work C:/Users/home/Downloads/digital_design/q_8_22_alt_bin_mult/q_8_22_tb.sv 
+# -- Compiling package q_8_22_tb_sv_unit
+# -- Importing package q_8_22_pkg
+# -- Compiling module q_8_22_tb
+# 
+# Top level modules:
+# 	q_8_22_tb
+# End time: 23:16:39 on Dec 15,2019, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+restart
+# Loading work.q_8_22_tb_sv_unit
+# Loading work.q_8_22_tb
+# Loading work.q_8_22_sv_unit
+# Loading work.q_8_22
+run
+# ** Note: $finish    : C:/Users/home/Downloads/digital_design/q_8_22_alt_bin_mult/q_8_22_tb.sv(23)
+#    Time: 103 ns  Iteration: 0  Instance: /q_8_22_tb
+# 1
+# Break in Module q_8_22_tb at C:/Users/home/Downloads/digital_design/q_8_22_alt_bin_mult/q_8_22_tb.sv line 23
+# End time: 23:25:10 on Dec 15,2019, Elapsed time: 0:28:10
+# Errors: 4, Warnings: 0

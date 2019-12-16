@@ -1,0 +1,1 @@
+Warning (10268): Verilog HDL information at q_8_22.sv(54): always construct contains both blocking and non-blocking assignments File: C:/Users/home/Downloads/digital_design/q_8_22_alt_bin_mult/q_8_22.sv Line: 54

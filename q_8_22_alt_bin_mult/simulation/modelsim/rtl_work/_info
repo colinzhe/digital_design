@@ -1,0 +1,139 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/Users/home/Downloads/digital_design/q_8_22_alt_bin_mult/simulation/modelsim
+vq_8_22
+Z1 DXx6 sv_std 3 std 0 22 AD7iAPLo6nTIKk<N0eo=D3
+Z2 DXx4 work 10 q_8_22_pkg 0 22 S9[lYk:LfFD3NG:YSj3QI1
+DXx4 work 14 q_8_22_sv_unit 0 22 CTjMLME<_4QW[z:7m_HaD3
+Z3 VDg1SIo80bB@j0V0VzS_@n1
+r1
+!s85 0
+31
+!i10b 1
+!s100 @1l:<W8EgKnBcjz9S7PH:2
+IWcA?W38m`@lQf8Z^8@`8J0
+!s105 q_8_22_sv_unit
+S1
+R0
+Z4 w1576468973
+Z5 8C:/Users/home/Downloads/digital_design/q_8_22_alt_bin_mult/q_8_22.sv
+Z6 FC:/Users/home/Downloads/digital_design/q_8_22_alt_bin_mult/q_8_22.sv
+L0 3
+Z7 OV;L;10.5b;63
+Z8 !s108 1576469799.000000
+Z9 !s107 C:/Users/home/Downloads/digital_design/q_8_22_alt_bin_mult/q_8_22.sv|
+Z10 !s90 -reportprogress|300|-O0|-sv|-work|work|+incdir+C:/Users/home/Downloads/digital_design/q_8_22_alt_bin_mult|C:/Users/home/Downloads/digital_design/q_8_22_alt_bin_mult/q_8_22.sv|
+Z11 !s101 -O0 -O0
+!i113 1
+Z12 o-O0 -O0 -sv -work work
+Z13 !s92 -O0 -O0 -sv -work work +incdir+C:/Users/home/Downloads/digital_design/q_8_22_alt_bin_mult
+Z14 tDisableOpt 1 CvgOpt 0
+Xq_8_22_pkg
+R1
+!s110 1576468527
+!i10b 1
+!s100 >;2KI^EAG:b6Qn8eAU25^3
+IS9[lYk:LfFD3NG:YSj3QI1
+VS9[lYk:LfFD3NG:YSj3QI1
+S1
+R0
+w1576467598
+8C:/Users/home/Downloads/digital_design/q_8_22_alt_bin_mult/q_8_22_pkg.sv
+FC:/Users/home/Downloads/digital_design/q_8_22_alt_bin_mult/q_8_22_pkg.sv
+L0 1
+R7
+r1
+!s85 0
+31
+!s108 1576468527.000000
+!s107 C:/Users/home/Downloads/digital_design/q_8_22_alt_bin_mult/q_8_22_pkg.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/home/Downloads/digital_design/q_8_22_alt_bin_mult|C:/Users/home/Downloads/digital_design/q_8_22_alt_bin_mult/q_8_22_pkg.sv|
+!s101 -O0
+!i113 1
+o-O0 -sv -work work
+!s92 -O0 -sv -work work +incdir+C:/Users/home/Downloads/digital_design/q_8_22_alt_bin_mult
+R14
+Xq_8_22_sv_unit
+R1
+R2
+VCTjMLME<_4QW[z:7m_HaD3
+r1
+!s85 0
+31
+!i10b 1
+!s100 :^RcQ93UGTK><GOE>CZ<Y3
+ICTjMLME<_4QW[z:7m_HaD3
+!i103 1
+S1
+R0
+R4
+R5
+R6
+L0 1
+R7
+R8
+R9
+R10
+R11
+!i113 1
+R12
+R13
+R14
+vq_8_22_tb
+R1
+R2
+DXx4 work 17 q_8_22_tb_sv_unit 0 22 VV36^Y4NnOaj_4;LhmIO`0
+R3
+r1
+!s85 0
+31
+!i10b 1
+!s100 fKj:J0LVeDL8jFVJWHGaU3
+IY6XHl0zRQ>UMj4ni7=F=E1
+!s105 q_8_22_tb_sv_unit
+S1
+R0
+Z15 w1576469796
+Z16 8C:/Users/home/Downloads/digital_design/q_8_22_alt_bin_mult/q_8_22_tb.sv
+Z17 FC:/Users/home/Downloads/digital_design/q_8_22_alt_bin_mult/q_8_22_tb.sv
+L0 3
+R7
+R8
+Z18 !s107 C:/Users/home/Downloads/digital_design/q_8_22_alt_bin_mult/q_8_22_tb.sv|
+Z19 !s90 -reportprogress|300|-O0|-work|work|C:/Users/home/Downloads/digital_design/q_8_22_alt_bin_mult/q_8_22_tb.sv|
+R11
+!i113 1
+Z20 o-O0 -O0 -work work
+R14
+Xq_8_22_tb_sv_unit
+R1
+R2
+VVV36^Y4NnOaj_4;LhmIO`0
+r1
+!s85 0
+31
+!i10b 1
+!s100 6;I[zb>ca<Ezd1;Nd1OEg0
+IVV36^Y4NnOaj_4;LhmIO`0
+!i103 1
+S1
+R0
+R15
+R16
+R17
+L0 1
+R7
+R8
+R18
+R19
+R11
+!i113 1
+R20
+R14

@@ -3,8 +3,8 @@ import q_8_22_pkg::*;
 module q_8_22 (
     input rst_b, clk, start,
     input [dp_width-1:0] multiplicand, multiplier,
-    output [dp_width*2-1:0] product,
-    output rdy
+    output logic [dp_width*2-1:0] product,
+    output logic rdy
 );
     logic load_regs, decr_p, add_regs, shift_regs, zero, C;
     state_t state, next_state;
@@ -12,7 +12,7 @@ module q_8_22 (
     logic [bc_size-1:0] P;
 
     // controller begins
-    always_ff @ (posedge clk, rst_b)
+    always_ff @ (posedge clk, negedge rst_b)
     begin
         if (!rst_b) state <= S_idle;
         else state <= next_state;
@@ -72,12 +72,10 @@ module q_8_22 (
             end
             else if (add_regs) {C, A} = A + B;
             else if (shift_regs) {C, A, Q} = {C, A, Q} >> 1;
-            else if (decr_p) P <= P - 1'b1;
+            if (decr_p) P <= P - 1'b1;
     end
 
-    always_comb
-    begin
-        product = {A, Q};
-        zero = (P == {bc_size{1'b0}});
-    end
+    assign product = {A, Q};
+    assign zero = (P == {bc_size{1'b0}});
     // datapath ends
+endmodule
