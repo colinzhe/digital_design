@@ -71,8 +71,8 @@ module q_8_22 (
                 Q <= multiplier;
                 C <= 1'b0;
             end
-            else if (add_regs) {C, A} = A + B;
-            else if (shift_regs) {C, A, Q} = {C, A, Q} >> 1;
+            else if (add_regs) {C, A} <= A + B;
+            else if (shift_regs) {C, A, Q} <= {C, A, Q} >> 1;
             if (decr_p) P <= P - 1'b1;
         end
     end

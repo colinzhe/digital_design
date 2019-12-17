@@ -1,0 +1,581 @@
+# Reading C:/intelFPGA_lite/18.1/modelsim_ase/tcl/vsim/pref.tcl
+# do q_8_25_run_msim_rtl_verilog.do
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Model Technology ModelSim - Intel FPGA Edition vmap 10.5b Lib Mapping Utility 2016.10 Oct  5 2016
+# vmap work rtl_work 
+# Copying C:/intelFPGA_lite/18.1/modelsim_ase/win32aloem/../modelsim.ini to modelsim.ini
+# Modifying modelsim.ini
+# 
+# vlog -sv -work work +incdir+C:/Users/czhe/Downloads/digital_design/q_8_25_smart_bin_mult {C:/Users/czhe/Downloads/digital_design/q_8_25_smart_bin_mult/q_8_25_pkg.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 10:32:06 on Dec 17,2019
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/czhe/Downloads/digital_design/q_8_25_smart_bin_mult" C:/Users/czhe/Downloads/digital_design/q_8_25_smart_bin_mult/q_8_25_pkg.sv 
+# -- Compiling package q_8_25_pkg
+# 
+# Top level modules:
+# 	--none--
+# End time: 10:32:06 on Dec 17,2019, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/Users/czhe/Downloads/digital_design/q_8_25_smart_bin_mult {C:/Users/czhe/Downloads/digital_design/q_8_25_smart_bin_mult/q_8_25.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 10:32:06 on Dec 17,2019
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/czhe/Downloads/digital_design/q_8_25_smart_bin_mult" C:/Users/czhe/Downloads/digital_design/q_8_25_smart_bin_mult/q_8_25.sv 
+# -- Compiling package q_8_25_sv_unit
+# -- Importing package q_8_25_pkg
+# -- Compiling module q_8_25
+# 
+# Top level modules:
+# 	q_8_25
+# End time: 10:32:06 on Dec 17,2019, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+vlog -reportprogress 300 -work work C:/Users/czhe/Downloads/digital_design/q_8_25_smart_bin_mult/q_8_25_tb.sv
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 10:32:14 on Dec 17,2019
+# vlog -reportprogress 300 -work work C:/Users/czhe/Downloads/digital_design/q_8_25_smart_bin_mult/q_8_25_tb.sv 
+# -- Compiling package q_8_25_tb_sv_unit
+# -- Importing package q_8_25_pkg
+# -- Compiling module q_8_25_tb
+# 
+# Top level modules:
+# 	q_8_25_tb
+# End time: 10:32:15 on Dec 17,2019, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+vsim work.q_8_25_tb
+# vsim work.q_8_25_tb 
+# Start time: 10:32:22 on Dec 17,2019
+# Loading sv_std.std
+# Loading work.q_8_25_pkg
+# Loading work.q_8_25_tb_sv_unit
+# Loading work.q_8_25_tb
+# Loading work.q_8_25_sv_unit
+# Loading work.q_8_25
+add wave -position insertpoint  \
+sim:/q_8_25_tb/rst_b \
+sim:/q_8_25_tb/clk \
+sim:/q_8_25_tb/start \
+sim:/q_8_25_tb/state \
+sim:/q_8_25_tb/next_state \
+sim:/q_8_25_tb/load_regs \
+sim:/q_8_25_tb/decr_p \
+sim:/q_8_25_tb/add_regs \
+sim:/q_8_25_tb/shift_regs \
+sim:/q_8_25_tb/P \
+sim:/q_8_25_tb/cntr_eq_zero \
+sim:/q_8_25_tb/s_multiplier_eq_zero \
+sim:/q_8_25_tb/B \
+sim:/q_8_25_tb/A \
+sim:/q_8_25_tb/Q \
+sim:/q_8_25_tb/M \
+sim:/q_8_25_tb/C \
+sim:/q_8_25_tb/rdy \
+sim:/q_8_25_tb/product \
+sim:/q_8_25_tb/multiplicand \
+sim:/q_8_25_tb/multiplier \
+sim:/q_8_25_tb/expected_val \
+sim:/q_8_25_tb/error
+run
+# ** Error: Error found
+#    Time: 675 ps  Scope: q_8_25_tb.CHECK_WHEN_RDY File: C:/Users/czhe/Downloads/digital_design/q_8_25_smart_bin_mult/q_8_25_tb.sv Line: 47
+# ** Error: Error found
+#    Time: 735 ps  Scope: q_8_25_tb.CHECK_WHEN_RDY File: C:/Users/czhe/Downloads/digital_design/q_8_25_smart_bin_mult/q_8_25_tb.sv Line: 47
+# ** Error: Error found
+#    Time: 795 ps  Scope: q_8_25_tb.CHECK_WHEN_RDY File: C:/Users/czhe/Downloads/digital_design/q_8_25_smart_bin_mult/q_8_25_tb.sv Line: 47
+# ** Error: Error found
+#    Time: 855 ps  Scope: q_8_25_tb.CHECK_WHEN_RDY File: C:/Users/czhe/Downloads/digital_design/q_8_25_smart_bin_mult/q_8_25_tb.sv Line: 47
+# ** Error: Error found
+#    Time: 915 ps  Scope: q_8_25_tb.CHECK_WHEN_RDY File: C:/Users/czhe/Downloads/digital_design/q_8_25_smart_bin_mult/q_8_25_tb.sv Line: 47
+# ** Error: Error found
+#    Time: 975 ps  Scope: q_8_25_tb.CHECK_WHEN_RDY File: C:/Users/czhe/Downloads/digital_design/q_8_25_smart_bin_mult/q_8_25_tb.sv Line: 47
+# ** Error: Error found
+#    Time: 1035 ps  Scope: q_8_25_tb.CHECK_WHEN_RDY File: C:/Users/czhe/Downloads/digital_design/q_8_25_smart_bin_mult/q_8_25_tb.sv Line: 47
+# ** Error: Error found
+#    Time: 1095 ps  Scope: q_8_25_tb.CHECK_WHEN_RDY File: C:/Users/czhe/Downloads/digital_design/q_8_25_smart_bin_mult/q_8_25_tb.sv Line: 47
+# ** Error: Error found
+#    Time: 1155 ps  Scope: q_8_25_tb.CHECK_WHEN_RDY File: C:/Users/czhe/Downloads/digital_design/q_8_25_smart_bin_mult/q_8_25_tb.sv Line: 47
+# ** Error: Error found
+#    Time: 1215 ps  Scope: q_8_25_tb.CHECK_WHEN_RDY File: C:/Users/czhe/Downloads/digital_design/q_8_25_smart_bin_mult/q_8_25_tb.sv Line: 47
+# ** Error: Error found
+#    Time: 1275 ps  Scope: q_8_25_tb.CHECK_WHEN_RDY File: C:/Users/czhe/Downloads/digital_design/q_8_25_smart_bin_mult/q_8_25_tb.sv Line: 47
+# ** Error: Error found
+#    Time: 1335 ps  Scope: q_8_25_tb.CHECK_WHEN_RDY File: C:/Users/czhe/Downloads/digital_design/q_8_25_smart_bin_mult/q_8_25_tb.sv Line: 47
+# ** Error: Error found
+#    Time: 1395 ps  Scope: q_8_25_tb.CHECK_WHEN_RDY File: C:/Users/czhe/Downloads/digital_design/q_8_25_smart_bin_mult/q_8_25_tb.sv Line: 47
+# ** Error: Error found
+#    Time: 1455 ps  Scope: q_8_25_tb.CHECK_WHEN_RDY File: C:/Users/czhe/Downloads/digital_design/q_8_25_smart_bin_mult/q_8_25_tb.sv Line: 47
+# ** Error: Error found
+#    Time: 1515 ps  Scope: q_8_25_tb.CHECK_WHEN_RDY File: C:/Users/czhe/Downloads/digital_design/q_8_25_smart_bin_mult/q_8_25_tb.sv Line: 47
+# ** Error: Error found
+#    Time: 1575 ps  Scope: q_8_25_tb.CHECK_WHEN_RDY File: C:/Users/czhe/Downloads/digital_design/q_8_25_smart_bin_mult/q_8_25_tb.sv Line: 47
+# ** Error: Error found
+#    Time: 1635 ps  Scope: q_8_25_tb.CHECK_WHEN_RDY File: C:/Users/czhe/Downloads/digital_design/q_8_25_smart_bin_mult/q_8_25_tb.sv Line: 47
+# ** Error: Error found
+#    Time: 1695 ps  Scope: q_8_25_tb.CHECK_WHEN_RDY File: C:/Users/czhe/Downloads/digital_design/q_8_25_smart_bin_mult/q_8_25_tb.sv Line: 47
+# ** Error: Error found
+#    Time: 1755 ps  Scope: q_8_25_tb.CHECK_WHEN_RDY File: C:/Users/czhe/Downloads/digital_design/q_8_25_smart_bin_mult/q_8_25_tb.sv Line: 47
+# ** Error: Error found
+#    Time: 1815 ps  Scope: q_8_25_tb.CHECK_WHEN_RDY File: C:/Users/czhe/Downloads/digital_design/q_8_25_smart_bin_mult/q_8_25_tb.sv Line: 47
+# ** Error: Error found
+#    Time: 1875 ps  Scope: q_8_25_tb.CHECK_WHEN_RDY File: C:/Users/czhe/Downloads/digital_design/q_8_25_smart_bin_mult/q_8_25_tb.sv Line: 47
+# ** Error: Error found
+#    Time: 1935 ps  Scope: q_8_25_tb.CHECK_WHEN_RDY File: C:/Users/czhe/Downloads/digital_design/q_8_25_smart_bin_mult/q_8_25_tb.sv Line: 47
+# ** Error: Error found
+#    Time: 1995 ps  Scope: q_8_25_tb.CHECK_WHEN_RDY File: C:/Users/czhe/Downloads/digital_design/q_8_25_smart_bin_mult/q_8_25_tb.sv Line: 47
+# ** Error: Error found
+#    Time: 2055 ps  Scope: q_8_25_tb.CHECK_WHEN_RDY File: C:/Users/czhe/Downloads/digital_design/q_8_25_smart_bin_mult/q_8_25_tb.sv Line: 47
+# ** Error: Error found
+#    Time: 2115 ps  Scope: q_8_25_tb.CHECK_WHEN_RDY File: C:/Users/czhe/Downloads/digital_design/q_8_25_smart_bin_mult/q_8_25_tb.sv Line: 47
+# ** Error: Error found
+#    Time: 2175 ps  Scope: q_8_25_tb.CHECK_WHEN_RDY File: C:/Users/czhe/Downloads/digital_design/q_8_25_smart_bin_mult/q_8_25_tb.sv Line: 47
+# ** Error: Error found
+#    Time: 2235 ps  Scope: q_8_25_tb.CHECK_WHEN_RDY File: C:/Users/czhe/Downloads/digital_design/q_8_25_smart_bin_mult/q_8_25_tb.sv Line: 47
+# ** Error: Error found
+#    Time: 2295 ps  Scope: q_8_25_tb.CHECK_WHEN_RDY File: C:/Users/czhe/Downloads/digital_design/q_8_25_smart_bin_mult/q_8_25_tb.sv Line: 47
+# ** Error: Error found
+#    Time: 2355 ps  Scope: q_8_25_tb.CHECK_WHEN_RDY File: C:/Users/czhe/Downloads/digital_design/q_8_25_smart_bin_mult/q_8_25_tb.sv Line: 47
+# ** Error: Error found
+#    Time: 2415 ps  Scope: q_8_25_tb.CHECK_WHEN_RDY File: C:/Users/czhe/Downloads/digital_design/q_8_25_smart_bin_mult/q_8_25_tb.sv Line: 47
+# ** Error: Error found
+#    Time: 2475 ps  Scope: q_8_25_tb.CHECK_WHEN_RDY File: C:/Users/czhe/Downloads/digital_design/q_8_25_smart_bin_mult/q_8_25_tb.sv Line: 47
+# ** Error: Error found
+#    Time: 2535 ps  Scope: q_8_25_tb.CHECK_WHEN_RDY File: C:/Users/czhe/Downloads/digital_design/q_8_25_smart_bin_mult/q_8_25_tb.sv Line: 47
+# ** Error: Error found
+#    Time: 2555 ps  Scope: q_8_25_tb.CHECK_WHEN_RDY File: C:/Users/czhe/Downloads/digital_design/q_8_25_smart_bin_mult/q_8_25_tb.sv Line: 47
+# ** Error: Error found
+#    Time: 2635 ps  Scope: q_8_25_tb.CHECK_WHEN_RDY File: C:/Users/czhe/Downloads/digital_design/q_8_25_smart_bin_mult/q_8_25_tb.sv Line: 47
+# ** Error: Error found
+#    Time: 2715 ps  Scope: q_8_25_tb.CHECK_WHEN_RDY File: C:/Users/czhe/Downloads/digital_design/q_8_25_smart_bin_mult/q_8_25_tb.sv Line: 47
+# ** Error: Error found
+#    Time: 2795 ps  Scope: q_8_25_tb.CHECK_WHEN_RDY File: C:/Users/czhe/Downloads/digital_design/q_8_25_smart_bin_mult/q_8_25_tb.sv Line: 47
+# ** Error: Error found
+#    Time: 2875 ps  Scope: q_8_25_tb.CHECK_WHEN_RDY File: C:/Users/czhe/Downloads/digital_design/q_8_25_smart_bin_mult/q_8_25_tb.sv Line: 47
+# ** Error: Error found
+#    Time: 2955 ps  Scope: q_8_25_tb.CHECK_WHEN_RDY File: C:/Users/czhe/Downloads/digital_design/q_8_25_smart_bin_mult/q_8_25_tb.sv Line: 47
+# ** Error: Error found
+#    Time: 3035 ps  Scope: q_8_25_tb.CHECK_WHEN_RDY File: C:/Users/czhe/Downloads/digital_design/q_8_25_smart_bin_mult/q_8_25_tb.sv Line: 47
+# ** Error: Error found
+#    Time: 3115 ps  Scope: q_8_25_tb.CHECK_WHEN_RDY File: C:/Users/czhe/Downloads/digital_design/q_8_25_smart_bin_mult/q_8_25_tb.sv Line: 47
+# ** Error: Error found
+#    Time: 3195 ps  Scope: q_8_25_tb.CHECK_WHEN_RDY File: C:/Users/czhe/Downloads/digital_design/q_8_25_smart_bin_mult/q_8_25_tb.sv Line: 47
+# ** Error: Error found
+#    Time: 3275 ps  Scope: q_8_25_tb.CHECK_WHEN_RDY File: C:/Users/czhe/Downloads/digital_design/q_8_25_smart_bin_mult/q_8_25_tb.sv Line: 47
+# ** Error: Error found
+#    Time: 3355 ps  Scope: q_8_25_tb.CHECK_WHEN_RDY File: C:/Users/czhe/Downloads/digital_design/q_8_25_smart_bin_mult/q_8_25_tb.sv Line: 47
+# ** Error: Error found
+#    Time: 3435 ps  Scope: q_8_25_tb.CHECK_WHEN_RDY File: C:/Users/czhe/Downloads/digital_design/q_8_25_smart_bin_mult/q_8_25_tb.sv Line: 47
+# ** Error: Error found
+#    Time: 3515 ps  Scope: q_8_25_tb.CHECK_WHEN_RDY File: C:/Users/czhe/Downloads/digital_design/q_8_25_smart_bin_mult/q_8_25_tb.sv Line: 47
+# ** Error: Error found
+#    Time: 3595 ps  Scope: q_8_25_tb.CHECK_WHEN_RDY File: C:/Users/czhe/Downloads/digital_design/q_8_25_smart_bin_mult/q_8_25_tb.sv Line: 47
+# ** Error: Error found
+#    Time: 3675 ps  Scope: q_8_25_tb.CHECK_WHEN_RDY File: C:/Users/czhe/Downloads/digital_design/q_8_25_smart_bin_mult/q_8_25_tb.sv Line: 47
+# ** Error: Error found
+#    Time: 3755 ps  Scope: q_8_25_tb.CHECK_WHEN_RDY File: C:/Users/czhe/Downloads/digital_design/q_8_25_smart_bin_mult/q_8_25_tb.sv Line: 47
+# ** Error: Error found
+#    Time: 3835 ps  Scope: q_8_25_tb.CHECK_WHEN_RDY File: C:/Users/czhe/Downloads/digital_design/q_8_25_smart_bin_mult/q_8_25_tb.sv Line: 47
+# ** Error: Error found
+#    Time: 3915 ps  Scope: q_8_25_tb.CHECK_WHEN_RDY File: C:/Users/czhe/Downloads/digital_design/q_8_25_smart_bin_mult/q_8_25_tb.sv Line: 47
+# ** Error: Error found
+#    Time: 3995 ps  Scope: q_8_25_tb.CHECK_WHEN_RDY File: C:/Users/czhe/Downloads/digital_design/q_8_25_smart_bin_mult/q_8_25_tb.sv Line: 47
+# ** Error: Error found
+#    Time: 4075 ps  Scope: q_8_25_tb.CHECK_WHEN_RDY File: C:/Users/czhe/Downloads/digital_design/q_8_25_smart_bin_mult/q_8_25_tb.sv Line: 47
+# ** Error: Error found
+#    Time: 4155 ps  Scope: q_8_25_tb.CHECK_WHEN_RDY File: C:/Users/czhe/Downloads/digital_design/q_8_25_smart_bin_mult/q_8_25_tb.sv Line: 47
+# ** Error: Error found
+#    Time: 4235 ps  Scope: q_8_25_tb.CHECK_WHEN_RDY File: C:/Users/czhe/Downloads/digital_design/q_8_25_smart_bin_mult/q_8_25_tb.sv Line: 47
+# ** Error: Error found
+#    Time: 4315 ps  Scope: q_8_25_tb.CHECK_WHEN_RDY File: C:/Users/czhe/Downloads/digital_design/q_8_25_smart_bin_mult/q_8_25_tb.sv Line: 47
+# ** Error: Error found
+#    Time: 4395 ps  Scope: q_8_25_tb.CHECK_WHEN_RDY File: C:/Users/czhe/Downloads/digital_design/q_8_25_smart_bin_mult/q_8_25_tb.sv Line: 47
+# ** Error: Error found
+#    Time: 4475 ps  Scope: q_8_25_tb.CHECK_WHEN_RDY File: C:/Users/czhe/Downloads/digital_design/q_8_25_smart_bin_mult/q_8_25_tb.sv Line: 47
+# ** Error: Error found
+#    Time: 4555 ps  Scope: q_8_25_tb.CHECK_WHEN_RDY File: C:/Users/czhe/Downloads/digital_design/q_8_25_smart_bin_mult/q_8_25_tb.sv Line: 47
+# ** Error: Error found
+#    Time: 4635 ps  Scope: q_8_25_tb.CHECK_WHEN_RDY File: C:/Users/czhe/Downloads/digital_design/q_8_25_smart_bin_mult/q_8_25_tb.sv Line: 47
+# ** Error: Error found
+#    Time: 4715 ps  Scope: q_8_25_tb.CHECK_WHEN_RDY File: C:/Users/czhe/Downloads/digital_design/q_8_25_smart_bin_mult/q_8_25_tb.sv Line: 47
+# ** Error: Error found
+#    Time: 4795 ps  Scope: q_8_25_tb.CHECK_WHEN_RDY File: C:/Users/czhe/Downloads/digital_design/q_8_25_smart_bin_mult/q_8_25_tb.sv Line: 47
+# ** Error: Error found
+#    Time: 4875 ps  Scope: q_8_25_tb.CHECK_WHEN_RDY File: C:/Users/czhe/Downloads/digital_design/q_8_25_smart_bin_mult/q_8_25_tb.sv Line: 47
+# ** Error: Error found
+#    Time: 4955 ps  Scope: q_8_25_tb.CHECK_WHEN_RDY File: C:/Users/czhe/Downloads/digital_design/q_8_25_smart_bin_mult/q_8_25_tb.sv Line: 47
+# ** Error: Error found
+#    Time: 5035 ps  Scope: q_8_25_tb.CHECK_WHEN_RDY File: C:/Users/czhe/Downloads/digital_design/q_8_25_smart_bin_mult/q_8_25_tb.sv Line: 47
+# ** Error: Error found
+#    Time: 5055 ps  Scope: q_8_25_tb.CHECK_WHEN_RDY File: C:/Users/czhe/Downloads/digital_design/q_8_25_smart_bin_mult/q_8_25_tb.sv Line: 47
+# ** Error: Error found
+#    Time: 5135 ps  Scope: q_8_25_tb.CHECK_WHEN_RDY File: C:/Users/czhe/Downloads/digital_design/q_8_25_smart_bin_mult/q_8_25_tb.sv Line: 47
+# ** Error: Error found
+#    Time: 5215 ps  Scope: q_8_25_tb.CHECK_WHEN_RDY File: C:/Users/czhe/Downloads/digital_design/q_8_25_smart_bin_mult/q_8_25_tb.sv Line: 47
+# ** Error: Error found
+#    Time: 5295 ps  Scope: q_8_25_tb.CHECK_WHEN_RDY File: C:/Users/czhe/Downloads/digital_design/q_8_25_smart_bin_mult/q_8_25_tb.sv Line: 47
+# ** Error: Error found
+#    Time: 5375 ps  Scope: q_8_25_tb.CHECK_WHEN_RDY File: C:/Users/czhe/Downloads/digital_design/q_8_25_smart_bin_mult/q_8_25_tb.sv Line: 47
+# ** Error: Error found
+#    Time: 5455 ps  Scope: q_8_25_tb.CHECK_WHEN_RDY File: C:/Users/czhe/Downloads/digital_design/q_8_25_smart_bin_mult/q_8_25_tb.sv Line: 47
+# ** Error: Error found
+#    Time: 5535 ps  Scope: q_8_25_tb.CHECK_WHEN_RDY File: C:/Users/czhe/Downloads/digital_design/q_8_25_smart_bin_mult/q_8_25_tb.sv Line: 47
+# ** Error: Error found
+#    Time: 5615 ps  Scope: q_8_25_tb.CHECK_WHEN_RDY File: C:/Users/czhe/Downloads/digital_design/q_8_25_smart_bin_mult/q_8_25_tb.sv Line: 47
+# ** Error: Error found
+#    Time: 5695 ps  Scope: q_8_25_tb.CHECK_WHEN_RDY File: C:/Users/czhe/Downloads/digital_design/q_8_25_smart_bin_mult/q_8_25_tb.sv Line: 47
+# ** Error: Error found
+#    Time: 5775 ps  Scope: q_8_25_tb.CHECK_WHEN_RDY File: C:/Users/czhe/Downloads/digital_design/q_8_25_smart_bin_mult/q_8_25_tb.sv Line: 47
+# ** Error: Error found
+#    Time: 5855 ps  Scope: q_8_25_tb.CHECK_WHEN_RDY File: C:/Users/czhe/Downloads/digital_design/q_8_25_smart_bin_mult/q_8_25_tb.sv Line: 47
+# ** Error: Error found
+#    Time: 5935 ps  Scope: q_8_25_tb.CHECK_WHEN_RDY File: C:/Users/czhe/Downloads/digital_design/q_8_25_smart_bin_mult/q_8_25_tb.sv Line: 47
+# ** Error: Error found
+#    Time: 6015 ps  Scope: q_8_25_tb.CHECK_WHEN_RDY File: C:/Users/czhe/Downloads/digital_design/q_8_25_smart_bin_mult/q_8_25_tb.sv Line: 47
+# ** Error: Error found
+#    Time: 6095 ps  Scope: q_8_25_tb.CHECK_WHEN_RDY File: C:/Users/czhe/Downloads/digital_design/q_8_25_smart_bin_mult/q_8_25_tb.sv Line: 47
+# ** Error: Error found
+#    Time: 6175 ps  Scope: q_8_25_tb.CHECK_WHEN_RDY File: C:/Users/czhe/Downloads/digital_design/q_8_25_smart_bin_mult/q_8_25_tb.sv Line: 47
+# ** Error: Error found
+#    Time: 6255 ps  Scope: q_8_25_tb.CHECK_WHEN_RDY File: C:/Users/czhe/Downloads/digital_design/q_8_25_smart_bin_mult/q_8_25_tb.sv Line: 47
+# ** Error: Error found
+#    Time: 6335 ps  Scope: q_8_25_tb.CHECK_WHEN_RDY File: C:/Users/czhe/Downloads/digital_design/q_8_25_smart_bin_mult/q_8_25_tb.sv Line: 47
+# ** Error: Error found
+#    Time: 6415 ps  Scope: q_8_25_tb.CHECK_WHEN_RDY File: C:/Users/czhe/Downloads/digital_design/q_8_25_smart_bin_mult/q_8_25_tb.sv Line: 47
+# ** Error: Error found
+#    Time: 6495 ps  Scope: q_8_25_tb.CHECK_WHEN_RDY File: C:/Users/czhe/Downloads/digital_design/q_8_25_smart_bin_mult/q_8_25_tb.sv Line: 47
+# ** Error: Error found
+#    Time: 6575 ps  Scope: q_8_25_tb.CHECK_WHEN_RDY File: C:/Users/czhe/Downloads/digital_design/q_8_25_smart_bin_mult/q_8_25_tb.sv Line: 47
+# ** Error: Error found
+#    Time: 6655 ps  Scope: q_8_25_tb.CHECK_WHEN_RDY File: C:/Users/czhe/Downloads/digital_design/q_8_25_smart_bin_mult/q_8_25_tb.sv Line: 47
+# ** Error: Error found
+#    Time: 6735 ps  Scope: q_8_25_tb.CHECK_WHEN_RDY File: C:/Users/czhe/Downloads/digital_design/q_8_25_smart_bin_mult/q_8_25_tb.sv Line: 47
+# ** Error: Error found
+#    Time: 6815 ps  Scope: q_8_25_tb.CHECK_WHEN_RDY File: C:/Users/czhe/Downloads/digital_design/q_8_25_smart_bin_mult/q_8_25_tb.sv Line: 47
+# ** Error: Error found
+#    Time: 6895 ps  Scope: q_8_25_tb.CHECK_WHEN_RDY File: C:/Users/czhe/Downloads/digital_design/q_8_25_smart_bin_mult/q_8_25_tb.sv Line: 47
+# ** Error: Error found
+#    Time: 6975 ps  Scope: q_8_25_tb.CHECK_WHEN_RDY File: C:/Users/czhe/Downloads/digital_design/q_8_25_smart_bin_mult/q_8_25_tb.sv Line: 47
+# ** Error: Error found
+#    Time: 7055 ps  Scope: q_8_25_tb.CHECK_WHEN_RDY File: C:/Users/czhe/Downloads/digital_design/q_8_25_smart_bin_mult/q_8_25_tb.sv Line: 47
+# ** Error: Error found
+#    Time: 7135 ps  Scope: q_8_25_tb.CHECK_WHEN_RDY File: C:/Users/czhe/Downloads/digital_design/q_8_25_smart_bin_mult/q_8_25_tb.sv Line: 47
+# ** Error: Error found
+#    Time: 7215 ps  Scope: q_8_25_tb.CHECK_WHEN_RDY File: C:/Users/czhe/Downloads/digital_design/q_8_25_smart_bin_mult/q_8_25_tb.sv Line: 47
+# ** Error: Error found
+#    Time: 7295 ps  Scope: q_8_25_tb.CHECK_WHEN_RDY File: C:/Users/czhe/Downloads/digital_design/q_8_25_smart_bin_mult/q_8_25_tb.sv Line: 47
+# ** Error: Error found
+#    Time: 7375 ps  Scope: q_8_25_tb.CHECK_WHEN_RDY File: C:/Users/czhe/Downloads/digital_design/q_8_25_smart_bin_mult/q_8_25_tb.sv Line: 47
+# ** Error: Error found
+#    Time: 7455 ps  Scope: q_8_25_tb.CHECK_WHEN_RDY File: C:/Users/czhe/Downloads/digital_design/q_8_25_smart_bin_mult/q_8_25_tb.sv Line: 47
+# ** Error: Error found
+#    Time: 7535 ps  Scope: q_8_25_tb.CHECK_WHEN_RDY File: C:/Users/czhe/Downloads/digital_design/q_8_25_smart_bin_mult/q_8_25_tb.sv Line: 47
+# ** Error: Error found
+#    Time: 7555 ps  Scope: q_8_25_tb.CHECK_WHEN_RDY File: C:/Users/czhe/Downloads/digital_design/q_8_25_smart_bin_mult/q_8_25_tb.sv Line: 47
+# ** Error: Error found
+#    Time: 7655 ps  Scope: q_8_25_tb.CHECK_WHEN_RDY File: C:/Users/czhe/Downloads/digital_design/q_8_25_smart_bin_mult/q_8_25_tb.sv Line: 47
+# ** Error: Error found
+#    Time: 7755 ps  Scope: q_8_25_tb.CHECK_WHEN_RDY File: C:/Users/czhe/Downloads/digital_design/q_8_25_smart_bin_mult/q_8_25_tb.sv Line: 47
+# ** Error: Error found
+#    Time: 7855 ps  Scope: q_8_25_tb.CHECK_WHEN_RDY File: C:/Users/czhe/Downloads/digital_design/q_8_25_smart_bin_mult/q_8_25_tb.sv Line: 47
+# ** Error: Error found
+#    Time: 7955 ps  Scope: q_8_25_tb.CHECK_WHEN_RDY File: C:/Users/czhe/Downloads/digital_design/q_8_25_smart_bin_mult/q_8_25_tb.sv Line: 47
+# ** Error: Error found
+#    Time: 8055 ps  Scope: q_8_25_tb.CHECK_WHEN_RDY File: C:/Users/czhe/Downloads/digital_design/q_8_25_smart_bin_mult/q_8_25_tb.sv Line: 47
+# ** Error: Error found
+#    Time: 8155 ps  Scope: q_8_25_tb.CHECK_WHEN_RDY File: C:/Users/czhe/Downloads/digital_design/q_8_25_smart_bin_mult/q_8_25_tb.sv Line: 47
+# ** Error: Error found
+#    Time: 8255 ps  Scope: q_8_25_tb.CHECK_WHEN_RDY File: C:/Users/czhe/Downloads/digital_design/q_8_25_smart_bin_mult/q_8_25_tb.sv Line: 47
+# ** Error: Error found
+#    Time: 8355 ps  Scope: q_8_25_tb.CHECK_WHEN_RDY File: C:/Users/czhe/Downloads/digital_design/q_8_25_smart_bin_mult/q_8_25_tb.sv Line: 47
+# ** Error: Error found
+#    Time: 8455 ps  Scope: q_8_25_tb.CHECK_WHEN_RDY File: C:/Users/czhe/Downloads/digital_design/q_8_25_smart_bin_mult/q_8_25_tb.sv Line: 47
+# ** Error: Error found
+#    Time: 8555 ps  Scope: q_8_25_tb.CHECK_WHEN_RDY File: C:/Users/czhe/Downloads/digital_design/q_8_25_smart_bin_mult/q_8_25_tb.sv Line: 47
+# ** Error: Error found
+#    Time: 8655 ps  Scope: q_8_25_tb.CHECK_WHEN_RDY File: C:/Users/czhe/Downloads/digital_design/q_8_25_smart_bin_mult/q_8_25_tb.sv Line: 47
+# ** Error: Error found
+#    Time: 8755 ps  Scope: q_8_25_tb.CHECK_WHEN_RDY File: C:/Users/czhe/Downloads/digital_design/q_8_25_smart_bin_mult/q_8_25_tb.sv Line: 47
+# ** Error: Error found
+#    Time: 8855 ps  Scope: q_8_25_tb.CHECK_WHEN_RDY File: C:/Users/czhe/Downloads/digital_design/q_8_25_smart_bin_mult/q_8_25_tb.sv Line: 47
+# ** Error: Error found
+#    Time: 8955 ps  Scope: q_8_25_tb.CHECK_WHEN_RDY File: C:/Users/czhe/Downloads/digital_design/q_8_25_smart_bin_mult/q_8_25_tb.sv Line: 47
+# ** Error: Error found
+#    Time: 9055 ps  Scope: q_8_25_tb.CHECK_WHEN_RDY File: C:/Users/czhe/Downloads/digital_design/q_8_25_smart_bin_mult/q_8_25_tb.sv Line: 47
+# ** Error: Error found
+#    Time: 9155 ps  Scope: q_8_25_tb.CHECK_WHEN_RDY File: C:/Users/czhe/Downloads/digital_design/q_8_25_smart_bin_mult/q_8_25_tb.sv Line: 47
+# ** Error: Error found
+#    Time: 9255 ps  Scope: q_8_25_tb.CHECK_WHEN_RDY File: C:/Users/czhe/Downloads/digital_design/q_8_25_smart_bin_mult/q_8_25_tb.sv Line: 47
+# ** Error: Error found
+#    Time: 9355 ps  Scope: q_8_25_tb.CHECK_WHEN_RDY File: C:/Users/czhe/Downloads/digital_design/q_8_25_smart_bin_mult/q_8_25_tb.sv Line: 47
+# ** Error: Error found
+#    Time: 9455 ps  Scope: q_8_25_tb.CHECK_WHEN_RDY File: C:/Users/czhe/Downloads/digital_design/q_8_25_smart_bin_mult/q_8_25_tb.sv Line: 47
+# ** Error: Error found
+#    Time: 9555 ps  Scope: q_8_25_tb.CHECK_WHEN_RDY File: C:/Users/czhe/Downloads/digital_design/q_8_25_smart_bin_mult/q_8_25_tb.sv Line: 47
+# ** Error: Error found
+#    Time: 9655 ps  Scope: q_8_25_tb.CHECK_WHEN_RDY File: C:/Users/czhe/Downloads/digital_design/q_8_25_smart_bin_mult/q_8_25_tb.sv Line: 47
+# ** Error: Error found
+#    Time: 9755 ps  Scope: q_8_25_tb.CHECK_WHEN_RDY File: C:/Users/czhe/Downloads/digital_design/q_8_25_smart_bin_mult/q_8_25_tb.sv Line: 47
+# ** Error: Error found
+#    Time: 9855 ps  Scope: q_8_25_tb.CHECK_WHEN_RDY File: C:/Users/czhe/Downloads/digital_design/q_8_25_smart_bin_mult/q_8_25_tb.sv Line: 47
+# ** Error: Error found
+#    Time: 9955 ps  Scope: q_8_25_tb.CHECK_WHEN_RDY File: C:/Users/czhe/Downloads/digital_design/q_8_25_smart_bin_mult/q_8_25_tb.sv Line: 47
+# ** Error: Error found
+#    Time: 10055 ps  Scope: q_8_25_tb.CHECK_WHEN_RDY File: C:/Users/czhe/Downloads/digital_design/q_8_25_smart_bin_mult/q_8_25_tb.sv Line: 47
+# ** Error: Error found
+#    Time: 10155 ps  Scope: q_8_25_tb.CHECK_WHEN_RDY File: C:/Users/czhe/Downloads/digital_design/q_8_25_smart_bin_mult/q_8_25_tb.sv Line: 47
+# ** Error: Error found
+#    Time: 10255 ps  Scope: q_8_25_tb.CHECK_WHEN_RDY File: C:/Users/czhe/Downloads/digital_design/q_8_25_smart_bin_mult/q_8_25_tb.sv Line: 47
+# ** Error: Error found
+#    Time: 10355 ps  Scope: q_8_25_tb.CHECK_WHEN_RDY File: C:/Users/czhe/Downloads/digital_design/q_8_25_smart_bin_mult/q_8_25_tb.sv Line: 47
+# ** Error: Error found
+#    Time: 10455 ps  Scope: q_8_25_tb.CHECK_WHEN_RDY File: C:/Users/czhe/Downloads/digital_design/q_8_25_smart_bin_mult/q_8_25_tb.sv Line: 47
+# ** Error: Error found
+#    Time: 10555 ps  Scope: q_8_25_tb.CHECK_WHEN_RDY File: C:/Users/czhe/Downloads/digital_design/q_8_25_smart_bin_mult/q_8_25_tb.sv Line: 47
+# ** Error: Error found
+#    Time: 10655 ps  Scope: q_8_25_tb.CHECK_WHEN_RDY File: C:/Users/czhe/Downloads/digital_design/q_8_25_smart_bin_mult/q_8_25_tb.sv Line: 47
+# ** Error: Error found
+#    Time: 10675 ps  Scope: q_8_25_tb.CHECK_WHEN_RDY File: C:/Users/czhe/Downloads/digital_design/q_8_25_smart_bin_mult/q_8_25_tb.sv Line: 47
+# ** Error: Error found
+#    Time: 10775 ps  Scope: q_8_25_tb.CHECK_WHEN_RDY File: C:/Users/czhe/Downloads/digital_design/q_8_25_smart_bin_mult/q_8_25_tb.sv Line: 47
+# ** Error: Error found
+#    Time: 10875 ps  Scope: q_8_25_tb.CHECK_WHEN_RDY File: C:/Users/czhe/Downloads/digital_design/q_8_25_smart_bin_mult/q_8_25_tb.sv Line: 47
+# ** Error: Error found
+#    Time: 10975 ps  Scope: q_8_25_tb.CHECK_WHEN_RDY File: C:/Users/czhe/Downloads/digital_design/q_8_25_smart_bin_mult/q_8_25_tb.sv Line: 47
+# ** Error: Error found
+#    Time: 11075 ps  Scope: q_8_25_tb.CHECK_WHEN_RDY File: C:/Users/czhe/Downloads/digital_design/q_8_25_smart_bin_mult/q_8_25_tb.sv Line: 47
+# ** Error: Error found
+#    Time: 11175 ps  Scope: q_8_25_tb.CHECK_WHEN_RDY File: C:/Users/czhe/Downloads/digital_design/q_8_25_smart_bin_mult/q_8_25_tb.sv Line: 47
+# ** Error: Error found
+#    Time: 11275 ps  Scope: q_8_25_tb.CHECK_WHEN_RDY File: C:/Users/czhe/Downloads/digital_design/q_8_25_smart_bin_mult/q_8_25_tb.sv Line: 47
+# ** Error: Error found
+#    Time: 11375 ps  Scope: q_8_25_tb.CHECK_WHEN_RDY File: C:/Users/czhe/Downloads/digital_design/q_8_25_smart_bin_mult/q_8_25_tb.sv Line: 47
+# ** Error: Error found
+#    Time: 11475 ps  Scope: q_8_25_tb.CHECK_WHEN_RDY File: C:/Users/czhe/Downloads/digital_design/q_8_25_smart_bin_mult/q_8_25_tb.sv Line: 47
+# ** Error: Error found
+#    Time: 11575 ps  Scope: q_8_25_tb.CHECK_WHEN_RDY File: C:/Users/czhe/Downloads/digital_design/q_8_25_smart_bin_mult/q_8_25_tb.sv Line: 47
+# ** Error: Error found
+#    Time: 11675 ps  Scope: q_8_25_tb.CHECK_WHEN_RDY File: C:/Users/czhe/Downloads/digital_design/q_8_25_smart_bin_mult/q_8_25_tb.sv Line: 47
+# ** Error: Error found
+#    Time: 11775 ps  Scope: q_8_25_tb.CHECK_WHEN_RDY File: C:/Users/czhe/Downloads/digital_design/q_8_25_smart_bin_mult/q_8_25_tb.sv Line: 47
+# ** Error: Error found
+#    Time: 11875 ps  Scope: q_8_25_tb.CHECK_WHEN_RDY File: C:/Users/czhe/Downloads/digital_design/q_8_25_smart_bin_mult/q_8_25_tb.sv Line: 47
+# ** Error: Error found
+#    Time: 11975 ps  Scope: q_8_25_tb.CHECK_WHEN_RDY File: C:/Users/czhe/Downloads/digital_design/q_8_25_smart_bin_mult/q_8_25_tb.sv Line: 47
+# ** Error: Error found
+#    Time: 12075 ps  Scope: q_8_25_tb.CHECK_WHEN_RDY File: C:/Users/czhe/Downloads/digital_design/q_8_25_smart_bin_mult/q_8_25_tb.sv Line: 47
+# ** Error: Error found
+#    Time: 12175 ps  Scope: q_8_25_tb.CHECK_WHEN_RDY File: C:/Users/czhe/Downloads/digital_design/q_8_25_smart_bin_mult/q_8_25_tb.sv Line: 47
+# ** Error: Error found
+#    Time: 12275 ps  Scope: q_8_25_tb.CHECK_WHEN_RDY File: C:/Users/czhe/Downloads/digital_design/q_8_25_smart_bin_mult/q_8_25_tb.sv Line: 47
+# ** Error: Error found
+#    Time: 12375 ps  Scope: q_8_25_tb.CHECK_WHEN_RDY File: C:/Users/czhe/Downloads/digital_design/q_8_25_smart_bin_mult/q_8_25_tb.sv Line: 47
+# ** Error: Error found
+#    Time: 12475 ps  Scope: q_8_25_tb.CHECK_WHEN_RDY File: C:/Users/czhe/Downloads/digital_design/q_8_25_smart_bin_mult/q_8_25_tb.sv Line: 47
+# ** Error: Error found
+#    Time: 12575 ps  Scope: q_8_25_tb.CHECK_WHEN_RDY File: C:/Users/czhe/Downloads/digital_design/q_8_25_smart_bin_mult/q_8_25_tb.sv Line: 47
+# ** Error: Error found
+#    Time: 12675 ps  Scope: q_8_25_tb.CHECK_WHEN_RDY File: C:/Users/czhe/Downloads/digital_design/q_8_25_smart_bin_mult/q_8_25_tb.sv Line: 47
+# ** Error: Error found
+#    Time: 12775 ps  Scope: q_8_25_tb.CHECK_WHEN_RDY File: C:/Users/czhe/Downloads/digital_design/q_8_25_smart_bin_mult/q_8_25_tb.sv Line: 47
+# ** Error: Error found
+#    Time: 12875 ps  Scope: q_8_25_tb.CHECK_WHEN_RDY File: C:/Users/czhe/Downloads/digital_design/q_8_25_smart_bin_mult/q_8_25_tb.sv Line: 47
+# ** Error: Error found
+#    Time: 12975 ps  Scope: q_8_25_tb.CHECK_WHEN_RDY File: C:/Users/czhe/Downloads/digital_design/q_8_25_smart_bin_mult/q_8_25_tb.sv Line: 47
+# ** Error: Error found
+#    Time: 13075 ps  Scope: q_8_25_tb.CHECK_WHEN_RDY File: C:/Users/czhe/Downloads/digital_design/q_8_25_smart_bin_mult/q_8_25_tb.sv Line: 47
+# ** Error: Error found
+#    Time: 13175 ps  Scope: q_8_25_tb.CHECK_WHEN_RDY File: C:/Users/czhe/Downloads/digital_design/q_8_25_smart_bin_mult/q_8_25_tb.sv Line: 47
+# ** Error: Error found
+#    Time: 13275 ps  Scope: q_8_25_tb.CHECK_WHEN_RDY File: C:/Users/czhe/Downloads/digital_design/q_8_25_smart_bin_mult/q_8_25_tb.sv Line: 47
+# ** Error: Error found
+#    Time: 13375 ps  Scope: q_8_25_tb.CHECK_WHEN_RDY File: C:/Users/czhe/Downloads/digital_design/q_8_25_smart_bin_mult/q_8_25_tb.sv Line: 47
+# ** Error: Error found
+#    Time: 13475 ps  Scope: q_8_25_tb.CHECK_WHEN_RDY File: C:/Users/czhe/Downloads/digital_design/q_8_25_smart_bin_mult/q_8_25_tb.sv Line: 47
+# ** Error: Error found
+#    Time: 13575 ps  Scope: q_8_25_tb.CHECK_WHEN_RDY File: C:/Users/czhe/Downloads/digital_design/q_8_25_smart_bin_mult/q_8_25_tb.sv Line: 47
+# ** Error: Error found
+#    Time: 13675 ps  Scope: q_8_25_tb.CHECK_WHEN_RDY File: C:/Users/czhe/Downloads/digital_design/q_8_25_smart_bin_mult/q_8_25_tb.sv Line: 47
+# ** Error: Error found
+#    Time: 13775 ps  Scope: q_8_25_tb.CHECK_WHEN_RDY File: C:/Users/czhe/Downloads/digital_design/q_8_25_smart_bin_mult/q_8_25_tb.sv Line: 47
+# ** Error: Error found
+#    Time: 13795 ps  Scope: q_8_25_tb.CHECK_WHEN_RDY File: C:/Users/czhe/Downloads/digital_design/q_8_25_smart_bin_mult/q_8_25_tb.sv Line: 47
+# ** Error: Error found
+#    Time: 13895 ps  Scope: q_8_25_tb.CHECK_WHEN_RDY File: C:/Users/czhe/Downloads/digital_design/q_8_25_smart_bin_mult/q_8_25_tb.sv Line: 47
+# ** Error: Error found
+#    Time: 13995 ps  Scope: q_8_25_tb.CHECK_WHEN_RDY File: C:/Users/czhe/Downloads/digital_design/q_8_25_smart_bin_mult/q_8_25_tb.sv Line: 47
+# ** Error: Error found
+#    Time: 14095 ps  Scope: q_8_25_tb.CHECK_WHEN_RDY File: C:/Users/czhe/Downloads/digital_design/q_8_25_smart_bin_mult/q_8_25_tb.sv Line: 47
+# ** Error: Error found
+#    Time: 14195 ps  Scope: q_8_25_tb.CHECK_WHEN_RDY File: C:/Users/czhe/Downloads/digital_design/q_8_25_smart_bin_mult/q_8_25_tb.sv Line: 47
+# ** Error: Error found
+#    Time: 14295 ps  Scope: q_8_25_tb.CHECK_WHEN_RDY File: C:/Users/czhe/Downloads/digital_design/q_8_25_smart_bin_mult/q_8_25_tb.sv Line: 47
+# ** Error: Error found
+#    Time: 14395 ps  Scope: q_8_25_tb.CHECK_WHEN_RDY File: C:/Users/czhe/Downloads/digital_design/q_8_25_smart_bin_mult/q_8_25_tb.sv Line: 47
+# ** Error: Error found
+#    Time: 14495 ps  Scope: q_8_25_tb.CHECK_WHEN_RDY File: C:/Users/czhe/Downloads/digital_design/q_8_25_smart_bin_mult/q_8_25_tb.sv Line: 47
+# ** Error: Error found
+#    Time: 14595 ps  Scope: q_8_25_tb.CHECK_WHEN_RDY File: C:/Users/czhe/Downloads/digital_design/q_8_25_smart_bin_mult/q_8_25_tb.sv Line: 47
+# ** Error: Error found
+#    Time: 14695 ps  Scope: q_8_25_tb.CHECK_WHEN_RDY File: C:/Users/czhe/Downloads/digital_design/q_8_25_smart_bin_mult/q_8_25_tb.sv Line: 47
+# ** Error: Error found
+#    Time: 14795 ps  Scope: q_8_25_tb.CHECK_WHEN_RDY File: C:/Users/czhe/Downloads/digital_design/q_8_25_smart_bin_mult/q_8_25_tb.sv Line: 47
+# ** Error: Error found
+#    Time: 14895 ps  Scope: q_8_25_tb.CHECK_WHEN_RDY File: C:/Users/czhe/Downloads/digital_design/q_8_25_smart_bin_mult/q_8_25_tb.sv Line: 47
+# ** Error: Error found
+#    Time: 14995 ps  Scope: q_8_25_tb.CHECK_WHEN_RDY File: C:/Users/czhe/Downloads/digital_design/q_8_25_smart_bin_mult/q_8_25_tb.sv Line: 47
+# ** Error: Error found
+#    Time: 15095 ps  Scope: q_8_25_tb.CHECK_WHEN_RDY File: C:/Users/czhe/Downloads/digital_design/q_8_25_smart_bin_mult/q_8_25_tb.sv Line: 47
+# ** Error: Error found
+#    Time: 15195 ps  Scope: q_8_25_tb.CHECK_WHEN_RDY File: C:/Users/czhe/Downloads/digital_design/q_8_25_smart_bin_mult/q_8_25_tb.sv Line: 47
+# ** Error: Error found
+#    Time: 15295 ps  Scope: q_8_25_tb.CHECK_WHEN_RDY File: C:/Users/czhe/Downloads/digital_design/q_8_25_smart_bin_mult/q_8_25_tb.sv Line: 47
+# ** Error: Error found
+#    Time: 15395 ps  Scope: q_8_25_tb.CHECK_WHEN_RDY File: C:/Users/czhe/Downloads/digital_design/q_8_25_smart_bin_mult/q_8_25_tb.sv Line: 47
+# ** Error: Error found
+#    Time: 15495 ps  Scope: q_8_25_tb.CHECK_WHEN_RDY File: C:/Users/czhe/Downloads/digital_design/q_8_25_smart_bin_mult/q_8_25_tb.sv Line: 47
+# ** Error: Error found
+#    Time: 15595 ps  Scope: q_8_25_tb.CHECK_WHEN_RDY File: C:/Users/czhe/Downloads/digital_design/q_8_25_smart_bin_mult/q_8_25_tb.sv Line: 47
+# ** Error: Error found
+#    Time: 15695 ps  Scope: q_8_25_tb.CHECK_WHEN_RDY File: C:/Users/czhe/Downloads/digital_design/q_8_25_smart_bin_mult/q_8_25_tb.sv Line: 47
+# ** Error: Error found
+#    Time: 15795 ps  Scope: q_8_25_tb.CHECK_WHEN_RDY File: C:/Users/czhe/Downloads/digital_design/q_8_25_smart_bin_mult/q_8_25_tb.sv Line: 47
+# ** Error: Error found
+#    Time: 15895 ps  Scope: q_8_25_tb.CHECK_WHEN_RDY File: C:/Users/czhe/Downloads/digital_design/q_8_25_smart_bin_mult/q_8_25_tb.sv Line: 47
+# ** Error: Error found
+#    Time: 15995 ps  Scope: q_8_25_tb.CHECK_WHEN_RDY File: C:/Users/czhe/Downloads/digital_design/q_8_25_smart_bin_mult/q_8_25_tb.sv Line: 47
+# ** Error: Error found
+#    Time: 16095 ps  Scope: q_8_25_tb.CHECK_WHEN_RDY File: C:/Users/czhe/Downloads/digital_design/q_8_25_smart_bin_mult/q_8_25_tb.sv Line: 47
+# ** Error: Error found
+#    Time: 16195 ps  Scope: q_8_25_tb.CHECK_WHEN_RDY File: C:/Users/czhe/Downloads/digital_design/q_8_25_smart_bin_mult/q_8_25_tb.sv Line: 47
+# ** Error: Error found
+#    Time: 16295 ps  Scope: q_8_25_tb.CHECK_WHEN_RDY File: C:/Users/czhe/Downloads/digital_design/q_8_25_smart_bin_mult/q_8_25_tb.sv Line: 47
+# ** Error: Error found
+#    Time: 16395 ps  Scope: q_8_25_tb.CHECK_WHEN_RDY File: C:/Users/czhe/Downloads/digital_design/q_8_25_smart_bin_mult/q_8_25_tb.sv Line: 47
+# ** Error: Error found
+#    Time: 16495 ps  Scope: q_8_25_tb.CHECK_WHEN_RDY File: C:/Users/czhe/Downloads/digital_design/q_8_25_smart_bin_mult/q_8_25_tb.sv Line: 47
+# ** Error: Error found
+#    Time: 16595 ps  Scope: q_8_25_tb.CHECK_WHEN_RDY File: C:/Users/czhe/Downloads/digital_design/q_8_25_smart_bin_mult/q_8_25_tb.sv Line: 47
+# ** Error: Error found
+#    Time: 16695 ps  Scope: q_8_25_tb.CHECK_WHEN_RDY File: C:/Users/czhe/Downloads/digital_design/q_8_25_smart_bin_mult/q_8_25_tb.sv Line: 47
+# ** Error: Error found
+#    Time: 16795 ps  Scope: q_8_25_tb.CHECK_WHEN_RDY File: C:/Users/czhe/Downloads/digital_design/q_8_25_smart_bin_mult/q_8_25_tb.sv Line: 47
+# ** Error: Error found
+#    Time: 16895 ps  Scope: q_8_25_tb.CHECK_WHEN_RDY File: C:/Users/czhe/Downloads/digital_design/q_8_25_smart_bin_mult/q_8_25_tb.sv Line: 47
+# ** Error: Error found
+#    Time: 16915 ps  Scope: q_8_25_tb.CHECK_WHEN_RDY File: C:/Users/czhe/Downloads/digital_design/q_8_25_smart_bin_mult/q_8_25_tb.sv Line: 47
+# ** Error: Error found
+#    Time: 17015 ps  Scope: q_8_25_tb.CHECK_WHEN_RDY File: C:/Users/czhe/Downloads/digital_design/q_8_25_smart_bin_mult/q_8_25_tb.sv Line: 47
+# ** Error: Error found
+#    Time: 17115 ps  Scope: q_8_25_tb.CHECK_WHEN_RDY File: C:/Users/czhe/Downloads/digital_design/q_8_25_smart_bin_mult/q_8_25_tb.sv Line: 47
+# ** Error: Error found
+#    Time: 17215 ps  Scope: q_8_25_tb.CHECK_WHEN_RDY File: C:/Users/czhe/Downloads/digital_design/q_8_25_smart_bin_mult/q_8_25_tb.sv Line: 47
+# ** Error: Error found
+#    Time: 17315 ps  Scope: q_8_25_tb.CHECK_WHEN_RDY File: C:/Users/czhe/Downloads/digital_design/q_8_25_smart_bin_mult/q_8_25_tb.sv Line: 47
+# ** Error: Error found
+#    Time: 17415 ps  Scope: q_8_25_tb.CHECK_WHEN_RDY File: C:/Users/czhe/Downloads/digital_design/q_8_25_smart_bin_mult/q_8_25_tb.sv Line: 47
+# ** Error: Error found
+#    Time: 17515 ps  Scope: q_8_25_tb.CHECK_WHEN_RDY File: C:/Users/czhe/Downloads/digital_design/q_8_25_smart_bin_mult/q_8_25_tb.sv Line: 47
+# ** Error: Error found
+#    Time: 17615 ps  Scope: q_8_25_tb.CHECK_WHEN_RDY File: C:/Users/czhe/Downloads/digital_design/q_8_25_smart_bin_mult/q_8_25_tb.sv Line: 47
+# ** Error: Error found
+#    Time: 17715 ps  Scope: q_8_25_tb.CHECK_WHEN_RDY File: C:/Users/czhe/Downloads/digital_design/q_8_25_smart_bin_mult/q_8_25_tb.sv Line: 47
+# ** Error: Error found
+#    Time: 17815 ps  Scope: q_8_25_tb.CHECK_WHEN_RDY File: C:/Users/czhe/Downloads/digital_design/q_8_25_smart_bin_mult/q_8_25_tb.sv Line: 47
+# ** Error: Error found
+#    Time: 17915 ps  Scope: q_8_25_tb.CHECK_WHEN_RDY File: C:/Users/czhe/Downloads/digital_design/q_8_25_smart_bin_mult/q_8_25_tb.sv Line: 47
+# ** Error: Error found
+#    Time: 18015 ps  Scope: q_8_25_tb.CHECK_WHEN_RDY File: C:/Users/czhe/Downloads/digital_design/q_8_25_smart_bin_mult/q_8_25_tb.sv Line: 47
+# ** Error: Error found
+#    Time: 18115 ps  Scope: q_8_25_tb.CHECK_WHEN_RDY File: C:/Users/czhe/Downloads/digital_design/q_8_25_smart_bin_mult/q_8_25_tb.sv Line: 47
+# ** Error: Error found
+#    Time: 18215 ps  Scope: q_8_25_tb.CHECK_WHEN_RDY File: C:/Users/czhe/Downloads/digital_design/q_8_25_smart_bin_mult/q_8_25_tb.sv Line: 47
+# ** Error: Error found
+#    Time: 18315 ps  Scope: q_8_25_tb.CHECK_WHEN_RDY File: C:/Users/czhe/Downloads/digital_design/q_8_25_smart_bin_mult/q_8_25_tb.sv Line: 47
+# ** Error: Error found
+#    Time: 18415 ps  Scope: q_8_25_tb.CHECK_WHEN_RDY File: C:/Users/czhe/Downloads/digital_design/q_8_25_smart_bin_mult/q_8_25_tb.sv Line: 47
+# ** Error: Error found
+#    Time: 18515 ps  Scope: q_8_25_tb.CHECK_WHEN_RDY File: C:/Users/czhe/Downloads/digital_design/q_8_25_smart_bin_mult/q_8_25_tb.sv Line: 47
+# ** Error: Error found
+#    Time: 18615 ps  Scope: q_8_25_tb.CHECK_WHEN_RDY File: C:/Users/czhe/Downloads/digital_design/q_8_25_smart_bin_mult/q_8_25_tb.sv Line: 47
+# ** Error: Error found
+#    Time: 18715 ps  Scope: q_8_25_tb.CHECK_WHEN_RDY File: C:/Users/czhe/Downloads/digital_design/q_8_25_smart_bin_mult/q_8_25_tb.sv Line: 47
+# ** Error: Error found
+#    Time: 18815 ps  Scope: q_8_25_tb.CHECK_WHEN_RDY File: C:/Users/czhe/Downloads/digital_design/q_8_25_smart_bin_mult/q_8_25_tb.sv Line: 47
+# ** Error: Error found
+#    Time: 18915 ps  Scope: q_8_25_tb.CHECK_WHEN_RDY File: C:/Users/czhe/Downloads/digital_design/q_8_25_smart_bin_mult/q_8_25_tb.sv Line: 47
+# ** Error: Error found
+#    Time: 19015 ps  Scope: q_8_25_tb.CHECK_WHEN_RDY File: C:/Users/czhe/Downloads/digital_design/q_8_25_smart_bin_mult/q_8_25_tb.sv Line: 47
+# ** Error: Error found
+#    Time: 19115 ps  Scope: q_8_25_tb.CHECK_WHEN_RDY File: C:/Users/czhe/Downloads/digital_design/q_8_25_smart_bin_mult/q_8_25_tb.sv Line: 47
+# ** Error: Error found
+#    Time: 19215 ps  Scope: q_8_25_tb.CHECK_WHEN_RDY File: C:/Users/czhe/Downloads/digital_design/q_8_25_smart_bin_mult/q_8_25_tb.sv Line: 47
+# ** Error: Error found
+#    Time: 19315 ps  Scope: q_8_25_tb.CHECK_WHEN_RDY File: C:/Users/czhe/Downloads/digital_design/q_8_25_smart_bin_mult/q_8_25_tb.sv Line: 47
+# ** Error: Error found
+#    Time: 19415 ps  Scope: q_8_25_tb.CHECK_WHEN_RDY File: C:/Users/czhe/Downloads/digital_design/q_8_25_smart_bin_mult/q_8_25_tb.sv Line: 47
+# ** Error: Error found
+#    Time: 19515 ps  Scope: q_8_25_tb.CHECK_WHEN_RDY File: C:/Users/czhe/Downloads/digital_design/q_8_25_smart_bin_mult/q_8_25_tb.sv Line: 47
+# ** Error: Error found
+#    Time: 19615 ps  Scope: q_8_25_tb.CHECK_WHEN_RDY File: C:/Users/czhe/Downloads/digital_design/q_8_25_smart_bin_mult/q_8_25_tb.sv Line: 47
+# ** Error: Error found
+#    Time: 19715 ps  Scope: q_8_25_tb.CHECK_WHEN_RDY File: C:/Users/czhe/Downloads/digital_design/q_8_25_smart_bin_mult/q_8_25_tb.sv Line: 47
+# ** Error: Error found
+#    Time: 19815 ps  Scope: q_8_25_tb.CHECK_WHEN_RDY File: C:/Users/czhe/Downloads/digital_design/q_8_25_smart_bin_mult/q_8_25_tb.sv Line: 47
+# ** Error: Error found
+#    Time: 19915 ps  Scope: q_8_25_tb.CHECK_WHEN_RDY File: C:/Users/czhe/Downloads/digital_design/q_8_25_smart_bin_mult/q_8_25_tb.sv Line: 47
+# ** Error: Error found
+#    Time: 20015 ps  Scope: q_8_25_tb.CHECK_WHEN_RDY File: C:/Users/czhe/Downloads/digital_design/q_8_25_smart_bin_mult/q_8_25_tb.sv Line: 47
+# ** Error: Error found
+#    Time: 20035 ps  Scope: q_8_25_tb.CHECK_WHEN_RDY File: C:/Users/czhe/Downloads/digital_design/q_8_25_smart_bin_mult/q_8_25_tb.sv Line: 47
+# ** Error: Error found
+#    Time: 23775 ps  Scope: q_8_25_tb.CHECK_WHEN_RDY File: C:/Users/czhe/Downloads/digital_design/q_8_25_smart_bin_mult/q_8_25_tb.sv Line: 47
+# ** Error: Error found
+#    Time: 27515 ps  Scope: q_8_25_tb.CHECK_WHEN_RDY File: C:/Users/czhe/Downloads/digital_design/q_8_25_smart_bin_mult/q_8_25_tb.sv Line: 47
+# ** Error: Error found
+#    Time: 31255 ps  Scope: q_8_25_tb.CHECK_WHEN_RDY File: C:/Users/czhe/Downloads/digital_design/q_8_25_smart_bin_mult/q_8_25_tb.sv Line: 47
+# ** Error: Error found
+#    Time: 34995 ps  Scope: q_8_25_tb.CHECK_WHEN_RDY File: C:/Users/czhe/Downloads/digital_design/q_8_25_smart_bin_mult/q_8_25_tb.sv Line: 47
+# ** Error: Error found
+#    Time: 38735 ps  Scope: q_8_25_tb.CHECK_WHEN_RDY File: C:/Users/czhe/Downloads/digital_design/q_8_25_smart_bin_mult/q_8_25_tb.sv Line: 47
+# ** Error: Error found
+#    Time: 42475 ps  Scope: q_8_25_tb.CHECK_WHEN_RDY File: C:/Users/czhe/Downloads/digital_design/q_8_25_smart_bin_mult/q_8_25_tb.sv Line: 47
+# ** Error: Error found
+#    Time: 46215 ps  Scope: q_8_25_tb.CHECK_WHEN_RDY File: C:/Users/czhe/Downloads/digital_design/q_8_25_smart_bin_mult/q_8_25_tb.sv Line: 47
+# ** Error: Error found
+#    Time: 49955 ps  Scope: q_8_25_tb.CHECK_WHEN_RDY File: C:/Users/czhe/Downloads/digital_design/q_8_25_smart_bin_mult/q_8_25_tb.sv Line: 47
+# ** Error: Error found
+#    Time: 53695 ps  Scope: q_8_25_tb.CHECK_WHEN_RDY File: C:/Users/czhe/Downloads/digital_design/q_8_25_smart_bin_mult/q_8_25_tb.sv Line: 47
+# ** Error: Error found
+#    Time: 57435 ps  Scope: q_8_25_tb.CHECK_WHEN_RDY File: C:/Users/czhe/Downloads/digital_design/q_8_25_smart_bin_mult/q_8_25_tb.sv Line: 47
+# ** Error: Error found
+#    Time: 61175 ps  Scope: q_8_25_tb.CHECK_WHEN_RDY File: C:/Users/czhe/Downloads/digital_design/q_8_25_smart_bin_mult/q_8_25_tb.sv Line: 47
+# ** Error: Error found
+#    Time: 64915 ps  Scope: q_8_25_tb.CHECK_WHEN_RDY File: C:/Users/czhe/Downloads/digital_design/q_8_25_smart_bin_mult/q_8_25_tb.sv Line: 47
+# ** Error: Error found
+#    Time: 68655 ps  Scope: q_8_25_tb.CHECK_WHEN_RDY File: C:/Users/czhe/Downloads/digital_design/q_8_25_smart_bin_mult/q_8_25_tb.sv Line: 47
+# ** Error: Error found
+#    Time: 72395 ps  Scope: q_8_25_tb.CHECK_WHEN_RDY File: C:/Users/czhe/Downloads/digital_design/q_8_25_smart_bin_mult/q_8_25_tb.sv Line: 47
+# ** Error: Error found
+#    Time: 76135 ps  Scope: q_8_25_tb.CHECK_WHEN_RDY File: C:/Users/czhe/Downloads/digital_design/q_8_25_smart_bin_mult/q_8_25_tb.sv Line: 47
+# ** Error: Error found
+#    Time: 79875 ps  Scope: q_8_25_tb.CHECK_WHEN_RDY File: C:/Users/czhe/Downloads/digital_design/q_8_25_smart_bin_mult/q_8_25_tb.sv Line: 47
+# ** Error: Error found
+#    Time: 83615 ps  Scope: q_8_25_tb.CHECK_WHEN_RDY File: C:/Users/czhe/Downloads/digital_design/q_8_25_smart_bin_mult/q_8_25_tb.sv Line: 47
+# ** Error: Error found
+#    Time: 87355 ps  Scope: q_8_25_tb.CHECK_WHEN_RDY File: C:/Users/czhe/Downloads/digital_design/q_8_25_smart_bin_mult/q_8_25_tb.sv Line: 47
+# ** Error: Error found
+#    Time: 91095 ps  Scope: q_8_25_tb.CHECK_WHEN_RDY File: C:/Users/czhe/Downloads/digital_design/q_8_25_smart_bin_mult/q_8_25_tb.sv Line: 47
+# ** Error: Error found
+#    Time: 94835 ps  Scope: q_8_25_tb.CHECK_WHEN_RDY File: C:/Users/czhe/Downloads/digital_design/q_8_25_smart_bin_mult/q_8_25_tb.sv Line: 47
+# ** Error: Error found
+#    Time: 98575 ps  Scope: q_8_25_tb.CHECK_WHEN_RDY File: C:/Users/czhe/Downloads/digital_design/q_8_25_smart_bin_mult/q_8_25_tb.sv Line: 47
+# ** Error: Error found
+#    Time: 102315 ps  Scope: q_8_25_tb.CHECK_WHEN_RDY File: C:/Users/czhe/Downloads/digital_design/q_8_25_smart_bin_mult/q_8_25_tb.sv Line: 47
+# ** Note: $finish    : C:/Users/czhe/Downloads/digital_design/q_8_25_smart_bin_mult/q_8_25_tb.sv(25)
+#    Time: 103 ns  Iteration: 0  Instance: /q_8_25_tb
+# 1
+# Break in Module q_8_25_tb at C:/Users/czhe/Downloads/digital_design/q_8_25_smart_bin_mult/q_8_25_tb.sv line 25
+# End time: 11:14:31 on Dec 17,2019, Elapsed time: 0:42:09
+# Errors: 247, Warnings: 0

@@ -1,5 +1,5 @@
 Analysis & Synthesis report for q_8_25
-Mon Dec 16 17:25:21 2019
+Tue Dec 17 09:37:23 2019
 Quartus Prime Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
 
 
@@ -46,7 +46,7 @@ refer to the applicable agreement for further details.
 +-------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                  ;
 +---------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status     ; Successful - Mon Dec 16 17:25:21 2019       ;
+; Analysis & Synthesis Status     ; Successful - Tue Dec 17 09:37:23 2019       ;
 ; Quartus Prime Version           ; 18.1.0 Build 625 09/12/2018 SJ Lite Edition ;
 ; Revision Name                   ; q_8_25                                      ;
 ; Top-level Entity Name           ; q_8_25                                      ;
@@ -301,7 +301,7 @@ Encoding Type:  One-Hot
 +----------------+--------------+
 ; Partition Name ; Elapsed Time ;
 +----------------+--------------+
-; Top            ; 00:00:00     ;
+; Top            ; 00:00:01     ;
 +----------------+--------------+
 
 
@@ -311,7 +311,7 @@ Encoding Type:  One-Hot
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
-    Info: Processing started: Mon Dec 16 17:25:06 2019
+    Info: Processing started: Tue Dec 17 09:36:54 2019
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off q_8_25 -c q_8_25
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 8 of the 8 processors detected
@@ -329,10 +329,10 @@ Info (21057): Implemented 62 device resources after synthesis - the final resour
     Info (21061): Implemented 38 logic cells
 Info (144001): Generated suppressed messages file C:/Users/czhe/Downloads/digital_design/q_8_25_smart_bin_mult/output_files/q_8_25.map.smsg
 Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 1 warning
-    Info: Peak virtual memory: 4885 megabytes
-    Info: Processing ended: Mon Dec 16 17:25:21 2019
-    Info: Elapsed time: 00:00:15
-    Info: Total CPU time (on all processors): 00:00:34
+    Info: Peak virtual memory: 4889 megabytes
+    Info: Processing ended: Tue Dec 17 09:37:23 2019
+    Info: Elapsed time: 00:00:29
+    Info: Total CPU time (on all processors): 00:01:04
 
 
 +------------------------------------------+

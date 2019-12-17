@@ -9,6 +9,7 @@ module q_8_25 (
     logic load_regs, decr_p, add_regs, shift_regs, cntr_eq_zero, s_multiplier_eq_zero, C;
     state_t state, next_state;
     logic [dp_width-1:0] A, B, Q, M;
+    logic [dp_width*2-1:0] N;
     logic [bc_size-1:0] P;
 
     // controller begins
@@ -35,22 +36,27 @@ module q_8_25 (
                     load_regs = 1'b1; next_state = S_check;
                 end
             end
-            S_check :
-            begin
-                if (M == {dp_width{1'b0}} || Q == {dp_width{1'b0}})
-                    next_state = S_idle;
-                else next_state = S_add;
-            end
+            //S_check :
+            //begin
+            //    if (M == {dp_width{1'b0}} || B == {dp_width{1'b0}})
+            //        next_state = S_idle;
+            //    else next_state = S_add;
+            //end
             S_add :
             begin
-                if (Q[0]) begin add_regs = 1'b1; next_state = S_shift; end
+                if (M == {dp_width{1'b0}} || B == {dp_width{1'b0}}) next_state = S_idle;
+                else if (Q[0]) begin add_regs = 1'b1; next_state = S_shift; end
                 else next_state = S_shift;
                 decr_p = 1'b1;
             end
             S_shift :
             begin
                 shift_regs = 1'b1;
-                if (cntr_eq_zero || s_multiplier_eq_zero) next_state = S_idle;
+                if (cntr_eq_zero) next_state = S_idle;
+                else if (s_multiplier_eq_zero)
+                begin
+                    next_state = S_idle;
+                end
                 else next_state = S_add;
             end
             default : next_state = S_idle;
@@ -81,8 +87,8 @@ module q_8_25 (
                 M <= multiplier;
                 C <= 1'b0;
             end
-            else if (add_regs) {C, A} = A + B;
-            else if (shift_regs) begin {C, A, Q} = {C, A, Q} >> 1; M = M >> 1; end
+            else if (add_regs) {C, A} <= A + B;
+            else if (shift_regs) begin {C, A, Q} <= {C, A, Q} >> 1; M = M >> 1; end
             if (decr_p) P <= P - 1'b1;
         end
     end
