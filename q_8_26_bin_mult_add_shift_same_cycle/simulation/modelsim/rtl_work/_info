@@ -1,0 +1,134 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/Users/czhe/Downloads/digital_design/q_8_26_bin_mult_add_shift_same_cycle/simulation/modelsim
+vq_8_26
+Z1 DXx6 sv_std 3 std 0 22 AD7iAPLo6nTIKk<N0eo=D3
+Z2 DXx4 work 10 q_8_26_pkg 0 22 _jIXD3=KJUg<AW[9Yog430
+DXx4 work 14 q_8_26_sv_unit 0 22 Gkia2BoT;HjBTD_SPY21N2
+Z3 VDg1SIo80bB@j0V0VzS_@n1
+r1
+!s85 0
+31
+!i10b 1
+!s100 M0<JJQU?OBnDW>D71cAfz0
+Ig>kNYN0:bc`8TXY]4k3gS1
+!s105 q_8_26_sv_unit
+S1
+R0
+Z4 w1576768868
+Z5 8C:/Users/czhe/Downloads/digital_design/q_8_26_bin_mult_add_shift_same_cycle/q_8_26.sv
+Z6 FC:/Users/czhe/Downloads/digital_design/q_8_26_bin_mult_add_shift_same_cycle/q_8_26.sv
+L0 3
+Z7 OV;L;10.5b;63
+Z8 !s108 1576769198.000000
+Z9 !s107 C:/Users/czhe/Downloads/digital_design/q_8_26_bin_mult_add_shift_same_cycle/q_8_26.sv|
+Z10 !s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/czhe/Downloads/digital_design/q_8_26_bin_mult_add_shift_same_cycle|C:/Users/czhe/Downloads/digital_design/q_8_26_bin_mult_add_shift_same_cycle/q_8_26.sv|
+!i113 1
+Z11 o-sv -work work
+Z12 !s92 -sv -work work +incdir+C:/Users/czhe/Downloads/digital_design/q_8_26_bin_mult_add_shift_same_cycle
+Z13 tCvgOpt 0
+Xq_8_26_pkg
+R1
+!s110 1576769198
+!i10b 1
+!s100 Uf2`F;=3EY`DM[C@0_D>a2
+I_jIXD3=KJUg<AW[9Yog430
+V_jIXD3=KJUg<AW[9Yog430
+S1
+R0
+w1576768875
+8C:/Users/czhe/Downloads/digital_design/q_8_26_bin_mult_add_shift_same_cycle/q_8_26_pkg.sv
+FC:/Users/czhe/Downloads/digital_design/q_8_26_bin_mult_add_shift_same_cycle/q_8_26_pkg.sv
+L0 1
+R7
+r1
+!s85 0
+31
+R8
+!s107 C:/Users/czhe/Downloads/digital_design/q_8_26_bin_mult_add_shift_same_cycle/q_8_26_pkg.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/czhe/Downloads/digital_design/q_8_26_bin_mult_add_shift_same_cycle|C:/Users/czhe/Downloads/digital_design/q_8_26_bin_mult_add_shift_same_cycle/q_8_26_pkg.sv|
+!i113 1
+R11
+R12
+R13
+Xq_8_26_sv_unit
+R1
+R2
+VGkia2BoT;HjBTD_SPY21N2
+r1
+!s85 0
+31
+!i10b 1
+!s100 Fg39K<2>MP;iOCB<2zE[E1
+IGkia2BoT;HjBTD_SPY21N2
+!i103 1
+S1
+R0
+R4
+R5
+R6
+L0 1
+R7
+R8
+R9
+R10
+!i113 1
+R11
+R12
+R13
+vq_8_26_tb
+R1
+R2
+DXx4 work 17 q_8_26_tb_sv_unit 0 22 R4@nE;D_KIOeGhXLc?B2J1
+R3
+r1
+!s85 0
+31
+!i10b 1
+!s100 jFUFBK^Jn;glcPRGj@P400
+IVMD=40jUX5WFHK4EC;N432
+!s105 q_8_26_tb_sv_unit
+S1
+R0
+Z14 w1576768974
+Z15 8C:/Users/czhe/Downloads/digital_design/q_8_26_bin_mult_add_shift_same_cycle/q_8_26_tb.sv
+Z16 FC:/Users/czhe/Downloads/digital_design/q_8_26_bin_mult_add_shift_same_cycle/q_8_26_tb.sv
+L0 3
+R7
+Z17 !s108 1576769227.000000
+Z18 !s107 C:/Users/czhe/Downloads/digital_design/q_8_26_bin_mult_add_shift_same_cycle/q_8_26_tb.sv|
+Z19 !s90 -reportprogress|300|-work|work|C:/Users/czhe/Downloads/digital_design/q_8_26_bin_mult_add_shift_same_cycle/q_8_26_tb.sv|
+!i113 1
+Z20 o-work work
+R13
+Xq_8_26_tb_sv_unit
+R1
+R2
+VR4@nE;D_KIOeGhXLc?B2J1
+r1
+!s85 0
+31
+!i10b 1
+!s100 J_Rk`d>E72b_eI`K3>IR83
+IR4@nE;D_KIOeGhXLc?B2J1
+!i103 1
+S1
+R0
+R14
+R15
+R16
+L0 1
+R7
+R17
+R18
+R19
+!i113 1
+R20
+R13

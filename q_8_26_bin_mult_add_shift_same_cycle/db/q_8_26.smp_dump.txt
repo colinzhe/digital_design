@@ -1,0 +1,5 @@
+
+State Machine - |q_8_26|state
+Name state.S_add_shift 
+state.S_idle 0 
+state.S_add_shift 1 

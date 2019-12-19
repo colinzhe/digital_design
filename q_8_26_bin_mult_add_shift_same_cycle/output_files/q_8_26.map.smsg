@@ -1,0 +1,1 @@
+Warning (10268): Verilog HDL information at q_8_26.sv(52): always construct contains both blocking and non-blocking assignments File: C:/Users/czhe/Downloads/digital_design/q_8_26_bin_mult_add_shift_same_cycle/q_8_26.sv Line: 52
