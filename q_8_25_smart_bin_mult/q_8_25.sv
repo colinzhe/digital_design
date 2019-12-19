@@ -9,8 +9,8 @@ module q_8_25 (
     logic load_regs, decr_p, add_regs, shift_regs, cntr_eq_zero, s_multiplier_eq_zero, C;
     state_t state, next_state;
     logic [dp_width-1:0] A, B, Q, M;
-    logic [dp_width*2-1:0] N;
     logic [bc_size-1:0] P;
+    integer unsigned shift_count;
 
     // controller begins
     always_ff @ (posedge clk, negedge rst_b)
@@ -33,7 +33,7 @@ module q_8_25 (
                 rdy = 1'b1;
                 if (start)
                 begin
-                    load_regs = 1'b1; next_state = S_check;
+                    load_regs = 1'b1; next_state = S_add;
                 end
             end
             //S_check :
@@ -52,11 +52,11 @@ module q_8_25 (
             S_shift :
             begin
                 shift_regs = 1'b1;
-                if (cntr_eq_zero) next_state = S_idle;
-                else if (s_multiplier_eq_zero)
-                begin
-                    next_state = S_idle;
-                end
+                if (cntr_eq_zero || s_multiplier_eq_zero) next_state = S_idle;
+                //else if (s_multiplier_eq_zero)
+                //begin
+                //    next_state = S_idle;
+                //end
                 else next_state = S_add;
             end
             default : next_state = S_idle;
@@ -75,6 +75,7 @@ module q_8_25 (
             Q <= {dp_width{1'b0}};
             M <= {dp_width{1'b0}};
             C <= 1'b0;
+            shift_count <= 0;
         end
         else
         begin
@@ -88,12 +89,12 @@ module q_8_25 (
                 C <= 1'b0;
             end
             else if (add_regs) {C, A} <= A + B;
-            else if (shift_regs) begin {C, A, Q} <= {C, A, Q} >> 1; M = M >> 1; end
+            else if (shift_regs) begin {C, A, Q} <= {C, A, Q} >> 1; M <= M >> 1; shift_count <= shift_count + 1; end
             if (decr_p) P <= P - 1'b1;
         end
     end
 
-    assign product = {A, Q};
+    assign product = s_multiplier_eq_zero ? {A, Q} << shift_count : {A, Q};
     assign cntr_eq_zero = (P == {bc_size{1'b0}});
     assign s_multiplier_eq_zero = (M == {dp_width{1'b0}});
     // datapath ends

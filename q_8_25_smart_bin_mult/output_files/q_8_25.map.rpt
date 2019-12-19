@@ -1,5 +1,5 @@
 Analysis & Synthesis report for q_8_25
-Tue Dec 17 09:37:23 2019
+Wed Dec 18 21:37:58 2019
 Quartus Prime Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
 
 
@@ -20,7 +20,6 @@ Quartus Prime Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
  12. Post-Synthesis Netlist Statistics for Top Partition
  13. Elapsed Time Per Partition
  14. Analysis & Synthesis Messages
- 15. Analysis & Synthesis Suppressed Messages
 
 
 
@@ -46,13 +45,13 @@ refer to the applicable agreement for further details.
 +-------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                  ;
 +---------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status     ; Successful - Tue Dec 17 09:37:23 2019       ;
+; Analysis & Synthesis Status     ; Successful - Wed Dec 18 21:37:58 2019       ;
 ; Quartus Prime Version           ; 18.1.0 Build 625 09/12/2018 SJ Lite Edition ;
 ; Revision Name                   ; q_8_25                                      ;
 ; Top-level Entity Name           ; q_8_25                                      ;
 ; Family                          ; Cyclone V                                   ;
 ; Logic utilization (in ALMs)     ; N/A                                         ;
-; Total registers                 ; 28                                          ;
+; Total registers                 ; 59                                          ;
 ; Total pins                      ; 24                                          ;
 ; Total virtual pins              ; 0                                           ;
 ; Total block memory bits         ; 0                                           ;
@@ -158,15 +157,15 @@ refer to the applicable agreement for further details.
 +----------------------------+-------------+
 ; Processors                 ; Number      ;
 +----------------------------+-------------+
-; Number detected on machine ; 8           ;
-; Maximum allowed            ; 8           ;
+; Number detected on machine ; 16          ;
+; Maximum allowed            ; 16          ;
 ;                            ;             ;
 ; Average used               ; 1.00        ;
-; Maximum used               ; 8           ;
+; Maximum used               ; 16          ;
 ;                            ;             ;
 ; Usage by Processor         ; % Time Used ;
 ;     Processor 1            ; 100.0%      ;
-;     Processors 2-8         ;   0.0%      ;
+;     Processors 2-16        ;   0.0%      ;
 +----------------------------+-------------+
 
 
@@ -175,8 +174,8 @@ refer to the applicable agreement for further details.
 +----------------------------------+-----------------+------------------------------+----------------------------------------------------------------------------+---------+
 ; File Name with User-Entered Path ; Used in Netlist ; File Type                    ; File Name with Absolute Path                                               ; Library ;
 +----------------------------------+-----------------+------------------------------+----------------------------------------------------------------------------+---------+
-; q_8_25_pkg.sv                    ; yes             ; User SystemVerilog HDL File  ; C:/Users/czhe/Downloads/digital_design/q_8_25_smart_bin_mult/q_8_25_pkg.sv ;         ;
-; q_8_25.sv                        ; yes             ; User SystemVerilog HDL File  ; C:/Users/czhe/Downloads/digital_design/q_8_25_smart_bin_mult/q_8_25.sv     ;         ;
+; q_8_25_pkg.sv                    ; yes             ; User SystemVerilog HDL File  ; C:/Users/home/Downloads/digital_design/q_8_25_smart_bin_mult/q_8_25_pkg.sv ;         ;
+; q_8_25.sv                        ; yes             ; User SystemVerilog HDL File  ; C:/Users/home/Downloads/digital_design/q_8_25_smart_bin_mult/q_8_25.sv     ;         ;
 +----------------------------------+-----------------+------------------------------+----------------------------------------------------------------------------+---------+
 
 
@@ -185,25 +184,25 @@ refer to the applicable agreement for further details.
 +---------------------------------------------+-----------+
 ; Resource                                    ; Usage     ;
 +---------------------------------------------+-----------+
-; Estimate of Logic utilization (ALMs needed) ; 17        ;
+; Estimate of Logic utilization (ALMs needed) ; 57        ;
 ;                                             ;           ;
-; Combinational ALUT usage for logic          ; 22        ;
+; Combinational ALUT usage for logic          ; 87        ;
 ;     -- 7 input functions                    ; 0         ;
-;     -- 6 input functions                    ; 1         ;
-;     -- 5 input functions                    ; 6         ;
-;     -- 4 input functions                    ; 1         ;
-;     -- <=3 input functions                  ; 14        ;
+;     -- 6 input functions                    ; 16        ;
+;     -- 5 input functions                    ; 18        ;
+;     -- 4 input functions                    ; 5         ;
+;     -- <=3 input functions                  ; 48        ;
 ;                                             ;           ;
-; Dedicated logic registers                   ; 28        ;
+; Dedicated logic registers                   ; 59        ;
 ;                                             ;           ;
 ; I/O pins                                    ; 24        ;
 ;                                             ;           ;
 ; Total DSP Blocks                            ; 0         ;
 ;                                             ;           ;
 ; Maximum fan-out node                        ; clk~input ;
-; Maximum fan-out                             ; 28        ;
-; Total fan-out                               ; 250       ;
-; Average fan-out                             ; 2.55      ;
+; Maximum fan-out                             ; 59        ;
+; Total fan-out                               ; 611       ;
+; Average fan-out                             ; 3.15      ;
 +---------------------------------------------+-----------+
 
 
@@ -212,22 +211,21 @@ refer to the applicable agreement for further details.
 +----------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+---------------------+-------------+--------------+
 ; Compilation Hierarchy Node ; Combinational ALUTs ; Dedicated Logic Registers ; Block Memory Bits ; DSP Blocks ; Pins ; Virtual Pins ; Full Hierarchy Name ; Entity Name ; Library Name ;
 +----------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+---------------------+-------------+--------------+
-; |q_8_25                    ; 22 (22)             ; 28 (28)                   ; 0                 ; 0          ; 24   ; 0            ; |q_8_25             ; q_8_25      ; work         ;
+; |q_8_25                    ; 87 (87)             ; 59 (59)                   ; 0                 ; 0          ; 24   ; 0            ; |q_8_25             ; q_8_25      ; work         ;
 +----------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+---------------------+-------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
 
 
 Encoding Type:  One-Hot
-+----------------------------------------------------------------------------+
-; State Machine - |q_8_25|state                                              ;
-+---------------+---------------+-------------+---------------+--------------+
-; Name          ; state.S_shift ; state.S_add ; state.S_check ; state.S_idle ;
-+---------------+---------------+-------------+---------------+--------------+
-; state.S_idle  ; 0             ; 0           ; 0             ; 0            ;
-; state.S_check ; 0             ; 0           ; 1             ; 1            ;
-; state.S_add   ; 0             ; 1           ; 0             ; 1            ;
-; state.S_shift ; 1             ; 0           ; 0             ; 1            ;
-+---------------+---------------+-------------+---------------+--------------+
++------------------------------------------------------------+
+; State Machine - |q_8_25|state                              ;
++---------------+---------------+-------------+--------------+
+; Name          ; state.S_shift ; state.S_add ; state.S_idle ;
++---------------+---------------+-------------+--------------+
+; state.S_idle  ; 0             ; 0           ; 0            ;
+; state.S_add   ; 0             ; 1           ; 1            ;
+; state.S_shift ; 1             ; 0           ; 1            ;
++---------------+---------------+-------------+--------------+
 
 
 +------------------------------------------------------+
@@ -235,12 +233,12 @@ Encoding Type:  One-Hot
 +----------------------------------------------+-------+
 ; Statistic                                    ; Value ;
 +----------------------------------------------+-------+
-; Total registers                              ; 28    ;
+; Total registers                              ; 59    ;
 ; Number of registers using Synchronous Clear  ; 6     ;
 ; Number of registers using Synchronous Load   ; 15    ;
-; Number of registers using Asynchronous Clear ; 28    ;
+; Number of registers using Asynchronous Clear ; 59    ;
 ; Number of registers using Asynchronous Load  ; 0     ;
-; Number of registers using Clock Enable       ; 21    ;
+; Number of registers using Clock Enable       ; 53    ;
 ; Number of registers using Preset             ; 0     ;
 +----------------------------------------------+-------+
 
@@ -261,9 +259,14 @@ Encoding Type:  One-Hot
 +--------------------+-----------+---------------+----------------------+------------------------+------------+----------------------------+
 ; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output ;
 +--------------------+-----------+---------------+----------------------+------------------------+------------+----------------------------+
-; 3:1                ; 9 bits    ; 18 LEs        ; 0 LEs                ; 18 LEs                 ; Yes        ; |q_8_25|Q[0]               ;
-; 4:1                ; 5 bits    ; 10 LEs        ; 10 LEs               ; 0 LEs                  ; Yes        ; |q_8_25|A[0]               ;
-; 3:1                ; 2 bits    ; 4 LEs         ; 2 LEs                ; 2 LEs                  ; Yes        ; |q_8_25|P[2]               ;
+; 3:1                ; 9 bits    ; 18 LEs        ; 0 LEs                ; 18 LEs                 ; Yes        ; |q_8_25|Q[2]               ;
+; 4:1                ; 5 bits    ; 10 LEs        ; 10 LEs               ; 0 LEs                  ; Yes        ; |q_8_25|A[4]               ;
+; 3:1                ; 2 bits    ; 4 LEs         ; 2 LEs                ; 2 LEs                  ; Yes        ; |q_8_25|P[0]               ;
+; 4:1                ; 3 bits    ; 6 LEs         ; 6 LEs                ; 0 LEs                  ; No         ; |q_8_25|ShiftLeft0         ;
+; 4:1                ; 4 bits    ; 8 LEs         ; 8 LEs                ; 0 LEs                  ; No         ; |q_8_25|product            ;
+; 6:1                ; 2 bits    ; 8 LEs         ; 6 LEs                ; 2 LEs                  ; No         ; |q_8_25|product            ;
+; 9:1                ; 2 bits    ; 12 LEs        ; 10 LEs               ; 2 LEs                  ; No         ; |q_8_25|product            ;
+; 9:1                ; 2 bits    ; 12 LEs        ; 8 LEs                ; 4 LEs                  ; No         ; |q_8_25|product            ;
 +--------------------+-----------+---------------+----------------------+------------------------+------------+----------------------------+
 
 
@@ -272,27 +275,28 @@ Encoding Type:  One-Hot
 +-----------------------+-----------------------------+
 ; Type                  ; Count                       ;
 +-----------------------+-----------------------------+
-; arriav_ff             ; 28                          ;
-;     CLR               ; 6                           ;
+; arriav_ff             ; 59                          ;
+;     CLR               ; 5                           ;
 ;     CLR SCLR SLD      ; 1                           ;
-;     ENA CLR           ; 7                           ;
+;     ENA CLR           ; 39                          ;
 ;     ENA CLR SCLR SLD  ; 5                           ;
 ;     ENA CLR SLD       ; 9                           ;
-; arriav_lcell_comb     ; 23                          ;
-;     arith             ; 6                           ;
+; arriav_lcell_comb     ; 88                          ;
+;     arith             ; 37                          ;
 ;         0 data inputs ; 1                           ;
-;         2 data inputs ; 5                           ;
-;     normal            ; 17                          ;
-;         1 data inputs ; 1                           ;
-;         2 data inputs ; 5                           ;
-;         3 data inputs ; 3                           ;
-;         4 data inputs ; 1                           ;
-;         5 data inputs ; 6                           ;
-;         6 data inputs ; 1                           ;
+;         1 data inputs ; 30                          ;
+;         2 data inputs ; 6                           ;
+;     normal            ; 51                          ;
+;         1 data inputs ; 2                           ;
+;         2 data inputs ; 4                           ;
+;         3 data inputs ; 6                           ;
+;         4 data inputs ; 5                           ;
+;         5 data inputs ; 18                          ;
+;         6 data inputs ; 16                          ;
 ; boundary_port         ; 24                          ;
 ;                       ;                             ;
-; Max LUT depth         ; 2.00                        ;
-; Average LUT depth     ; 1.25                        ;
+; Max LUT depth         ; 4.00                        ;
+; Average LUT depth     ; 2.79                        ;
 +-----------------------+-----------------------------+
 
 
@@ -301,7 +305,7 @@ Encoding Type:  One-Hot
 +----------------+--------------+
 ; Partition Name ; Elapsed Time ;
 +----------------+--------------+
-; Top            ; 00:00:01     ;
+; Top            ; 00:00:00     ;
 +----------------+--------------+
 
 
@@ -311,33 +315,26 @@ Encoding Type:  One-Hot
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
-    Info: Processing started: Tue Dec 17 09:36:54 2019
+    Info: Processing started: Wed Dec 18 21:37:48 2019
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off q_8_25 -c q_8_25
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
-Info (20030): Parallel compilation is enabled and will use 8 of the 8 processors detected
+Info (20030): Parallel compilation is enabled and will use 16 of the 16 processors detected
 Info (12021): Found 1 design units, including 0 entities, in source file q_8_25_pkg.sv
-    Info (12022): Found design unit 1: q_8_25_pkg (SystemVerilog) File: C:/Users/czhe/Downloads/digital_design/q_8_25_smart_bin_mult/q_8_25_pkg.sv Line: 1
+    Info (12022): Found design unit 1: q_8_25_pkg (SystemVerilog) File: C:/Users/home/Downloads/digital_design/q_8_25_smart_bin_mult/q_8_25_pkg.sv Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file q_8_25.sv
-    Info (12023): Found entity 1: q_8_25 File: C:/Users/czhe/Downloads/digital_design/q_8_25_smart_bin_mult/q_8_25.sv Line: 3
+    Info (12023): Found entity 1: q_8_25 File: C:/Users/home/Downloads/digital_design/q_8_25_smart_bin_mult/q_8_25.sv Line: 3
 Info (12127): Elaborating entity "q_8_25" for the top level hierarchy
 Info (286030): Timing-Driven Synthesis is running
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
-Info (21057): Implemented 62 device resources after synthesis - the final resource count might be different
+Info (21057): Implemented 125 device resources after synthesis - the final resource count might be different
     Info (21058): Implemented 13 input pins
     Info (21059): Implemented 11 output pins
-    Info (21061): Implemented 38 logic cells
-Info (144001): Generated suppressed messages file C:/Users/czhe/Downloads/digital_design/q_8_25_smart_bin_mult/output_files/q_8_25.map.smsg
+    Info (21061): Implemented 101 logic cells
 Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 1 warning
-    Info: Peak virtual memory: 4889 megabytes
-    Info: Processing ended: Tue Dec 17 09:37:23 2019
-    Info: Elapsed time: 00:00:29
-    Info: Total CPU time (on all processors): 00:01:04
-
-
-+------------------------------------------+
-; Analysis & Synthesis Suppressed Messages ;
-+------------------------------------------+
-The suppressed messages can be found in C:/Users/czhe/Downloads/digital_design/q_8_25_smart_bin_mult/output_files/q_8_25.map.smsg.
+    Info: Peak virtual memory: 4882 megabytes
+    Info: Processing ended: Wed Dec 18 21:37:58 2019
+    Info: Elapsed time: 00:00:10
+    Info: Total CPU time (on all processors): 00:00:24
 
 
