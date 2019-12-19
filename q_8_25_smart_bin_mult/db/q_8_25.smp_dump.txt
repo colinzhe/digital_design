@@ -1,7 +1,6 @@
 
 State Machine - |q_8_25|state
-Name state.S_shift state.S_add state.S_check state.S_idle 
-state.S_idle 0 0 0 0 
-state.S_check 0 0 1 1 
-state.S_add 0 1 0 1 
-state.S_shift 1 0 0 1 
+Name state.S_shift state.S_add state.S_idle 
+state.S_idle 0 0 0 
+state.S_add 0 1 1 
+state.S_shift 1 0 1 

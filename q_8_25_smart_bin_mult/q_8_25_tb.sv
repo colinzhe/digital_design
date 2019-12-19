@@ -15,6 +15,7 @@ module q_8_25_tb;
     wire [dp_width-1:0] A = dut.A;
     wire [dp_width-1:0] Q = dut.Q;
     wire [dp_width-1:0] M = dut.M;
+    integer unsigned shift_count = dut.shift_count;
     wire C = dut.C;
     wire rdy;
     wire [2*dp_width-1:0] product;
