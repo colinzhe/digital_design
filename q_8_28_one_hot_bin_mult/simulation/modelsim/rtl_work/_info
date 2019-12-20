@@ -1,0 +1,212 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/Users/czhe/Downloads/digital_design/q_8_28_one_hot_bin_mult/simulation/modelsim
+vcontroller
+Z1 DXx6 sv_std 3 std 0 22 AD7iAPLo6nTIKk<N0eo=D3
+Z2 DXx4 work 10 q_8_28_pkg 0 22 IjnUR^D<]4:^48]1k1`[L1
+Z3 DXx4 work 14 q_8_28_sv_unit 0 22 Z@YPW=6>>j5PdScATK@6a1
+Z4 VDg1SIo80bB@j0V0VzS_@n1
+r1
+!s85 0
+31
+!i10b 1
+!s100 AOdehJTg?64[8nhZ1M:_72
+IBGU3XC[6f;fMCVWUEhT@80
+Z5 !s105 q_8_28_sv_unit
+S1
+R0
+Z6 w1576856453
+Z7 8C:/Users/czhe/Downloads/digital_design/q_8_28_one_hot_bin_mult/q_8_28.sv
+Z8 FC:/Users/czhe/Downloads/digital_design/q_8_28_one_hot_bin_mult/q_8_28.sv
+L0 15
+Z9 OV;L;10.5b;63
+Z10 !s108 1576857032.000000
+Z11 !s107 C:/Users/czhe/Downloads/digital_design/q_8_28_one_hot_bin_mult/q_8_28.sv|
+Z12 !s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/czhe/Downloads/digital_design/q_8_28_one_hot_bin_mult|C:/Users/czhe/Downloads/digital_design/q_8_28_one_hot_bin_mult/q_8_28.sv|
+!i113 1
+Z13 o-sv -work work
+Z14 !s92 -sv -work work +incdir+C:/Users/czhe/Downloads/digital_design/q_8_28_one_hot_bin_mult
+Z15 tCvgOpt 0
+vd_ff
+R1
+R2
+R3
+R4
+r1
+!s85 0
+31
+!i10b 1
+!s100 LRk:1Ha;iN0Q]KLLN]JcW2
+IHC[k8ReDSZBe2KnN`<fUg1
+R5
+S1
+R0
+R6
+R7
+R8
+L0 51
+R9
+R10
+R11
+R12
+!i113 1
+R13
+R14
+R15
+vdatapath
+R1
+R2
+R3
+R4
+r1
+!s85 0
+31
+!i10b 1
+!s100 m=gA:VzBe><_?SHQRRV[c0
+I:HIzGG^AcMBoXNYkPI0j80
+R5
+S1
+R0
+R6
+R7
+R8
+L0 62
+R9
+R10
+R11
+R12
+!i113 1
+R13
+R14
+R15
+vq_8_28
+R1
+R2
+R3
+R4
+r1
+!s85 0
+31
+!i10b 1
+!s100 YPVKT<Xf@FZY0z@11Q`L@0
+IQBS5;i2HQ;Rm?DnIK7YzI1
+R5
+S1
+R0
+R6
+R7
+R8
+L0 3
+R9
+R10
+R11
+R12
+!i113 1
+R13
+R14
+R15
+Xq_8_28_pkg
+R1
+!s110 1576857032
+!i10b 1
+!s100 6Ui@]0IloaZAB7N3U=lgE0
+IIjnUR^D<]4:^48]1k1`[L1
+VIjnUR^D<]4:^48]1k1`[L1
+S1
+R0
+w1576856219
+8C:/Users/czhe/Downloads/digital_design/q_8_28_one_hot_bin_mult/q_8_28_pkg.sv
+FC:/Users/czhe/Downloads/digital_design/q_8_28_one_hot_bin_mult/q_8_28_pkg.sv
+L0 1
+R9
+r1
+!s85 0
+31
+R10
+!s107 C:/Users/czhe/Downloads/digital_design/q_8_28_one_hot_bin_mult/q_8_28_pkg.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/czhe/Downloads/digital_design/q_8_28_one_hot_bin_mult|C:/Users/czhe/Downloads/digital_design/q_8_28_one_hot_bin_mult/q_8_28_pkg.sv|
+!i113 1
+R13
+R14
+R15
+Xq_8_28_sv_unit
+R1
+R2
+VZ@YPW=6>>j5PdScATK@6a1
+r1
+!s85 0
+31
+!i10b 1
+!s100 Mln02XL[IcB6fCKRo7F>k1
+IZ@YPW=6>>j5PdScATK@6a1
+!i103 1
+S1
+R0
+R6
+R7
+R8
+L0 1
+R9
+R10
+R11
+R12
+!i113 1
+R13
+R14
+R15
+vq_8_28_tb
+R1
+R2
+DXx4 work 17 q_8_28_tb_sv_unit 0 22 d>D;o2RdhNFnDnZ1>D^aj3
+R4
+r1
+!s85 0
+31
+!i10b 1
+!s100 H?`cfZFH1Cf1g;UcFSbcS2
+IiTdoUCzF>1jYQ_XE^<Nz>3
+!s105 q_8_28_tb_sv_unit
+S1
+R0
+Z16 w1576857005
+Z17 8C:/Users/czhe/Downloads/digital_design/q_8_28_one_hot_bin_mult/q_8_28_tb.sv
+Z18 FC:/Users/czhe/Downloads/digital_design/q_8_28_one_hot_bin_mult/q_8_28_tb.sv
+L0 3
+R9
+Z19 !s108 1576857050.000000
+Z20 !s107 C:/Users/czhe/Downloads/digital_design/q_8_28_one_hot_bin_mult/q_8_28_tb.sv|
+Z21 !s90 -reportprogress|300|-work|work|C:/Users/czhe/Downloads/digital_design/q_8_28_one_hot_bin_mult/q_8_28_tb.sv|
+!i113 1
+Z22 o-work work
+R15
+Xq_8_28_tb_sv_unit
+R1
+R2
+Vd>D;o2RdhNFnDnZ1>D^aj3
+r1
+!s85 0
+31
+!i10b 1
+!s100 0C`3hmFm]A5iK?_Tijjdd0
+Id>D;o2RdhNFnDnZ1>D^aj3
+!i103 1
+S1
+R0
+R16
+R17
+R18
+L0 1
+R9
+R19
+R20
+R21
+!i113 1
+R22
+R15

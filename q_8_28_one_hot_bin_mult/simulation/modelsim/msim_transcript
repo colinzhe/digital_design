@@ -1,0 +1,90 @@
+# Reading C:/intelFPGA_lite/18.1/modelsim_ase/tcl/vsim/pref.tcl
+# do q_8_28_run_msim_rtl_verilog.do
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Model Technology ModelSim - Intel FPGA Edition vmap 10.5b Lib Mapping Utility 2016.10 Oct  5 2016
+# vmap work rtl_work 
+# Copying C:/intelFPGA_lite/18.1/modelsim_ase/win32aloem/../modelsim.ini to modelsim.ini
+# Modifying modelsim.ini
+# 
+# vlog -sv -work work +incdir+C:/Users/czhe/Downloads/digital_design/q_8_28_one_hot_bin_mult {C:/Users/czhe/Downloads/digital_design/q_8_28_one_hot_bin_mult/q_8_28_pkg.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 10:50:32 on Dec 20,2019
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/czhe/Downloads/digital_design/q_8_28_one_hot_bin_mult" C:/Users/czhe/Downloads/digital_design/q_8_28_one_hot_bin_mult/q_8_28_pkg.sv 
+# -- Compiling package q_8_28_pkg
+# 
+# Top level modules:
+# 	--none--
+# End time: 10:50:32 on Dec 20,2019, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/Users/czhe/Downloads/digital_design/q_8_28_one_hot_bin_mult {C:/Users/czhe/Downloads/digital_design/q_8_28_one_hot_bin_mult/q_8_28.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 10:50:32 on Dec 20,2019
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/czhe/Downloads/digital_design/q_8_28_one_hot_bin_mult" C:/Users/czhe/Downloads/digital_design/q_8_28_one_hot_bin_mult/q_8_28.sv 
+# -- Compiling package q_8_28_sv_unit
+# -- Importing package q_8_28_pkg
+# -- Compiling module q_8_28
+# -- Compiling module controller
+# -- Compiling module d_ff
+# -- Compiling module datapath
+# 
+# Top level modules:
+# 	q_8_28
+# End time: 10:50:33 on Dec 20,2019, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# 
+vlog -reportprogress 300 -work work C:/Users/czhe/Downloads/digital_design/q_8_28_one_hot_bin_mult/q_8_28_tb.sv
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 10:50:50 on Dec 20,2019
+# vlog -reportprogress 300 -work work C:/Users/czhe/Downloads/digital_design/q_8_28_one_hot_bin_mult/q_8_28_tb.sv 
+# -- Compiling package q_8_28_tb_sv_unit
+# -- Importing package q_8_28_pkg
+# -- Compiling module q_8_28_tb
+# 
+# Top level modules:
+# 	q_8_28_tb
+# End time: 10:50:51 on Dec 20,2019, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+vsim work.q_8_28_tb
+# vsim work.q_8_28_tb 
+# Start time: 10:50:57 on Dec 20,2019
+# Loading sv_std.std
+# Loading work.q_8_28_pkg
+# Loading work.q_8_28_tb_sv_unit
+# Loading work.q_8_28_tb
+# Loading work.q_8_28_sv_unit
+# Loading work.q_8_28
+# Loading work.controller
+# Loading work.d_ff
+# Loading work.datapath
+add wave -position insertpoint  \
+sim:/q_8_28_tb/rst_b \
+sim:/q_8_28_tb/clk \
+sim:/q_8_28_tb/start \
+sim:/q_8_28_tb/state \
+sim:/q_8_28_tb/load_regs \
+sim:/q_8_28_tb/decr_p \
+sim:/q_8_28_tb/add_regs \
+sim:/q_8_28_tb/shift_regs \
+sim:/q_8_28_tb/P \
+sim:/q_8_28_tb/zero \
+sim:/q_8_28_tb/B \
+sim:/q_8_28_tb/A \
+sim:/q_8_28_tb/Q \
+sim:/q_8_28_tb/C \
+sim:/q_8_28_tb/rdy \
+sim:/q_8_28_tb/product \
+sim:/q_8_28_tb/multiplicand \
+sim:/q_8_28_tb/multiplier \
+sim:/q_8_28_tb/expected_val \
+sim:/q_8_28_tb/error
+run
+# ** Note: $finish    : C:/Users/czhe/Downloads/digital_design/q_8_28_one_hot_bin_mult/q_8_28_tb.sv(22)
+#    Time: 103 ns  Iteration: 0  Instance: /q_8_28_tb
+# 1
+# Break in Module q_8_28_tb at C:/Users/czhe/Downloads/digital_design/q_8_28_one_hot_bin_mult/q_8_28_tb.sv line 22
+# End time: 10:52:23 on Dec 20,2019, Elapsed time: 0:01:26
+# Errors: 0, Warnings: 0

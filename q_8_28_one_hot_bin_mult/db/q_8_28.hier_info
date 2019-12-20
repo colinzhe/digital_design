@@ -1,0 +1,177 @@
+|q_8_28
+rst_b => controller:controller_0.rst_b
+rst_b => datapath:datapath_0.rst_b
+clk => controller:controller_0.clk
+clk => datapath:datapath_0.clk
+start => controller:controller_0.start
+multiplicand[0] => datapath:datapath_0.multiplicand[0]
+multiplicand[1] => datapath:datapath_0.multiplicand[1]
+multiplicand[2] => datapath:datapath_0.multiplicand[2]
+multiplicand[3] => datapath:datapath_0.multiplicand[3]
+multiplicand[4] => datapath:datapath_0.multiplicand[4]
+multiplier[0] => datapath:datapath_0.multiplier[0]
+multiplier[1] => datapath:datapath_0.multiplier[1]
+multiplier[2] => datapath:datapath_0.multiplier[2]
+multiplier[3] => datapath:datapath_0.multiplier[3]
+multiplier[4] => datapath:datapath_0.multiplier[4]
+product[0] <= datapath:datapath_0.product[0]
+product[1] <= datapath:datapath_0.product[1]
+product[2] <= datapath:datapath_0.product[2]
+product[3] <= datapath:datapath_0.product[3]
+product[4] <= datapath:datapath_0.product[4]
+product[5] <= datapath:datapath_0.product[5]
+product[6] <= datapath:datapath_0.product[6]
+product[7] <= datapath:datapath_0.product[7]
+product[8] <= datapath:datapath_0.product[8]
+product[9] <= datapath:datapath_0.product[9]
+rdy <= controller:controller_0.rdy
+
+
+|q_8_28|controller:controller_0
+rst_b => d_ff:dff_0.rst_b
+rst_b => d_ff:dff_1.rst_b
+rst_b => d_ff:dff_2.rst_b
+clk => d_ff:dff_0.clk
+clk => d_ff:dff_1.clk
+clk => d_ff:dff_2.clk
+start => D_in.IN1
+start => load_regs.IN1
+start => D_in.IN1
+Q0 => add_regs.IN1
+zero => D_in.IN1
+zero => D_in.IN1
+rdy <= d_ff:dff_0.Q
+load_regs <= load_regs.DB_MAX_OUTPUT_PORT_TYPE
+add_regs <= add_regs.DB_MAX_OUTPUT_PORT_TYPE
+decr_p <= d_ff:dff_1.Q
+shift_regs <= d_ff:dff_2.Q
+
+
+|q_8_28|controller:controller_0|d_ff:dff_0
+rst_b => Q~reg0.PRESET
+clk => Q~reg0.CLK
+D => Q~reg0.DATAIN
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|q_8_28|controller:controller_0|d_ff:dff_1
+rst_b => Q~reg0.ACLR
+clk => Q~reg0.CLK
+D => Q~reg0.DATAIN
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|q_8_28|controller:controller_0|d_ff:dff_2
+rst_b => Q~reg0.ACLR
+clk => Q~reg0.CLK
+D => Q~reg0.DATAIN
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|q_8_28|datapath:datapath_0
+rst_b => C.ACLR
+rst_b => Q[0].ACLR
+rst_b => Q[1].ACLR
+rst_b => Q[2].ACLR
+rst_b => Q[3].ACLR
+rst_b => Q[4].ACLR
+rst_b => B[0].ACLR
+rst_b => B[1].ACLR
+rst_b => B[2].ACLR
+rst_b => B[3].ACLR
+rst_b => B[4].ACLR
+rst_b => A[0].ACLR
+rst_b => A[1].ACLR
+rst_b => A[2].ACLR
+rst_b => A[3].ACLR
+rst_b => A[4].ACLR
+rst_b => P[0].PRESET
+rst_b => P[1].ACLR
+rst_b => P[2].PRESET
+clk => C.CLK
+clk => Q[0].CLK
+clk => Q[1].CLK
+clk => Q[2].CLK
+clk => Q[3].CLK
+clk => Q[4].CLK
+clk => B[0].CLK
+clk => B[1].CLK
+clk => B[2].CLK
+clk => B[3].CLK
+clk => B[4].CLK
+clk => A[0].CLK
+clk => A[1].CLK
+clk => A[2].CLK
+clk => A[3].CLK
+clk => A[4].CLK
+clk => P[0].CLK
+clk => P[1].CLK
+clk => P[2].CLK
+load_regs => P.OUTPUTSELECT
+load_regs => P.OUTPUTSELECT
+load_regs => P.OUTPUTSELECT
+load_regs => A.OUTPUTSELECT
+load_regs => A.OUTPUTSELECT
+load_regs => A.OUTPUTSELECT
+load_regs => A.OUTPUTSELECT
+load_regs => A.OUTPUTSELECT
+load_regs => Q.OUTPUTSELECT
+load_regs => Q.OUTPUTSELECT
+load_regs => Q.OUTPUTSELECT
+load_regs => Q.OUTPUTSELECT
+load_regs => Q.OUTPUTSELECT
+load_regs => C.OUTPUTSELECT
+load_regs => B[4].ENA
+load_regs => B[3].ENA
+load_regs => B[2].ENA
+load_regs => B[1].ENA
+load_regs => B[0].ENA
+add_regs => C.OUTPUTSELECT
+add_regs => A.OUTPUTSELECT
+add_regs => A.OUTPUTSELECT
+add_regs => A.OUTPUTSELECT
+add_regs => A.OUTPUTSELECT
+add_regs => A.OUTPUTSELECT
+add_regs => Q.OUTPUTSELECT
+add_regs => Q.OUTPUTSELECT
+add_regs => Q.OUTPUTSELECT
+add_regs => Q.OUTPUTSELECT
+add_regs => Q.OUTPUTSELECT
+shift_regs => C.OUTPUTSELECT
+shift_regs => A.OUTPUTSELECT
+shift_regs => A.OUTPUTSELECT
+shift_regs => A.OUTPUTSELECT
+shift_regs => A.OUTPUTSELECT
+shift_regs => A.OUTPUTSELECT
+shift_regs => Q.OUTPUTSELECT
+shift_regs => Q.OUTPUTSELECT
+shift_regs => Q.OUTPUTSELECT
+shift_regs => Q.OUTPUTSELECT
+shift_regs => Q.OUTPUTSELECT
+decr_p => P.OUTPUTSELECT
+decr_p => P.OUTPUTSELECT
+decr_p => P.OUTPUTSELECT
+multiplicand[0] => B[0].DATAIN
+multiplicand[1] => B[1].DATAIN
+multiplicand[2] => B[2].DATAIN
+multiplicand[3] => B[3].DATAIN
+multiplicand[4] => B[4].DATAIN
+multiplier[0] => Q.DATAB
+multiplier[1] => Q.DATAB
+multiplier[2] => Q.DATAB
+multiplier[3] => Q.DATAB
+multiplier[4] => Q.DATAB
+Q0 <= Q[0].DB_MAX_OUTPUT_PORT_TYPE
+zero <= Equal0.DB_MAX_OUTPUT_PORT_TYPE
+product[0] <= Q[0].DB_MAX_OUTPUT_PORT_TYPE
+product[1] <= Q[1].DB_MAX_OUTPUT_PORT_TYPE
+product[2] <= Q[2].DB_MAX_OUTPUT_PORT_TYPE
+product[3] <= Q[3].DB_MAX_OUTPUT_PORT_TYPE
+product[4] <= Q[4].DB_MAX_OUTPUT_PORT_TYPE
+product[5] <= A[0].DB_MAX_OUTPUT_PORT_TYPE
+product[6] <= A[1].DB_MAX_OUTPUT_PORT_TYPE
+product[7] <= A[2].DB_MAX_OUTPUT_PORT_TYPE
+product[8] <= A[3].DB_MAX_OUTPUT_PORT_TYPE
+product[9] <= A[4].DB_MAX_OUTPUT_PORT_TYPE
+
+
