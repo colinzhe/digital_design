@@ -1,10 +1,12 @@
-module q_8_29_tb;
+import q_8_29_rtl_pkg::*;
+
+module q_8_29_rtl_tb;
     reg rst_b, clk;
     reg x, y, F, E;
     wire [2:0] state;
     wire [7:0] dec_out;
 
-    q_8_29 dut (.*);
+    q_8_29_rtl dut (.*);
 
     initial #300 $finish;
 

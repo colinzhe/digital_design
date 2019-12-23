@@ -70,13 +70,21 @@ module mymux (
 endmodule
 
 module decoder (
-    input [3:0] dec_in,
+    input [2:0] dec_in,
     output logic [7:0] dec_out
 );
     always_comb
     begin
         dec_out = 8'h00;
         case (dec_in)
+            //3'b000 : dec_out = 8'h80;
+            //3'b001 : dec_out = 8'h40;
+            //3'b010 : dec_out = 8'h20;
+            //3'b011 : dec_out = 8'h10;
+            //3'b100 : dec_out = 8'h08;
+            //3'b101 : dec_out = 8'h04;
+            //3'b110 : dec_out = 8'h02;
+            //3'b111 : dec_out = 8'h01;
             3'b000 : dec_out[7] = 1'b1;
             3'b001 : dec_out[6] = 1'b1;
             3'b010 : dec_out[5] = 1'b1;
