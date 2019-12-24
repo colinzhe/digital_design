@@ -1,0 +1,5 @@
+- async reset
+- load data_in
+- incr r2
+- shift left
+- output of zero and E

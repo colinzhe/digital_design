@@ -1,0 +1,34 @@
+|q_8_34a
+rst_b => E~reg0.ACLR
+rst_b => r1[0].ENA
+rst_b => r1[3].ENA
+rst_b => r1[2].ENA
+rst_b => r1[1].ENA
+clk => r1[0].CLK
+clk => r1[1].CLK
+clk => r1[2].CLK
+clk => r1[3].CLK
+clk => E~reg0.CLK
+data_in[0] => r1.DATAB
+data_in[1] => r1.DATAB
+data_in[2] => r1.DATAB
+data_in[3] => r1.DATAB
+load_regs => r1.OUTPUTSELECT
+load_regs => r1.OUTPUTSELECT
+load_regs => r1.OUTPUTSELECT
+load_regs => r1.OUTPUTSELECT
+load_regs => E~reg0.ENA
+incr_r2 => E.OUTPUTSELECT
+incr_r2 => r1.OUTPUTSELECT
+incr_r2 => r1.OUTPUTSELECT
+incr_r2 => r1.OUTPUTSELECT
+incr_r2 => r1.OUTPUTSELECT
+shift => E.OUTPUTSELECT
+shift => r1.OUTPUTSELECT
+shift => r1.OUTPUTSELECT
+shift => r1.OUTPUTSELECT
+shift => r1.OUTPUTSELECT
+zero <= Equal0.DB_MAX_OUTPUT_PORT_TYPE
+E <= E~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
