@@ -11,7 +11,10 @@ module q_8_34a (
 
     always_ff @ (posedge clk, negedge rst_b)
     begin
-        if (!rst_b) E <= 1'b0;
+        if (!rst_b)
+        begin
+            E <= 1'b0; r1 = '0; r2 = '0;
+        end
         else
         begin
             if (load_regs)
@@ -19,8 +22,8 @@ module q_8_34a (
                 r1 <= data_in;
                 r2 <= '1;
             end
-            else if (incr_r2) r2 <= r2 + 1'b1;
-            else if (shift) {E, r1} <= {E, r1} << 1;
+            if (incr_r2) r2 <= r2 + 1'b1;
+            if (shift) {E, r1} <= {E, r1} << 1;
         end
     end
 

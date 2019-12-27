@@ -8,6 +8,9 @@ module q_8_34a_tb;
 
     q_8_34a dut (.*);
 
+    wire [data_size-1:0] r1 = dut.r1;
+    wire [r2_size-1:0] r2 = dut.r2;
+
     initial #300 $finish; // tb duration
 
     initial
@@ -15,6 +18,7 @@ module q_8_34a_tb;
         {rst_b, clk} = '0;
         data_in = '0;
         {load_regs, incr_r2, shift} = '0;
+        forever #5 clk = ~clk;
     end : clk_and_rsts
 
     initial
@@ -24,5 +28,10 @@ module q_8_34a_tb;
         #10 load_regs = 1'b0; incr_r2 = 1'b1;
         #10 incr_r2 = 1'b0; shift = 1'b1;
         #10 incr_r2 = 1'b1; shift = 1'b0;
+        #20 incr_r2 = 1'b0;
+        #20 shift = 1'b1;
+        #10 rst_b = 1'b0; data_in = 4'b1111;
+        #10 rst_b = 1'b1;
+        #50 load_regs = 1'b1;
     end : tb
 endmodule
