@@ -1,0 +1,220 @@
+# Reading C:/intelFPGA_lite/18.1/modelsim_ase/tcl/vsim/pref.tcl
+# do q_8_34d_run_msim_rtl_verilog.do
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Model Technology ModelSim - Intel FPGA Edition vmap 10.5b Lib Mapping Utility 2016.10 Oct  5 2016
+# vmap work rtl_work 
+# Copying C:/intelFPGA_lite/18.1/modelsim_ase/win32aloem/../modelsim.ini to modelsim.ini
+# Modifying modelsim.ini
+# 
+# vlog -sv -work work +incdir+C:/Users/czhe/Downloads/digital_design/q_8_34d_oneh_cntlr {C:/Users/czhe/Downloads/digital_design/q_8_34d_oneh_cntlr/q_8_34d.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 16:56:14 on Dec 27,2019
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/czhe/Downloads/digital_design/q_8_34d_oneh_cntlr" C:/Users/czhe/Downloads/digital_design/q_8_34d_oneh_cntlr/q_8_34d.sv 
+# -- Compiling module q_8_34d
+# -- Compiling module d_ff
+# 
+# Top level modules:
+# 	q_8_34d
+# End time: 16:56:14 on Dec 27,2019, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+vlog -reportprogress 300 -work work C:/Users/czhe/Downloads/digital_design/q_8_34d_oneh_cntlr/q_8_34d_tb.sv
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 16:56:24 on Dec 27,2019
+# vlog -reportprogress 300 -work work C:/Users/czhe/Downloads/digital_design/q_8_34d_oneh_cntlr/q_8_34d_tb.sv 
+# -- Compiling module q_8_34d_tb
+# 
+# Top level modules:
+# 	q_8_34d_tb
+# End time: 16:56:24 on Dec 27,2019, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vsim work.q_8_34d_tb
+# vsim work.q_8_34d_tb 
+# Start time: 16:56:29 on Dec 27,2019
+# Loading sv_std.std
+# Loading work.q_8_34d_tb
+# Loading work.q_8_34d
+# Loading work.d_ff
+# ** Error: (vsim-3694) The implicit port connection (.*) did not find a matching port, net, variable or interface instance in q_8_34d_tb for port 'rdy'.
+#    Time: 0 ps  Iteration: 0  Instance: /q_8_34d_tb/dut File: C:/Users/czhe/Downloads/digital_design/q_8_34d_oneh_cntlr/q_8_34d.sv
+# ** Warning: (vsim-3017) C:/Users/czhe/Downloads/digital_design/q_8_34d_oneh_cntlr/q_8_34d_tb.sv(6): [TFMPC] - Too few port connections. Expected 9, found 8.
+#    Time: 0 ps  Iteration: 0  Instance: /q_8_34d_tb/dut File: C:/Users/czhe/Downloads/digital_design/q_8_34d_oneh_cntlr/q_8_34d.sv
+# ** Warning: (vsim-3722) C:/Users/czhe/Downloads/digital_design/q_8_34d_oneh_cntlr/q_8_34d_tb.sv(6): [TFMPC] - Missing connection for port 'rdy'.
+# Error loading design
+# End time: 16:56:29 on Dec 27,2019, Elapsed time: 0:00:00
+# Errors: 1, Warnings: 2
+vlog -work work C:/Users/czhe/Downloads/digital_design/q_8_34d_oneh_cntlr/q_8_34d_tb.sv
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 16:56:52 on Dec 27,2019
+# vlog -reportprogress 300 -work work C:/Users/czhe/Downloads/digital_design/q_8_34d_oneh_cntlr/q_8_34d_tb.sv 
+# -- Compiling module q_8_34d_tb
+# 
+# Top level modules:
+# 	q_8_34d_tb
+# End time: 16:56:52 on Dec 27,2019, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vsim work.q_8_34d_tb
+# vsim work.q_8_34d_tb 
+# Start time: 16:56:53 on Dec 27,2019
+# Loading sv_std.std
+# Loading work.q_8_34d_tb
+# Loading work.q_8_34d
+# Loading work.d_ff
+add wave -position insertpoint  \
+sim:/q_8_34d_tb/rst_b \
+sim:/q_8_34d_tb/clk \
+sim:/q_8_34d_tb/start \
+sim:/q_8_34d_tb/zero \
+sim:/q_8_34d_tb/E \
+sim:/q_8_34d_tb/load_regs \
+sim:/q_8_34d_tb/incr_r2 \
+sim:/q_8_34d_tb/shift \
+sim:/q_8_34d_tb/rdy \
+sim:/q_8_34d_tb/state
+run
+# ** Note: $finish    : C:/Users/czhe/Downloads/digital_design/q_8_34d_oneh_cntlr/q_8_34d_tb.sv(10)
+#    Time: 400 ps  Iteration: 0  Instance: /q_8_34d_tb
+# 1
+# Break in Module q_8_34d_tb at C:/Users/czhe/Downloads/digital_design/q_8_34d_oneh_cntlr/q_8_34d_tb.sv line 10
+vlog -work work C:/Users/czhe/Downloads/digital_design/q_8_34d_oneh_cntlr/q_8_34d_tb.sv
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 16:57:38 on Dec 27,2019
+# vlog -reportprogress 300 -work work C:/Users/czhe/Downloads/digital_design/q_8_34d_oneh_cntlr/q_8_34d_tb.sv 
+# -- Compiling module q_8_34d_tb
+# 
+# Top level modules:
+# 	q_8_34d_tb
+# End time: 16:57:38 on Dec 27,2019, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+restart
+# Loading work.q_8_34d_tb
+run
+# ** Note: $finish    : C:/Users/czhe/Downloads/digital_design/q_8_34d_oneh_cntlr/q_8_34d_tb.sv(10)
+#    Time: 400 ps  Iteration: 0  Instance: /q_8_34d_tb
+# 1
+# Break in Module q_8_34d_tb at C:/Users/czhe/Downloads/digital_design/q_8_34d_oneh_cntlr/q_8_34d_tb.sv line 10
+vlog -work work C:/Users/czhe/Downloads/digital_design/q_8_34d_oneh_cntlr/q_8_34d_tb.sv
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 16:58:14 on Dec 27,2019
+# vlog -reportprogress 300 -work work C:/Users/czhe/Downloads/digital_design/q_8_34d_oneh_cntlr/q_8_34d_tb.sv 
+# -- Compiling module q_8_34d_tb
+# 
+# Top level modules:
+# 	q_8_34d_tb
+# End time: 16:58:14 on Dec 27,2019, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vsim work.q_8_34d_tb
+# End time: 16:58:18 on Dec 27,2019, Elapsed time: 0:01:25
+# Errors: 0, Warnings: 0
+# vsim work.q_8_34d_tb 
+# Start time: 16:58:18 on Dec 27,2019
+# Loading sv_std.std
+# Loading work.q_8_34d_tb
+# Loading work.q_8_34d
+# Loading work.d_ff
+add wave -position insertpoint  \
+sim:/q_8_34d_tb/rst_b \
+sim:/q_8_34d_tb/clk \
+sim:/q_8_34d_tb/start \
+sim:/q_8_34d_tb/zero \
+sim:/q_8_34d_tb/E \
+sim:/q_8_34d_tb/load_regs \
+sim:/q_8_34d_tb/incr_r2 \
+sim:/q_8_34d_tb/shift \
+sim:/q_8_34d_tb/rdy \
+sim:/q_8_34d_tb/state
+run
+# ** Note: $finish    : C:/Users/czhe/Downloads/digital_design/q_8_34d_oneh_cntlr/q_8_34d_tb.sv(10)
+#    Time: 400 ps  Iteration: 0  Instance: /q_8_34d_tb
+# 1
+# Break in Module q_8_34d_tb at C:/Users/czhe/Downloads/digital_design/q_8_34d_oneh_cntlr/q_8_34d_tb.sv line 10
+vlog -work work C:/Users/czhe/Downloads/digital_design/q_8_34d_oneh_cntlr/q_8_34d_tb.sv
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 17:01:55 on Dec 27,2019
+# vlog -reportprogress 300 -work work C:/Users/czhe/Downloads/digital_design/q_8_34d_oneh_cntlr/q_8_34d_tb.sv 
+# -- Compiling module q_8_34d_tb
+# 
+# Top level modules:
+# 	q_8_34d_tb
+# End time: 17:01:55 on Dec 27,2019, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+restart
+# Loading work.q_8_34d_tb
+run
+# GetModuleFileName: The specified module could not be found.
+# 
+# 
+# ** Note: $finish    : C:/Users/czhe/Downloads/digital_design/q_8_34d_oneh_cntlr/q_8_34d_tb.sv(10)
+#    Time: 400 ps  Iteration: 0  Instance: /q_8_34d_tb
+# 1
+# Break in Module q_8_34d_tb at C:/Users/czhe/Downloads/digital_design/q_8_34d_oneh_cntlr/q_8_34d_tb.sv line 10
+vlog -sv -work work +incdir+C:/Users/czhe/Downloads/digital_design/q_8_34d_oneh_cntlr C:/Users/czhe/Downloads/digital_design/q_8_34d_oneh_cntlr/q_8_34d.sv
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 17:04:09 on Dec 27,2019
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/czhe/Downloads/digital_design/q_8_34d_oneh_cntlr" C:/Users/czhe/Downloads/digital_design/q_8_34d_oneh_cntlr/q_8_34d.sv 
+# -- Compiling module q_8_34d
+# -- Compiling module d_ff
+# 
+# Top level modules:
+# 	q_8_34d
+# End time: 17:04:09 on Dec 27,2019, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+restart
+# Loading work.q_8_34d
+# Loading work.d_ff
+run
+# GetModuleFileName: The specified module could not be found.
+# 
+# 
+# ** Note: $finish    : C:/Users/czhe/Downloads/digital_design/q_8_34d_oneh_cntlr/q_8_34d_tb.sv(10)
+#    Time: 400 ps  Iteration: 0  Instance: /q_8_34d_tb
+# 1
+# Break in Module q_8_34d_tb at C:/Users/czhe/Downloads/digital_design/q_8_34d_oneh_cntlr/q_8_34d_tb.sv line 10
+vlog -sv -work work +incdir+C:/Users/czhe/Downloads/digital_design/q_8_34d_oneh_cntlr C:/Users/czhe/Downloads/digital_design/q_8_34d_oneh_cntlr/q_8_34d.sv
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 17:08:26 on Dec 27,2019
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/czhe/Downloads/digital_design/q_8_34d_oneh_cntlr" C:/Users/czhe/Downloads/digital_design/q_8_34d_oneh_cntlr/q_8_34d.sv 
+# -- Compiling module q_8_34d
+# -- Compiling module d_ff
+# 
+# Top level modules:
+# 	q_8_34d
+# End time: 17:08:26 on Dec 27,2019, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+restart
+# Loading work.q_8_34d
+# Loading work.d_ff
+run
+# GetModuleFileName: The specified module could not be found.
+# 
+# 
+# ** Note: $finish    : C:/Users/czhe/Downloads/digital_design/q_8_34d_oneh_cntlr/q_8_34d_tb.sv(10)
+#    Time: 400 ps  Iteration: 0  Instance: /q_8_34d_tb
+# 1
+# Break in Module q_8_34d_tb at C:/Users/czhe/Downloads/digital_design/q_8_34d_oneh_cntlr/q_8_34d_tb.sv line 10
+vlog -work work C:/Users/czhe/Downloads/digital_design/q_8_34d_oneh_cntlr/q_8_34d_tb.sv
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 17:11:27 on Dec 27,2019
+# vlog -reportprogress 300 -work work C:/Users/czhe/Downloads/digital_design/q_8_34d_oneh_cntlr/q_8_34d_tb.sv 
+# -- Compiling module q_8_34d_tb
+# 
+# Top level modules:
+# 	q_8_34d_tb
+# End time: 17:11:27 on Dec 27,2019, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+restart
+# Loading work.q_8_34d_tb
+run
+# GetModuleFileName: The specified module could not be found.
+# 
+# 
+# ** Note: $finish    : C:/Users/czhe/Downloads/digital_design/q_8_34d_oneh_cntlr/q_8_34d_tb.sv(10)
+#    Time: 400 ps  Iteration: 0  Instance: /q_8_34d_tb
+# 1
+# Break in Module q_8_34d_tb at C:/Users/czhe/Downloads/digital_design/q_8_34d_oneh_cntlr/q_8_34d_tb.sv line 10
+# End time: 17:12:47 on Dec 27,2019, Elapsed time: 0:14:29
+# Errors: 0, Warnings: 0

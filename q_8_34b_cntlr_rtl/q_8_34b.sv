@@ -3,7 +3,7 @@ import q_8_34b_pkg::*;
 module q_8_34b (
     input rst_b, clk, start,
     input zero, E,
-    output logic load_regs, incr_r2, shift
+    output logic load_regs, incr_r2, shift, rdy
 );
     state_t state, next_state;
 
@@ -19,13 +19,17 @@ module q_8_34b (
         load_regs = 1'b0;
         incr_r2 = 1'b0;
         shift = 1'b0;
+        rdy = 1'b0;
         case (state)
             S_idle :
+            begin
                 if (start)
                 begin
                     load_regs = 1'b1;
                     next_state = S_1;
                 end
+                rdy = 1'b1;
+            end
             S_1 :
             begin
                 incr_r2 = 1'b1;

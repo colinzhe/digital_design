@@ -1,0 +1,69 @@
+|q_8_34c
+rst_b => q_8_34a:datapath.rst_b
+rst_b => q_8_34b:controller.rst_b
+clk => q_8_34a:datapath.clk
+clk => q_8_34b:controller.clk
+start => q_8_34b:controller.start
+data_in[0] => q_8_34a:datapath.data_in[0]
+data_in[1] => q_8_34a:datapath.data_in[1]
+data_in[2] => q_8_34a:datapath.data_in[2]
+data_in[3] => q_8_34a:datapath.data_in[3]
+cnt[0] <= q_8_34a:datapath.cnt[0]
+cnt[1] <= q_8_34a:datapath.cnt[1]
+rdy <= q_8_34b:controller.rdy
+
+
+|q_8_34c|q_8_34a:datapath
+rst_b => E~reg0.ACLR
+rst_b => r2[0].ACLR
+rst_b => r2[1].ACLR
+rst_b => r1[0].ACLR
+rst_b => r1[1].ACLR
+rst_b => r1[2].ACLR
+rst_b => r1[3].ACLR
+clk => E~reg0.CLK
+clk => r2[0].CLK
+clk => r2[1].CLK
+clk => r1[0].CLK
+clk => r1[1].CLK
+clk => r1[2].CLK
+clk => r1[3].CLK
+data_in[0] => r1.DATAB
+data_in[1] => r1.DATAB
+data_in[2] => r1.DATAB
+data_in[3] => r1.DATAB
+load_regs => r1.OUTPUTSELECT
+load_regs => r1.OUTPUTSELECT
+load_regs => r1.OUTPUTSELECT
+load_regs => r1.OUTPUTSELECT
+load_regs => r2.OUTPUTSELECT
+load_regs => r2.OUTPUTSELECT
+incr_r2 => r2.OUTPUTSELECT
+incr_r2 => r2.OUTPUTSELECT
+shift => r1.OUTPUTSELECT
+shift => r1.OUTPUTSELECT
+shift => r1.OUTPUTSELECT
+shift => r1.OUTPUTSELECT
+shift => E~reg0.ENA
+zero <= Equal0.DB_MAX_OUTPUT_PORT_TYPE
+E <= E~reg0.DB_MAX_OUTPUT_PORT_TYPE
+cnt[0] <= r2[0].DB_MAX_OUTPUT_PORT_TYPE
+cnt[1] <= r2[1].DB_MAX_OUTPUT_PORT_TYPE
+
+
+|q_8_34c|q_8_34b:controller
+rst_b => state~3.DATAIN
+clk => state~1.DATAIN
+start => load_regs.DATAB
+start => Selector1.IN2
+start => Selector0.IN1
+zero => Selector0.IN3
+zero => Selector2.IN1
+E => Selector1.IN3
+E => Selector2.IN2
+load_regs <= load_regs.DB_MAX_OUTPUT_PORT_TYPE
+incr_r2 <= incr_r2.DB_MAX_OUTPUT_PORT_TYPE
+shift <= shift.DB_MAX_OUTPUT_PORT_TYPE
+rdy <= rdy.DB_MAX_OUTPUT_PORT_TYPE
+
+

@@ -4,7 +4,8 @@ module q_8_34a (
     input rst_b, clk,
     input [data_size-1:0] data_in,
     input load_regs, incr_r2, shift,
-    output logic zero, E
+    output logic zero, E,
+    output logic [r2_size-1:0] cnt
 );
     logic [data_size-1:0] r1;
     logic [r2_size-1:0] r2;
@@ -28,4 +29,5 @@ module q_8_34a (
     end
 
     assign zero = (r1 == '0);
+    assign cnt = r2;
 endmodule

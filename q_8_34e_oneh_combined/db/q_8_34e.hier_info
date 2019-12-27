@@ -1,0 +1,109 @@
+|q_8_34e
+rst_b => q_8_34a:datapath.rst_b
+rst_b => q_8_34d:controller.rst_b
+clk => q_8_34a:datapath.clk
+clk => q_8_34d:controller.clk
+start => q_8_34d:controller.start
+data_in[0] => q_8_34a:datapath.data_in[0]
+data_in[1] => q_8_34a:datapath.data_in[1]
+data_in[2] => q_8_34a:datapath.data_in[2]
+data_in[3] => q_8_34a:datapath.data_in[3]
+cnt[0] <= q_8_34a:datapath.cnt[0]
+cnt[1] <= q_8_34a:datapath.cnt[1]
+cnt[2] <= q_8_34a:datapath.cnt[2]
+rdy <= q_8_34d:controller.rdy
+
+
+|q_8_34e|q_8_34a:datapath
+rst_b => E~reg0.ACLR
+rst_b => r2[0].ACLR
+rst_b => r2[1].ACLR
+rst_b => r2[2].ACLR
+rst_b => r1[0].ACLR
+rst_b => r1[1].ACLR
+rst_b => r1[2].ACLR
+rst_b => r1[3].ACLR
+clk => E~reg0.CLK
+clk => r2[0].CLK
+clk => r2[1].CLK
+clk => r2[2].CLK
+clk => r1[0].CLK
+clk => r1[1].CLK
+clk => r1[2].CLK
+clk => r1[3].CLK
+data_in[0] => r1.DATAB
+data_in[1] => r1.DATAB
+data_in[2] => r1.DATAB
+data_in[3] => r1.DATAB
+load_regs => r1.OUTPUTSELECT
+load_regs => r1.OUTPUTSELECT
+load_regs => r1.OUTPUTSELECT
+load_regs => r1.OUTPUTSELECT
+load_regs => r2.OUTPUTSELECT
+load_regs => r2.OUTPUTSELECT
+load_regs => r2.OUTPUTSELECT
+incr_r2 => r2.OUTPUTSELECT
+incr_r2 => r2.OUTPUTSELECT
+incr_r2 => r2.OUTPUTSELECT
+shift => r1.OUTPUTSELECT
+shift => r1.OUTPUTSELECT
+shift => r1.OUTPUTSELECT
+shift => r1.OUTPUTSELECT
+shift => E~reg0.ENA
+zero <= Equal0.DB_MAX_OUTPUT_PORT_TYPE
+E <= E~reg0.DB_MAX_OUTPUT_PORT_TYPE
+cnt[0] <= r2[0].DB_MAX_OUTPUT_PORT_TYPE
+cnt[1] <= r2[1].DB_MAX_OUTPUT_PORT_TYPE
+cnt[2] <= r2[2].DB_MAX_OUTPUT_PORT_TYPE
+
+
+|q_8_34e|q_8_34d:controller
+rst_b => d_ff:dff_0.rst_b
+rst_b => d_ff:dff_1.rst_b
+rst_b => d_ff:dff_2.rst_b
+rst_b => d_ff:dff_3.rst_b
+clk => d_ff:dff_0.clk
+clk => d_ff:dff_1.clk
+clk => d_ff:dff_2.clk
+clk => d_ff:dff_3.clk
+start => D_in.IN1
+start => load_regs.IN1
+start => D_in.IN1
+zero => D_in.IN1
+zero => D_in.IN1
+E => D_in.IN1
+E => D_in.IN1
+load_regs <= load_regs.DB_MAX_OUTPUT_PORT_TYPE
+incr_r2 <= d_ff:dff_1.Q
+shift <= d_ff:dff_2.Q
+rdy <= d_ff:dff_0.Q
+
+
+|q_8_34e|q_8_34d:controller|d_ff:dff_0
+rst_b => Q~reg0.PRESET
+clk => Q~reg0.CLK
+D => Q~reg0.DATAIN
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|q_8_34e|q_8_34d:controller|d_ff:dff_1
+rst_b => Q~reg0.ACLR
+clk => Q~reg0.CLK
+D => Q~reg0.DATAIN
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|q_8_34e|q_8_34d:controller|d_ff:dff_2
+rst_b => Q~reg0.ACLR
+clk => Q~reg0.CLK
+D => Q~reg0.DATAIN
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|q_8_34e|q_8_34d:controller|d_ff:dff_3
+rst_b => Q~reg0.ACLR
+clk => Q~reg0.CLK
+D => Q~reg0.DATAIN
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+

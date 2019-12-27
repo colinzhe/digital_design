@@ -1,0 +1,45 @@
+{
+	"partitions" : [
+		{
+			"name" : "Top",
+			"pins" : [
+				{
+					"name" : "load_regs",
+					"strict" : false
+				},
+				{
+					"name" : "incr_r2",
+					"strict" : false
+				},
+				{
+					"name" : "shift",
+					"strict" : false
+				},
+				{
+					"name" : "rdy",
+					"strict" : false
+				},
+				{
+					"name" : "start",
+					"strict" : false
+				},
+				{
+					"name" : "zero",
+					"strict" : false
+				},
+				{
+					"name" : "clk",
+					"strict" : false
+				},
+				{
+					"name" : "rst_b",
+					"strict" : false
+				},
+				{
+					"name" : "E",
+					"strict" : false
+				}
+			]
+		}
+	]
+}

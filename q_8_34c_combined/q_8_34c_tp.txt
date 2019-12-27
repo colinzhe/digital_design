@@ -1,0 +1,5 @@
+- async reset
+- state transitions
+- control signals
+- all data_in variations
+- count value

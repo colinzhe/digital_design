@@ -1,0 +1,50 @@
+|q_8_34d
+rst_b => d_ff:dff_0.rst_b
+rst_b => d_ff:dff_1.rst_b
+rst_b => d_ff:dff_2.rst_b
+rst_b => d_ff:dff_3.rst_b
+clk => d_ff:dff_0.clk
+clk => d_ff:dff_1.clk
+clk => d_ff:dff_2.clk
+clk => d_ff:dff_3.clk
+start => D_in.IN1
+start => load_regs.IN1
+start => D_in.IN1
+zero => D_in.IN1
+zero => D_in.IN1
+E => D_in.IN1
+E => D_in.IN1
+load_regs <= load_regs.DB_MAX_OUTPUT_PORT_TYPE
+incr_r2 <= d_ff:dff_1.Q
+shift <= d_ff:dff_2.Q
+rdy <= d_ff:dff_0.Q
+
+
+|q_8_34d|d_ff:dff_0
+rst_b => Q~reg0.PRESET
+clk => Q~reg0.CLK
+D => Q~reg0.DATAIN
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|q_8_34d|d_ff:dff_1
+rst_b => Q~reg0.ACLR
+clk => Q~reg0.CLK
+D => Q~reg0.DATAIN
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|q_8_34d|d_ff:dff_2
+rst_b => Q~reg0.ACLR
+clk => Q~reg0.CLK
+D => Q~reg0.DATAIN
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|q_8_34d|d_ff:dff_3
+rst_b => Q~reg0.ACLR
+clk => Q~reg0.CLK
+D => Q~reg0.DATAIN
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+

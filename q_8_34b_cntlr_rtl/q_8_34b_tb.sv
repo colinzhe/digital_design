@@ -3,7 +3,7 @@ import q_8_34b_pkg::*;
 module q_8_34b_tb;
     reg rst_b, clk, start;
     reg zero, E;
-    wire load_regs, incr_r2, shift;
+    wire load_regs, incr_r2, shift, rdy;
     
     q_8_34b dut (.*);
 
@@ -26,7 +26,7 @@ module q_8_34b_tb;
         #10 zero = 1'b0; // go to S_1 -> S_2 -> S3, then back to S2 then S3 and repeat
         #100 E = 1'b1; // go from S_3 to S_1, then S_2, S_3, then S_1
         #50 zero = 1'b1; start = 1'b0; // go back to S_idle from S_1, then stay in S_idle
-        #50 start = 1'b1; // go to S_1
+        #50 start = 1'b1; zero = 1'b0; // go to S_1
         #20 rst_b = 1'b0; // async reset
         #10 rst_b = 1'b1;
     end : tb
