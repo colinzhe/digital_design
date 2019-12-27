@@ -1,0 +1,15 @@
+|q_8_34b
+rst_b => state~3.DATAIN
+clk => state~1.DATAIN
+start => load_regs.DATAB
+start => Selector1.IN2
+start => Selector0.IN1
+zero => Selector0.IN3
+zero => Selector2.IN1
+E => Selector1.IN3
+E => Selector2.IN2
+load_regs <= load_regs.DB_MAX_OUTPUT_PORT_TYPE
+incr_r2 <= incr_r2.DB_MAX_OUTPUT_PORT_TYPE
+shift <= shift.DB_MAX_OUTPUT_PORT_TYPE
+
+

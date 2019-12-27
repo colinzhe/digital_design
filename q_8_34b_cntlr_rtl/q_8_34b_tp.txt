@@ -1,0 +1,6 @@
+- async reset
+- start and load_regs
+- s_1 and incr_r2
+- zero branch
+- s_2 and shift
+- s_3 and E branch

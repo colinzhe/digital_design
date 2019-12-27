@@ -1,0 +1,434 @@
+# Reading C:/intelFPGA_lite/18.1/modelsim_ase/tcl/vsim/pref.tcl
+# do q_8_34b_run_msim_rtl_verilog.do
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Model Technology ModelSim - Intel FPGA Edition vmap 10.5b Lib Mapping Utility 2016.10 Oct  5 2016
+# vmap work rtl_work 
+# Copying C:/intelFPGA_lite/18.1/modelsim_ase/win32aloem/../modelsim.ini to modelsim.ini
+# Modifying modelsim.ini
+# 
+# vlog -sv -work work +incdir+C:/Users/czhe/Downloads/digital_design/q_8_34b_cntlr_rtl {C:/Users/czhe/Downloads/digital_design/q_8_34b_cntlr_rtl/q_8_34b_pkg.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 13:06:07 on Dec 27,2019
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/czhe/Downloads/digital_design/q_8_34b_cntlr_rtl" C:/Users/czhe/Downloads/digital_design/q_8_34b_cntlr_rtl/q_8_34b_pkg.sv 
+# -- Compiling package q_8_34b_pkg
+# 
+# Top level modules:
+# 	--none--
+# End time: 13:06:07 on Dec 27,2019, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/Users/czhe/Downloads/digital_design/q_8_34b_cntlr_rtl {C:/Users/czhe/Downloads/digital_design/q_8_34b_cntlr_rtl/q_8_34b.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 13:06:07 on Dec 27,2019
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/czhe/Downloads/digital_design/q_8_34b_cntlr_rtl" C:/Users/czhe/Downloads/digital_design/q_8_34b_cntlr_rtl/q_8_34b.sv 
+# -- Compiling package q_8_34b_sv_unit
+# -- Importing package q_8_34b_pkg
+# -- Compiling module q_8_34b
+# ** Error: C:/Users/czhe/Downloads/digital_design/q_8_34b_cntlr_rtl/q_8_34b.sv(19): (vlog-2110) Illegal reference to net "load_regs".
+# ** Error: C:/Users/czhe/Downloads/digital_design/q_8_34b_cntlr_rtl/q_8_34b.sv(20): (vlog-2110) Illegal reference to net "incr_r2".
+# ** Error: C:/Users/czhe/Downloads/digital_design/q_8_34b_cntlr_rtl/q_8_34b.sv(21): (vlog-2110) Illegal reference to net "shift".
+# ** Error: C:/Users/czhe/Downloads/digital_design/q_8_34b_cntlr_rtl/q_8_34b.sv(26): (vlog-2110) Illegal reference to net "load_regs".
+# ** Error: C:/Users/czhe/Downloads/digital_design/q_8_34b_cntlr_rtl/q_8_34b.sv(31): (vlog-2110) Illegal reference to net "incr_r2".
+# ** Error: C:/Users/czhe/Downloads/digital_design/q_8_34b_cntlr_rtl/q_8_34b.sv(36): (vlog-2110) Illegal reference to net "shift".
+# End time: 13:06:08 on Dec 27,2019, Elapsed time: 0:00:01
+# Errors: 6, Warnings: 0
+# ** Error: C:/intelFPGA_lite/18.1/modelsim_ase/win32aloem/vlog failed.
+# Error in macro ./q_8_34b_run_msim_rtl_verilog.do line 9
+# C:/intelFPGA_lite/18.1/modelsim_ase/win32aloem/vlog failed.
+#     while executing
+# "vlog -sv -work work +incdir+C:/Users/czhe/Downloads/digital_design/q_8_34b_cntlr_rtl {C:/Users/czhe/Downloads/digital_design/q_8_34b_cntlr_rtl/q_8_34b..."
+vlog -reportprogress 300 -work work C:/Users/czhe/Downloads/digital_design/q_8_34b_cntlr_rtl/q_8_34b_tb.sv
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 13:06:16 on Dec 27,2019
+# vlog -reportprogress 300 -work work C:/Users/czhe/Downloads/digital_design/q_8_34b_cntlr_rtl/q_8_34b_tb.sv 
+# -- Compiling package q_8_34b_tb_sv_unit
+# -- Importing package q_8_34b_pkg
+# -- Compiling module q_8_34b_tb
+# 
+# Top level modules:
+# 	q_8_34b_tb
+# End time: 13:06:16 on Dec 27,2019, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vsim work.q_8_34b_tb
+# vsim work.q_8_34b_tb 
+# Start time: 13:06:24 on Dec 27,2019
+# Loading sv_std.std
+# Loading work.q_8_34b_pkg
+# Loading work.q_8_34b_tb_sv_unit
+# Loading work.q_8_34b_tb
+# Refreshing C:/Users/czhe/Downloads/digital_design/q_8_34b_cntlr_rtl/simulation/modelsim/rtl_work.q_8_34b
+# ** Error: C:/Users/czhe/Downloads/digital_design/q_8_34b_cntlr_rtl/q_8_34b.sv(19): (vlog-2110) Illegal reference to net "load_regs".
+# ** Error: C:/Users/czhe/Downloads/digital_design/q_8_34b_cntlr_rtl/q_8_34b.sv(20): (vlog-2110) Illegal reference to net "incr_r2".
+# ** Error: C:/Users/czhe/Downloads/digital_design/q_8_34b_cntlr_rtl/q_8_34b.sv(21): (vlog-2110) Illegal reference to net "shift".
+# ** Error: C:/Users/czhe/Downloads/digital_design/q_8_34b_cntlr_rtl/q_8_34b.sv(26): (vlog-2110) Illegal reference to net "load_regs".
+# ** Error: C:/Users/czhe/Downloads/digital_design/q_8_34b_cntlr_rtl/q_8_34b.sv(31): (vlog-2110) Illegal reference to net "incr_r2".
+# ** Error: C:/Users/czhe/Downloads/digital_design/q_8_34b_cntlr_rtl/q_8_34b.sv(36): (vlog-2110) Illegal reference to net "shift".
+# ** Error: vlog failed.
+# ** Error: subinvocation of vlog failed; return status = 1.
+# ** Error: (vsim-3171) Could not find machine code for 'C:/Users/czhe/Downloads/digital_design/q_8_34b_cntlr_rtl/simulation/modelsim/rtl_work.q_8_34b'.
+# No such file or directory. (errno = ENOENT)
+# Error loading design
+# End time: 13:06:24 on Dec 27,2019, Elapsed time: 0:00:00
+# Errors: 2, Warnings: 0
+vsim work.q_8_34b_tb
+# vsim work.q_8_34b_tb 
+# Start time: 13:06:36 on Dec 27,2019
+# Loading sv_std.std
+# Loading work.q_8_34b_pkg
+# Loading work.q_8_34b_tb_sv_unit
+# Loading work.q_8_34b_tb
+# Refreshing C:/Users/czhe/Downloads/digital_design/q_8_34b_cntlr_rtl/simulation/modelsim/rtl_work.q_8_34b
+# ** Error: C:/Users/czhe/Downloads/digital_design/q_8_34b_cntlr_rtl/q_8_34b.sv(19): (vlog-2110) Illegal reference to net "load_regs".
+# ** Error: C:/Users/czhe/Downloads/digital_design/q_8_34b_cntlr_rtl/q_8_34b.sv(20): (vlog-2110) Illegal reference to net "incr_r2".
+# ** Error: C:/Users/czhe/Downloads/digital_design/q_8_34b_cntlr_rtl/q_8_34b.sv(21): (vlog-2110) Illegal reference to net "shift".
+# ** Error: C:/Users/czhe/Downloads/digital_design/q_8_34b_cntlr_rtl/q_8_34b.sv(26): (vlog-2110) Illegal reference to net "load_regs".
+# ** Error: C:/Users/czhe/Downloads/digital_design/q_8_34b_cntlr_rtl/q_8_34b.sv(31): (vlog-2110) Illegal reference to net "incr_r2".
+# ** Error: C:/Users/czhe/Downloads/digital_design/q_8_34b_cntlr_rtl/q_8_34b.sv(36): (vlog-2110) Illegal reference to net "shift".
+# ** Error: vlog failed.
+# ** Error: subinvocation of vlog failed; return status = 1.
+# ** Error: (vsim-3171) Could not find machine code for 'C:/Users/czhe/Downloads/digital_design/q_8_34b_cntlr_rtl/simulation/modelsim/rtl_work.q_8_34b'.
+# No such file or directory. (errno = ENOENT)
+# Error loading design
+# End time: 13:06:36 on Dec 27,2019, Elapsed time: 0:00:00
+# Errors: 2, Warnings: 0
+vlog -sv -work work +incdir+C:/Users/czhe/Downloads/digital_design/q_8_34b_cntlr_rtl C:/Users/czhe/Downloads/digital_design/q_8_34b_cntlr_rtl/q_8_34b_pkg.sv
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 13:07:12 on Dec 27,2019
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/czhe/Downloads/digital_design/q_8_34b_cntlr_rtl" C:/Users/czhe/Downloads/digital_design/q_8_34b_cntlr_rtl/q_8_34b_pkg.sv 
+# -- Compiling package q_8_34b_pkg
+# 
+# Top level modules:
+# 	--none--
+# End time: 13:07:12 on Dec 27,2019, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vlog -work work C:/Users/czhe/Downloads/digital_design/q_8_34b_cntlr_rtl/q_8_34b_tb.sv
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 13:07:16 on Dec 27,2019
+# vlog -reportprogress 300 -work work C:/Users/czhe/Downloads/digital_design/q_8_34b_cntlr_rtl/q_8_34b_tb.sv 
+# -- Compiling package q_8_34b_tb_sv_unit
+# -- Importing package q_8_34b_pkg
+# -- Compiling module q_8_34b_tb
+# 
+# Top level modules:
+# 	q_8_34b_tb
+# End time: 13:07:16 on Dec 27,2019, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vsim work.q_8_34b_tb
+# vsim work.q_8_34b_tb 
+# Start time: 13:07:18 on Dec 27,2019
+# Loading sv_std.std
+# Loading work.q_8_34b_pkg
+# Loading work.q_8_34b_tb_sv_unit
+# Loading work.q_8_34b_tb
+# Refreshing C:/Users/czhe/Downloads/digital_design/q_8_34b_cntlr_rtl/simulation/modelsim/rtl_work.q_8_34b
+# ** Error: C:/Users/czhe/Downloads/digital_design/q_8_34b_cntlr_rtl/q_8_34b.sv(19): (vlog-2110) Illegal reference to net "load_regs".
+# ** Error: C:/Users/czhe/Downloads/digital_design/q_8_34b_cntlr_rtl/q_8_34b.sv(20): (vlog-2110) Illegal reference to net "incr_r2".
+# ** Error: C:/Users/czhe/Downloads/digital_design/q_8_34b_cntlr_rtl/q_8_34b.sv(21): (vlog-2110) Illegal reference to net "shift".
+# ** Error: C:/Users/czhe/Downloads/digital_design/q_8_34b_cntlr_rtl/q_8_34b.sv(26): (vlog-2110) Illegal reference to net "load_regs".
+# ** Error: C:/Users/czhe/Downloads/digital_design/q_8_34b_cntlr_rtl/q_8_34b.sv(31): (vlog-2110) Illegal reference to net "incr_r2".
+# ** Error: C:/Users/czhe/Downloads/digital_design/q_8_34b_cntlr_rtl/q_8_34b.sv(36): (vlog-2110) Illegal reference to net "shift".
+# ** Error: vlog failed.
+# ** Error: subinvocation of vlog failed; return status = 1.
+# ** Error: (vsim-3171) Could not find machine code for 'C:/Users/czhe/Downloads/digital_design/q_8_34b_cntlr_rtl/simulation/modelsim/rtl_work.q_8_34b'.
+# No such file or directory. (errno = ENOENT)
+# Error loading design
+# End time: 13:07:18 on Dec 27,2019, Elapsed time: 0:00:00
+# Errors: 2, Warnings: 0
+vlog -reportprogress 300 -work work C:/Users/czhe/Downloads/digital_design/q_8_34b_cntlr_rtl/q_8_34b.sv
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 13:07:29 on Dec 27,2019
+# vlog -reportprogress 300 -work work C:/Users/czhe/Downloads/digital_design/q_8_34b_cntlr_rtl/q_8_34b.sv 
+# ** Warning: C:/Users/czhe/Downloads/digital_design/q_8_34b_cntlr_rtl/q_8_34b.sv(1): (vlog-13233) Design unit "q_8_34b_sv_unit" already exists and will be overwritten. Design unit compiled with different set of options.
+# -- Compiling package q_8_34b_sv_unit
+# -- Importing package q_8_34b_pkg
+# -- Compiling module q_8_34b
+# 
+# Top level modules:
+# 	q_8_34b
+# End time: 13:07:29 on Dec 27,2019, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 1
+vlog -reportprogress 300 -work work C:/Users/czhe/Downloads/digital_design/q_8_34b_cntlr_rtl/q_8_34b_pkg.sv
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 13:07:29 on Dec 27,2019
+# vlog -reportprogress 300 -work work C:/Users/czhe/Downloads/digital_design/q_8_34b_cntlr_rtl/q_8_34b_pkg.sv 
+# -- Compiling package q_8_34b_pkg
+# 
+# Top level modules:
+# 	--none--
+# End time: 13:07:29 on Dec 27,2019, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vlog -reportprogress 300 -work work C:/Users/czhe/Downloads/digital_design/q_8_34b_cntlr_rtl/q_8_34b_tb.sv
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 13:07:29 on Dec 27,2019
+# vlog -reportprogress 300 -work work C:/Users/czhe/Downloads/digital_design/q_8_34b_cntlr_rtl/q_8_34b_tb.sv 
+# -- Compiling package q_8_34b_tb_sv_unit
+# -- Importing package q_8_34b_pkg
+# -- Compiling module q_8_34b_tb
+# 
+# Top level modules:
+# 	q_8_34b_tb
+# End time: 13:07:29 on Dec 27,2019, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vsim work.q_8_34b
+# vsim work.q_8_34b 
+# Start time: 13:07:33 on Dec 27,2019
+# ** Error: (vsim-13) Recompile work.q_8_34b_sv_unit because work.q_8_34b_pkg has changed.
+# ** Error (suppressible): (vsim-12) Recompile work.q_8_34b after work.q_8_34b_sv_unit is recompiled.
+# ** Error: (vsim-13) Recompile work.q_8_34b because work.q_8_34b_pkg has changed.
+# Error loading design
+# End time: 13:07:33 on Dec 27,2019, Elapsed time: 0:00:00
+# Errors: 3, Warnings: 0
+vsim work.q_8_34b_tb
+# vsim work.q_8_34b_tb 
+# Start time: 13:07:35 on Dec 27,2019
+# Loading sv_std.std
+# Loading work.q_8_34b_pkg
+# Loading work.q_8_34b_tb_sv_unit
+# Loading work.q_8_34b_tb
+# ** Error: (vsim-13) Recompile work.q_8_34b_sv_unit because work.q_8_34b_pkg has changed.
+# ** Error (suppressible): (vsim-12) Recompile work.q_8_34b after work.q_8_34b_sv_unit is recompiled.
+# ** Error: (vsim-13) Recompile work.q_8_34b because work.q_8_34b_pkg has changed.
+# Error loading design
+# End time: 13:07:36 on Dec 27,2019, Elapsed time: 0:00:01
+# Errors: 3, Warnings: 0
+vlog -reportprogress 300 -work work C:/Users/czhe/Downloads/digital_design/q_8_34b_cntlr_rtl/q_8_34b.sv
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 13:08:03 on Dec 27,2019
+# vlog -reportprogress 300 -work work C:/Users/czhe/Downloads/digital_design/q_8_34b_cntlr_rtl/q_8_34b.sv 
+# -- Compiling package q_8_34b_sv_unit
+# -- Importing package q_8_34b_pkg
+# -- Compiling module q_8_34b
+# 
+# Top level modules:
+# 	q_8_34b
+# End time: 13:08:03 on Dec 27,2019, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vlog -reportprogress 300 -work work C:/Users/czhe/Downloads/digital_design/q_8_34b_cntlr_rtl/q_8_34b_pkg.sv
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 13:08:03 on Dec 27,2019
+# vlog -reportprogress 300 -work work C:/Users/czhe/Downloads/digital_design/q_8_34b_cntlr_rtl/q_8_34b_pkg.sv 
+# -- Compiling package q_8_34b_pkg
+# 
+# Top level modules:
+# 	--none--
+# End time: 13:08:03 on Dec 27,2019, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vlog -reportprogress 300 -work work C:/Users/czhe/Downloads/digital_design/q_8_34b_cntlr_rtl/q_8_34b_tb.sv
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 13:08:03 on Dec 27,2019
+# vlog -reportprogress 300 -work work C:/Users/czhe/Downloads/digital_design/q_8_34b_cntlr_rtl/q_8_34b_tb.sv 
+# -- Compiling package q_8_34b_tb_sv_unit
+# -- Importing package q_8_34b_pkg
+# -- Compiling module q_8_34b_tb
+# 
+# Top level modules:
+# 	q_8_34b_tb
+# End time: 13:08:03 on Dec 27,2019, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vsim work.q_8_34b_tb
+# vsim work.q_8_34b_tb 
+# Start time: 13:08:09 on Dec 27,2019
+# Loading sv_std.std
+# Loading work.q_8_34b_pkg
+# Loading work.q_8_34b_tb_sv_unit
+# Loading work.q_8_34b_tb
+# Loading work.q_8_34b_sv_unit
+# Loading work.q_8_34b
+add wave -position insertpoint  \
+sim:/q_8_34b_tb/rst_b \
+sim:/q_8_34b_tb/clk \
+sim:/q_8_34b_tb/start \
+sim:/q_8_34b_tb/zero \
+sim:/q_8_34b_tb/E \
+sim:/q_8_34b_tb/load_regs \
+sim:/q_8_34b_tb/incr_r2 \
+sim:/q_8_34b_tb/shift \
+sim:/q_8_34b_tb/state
+run
+# ** Note: $finish    : C:/Users/czhe/Downloads/digital_design/q_8_34b_cntlr_rtl/q_8_34b_tb.sv(12)
+#    Time: 300 ps  Iteration: 0  Instance: /q_8_34b_tb
+# 1
+# Break in Module q_8_34b_tb at C:/Users/czhe/Downloads/digital_design/q_8_34b_cntlr_rtl/q_8_34b_tb.sv line 12
+vlog -work work C:/Users/czhe/Downloads/digital_design/q_8_34b_cntlr_rtl/q_8_34b_tb.sv
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 13:11:14 on Dec 27,2019
+# vlog -reportprogress 300 -work work C:/Users/czhe/Downloads/digital_design/q_8_34b_cntlr_rtl/q_8_34b_tb.sv 
+# -- Compiling package q_8_34b_tb_sv_unit
+# -- Importing package q_8_34b_pkg
+# -- Compiling module q_8_34b_tb
+# 
+# Top level modules:
+# 	q_8_34b_tb
+# End time: 13:11:14 on Dec 27,2019, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+restart
+# Loading work.q_8_34b_tb_sv_unit
+# Loading work.q_8_34b_tb
+run
+# GetModuleFileName: The specified module could not be found.
+# 
+# 
+# ** Note: $finish    : C:/Users/czhe/Downloads/digital_design/q_8_34b_cntlr_rtl/q_8_34b_tb.sv(12)
+#    Time: 300 ps  Iteration: 0  Instance: /q_8_34b_tb
+# 1
+# Break in Module q_8_34b_tb at C:/Users/czhe/Downloads/digital_design/q_8_34b_cntlr_rtl/q_8_34b_tb.sv line 12
+vlog -work work C:/Users/czhe/Downloads/digital_design/q_8_34b_cntlr_rtl/q_8_34b_tb.sv
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 13:11:41 on Dec 27,2019
+# vlog -reportprogress 300 -work work C:/Users/czhe/Downloads/digital_design/q_8_34b_cntlr_rtl/q_8_34b_tb.sv 
+# ** Error: (vlog-13069) C:/Users/czhe/Downloads/digital_design/q_8_34b_cntlr_rtl/q_8_34b_tb.sv(10): near "[": syntax error, unexpected '[', expecting '{'.
+# End time: 13:11:41 on Dec 27,2019, Elapsed time: 0:00:00
+# Errors: 1, Warnings: 0
+# C:/intelFPGA_lite/18.1/modelsim_ase/win32aloem/vlog failed.
+vlog -work work C:/Users/czhe/Downloads/digital_design/q_8_34b_cntlr_rtl/q_8_34b_tb.sv
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 13:11:55 on Dec 27,2019
+# vlog -reportprogress 300 -work work C:/Users/czhe/Downloads/digital_design/q_8_34b_cntlr_rtl/q_8_34b_tb.sv 
+# ** Error: (vlog-13069) C:/Users/czhe/Downloads/digital_design/q_8_34b_cntlr_rtl/q_8_34b_tb.sv(10): near "state": syntax error, unexpected IDENTIFIER, expecting '{'.
+# End time: 13:11:55 on Dec 27,2019, Elapsed time: 0:00:00
+# Errors: 1, Warnings: 0
+# C:/intelFPGA_lite/18.1/modelsim_ase/win32aloem/vlog failed.
+vlog -work work C:/Users/czhe/Downloads/digital_design/q_8_34b_cntlr_rtl/q_8_34b_tb.sv
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 13:12:08 on Dec 27,2019
+# vlog -reportprogress 300 -work work C:/Users/czhe/Downloads/digital_design/q_8_34b_cntlr_rtl/q_8_34b_tb.sv 
+# -- Compiling package q_8_34b_tb_sv_unit
+# -- Importing package q_8_34b_pkg
+# -- Compiling module q_8_34b_tb
+# 
+# Top level modules:
+# 	q_8_34b_tb
+# End time: 13:12:08 on Dec 27,2019, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vlog -work work C:/Users/czhe/Downloads/digital_design/q_8_34b_cntlr_rtl/q_8_34b_tb.sv
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 13:16:28 on Dec 27,2019
+# vlog -reportprogress 300 -work work C:/Users/czhe/Downloads/digital_design/q_8_34b_cntlr_rtl/q_8_34b_tb.sv 
+# -- Compiling package q_8_34b_tb_sv_unit
+# -- Importing package q_8_34b_pkg
+# -- Compiling module q_8_34b_tb
+# 
+# Top level modules:
+# 	q_8_34b_tb
+# End time: 13:16:28 on Dec 27,2019, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+restart
+# Loading work.q_8_34b_tb_sv_unit
+# Loading work.q_8_34b_tb
+run
+# GetModuleFileName: The specified module could not be found.
+# 
+# 
+# ** Note: $finish    : C:/Users/czhe/Downloads/digital_design/q_8_34b_cntlr_rtl/q_8_34b_tb.sv(12)
+#    Time: 300 ps  Iteration: 0  Instance: /q_8_34b_tb
+# 1
+# Break in Module q_8_34b_tb at C:/Users/czhe/Downloads/digital_design/q_8_34b_cntlr_rtl/q_8_34b_tb.sv line 12
+vlog -work work C:/Users/czhe/Downloads/digital_design/q_8_34b_cntlr_rtl/q_8_34b_tb.sv
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 13:16:52 on Dec 27,2019
+# vlog -reportprogress 300 -work work C:/Users/czhe/Downloads/digital_design/q_8_34b_cntlr_rtl/q_8_34b_tb.sv 
+# -- Compiling package q_8_34b_tb_sv_unit
+# -- Importing package q_8_34b_pkg
+# -- Compiling module q_8_34b_tb
+# 
+# Top level modules:
+# 	q_8_34b_tb
+# End time: 13:16:52 on Dec 27,2019, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+restart
+# Loading work.q_8_34b_tb_sv_unit
+# Loading work.q_8_34b_tb
+run
+# GetModuleFileName: The specified module could not be found.
+# 
+# 
+# ** Note: $finish    : C:/Users/czhe/Downloads/digital_design/q_8_34b_cntlr_rtl/q_8_34b_tb.sv(12)
+#    Time: 300 ps  Iteration: 0  Instance: /q_8_34b_tb
+# 1
+# Break in Module q_8_34b_tb at C:/Users/czhe/Downloads/digital_design/q_8_34b_cntlr_rtl/q_8_34b_tb.sv line 12
+vsim work.q_8_34b_tb
+# End time: 13:20:47 on Dec 27,2019, Elapsed time: 0:12:38
+# Errors: 4, Warnings: 0
+# vsim work.q_8_34b_tb 
+# Start time: 13:20:47 on Dec 27,2019
+# Loading sv_std.std
+# Loading work.q_8_34b_pkg
+# Loading work.q_8_34b_tb_sv_unit
+# Loading work.q_8_34b_tb
+# Loading work.q_8_34b_sv_unit
+# Loading work.q_8_34b
+vlog -work work C:/Users/czhe/Downloads/digital_design/q_8_34b_cntlr_rtl/q_8_34b_tb.sv
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 13:20:54 on Dec 27,2019
+# vlog -reportprogress 300 -work work C:/Users/czhe/Downloads/digital_design/q_8_34b_cntlr_rtl/q_8_34b_tb.sv 
+# -- Compiling package q_8_34b_tb_sv_unit
+# -- Importing package q_8_34b_pkg
+# -- Compiling module q_8_34b_tb
+# 
+# Top level modules:
+# 	q_8_34b_tb
+# End time: 13:20:54 on Dec 27,2019, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+add wave -position insertpoint  \
+sim:/q_8_34b_tb/rst_b \
+sim:/q_8_34b_tb/clk \
+sim:/q_8_34b_tb/start \
+sim:/q_8_34b_tb/zero \
+sim:/q_8_34b_tb/E \
+sim:/q_8_34b_tb/load_regs \
+sim:/q_8_34b_tb/incr_r2 \
+sim:/q_8_34b_tb/shift \
+sim:/q_8_34b_tb/state
+run
+# ** Note: $finish    : C:/Users/czhe/Downloads/digital_design/q_8_34b_cntlr_rtl/q_8_34b_tb.sv(12)
+#    Time: 300 ps  Iteration: 0  Instance: /q_8_34b_tb
+# 1
+# Break in Module q_8_34b_tb at C:/Users/czhe/Downloads/digital_design/q_8_34b_cntlr_rtl/q_8_34b_tb.sv line 12
+vlog -work work C:/Users/czhe/Downloads/digital_design/q_8_34b_cntlr_rtl/q_8_34b_tb.sv
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 13:21:30 on Dec 27,2019
+# vlog -reportprogress 300 -work work C:/Users/czhe/Downloads/digital_design/q_8_34b_cntlr_rtl/q_8_34b_tb.sv 
+# -- Compiling package q_8_34b_tb_sv_unit
+# -- Importing package q_8_34b_pkg
+# -- Compiling module q_8_34b_tb
+# 
+# Top level modules:
+# 	q_8_34b_tb
+# End time: 13:21:30 on Dec 27,2019, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+restart
+# Loading work.q_8_34b_tb_sv_unit
+# Loading work.q_8_34b_tb
+run
+# ** Note: $finish    : C:/Users/czhe/Downloads/digital_design/q_8_34b_cntlr_rtl/q_8_34b_tb.sv(12)
+#    Time: 400 ps  Iteration: 0  Instance: /q_8_34b_tb
+# 1
+# Break in Module q_8_34b_tb at C:/Users/czhe/Downloads/digital_design/q_8_34b_cntlr_rtl/q_8_34b_tb.sv line 12
+vlog -work work C:/Users/czhe/Downloads/digital_design/q_8_34b_cntlr_rtl/q_8_34b_tb.sv
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 13:23:08 on Dec 27,2019
+# vlog -reportprogress 300 -work work C:/Users/czhe/Downloads/digital_design/q_8_34b_cntlr_rtl/q_8_34b_tb.sv 
+# -- Compiling package q_8_34b_tb_sv_unit
+# -- Importing package q_8_34b_pkg
+# -- Compiling module q_8_34b_tb
+# 
+# Top level modules:
+# 	q_8_34b_tb
+# End time: 13:23:08 on Dec 27,2019, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+restart
+# Loading work.q_8_34b_tb_sv_unit
+# Loading work.q_8_34b_tb
+run
+# GetModuleFileName: The specified module could not be found.
+# 
+# 
+# ** Note: $finish    : C:/Users/czhe/Downloads/digital_design/q_8_34b_cntlr_rtl/q_8_34b_tb.sv(12)
+#    Time: 400 ps  Iteration: 0  Instance: /q_8_34b_tb
+# 1
+# Break in Module q_8_34b_tb at C:/Users/czhe/Downloads/digital_design/q_8_34b_cntlr_rtl/q_8_34b_tb.sv line 12
+# End time: 13:30:40 on Dec 27,2019, Elapsed time: 0:09:53
+# Errors: 0, Warnings: 0
