@@ -9,7 +9,6 @@ module q_8_16 (
     state_t state, next_state;
     logic load, add, decr_cntr;
     logic cntr_eq_zero;
-    logic [cntr_width-1:0] cntr;
     logic [data_width-1:0] RA, RB;
     logic [data_width*2-1:0] RP;
 
