@@ -1,0 +1,5 @@
+- A and B have equal signs
+    - A eq B
+    - A > B
+    - B > A
+- repeat above for non-equal signs

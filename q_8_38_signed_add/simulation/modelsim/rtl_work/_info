@@ -1,0 +1,59 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/Users/czhe/Downloads/digital_design/q_8_38_signed_add/simulation/modelsim
+vq_8_38
+Z1 DXx6 sv_std 3 std 0 22 AD7iAPLo6nTIKk<N0eo=D3
+!s110 1577734691
+!i10b 1
+!s100 ZfNFh^AK=RiHF;iR;>3Xj1
+I=P<VeAdS0UR]o^7]8k2>12
+Z2 VDg1SIo80bB@j0V0VzS_@n1
+!s105 q_8_38_sv_unit
+S1
+R0
+w1577734175
+8C:/Users/czhe/Downloads/digital_design/q_8_38_signed_add/q_8_38.sv
+FC:/Users/czhe/Downloads/digital_design/q_8_38_signed_add/q_8_38.sv
+L0 1
+Z3 OV;L;10.5b;63
+r1
+!s85 0
+31
+!s108 1577734690.000000
+!s107 C:/Users/czhe/Downloads/digital_design/q_8_38_signed_add/q_8_38.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/czhe/Downloads/digital_design/q_8_38_signed_add|C:/Users/czhe/Downloads/digital_design/q_8_38_signed_add/q_8_38.sv|
+!i113 1
+o-sv -work work
+!s92 -sv -work work +incdir+C:/Users/czhe/Downloads/digital_design/q_8_38_signed_add
+Z4 tCvgOpt 0
+vq_8_38_tb
+R1
+!s110 1577735994
+!i10b 1
+!s100 JQFk2h<9DBI_9GNLlnjP41
+IZM3_R``U`1:4MOWlkd9j;0
+R2
+!s105 q_8_38_tb_sv_unit
+S1
+R0
+w1577735990
+8C:/Users/czhe/Downloads/digital_design/q_8_38_signed_add/q_8_38_tb.sv
+FC:/Users/czhe/Downloads/digital_design/q_8_38_signed_add/q_8_38_tb.sv
+L0 1
+R3
+r1
+!s85 0
+31
+!s108 1577735994.000000
+!s107 C:/Users/czhe/Downloads/digital_design/q_8_38_signed_add/q_8_38_tb.sv|
+!s90 -reportprogress|300|-work|work|C:/Users/czhe/Downloads/digital_design/q_8_38_signed_add/q_8_38_tb.sv|
+!i113 1
+o-work work
+R4
