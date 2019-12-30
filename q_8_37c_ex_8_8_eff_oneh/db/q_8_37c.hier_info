@@ -1,0 +1,115 @@
+|q_8_37c
+rst_b => q_8_37c_oneh_cntlr:controller_0.rst_b
+rst_b => datapath:datapath_0.rst_b
+clk => q_8_37c_oneh_cntlr:controller_0.clk
+clk => datapath:datapath_0.clk
+start => q_8_37c_oneh_cntlr:controller_0.start
+data_in[0] => datapath:datapath_0.data_in[0]
+data_in[1] => datapath:datapath_0.data_in[1]
+data_in[2] => datapath:datapath_0.data_in[2]
+data_in[3] => datapath:datapath_0.data_in[3]
+data_in[4] => datapath:datapath_0.data_in[4]
+data_in[5] => datapath:datapath_0.data_in[5]
+data_in[6] => datapath:datapath_0.data_in[6]
+data_in[7] => datapath:datapath_0.data_in[7]
+cnt[0] <= datapath:datapath_0.cnt[0]
+cnt[1] <= datapath:datapath_0.cnt[1]
+cnt[2] <= datapath:datapath_0.cnt[2]
+cnt[3] <= datapath:datapath_0.cnt[3]
+rdy <= q_8_37c_oneh_cntlr:controller_0.rdy
+
+
+|q_8_37c|q_8_37c_oneh_cntlr:controller_0
+rst_b => d_ff:dff_0.rst_b
+rst_b => d_ff:dff_1.rst_b
+clk => d_ff:dff_0.clk
+clk => d_ff:dff_1.clk
+start => D_in.IN1
+start => load_regs.IN1
+start => D_in.IN1
+zero => D_in.IN1
+zero => D_in.IN1
+zero => add_shift.IN1
+load_regs <= load_regs.DB_MAX_OUTPUT_PORT_TYPE
+add_shift <= add_shift.DB_MAX_OUTPUT_PORT_TYPE
+rdy <= d_ff:dff_0.Q
+
+
+|q_8_37c|q_8_37c_oneh_cntlr:controller_0|d_ff:dff_0
+rst_b => Q~reg0.PRESET
+clk => Q~reg0.CLK
+D => Q~reg0.DATAIN
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|q_8_37c|q_8_37c_oneh_cntlr:controller_0|d_ff:dff_1
+rst_b => Q~reg0.ACLR
+clk => Q~reg0.CLK
+D => Q~reg0.DATAIN
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|q_8_37c|datapath:datapath_0
+rst_b => r2[0].ACLR
+rst_b => r2[1].ACLR
+rst_b => r2[2].ACLR
+rst_b => r2[3].ACLR
+rst_b => r1[0].ACLR
+rst_b => r1[1].ACLR
+rst_b => r1[2].ACLR
+rst_b => r1[3].ACLR
+rst_b => r1[4].ACLR
+rst_b => r1[5].ACLR
+rst_b => r1[6].ACLR
+rst_b => r1[7].ACLR
+clk => r2[0].CLK
+clk => r2[1].CLK
+clk => r2[2].CLK
+clk => r2[3].CLK
+clk => r1[0].CLK
+clk => r1[1].CLK
+clk => r1[2].CLK
+clk => r1[3].CLK
+clk => r1[4].CLK
+clk => r1[5].CLK
+clk => r1[6].CLK
+clk => r1[7].CLK
+load_regs => r1.OUTPUTSELECT
+load_regs => r1.OUTPUTSELECT
+load_regs => r1.OUTPUTSELECT
+load_regs => r1.OUTPUTSELECT
+load_regs => r1.OUTPUTSELECT
+load_regs => r1.OUTPUTSELECT
+load_regs => r1.OUTPUTSELECT
+load_regs => r1.OUTPUTSELECT
+load_regs => r2.OUTPUTSELECT
+load_regs => r2.OUTPUTSELECT
+load_regs => r2.OUTPUTSELECT
+load_regs => r2.OUTPUTSELECT
+add_shift => r2.OUTPUTSELECT
+add_shift => r2.OUTPUTSELECT
+add_shift => r2.OUTPUTSELECT
+add_shift => r2.OUTPUTSELECT
+add_shift => r1.OUTPUTSELECT
+add_shift => r1.OUTPUTSELECT
+add_shift => r1.OUTPUTSELECT
+add_shift => r1.OUTPUTSELECT
+add_shift => r1.OUTPUTSELECT
+add_shift => r1.OUTPUTSELECT
+add_shift => r1.OUTPUTSELECT
+add_shift => r1.OUTPUTSELECT
+data_in[0] => r1.DATAB
+data_in[1] => r1.DATAB
+data_in[2] => r1.DATAB
+data_in[3] => r1.DATAB
+data_in[4] => r1.DATAB
+data_in[5] => r1.DATAB
+data_in[6] => r1.DATAB
+data_in[7] => r1.DATAB
+cnt[0] <= r2[0].DB_MAX_OUTPUT_PORT_TYPE
+cnt[1] <= r2[1].DB_MAX_OUTPUT_PORT_TYPE
+cnt[2] <= r2[2].DB_MAX_OUTPUT_PORT_TYPE
+cnt[3] <= r2[3].DB_MAX_OUTPUT_PORT_TYPE
+zero <= Equal0.DB_MAX_OUTPUT_PORT_TYPE
+
+

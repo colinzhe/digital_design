@@ -17,7 +17,7 @@ module q_8_34e_tb;
     wire E = dut.controller.E;
     wire zero = dut.controller.zero;
 
-    initial #1700 $finish; // tb duration
+    initial #51270 $finish; // tb duration
 
     initial
     begin : clk_and_rsts

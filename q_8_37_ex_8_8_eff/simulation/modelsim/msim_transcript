@@ -1,0 +1,133 @@
+# Reading C:/intelFPGA_lite/18.1/modelsim_ase/tcl/vsim/pref.tcl
+# do q_8_37_run_msim_rtl_verilog.do
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Model Technology ModelSim - Intel FPGA Edition vmap 10.5b Lib Mapping Utility 2016.10 Oct  5 2016
+# vmap work rtl_work 
+# Copying C:/intelFPGA_lite/18.1/modelsim_ase/win32aloem/../modelsim.ini to modelsim.ini
+# Modifying modelsim.ini
+# 
+# vlog -sv -work work +incdir+C:/Users/czhe/Downloads/digital_design/q_8_37_ex_8_8_eff {C:/Users/czhe/Downloads/digital_design/q_8_37_ex_8_8_eff/q_8_37_pkg.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 12:51:32 on Dec 30,2019
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/czhe/Downloads/digital_design/q_8_37_ex_8_8_eff" C:/Users/czhe/Downloads/digital_design/q_8_37_ex_8_8_eff/q_8_37_pkg.sv 
+# -- Compiling package q_8_37_pkg
+# 
+# Top level modules:
+# 	--none--
+# End time: 12:51:32 on Dec 30,2019, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/Users/czhe/Downloads/digital_design/q_8_37_ex_8_8_eff {C:/Users/czhe/Downloads/digital_design/q_8_37_ex_8_8_eff/q_8_37.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 12:51:32 on Dec 30,2019
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/czhe/Downloads/digital_design/q_8_37_ex_8_8_eff" C:/Users/czhe/Downloads/digital_design/q_8_37_ex_8_8_eff/q_8_37.sv 
+# -- Compiling package q_8_37_sv_unit
+# -- Importing package q_8_37_pkg
+# -- Compiling module q_8_37
+# -- Compiling module controller
+# -- Compiling module datapath
+# 
+# Top level modules:
+# 	q_8_37
+# End time: 12:51:32 on Dec 30,2019, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+vlog -reportprogress 300 -work work C:/Users/czhe/Downloads/digital_design/q_8_37_ex_8_8_eff/q_8_37_tb.sv
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 12:51:41 on Dec 30,2019
+# vlog -reportprogress 300 -work work C:/Users/czhe/Downloads/digital_design/q_8_37_ex_8_8_eff/q_8_37_tb.sv 
+# -- Compiling package q_8_37_tb_sv_unit
+# -- Importing package q_8_37_pkg
+# -- Compiling module q_8_37_tb
+# 
+# Top level modules:
+# 	q_8_37_tb
+# End time: 12:51:41 on Dec 30,2019, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vsim work.q_8_37_tb
+# vsim work.q_8_37_tb 
+# Start time: 12:51:47 on Dec 30,2019
+# Loading sv_std.std
+# Loading work.q_8_37_pkg
+# Loading work.q_8_37_tb_sv_unit
+# Loading work.q_8_37_tb
+# Loading work.q_8_37_sv_unit
+# Loading work.q_8_37
+# Loading work.controller
+# Loading work.datapath
+# ** Warning: (vsim-3008) C:/Users/czhe/Downloads/digital_design/q_8_37_ex_8_8_eff/q_8_37_tb.sv(16): [CNNODP] - Component name (controller) is not on a downward path.
+#    Time: 0 ps  Iteration: 0  Instance: /q_8_37_tb File: C:/Users/czhe/Downloads/digital_design/q_8_37_ex_8_8_eff/q_8_37_tb.sv
+# ** Error: (vsim-3043) C:/Users/czhe/Downloads/digital_design/q_8_37_ex_8_8_eff/q_8_37_tb.sv(16): Unresolved reference to 'controller' in dut.controller.
+#    Time: 0 ps  Iteration: 0  Instance: /q_8_37_tb File: C:/Users/czhe/Downloads/digital_design/q_8_37_ex_8_8_eff/q_8_37_tb.sv
+# Error loading design
+# End time: 12:51:47 on Dec 30,2019, Elapsed time: 0:00:00
+# Errors: 1, Warnings: 1
+vlog -work work C:/Users/czhe/Downloads/digital_design/q_8_37_ex_8_8_eff/q_8_37_tb.sv
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 12:52:00 on Dec 30,2019
+# vlog -reportprogress 300 -work work C:/Users/czhe/Downloads/digital_design/q_8_37_ex_8_8_eff/q_8_37_tb.sv 
+# -- Compiling package q_8_37_tb_sv_unit
+# -- Importing package q_8_37_pkg
+# -- Compiling module q_8_37_tb
+# 
+# Top level modules:
+# 	q_8_37_tb
+# End time: 12:52:00 on Dec 30,2019, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vsim work.q_8_37_tb
+# vsim work.q_8_37_tb 
+# Start time: 12:52:01 on Dec 30,2019
+# Loading sv_std.std
+# Loading work.q_8_37_pkg
+# Loading work.q_8_37_tb_sv_unit
+# Loading work.q_8_37_tb
+# Loading work.q_8_37_sv_unit
+# Loading work.q_8_37
+# Loading work.controller
+# Loading work.datapath
+add wave -position insertpoint  \
+sim:/q_8_37_tb/rst_b \
+sim:/q_8_37_tb/clk \
+sim:/q_8_37_tb/start \
+sim:/q_8_37_tb/data_in \
+sim:/q_8_37_tb/cnt \
+sim:/q_8_37_tb/rdy \
+sim:/q_8_37_tb/cnt_ref \
+sim:/q_8_37_tb/error \
+sim:/q_8_37_tb/state \
+sim:/q_8_37_tb/load_regs \
+sim:/q_8_37_tb/incr_r2 \
+sim:/q_8_37_tb/zero
+run
+# ** Note: $finish    : C:/Users/czhe/Downloads/digital_design/q_8_37_ex_8_8_eff/q_8_37_tb.sv(18)
+#    Time: 51270 ps  Iteration: 0  Instance: /q_8_37_tb
+# 1
+# Break in Module q_8_37_tb at C:/Users/czhe/Downloads/digital_design/q_8_37_ex_8_8_eff/q_8_37_tb.sv line 18
+vlog -work work C:/Users/czhe/Downloads/digital_design/q_8_37_ex_8_8_eff/q_8_37_tb.sv
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 12:53:47 on Dec 30,2019
+# vlog -reportprogress 300 -work work C:/Users/czhe/Downloads/digital_design/q_8_37_ex_8_8_eff/q_8_37_tb.sv 
+# -- Compiling package q_8_37_tb_sv_unit
+# -- Importing package q_8_37_pkg
+# -- Compiling module q_8_37_tb
+# 
+# Top level modules:
+# 	q_8_37_tb
+# End time: 12:53:47 on Dec 30,2019, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+restart
+# Loading work.q_8_37_tb_sv_unit
+# Loading work.q_8_37_tb
+run
+# GetModuleFileName: The specified module could not be found.
+# 
+# 
+# ** Note: $finish    : C:/Users/czhe/Downloads/digital_design/q_8_37_ex_8_8_eff/q_8_37_tb.sv(18)
+#    Time: 23500 ps  Iteration: 0  Instance: /q_8_37_tb
+# 1
+# Break in Module q_8_37_tb at C:/Users/czhe/Downloads/digital_design/q_8_37_ex_8_8_eff/q_8_37_tb.sv line 18
+# End time: 13:11:43 on Dec 30,2019, Elapsed time: 0:19:42
+# Errors: 0, Warnings: 0
