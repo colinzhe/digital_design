@@ -1,0 +1,135 @@
+|q_8_39
+rst_b => controller:controller_0.rst_b
+rst_b => datapath:datapath_0.rst_b
+clk => controller:controller_0.clk
+clk => datapath:datapath_0.clk
+start => controller:controller_0.start
+A[0] => datapath:datapath_0.A[0]
+A[1] => datapath:datapath_0.A[1]
+A[2] => datapath:datapath_0.A[2]
+A[3] => datapath:datapath_0.A[3]
+B[0] => datapath:datapath_0.B[0]
+B[1] => datapath:datapath_0.B[1]
+B[2] => datapath:datapath_0.B[2]
+B[3] => datapath:datapath_0.B[3]
+rdy <= controller:controller_0.rdy
+P[0] <= datapath:datapath_0.P[0]
+P[1] <= datapath:datapath_0.P[1]
+P[2] <= datapath:datapath_0.P[2]
+P[3] <= datapath:datapath_0.P[3]
+P[4] <= datapath:datapath_0.P[4]
+P[5] <= datapath:datapath_0.P[5]
+P[6] <= datapath:datapath_0.P[6]
+P[7] <= datapath:datapath_0.P[7]
+
+
+|q_8_39|controller:controller_0
+rst_b => d_ff:dff_0.rst_b
+rst_b => d_ff:dff_1.rst_b
+clk => d_ff:dff_0.clk
+clk => d_ff:dff_1.clk
+start => D_in.IN1
+start => load_regs.IN1
+start => D_in.IN1
+zero => D_in.IN1
+zero => D_in.IN1
+zero => add_decr.IN1
+rdy <= d_ff:dff_0.Q
+load_regs <= load_regs.DB_MAX_OUTPUT_PORT_TYPE
+add_decr <= add_decr.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|q_8_39|controller:controller_0|d_ff:dff_0
+rst_b => Q~reg0.PRESET
+clk => Q~reg0.CLK
+D => Q~reg0.DATAIN
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|q_8_39|controller:controller_0|d_ff:dff_1
+rst_b => Q~reg0.ACLR
+clk => Q~reg0.CLK
+D => Q~reg0.DATAIN
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|q_8_39|datapath:datapath_0
+rst_b => RP[0].ACLR
+rst_b => RP[1].ACLR
+rst_b => RP[2].ACLR
+rst_b => RP[3].ACLR
+rst_b => RP[4].ACLR
+rst_b => RP[5].ACLR
+rst_b => RP[6].ACLR
+rst_b => RP[7].ACLR
+rst_b => RB[0].ACLR
+rst_b => RB[1].ACLR
+rst_b => RB[2].ACLR
+rst_b => RB[3].ACLR
+rst_b => RA[0].ACLR
+rst_b => RA[1].ACLR
+rst_b => RA[2].ACLR
+rst_b => RA[3].ACLR
+clk => RP[0].CLK
+clk => RP[1].CLK
+clk => RP[2].CLK
+clk => RP[3].CLK
+clk => RP[4].CLK
+clk => RP[5].CLK
+clk => RP[6].CLK
+clk => RP[7].CLK
+clk => RB[0].CLK
+clk => RB[1].CLK
+clk => RB[2].CLK
+clk => RB[3].CLK
+clk => RA[0].CLK
+clk => RA[1].CLK
+clk => RA[2].CLK
+clk => RA[3].CLK
+load_regs => RA.OUTPUTSELECT
+load_regs => RA.OUTPUTSELECT
+load_regs => RA.OUTPUTSELECT
+load_regs => RA.OUTPUTSELECT
+load_regs => RP.OUTPUTSELECT
+load_regs => RP.OUTPUTSELECT
+load_regs => RP.OUTPUTSELECT
+load_regs => RP.OUTPUTSELECT
+load_regs => RP.OUTPUTSELECT
+load_regs => RP.OUTPUTSELECT
+load_regs => RP.OUTPUTSELECT
+load_regs => RP.OUTPUTSELECT
+load_regs => RB[3].ENA
+load_regs => RB[2].ENA
+load_regs => RB[1].ENA
+load_regs => RB[0].ENA
+add_decr => RA.OUTPUTSELECT
+add_decr => RA.OUTPUTSELECT
+add_decr => RA.OUTPUTSELECT
+add_decr => RA.OUTPUTSELECT
+add_decr => RP.OUTPUTSELECT
+add_decr => RP.OUTPUTSELECT
+add_decr => RP.OUTPUTSELECT
+add_decr => RP.OUTPUTSELECT
+add_decr => RP.OUTPUTSELECT
+add_decr => RP.OUTPUTSELECT
+add_decr => RP.OUTPUTSELECT
+add_decr => RP.OUTPUTSELECT
+A[0] => RA.DATAB
+A[1] => RA.DATAB
+A[2] => RA.DATAB
+A[3] => RA.DATAB
+B[0] => RB[0].DATAIN
+B[1] => RB[1].DATAIN
+B[2] => RB[2].DATAIN
+B[3] => RB[3].DATAIN
+P[0] <= RP[0].DB_MAX_OUTPUT_PORT_TYPE
+P[1] <= RP[1].DB_MAX_OUTPUT_PORT_TYPE
+P[2] <= RP[2].DB_MAX_OUTPUT_PORT_TYPE
+P[3] <= RP[3].DB_MAX_OUTPUT_PORT_TYPE
+P[4] <= RP[4].DB_MAX_OUTPUT_PORT_TYPE
+P[5] <= RP[5].DB_MAX_OUTPUT_PORT_TYPE
+P[6] <= RP[6].DB_MAX_OUTPUT_PORT_TYPE
+P[7] <= RP[7].DB_MAX_OUTPUT_PORT_TYPE
+zero <= Equal0.DB_MAX_OUTPUT_PORT_TYPE
+
+

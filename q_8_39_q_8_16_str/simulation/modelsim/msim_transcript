@@ -1,0 +1,138 @@
+# Reading C:/intelFPGA_lite/18.1/modelsim_ase/tcl/vsim/pref.tcl
+# do q_8_39_run_msim_rtl_verilog.do
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Model Technology ModelSim - Intel FPGA Edition vmap 10.5b Lib Mapping Utility 2016.10 Oct  5 2016
+# vmap work rtl_work 
+# Copying C:/intelFPGA_lite/18.1/modelsim_ase/win32aloem/../modelsim.ini to modelsim.ini
+# Modifying modelsim.ini
+# 
+# vlog -sv -work work +incdir+C:/Users/czhe/Downloads/digital_design/q_8_39_q_8_16_str {C:/Users/czhe/Downloads/digital_design/q_8_39_q_8_16_str/q_8_39_pkg.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 14:15:48 on Dec 31,2019
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/czhe/Downloads/digital_design/q_8_39_q_8_16_str" C:/Users/czhe/Downloads/digital_design/q_8_39_q_8_16_str/q_8_39_pkg.sv 
+# -- Compiling package q_8_39_pkg
+# 
+# Top level modules:
+# 	--none--
+# End time: 14:15:48 on Dec 31,2019, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/Users/czhe/Downloads/digital_design/q_8_39_q_8_16_str {C:/Users/czhe/Downloads/digital_design/q_8_39_q_8_16_str/q_8_39.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 14:15:48 on Dec 31,2019
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/czhe/Downloads/digital_design/q_8_39_q_8_16_str" C:/Users/czhe/Downloads/digital_design/q_8_39_q_8_16_str/q_8_39.sv 
+# -- Compiling package q_8_39_sv_unit
+# -- Importing package q_8_39_pkg
+# -- Compiling module q_8_39
+# -- Compiling module controller
+# -- Compiling module d_ff
+# -- Compiling module my_mux
+# -- Compiling module dec
+# -- Compiling module datapath
+# 
+# Top level modules:
+# 	q_8_39
+# 	my_mux
+# 	dec
+# End time: 14:15:48 on Dec 31,2019, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+vlog -reportprogress 300 -work work C:/Users/czhe/Downloads/digital_design/q_8_39_q_8_16_str/q_8_39_tb.sv
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 14:16:05 on Dec 31,2019
+# vlog -reportprogress 300 -work work C:/Users/czhe/Downloads/digital_design/q_8_39_q_8_16_str/q_8_39_tb.sv 
+# -- Compiling package q_8_39_tb_sv_unit
+# -- Importing package q_8_39_pkg
+# -- Compiling module q_8_39_tb
+# 
+# Top level modules:
+# 	q_8_39_tb
+# End time: 14:16:05 on Dec 31,2019, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vsim work.q_8_39_tb
+# vsim work.q_8_39_tb 
+# Start time: 14:16:08 on Dec 31,2019
+# Loading sv_std.std
+# Loading work.q_8_39_pkg
+# Loading work.q_8_39_tb_sv_unit
+# Loading work.q_8_39_tb
+# Loading work.q_8_39_sv_unit
+# Loading work.q_8_39
+# Loading work.controller
+# Loading work.d_ff
+# Loading work.datapath
+add wave -position insertpoint  \
+sim:/q_8_39_tb/rst_b \
+sim:/q_8_39_tb/clk \
+sim:/q_8_39_tb/start \
+sim:/q_8_39_tb/A \
+sim:/q_8_39_tb/B \
+sim:/q_8_39_tb/rdy \
+sim:/q_8_39_tb/P \
+sim:/q_8_39_tb/load_regs \
+sim:/q_8_39_tb/add_decr \
+sim:/q_8_39_tb/zero \
+sim:/q_8_39_tb/state \
+sim:/q_8_39_tb/error \
+sim:/q_8_39_tb/p_ref
+run
+# ** Note: $finish    : C:/Users/czhe/Downloads/digital_design/q_8_39_q_8_16_str/q_8_39_tb.sv(17)
+#    Time: 24400 ps  Iteration: 0  Instance: /q_8_39_tb
+# 1
+# Break in Module q_8_39_tb at C:/Users/czhe/Downloads/digital_design/q_8_39_q_8_16_str/q_8_39_tb.sv line 17
+vlog -work work C:/Users/czhe/Downloads/digital_design/q_8_39_q_8_16_str/q_8_39_tb.sv
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 14:21:08 on Dec 31,2019
+# vlog -reportprogress 300 -work work C:/Users/czhe/Downloads/digital_design/q_8_39_q_8_16_str/q_8_39_tb.sv 
+# -- Compiling package q_8_39_tb_sv_unit
+# -- Importing package q_8_39_pkg
+# -- Compiling module q_8_39_tb
+# 
+# Top level modules:
+# 	q_8_39_tb
+# End time: 14:21:08 on Dec 31,2019, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+restart
+# Loading work.q_8_39_tb_sv_unit
+# Loading work.q_8_39_tb
+run
+# GetModuleFileName: The specified module could not be found.
+# 
+# 
+# ** Error: Mismatch found
+#    Time: 21765 ps  Scope: q_8_39_tb File: C:/Users/czhe/Downloads/digital_design/q_8_39_q_8_16_str/q_8_39_tb.sv Line: 51
+# ** Note: $finish    : C:/Users/czhe/Downloads/digital_design/q_8_39_q_8_16_str/q_8_39_tb.sv(17)
+#    Time: 24400 ps  Iteration: 0  Instance: /q_8_39_tb
+# 1
+# Break in Module q_8_39_tb at C:/Users/czhe/Downloads/digital_design/q_8_39_q_8_16_str/q_8_39_tb.sv line 17
+vlog -work work C:/Users/czhe/Downloads/digital_design/q_8_39_q_8_16_str/q_8_39_tb.sv
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 14:21:46 on Dec 31,2019
+# vlog -reportprogress 300 -work work C:/Users/czhe/Downloads/digital_design/q_8_39_q_8_16_str/q_8_39_tb.sv 
+# -- Compiling package q_8_39_tb_sv_unit
+# -- Importing package q_8_39_pkg
+# -- Compiling module q_8_39_tb
+# 
+# Top level modules:
+# 	q_8_39_tb
+# End time: 14:21:46 on Dec 31,2019, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+run
+restart
+# Loading work.q_8_39_tb_sv_unit
+# Loading work.q_8_39_tb
+run
+# GetModuleFileName: The specified module could not be found.
+# 
+# 
+# ** Error: Mismatch found
+#    Time: 24385 ps  Scope: q_8_39_tb File: C:/Users/czhe/Downloads/digital_design/q_8_39_q_8_16_str/q_8_39_tb.sv Line: 51
+# ** Note: $finish    : C:/Users/czhe/Downloads/digital_design/q_8_39_q_8_16_str/q_8_39_tb.sv(17)
+#    Time: 24400 ps  Iteration: 0  Instance: /q_8_39_tb
+# 1
+# Break in Module q_8_39_tb at C:/Users/czhe/Downloads/digital_design/q_8_39_q_8_16_str/q_8_39_tb.sv line 17
+# End time: 14:29:16 on Dec 31,2019, Elapsed time: 0:13:08
+# Errors: 2, Warnings: 0

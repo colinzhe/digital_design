@@ -1,0 +1,5 @@
+- async reset
+- all variations of multiplicand, multiplier
+- RA counts to 0
+- controller outputs
+- state 0 and 1
