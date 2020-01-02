@@ -1,5 +1,5 @@
 Analysis & Synthesis report for q_8_40
-Tue Dec 31 17:38:52 2019
+Thu Jan 02 11:54:31 2020
 Quartus Prime Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
 
 
@@ -46,13 +46,13 @@ refer to the applicable agreement for further details.
 +-------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                  ;
 +---------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status     ; Successful - Tue Dec 31 17:38:52 2019       ;
+; Analysis & Synthesis Status     ; Successful - Thu Jan 02 11:54:31 2020       ;
 ; Quartus Prime Version           ; 18.1.0 Build 625 09/12/2018 SJ Lite Edition ;
 ; Revision Name                   ; q_8_40                                      ;
 ; Top-level Entity Name           ; q_8_40                                      ;
 ; Family                          ; Cyclone V                                   ;
 ; Logic utilization (in ALMs)     ; N/A                                         ;
-; Total registers                 ; 119                                         ;
+; Total registers                 ; 118                                         ;
 ; Total pins                      ; 21                                          ;
 ; Total virtual pins              ; 0                                           ;
 ; Total block memory bits         ; 0                                           ;
@@ -186,25 +186,25 @@ refer to the applicable agreement for further details.
 +---------------------------------------------+-----------+
 ; Resource                                    ; Usage     ;
 +---------------------------------------------+-----------+
-; Estimate of Logic utilization (ALMs needed) ; 83        ;
+; Estimate of Logic utilization (ALMs needed) ; 76        ;
 ;                                             ;           ;
-; Combinational ALUT usage for logic          ; 119       ;
-;     -- 7 input functions                    ; 6         ;
+; Combinational ALUT usage for logic          ; 99        ;
+;     -- 7 input functions                    ; 1         ;
 ;     -- 6 input functions                    ; 22        ;
-;     -- 5 input functions                    ; 8         ;
-;     -- 4 input functions                    ; 10        ;
-;     -- <=3 input functions                  ; 73        ;
+;     -- 5 input functions                    ; 12        ;
+;     -- 4 input functions                    ; 9         ;
+;     -- <=3 input functions                  ; 55        ;
 ;                                             ;           ;
-; Dedicated logic registers                   ; 119       ;
+; Dedicated logic registers                   ; 118       ;
 ;                                             ;           ;
 ; I/O pins                                    ; 21        ;
 ;                                             ;           ;
 ; Total DSP Blocks                            ; 0         ;
 ;                                             ;           ;
 ; Maximum fan-out node                        ; clk~input ;
-; Maximum fan-out                             ; 119       ;
-; Total fan-out                               ; 1127      ;
-; Average fan-out                             ; 4.03      ;
+; Maximum fan-out                             ; 118       ;
+; Total fan-out                               ; 1093      ;
+; Average fan-out                             ; 4.22      ;
 +---------------------------------------------+-----------+
 
 
@@ -213,23 +213,22 @@ refer to the applicable agreement for further details.
 +----------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+---------------------+-------------+--------------+
 ; Compilation Hierarchy Node ; Combinational ALUTs ; Dedicated Logic Registers ; Block Memory Bits ; DSP Blocks ; Pins ; Virtual Pins ; Full Hierarchy Name ; Entity Name ; Library Name ;
 +----------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+---------------------+-------------+--------------+
-; |q_8_40                    ; 119 (119)           ; 119 (119)                 ; 0                 ; 0          ; 21   ; 0            ; |q_8_40             ; q_8_40      ; work         ;
+; |q_8_40                    ; 99 (99)             ; 118 (118)                 ; 0                 ; 0          ; 21   ; 0            ; |q_8_40             ; q_8_40      ; work         ;
 +----------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+---------------------+-------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
 
 
 Encoding Type:  One-Hot
-+---------------------------------------------------------------------------------------------------------+
-; State Machine - |q_8_40|state                                                                           ;
-+-------------------+-------------+-------------------+-------------------+--------------+----------------+
-; Name              ; state.S_run ; state.S_wait_load ; state.S_wait_init ; state.S_idle ; state.S_output ;
-+-------------------+-------------+-------------------+-------------------+--------------+----------------+
-; state.S_idle      ; 0           ; 0                 ; 0                 ; 0            ; 0              ;
-; state.S_wait_init ; 0           ; 0                 ; 1                 ; 1            ; 0              ;
-; state.S_wait_load ; 0           ; 1                 ; 0                 ; 1            ; 0              ;
-; state.S_run       ; 1           ; 0                 ; 0                 ; 1            ; 0              ;
-; state.S_output    ; 0           ; 0                 ; 0                 ; 1            ; 1              ;
-+-------------------+-------------+-------------------+-------------------+--------------+----------------+
++-------------------------------------------------------------------------------------+
+; State Machine - |q_8_40|state                                                       ;
++-------------------+----------------+-------------+-------------------+--------------+
+; Name              ; state.S_output ; state.S_run ; state.S_wait_load ; state.S_idle ;
++-------------------+----------------+-------------+-------------------+--------------+
+; state.S_idle      ; 0              ; 0           ; 0                 ; 0            ;
+; state.S_wait_load ; 0              ; 0           ; 1                 ; 1            ;
+; state.S_run       ; 0              ; 1           ; 0                 ; 1            ;
+; state.S_output    ; 1              ; 0           ; 0                 ; 1            ;
++-------------------+----------------+-------------+-------------------+--------------+
 
 
 +--------------------------------------------------------------------------------+
@@ -238,9 +237,9 @@ Encoding Type:  One-Hot
 ; Register name                         ; Reason for Removal                     ;
 +---------------------------------------+----------------------------------------+
 ; C                                     ; Stuck at GND due to stuck port data_in ;
-; B[31]                                 ; Stuck at GND due to stuck port data_in ;
 ; state~4                               ; Lost fanout                            ;
 ; state~5                               ; Lost fanout                            ;
+; state~6                               ; Lost fanout                            ;
 ; Total Number of Removed Registers = 4 ;                                        ;
 +---------------------------------------+----------------------------------------+
 
@@ -250,12 +249,12 @@ Encoding Type:  One-Hot
 +----------------------------------------------+-------+
 ; Statistic                                    ; Value ;
 +----------------------------------------------+-------+
-; Total registers                              ; 119   ;
-; Number of registers using Synchronous Clear  ; 81    ;
-; Number of registers using Synchronous Load   ; 47    ;
-; Number of registers using Asynchronous Clear ; 111   ;
+; Total registers                              ; 118   ;
+; Number of registers using Synchronous Clear  ; 96    ;
+; Number of registers using Synchronous Load   ; 55    ;
+; Number of registers using Asynchronous Clear ; 118   ;
 ; Number of registers using Asynchronous Load  ; 0     ;
-; Number of registers using Clock Enable       ; 105   ;
+; Number of registers using Clock Enable       ; 108   ;
 ; Number of registers using Preset             ; 0     ;
 +----------------------------------------------+-------+
 
@@ -265,18 +264,18 @@ Encoding Type:  One-Hot
 +--------------------+-----------+---------------+----------------------+------------------------+------------+----------------------------+
 ; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output ;
 +--------------------+-----------+---------------+----------------------+------------------------+------------+----------------------------+
-; 3:1                ; 6 bits    ; 12 LEs        ; 6 LEs                ; 6 LEs                  ; Yes        ; |q_8_40|calc_cntr[5]       ;
-; 3:1                ; 7 bits    ; 14 LEs        ; 7 LEs                ; 7 LEs                  ; Yes        ; |q_8_40|B[24]              ;
-; 3:1                ; 7 bits    ; 14 LEs        ; 7 LEs                ; 7 LEs                  ; Yes        ; |q_8_40|B[20]              ;
-; 3:1                ; 8 bits    ; 16 LEs        ; 0 LEs                ; 16 LEs                 ; Yes        ; |q_8_40|B[12]              ;
-; 3:1                ; 8 bits    ; 16 LEs        ; 0 LEs                ; 16 LEs                 ; Yes        ; |q_8_40|B[7]               ;
-; 4:1                ; 7 bits    ; 14 LEs        ; 14 LEs               ; 0 LEs                  ; Yes        ; |q_8_40|Q[24]              ;
-; 4:1                ; 7 bits    ; 14 LEs        ; 14 LEs               ; 0 LEs                  ; Yes        ; |q_8_40|Q[17]              ;
-; 4:1                ; 8 bits    ; 16 LEs        ; 0 LEs                ; 16 LEs                 ; Yes        ; |q_8_40|Q[14]              ;
-; 4:1                ; 8 bits    ; 16 LEs        ; 0 LEs                ; 16 LEs                 ; Yes        ; |q_8_40|Q[5]               ;
-; 4:1                ; 3 bits    ; 6 LEs         ; 6 LEs                ; 0 LEs                  ; Yes        ; |q_8_40|load_cntr[0]       ;
+; 3:1                ; 5 bits    ; 10 LEs        ; 5 LEs                ; 5 LEs                  ; Yes        ; |q_8_40|calc_cntr[4]       ;
+; 3:1                ; 8 bits    ; 16 LEs        ; 0 LEs                ; 16 LEs                 ; Yes        ; |q_8_40|B[27]              ;
+; 3:1                ; 8 bits    ; 16 LEs        ; 0 LEs                ; 16 LEs                 ; Yes        ; |q_8_40|B[23]              ;
+; 3:1                ; 8 bits    ; 16 LEs        ; 0 LEs                ; 16 LEs                 ; Yes        ; |q_8_40|B[11]              ;
+; 3:1                ; 8 bits    ; 16 LEs        ; 0 LEs                ; 16 LEs                 ; Yes        ; |q_8_40|B[6]               ;
+; 4:1                ; 7 bits    ; 14 LEs        ; 14 LEs               ; 0 LEs                  ; Yes        ; |q_8_40|Q[25]              ;
+; 4:1                ; 8 bits    ; 16 LEs        ; 0 LEs                ; 16 LEs                 ; Yes        ; |q_8_40|Q[16]              ;
+; 4:1                ; 8 bits    ; 16 LEs        ; 0 LEs                ; 16 LEs                 ; Yes        ; |q_8_40|Q[8]               ;
+; 4:1                ; 8 bits    ; 16 LEs        ; 0 LEs                ; 16 LEs                 ; Yes        ; |q_8_40|Q[0]               ;
 ; 4:1                ; 31 bits   ; 62 LEs        ; 0 LEs                ; 62 LEs                 ; Yes        ; |q_8_40|A[28]              ;
-; 8:1                ; 7 bits    ; 35 LEs        ; 35 LEs               ; 0 LEs                  ; Yes        ; |q_8_40|P[6]~reg0          ;
+; 8:1                ; 8 bits    ; 40 LEs        ; 40 LEs               ; 0 LEs                  ; Yes        ; |q_8_40|P[0]~reg0          ;
+; 6:1                ; 3 bits    ; 12 LEs        ; 6 LEs                ; 6 LEs                  ; Yes        ; |q_8_40|load_cntr[0]       ;
 +--------------------+-----------+---------------+----------------------+------------------------+------------+----------------------------+
 
 
@@ -285,31 +284,29 @@ Encoding Type:  One-Hot
 +-----------------------+-----------------------------+
 ; Type                  ; Count                       ;
 +-----------------------+-----------------------------+
-; arriav_ff             ; 119                         ;
-;     CLR               ; 10                          ;
-;     CLR SCLR          ; 4                           ;
-;     ENA               ; 8                           ;
-;     ENA CLR           ; 20                          ;
-;     ENA CLR SCLR      ; 30                          ;
-;     ENA CLR SCLR SLD  ; 47                          ;
-; arriav_lcell_comb     ; 120                         ;
+; arriav_ff             ; 118                         ;
+;     CLR               ; 8                           ;
+;     CLR SCLR          ; 2                           ;
+;     ENA CLR           ; 14                          ;
+;     ENA CLR SCLR      ; 39                          ;
+;     ENA CLR SCLR SLD  ; 55                          ;
+; arriav_lcell_comb     ; 100                         ;
 ;     arith             ; 33                          ;
 ;         0 data inputs ; 1                           ;
+;         2 data inputs ; 32                          ;
+;     extend            ; 1                           ;
+;         7 data inputs ; 1                           ;
+;     normal            ; 66                          ;
 ;         1 data inputs ; 1                           ;
-;         2 data inputs ; 31                          ;
-;     extend            ; 6                           ;
-;         7 data inputs ; 6                           ;
-;     normal            ; 81                          ;
-;         1 data inputs ; 1                           ;
-;         2 data inputs ; 2                           ;
-;         3 data inputs ; 38                          ;
-;         4 data inputs ; 10                          ;
-;         5 data inputs ; 8                           ;
+;         2 data inputs ; 3                           ;
+;         3 data inputs ; 19                          ;
+;         4 data inputs ; 9                           ;
+;         5 data inputs ; 12                          ;
 ;         6 data inputs ; 22                          ;
 ; boundary_port         ; 21                          ;
 ;                       ;                             ;
 ; Max LUT depth         ; 5.20                        ;
-; Average LUT depth     ; 2.56                        ;
+; Average LUT depth     ; 2.70                        ;
 +-----------------------+-----------------------------+
 
 
@@ -318,7 +315,7 @@ Encoding Type:  One-Hot
 +----------------+--------------+
 ; Partition Name ; Elapsed Time ;
 +----------------+--------------+
-; Top            ; 00:00:00     ;
+; Top            ; 00:00:01     ;
 +----------------+--------------+
 
 
@@ -328,7 +325,7 @@ Encoding Type:  One-Hot
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
-    Info: Processing started: Tue Dec 31 17:38:36 2019
+    Info: Processing started: Thu Jan 02 11:54:05 2020
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off q_8_40 -c q_8_40
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 8 of the 8 processors detected
@@ -338,19 +335,19 @@ Info (12021): Found 1 design units, including 1 entities, in source file q_8_40.
     Info (12023): Found entity 1: q_8_40 File: C:/Users/czhe/Downloads/digital_design/q_8_40_32b_mult/q_8_40.sv Line: 3
 Info (12127): Elaborating entity "q_8_40" for the top level hierarchy
 Info (286030): Timing-Driven Synthesis is running
-Info (17049): 2 registers lost all their fanouts during netlist optimizations.
+Info (17049): 3 registers lost all their fanouts during netlist optimizations.
 Info (144001): Generated suppressed messages file C:/Users/czhe/Downloads/digital_design/q_8_40_32b_mult/output_files/q_8_40.map.smsg
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
-Info (21057): Implemented 185 device resources after synthesis - the final resource count might be different
+Info (21057): Implemented 176 device resources after synthesis - the final resource count might be different
     Info (21058): Implemented 11 input pins
     Info (21059): Implemented 10 output pins
-    Info (21061): Implemented 164 logic cells
+    Info (21061): Implemented 155 logic cells
 Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 1 warning
-    Info: Peak virtual memory: 4886 megabytes
-    Info: Processing ended: Tue Dec 31 17:38:52 2019
-    Info: Elapsed time: 00:00:16
-    Info: Total CPU time (on all processors): 00:00:34
+    Info: Peak virtual memory: 4884 megabytes
+    Info: Processing ended: Thu Jan 02 11:54:31 2020
+    Info: Elapsed time: 00:00:26
+    Info: Total CPU time (on all processors): 00:01:00
 
 
 +------------------------------------------+

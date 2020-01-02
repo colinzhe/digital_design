@@ -27,13 +27,11 @@ module q_8_40 (
             begin
                 if (start)
                 begin
-                    next_state = S_wait_init;
+                    next_state = S_wait_load;
                     init_regs = '1;
                 end
                 rdy = '1;
             end
-            S_wait_init :
-                next_state = S_wait_load;
             S_wait_load :
             begin
                 if (load_done) next_state = S_run;
@@ -61,7 +59,7 @@ module q_8_40 (
     logic [31:0] A, B, Q;
     logic [64:0] AQ;
     logic C;
-    logic [5:0] calc_cntr;
+    logic [4:0] calc_cntr;
     logic [2:0] load_cntr;
 
     always_ff @ (posedge clk, negedge rst_b)
@@ -80,16 +78,17 @@ module q_8_40 (
             end
             else if (load_bus)
             begin
-                case (load_cntr)
-                    3'h7 : B[7:0] <= M;
-                    3'h6 : Q[7:0] <= M;
-                    3'h5 : B[15:8] <= M;
-                    3'h4 : Q[15:8] <= M;
-                    3'h3 : B[23:16] <= M;
-                    3'h2 : Q[23:16] <= M;
-                    3'h1 : B[31:24] <= M;
-                    3'h0 : Q[31:24] <= M;
-                endcase
+                if (!load_done)
+                    case (load_cntr)
+                        3'h7 : B[7:0] <= M;
+                        3'h6 : Q[7:0] <= M;
+                        3'h5 : B[15:8] <= M;
+                        3'h4 : Q[15:8] <= M;
+                        3'h3 : B[23:16] <= M;
+                        3'h2 : Q[23:16] <= M;
+                        3'h1 : B[31:24] <= M;
+                        3'h0 : Q[31:24] <= M;
+                    endcase
                 if (load_cntr == '0)
                 begin
                     load_done <= '1;
@@ -100,7 +99,7 @@ module q_8_40 (
                     if (!load_done)
                         load_cntr <= load_cntr - 1'b1;
                     else
-                        load_done <= '0;
+                        load_done <= 1'b0;
                 end
             end
             else if (run)

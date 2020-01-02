@@ -1,10 +1,10 @@
-Analysis & Synthesis Status : Successful - Tue Dec 31 17:38:52 2019
+Analysis & Synthesis Status : Successful - Thu Jan 02 11:54:31 2020
 Quartus Prime Version : 18.1.0 Build 625 09/12/2018 SJ Lite Edition
 Revision Name : q_8_40
 Top-level Entity Name : q_8_40
 Family : Cyclone V
 Logic utilization (in ALMs) : N/A
-Total registers : 119
+Total registers : 118
 Total pins : 21
 Total virtual pins : 0
 Total block memory bits : 0

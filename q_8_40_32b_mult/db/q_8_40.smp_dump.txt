@@ -1,8 +1,7 @@
 
 State Machine - |q_8_40|state
-Name state.S_run state.S_wait_load state.S_wait_init state.S_idle state.S_output 
-state.S_idle 0 0 0 0 0 
-state.S_wait_init 0 0 1 1 0 
-state.S_wait_load 0 1 0 1 0 
-state.S_run 1 0 0 1 0 
-state.S_output 0 0 0 1 1 
+Name state.S_output state.S_run state.S_wait_load state.S_idle 
+state.S_idle 0 0 0 0 
+state.S_wait_load 0 0 1 1 
+state.S_run 0 1 0 1 
+state.S_output 1 0 0 1 

@@ -37,8 +37,12 @@ module q_8_40_tb;
     end : clk_and_init
 
     initial
-    begin : tb
-        #10 rst_b = 1'b1; start = 1'b1;
-        M = 8'hAA;
-    end : tb
+    fork : tb
+        #10 rst_b = 1'b1;
+        #10 start = 1'b1;
+        #10 M = 8'hAA;
+        #20 start = 1'b0;
+        //#40 M = 8'hAA;
+        //#50 M = 8'hAA;
+    join : tb
 endmodule

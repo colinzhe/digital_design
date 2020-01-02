@@ -1,1 +1,1 @@
-Warning (10268): Verilog HDL information at q_8_40.sv(67): always construct contains both blocking and non-blocking assignments File: C:/Users/czhe/Downloads/digital_design/q_8_40_32b_mult/q_8_40.sv Line: 67
+Warning (10268): Verilog HDL information at q_8_40.sv(65): always construct contains both blocking and non-blocking assignments File: C:/Users/czhe/Downloads/digital_design/q_8_40_32b_mult/q_8_40.sv Line: 65

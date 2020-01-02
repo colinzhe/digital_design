@@ -12,17 +12,17 @@
 # 
 # vlog -sv -work work +incdir+C:/Users/czhe/Downloads/digital_design/q_8_40_32b_mult {C:/Users/czhe/Downloads/digital_design/q_8_40_32b_mult/q_8_40_pkg.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 17:40:10 on Dec 31,2019
+# Start time: 10:22:23 on Jan 02,2020
 # vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/czhe/Downloads/digital_design/q_8_40_32b_mult" C:/Users/czhe/Downloads/digital_design/q_8_40_32b_mult/q_8_40_pkg.sv 
 # -- Compiling package q_8_40_pkg
 # 
 # Top level modules:
 # 	--none--
-# End time: 17:40:10 on Dec 31,2019, Elapsed time: 0:00:00
+# End time: 10:22:24 on Jan 02,2020, Elapsed time: 0:00:01
 # Errors: 0, Warnings: 0
 # vlog -sv -work work +incdir+C:/Users/czhe/Downloads/digital_design/q_8_40_32b_mult {C:/Users/czhe/Downloads/digital_design/q_8_40_32b_mult/q_8_40.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 17:40:10 on Dec 31,2019
+# Start time: 10:22:24 on Jan 02,2020
 # vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/czhe/Downloads/digital_design/q_8_40_32b_mult" C:/Users/czhe/Downloads/digital_design/q_8_40_32b_mult/q_8_40.sv 
 # -- Compiling package q_8_40_sv_unit
 # -- Importing package q_8_40_pkg
@@ -30,12 +30,12 @@
 # 
 # Top level modules:
 # 	q_8_40
-# End time: 17:40:10 on Dec 31,2019, Elapsed time: 0:00:00
+# End time: 10:22:24 on Jan 02,2020, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # 
 vlog -reportprogress 300 -work work C:/Users/czhe/Downloads/digital_design/q_8_40_32b_mult/q_8_40_tb.sv
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 17:40:26 on Dec 31,2019
+# Start time: 10:22:35 on Jan 02,2020
 # vlog -reportprogress 300 -work work C:/Users/czhe/Downloads/digital_design/q_8_40_32b_mult/q_8_40_tb.sv 
 # -- Compiling package q_8_40_tb_sv_unit
 # -- Importing package q_8_40_pkg
@@ -43,321 +43,11 @@ vlog -reportprogress 300 -work work C:/Users/czhe/Downloads/digital_design/q_8_4
 # 
 # Top level modules:
 # 	q_8_40_tb
-# End time: 17:40:26 on Dec 31,2019, Elapsed time: 0:00:00
+# End time: 10:22:35 on Jan 02,2020, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 vsim work.q_8_40_tb
 # vsim work.q_8_40_tb 
-# Start time: 17:40:30 on Dec 31,2019
-# Loading sv_std.std
-# Loading work.q_8_40_pkg
-# Loading work.q_8_40_tb_sv_unit
-# Loading work.q_8_40_tb
-# Loading work.q_8_40_sv_unit
-# Loading work.q_8_40
-add wave -position insertpoint  \
-sim:/q_8_40_tb/rst_b \
-sim:/q_8_40_tb/clk \
-sim:/q_8_40_tb/start \
-sim:/q_8_40_tb/M \
-sim:/q_8_40_tb/rdy \
-sim:/q_8_40_tb/send_output \
-sim:/q_8_40_tb/P \
-sim:/q_8_40_tb/state \
-sim:/q_8_40_tb/run \
-sim:/q_8_40_tb/init_regs \
-sim:/q_8_40_tb/calc_done \
-sim:/q_8_40_tb/output_done \
-sim:/q_8_40_tb/load_bus \
-sim:/q_8_40_tb/load_done \
-sim:/q_8_40_tb/A \
-sim:/q_8_40_tb/B \
-sim:/q_8_40_tb/Q \
-sim:/q_8_40_tb/C \
-sim:/q_8_40_tb/calc_cntr \
-sim:/q_8_40_tb/load_cntr
-restart
-run
-# ** Note: $finish    : C:/Users/czhe/Downloads/digital_design/q_8_40_32b_mult/q_8_40_tb.sv(26)
-#    Time: 200 ps  Iteration: 0  Instance: /q_8_40_tb
-# 1
-# Break in Module q_8_40_tb at C:/Users/czhe/Downloads/digital_design/q_8_40_32b_mult/q_8_40_tb.sv line 26
-vlog -work work C:/Users/czhe/Downloads/digital_design/q_8_40_32b_mult/q_8_40_tb.sv
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 17:41:39 on Dec 31,2019
-# vlog -reportprogress 300 -work work C:/Users/czhe/Downloads/digital_design/q_8_40_32b_mult/q_8_40_tb.sv 
-# -- Compiling package q_8_40_tb_sv_unit
-# -- Importing package q_8_40_pkg
-# -- Compiling module q_8_40_tb
-# 
-# Top level modules:
-# 	q_8_40_tb
-# End time: 17:41:39 on Dec 31,2019, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-vlog -work work C:/Users/czhe/Downloads/digital_design/q_8_40_32b_mult/q_8_40_tb.sv
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 17:42:02 on Dec 31,2019
-# vlog -reportprogress 300 -work work C:/Users/czhe/Downloads/digital_design/q_8_40_32b_mult/q_8_40_tb.sv 
-# -- Compiling package q_8_40_tb_sv_unit
-# -- Importing package q_8_40_pkg
-# -- Compiling module q_8_40_tb
-# 
-# Top level modules:
-# 	q_8_40_tb
-# End time: 17:42:02 on Dec 31,2019, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-restart
-# Loading work.q_8_40_tb_sv_unit
-# Loading work.q_8_40_tb
-run
-# GetModuleFileName: The specified module could not be found.
-# 
-# 
-# ** Note: $finish    : C:/Users/czhe/Downloads/digital_design/q_8_40_32b_mult/q_8_40_tb.sv(26)
-#    Time: 2 ns  Iteration: 0  Instance: /q_8_40_tb
-# 1
-# Break in Module q_8_40_tb at C:/Users/czhe/Downloads/digital_design/q_8_40_32b_mult/q_8_40_tb.sv line 26
-vlog -work work C:/Users/czhe/Downloads/digital_design/q_8_40_32b_mult/q_8_40_tb.sv
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 17:43:07 on Dec 31,2019
-# vlog -reportprogress 300 -work work C:/Users/czhe/Downloads/digital_design/q_8_40_32b_mult/q_8_40_tb.sv 
-# -- Compiling package q_8_40_tb_sv_unit
-# -- Importing package q_8_40_pkg
-# -- Compiling module q_8_40_tb
-# 
-# Top level modules:
-# 	q_8_40_tb
-# End time: 17:43:07 on Dec 31,2019, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-restart
-# Loading work.q_8_40_tb_sv_unit
-# Loading work.q_8_40_tb
-run
-# GetModuleFileName: The specified module could not be found.
-# 
-# 
-# ** Note: $finish    : C:/Users/czhe/Downloads/digital_design/q_8_40_32b_mult/q_8_40_tb.sv(26)
-#    Time: 2 ns  Iteration: 0  Instance: /q_8_40_tb
-# 1
-# Break in Module q_8_40_tb at C:/Users/czhe/Downloads/digital_design/q_8_40_32b_mult/q_8_40_tb.sv line 26
-vlog -sv -work work +incdir+C:/Users/czhe/Downloads/digital_design/q_8_40_32b_mult C:/Users/czhe/Downloads/digital_design/q_8_40_32b_mult/q_8_40.sv
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 17:43:53 on Dec 31,2019
-# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/czhe/Downloads/digital_design/q_8_40_32b_mult" C:/Users/czhe/Downloads/digital_design/q_8_40_32b_mult/q_8_40.sv 
-# -- Compiling package q_8_40_sv_unit
-# -- Importing package q_8_40_pkg
-# -- Compiling module q_8_40
-# 
-# Top level modules:
-# 	q_8_40
-# End time: 17:43:53 on Dec 31,2019, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-restart
-# Loading work.q_8_40_sv_unit
-# Loading work.q_8_40
-run
-# GetModuleFileName: The specified module could not be found.
-# 
-# 
-# ** Note: $finish    : C:/Users/czhe/Downloads/digital_design/q_8_40_32b_mult/q_8_40_tb.sv(26)
-#    Time: 2 ns  Iteration: 0  Instance: /q_8_40_tb
-# 1
-# Break in Module q_8_40_tb at C:/Users/czhe/Downloads/digital_design/q_8_40_32b_mult/q_8_40_tb.sv line 26
-vlog -sv -work work +incdir+C:/Users/czhe/Downloads/digital_design/q_8_40_32b_mult C:/Users/czhe/Downloads/digital_design/q_8_40_32b_mult/q_8_40.sv
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 17:46:52 on Dec 31,2019
-# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/czhe/Downloads/digital_design/q_8_40_32b_mult" C:/Users/czhe/Downloads/digital_design/q_8_40_32b_mult/q_8_40.sv 
-# -- Compiling package q_8_40_sv_unit
-# -- Importing package q_8_40_pkg
-# -- Compiling module q_8_40
-# 
-# Top level modules:
-# 	q_8_40
-# End time: 17:46:53 on Dec 31,2019, Elapsed time: 0:00:01
-# Errors: 0, Warnings: 0
-restart
-# Loading work.q_8_40_sv_unit
-# Loading work.q_8_40
-run
-# GetModuleFileName: The specified module could not be found.
-# 
-# 
-# ** Note: $finish    : C:/Users/czhe/Downloads/digital_design/q_8_40_32b_mult/q_8_40_tb.sv(26)
-#    Time: 2 ns  Iteration: 0  Instance: /q_8_40_tb
-# 1
-# Break in Module q_8_40_tb at C:/Users/czhe/Downloads/digital_design/q_8_40_32b_mult/q_8_40_tb.sv line 26
-vlog -sv -work work +incdir+C:/Users/czhe/Downloads/digital_design/q_8_40_32b_mult C:/Users/czhe/Downloads/digital_design/q_8_40_32b_mult/q_8_40.sv
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 17:49:24 on Dec 31,2019
-# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/czhe/Downloads/digital_design/q_8_40_32b_mult" C:/Users/czhe/Downloads/digital_design/q_8_40_32b_mult/q_8_40.sv 
-# -- Compiling package q_8_40_sv_unit
-# -- Importing package q_8_40_pkg
-# -- Compiling module q_8_40
-# 
-# Top level modules:
-# 	q_8_40
-# End time: 17:49:24 on Dec 31,2019, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-restart
-# Loading work.q_8_40_sv_unit
-# Loading work.q_8_40
-run
-# GetModuleFileName: The specified module could not be found.
-# 
-# 
-# ** Note: $finish    : C:/Users/czhe/Downloads/digital_design/q_8_40_32b_mult/q_8_40_tb.sv(26)
-#    Time: 2 ns  Iteration: 0  Instance: /q_8_40_tb
-# 1
-# Break in Module q_8_40_tb at C:/Users/czhe/Downloads/digital_design/q_8_40_32b_mult/q_8_40_tb.sv line 26
-vlog -sv -work work +incdir+C:/Users/czhe/Downloads/digital_design/q_8_40_32b_mult C:/Users/czhe/Downloads/digital_design/q_8_40_32b_mult/q_8_40.sv
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 17:53:47 on Dec 31,2019
-# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/czhe/Downloads/digital_design/q_8_40_32b_mult" C:/Users/czhe/Downloads/digital_design/q_8_40_32b_mult/q_8_40.sv 
-# -- Compiling package q_8_40_sv_unit
-# -- Importing package q_8_40_pkg
-# -- Compiling module q_8_40
-# 
-# Top level modules:
-# 	q_8_40
-# End time: 17:53:47 on Dec 31,2019, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-restart
-# Loading work.q_8_40_sv_unit
-# Loading work.q_8_40
-run
-# GetModuleFileName: The specified module could not be found.
-# 
-# 
-# ** Note: $finish    : C:/Users/czhe/Downloads/digital_design/q_8_40_32b_mult/q_8_40_tb.sv(26)
-#    Time: 2 ns  Iteration: 0  Instance: /q_8_40_tb
-# 1
-# Break in Module q_8_40_tb at C:/Users/czhe/Downloads/digital_design/q_8_40_32b_mult/q_8_40_tb.sv line 26
-vlog -sv -work work +incdir+C:/Users/czhe/Downloads/digital_design/q_8_40_32b_mult C:/Users/czhe/Downloads/digital_design/q_8_40_32b_mult/q_8_40.sv
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 17:54:36 on Dec 31,2019
-# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/czhe/Downloads/digital_design/q_8_40_32b_mult" C:/Users/czhe/Downloads/digital_design/q_8_40_32b_mult/q_8_40.sv 
-# -- Compiling package q_8_40_sv_unit
-# -- Importing package q_8_40_pkg
-# -- Compiling module q_8_40
-# 
-# Top level modules:
-# 	q_8_40
-# End time: 17:54:36 on Dec 31,2019, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-restart
-# Loading work.q_8_40_sv_unit
-# Loading work.q_8_40
-run
-# GetModuleFileName: The specified module could not be found.
-# 
-# 
-# ** Note: $finish    : C:/Users/czhe/Downloads/digital_design/q_8_40_32b_mult/q_8_40_tb.sv(26)
-#    Time: 2 ns  Iteration: 0  Instance: /q_8_40_tb
-# 1
-# Break in Module q_8_40_tb at C:/Users/czhe/Downloads/digital_design/q_8_40_32b_mult/q_8_40_tb.sv line 26
-vlog -work work C:/Users/czhe/Downloads/digital_design/q_8_40_32b_mult/q_8_40_tb.sv
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 18:03:48 on Dec 31,2019
-# vlog -reportprogress 300 -work work C:/Users/czhe/Downloads/digital_design/q_8_40_32b_mult/q_8_40_tb.sv 
-# -- Compiling package q_8_40_tb_sv_unit
-# -- Importing package q_8_40_pkg
-# -- Compiling module q_8_40_tb
-# 
-# Top level modules:
-# 	q_8_40_tb
-# End time: 18:03:48 on Dec 31,2019, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-vsim work.q_8_40_tb
-# End time: 18:04:02 on Dec 31,2019, Elapsed time: 0:23:32
-# Errors: 0, Warnings: 0
-# vsim work.q_8_40_tb 
-# Start time: 18:04:02 on Dec 31,2019
-# Loading sv_std.std
-# Loading work.q_8_40_pkg
-# Loading work.q_8_40_tb_sv_unit
-# Loading work.q_8_40_tb
-# Loading work.q_8_40_sv_unit
-# Loading work.q_8_40
-add wave -position insertpoint  \
-sim:/q_8_40_tb/rst_b \
-sim:/q_8_40_tb/clk \
-sim:/q_8_40_tb/start \
-sim:/q_8_40_tb/M \
-sim:/q_8_40_tb/rdy \
-sim:/q_8_40_tb/send_output \
-sim:/q_8_40_tb/P \
-sim:/q_8_40_tb/state \
-sim:/q_8_40_tb/run \
-sim:/q_8_40_tb/init_regs \
-sim:/q_8_40_tb/calc_done \
-sim:/q_8_40_tb/output_done \
-sim:/q_8_40_tb/load_bus \
-sim:/q_8_40_tb/load_done \
-sim:/q_8_40_tb/A \
-sim:/q_8_40_tb/B \
-sim:/q_8_40_tb/Q \
-sim:/q_8_40_tb/C \
-sim:/q_8_40_tb/CA \
-sim:/q_8_40_tb/CAQ \
-sim:/q_8_40_tb/AQ \
-sim:/q_8_40_tb/calc_cntr \
-sim:/q_8_40_tb/load_cntr
-run
-# ** Note: $finish    : C:/Users/czhe/Downloads/digital_design/q_8_40_32b_mult/q_8_40_tb.sv(29)
-#    Time: 2 ns  Iteration: 0  Instance: /q_8_40_tb
-# 1
-# Break in Module q_8_40_tb at C:/Users/czhe/Downloads/digital_design/q_8_40_32b_mult/q_8_40_tb.sv line 29
-vlog -sv -work work +incdir+C:/Users/czhe/Downloads/digital_design/q_8_40_32b_mult C:/Users/czhe/Downloads/digital_design/q_8_40_32b_mult/q_8_40.sv
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 18:14:53 on Dec 31,2019
-# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/czhe/Downloads/digital_design/q_8_40_32b_mult" C:/Users/czhe/Downloads/digital_design/q_8_40_32b_mult/q_8_40.sv 
-# -- Compiling package q_8_40_sv_unit
-# -- Importing package q_8_40_pkg
-# -- Compiling module q_8_40
-# 
-# Top level modules:
-# 	q_8_40
-# End time: 18:14:54 on Dec 31,2019, Elapsed time: 0:00:01
-# Errors: 0, Warnings: 0
-restart
-# Loading work.q_8_40_sv_unit
-# Loading work.q_8_40
-run
-# GetModuleFileName: The specified module could not be found.
-# 
-# 
-# ** Note: $finish    : C:/Users/czhe/Downloads/digital_design/q_8_40_32b_mult/q_8_40_tb.sv(29)
-#    Time: 2 ns  Iteration: 0  Instance: /q_8_40_tb
-# 1
-# Break in Module q_8_40_tb at C:/Users/czhe/Downloads/digital_design/q_8_40_32b_mult/q_8_40_tb.sv line 29
-vlog -sv -work work +incdir+C:/Users/czhe/Downloads/digital_design/q_8_40_32b_mult C:/Users/czhe/Downloads/digital_design/q_8_40_32b_mult/q_8_40.sv
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 18:15:47 on Dec 31,2019
-# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/czhe/Downloads/digital_design/q_8_40_32b_mult" C:/Users/czhe/Downloads/digital_design/q_8_40_32b_mult/q_8_40.sv 
-# -- Compiling package q_8_40_sv_unit
-# -- Importing package q_8_40_pkg
-# -- Compiling module q_8_40
-# 
-# Top level modules:
-# 	q_8_40
-# End time: 18:15:47 on Dec 31,2019, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-vlog -work work C:/Users/czhe/Downloads/digital_design/q_8_40_32b_mult/q_8_40_tb.sv
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 18:15:49 on Dec 31,2019
-# vlog -reportprogress 300 -work work C:/Users/czhe/Downloads/digital_design/q_8_40_32b_mult/q_8_40_tb.sv 
-# -- Compiling package q_8_40_tb_sv_unit
-# -- Importing package q_8_40_pkg
-# -- Compiling module q_8_40_tb
-# 
-# Top level modules:
-# 	q_8_40_tb
-# End time: 18:15:49 on Dec 31,2019, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-vsim work.q_8_40_tb
-# End time: 18:16:04 on Dec 31,2019, Elapsed time: 0:12:02
-# Errors: 0, Warnings: 0
-# vsim work.q_8_40_tb 
-# Start time: 18:16:04 on Dec 31,2019
+# Start time: 10:22:40 on Jan 02,2020
 # Loading sv_std.std
 # Loading work.q_8_40_pkg
 # Loading work.q_8_40_tb_sv_unit
@@ -394,5 +84,623 @@ run
 #    Time: 2 ns  Iteration: 0  Instance: /q_8_40_tb
 # 1
 # Break in Module q_8_40_tb at C:/Users/czhe/Downloads/digital_design/q_8_40_32b_mult/q_8_40_tb.sv line 30
-# End time: 18:17:55 on Dec 31,2019, Elapsed time: 0:01:51
+vlog -sv -work work +incdir+C:/Users/czhe/Downloads/digital_design/q_8_40_32b_mult C:/Users/czhe/Downloads/digital_design/q_8_40_32b_mult/q_8_40.sv
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 10:28:18 on Jan 02,2020
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/czhe/Downloads/digital_design/q_8_40_32b_mult" C:/Users/czhe/Downloads/digital_design/q_8_40_32b_mult/q_8_40.sv 
+# -- Compiling package q_8_40_sv_unit
+# -- Importing package q_8_40_pkg
+# -- Compiling module q_8_40
+# 
+# Top level modules:
+# 	q_8_40
+# End time: 10:28:18 on Jan 02,2020, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+restart
+# Loading work.q_8_40_sv_unit
+# Loading work.q_8_40
+run
+# GetModuleFileName: The specified module could not be found.
+# 
+# 
+# ** Note: $finish    : C:/Users/czhe/Downloads/digital_design/q_8_40_32b_mult/q_8_40_tb.sv(30)
+#    Time: 2 ns  Iteration: 0  Instance: /q_8_40_tb
+# 1
+# Break in Module q_8_40_tb at C:/Users/czhe/Downloads/digital_design/q_8_40_32b_mult/q_8_40_tb.sv line 30
+vlog -sv -work work +incdir+C:/Users/czhe/Downloads/digital_design/q_8_40_32b_mult C:/Users/czhe/Downloads/digital_design/q_8_40_32b_mult/q_8_40.sv
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 10:31:38 on Jan 02,2020
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/czhe/Downloads/digital_design/q_8_40_32b_mult" C:/Users/czhe/Downloads/digital_design/q_8_40_32b_mult/q_8_40.sv 
+# -- Compiling package q_8_40_sv_unit
+# -- Importing package q_8_40_pkg
+# -- Compiling module q_8_40
+# 
+# Top level modules:
+# 	q_8_40
+# End time: 10:31:38 on Jan 02,2020, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+restart
+# Loading work.q_8_40_sv_unit
+# Loading work.q_8_40
+run
+# GetModuleFileName: The specified module could not be found.
+# 
+# 
+# ** Note: $finish    : C:/Users/czhe/Downloads/digital_design/q_8_40_32b_mult/q_8_40_tb.sv(30)
+#    Time: 2 ns  Iteration: 0  Instance: /q_8_40_tb
+# 1
+# Break in Module q_8_40_tb at C:/Users/czhe/Downloads/digital_design/q_8_40_32b_mult/q_8_40_tb.sv line 30
+vlog -sv -work work +incdir+C:/Users/czhe/Downloads/digital_design/q_8_40_32b_mult C:/Users/czhe/Downloads/digital_design/q_8_40_32b_mult/q_8_40.sv
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 10:32:07 on Jan 02,2020
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/czhe/Downloads/digital_design/q_8_40_32b_mult" C:/Users/czhe/Downloads/digital_design/q_8_40_32b_mult/q_8_40.sv 
+# -- Compiling package q_8_40_sv_unit
+# -- Importing package q_8_40_pkg
+# -- Compiling module q_8_40
+# 
+# Top level modules:
+# 	q_8_40
+# End time: 10:32:07 on Jan 02,2020, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vlog -sv -work work +incdir+C:/Users/czhe/Downloads/digital_design/q_8_40_32b_mult C:/Users/czhe/Downloads/digital_design/q_8_40_32b_mult/q_8_40.sv
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 10:33:48 on Jan 02,2020
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/czhe/Downloads/digital_design/q_8_40_32b_mult" C:/Users/czhe/Downloads/digital_design/q_8_40_32b_mult/q_8_40.sv 
+# -- Compiling package q_8_40_sv_unit
+# -- Importing package q_8_40_pkg
+# -- Compiling module q_8_40
+# 
+# Top level modules:
+# 	q_8_40
+# End time: 10:33:49 on Jan 02,2020, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+restart
+# Loading work.q_8_40_sv_unit
+# Loading work.q_8_40
+run
+# GetModuleFileName: The specified module could not be found.
+# 
+# 
+# ** Note: $finish    : C:/Users/czhe/Downloads/digital_design/q_8_40_32b_mult/q_8_40_tb.sv(30)
+#    Time: 2 ns  Iteration: 0  Instance: /q_8_40_tb
+# 1
+# Break in Module q_8_40_tb at C:/Users/czhe/Downloads/digital_design/q_8_40_32b_mult/q_8_40_tb.sv line 30
+vlog -sv -work work +incdir+C:/Users/czhe/Downloads/digital_design/q_8_40_32b_mult C:/Users/czhe/Downloads/digital_design/q_8_40_32b_mult/q_8_40.sv
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 10:34:21 on Jan 02,2020
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/czhe/Downloads/digital_design/q_8_40_32b_mult" C:/Users/czhe/Downloads/digital_design/q_8_40_32b_mult/q_8_40.sv 
+# -- Compiling package q_8_40_sv_unit
+# -- Importing package q_8_40_pkg
+# -- Compiling module q_8_40
+# 
+# Top level modules:
+# 	q_8_40
+# End time: 10:34:21 on Jan 02,2020, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+restart
+# Loading work.q_8_40_sv_unit
+# Loading work.q_8_40
+run
+# GetModuleFileName: The specified module could not be found.
+# 
+# 
+# ** Note: $finish    : C:/Users/czhe/Downloads/digital_design/q_8_40_32b_mult/q_8_40_tb.sv(30)
+#    Time: 2 ns  Iteration: 0  Instance: /q_8_40_tb
+# 1
+# Break in Module q_8_40_tb at C:/Users/czhe/Downloads/digital_design/q_8_40_32b_mult/q_8_40_tb.sv line 30
+vlog -sv -work work +incdir+C:/Users/czhe/Downloads/digital_design/q_8_40_32b_mult C:/Users/czhe/Downloads/digital_design/q_8_40_32b_mult/q_8_40.sv
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 10:35:00 on Jan 02,2020
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/czhe/Downloads/digital_design/q_8_40_32b_mult" C:/Users/czhe/Downloads/digital_design/q_8_40_32b_mult/q_8_40.sv 
+# -- Compiling package q_8_40_sv_unit
+# -- Importing package q_8_40_pkg
+# -- Compiling module q_8_40
+# 
+# Top level modules:
+# 	q_8_40
+# End time: 10:35:01 on Jan 02,2020, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+restart
+# Loading work.q_8_40_sv_unit
+# Loading work.q_8_40
+run
+# GetModuleFileName: The specified module could not be found.
+# 
+# 
+# ** Note: $finish    : C:/Users/czhe/Downloads/digital_design/q_8_40_32b_mult/q_8_40_tb.sv(30)
+#    Time: 2 ns  Iteration: 0  Instance: /q_8_40_tb
+# 1
+# Break in Module q_8_40_tb at C:/Users/czhe/Downloads/digital_design/q_8_40_32b_mult/q_8_40_tb.sv line 30
+vlog -sv -work work +incdir+C:/Users/czhe/Downloads/digital_design/q_8_40_32b_mult C:/Users/czhe/Downloads/digital_design/q_8_40_32b_mult/q_8_40.sv
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 10:37:51 on Jan 02,2020
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/czhe/Downloads/digital_design/q_8_40_32b_mult" C:/Users/czhe/Downloads/digital_design/q_8_40_32b_mult/q_8_40.sv 
+# -- Compiling package q_8_40_sv_unit
+# -- Importing package q_8_40_pkg
+# -- Compiling module q_8_40
+# 
+# Top level modules:
+# 	q_8_40
+# End time: 10:37:51 on Jan 02,2020, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+restart
+# Loading work.q_8_40_sv_unit
+# Loading work.q_8_40
+run
+# GetModuleFileName: The specified module could not be found.
+# 
+# 
+# ** Note: $finish    : C:/Users/czhe/Downloads/digital_design/q_8_40_32b_mult/q_8_40_tb.sv(30)
+#    Time: 2 ns  Iteration: 0  Instance: /q_8_40_tb
+# 1
+# Break in Module q_8_40_tb at C:/Users/czhe/Downloads/digital_design/q_8_40_32b_mult/q_8_40_tb.sv line 30
+vlog -sv -work work +incdir+C:/Users/czhe/Downloads/digital_design/q_8_40_32b_mult C:/Users/czhe/Downloads/digital_design/q_8_40_32b_mult/q_8_40.sv
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 10:42:05 on Jan 02,2020
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/czhe/Downloads/digital_design/q_8_40_32b_mult" C:/Users/czhe/Downloads/digital_design/q_8_40_32b_mult/q_8_40.sv 
+# -- Compiling package q_8_40_sv_unit
+# -- Importing package q_8_40_pkg
+# -- Compiling module q_8_40
+# 
+# Top level modules:
+# 	q_8_40
+# End time: 10:42:06 on Jan 02,2020, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+restart
+# Loading work.q_8_40_sv_unit
+# Loading work.q_8_40
+run
+# GetModuleFileName: The specified module could not be found.
+# 
+# 
+# ** Note: $finish    : C:/Users/czhe/Downloads/digital_design/q_8_40_32b_mult/q_8_40_tb.sv(30)
+#    Time: 2 ns  Iteration: 0  Instance: /q_8_40_tb
+# 1
+# Break in Module q_8_40_tb at C:/Users/czhe/Downloads/digital_design/q_8_40_32b_mult/q_8_40_tb.sv line 30
+vlog -sv -work work +incdir+C:/Users/czhe/Downloads/digital_design/q_8_40_32b_mult C:/Users/czhe/Downloads/digital_design/q_8_40_32b_mult/q_8_40.sv
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 10:42:48 on Jan 02,2020
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/czhe/Downloads/digital_design/q_8_40_32b_mult" C:/Users/czhe/Downloads/digital_design/q_8_40_32b_mult/q_8_40.sv 
+# -- Compiling package q_8_40_sv_unit
+# -- Importing package q_8_40_pkg
+# -- Compiling module q_8_40
+# 
+# Top level modules:
+# 	q_8_40
+# End time: 10:42:48 on Jan 02,2020, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vlog -work work C:/Users/czhe/Downloads/digital_design/q_8_40_32b_mult/q_8_40_tb.sv
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 10:42:52 on Jan 02,2020
+# vlog -reportprogress 300 -work work C:/Users/czhe/Downloads/digital_design/q_8_40_32b_mult/q_8_40_tb.sv 
+# -- Compiling package q_8_40_tb_sv_unit
+# -- Importing package q_8_40_pkg
+# -- Compiling module q_8_40_tb
+# 
+# Top level modules:
+# 	q_8_40_tb
+# End time: 10:42:52 on Jan 02,2020, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+restart
+# Loading work.q_8_40_tb_sv_unit
+# Loading work.q_8_40_tb
+# Loading work.q_8_40_sv_unit
+# Loading work.q_8_40
+run
+# GetModuleFileName: The specified module could not be found.
+# 
+# 
+# ** Note: $finish    : C:/Users/czhe/Downloads/digital_design/q_8_40_32b_mult/q_8_40_tb.sv(30)
+#    Time: 2 ns  Iteration: 0  Instance: /q_8_40_tb
+# 1
+# Break in Module q_8_40_tb at C:/Users/czhe/Downloads/digital_design/q_8_40_32b_mult/q_8_40_tb.sv line 30
+vlog -sv -work work +incdir+C:/Users/czhe/Downloads/digital_design/q_8_40_32b_mult C:/Users/czhe/Downloads/digital_design/q_8_40_32b_mult/q_8_40.sv
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 11:05:18 on Jan 02,2020
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/czhe/Downloads/digital_design/q_8_40_32b_mult" C:/Users/czhe/Downloads/digital_design/q_8_40_32b_mult/q_8_40.sv 
+# -- Compiling package q_8_40_sv_unit
+# -- Importing package q_8_40_pkg
+# -- Compiling module q_8_40
+# 
+# Top level modules:
+# 	q_8_40
+# End time: 11:05:18 on Jan 02,2020, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vlog -work work C:/Users/czhe/Downloads/digital_design/q_8_40_32b_mult/q_8_40_tb.sv
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 11:05:23 on Jan 02,2020
+# vlog -reportprogress 300 -work work C:/Users/czhe/Downloads/digital_design/q_8_40_32b_mult/q_8_40_tb.sv 
+# -- Compiling package q_8_40_tb_sv_unit
+# -- Importing package q_8_40_pkg
+# -- Compiling module q_8_40_tb
+# 
+# Top level modules:
+# 	q_8_40_tb
+# End time: 11:05:23 on Jan 02,2020, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vsim work.q_8_40_tb
+# End time: 11:05:32 on Jan 02,2020, Elapsed time: 0:42:52
+# Errors: 0, Warnings: 0
+# vsim work.q_8_40_tb 
+# Start time: 11:05:32 on Jan 02,2020
+# Loading sv_std.std
+# Loading work.q_8_40_pkg
+# Loading work.q_8_40_tb_sv_unit
+# Loading work.q_8_40_tb
+# Loading work.q_8_40_sv_unit
+# Loading work.q_8_40
+add wave -position insertpoint  \
+sim:/q_8_40_tb/rst_b \
+sim:/q_8_40_tb/clk \
+sim:/q_8_40_tb/start \
+sim:/q_8_40_tb/M \
+sim:/q_8_40_tb/rdy \
+sim:/q_8_40_tb/sending_output \
+sim:/q_8_40_tb/P \
+sim:/q_8_40_tb/state \
+sim:/q_8_40_tb/run \
+sim:/q_8_40_tb/init_regs \
+sim:/q_8_40_tb/calc_done \
+sim:/q_8_40_tb/output_done \
+sim:/q_8_40_tb/load_bus \
+sim:/q_8_40_tb/load_done \
+sim:/q_8_40_tb/send_output \
+sim:/q_8_40_tb/A \
+sim:/q_8_40_tb/B \
+sim:/q_8_40_tb/Q \
+sim:/q_8_40_tb/C \
+sim:/q_8_40_tb/Q0 \
+sim:/q_8_40_tb/CA \
+sim:/q_8_40_tb/CAQ \
+sim:/q_8_40_tb/AQ \
+sim:/q_8_40_tb/calc_cntr \
+sim:/q_8_40_tb/load_cntr
+# Can't move the Now cursor.
+# Can't move the Now cursor.
+run
+# ** Note: $finish    : C:/Users/czhe/Downloads/digital_design/q_8_40_32b_mult/q_8_40_tb.sv(31)
+#    Time: 2 ns  Iteration: 0  Instance: /q_8_40_tb
+# 1
+# Break in Module q_8_40_tb at C:/Users/czhe/Downloads/digital_design/q_8_40_32b_mult/q_8_40_tb.sv line 31
+vlog -work work C:/Users/czhe/Downloads/digital_design/q_8_40_32b_mult/q_8_40_tb.sv
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 11:14:50 on Jan 02,2020
+# vlog -reportprogress 300 -work work C:/Users/czhe/Downloads/digital_design/q_8_40_32b_mult/q_8_40_tb.sv 
+# -- Compiling package q_8_40_tb_sv_unit
+# -- Importing package q_8_40_pkg
+# -- Compiling module q_8_40_tb
+# 
+# Top level modules:
+# 	q_8_40_tb
+# End time: 11:14:50 on Jan 02,2020, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vlog -sv -work work +incdir+C:/Users/czhe/Downloads/digital_design/q_8_40_32b_mult C:/Users/czhe/Downloads/digital_design/q_8_40_32b_mult/q_8_40.sv
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 11:14:52 on Jan 02,2020
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/czhe/Downloads/digital_design/q_8_40_32b_mult" C:/Users/czhe/Downloads/digital_design/q_8_40_32b_mult/q_8_40.sv 
+# -- Compiling package q_8_40_sv_unit
+# -- Importing package q_8_40_pkg
+# -- Compiling module q_8_40
+# 
+# Top level modules:
+# 	q_8_40
+# End time: 11:14:53 on Jan 02,2020, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+vsim work.q_8_40_tb
+# End time: 11:15:08 on Jan 02,2020, Elapsed time: 0:09:36
+# Errors: 2, Warnings: 0
+# vsim work.q_8_40_tb 
+# Start time: 11:15:08 on Jan 02,2020
+# Loading sv_std.std
+# Loading work.q_8_40_pkg
+# Loading work.q_8_40_tb_sv_unit
+# Loading work.q_8_40_tb
+# Loading work.q_8_40_sv_unit
+# Loading work.q_8_40
+add wave -position insertpoint  \
+sim:/q_8_40_tb/rst_b \
+sim:/q_8_40_tb/clk \
+sim:/q_8_40_tb/start \
+sim:/q_8_40_tb/M \
+sim:/q_8_40_tb/rdy \
+sim:/q_8_40_tb/send_output \
+sim:/q_8_40_tb/P \
+sim:/q_8_40_tb/state \
+sim:/q_8_40_tb/run \
+sim:/q_8_40_tb/init_regs \
+sim:/q_8_40_tb/calc_done \
+sim:/q_8_40_tb/output_done \
+sim:/q_8_40_tb/load_bus \
+sim:/q_8_40_tb/load_done \
+sim:/q_8_40_tb/A \
+sim:/q_8_40_tb/B \
+sim:/q_8_40_tb/Q \
+sim:/q_8_40_tb/C \
+sim:/q_8_40_tb/Q0 \
+sim:/q_8_40_tb/CA \
+sim:/q_8_40_tb/CAQ \
+sim:/q_8_40_tb/AQ \
+sim:/q_8_40_tb/calc_cntr \
+sim:/q_8_40_tb/load_cntr
+run
+# ** Note: $finish    : C:/Users/czhe/Downloads/digital_design/q_8_40_32b_mult/q_8_40_tb.sv(30)
+#    Time: 2 ns  Iteration: 0  Instance: /q_8_40_tb
+# 1
+# Break in Module q_8_40_tb at C:/Users/czhe/Downloads/digital_design/q_8_40_32b_mult/q_8_40_tb.sv line 30
+vlog -work work C:/Users/czhe/Downloads/digital_design/q_8_40_32b_mult/q_8_40_tb.sv
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 11:36:57 on Jan 02,2020
+# vlog -reportprogress 300 -work work C:/Users/czhe/Downloads/digital_design/q_8_40_32b_mult/q_8_40_tb.sv 
+# -- Compiling package q_8_40_tb_sv_unit
+# -- Importing package q_8_40_pkg
+# -- Compiling module q_8_40_tb
+# 
+# Top level modules:
+# 	q_8_40_tb
+# End time: 11:36:57 on Jan 02,2020, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+restart
+# Loading work.q_8_40_tb_sv_unit
+# Loading work.q_8_40_tb
+run
+# GetModuleFileName: The specified module could not be found.
+# 
+# 
+# ** Note: $finish    : C:/Users/czhe/Downloads/digital_design/q_8_40_32b_mult/q_8_40_tb.sv(30)
+#    Time: 2 ns  Iteration: 0  Instance: /q_8_40_tb
+# 1
+# Break in Module q_8_40_tb at C:/Users/czhe/Downloads/digital_design/q_8_40_32b_mult/q_8_40_tb.sv line 30
+vlog -work work C:/Users/czhe/Downloads/digital_design/q_8_40_32b_mult/q_8_40_tb.sv
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 11:38:11 on Jan 02,2020
+# vlog -reportprogress 300 -work work C:/Users/czhe/Downloads/digital_design/q_8_40_32b_mult/q_8_40_tb.sv 
+# -- Compiling package q_8_40_tb_sv_unit
+# -- Importing package q_8_40_pkg
+# -- Compiling module q_8_40_tb
+# 
+# Top level modules:
+# 	q_8_40_tb
+# End time: 11:38:11 on Jan 02,2020, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vlog -sv -work work +incdir+C:/Users/czhe/Downloads/digital_design/q_8_40_32b_mult C:/Users/czhe/Downloads/digital_design/q_8_40_32b_mult/q_8_40.sv
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 11:38:12 on Jan 02,2020
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/czhe/Downloads/digital_design/q_8_40_32b_mult" C:/Users/czhe/Downloads/digital_design/q_8_40_32b_mult/q_8_40.sv 
+# -- Compiling package q_8_40_sv_unit
+# -- Importing package q_8_40_pkg
+# -- Compiling module q_8_40
+# 
+# Top level modules:
+# 	q_8_40
+# End time: 11:38:13 on Jan 02,2020, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+vlog -work work C:/Users/czhe/Downloads/digital_design/q_8_40_32b_mult/q_8_40_tb.sv
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 11:38:14 on Jan 02,2020
+# vlog -reportprogress 300 -work work C:/Users/czhe/Downloads/digital_design/q_8_40_32b_mult/q_8_40_tb.sv 
+# -- Compiling package q_8_40_tb_sv_unit
+# -- Importing package q_8_40_pkg
+# -- Compiling module q_8_40_tb
+# 
+# Top level modules:
+# 	q_8_40_tb
+# End time: 11:38:14 on Jan 02,2020, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+restart
+# Loading work.q_8_40_tb_sv_unit
+# Loading work.q_8_40_tb
+# Loading work.q_8_40_sv_unit
+# Loading work.q_8_40
+run
+# GetModuleFileName: The specified module could not be found.
+# 
+# 
+# ** Note: $finish    : C:/Users/czhe/Downloads/digital_design/q_8_40_32b_mult/q_8_40_tb.sv(30)
+#    Time: 2 ns  Iteration: 0  Instance: /q_8_40_tb
+# 1
+# Break in Module q_8_40_tb at C:/Users/czhe/Downloads/digital_design/q_8_40_32b_mult/q_8_40_tb.sv line 30
+vlog -work work C:/Users/czhe/Downloads/digital_design/q_8_40_32b_mult/q_8_40_tb.sv
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 11:39:39 on Jan 02,2020
+# vlog -reportprogress 300 -work work C:/Users/czhe/Downloads/digital_design/q_8_40_32b_mult/q_8_40_tb.sv 
+# -- Compiling package q_8_40_tb_sv_unit
+# -- Importing package q_8_40_pkg
+# -- Compiling module q_8_40_tb
+# 
+# Top level modules:
+# 	q_8_40_tb
+# End time: 11:39:39 on Jan 02,2020, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+restart
+# Loading work.q_8_40_tb_sv_unit
+# Loading work.q_8_40_tb
+run
+# GetModuleFileName: The specified module could not be found.
+# 
+# 
+# ** Note: $finish    : C:/Users/czhe/Downloads/digital_design/q_8_40_32b_mult/q_8_40_tb.sv(30)
+#    Time: 2 ns  Iteration: 0  Instance: /q_8_40_tb
+# 1
+# Break in Module q_8_40_tb at C:/Users/czhe/Downloads/digital_design/q_8_40_32b_mult/q_8_40_tb.sv line 30
+vlog -work work C:/Users/czhe/Downloads/digital_design/q_8_40_32b_mult/q_8_40_tb.sv
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 11:40:35 on Jan 02,2020
+# vlog -reportprogress 300 -work work C:/Users/czhe/Downloads/digital_design/q_8_40_32b_mult/q_8_40_tb.sv 
+# -- Compiling package q_8_40_tb_sv_unit
+# -- Importing package q_8_40_pkg
+# -- Compiling module q_8_40_tb
+# 
+# Top level modules:
+# 	q_8_40_tb
+# End time: 11:40:35 on Jan 02,2020, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+restart
+# Loading work.q_8_40_tb_sv_unit
+# Loading work.q_8_40_tb
+run
+# GetModuleFileName: The specified module could not be found.
+# 
+# 
+# ** Note: $finish    : C:/Users/czhe/Downloads/digital_design/q_8_40_32b_mult/q_8_40_tb.sv(30)
+#    Time: 2 ns  Iteration: 0  Instance: /q_8_40_tb
+# 1
+# Break in Module q_8_40_tb at C:/Users/czhe/Downloads/digital_design/q_8_40_32b_mult/q_8_40_tb.sv line 30
+vlog -sv -work work +incdir+C:/Users/czhe/Downloads/digital_design/q_8_40_32b_mult C:/Users/czhe/Downloads/digital_design/q_8_40_32b_mult/q_8_40.sv
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 11:41:59 on Jan 02,2020
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/czhe/Downloads/digital_design/q_8_40_32b_mult" C:/Users/czhe/Downloads/digital_design/q_8_40_32b_mult/q_8_40.sv 
+# -- Compiling package q_8_40_sv_unit
+# -- Importing package q_8_40_pkg
+# -- Compiling module q_8_40
+# 
+# Top level modules:
+# 	q_8_40
+# End time: 11:41:59 on Jan 02,2020, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vlog -sv -work work +incdir+C:/Users/czhe/Downloads/digital_design/q_8_40_32b_mult C:/Users/czhe/Downloads/digital_design/q_8_40_32b_mult/q_8_40_pkg.sv
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 11:41:59 on Jan 02,2020
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/czhe/Downloads/digital_design/q_8_40_32b_mult" C:/Users/czhe/Downloads/digital_design/q_8_40_32b_mult/q_8_40_pkg.sv 
+# -- Compiling package q_8_40_pkg
+# 
+# Top level modules:
+# 	--none--
+# End time: 11:42:00 on Jan 02,2020, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+vlog -work work C:/Users/czhe/Downloads/digital_design/q_8_40_32b_mult/q_8_40_tb.sv
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 11:42:00 on Jan 02,2020
+# vlog -reportprogress 300 -work work C:/Users/czhe/Downloads/digital_design/q_8_40_32b_mult/q_8_40_tb.sv 
+# -- Compiling package q_8_40_tb_sv_unit
+# -- Importing package q_8_40_pkg
+# -- Compiling module q_8_40_tb
+# 
+# Top level modules:
+# 	q_8_40_tb
+# End time: 11:42:00 on Jan 02,2020, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+restart
+# Loading work.q_8_40_pkg
+# Loading work.q_8_40_tb_sv_unit
+# Loading work.q_8_40_tb
+# ** Error: (vsim-13) Recompile work.q_8_40_sv_unit because work.q_8_40_pkg has changed.
+# ** Error (suppressible): (vsim-12) Recompile work.q_8_40 after work.q_8_40_sv_unit is recompiled.
+# ** Error: (vsim-13) Recompile work.q_8_40 because work.q_8_40_pkg has changed.
+vlog -sv -work work +incdir+C:/Users/czhe/Downloads/digital_design/q_8_40_32b_mult C:/Users/czhe/Downloads/digital_design/q_8_40_32b_mult/q_8_40.sv
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 11:42:16 on Jan 02,2020
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/czhe/Downloads/digital_design/q_8_40_32b_mult" C:/Users/czhe/Downloads/digital_design/q_8_40_32b_mult/q_8_40.sv 
+# -- Compiling package q_8_40_sv_unit
+# -- Importing package q_8_40_pkg
+# -- Compiling module q_8_40
+# 
+# Top level modules:
+# 	q_8_40
+# End time: 11:42:17 on Jan 02,2020, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+vlog -work work C:/Users/czhe/Downloads/digital_design/q_8_40_32b_mult/q_8_40_tb.sv
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 11:42:22 on Jan 02,2020
+# vlog -reportprogress 300 -work work C:/Users/czhe/Downloads/digital_design/q_8_40_32b_mult/q_8_40_tb.sv 
+# -- Compiling package q_8_40_tb_sv_unit
+# -- Importing package q_8_40_pkg
+# -- Compiling module q_8_40_tb
+# 
+# Top level modules:
+# 	q_8_40_tb
+# End time: 11:42:22 on Jan 02,2020, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vsim work.q_8_40_tb
+# vsim work.q_8_40_tb 
+# Start time: 11:15:08 on Jan 02,2020
+# Error loading design
+# End time: 11:42:25 on Jan 02,2020, Elapsed time: 0:27:17
+# Errors: 3, Warnings: 0
+vlog -sv -work work +incdir+C:/Users/czhe/Downloads/digital_design/q_8_40_32b_mult C:/Users/czhe/Downloads/digital_design/q_8_40_32b_mult/q_8_40.sv
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 11:42:55 on Jan 02,2020
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/czhe/Downloads/digital_design/q_8_40_32b_mult" C:/Users/czhe/Downloads/digital_design/q_8_40_32b_mult/q_8_40.sv 
+# -- Compiling package q_8_40_sv_unit
+# -- Importing package q_8_40_pkg
+# -- Compiling module q_8_40
+# 
+# Top level modules:
+# 	q_8_40
+# End time: 11:42:55 on Jan 02,2020, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vlog -work work C:/Users/czhe/Downloads/digital_design/q_8_40_32b_mult/q_8_40_tb.sv
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 11:42:58 on Jan 02,2020
+# vlog -reportprogress 300 -work work C:/Users/czhe/Downloads/digital_design/q_8_40_32b_mult/q_8_40_tb.sv 
+# -- Compiling package q_8_40_tb_sv_unit
+# -- Importing package q_8_40_pkg
+# -- Compiling module q_8_40_tb
+# 
+# Top level modules:
+# 	q_8_40_tb
+# End time: 11:42:59 on Jan 02,2020, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+vsim work.q_8_40_tb
+# vsim work.q_8_40_tb 
+# Start time: 11:43:00 on Jan 02,2020
+# Loading sv_std.std
+# Loading work.q_8_40_pkg
+# Loading work.q_8_40_tb_sv_unit
+# Loading work.q_8_40_tb
+# Loading work.q_8_40_sv_unit
+# Loading work.q_8_40
+add wave -position insertpoint  \
+sim:/q_8_40_tb/rst_b \
+sim:/q_8_40_tb/clk \
+sim:/q_8_40_tb/start \
+sim:/q_8_40_tb/M \
+sim:/q_8_40_tb/rdy \
+sim:/q_8_40_tb/send_output \
+sim:/q_8_40_tb/P \
+sim:/q_8_40_tb/state \
+sim:/q_8_40_tb/run \
+sim:/q_8_40_tb/init_regs \
+sim:/q_8_40_tb/calc_done \
+sim:/q_8_40_tb/output_done \
+sim:/q_8_40_tb/load_bus \
+sim:/q_8_40_tb/load_done \
+sim:/q_8_40_tb/A \
+sim:/q_8_40_tb/B \
+sim:/q_8_40_tb/Q \
+sim:/q_8_40_tb/C \
+sim:/q_8_40_tb/Q0 \
+sim:/q_8_40_tb/CA \
+sim:/q_8_40_tb/CAQ \
+sim:/q_8_40_tb/AQ \
+sim:/q_8_40_tb/calc_cntr \
+sim:/q_8_40_tb/load_cntr
+run
+# ** Note: $finish    : C:/Users/czhe/Downloads/digital_design/q_8_40_32b_mult/q_8_40_tb.sv(30)
+#    Time: 2 ns  Iteration: 0  Instance: /q_8_40_tb
+# 1
+# Break in Module q_8_40_tb at C:/Users/czhe/Downloads/digital_design/q_8_40_32b_mult/q_8_40_tb.sv line 30
+vlog -work work C:/Users/czhe/Downloads/digital_design/q_8_40_32b_mult/q_8_40_tb.sv
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 11:44:47 on Jan 02,2020
+# vlog -reportprogress 300 -work work C:/Users/czhe/Downloads/digital_design/q_8_40_32b_mult/q_8_40_tb.sv 
+# -- Compiling package q_8_40_tb_sv_unit
+# -- Importing package q_8_40_pkg
+# -- Compiling module q_8_40_tb
+# 
+# Top level modules:
+# 	q_8_40_tb
+# End time: 11:44:47 on Jan 02,2020, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+restart
+# Loading work.q_8_40_tb_sv_unit
+# Loading work.q_8_40_tb
+run
+# GetModuleFileName: The specified module could not be found.
+# 
+# 
+# ** Note: $finish    : C:/Users/czhe/Downloads/digital_design/q_8_40_32b_mult/q_8_40_tb.sv(30)
+#    Time: 2 ns  Iteration: 0  Instance: /q_8_40_tb
+# 1
+# Break in Module q_8_40_tb at C:/Users/czhe/Downloads/digital_design/q_8_40_32b_mult/q_8_40_tb.sv line 30
+# End time: 11:53:45 on Jan 02,2020, Elapsed time: 0:10:45
 # Errors: 0, Warnings: 0
