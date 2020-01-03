@@ -1,6 +1,6 @@
-import q_8_34a_pkg::*;
+import q_8_42_pkg::*;
 
-module q_8_34c_tb;
+module q_8_42_tb;
     reg rst_b, clk, start;
     reg [data_size-1:0] data_in;
     wire [r2_size-1:0] cnt;
@@ -8,16 +8,17 @@ module q_8_34c_tb;
     integer cnt_ref;
     integer error;
 
-    q_8_34c dut (.*);
+    q_8_42 dut (.*);
 
-    wire [1:0] state = dut.controller.state;
+    wire state = dut.controller.state;
     wire load_regs = dut.controller.load_regs;
-    wire incr_r2 = dut.controller.incr_r2;
-    wire shift = dut.controller.shift;
-    wire E = dut.controller.E;
+    wire incr_and_shift = dut.controller.incr_and_shift;
+    wire shift_only = dut.controller.shift_only;
+    wire msb = dut.controller.msb;
     wire zero = dut.controller.zero;
+    wire [data_size-1:0] r1 = dut.datapath.r1;
 
-    initial #60000 $finish; // tb duration
+    initial #32000 $finish; // tb duration
 
     initial
     begin : clk_and_rsts

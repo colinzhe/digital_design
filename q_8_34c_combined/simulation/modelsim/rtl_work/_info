@@ -7,53 +7,55 @@ z2
 !i10e 25
 !i10f 100
 cModel Technology
-Z0 dC:/Users/czhe/Downloads/digital_design/q_8_34c_combined/simulation/modelsim
+Z0 dC:/Users/home/Downloads/digital_design/q_8_34c_combined/simulation/modelsim
 vq_8_34a
 Z1 DXx6 sv_std 3 std 0 22 AD7iAPLo6nTIKk<N0eo=D3
-Z2 DXx4 work 11 q_8_34a_pkg 0 22 O::n=mYGXT:;]i1TG=8n`0
-DXx4 work 15 q_8_34a_sv_unit 0 22 lWMl_LFJ4:oIKEk_R=MMP0
+Z2 DXx4 work 11 q_8_34a_pkg 0 22 _zaeEg_V4ffPDiUIe_HIO0
+DXx4 work 15 q_8_34a_sv_unit 0 22 hnI`iVO8XoGdP0PA:H3NP0
 Z3 VDg1SIo80bB@j0V0VzS_@n1
 r1
 !s85 0
 31
 !i10b 1
 !s100 4:<XAJoeZ<8d`fEa?=:`<0
-Io`ioPg=B4bbM422J6BYmL3
+Im6jD6XXNkY57b`ThEM<Uk3
 !s105 q_8_34a_sv_unit
 S1
 R0
-Z4 w1577472794
-Z5 8C:/Users/czhe/Downloads/digital_design/q_8_34a_datapath_rtl/q_8_34a.sv
-Z6 FC:/Users/czhe/Downloads/digital_design/q_8_34a_datapath_rtl/q_8_34a.sv
+Z4 w1578064419
+Z5 8C:/Users/home/Downloads/digital_design/q_8_34a_datapath_rtl/q_8_34a.sv
+Z6 FC:/Users/home/Downloads/digital_design/q_8_34a_datapath_rtl/q_8_34a.sv
 L0 3
 Z7 OV;L;10.5b;63
-Z8 !s108 1577481398.000000
-Z9 !s107 C:/Users/czhe/Downloads/digital_design/q_8_34a_datapath_rtl/q_8_34a.sv|
-Z10 !s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/czhe/Downloads/digital_design/q_8_34a_datapath_rtl|C:/Users/czhe/Downloads/digital_design/q_8_34a_datapath_rtl/q_8_34a.sv|
+Z8 !s108 1578086607.000000
+Z9 !s107 C:/Users/home/Downloads/digital_design/q_8_34a_datapath_rtl/q_8_34a.sv|
+Z10 !s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/home/Downloads/digital_design/q_8_34a_datapath_rtl|C:/Users/home/Downloads/digital_design/q_8_34a_datapath_rtl/q_8_34a.sv|
+!s101 -O0
 !i113 1
-Z11 o-sv -work work
-Z12 !s92 -sv -work work +incdir+C:/Users/czhe/Downloads/digital_design/q_8_34a_datapath_rtl
-Z13 tCvgOpt 0
+Z11 o-O0 -sv -work work
+Z12 !s92 -O0 -sv -work work +incdir+C:/Users/home/Downloads/digital_design/q_8_34a_datapath_rtl
+Z13 tDisableOpt 1 CvgOpt 0
 Xq_8_34a_pkg
 R1
-Z14 !s110 1577481398
+Z14 !s110 1578086606
 !i10b 1
-!s100 C3M8KYTio]9<m0OOGWfW]3
-IO::n=mYGXT:;]i1TG=8n`0
-VO::n=mYGXT:;]i1TG=8n`0
+!s100 eB26n@^ON7LTmZz9S[7dS0
+I_zaeEg_V4ffPDiUIe_HIO0
+V_zaeEg_V4ffPDiUIe_HIO0
 S1
 R0
-w1577481388
-8C:/Users/czhe/Downloads/digital_design/q_8_34a_datapath_rtl/q_8_34a_pkg.sv
-FC:/Users/czhe/Downloads/digital_design/q_8_34a_datapath_rtl/q_8_34a_pkg.sv
+R4
+8C:/Users/home/Downloads/digital_design/q_8_34a_datapath_rtl/q_8_34a_pkg.sv
+FC:/Users/home/Downloads/digital_design/q_8_34a_datapath_rtl/q_8_34a_pkg.sv
 L0 1
 R7
 r1
 !s85 0
 31
-R8
-!s107 C:/Users/czhe/Downloads/digital_design/q_8_34a_datapath_rtl/q_8_34a_pkg.sv|
-!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/czhe/Downloads/digital_design/q_8_34a_datapath_rtl|C:/Users/czhe/Downloads/digital_design/q_8_34a_datapath_rtl/q_8_34a_pkg.sv|
+Z15 !s108 1578086606.000000
+!s107 C:/Users/home/Downloads/digital_design/q_8_34a_datapath_rtl/q_8_34a_pkg.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/home/Downloads/digital_design/q_8_34a_datapath_rtl|C:/Users/home/Downloads/digital_design/q_8_34a_datapath_rtl/q_8_34a_pkg.sv|
+!s101 -O0
 !i113 1
 R11
 R12
@@ -61,13 +63,13 @@ R13
 Xq_8_34a_sv_unit
 R1
 R2
-VlWMl_LFJ4:oIKEk_R=MMP0
+VhnI`iVO8XoGdP0PA:H3NP0
 r1
 !s85 0
 31
 !i10b 1
 !s100 EVK?d0QfgfXZYUYB9@YW22
-IlWMl_LFJ4:oIKEk_R=MMP0
+IhnI`iVO8XoGdP0PA:H3NP0
 !i103 1
 S1
 R0
@@ -79,74 +81,77 @@ R7
 R8
 R9
 R10
+!s101 -O0
 !i113 1
 R11
 R12
 R13
 vq_8_34b
 R1
-Z15 DXx4 work 11 q_8_34b_pkg 0 22 NYRBEI=iHgHZ?E6D1haGc3
-DXx4 work 15 q_8_34b_sv_unit 0 22 CdDY]NZR?Q;0?YGbPR0dJ2
+Z16 DXx4 work 11 q_8_34b_pkg 0 22 c@[J?4Ah2H@f5ZIC3Ug_40
+DXx4 work 15 q_8_34b_sv_unit 0 22 kAnM;bWR[d`;_ZQLhA]o^1
 R3
 r1
 !s85 0
 31
 !i10b 1
 !s100 k3eDXS8IYY<Y_PfP@PmT03
-IjN9nXi4k`I@6P[QGT>WOb3
+I@OVBIEIVAYI>2D2MZHbZH2
 !s105 q_8_34b_sv_unit
 S1
 R0
-Z16 w1577472598
-Z17 8C:/Users/czhe/Downloads/digital_design/q_8_34b_cntlr_rtl/q_8_34b.sv
-Z18 FC:/Users/czhe/Downloads/digital_design/q_8_34b_cntlr_rtl/q_8_34b.sv
+R4
+Z17 8C:/Users/home/Downloads/digital_design/q_8_34b_cntlr_rtl/q_8_34b.sv
+Z18 FC:/Users/home/Downloads/digital_design/q_8_34b_cntlr_rtl/q_8_34b.sv
 L0 3
 R7
 R8
-Z19 !s107 C:/Users/czhe/Downloads/digital_design/q_8_34b_cntlr_rtl/q_8_34b.sv|
-Z20 !s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/czhe/Downloads/digital_design/q_8_34b_cntlr_rtl|C:/Users/czhe/Downloads/digital_design/q_8_34b_cntlr_rtl/q_8_34b.sv|
+Z19 !s107 C:/Users/home/Downloads/digital_design/q_8_34b_cntlr_rtl/q_8_34b.sv|
+Z20 !s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/home/Downloads/digital_design/q_8_34b_cntlr_rtl|C:/Users/home/Downloads/digital_design/q_8_34b_cntlr_rtl/q_8_34b.sv|
+!s101 -O0
 !i113 1
 R11
-Z21 !s92 -sv -work work +incdir+C:/Users/czhe/Downloads/digital_design/q_8_34b_cntlr_rtl
+Z21 !s92 -O0 -sv -work work +incdir+C:/Users/home/Downloads/digital_design/q_8_34b_cntlr_rtl
 R13
 Xq_8_34b_pkg
 R1
 R14
 !i10b 1
 !s100 2RmNh5ei672gF;n[Q2N5L2
-INYRBEI=iHgHZ?E6D1haGc3
-VNYRBEI=iHgHZ?E6D1haGc3
+Ic@[J?4Ah2H@f5ZIC3Ug_40
+Vc@[J?4Ah2H@f5ZIC3Ug_40
 S1
 R0
-w1577468887
-8C:/Users/czhe/Downloads/digital_design/q_8_34b_cntlr_rtl/q_8_34b_pkg.sv
-FC:/Users/czhe/Downloads/digital_design/q_8_34b_cntlr_rtl/q_8_34b_pkg.sv
+R4
+8C:/Users/home/Downloads/digital_design/q_8_34b_cntlr_rtl/q_8_34b_pkg.sv
+FC:/Users/home/Downloads/digital_design/q_8_34b_cntlr_rtl/q_8_34b_pkg.sv
 L0 1
 R7
 r1
 !s85 0
 31
-R8
-!s107 C:/Users/czhe/Downloads/digital_design/q_8_34b_cntlr_rtl/q_8_34b_pkg.sv|
-!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/czhe/Downloads/digital_design/q_8_34b_cntlr_rtl|C:/Users/czhe/Downloads/digital_design/q_8_34b_cntlr_rtl/q_8_34b_pkg.sv|
+R15
+!s107 C:/Users/home/Downloads/digital_design/q_8_34b_cntlr_rtl/q_8_34b_pkg.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/home/Downloads/digital_design/q_8_34b_cntlr_rtl|C:/Users/home/Downloads/digital_design/q_8_34b_cntlr_rtl/q_8_34b_pkg.sv|
+!s101 -O0
 !i113 1
 R11
 R21
 R13
 Xq_8_34b_sv_unit
 R1
-R15
-VCdDY]NZR?Q;0?YGbPR0dJ2
+R16
+VkAnM;bWR[d`;_ZQLhA]o^1
 r1
 !s85 0
 31
 !i10b 1
 !s100 PVZig@]lHm3E3@b:kFR0a1
-ICdDY]NZR?Q;0?YGbPR0dJ2
+IkAnM;bWR[d`;_ZQLhA]o^1
 !i103 1
 S1
 R0
-R16
+R4
 R17
 R18
 L0 1
@@ -154,6 +159,7 @@ R7
 R8
 R19
 R20
+!s101 -O0
 !i113 1
 R11
 R21
@@ -161,100 +167,106 @@ R13
 vq_8_34c
 R1
 R2
-R15
-DXx4 work 15 q_8_34c_sv_unit 0 22 8[Wh5GNo`4b><=f_X]h4M3
+R16
+DXx4 work 15 q_8_34c_sv_unit 0 22 B5J5BgiAZ0U:obeY<=c<B3
 R3
 r1
 !s85 0
 31
 !i10b 1
 !s100 ]DlKRO[?U1>ZV8@Qkz3aA0
-IEnIbn4KSJ<e2XfgFeKEDn1
+I0kOh`<_ifBM6;V=eoz[L?2
 !s105 q_8_34c_sv_unit
 S1
 R0
-Z22 w1577479868
-Z23 8C:/Users/czhe/Downloads/digital_design/q_8_34c_combined/q_8_34c.sv
-Z24 FC:/Users/czhe/Downloads/digital_design/q_8_34c_combined/q_8_34c.sv
+R4
+Z22 8C:/Users/home/Downloads/digital_design/q_8_34c_combined/q_8_34c.sv
+Z23 FC:/Users/home/Downloads/digital_design/q_8_34c_combined/q_8_34c.sv
 L0 4
 R7
-Z25 !s108 1577481399.000000
-Z26 !s107 C:/Users/czhe/Downloads/digital_design/q_8_34c_combined/q_8_34c.sv|
-Z27 !s90 -reportprogress|300|-work|work|C:/Users/czhe/Downloads/digital_design/q_8_34c_combined/q_8_34c.sv|
+R8
+Z24 !s107 C:/Users/home/Downloads/digital_design/q_8_34c_combined/q_8_34c.sv|
+Z25 !s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/home/Downloads/digital_design/q_8_34c_combined|C:/Users/home/Downloads/digital_design/q_8_34c_combined/q_8_34c.sv|
+!s101 -O0
 !i113 1
-Z28 o-work work
+R11
+Z26 !s92 -O0 -sv -work work +incdir+C:/Users/home/Downloads/digital_design/q_8_34c_combined
 R13
 Xq_8_34c_sv_unit
 R1
 R2
-R15
-V8[Wh5GNo`4b><=f_X]h4M3
+R16
+VB5J5BgiAZ0U:obeY<=c<B3
 r1
 !s85 0
 31
 !i10b 1
 !s100 B;FOo1eDMfYfAQT2nY?V]0
-I8[Wh5GNo`4b><=f_X]h4M3
+IB5J5BgiAZ0U:obeY<=c<B3
 !i103 1
 S1
 R0
+R4
 R22
 R23
-R24
 L0 1
 R7
+R8
+R24
 R25
-R26
-R27
+!s101 -O0
 !i113 1
-R28
+R11
+R26
 R13
 vq_8_34c_tb
 R1
 R2
-DXx4 work 18 q_8_34c_tb_sv_unit 0 22 1P89jCG1anWf5`^f0C?ke1
+DXx4 work 18 q_8_34c_tb_sv_unit 0 22 YK4>IjYnlGH=Z`W?0Vh@30
 R3
 r1
 !s85 0
 31
 !i10b 1
-!s100 FYgFibo7B`Fnk2H_ogh3O2
-IKAVRYI:>`gZD?=V6UoRP13
+!s100 B0`:]D=G[]4o`9m@F0fHK3
+Ig7i_`c`Uo60fFkFiPQ0iV1
 !s105 q_8_34c_tb_sv_unit
 S1
 R0
-Z29 w1577481288
-Z30 8C:/Users/czhe/Downloads/digital_design/q_8_34c_combined/q_8_34c_tb.sv
-Z31 FC:/Users/czhe/Downloads/digital_design/q_8_34c_combined/q_8_34c_tb.sv
+Z27 w1578086694
+Z28 8C:/Users/home/Downloads/digital_design/q_8_34c_combined/q_8_34c_tb.sv
+Z29 FC:/Users/home/Downloads/digital_design/q_8_34c_combined/q_8_34c_tb.sv
 L0 3
 R7
-R25
-Z32 !s107 C:/Users/czhe/Downloads/digital_design/q_8_34c_combined/q_8_34c_tb.sv|
-Z33 !s90 -reportprogress|300|-work|work|C:/Users/czhe/Downloads/digital_design/q_8_34c_combined/q_8_34c_tb.sv|
+Z30 !s108 1578086699.000000
+Z31 !s107 C:/Users/home/Downloads/digital_design/q_8_34c_combined/q_8_34c_tb.sv|
+Z32 !s90 -reportprogress|300|-O0|-work|work|C:/Users/home/Downloads/digital_design/q_8_34c_combined/q_8_34c_tb.sv|
+Z33 !s101 -O0 -O0
 !i113 1
-R28
+Z34 o-O0 -O0 -work work
 R13
 Xq_8_34c_tb_sv_unit
 R1
 R2
-V1P89jCG1anWf5`^f0C?ke1
+VYK4>IjYnlGH=Z`W?0Vh@30
 r1
 !s85 0
 31
 !i10b 1
 !s100 _z=5S3oeJLMI5Y`2_eP_G0
-I1P89jCG1anWf5`^f0C?ke1
+IYK4>IjYnlGH=Z`W?0Vh@30
 !i103 1
 S1
 R0
+R27
+R28
 R29
-R30
-R31
 L0 1
 R7
-R25
+R30
+R31
 R32
 R33
 !i113 1
-R28
+R34
 R13

@@ -1,0 +1,245 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/Users/home/Downloads/digital_design/q_8_42_count_ones_latency/simulation/modelsim
+vq_8_42
+Z1 DXx6 sv_std 3 std 0 22 AD7iAPLo6nTIKk<N0eo=D3
+Z2 DXx4 work 10 q_8_42_pkg 0 22 lD91[HEdX85Ij3DJQhj^Q2
+DXx4 work 14 q_8_42_sv_unit 0 22 ALIGcPK`]Z[1e3aNN8C373
+Z3 VDg1SIo80bB@j0V0VzS_@n1
+r1
+!s85 0
+31
+!i10b 1
+!s100 SQ<<cJ?8^ma4aPDS_Qd^h1
+IF3>81<gLgBiPHXB`z?Ule0
+!s105 q_8_42_sv_unit
+S1
+R0
+Z4 w1578085268
+Z5 8C:/Users/home/Downloads/digital_design/q_8_42_count_ones_latency/q_8_42.sv
+Z6 FC:/Users/home/Downloads/digital_design/q_8_42_count_ones_latency/q_8_42.sv
+L0 3
+Z7 OV;L;10.5b;63
+Z8 !s108 1578086297.000000
+Z9 !s107 C:/Users/home/Downloads/digital_design/q_8_42_count_ones_latency/q_8_42.sv|
+Z10 !s90 -reportprogress|300|-O0|-sv|-work|work|+incdir+C:/Users/home/Downloads/digital_design/q_8_42_count_ones_latency|C:/Users/home/Downloads/digital_design/q_8_42_count_ones_latency/q_8_42.sv|
+Z11 !s101 -O0 -O0
+!i113 1
+Z12 o-O0 -O0 -sv -work work
+Z13 !s92 -O0 -O0 -sv -work work +incdir+C:/Users/home/Downloads/digital_design/q_8_42_count_ones_latency
+Z14 tDisableOpt 1 CvgOpt 0
+vq_8_42_cntlr
+R1
+R2
+DXx4 work 20 q_8_42_cntlr_sv_unit 0 22 0PDMX]YLZTIioJ>l:1fda1
+R3
+r1
+!s85 0
+31
+!i10b 1
+!s100 ]LXGFjVh[dAGC39`>@dK43
+ID?lBDn5m3[@LQVeeiKZcd1
+!s105 q_8_42_cntlr_sv_unit
+S1
+R0
+Z15 w1578085543
+Z16 8C:/Users/home/Downloads/digital_design/q_8_42_count_ones_latency/q_8_42_cntlr.sv
+Z17 FC:/Users/home/Downloads/digital_design/q_8_42_count_ones_latency/q_8_42_cntlr.sv
+L0 3
+R7
+Z18 !s108 1578086298.000000
+Z19 !s107 C:/Users/home/Downloads/digital_design/q_8_42_count_ones_latency/q_8_42_cntlr.sv|
+Z20 !s90 -reportprogress|300|-O0|-sv|-work|work|+incdir+C:/Users/home/Downloads/digital_design/q_8_42_count_ones_latency|C:/Users/home/Downloads/digital_design/q_8_42_count_ones_latency/q_8_42_cntlr.sv|
+R11
+!i113 1
+R12
+R13
+R14
+Xq_8_42_cntlr_sv_unit
+R1
+R2
+V0PDMX]YLZTIioJ>l:1fda1
+r1
+!s85 0
+31
+!i10b 1
+!s100 i]bXz2@f9TaoMAJ?QgKQB0
+I0PDMX]YLZTIioJ>l:1fda1
+!i103 1
+S1
+R0
+R15
+R16
+R17
+L0 1
+R7
+R18
+R19
+R20
+R11
+!i113 1
+R12
+R13
+R14
+vq_8_42_datapath
+R1
+R2
+DXx4 work 23 q_8_42_datapath_sv_unit 0 22 cZJWQ9Ne4iG_1Q::6[1Fl2
+R3
+r1
+!s85 0
+31
+!i10b 1
+!s100 ?NQQzhImbUhlfKWAZCB[@3
+IEzICzjFj=<8AL3<<XEdjN1
+!s105 q_8_42_datapath_sv_unit
+S1
+R0
+Z21 w1578086289
+Z22 8C:/Users/home/Downloads/digital_design/q_8_42_count_ones_latency/q_8_42_datapath.sv
+Z23 FC:/Users/home/Downloads/digital_design/q_8_42_count_ones_latency/q_8_42_datapath.sv
+L0 3
+R7
+R18
+Z24 !s107 C:/Users/home/Downloads/digital_design/q_8_42_count_ones_latency/q_8_42_datapath.sv|
+Z25 !s90 -reportprogress|300|-O0|-sv|-work|work|+incdir+C:/Users/home/Downloads/digital_design/q_8_42_count_ones_latency|C:/Users/home/Downloads/digital_design/q_8_42_count_ones_latency/q_8_42_datapath.sv|
+R11
+!i113 1
+R12
+R13
+R14
+Xq_8_42_datapath_sv_unit
+R1
+R2
+VcZJWQ9Ne4iG_1Q::6[1Fl2
+r1
+!s85 0
+31
+!i10b 1
+!s100 VFlJ`6NNQ6m_198nKU2lR3
+IcZJWQ9Ne4iG_1Q::6[1Fl2
+!i103 1
+S1
+R0
+R21
+R22
+R23
+L0 1
+R7
+R18
+R24
+R25
+R11
+!i113 1
+R12
+R13
+R14
+Xq_8_42_pkg
+R1
+!s110 1578085605
+!i10b 1
+!s100 XoN2K^2P7LLVo:K>TWzVZ1
+IlD91[HEdX85Ij3DJQhj^Q2
+VlD91[HEdX85Ij3DJQhj^Q2
+S1
+R0
+w1578085415
+8C:/Users/home/Downloads/digital_design/q_8_42_count_ones_latency/q_8_42_pkg.sv
+FC:/Users/home/Downloads/digital_design/q_8_42_count_ones_latency/q_8_42_pkg.sv
+L0 1
+R7
+r1
+!s85 0
+31
+!s108 1578085605.000000
+!s107 C:/Users/home/Downloads/digital_design/q_8_42_count_ones_latency/q_8_42_pkg.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/home/Downloads/digital_design/q_8_42_count_ones_latency|C:/Users/home/Downloads/digital_design/q_8_42_count_ones_latency/q_8_42_pkg.sv|
+!s101 -O0
+!i113 1
+o-O0 -sv -work work
+!s92 -O0 -sv -work work +incdir+C:/Users/home/Downloads/digital_design/q_8_42_count_ones_latency
+R14
+Xq_8_42_sv_unit
+R1
+R2
+VALIGcPK`]Z[1e3aNN8C373
+r1
+!s85 0
+31
+!i10b 1
+!s100 l@SD=jB^JN?dnZ5Mmf1<X0
+IALIGcPK`]Z[1e3aNN8C373
+!i103 1
+S1
+R0
+R4
+R5
+R6
+L0 1
+R7
+R8
+R9
+R10
+R11
+!i113 1
+R12
+R13
+R14
+vq_8_42_tb
+R1
+R2
+DXx4 work 17 q_8_42_tb_sv_unit 0 22 =d>GFecQO0Q:C?9VfO;Z]2
+R3
+r1
+!s85 0
+31
+!i10b 1
+!s100 ZiVoCj^ZinY3>EA_2]A[c2
+Il>ogbin:<DAd8@DKJU7;Q1
+!s105 q_8_42_tb_sv_unit
+S1
+R0
+Z26 w1578086448
+Z27 8C:/Users/home/Downloads/digital_design/q_8_42_count_ones_latency/q_8_42_tb.sv
+Z28 FC:/Users/home/Downloads/digital_design/q_8_42_count_ones_latency/q_8_42_tb.sv
+L0 3
+R7
+Z29 !s108 1578086451.000000
+Z30 !s107 C:/Users/home/Downloads/digital_design/q_8_42_count_ones_latency/q_8_42_tb.sv|
+Z31 !s90 -reportprogress|300|-O0|-work|work|C:/Users/home/Downloads/digital_design/q_8_42_count_ones_latency/q_8_42_tb.sv|
+R11
+!i113 1
+Z32 o-O0 -O0 -work work
+R14
+Xq_8_42_tb_sv_unit
+R1
+R2
+V=d>GFecQO0Q:C?9VfO;Z]2
+r1
+!s85 0
+31
+!i10b 1
+!s100 :6bT0lVZdJ3Y>d_abihhX1
+I=d>GFecQO0Q:C?9VfO;Z]2
+!i103 1
+S1
+R0
+R26
+R27
+R28
+L0 1
+R7
+R29
+R30
+R31
+R11
+!i113 1
+R32
+R14
