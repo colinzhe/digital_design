@@ -1,0 +1,4 @@
+- reset
+- en and load
+- output signals
+- all states covered

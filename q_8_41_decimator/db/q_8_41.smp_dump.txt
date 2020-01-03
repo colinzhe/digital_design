@@ -1,0 +1,7 @@
+
+State Machine - |q_8_41|q_8_41_controller:controller_0|state
+Name state.S_wait state.S_full state.S_1 state.S_idle 
+state.S_idle 0 0 0 0 
+state.S_1 0 0 1 1 
+state.S_full 0 1 0 1 
+state.S_wait 1 0 0 1 

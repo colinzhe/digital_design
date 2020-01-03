@@ -1,0 +1,3 @@
+- clear and load
+- various data_in
+- contents of P1, P0, R0
