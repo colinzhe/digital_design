@@ -1,0 +1,4 @@
+- async reset
+- all state sequences
+- S_22 cycles back to S_1
+- all led outputs
