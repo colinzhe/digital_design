@@ -1,29 +1,38 @@
 import bday_pkg::*;
-
+`define arry_cntr_method
 module bday (
-    input rst_b, clk, start,
+    input rst_b, clk,
+`ifdef state_method
+    input start,
+`endif
     output logic [6:0] led [3:0]
 );
     logic clk_d;
-    logic [25:0] count;
+    logic [25:0] clk_cnt;
     state_t state;
 
-    //clk_divider #(.DIVISOR(50_000_000)) clk_divider_0 (
-    //   .clk_in (clk),
-    //    .clk_out (clk_d)
-    //);
+    always_ff @ (posedge clk, negedge rst_b)
+    begin : clk_divider
+        if (!rst_b)
+        begin
+            clk_cnt <= '0;
+            clk_d = '0;
+        end
+        else
+        begin
+            clk_cnt <= clk_cnt + 1'b1;
+            if (clk_cnt == 10000000)
+            //if (clk_cnt == 2)
+            begin
+                clk_cnt <= '0;
+                clk_d <= !clk_d;
+            end
+        end
+    end : clk_divider
 
-    always @(posedge clk) begin
-       count <= count + 1;
-       if (count == 10000000)
-       begin
-          count <= '0;
-          clk_d <= !clk_d;
-       end
-    end
-
+`ifdef state_method
     always_ff @ (posedge clk_d, negedge rst_b)
-    begin
+    begin : sm
         if (!rst_b)
         begin
             state <= S_idle;
@@ -55,20 +64,53 @@ module bday (
                 S_21 : begin state <= S_1; led[0] = BLANK; led[1] = H; led[2] = A; led[3] = P; end
                 default : state <= S_idle;
             endcase
-    end
-endmodule
-
-module clk_divider #(parameter DIVISOR = 50_000_000) (
-    input clk_in,
-    output logic clk_out
-);
-    reg [27:0] cntr = '0;
-    always_ff @ (posedge clk_in)
+    end : sm
+`elsif arry_cntr_method
+    always_ff @ (posedge clk_d, negedge rst_b)
     begin
-        cntr <= cntr + 1'b1;
-        if (cntr >= (DIVISOR - 1))
-            cntr <= '0;
+        if (!rst_b)
+        begin
+            for (int i = 0; i < 3; i++) led[i] <= '1;
+        end
+        else
+        begin
+            for (int i = 0; i < 3; i++) led[i] <= led[i + 1];
+        end
     end
 
-    assign clk_out = (cntr < DIVISOR/2) ? '0 : '1;
+    logic [cntr_size-1:0] cntr;
+
+    always_ff @ (posedge clk_d, negedge rst_b)
+    begin
+        if (!rst_b)
+        begin
+            cntr <= '0;
+            led[3] <= '1;
+        end
+        else
+        begin
+            led[3] <= msg[cntr];
+            if (cntr < msg_size-1)
+                cntr <= cntr + 1'b1;
+            else
+                cntr <= '0;
+        end
+    end
+`else
+`endif
 endmodule
+
+//module clk_divider #(parameter DIVISOR = 50_000_000) (
+//    input clk_in,
+//    output logic clk_out
+//);
+//    reg [27:0] cntr = '0;
+//    always_ff @ (posedge clk_in)
+//    begin
+//        cntr <= cntr + 1'b1;
+//        if (cntr >= (DIVISOR - 1))
+//            cntr <= '0;
+//    end
+//
+//    assign clk_out = (cntr < DIVISOR/2) ? '0 : '1;
+//endmodule

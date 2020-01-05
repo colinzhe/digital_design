@@ -120,10 +120,6 @@
 					"strict" : false
 				},
 				{
-					"name" : "start",
-					"strict" : false
-				},
-				{
 					"name" : "clk",
 					"strict" : false
 				}

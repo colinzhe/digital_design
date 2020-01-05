@@ -1,4 +1,7 @@
 package bday_pkg;
+    //`define state_method
+    //`define arry_cntr_method
+    //`define rom_method
     typedef enum logic [4:0] {
         S_idle,
         S_1,
@@ -37,4 +40,8 @@ package bday_pkg;
     parameter C = 7'b1000110;
     parameter N = 7'b0101011;
     parameter BLANK = 7'b1111111;
+
+    parameter msg_size = 11;
+    parameter logic [6:0] msg [msg_size] = '{H, A, P, P, Y, BLANK, B, D, A, Y, BLANK};
+    parameter cntr_size = 4;
 endpackage

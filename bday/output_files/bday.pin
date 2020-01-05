@@ -731,7 +731,7 @@ VCCIO3A                      : Y7        : power  :                   : 2.5V    
 RESERVED_INPUT_WITH_WEAK_PULLUP : Y8        :        :                   :         : 3A        :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : Y9        :        :                   :         : 3A        :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : Y10       :        :                   :         : 3B        :                
-start                        : Y11       : input  : 2.5 V             :         : 3B        : Y              
+RESERVED_INPUT_WITH_WEAK_PULLUP : Y11       :        :                   :         : 3B        :                
 GND                          : Y12       : gnd    :                   :         :           :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : Y13       :        :                   :         : 4A        :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : Y14       :        :                   :         : 4A        :                

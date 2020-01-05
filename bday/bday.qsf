@@ -88,7 +88,8 @@ set_location_assignment PIN_AC24 -to led[0][4]
 set_location_assignment PIN_AC23 -to led[0][5]
 set_location_assignment PIN_AC22 -to led[0][6]
 set_location_assignment PIN_AE19 -to rst_b
-set_location_assignment PIN_Y11 -to start
+#set_location_assignment PIN_Y11 -to start
+
 
 
 
