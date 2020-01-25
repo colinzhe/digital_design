@@ -1,5 +1,5 @@
 Archive Project report for ex_8_8_str
-Fri Dec 06 09:48:13 2019
+Sat Jan 25 12:42:53 2020
 Quartus Prime Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
 
 
@@ -35,7 +35,7 @@ refer to the applicable agreement for further details.
 +----------------------------------------------------------------+
 ; Archive Project Summary                                        ;
 +------------------------+---------------------------------------+
-; Archive Project Status ; Successful - Fri Dec 06 09:48:13 2019 ;
+; Archive Project Status ; Successful - Sat Jan 25 12:42:53 2020 ;
 ; Revision Name          ; ex_8_8_str                            ;
 ; Top-level Entity Name  ; controller_elab                       ;
 ; Family                 ; Cyclone V                             ;
@@ -50,20 +50,23 @@ Info: File Set 'Source control' contains:
     Info: Automatically detected source files
 Warning: Hierarchical Platform Designer systems and custom IP components(_hw.tcl and associated files) are not archived by the Quartus Archiver
 Warning: Excluding 'Automatically detected source files' The Quartus Prime software may not be able to automatically locate all project files.
+Info: Parsing: controller_elab.sv
+Info: Parsing: controller.sv
+Info: Parsing: ex_8_8_pkg.sv
 Info: Archive will store files relative to the closest common parent directory
-Info (13213): Using common directory C:/Users/czhe/Downloads/digital_design/ex_8_8_str/
+Info (13213): Using common directory C:/Users/home/Downloads/digital_design/ex_8_8_str/
 Info: ----------------------------------------------------------
 Info: ----------------------------------------------------------
-Info: Generated archive 'C:/Users/czhe/Downloads/digital_design/ex_8_8_str/ex_8_8_str.qar'
+Info: Generated archive 'C:/Users/home/Downloads/digital_design/ex_8_8_str/ex_8_8_str_gnd0_pwr1.qar'
 Info: ----------------------------------------------------------
 Info: ----------------------------------------------------------
 Info: Generated report 'ex_8_8_str.archive.rpt'
 Info (23030): Evaluation of Tcl script c:/intelfpga_lite/18.1/quartus/common/tcl/apps/qpm/qar.tcl was successful
 Info: Quartus Prime Shell was successful. 0 errors, 2 warnings
-    Info: Peak virtual memory: 4872 megabytes
-    Info: Processing ended: Fri Dec 06 09:48:14 2019
-    Info: Elapsed time: 00:00:04
-    Info: Total CPU time (on all processors): 00:00:04
+    Info: Peak virtual memory: 4845 megabytes
+    Info: Processing ended: Sat Jan 25 12:42:53 2020
+    Info: Elapsed time: 00:00:01
+    Info: Total CPU time (on all processors): 00:00:01
 
 
 +--------------------------------------------------------------+

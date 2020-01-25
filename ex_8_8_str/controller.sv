@@ -14,11 +14,11 @@ module controller (
             shift_left = ~dec_out[2],
             load_regs = rdy & start;
 
-    mux_4x1 mux_1 (sel, GND, zero_b, PWR, msb_b, D1_in);
-    mux_4x1 mux_0 (sel, start, GND, PWR, msb, D0_in);
+    mux_4x1 mux_1 (sel, GND0, zero_b, PWR1, msb_b, D1_in);
+    mux_4x1 mux_0 (sel, start, GND0, PWR1, msb, D0_in);
     d_ff dff_1 (rstb, clk, D1_in, G1);
     d_ff dff_0 (rstb, clk, D0_in, G0);
-    dec_2x4 dec_0 (G1, G0, GND, dec_out);
+    dec_2x4 dec_0 (G1, G0, GND0, dec_out);
 endmodule
 
 module d_ff (

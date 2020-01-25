@@ -49,19 +49,19 @@ module controller (
     wire [1:0] sel = {G1, G0};
     logic [0:3] dec_out;
 
-    supply0 GND;
-    supply1 PWR;
+    //supply0 GND0;
+    //supply1 PWR1;
     
     assign  rdy = ~dec_out[0],
             incr_r2 = ~dec_out[1],
             shift_left = ~dec_out[2],
             load_regs = rdy & start;
 
-    mux_4x1 mux_1 (sel, GND, zero_b, PWR, msb_b, D1_in);
-    mux_4x1 mux_0 (sel, start, GND, PWR, msb, D0_in);
+    mux_4x1 mux_1 (sel, GND0, zero_b, PWR1, msb_b, D1_in);
+    mux_4x1 mux_0 (sel, start, GND0, PWR1, msb, D0_in);
     d_ff dff_1 (rstb, clk, D1_in, G1);
     d_ff dff_0 (rstb, clk, D0_in, G0);
-    dec_2x4 dec_0 (G1, G0, GND, dec_out);
+    dec_2x4 dec_0 (G1, G0, GND0, dec_out);
 endmodule
 
 module data_path (
@@ -70,8 +70,8 @@ module data_path (
     output logic [r2_size-1:0] count,
     output logic zero, msb
 );
-    supply0 GND;
-    supply1 PWR;
+    //supply0 GND0;
+    //supply1 PWR1;
 
     `ifdef nopkg
         parameter r1_size = 8, r2_size = 4;
@@ -81,9 +81,9 @@ module data_path (
     assign zero = (r1 == 0);
     wire w1 = r1[r1_size-1] & shift_left;
 
-    shift_reg shift_reg_0 (PWR, clk, data, GND, shift_left, load_regs, r1);
-    counter counter_0 (PWR, clk, load_regs, incr_r2, count);
-    d_ff dff_2 (PWR, clk, w1, msb);
+    shift_reg shift_reg_0 (PWR1, clk, data, GND0, shift_left, load_regs, r1);
+    counter counter_0 (PWR1, clk, load_regs, incr_r2, count);
+    d_ff dff_2 (PWR1, clk, w1, msb);
 endmodule
 
 module shift_reg (

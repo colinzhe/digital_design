@@ -1,0 +1,17 @@
+Quartus Prime Archive log --	C:/Users/home/Downloads/digital_design/ex_8_8_str/ex_8_8_str_gnd0_pwr1.qarlog
+
+Archive:	C:/Users/home/Downloads/digital_design/ex_8_8_str/ex_8_8_str_gnd0_pwr1.qar
+Date:		Sat Jan 25 12:42:53 2020
+Quartus Prime		18.1.0 Build 625 09/12/2018 SJ Lite Edition
+
+	=========== Files Selected: ===========
+C:/Users/home/Downloads/digital_design/ex_8_8_str/controller.sv
+C:/Users/home/Downloads/digital_design/ex_8_8_str/controller_elab.sv
+C:/Users/home/Downloads/digital_design/ex_8_8_str/ex_8_8_pkg.sv
+C:/Users/home/Downloads/digital_design/ex_8_8_str/ex_8_8_str.qpf
+C:/Users/home/Downloads/digital_design/ex_8_8_str/ex_8_8_str.qsf
+c:/intelfpga_lite/18.1/quartus/bin64/assignment_defaults.qdf
+	======= Total: 6 files to archive =======
+
+	================ Status: ===============
+All files archived successfully.
