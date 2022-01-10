@@ -1,0 +1,25 @@
+{
+	"partitions" : [
+		{
+			"name" : "Top",
+			"pins" : [
+				{
+					"name" : "intf.twos_comp",
+					"strict" : false
+				},
+				{
+					"name" : "intf.stream",
+					"strict" : false
+				},
+				{
+					"name" : "intf.rst_b",
+					"strict" : false
+				},
+				{
+					"name" : "intf.clk",
+					"strict" : false
+				}
+			]
+		}
+	]
+}

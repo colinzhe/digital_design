@@ -1,0 +1,113 @@
+# Reading C:/intelFPGA_lite/18.1/modelsim_ase/tcl/vsim/pref.tcl
+# do dv_scratch_pad_run_msim_rtl_verilog.do
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Model Technology ModelSim - Intel FPGA Edition vmap 10.5b Lib Mapping Utility 2016.10 Oct  5 2016
+# vmap work rtl_work 
+# Copying C:/intelFPGA_lite/18.1/modelsim_ase/win32aloem/../modelsim.ini to modelsim.ini
+# Modifying modelsim.ini
+# 
+# vlog -sv -work work +incdir+C:/Users/colin/Downloads/digital_design/refresh/dv_scratch_pad {C:/Users/colin/Downloads/digital_design/refresh/dv_scratch_pad/dv_scratch_pad.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 11:06:43 on Feb 07,2021
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/colin/Downloads/digital_design/refresh/dv_scratch_pad" C:/Users/colin/Downloads/digital_design/refresh/dv_scratch_pad/dv_scratch_pad.sv 
+# -- Compiling module dv_scratch_pad
+# 
+# Top level modules:
+# 	dv_scratch_pad
+# End time: 11:06:43 on Feb 07,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+vlog -reportprogress 300 -work work C:/Users/colin/Downloads/digital_design/refresh/dv_scratch_pad/dv_scratch_pad_tb.sv
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 11:06:49 on Feb 07,2021
+# vlog -reportprogress 300 -work work C:/Users/colin/Downloads/digital_design/refresh/dv_scratch_pad/dv_scratch_pad_tb.sv 
+# -- Compiling package dv_scratch_pad_tb_sv_unit
+# -- Compiling module tb_top
+# 
+# Top level modules:
+# 	tb_top
+# End time: 11:06:49 on Feb 07,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vsim work.tb_top
+# vsim work.tb_top 
+# Start time: 11:07:02 on Feb 07,2021
+# Loading sv_std.std
+# Loading work.dv_scratch_pad_tb_sv_unit
+# Loading work.tb_top
+# ** Error: (vsim-1) Unable to checkout verification license - testbench generation feature (randomize, randcase, randsequence, covergroup) is only supported with QuestaSim.
+#    Time: 0 ps  Iteration: 0  Instance: /tb_top File: C:/Users/colin/Downloads/digital_design/refresh/dv_scratch_pad/dv_scratch_pad_tb.sv
+# Error loading design
+# End time: 11:07:02 on Feb 07,2021, Elapsed time: 0:00:00
+# Errors: 1, Warnings: 0
+vlog -reportprogress 300 -work work C:/Users/colin/Downloads/digital_design/refresh/dv_scratch_pad/dv_scratch_pad_tb.sv
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 11:55:44 on Feb 07,2021
+# vlog -reportprogress 300 -work work C:/Users/colin/Downloads/digital_design/refresh/dv_scratch_pad/dv_scratch_pad_tb.sv 
+# -- Compiling package dv_scratch_pad_tb_sv_unit
+# -- Compiling interface my_if
+# -- Compiling module my_des
+# -- Compiling module tb_top
+# 
+# Top level modules:
+# 	tb_top
+# End time: 11:55:45 on Feb 07,2021, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+vsim work.tb_top
+# vsim work.tb_top 
+# Start time: 11:55:52 on Feb 07,2021
+# Loading sv_std.std
+# Loading work.dv_scratch_pad_tb_sv_unit
+# Loading work.tb_top
+# Loading work.my_if
+# Loading work.my_des
+run
+# [Base] addr=0xbabeface
+# [Child] addr=0xdeadbeef, data=0x12345678
+vlog -reportprogress 300 -work work C:/Users/colin/Downloads/digital_design/refresh/dv_scratch_pad/dv_scratch_pad_tb.sv
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 12:00:22 on Feb 07,2021
+# vlog -reportprogress 300 -work work C:/Users/colin/Downloads/digital_design/refresh/dv_scratch_pad/dv_scratch_pad_tb.sv 
+# -- Compiling package dv_scratch_pad_tb_sv_unit
+# -- Compiling interface my_if
+# -- Compiling module my_des
+# -- Compiling module tb_top
+# 
+# Top level modules:
+# 	tb_top
+# End time: 12:00:22 on Feb 07,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vsim work.tb_top
+# End time: 12:00:27 on Feb 07,2021, Elapsed time: 0:04:35
+# Errors: 0, Warnings: 0
+# vsim work.tb_top 
+# Start time: 12:00:27 on Feb 07,2021
+# Loading sv_std.std
+# Loading work.dv_scratch_pad_tb_sv_unit
+# Loading work.tb_top
+# Loading work.my_if
+# Loading work.my_des
+run
+# [Base] addr=0xbabeface
+# [Child] addr=0xdeadbeef, data=0x12345678
+# [0] push=0x0, full=0x1, pop=0x1, empty=0x1
+# [FAIL] pop when fifo is empty
+# [10] push=0x1, full=0x0, pop=0x1, empty=0x1
+# [PASS] push when fifo not full
+# [FAIL] pop when fifo is empty
+# [30] push=0x1, full=0x1, pop=0x1, empty=0x0
+# [FAIL] push when fifo is full
+# [PASS] pop when fifo is not empty
+# [50] push=0x1, full=0x0, pop=0x0, empty=0x1
+# [PASS] push when fifo not full
+# [70] push=0x1, full=0x1, pop=0x0, empty=0x1
+# [FAIL] push when fifo is full
+# ** Note: $finish    : C:/Users/colin/Downloads/digital_design/refresh/dv_scratch_pad/dv_scratch_pad_tb.sv(214)
+#    Time: 100 ps  Iteration: 0  Instance: /tb_top
+# 1
+# Break in Module tb_top at C:/Users/colin/Downloads/digital_design/refresh/dv_scratch_pad/dv_scratch_pad_tb.sv line 214
+# End time: 12:55:17 on Feb 07,2021, Elapsed time: 0:54:50
+# Errors: 0, Warnings: 0

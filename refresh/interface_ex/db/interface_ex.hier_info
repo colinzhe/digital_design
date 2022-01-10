@@ -1,0 +1,11 @@
+|interface_ex
+busIf.data[0] <> busIf.data[0]~reg0
+busIf.data[1] <> busIf.data[1]~reg0
+busIf.data[2] <> busIf.data[2]~reg0
+busIf.data[3] <> busIf.data[3]~reg0
+busIf.data[4] <> busIf.data[4]~reg0
+busIf.data[5] <> busIf.data[5]~reg0
+busIf.data[6] <> busIf.data[6]~reg0
+busIf.data[7] <> busIf.data[7]~reg0
+
+

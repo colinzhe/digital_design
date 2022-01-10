@@ -1,0 +1,129 @@
+# Reading C:/intelFPGA_lite/18.1/modelsim_ase/tcl/vsim/pref.tcl
+# do three_ones_detector_run_msim_rtl_verilog.do
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Model Technology ModelSim - Intel FPGA Edition vmap 10.5b Lib Mapping Utility 2016.10 Oct  5 2016
+# vmap work rtl_work 
+# Copying C:/intelFPGA_lite/18.1/modelsim_ase/win32aloem/../modelsim.ini to modelsim.ini
+# Modifying modelsim.ini
+# 
+# vlog -sv -work work +incdir+C:/Users/colin/Downloads/digital_design/refresh/three_ones_detector {C:/Users/colin/Downloads/digital_design/refresh/three_ones_detector/three_ones_detector_pkg.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 22:37:40 on Feb 03,2021
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/colin/Downloads/digital_design/refresh/three_ones_detector" C:/Users/colin/Downloads/digital_design/refresh/three_ones_detector/three_ones_detector_pkg.sv 
+# -- Compiling package three_ones_detector_pkg
+# 
+# Top level modules:
+# 	--none--
+# End time: 22:37:40 on Feb 03,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/Users/colin/Downloads/digital_design/refresh/three_ones_detector {C:/Users/colin/Downloads/digital_design/refresh/three_ones_detector/three_ones_detector.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 22:37:40 on Feb 03,2021
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/colin/Downloads/digital_design/refresh/three_ones_detector" C:/Users/colin/Downloads/digital_design/refresh/three_ones_detector/three_ones_detector.sv 
+# -- Compiling package three_ones_detector_sv_unit
+# -- Importing package three_ones_detector_pkg
+# -- Compiling module three_ones_detector
+# 
+# Top level modules:
+# 	three_ones_detector
+# End time: 22:37:40 on Feb 03,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+vlog -reportprogress 300 -work work C:/Users/colin/Downloads/digital_design/refresh/three_ones_detector/three_ones_detector_tb.sv
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 22:37:51 on Feb 03,2021
+# vlog -reportprogress 300 -work work C:/Users/colin/Downloads/digital_design/refresh/three_ones_detector/three_ones_detector_tb.sv 
+# -- Compiling package three_ones_detector_tb_sv_unit
+# -- Importing package three_ones_detector_pkg
+# -- Compiling module three_ones_detector_tb
+# ** Warning: C:/Users/colin/Downloads/digital_design/refresh/three_ones_detector/three_ones_detector_tb.sv(32): (vlog-2240) Treating stand-alone use of function 'randomize' as an implicit VOID cast.
+# 
+# Top level modules:
+# 	three_ones_detector_tb
+# End time: 22:37:51 on Feb 03,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 1
+vsim work.three_ones_detector_tb
+# vsim work.three_ones_detector_tb 
+# Start time: 22:37:58 on Feb 03,2021
+# Loading sv_std.std
+# Loading work.three_ones_detector_pkg
+# Loading work.three_ones_detector_tb_sv_unit
+# Loading work.three_ones_detector_tb
+# Loading work.three_ones_detector_sv_unit
+# Loading work.three_ones_detector
+add wave -position insertpoint  \
+sim:/three_ones_detector_tb/rst_b \
+sim:/three_ones_detector_tb/clk \
+sim:/three_ones_detector_tb/stream \
+sim:/three_ones_detector_tb/bingo \
+sim:/three_ones_detector_tb/state
+# ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
+#           File in use by: colin  Hostname: MSI  ProcessID: 16704
+#           Attempting to use alternate WLF file "./wlftszhsz5".
+# ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
+#           Using alternate file: ./wlftszhsz5
+run
+# ** Fatal: C:/Users/colin/Downloads/digital_design/refresh/three_ones_detector/three_ones_detector_tb.sv(32): Unable to check out verification license for randomize() feature.
+#    Time: 10 ps  Iteration: 0  Process: /three_ones_detector_tb/#INITIAL#26(#ublk#240699218#27) File: C:/Users/colin/Downloads/digital_design/refresh/three_ones_detector/three_ones_detector_tb.sv
+# Fatal error in Module three_ones_detector_tb at C:/Users/colin/Downloads/digital_design/refresh/three_ones_detector/three_ones_detector_tb.sv line 32
+# 
+# HDL call sequence:
+# Stopped at C:/Users/colin/Downloads/digital_design/refresh/three_ones_detector/three_ones_detector_tb.sv 32 Module three_ones_detector_tb
+# 
+vlog -reportprogress 300 -work work C:/Users/colin/Downloads/digital_design/refresh/three_ones_detector/three_ones_detector_tb.sv
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 22:38:32 on Feb 03,2021
+# vlog -reportprogress 300 -work work C:/Users/colin/Downloads/digital_design/refresh/three_ones_detector/three_ones_detector_tb.sv 
+# -- Compiling package three_ones_detector_tb_sv_unit
+# -- Importing package three_ones_detector_pkg
+# -- Compiling module three_ones_detector_tb
+# ** Warning: C:/Users/colin/Downloads/digital_design/refresh/three_ones_detector/three_ones_detector_tb.sv(32): (vlog-2240) Treating stand-alone use of function 'randomize' as an implicit VOID cast.
+# 
+# Top level modules:
+# 	three_ones_detector_tb
+# End time: 22:38:32 on Feb 03,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 1
+vsim work.three_ones_detector_tb
+# End time: 22:38:37 on Feb 03,2021, Elapsed time: 0:00:39
+# Errors: 2, Warnings: 3
+# vsim work.three_ones_detector_tb 
+# Start time: 22:38:37 on Feb 03,2021
+# Loading sv_std.std
+# Loading work.three_ones_detector_pkg
+# Loading work.three_ones_detector_tb_sv_unit
+# Loading work.three_ones_detector_tb
+# Loading work.three_ones_detector_sv_unit
+# Loading work.three_ones_detector
+add wave -position insertpoint  \
+sim:/three_ones_detector_tb/rst_b \
+sim:/three_ones_detector_tb/clk \
+sim:/three_ones_detector_tb/stream \
+sim:/three_ones_detector_tb/bingo \
+sim:/three_ones_detector_tb/state
+# ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
+#           File in use by: colin  Hostname: MSI  ProcessID: 16704
+#           Attempting to use alternate WLF file "./wlft353rsk".
+# ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
+#           Using alternate file: ./wlft353rsk
+run
+# ** Fatal: C:/Users/colin/Downloads/digital_design/refresh/three_ones_detector/three_ones_detector_tb.sv(32): Unable to check out verification license for randomize() feature.
+#    Time: 100 ps  Iteration: 0  Process: /three_ones_detector_tb/#INITIAL#26(#ublk#240699218#27) File: C:/Users/colin/Downloads/digital_design/refresh/three_ones_detector/three_ones_detector_tb.sv
+# Fatal error in Module three_ones_detector_tb at C:/Users/colin/Downloads/digital_design/refresh/three_ones_detector/three_ones_detector_tb.sv line 32
+# 
+# HDL call sequence:
+# Stopped at C:/Users/colin/Downloads/digital_design/refresh/three_ones_detector/three_ones_detector_tb.sv 32 Module three_ones_detector_tb
+# 
+vlog -reportprogress 300 -work work C:/Users/colin/Downloads/digital_design/refresh/three_ones_detector/three_ones_detector_tb.sv
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 22:40:09 on Feb 03,2021
+# vlog -reportprogress 300 -work work C:/Users/colin/Downloads/digital_design/refresh/three_ones_detector/three_ones_detector_tb.sv 
+# ** Error: (vlog-13069) C:/Users/colin/Downloads/digital_design/refresh/three_ones_detector/three_ones_detector_tb.sv(28): near "pkt": syntax error, unexpected IDENTIFIER, expecting #.
+# ** Error: C:/Users/colin/Downloads/digital_design/refresh/three_ones_detector/three_ones_detector_tb.sv(29): (vlog-2730) Undefined variable: 'pkt'.
+# End time: 22:40:09 on Feb 03,2021, Elapsed time: 0:00:00
+# Errors: 2, Warnings: 0
+# End time: 22:48:48 on Feb 03,2021, Elapsed time: 0:10:11
+# Errors: 4, Warnings: 2

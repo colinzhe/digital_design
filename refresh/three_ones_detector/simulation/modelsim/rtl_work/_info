@@ -1,0 +1,134 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/Users/colin/Downloads/digital_design/refresh/three_ones_detector/simulation/modelsim
+vthree_ones_detector
+Z1 DXx6 sv_std 3 std 0 22 AD7iAPLo6nTIKk<N0eo=D3
+Z2 DXx4 work 23 three_ones_detector_pkg 0 22 PWe];FD^a9UK1Ak2DE=h52
+DXx4 work 27 three_ones_detector_sv_unit 0 22 T2SeF4WZ6zP=:5Z^U82;H0
+Z3 VDg1SIo80bB@j0V0VzS_@n1
+r1
+!s85 0
+31
+!i10b 1
+!s100 j=TcRZJfiJJScz?LS:Ikk1
+IWD?Dhj?ERa]AU<3D?B]]@2
+!s105 three_ones_detector_sv_unit
+S1
+R0
+Z4 w1612406218
+Z5 8C:/Users/colin/Downloads/digital_design/refresh/three_ones_detector/three_ones_detector.sv
+Z6 FC:/Users/colin/Downloads/digital_design/refresh/three_ones_detector/three_ones_detector.sv
+L0 3
+Z7 OV;L;10.5b;63
+Z8 !s108 1612409860.000000
+Z9 !s107 C:/Users/colin/Downloads/digital_design/refresh/three_ones_detector/three_ones_detector.sv|
+Z10 !s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/colin/Downloads/digital_design/refresh/three_ones_detector|C:/Users/colin/Downloads/digital_design/refresh/three_ones_detector/three_ones_detector.sv|
+!i113 1
+Z11 o-sv -work work
+Z12 !s92 -sv -work work +incdir+C:/Users/colin/Downloads/digital_design/refresh/three_ones_detector
+Z13 tCvgOpt 0
+Xthree_ones_detector_pkg
+R1
+!s110 1612409860
+!i10b 1
+!s100 @<LTKQK<m1zSJC46eJNEh2
+IPWe];FD^a9UK1Ak2DE=h52
+VPWe];FD^a9UK1Ak2DE=h52
+S1
+R0
+w1612405862
+8C:/Users/colin/Downloads/digital_design/refresh/three_ones_detector/three_ones_detector_pkg.sv
+FC:/Users/colin/Downloads/digital_design/refresh/three_ones_detector/three_ones_detector_pkg.sv
+L0 1
+R7
+r1
+!s85 0
+31
+R8
+!s107 C:/Users/colin/Downloads/digital_design/refresh/three_ones_detector/three_ones_detector_pkg.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/colin/Downloads/digital_design/refresh/three_ones_detector|C:/Users/colin/Downloads/digital_design/refresh/three_ones_detector/three_ones_detector_pkg.sv|
+!i113 1
+R11
+R12
+R13
+Xthree_ones_detector_sv_unit
+R1
+R2
+VT2SeF4WZ6zP=:5Z^U82;H0
+r1
+!s85 0
+31
+!i10b 1
+!s100 5^i]b4f_C:_TJZk1HM<T52
+IT2SeF4WZ6zP=:5Z^U82;H0
+!i103 1
+S1
+R0
+R4
+R5
+R6
+L0 1
+R7
+R8
+R9
+R10
+!i113 1
+R11
+R12
+R13
+vthree_ones_detector_tb
+R1
+R2
+DXx4 work 30 three_ones_detector_tb_sv_unit 0 22 l<0Kdk2X5iUYBPkhRza_g1
+R3
+r1
+!s85 0
+31
+!i10b 1
+!s100 `GUo[KCe=ZOj2faSoKagD2
+I0?=dhNSEDmOh`OWQ]GOIB1
+!s105 three_ones_detector_tb_sv_unit
+S1
+R0
+Z14 w1612409906
+Z15 8C:/Users/colin/Downloads/digital_design/refresh/three_ones_detector/three_ones_detector_tb.sv
+Z16 FC:/Users/colin/Downloads/digital_design/refresh/three_ones_detector/three_ones_detector_tb.sv
+L0 7
+R7
+Z17 !s108 1612409912.000000
+Z18 !s107 C:/Users/colin/Downloads/digital_design/refresh/three_ones_detector/three_ones_detector_tb.sv|
+Z19 !s90 -reportprogress|300|-work|work|C:/Users/colin/Downloads/digital_design/refresh/three_ones_detector/three_ones_detector_tb.sv|
+!i113 1
+Z20 o-work work
+R13
+Xthree_ones_detector_tb_sv_unit
+R1
+R2
+Vl<0Kdk2X5iUYBPkhRza_g1
+r1
+!s85 0
+31
+!i10b 1
+!s100 2K:9e?jZU8oYm_5dKM0Ll2
+Il<0Kdk2X5iUYBPkhRza_g1
+!i103 1
+S1
+R0
+R14
+R15
+R16
+L0 1
+R7
+R17
+R18
+R19
+!i113 1
+R20
+R13

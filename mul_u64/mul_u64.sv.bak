@@ -1,0 +1,23 @@
+// Code your design here
+module mult32(
+  input [31:0] x, y,
+  output [31:0] p
+);
+  assign p = x * y;
+endmodule : mult32
+
+module add32(
+  input [31:0] x, y,
+  output [31:0] s,
+  output c
+);
+  assign {c, s} = x + y;
+endmodule : add32
+
+module add64(
+  input [63:0] x, y,
+  output [63:0] s,
+  output c
+);
+  assign {c, s} = x + y;
+endmodule : add64

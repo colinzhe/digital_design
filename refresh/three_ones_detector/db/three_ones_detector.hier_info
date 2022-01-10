@@ -1,0 +1,10 @@
+|three_ones_detector
+rst_b => state~3.DATAIN
+clk => state~1.DATAIN
+stream => next_state.S_1.DATAB
+stream => next_state.S_2.DATAB
+stream => Selector0.IN1
+stream => state.S_idle.DATAIN
+bingo << bingo.DB_MAX_OUTPUT_PORT_TYPE
+
+

@@ -1,0 +1,83 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/Users/colin/Downloads/digital_design/refresh/interface_ex/simulation/modelsim
+vinterface_ex
+Z1 DXx6 sv_std 3 std 0 22 AD7iAPLo6nTIKk<N0eo=D3
+Z2 !s110 1612648251
+!i10b 1
+!s100 f>XP9lMm25IeG[:3IW_a]0
+I8of@J3=nMZK]KiN00Ne0L0
+Z3 VDg1SIo80bB@j0V0VzS_@n1
+Z4 !s105 interface_ex_sv_unit
+S1
+R0
+Z5 w1612648211
+Z6 8C:/Users/colin/Downloads/digital_design/refresh/interface_ex/interface_ex.sv
+Z7 FC:/Users/colin/Downloads/digital_design/refresh/interface_ex/interface_ex.sv
+L0 10
+Z8 OV;L;10.5b;63
+r1
+!s85 0
+31
+Z9 !s108 1612648251.000000
+Z10 !s107 C:/Users/colin/Downloads/digital_design/refresh/interface_ex/interface_ex.sv|
+Z11 !s90 -reportprogress|300|-work|work|C:/Users/colin/Downloads/digital_design/refresh/interface_ex/interface_ex.sv|
+!i113 1
+Z12 o-work work
+Z13 tCvgOpt 0
+YmyBus
+R1
+R2
+!i10b 1
+!s100 50@6e=Olf4FGYXJVOYz4X3
+IJWE70VEQl3EoJc<LbG5df3
+R3
+R4
+S1
+R0
+R5
+R6
+R7
+L0 1
+R8
+r1
+!s85 0
+31
+R9
+R10
+R11
+!i113 1
+R12
+R13
+nmy@bus
+vtb_top
+R1
+R2
+!i10b 1
+!s100 ]oKgdA8^]m;k`2aI6S8382
+Il=oNCLBQ@;;2k1TjWaSZ^0
+R3
+R4
+S1
+R0
+R5
+R6
+R7
+L0 18
+R8
+r1
+!s85 0
+31
+R9
+R10
+R11
+!i113 1
+R12
+R13

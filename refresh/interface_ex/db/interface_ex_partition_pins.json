@@ -1,0 +1,49 @@
+{
+	"partitions" : [
+		{
+			"name" : "Top",
+			"pins" : [
+				{
+					"name" : "busIf.enable",
+					"strict" : false
+				},
+				{
+					"name" : "busIf.data[0]",
+					"strict" : false
+				},
+				{
+					"name" : "busIf.data[1]",
+					"strict" : false
+				},
+				{
+					"name" : "busIf.data[2]",
+					"strict" : false
+				},
+				{
+					"name" : "busIf.data[3]",
+					"strict" : false
+				},
+				{
+					"name" : "busIf.data[4]",
+					"strict" : false
+				},
+				{
+					"name" : "busIf.data[5]",
+					"strict" : false
+				},
+				{
+					"name" : "busIf.data[6]",
+					"strict" : false
+				},
+				{
+					"name" : "busIf.data[7]",
+					"strict" : false
+				},
+				{
+					"name" : "busIf.clk",
+					"strict" : false
+				}
+			]
+		}
+	]
+}

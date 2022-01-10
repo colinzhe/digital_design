@@ -1,0 +1,92 @@
+module fifo(
+  input rstb, clk,
+  input wr_en, rd_en,
+  input [7:0] data_in,
+  output logic [7:0] data_out,
+  output logic full, empty,
+  output logic [4:0] count,
+  output logic overflow, underflow
+);
+  logic [7:0] mem [7:0];
+  logic [2:0] rd_ptr, wr_ptr;
+  
+  assign empty = (count == 0);
+  assign full = (count == 8);
+  
+  // count
+  always_ff @ (posedge clk or negedge rstb) begin
+    if (!rstb)
+      count <= 0;
+    else
+      if ((!full && wr_en) || (!empty && rd_en))
+        count <= count;
+      else if (full && wr_en && rd_en)
+        count <= count;
+      else if (!full && wr_en)
+        count <= count + 1;
+      else if (!empty && rd_en)
+        count <= count - 1;
+      else
+        count <= count;
+  end
+  
+  // read
+  always_ff @ (posedge clk or negedge rstb) begin
+    if (!rstb)
+      data_out <= 0;
+    else
+      if (!empty && rd_en)
+        data_out <= mem[rd_ptr];
+      else
+        data_out <= data_out;
+  end
+  
+  // write and reset mem
+  always_ff @ (posedge clk) begin
+    if (!rstb)
+      foreach (mem[i]) mem[i] <= 0;
+    else
+      if (!full && wr_en)
+        mem[wr_ptr] <= data_in;
+      else
+        mem[wr_ptr] <= mem[wr_ptr];
+  end
+  
+  // pointers
+  always_ff @ (posedge clk or negedge rstb) begin
+    if (!rstb) begin
+      rd_ptr <= 0;
+      wr_ptr <= 0;
+    end
+    else
+      if (full && wr_en && rd_en) begin
+        wr_ptr <= wr_ptr + 1;
+        rd_ptr <= rd_ptr + 1;
+      end
+      else if (!full && wr_en)
+        wr_ptr <= wr_ptr + 1;
+      else if (!empty && rd_en)
+        rd_ptr <= rd_ptr + 1;
+      else begin
+        wr_ptr <= wr_ptr;
+        rd_ptr <= rd_ptr;
+    end
+  end
+  
+  // overflow/underflow
+  always_ff @ (posedge clk or negedge rstb) begin
+    if (!rstb) begin
+      overflow <= 0;
+      underflow <= 0;
+    end
+    else
+      if (full && wr_en)
+        overflow <= 1;
+      else if (empty && rd_en)
+        underflow <= 1;
+      else begin
+        overflow <= overflow;
+        underflow <= underflow;
+    end
+  end
+endmodule
